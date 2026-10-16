@@ -1,0 +1,5 @@
+{
+  "general": {"title": "General Knowledge", "topics": ["Mount Everest", "Great Wall of China", "Leonardo da Vinci", "Nile", "Olympic Games", "Moon landing", "Amazon rainforest", "Printing press"]},
+  "science": {"title": "Science", "topics": ["Photosynthesis", "Black hole", "DNA", "Periodic table", "Theory of relativity", "Plate tectonics", "Penicillin", "Solar System"]},
+  "geography": {"title": "Geography", "topics": ["Sahara", "Pacific Ocean", "Danube", "Himalayas", "Iceland", "Lake Baikal", "Andes", "Great Barrier Reef"]}
+}

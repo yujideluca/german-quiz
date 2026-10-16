@@ -1,0 +1,178 @@
+# kind|headword|preposition|case|sentence with ___|also-valid prepositions (comma separated, optional)
+# kind: V = verb + preposition, A = adjective + preposition, N = noun + preposition, E = fixed expression
+# case: A = Akkusativ, D = Dativ (case governed by the preposition in this collocation)
+V|warten|auf|A|Ich warte ___ den Bus.
+V|denken|an|A|Er denkt oft ___ seine Familie.|über
+V|sich freuen|auf|A|Wir freuen uns ___ den Urlaub.|über
+V|sich freuen|über|A|Sie freut sich ___ das Geschenk.|auf
+V|sich ärgern|über|A|Ich ärgere mich ___ den Lärm.
+V|sich interessieren|für|A|Er interessiert sich ___ Geschichte.
+V|sich bewerben|um|A|Sie bewirbt sich ___ eine Stelle.
+V|sich entscheiden|für|A|Wir haben uns ___ das rote Auto entschieden.
+V|sich erinnern|an|A|Ich erinnere mich gern ___ unsere Reise.
+V|sich gewöhnen|an|A|Er gewöhnt sich ___ das Klima.
+V|sich verlassen|auf|A|Du kannst dich ___ mich verlassen.
+V|sich vorbereiten|auf|A|Sie bereitet sich ___ die Prüfung vor.
+V|sich konzentrieren|auf|A|Ich muss mich ___ die Arbeit konzentrieren.
+V|sich beschweren|über|A|Die Gäste beschweren sich ___ den Service.
+V|sich kümmern|um|A|Sie kümmert sich ___ ihre Großeltern.
+V|sich handeln|um|A|Es handelt sich ___ ein Missverständnis.
+V|sich beschäftigen|mit|D|Er beschäftigt sich ___ einem neuen Projekt.
+V|sich treffen|mit|D|Ich treffe mich ___ einer Freundin.
+V|sich verabreden|mit|D|Er verabredet sich ___ seinem Kollegen.
+V|sich verlieben|in|A|Sie hat sich ___ ihn verliebt.
+V|sich fürchten|vor|D|Das Kind fürchtet sich ___ dem Hund.
+V|sich schützen|vor|D|Man schützt sich ___ der Sonne.
+V|sich ausruhen|von|D|Ich ruhe mich ___ der Arbeit aus.
+V|sich erholen|von|D|Sie erholt sich ___ der Krankheit.
+V|sich bedanken|für|A|Ich bedanke mich ___ die Einladung.
+V|sich entschuldigen|für|A|Er entschuldigt sich ___ die Verspätung.
+V|sich entschuldigen|bei|D|Sie entschuldigt sich ___ ihrem Lehrer.
+V|sich beteiligen|an|D|Wir beteiligen uns ___ dem Wettbewerb.
+V|sich wenden|an|A|Wenden Sie sich bitte ___ den Kundenservice.
+V|sich erkundigen|nach|D|Ich erkundige mich ___ dem Preis.
+V|sich sehnen|nach|D|Er sehnt sich ___ Ruhe.
+V|sich bemühen|um|A|Sie bemüht sich ___ eine Lösung.
+V|sich einigen|auf|A|Wir haben uns ___ einen Termin geeinigt.
+V|sich beziehen|auf|A|Ich beziehe mich ___ Ihren Brief.
+V|sich ernähren|von|D|Pandas ernähren sich ___ Bambus.
+V|sich trennen|von|D|Sie trennt sich ___ ihrem Freund.
+V|sich verstehen|mit|D|Ich verstehe mich gut ___ meinem Bruder.
+V|sich streiten|über|A|Sie streiten sich ___ das Geld.|um
+V|sich wundern|über|A|Ich wundere mich ___ sein Verhalten.
+V|sich aufregen|über|A|Sie regt sich ___ den Lärm auf.
+V|sich verabschieden|von|D|Wir verabschieden uns ___ unseren Gästen.
+V|anfangen|mit|D|Wir fangen ___ der Arbeit an.
+V|aufhören|mit|D|Er hört ___ dem Rauchen auf.
+V|teilnehmen|an|D|Sie nimmt ___ dem Kurs teil.
+V|bestehen|aus|D|Das Team besteht ___ zehn Personen.
+V|bestehen|auf|D|Er besteht ___ seinem Recht.
+V|abhängen|von|D|Es hängt ___ dem Wetter ab.
+V|sprechen|über|A|Wir sprechen ___ das Problem.|von
+V|sprechen|mit|D|Ich spreche ___ meinem Chef.
+V|träumen|von|D|Sie träumt ___ einer Weltreise.
+V|glauben|an|A|Er glaubt ___ seinen Erfolg.
+V|zweifeln|an|D|Ich zweifle ___ seiner Ehrlichkeit.
+V|leiden|unter|D|Viele Menschen leiden ___ Stress.|an
+V|fragen|nach|D|Sie fragt ___ dem Weg.
+V|suchen|nach|D|Wir suchen ___ einer Lösung.
+V|riechen|nach|D|Es riecht ___ frischem Brot.
+V|schmecken|nach|D|Die Suppe schmeckt ___ Knoblauch.
+V|halten|für|A|Ich halte das ___ eine gute Idee.
+V|halten|von|D|Was hältst du ___ diesem Plan?
+V|rechnen|mit|D|Wir rechnen ___ Verspätungen.
+V|achten|auf|A|Bitte achten Sie ___ die Zeit.
+V|aufpassen|auf|A|Sie passt ___ die Kinder auf.
+V|warnen|vor|D|Der Arzt warnt ___ den Risiken.
+V|einladen|zu|D|Er lädt uns ___ seiner Party ein.
+V|gratulieren|zu|D|Wir gratulieren dir ___ deinem Geburtstag.
+V|passen|zu|D|Die Schuhe passen gut ___ dem Kleid.
+V|gehören|zu|D|Er gehört ___ unserem Team.
+V|führen|zu|D|Das führt ___ Problemen.
+V|beitragen|zu|D|Jeder kann ___ dem Erfolg beitragen.
+V|neigen|zu|D|Er neigt ___ Übertreibungen.
+V|überzeugen|von|D|Sie überzeugt ihn ___ ihrer Idee.
+V|erzählen|von|D|Er erzählt ___ seiner Reise.|über
+V|berichten|über|A|Die Zeitung berichtet ___ den Unfall.|von
+V|informieren|über|A|Wir informieren Sie ___ die Änderungen.
+V|diskutieren|über|A|Sie diskutieren ___ das Thema.
+V|nachdenken|über|A|Ich denke ___ den Vorschlag nach.
+V|lachen|über|A|Wir lachen ___ den Witz.
+V|verzichten|auf|A|Sie verzichtet ___ Zucker.
+V|hoffen|auf|A|Wir hoffen ___ besseres Wetter.
+V|sorgen|für|A|Eltern sorgen ___ ihre Kinder.
+V|danken|für|A|Ich danke dir ___ deine Hilfe.
+V|bitten|um|A|Er bittet ___ Hilfe.
+V|kämpfen|für|A|Sie kämpfen ___ mehr Rechte.|gegen
+V|klagen|über|A|Er klagt ___ Rückenschmerzen.
+V|ausgeben|für|A|Wir geben viel Geld ___ Essen aus.
+V|umgehen|mit|D|Er geht gut ___ Kindern um.
+V|telefonieren|mit|D|Ich telefoniere ___ meiner Mutter.
+V|zusammenarbeiten|mit|D|Wir arbeiten eng ___ der Firma zusammen.
+A|stolz|auf|A|Er ist stolz ___ seine Tochter.
+A|eifersüchtig|auf|A|Sie ist eifersüchtig ___ ihre Schwester.
+A|neugierig|auf|A|Wir sind neugierig ___ das Ergebnis.
+A|gespannt|auf|A|Ich bin gespannt ___ die Antwort.
+A|wütend|auf|A|Er ist wütend ___ seinen Chef.|über
+A|sauer|auf|A|Er ist sauer ___ mich.
+A|begeistert|von|D|Sie ist begeistert ___ dem Konzert.
+A|abhängig|von|D|Er ist finanziell abhängig ___ seinen Eltern.
+A|enttäuscht|von|D|Ich bin ___ dem Film enttäuscht.|über
+A|überrascht|von|D|Sie war überrascht ___ der Nachricht.|über
+A|verantwortlich|für|A|Er ist ___ das Projekt verantwortlich.
+A|bekannt|für|A|Die Stadt ist bekannt ___ ihren Käse.
+A|berühmt|für|A|Italien ist berühmt ___ seine Küche.
+A|typisch|für|A|Das ist typisch ___ ihn.
+A|wichtig|für|A|Gesundheit ist wichtig ___ uns.
+A|bereit|zu|D|Er ist bereit ___ einem Kompromiss.
+A|nett|zu|D|Sie ist nett ___ allen.
+A|zufrieden|mit|D|Ich bin zufrieden ___ dem Ergebnis.
+A|verheiratet|mit|D|Er ist ___ einer Ärztin verheiratet.
+A|verbunden|mit|D|Das Risiko ist ___ hohen Kosten verbunden.
+A|einverstanden|mit|D|Ich bin ___ deinem Vorschlag einverstanden.
+A|beschäftigt|mit|D|Sie ist ___ der Planung beschäftigt.
+A|fertig|mit|D|Ich bin ___ den Hausaufgaben fertig.
+A|angewiesen|auf|A|Wir sind ___ deine Hilfe angewiesen.
+A|gewöhnt|an|A|Ich bin ___ die Kälte gewöhnt.
+A|interessiert|an|D|Er ist ___ einem Job interessiert.
+A|reich|an|D|Das Land ist reich ___ Rohstoffen.
+A|schuld|an|D|Er ist schuld ___ dem Unfall.
+A|beteiligt|an|D|Sie ist ___ dem Projekt beteiligt.
+A|müde|von|D|Ich bin ___ der Arbeit müde.
+A|voll|von|D|Das Zimmer war voll ___ Menschen.|mit
+A|glücklich|über|A|Sie ist glücklich ___ die Nachricht.
+A|traurig|über|A|Wir sind traurig ___ den Verlust.
+A|froh|über|A|Ich bin froh ___ deine Hilfe.
+A|verliebt|in|A|Er ist ___ sie verliebt.
+A|gut|in|D|Er ist gut ___ Mathematik.
+N|die Angst|vor|D|Er hat Angst ___ der Prüfung.
+N|die Lust|auf|A|Ich habe Lust ___ ein Eis.
+N|das Interesse|an|D|Sie hat Interesse ___ Kunst.|für
+N|die Hoffnung|auf|A|Wir haben Hoffnung ___ Besserung.
+N|die Freude|an|D|Er hat Freude ___ seiner Arbeit.|über
+N|der Wunsch|nach|D|Sie hat den Wunsch ___ Veränderung.
+N|die Frage|nach|D|Die Frage ___ dem Sinn bleibt offen.
+N|die Suche|nach|D|Die Suche ___ einer Wohnung ist schwer.
+N|die Nachfrage|nach|D|Die Nachfrage ___ Elektroautos steigt.
+N|die Erinnerung|an|A|Ich habe schöne Erinnerungen ___ den Sommer.
+N|der Glaube|an|A|Der Glaube ___ die Zukunft hilft.
+N|der Zweifel|an|D|Ich habe Zweifel ___ seiner Aussage.
+N|der Mangel|an|D|Es gibt einen Mangel ___ Fachkräften.
+N|die Erfahrung|mit|D|Sie hat gute Erfahrungen ___ dem Programm gemacht.
+N|die Beziehung|zu|D|Er hat eine gute Beziehung ___ seinen Eltern.
+N|die Verantwortung|für|A|Sie trägt die Verantwortung ___ das Team.
+N|das Verständnis|für|A|Ich habe Verständnis ___ deine Lage.
+N|der Grund|für|A|Was ist der Grund ___ die Verspätung?
+N|die Ursache|für|A|Die Ursache ___ den Fehler ist unklar.
+N|der Beweis|für|A|Es gibt keinen Beweis ___ diese Theorie.
+N|das Beispiel|für|A|Das ist ein gutes Beispiel ___ Teamarbeit.
+N|die Lösung|für|A|Wir suchen eine Lösung ___ das Problem.
+N|der Streit|um|A|Der Streit ___ das Erbe dauert an.
+N|die Sorge|um|A|Sie hat Sorge ___ ihre Kinder.
+N|die Bitte|um|A|Ich habe eine Bitte ___ Hilfe.
+N|der Unterschied|zwischen|D|Der Unterschied ___ den beiden Wörtern ist klein.
+N|die Einladung|zu|D|Danke für die Einladung ___ deiner Party.
+N|die Wut|auf|A|Er hat Wut ___ seinen Nachbarn.
+N|der Stolz|auf|A|Ihr Stolz ___ die Kinder ist groß.
+N|der Einfluss|auf|A|Das Wetter hat Einfluss ___ die Stimmung.
+N|der Anspruch|auf|A|Er hat Anspruch ___ Urlaub.
+N|der Respekt|vor|D|Ich habe Respekt ___ seiner Leistung.
+N|die Rücksicht|auf|A|Man muss Rücksicht ___ andere nehmen.
+N|die Teilnahme|an|D|Die Teilnahme ___ dem Kurs ist freiwillig.
+E|im Gegensatz|zu|D|Im Gegensatz ___ ihm ist sie pünktlich.
+E|im Vergleich|zu|D|Im Vergleich ___ gestern ist es heute kalt.
+E|im Zusammenhang|mit|D|Im Zusammenhang ___ dem Unfall gab es Fragen.
+E|in Bezug|auf|A|In Bezug ___ den Preis gibt es noch Fragen.
+E|im Hinblick|auf|A|Im Hinblick ___ die Zukunft planen wir neu.
+E|unter Druck|unter|D|Er steht ___ großem Druck.
+E|in der Lage sein|in|D|Sie ist nicht ___ der Lage zu kommen.
+E|es geht|um|A|Es geht ___ eine wichtige Frage.
+E|zu Fuß|zu|D|Wir gehen ___ Fuß.
+E|mit dem Bus fahren|mit|D|Ich fahre ___ dem Bus zur Arbeit.
+E|auf dem Land|auf|D|Sie wohnen ___ dem Land.
+E|zu Hause|zu|D|Heute bleibe ich ___ Hause.
+E|nach Hause|nach|D|Ich gehe jetzt ___ Hause.
+E|auf Deutsch|auf|A|Sagen Sie es bitte ___ Deutsch.
+E|bei Regen|bei|D|___ Regen bleiben wir zu Hause.
+E|vor allem|vor|D|Ich mag Obst, ___ allem Äpfel.
+E|für immer|für|A|Wir bleiben ___ immer Freunde.
