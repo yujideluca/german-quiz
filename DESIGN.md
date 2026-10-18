@@ -183,6 +183,9 @@ Jetpack Compose + Material 3, one `StudyViewModel` exposing a sealed `UiState`
 
 JVM unit tests cover the scheduler, grader, pipeline, availability/search, session engine,
 content generation and an end-to-end controller test (including persistence across sessions).
+`PeriodizationSimulationTest` follows one card through days of study with a fake clock (learning
+steps, 1 -> 3 -> 8 -> 20 -> 50 day intervals, lapse and relearning, HARD/EASY timing). The same schedule
+was verified on the phone by injecting due times into `progress.json`.
 Every UI change is additionally exercised on a real phone (a Motorola edge 50 fusion over adb)
 and the log is checked for crashes before a change is considered done.
 
