@@ -11,7 +11,9 @@ import dev.yuji.quiz.domain.Clock
 import dev.yuji.quiz.domain.DailyProgress
 import dev.yuji.quiz.domain.clampDailyGoal
 import dev.yuji.quiz.domain.epochDayOf
-import dev.yuji.quiz.domain.forDay
+import dev.yuji.quiz.domain.answeredOn
+import dev.yuji.quiz.domain.ActivityCalendar
+import dev.yuji.quiz.domain.buildCalendar
 import dev.yuji.quiz.domain.plusAnswer
 import dev.yuji.quiz.domain.GameMode
 import dev.yuji.quiz.domain.CardStatus
@@ -79,18 +81,24 @@ class StudyController(
             val progress = updated.progressById.getValue(card.id)
             store.save(progress)
             progressById = progressById + (card.id to progress)
-            training.tally = training.tally.plusAnswer(today())
+            training.history = training.history.plusAnswer(today())
         }
         return updated
     }
 
     /** Answers given today across all quizzes against the player's daily goal. */
-    fun dailyProgress() = DailyProgress(training.tally.forDay(today()).answered, training.dailyGoal)
+    fun dailyProgress() = DailyProgress(training.history.answeredOn(today()), training.dailyGoal)
 
     fun setDailyGoal(goal: Int) {
         training.dailyGoal = clampDailyGoal(goal)
         log.debug(LogChannel.SESSION) { "daily goal set to ${training.dailyGoal}" }
     }
+
+    /** Streak calendar for [month], coloured by how many questions were answered each day. */
+    fun calendar(month: java.time.YearMonth): ActivityCalendar =
+        buildCalendar(training.history, month, java.time.LocalDate.ofEpochDay(today()))
+
+    fun currentMonth(): java.time.YearMonth = java.time.YearMonth.from(java.time.LocalDate.ofEpochDay(today()))
 
     private fun today() = epochDayOf(clock.nowMillis(), zone)
 

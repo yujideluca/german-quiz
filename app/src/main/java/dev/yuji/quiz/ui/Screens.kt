@@ -40,7 +40,13 @@ import java.util.Locale
 private val CorrectGreen = Color(0xFF2E7D32)
 
 @Composable
-fun ModeSelectScreen(modes: List<ModeOverview>, daily: DailyProgress, onPick: (ModeOverview) -> Unit, onSettings: () -> Unit) {
+fun ModeSelectScreen(
+    modes: List<ModeOverview>,
+    daily: DailyProgress,
+    onPick: (ModeOverview) -> Unit,
+    onSettings: () -> Unit,
+    onCalendar: () -> Unit,
+) {
     Column(
         Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp),
@@ -50,7 +56,7 @@ fun ModeSelectScreen(modes: List<ModeOverview>, daily: DailyProgress, onPick: (M
             Text("Deutsch B2", style = MaterialTheme.typography.headlineMedium)
             TextButton(onClick = onSettings) { Text("Settings") }
         }
-        DailyGoalCard(daily)
+        DailyGoalCard(daily, onCalendar)
         modes.forEach { m ->
             val due = m.stats.learningDue + m.stats.reviewsDue + m.stats.newAvailable
             Card(Modifier.fillMaxWidth()) {
@@ -72,8 +78,8 @@ fun ModeSelectScreen(modes: List<ModeOverview>, daily: DailyProgress, onPick: (M
 }
 
 @Composable
-private fun DailyGoalCard(daily: DailyProgress) {
-    Card(Modifier.fillMaxWidth()) {
+private fun DailyGoalCard(daily: DailyProgress, onCalendar: () -> Unit) {
+    Card(onClick = onCalendar, modifier = Modifier.fillMaxWidth()) {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Text(
                 if (daily.reached) "Daily goal reached ✓  ${daily.answered} / ${daily.goal}"
@@ -81,6 +87,7 @@ private fun DailyGoalCard(daily: DailyProgress) {
                 style = MaterialTheme.typography.titleMedium,
             )
             LinearProgressIndicator(progress = { daily.fraction }, modifier = Modifier.fillMaxWidth())
+            Text("Streak calendar ›", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
         }
     }
 }

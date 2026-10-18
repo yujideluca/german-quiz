@@ -1,0 +1,149 @@
+package dev.yuji.quiz.ui
+
+import androidx.activity.compose.BackHandler
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.Card
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
+import dev.yuji.quiz.domain.ActivityCalendar
+import dev.yuji.quiz.domain.CalendarDay
+import dev.yuji.quiz.domain.HEAT_FULL_ANSWERS
+import dev.yuji.quiz.domain.heatColorRgb
+import java.time.format.TextStyle
+import java.util.Locale
+
+private val WeekdayLetters = listOf("Mo", "Tu", "We", "Th", "Fr", "Sa", "Su")
+
+/** Warm-spectrum colour of a trained day. Text on top is always dark: every colour in the ramp is light enough. */
+private fun heat(answered: Int) = Color(0xFF000000.toInt() or heatColorRgb(answered))
+
+@Composable
+fun CalendarScreen(
+    calendar: ActivityCalendar,
+    onPreviousMonth: () -> Unit,
+    onNextMonth: () -> Unit,
+    onBack: () -> Unit,
+) {
+    BackHandler(onBack = onBack)
+    Column(
+        Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(14.dp),
+    ) {
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically) {
+            Text("Streak", style = MaterialTheme.typography.headlineMedium)
+            TextButton(onClick = onBack) { Text("Back") }
+        }
+
+        Card(Modifier.fillMaxWidth()) {
+            Row(Modifier.fillMaxWidth().padding(16.dp)) {
+                Stat("${calendar.currentStreak}", "current streak", Modifier.weight(1f))
+                Stat("${calendar.longestStreak}", "longest streak", Modifier.weight(1f))
+            }
+        }
+
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically) {
+            TextButton(onClick = onPreviousMonth) { Text("‹ Previous") }
+            Text(
+                "${calendar.month.month.getDisplayName(TextStyle.FULL, Locale.ENGLISH)} ${calendar.month.year}",
+                style = MaterialTheme.typography.titleLarge,
+            )
+            TextButton(onClick = onNextMonth, enabled = calendar.canGoNext) { Text("Next ›") }
+        }
+
+        Row(Modifier.fillMaxWidth()) {
+            WeekdayLetters.forEach {
+                Text(it, Modifier.weight(1f), textAlign = TextAlign.Center, style = MaterialTheme.typography.labelMedium)
+            }
+        }
+        val cells: List<CalendarDay?> = List(calendar.leadingBlanks) { null } + calendar.days
+        cells.chunked(7).forEach { week ->
+            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                week.forEach { day -> DayCell(day, Modifier.weight(1f)) }
+                repeat(7 - week.size) { Box(Modifier.weight(1f)) }
+            }
+        }
+
+        Text(
+            "${calendar.trainedDaysInMonth} ${if (calendar.trainedDaysInMonth == 1) "day" else "days"} trained · " +
+                "${calendar.answersInMonth} ${if (calendar.answersInMonth == 1) "answer" else "answers"} this month",
+            style = MaterialTheme.typography.bodyLarge,
+        )
+        Legend()
+    }
+}
+
+@Composable
+private fun Stat(value: String, label: String, modifier: Modifier) {
+    Column(modifier, horizontalAlignment = Alignment.CenterHorizontally) {
+        Text(value, style = MaterialTheme.typography.displaySmall, fontWeight = FontWeight.Bold)
+        Text(label, style = MaterialTheme.typography.labelMedium, textAlign = TextAlign.Center)
+    }
+}
+
+@Composable
+private fun DayCell(day: CalendarDay?, modifier: Modifier) {
+    val shape = RoundedCornerShape(8.dp)
+    if (day == null) {
+        Box(modifier.aspectRatio(1f))
+        return
+    }
+    val trained = day.answered > 0
+    val background = when {
+        trained -> heat(day.answered)
+        else -> MaterialTheme.colorScheme.surfaceVariant.copy(alpha = if (day.isFuture) 0.35f else 0.8f)
+    }
+    val numberColor = if (trained) Color(0xFF2B1400) else MaterialTheme.colorScheme.onSurfaceVariant
+    Box(
+        modifier.aspectRatio(1f).clip(shape).background(background).let {
+            if (day.isToday) it.border(BorderStroke(2.dp, MaterialTheme.colorScheme.primary), shape) else it
+        },
+        contentAlignment = Alignment.Center,
+    ) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+            Text("${day.date.dayOfMonth}", color = numberColor, style = MaterialTheme.typography.titleMedium)
+            if (trained) Text("${day.answered}", color = numberColor, style = MaterialTheme.typography.labelSmall)
+        }
+    }
+}
+
+@Composable
+private fun Legend() {
+    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        Box(
+            Modifier.fillMaxWidth().height(12.dp).clip(RoundedCornerShape(6.dp)).background(
+                Brush.horizontalGradient(listOf(heat(1), heat(HEAT_FULL_ANSWERS / 2), heat(HEAT_FULL_ANSWERS)))
+            )
+        )
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+            Text("1 answer", style = MaterialTheme.typography.labelSmall)
+            Text("$HEAT_FULL_ANSWERS+ answers", style = MaterialTheme.typography.labelSmall)
+        }
+    }
+}

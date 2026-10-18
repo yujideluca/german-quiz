@@ -107,9 +107,22 @@ must not skip learning steps. Thresholds live in `GraderConfig`.
 
 A separate, purely motivational target (`DailyGoal.kt`, `TrainingStore`): a Settings slider from
 **10 to 100 questions in steps of 10** (default 20). Every answer in **any** quiz counts toward
-one shared per-day tally (a re-shown learning card counts again). The tally is keyed by local
-calendar day and resets on the first answer after midnight. Reaching the goal changes only the
-display ("Daily goal reached ✓"); nothing stops the player from continuing.
+one shared per-day count (a re-shown learning card counts again). Counts are kept **per local
+calendar day** as a history (`AnswerHistory`, epoch day -> answers, stored as `day:count;...` in
+the `training` preferences); today's count is simply today's entry, so it restarts at zero after
+midnight. Reaching the goal changes only the display ("Daily goal reached ✓"); nothing stops the
+player from continuing.
+
+### Streak calendar
+
+Tapping the daily-goal card opens a month calendar (Monday first, previous/next month, no future
+months). A day with **at least one answer** counts as trained; the **current streak** is the run of
+consecutive trained days ending today (an empty today does not break a streak that ran through
+yesterday), plus the longest streak ever. Each trained day is coloured on a warm ramp
+(`HeatColor.kt`): light yellow for a few answers -> orange -> orange-red at **100+ answers**
+(the largest possible goal), and shows its count. Untrained days are neutral, today is outlined.
+Pure logic is in `ActivityCalendar.kt`. The history is not touched by "Reset all progress" (that
+resets cards only). Older installs migrate their single stored day count into the history.
 
 ## 5. Content
 
@@ -197,6 +210,7 @@ Newest first. Add an entry whenever a decision changes the design.
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-10-18 | Streak calendar: per-day answer history, month view coloured light yellow -> orange-red by answers, streak = consecutive days with any answer | Visible training habit; colour shows effort, not just attendance |
 | 2026-10-18 | Daily new-card cap (10) removed; replaced by a 10-100 daily-goal slider counting answers across all quizzes | The player should be able to study as much as they like; the goal is a target, not a limit |
 | 2026-10-15 | Suspended/removed list and search moved to a separate screen opened from Settings | The list made Settings long and the keyboard hid the results |
 | 2026-10-15 | Menu entries renamed "Remove for 1 week/month/permanently"; heading removed | The heading looked like a button and did nothing |
@@ -212,7 +226,7 @@ Newest first. Add an entry whenever a decision changes the design.
 
 ## 12. Known limitations and ideas
 
-- No progress view (streaks, per-card mastery, history).
+- Progress view covers streaks only; no per-card mastery or accuracy history. A day's colour does not record which goal was set that day.
 - The review cap per session (100) still applies; a finished session can simply be restarted.
 - No custom app icon, accessibility pass, or tablet/landscape layout.
 - The 10 s "hard" threshold may be strict for slow, deliberate answers.

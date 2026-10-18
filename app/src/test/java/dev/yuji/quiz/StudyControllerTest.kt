@@ -92,17 +92,32 @@ class DailyGoalTest {
         assertEquals(4, c.dailyProgress().answered)   // 2 cards x 2 learning steps, past the goal of 3
     }
 
-    @Test fun tallyResetsOnANewDayAndGoalSnapsToTheSlider() {
+    @Test fun dayCountResetsOnANewDayButHistoryIsKeptAndGoalSnapsToTheSlider() {
         val t = dev.yuji.quiz.data.InMemoryTrainingStore()
         val c = controller(t)
         var s = c.startSession(GameMode.PREPOSITION)
         c.answer(s, s.currentCard!!.correctChoice)
         assertEquals(1, c.dailyProgress().answered)
+        val firstDay = now / DAY_MILLIS
         now += DAY_MILLIS
         assertEquals(0, c.dailyProgress().answered)
+        assertEquals(mapOf(firstDay to 1), t.history)
         c.setDailyGoal(37); assertEquals(40, c.dailyProgress().goal)
         c.setDailyGoal(500); assertEquals(100, c.dailyProgress().goal)
         c.setDailyGoal(1); assertEquals(10, c.dailyProgress().goal)
+    }
+
+    @Test fun calendarReflectsAnswersAndStreak() {
+        val c = controller(dev.yuji.quiz.data.InMemoryTrainingStore())
+        repeat(3) { day ->
+            val s = c.startSession(GameMode.ARTICLE)
+            c.answer(s, s.currentCard!!.correctChoice)
+            if (day < 2) now += DAY_MILLIS
+        }
+        val cal = c.calendar(c.currentMonth())
+        assertEquals(3, cal.currentStreak)
+        assertEquals(3, cal.trainedDaysInMonth)
+        assertEquals(3, cal.answersInMonth)
     }
 }
 

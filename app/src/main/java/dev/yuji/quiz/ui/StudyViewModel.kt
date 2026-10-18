@@ -14,6 +14,7 @@ import dev.yuji.quiz.data.SharedPreferencesSettingsStore
 import dev.yuji.quiz.data.SharedPreferencesTrainingStore
 import dev.yuji.quiz.data.ThemeMode
 import dev.yuji.quiz.debug.DebugFlags
+import dev.yuji.quiz.domain.ActivityCalendar
 import dev.yuji.quiz.domain.CardStatus
 import dev.yuji.quiz.domain.DailyProgress
 import dev.yuji.quiz.domain.GameMode
@@ -41,12 +42,14 @@ sealed interface UiState {
         val query: String,
         val results: List<ManagedCard>,
     ) : UiState
+    data class Calendar(val calendar: ActivityCalendar) : UiState
     data class Failed(val message: String) : UiState
 }
 
 class StudyViewModel(app: Application) : AndroidViewModel(app) {
     private var advanceJob: Job? = null
     private var searchQuery = ""
+    private var calendarMonth: java.time.YearMonth? = null
 
     val debugFlags: DebugFlags = DebugFlags.forBuild(BuildConfig.DEBUG)
     private val log = AndroidStudyLog(debugFlags)
@@ -105,6 +108,23 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
     fun backToModes() = withController { c ->
         advanceJob?.cancel()
         _state.update { UiState.ModeSelect(c.overview(), c.dailyProgress()) }
+    }
+
+    // ---- calendar ---------------------------------------------------------------------------
+
+    fun openCalendar() = withController { c ->
+        calendarMonth = c.currentMonth()
+        _state.update { UiState.Calendar(c.calendar(calendarMonth!!)) }
+    }
+
+    fun showPreviousMonth() = shiftMonth(-1)
+    fun showNextMonth() = shiftMonth(1)
+
+    private fun shiftMonth(delta: Long) = withController { c ->
+        val target = (calendarMonth ?: c.currentMonth()).plusMonths(delta)
+        if (target > c.currentMonth()) return@withController      // no future months
+        calendarMonth = target
+        _state.update { UiState.Calendar(c.calendar(target)) }
     }
 
     // ---- settings ---------------------------------------------------------------------------

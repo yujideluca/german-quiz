@@ -8,8 +8,8 @@ const val MAX_DAILY_GOAL = 100
 const val DAILY_GOAL_STEP = 10
 const val DEFAULT_DAILY_GOAL = 20
 
-/** Answers given on one study day (all quizzes together). */
-data class DailyTally(val epochDay: Long, val answered: Int)
+/** Answers given per study day (epoch day -> count, all quizzes together). Days without answers are absent. */
+typealias AnswerHistory = Map<Long, Int>
 
 /** Today's training status shown to the player. */
 data class DailyProgress(val answered: Int, val goal: Int) {
@@ -23,7 +23,6 @@ fun clampDailyGoal(value: Int): Int =
 
 fun epochDayOf(nowMillis: Long, zone: ZoneId): Long = Instant.ofEpochMilli(nowMillis).atZone(zone).toLocalDate().toEpochDay()
 
-/** The stored tally counts only if it belongs to today; otherwise today starts at zero. */
-fun DailyTally.forDay(epochDay: Long) = if (this.epochDay == epochDay) this else DailyTally(epochDay, 0)
+fun AnswerHistory.plusAnswer(epochDay: Long): AnswerHistory = this + (epochDay to (this[epochDay] ?: 0) + 1)
 
-fun DailyTally.plusAnswer(epochDay: Long): DailyTally = forDay(epochDay).let { it.copy(answered = it.answered + 1) }
+fun AnswerHistory.answeredOn(epochDay: Long): Int = this[epochDay] ?: 0
