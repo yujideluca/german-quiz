@@ -29,6 +29,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import dev.yuji.quiz.ModeOverview
+import dev.yuji.quiz.domain.ActivityCalendar
 import dev.yuji.quiz.domain.AnswerRecord
 import dev.yuji.quiz.domain.DailyProgress
 import dev.yuji.quiz.domain.StudySession
@@ -43,20 +44,18 @@ private val CorrectGreen = Color(0xFF2E7D32)
 fun ModeSelectScreen(
     modes: List<ModeOverview>,
     daily: DailyProgress,
+    calendar: ActivityCalendar,
     onPick: (ModeOverview) -> Unit,
     onSettings: () -> Unit,
-    onCalendar: () -> Unit,
+    onPreviousMonth: () -> Unit,
+    onNextMonth: () -> Unit,
 ) {
     Column(
         Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
-        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically) {
-            Text("Deutsch B2", style = MaterialTheme.typography.headlineMedium)
-            TextButton(onClick = onSettings) { Text("Settings") }
-        }
-        DailyGoalCard(daily, onCalendar)
+        ActivityCalendarCard(calendar, onPreviousMonth, onNextMonth, onSettings)
+        DailyGoalCard(daily)
         modes.forEach { m ->
             val due = m.stats.learningDue + m.stats.reviewsDue + m.stats.newAvailable
             Card(Modifier.fillMaxWidth()) {
@@ -78,8 +77,8 @@ fun ModeSelectScreen(
 }
 
 @Composable
-private fun DailyGoalCard(daily: DailyProgress, onCalendar: () -> Unit) {
-    Card(onClick = onCalendar, modifier = Modifier.fillMaxWidth()) {
+private fun DailyGoalCard(daily: DailyProgress) {
+    Card(Modifier.fillMaxWidth()) {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Text(
                 if (daily.reached) "Daily goal reached ✓  ${daily.answered} / ${daily.goal}"
@@ -87,7 +86,6 @@ private fun DailyGoalCard(daily: DailyProgress, onCalendar: () -> Unit) {
                 style = MaterialTheme.typography.titleMedium,
             )
             LinearProgressIndicator(progress = { daily.fraction }, modifier = Modifier.fillMaxWidth())
-            Text("Streak calendar ›", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
         }
     }
 }

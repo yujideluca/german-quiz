@@ -115,12 +115,15 @@ player from continuing.
 
 ### Streak calendar
 
-Tapping the daily-goal card opens a month calendar (Monday first, previous/next month, no future
-months). A day with **at least one answer** counts as trained; the **current streak** is the run of
+A compact month calendar sits at the **top of the home screen**, above everything else (the
+"Deutsch B2" title was dropped; the Settings button lives in the calendar's header row). It has
+previous/next month arrows (no future months; the home screen always reopens on the current month),
+Monday first, one small cell per day showing only the day number, and a one-line summary
+("Streak n · longest m · d days this month"). A day with **at least one answer** counts as trained; the **current streak** is the run of
 consecutive trained days ending today (an empty today does not break a streak that ran through
 yesterday), plus the longest streak ever. Each trained day is coloured on a warm ramp
 (`HeatColor.kt`): light yellow for a few answers -> orange -> orange-red at **100+ answers**
-(the largest possible goal), and shows its count. Untrained days are neutral, today is outlined.
+(the largest possible goal), with a thin legend bar underneath. Untrained days are neutral, today is outlined.
 Pure logic is in `ActivityCalendar.kt`. The history is not touched by "Reset all progress" (that
 resets cards only). Older installs migrate their single stored day count into the history.
 
@@ -210,6 +213,7 @@ Newest first. Add an entry whenever a decision changes the design.
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-10-18 | Calendar made compact and moved to the top of the home screen; app title removed; separate calendar screen deleted | The streak should be visible at a glance without opening anything |
 | 2026-10-18 | Streak calendar: per-day answer history, month view coloured light yellow -> orange-red by answers, streak = consecutive days with any answer | Visible training habit; colour shows effort, not just attendance |
 | 2026-10-18 | Daily new-card cap (10) removed; replaced by a 10-100 daily-goal slider counting answers across all quizzes | The player should be able to study as much as they like; the goal is a target, not a limit |
 | 2026-10-15 | Suspended/removed list and search moved to a separate screen opened from Settings | The list made Settings long and the keyboard hid the results |

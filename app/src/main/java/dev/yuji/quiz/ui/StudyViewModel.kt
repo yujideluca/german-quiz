@@ -32,7 +32,7 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
 sealed interface UiState {
-    data class ModeSelect(val modes: List<ModeOverview>, val daily: DailyProgress) : UiState
+    data class ModeSelect(val modes: List<ModeOverview>, val daily: DailyProgress, val calendar: ActivityCalendar) : UiState
     data class Studying(val session: StudySession, val choices: List<String>, val daily: DailyProgress) : UiState
     data class Finished(val session: StudySession) : UiState
     data class Settings(
@@ -42,7 +42,6 @@ sealed interface UiState {
         val query: String,
         val results: List<ManagedCard>,
     ) : UiState
-    data class Calendar(val calendar: ActivityCalendar) : UiState
     data class Failed(val message: String) : UiState
 }
 
@@ -70,7 +69,7 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
     }.onFailure { android.util.Log.e("Quiz", "failed to initialise", it) }.getOrNull()
 
     private val _state = MutableStateFlow<UiState>(
-        controller?.let { UiState.ModeSelect(it.overview(), it.dailyProgress()) } ?: UiState.Failed("Could not load vocabulary")
+        controller?.let { modeSelectState(it) } ?: UiState.Failed("Could not load vocabulary")
     )
     val state: StateFlow<UiState> = _state
 
@@ -107,15 +106,11 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
 
     fun backToModes() = withController { c ->
         advanceJob?.cancel()
-        _state.update { UiState.ModeSelect(c.overview(), c.dailyProgress()) }
+        calendarMonth = null                                        // home always opens on the current month
+        _state.update { modeSelectState(c) }
     }
 
     // ---- calendar ---------------------------------------------------------------------------
-
-    fun openCalendar() = withController { c ->
-        calendarMonth = c.currentMonth()
-        _state.update { UiState.Calendar(c.calendar(calendarMonth!!)) }
-    }
 
     fun showPreviousMonth() = shiftMonth(-1)
     fun showNextMonth() = shiftMonth(1)
@@ -124,8 +119,11 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
         val target = (calendarMonth ?: c.currentMonth()).plusMonths(delta)
         if (target > c.currentMonth()) return@withController      // no future months
         calendarMonth = target
-        _state.update { UiState.Calendar(c.calendar(target)) }
+        _state.update { if (it is UiState.ModeSelect) modeSelectState(c) else it }
     }
+
+    private fun modeSelectState(c: StudyController) =
+        UiState.ModeSelect(c.overview(), c.dailyProgress(), c.calendar(calendarMonth ?: c.currentMonth()))
 
     // ---- settings ---------------------------------------------------------------------------
 
