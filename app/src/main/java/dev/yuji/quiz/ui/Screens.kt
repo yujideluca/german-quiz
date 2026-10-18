@@ -14,6 +14,7 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
@@ -29,6 +30,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import dev.yuji.quiz.ModeOverview
 import dev.yuji.quiz.domain.AnswerRecord
+import dev.yuji.quiz.domain.DailyProgress
 import dev.yuji.quiz.domain.StudySession
 import dev.yuji.quiz.domain.SuspensionDuration
 import java.text.SimpleDateFormat
@@ -38,7 +40,7 @@ import java.util.Locale
 private val CorrectGreen = Color(0xFF2E7D32)
 
 @Composable
-fun ModeSelectScreen(modes: List<ModeOverview>, onPick: (ModeOverview) -> Unit, onSettings: () -> Unit) {
+fun ModeSelectScreen(modes: List<ModeOverview>, daily: DailyProgress, onPick: (ModeOverview) -> Unit, onSettings: () -> Unit) {
     Column(
         Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp),
@@ -48,6 +50,7 @@ fun ModeSelectScreen(modes: List<ModeOverview>, onPick: (ModeOverview) -> Unit, 
             Text("Deutsch B2", style = MaterialTheme.typography.headlineMedium)
             TextButton(onClick = onSettings) { Text("Settings") }
         }
+        DailyGoalCard(daily)
         modes.forEach { m ->
             val due = m.stats.learningDue + m.stats.reviewsDue + m.stats.newAvailable
             Card(Modifier.fillMaxWidth()) {
@@ -69,9 +72,24 @@ fun ModeSelectScreen(modes: List<ModeOverview>, onPick: (ModeOverview) -> Unit, 
 }
 
 @Composable
+private fun DailyGoalCard(daily: DailyProgress) {
+    Card(Modifier.fillMaxWidth()) {
+        Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            Text(
+                if (daily.reached) "Daily goal reached ✓  ${daily.answered} / ${daily.goal}"
+                else "Today: ${daily.answered} / ${daily.goal} questions",
+                style = MaterialTheme.typography.titleMedium,
+            )
+            LinearProgressIndicator(progress = { daily.fraction }, modifier = Modifier.fillMaxWidth())
+        }
+    }
+}
+
+@Composable
 fun StudyScreen(
     session: StudySession,
     choices: List<String>,
+    daily: DailyProgress,
     showDebug: Boolean,
     onChoose: (String) -> Unit,
     onSuspend: (SuspensionDuration) -> Unit,
@@ -85,7 +103,7 @@ fun StudyScreen(
     ) {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically) {
-            Text("${session.mode.title} · ${session.queue.size} left", style = MaterialTheme.typography.labelLarge)
+            Text("${session.mode.title} · ${session.queue.size} left · today ${daily.answered}/${daily.goal}", style = MaterialTheme.typography.labelLarge)
             Row(verticalAlignment = Alignment.CenterVertically) {
                 TextButton(onClick = onQuit) { Text("Quit") }
                 CardMenu(enabled = answer == null, onSuspend = onSuspend)

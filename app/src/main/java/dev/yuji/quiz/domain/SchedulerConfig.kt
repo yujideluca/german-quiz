@@ -31,7 +31,6 @@ data class GraderConfig(
 )
 
 data class QueueLimits(
-    val maxNewCardsPerDay: Int = 10,
     val maxReviewsPerSession: Int = 100,
     /** One new card is mixed in after this many reviews. */
     val reviewsPerNewCard: Int = 3,

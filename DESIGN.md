@@ -4,7 +4,7 @@ An offline Android app for drilling basic B2 German vocabulary with Anki-style s
 This file explains **how the app is built** and **why** each choice was made. It is a living
 document: see [How this file is maintained](#how-this-file-is-maintained).
 
-Last updated: 2026-10-15
+Last updated: 2026-10-18
 
 ---
 
@@ -100,8 +100,16 @@ must not skip learning steps. Thresholds live in `GraderConfig`.
 
 - Learning cards are time-critical and always come first (with a 20-minute learn-ahead window).
 - Reviews are most-overdue-first, capped at 100 per session.
-- New cards: **10 per day**, counted from the day start, so closing and reopening the app does
-  not hand out a fresh batch. One new card is mixed in after every 3 reviews.
+- New cards: **no daily cap**; every unseen card is available and one is mixed in after every 3
+  reviews, so the player can study as much as they want.
+
+### Daily goal
+
+A separate, purely motivational target (`DailyGoal.kt`, `TrainingStore`): a Settings slider from
+**10 to 100 questions in steps of 10** (default 20). Every answer in **any** quiz counts toward
+one shared per-day tally (a re-shown learning card counts again). The tally is keyed by local
+calendar day and resets on the first answer after midnight. Reaching the goal changes only the
+display ("Daily goal reached ✓"); nothing stops the player from continuing.
 
 ## 5. Content
 
@@ -155,6 +163,8 @@ Jetpack Compose + Material 3, one `StudyViewModel` exposing a sealed `UiState`
 
 - Answer buttons use large text and a minimum 68 dp height for thumb use.
 - The correct answer turns green and a wrong pick red; the explanation shows under the question.
+- The mode screen opens with a **Today: n / goal** card and progress bar; the study header shows
+  the same count.
 - The next question appears automatically **0.5 s** after an answer (no "Next" button).
 - Theme: system default / light / night, remembered, with status and navigation bars following
   it (edge-to-edge).
@@ -184,6 +194,7 @@ Newest first. Add an entry whenever a decision changes the design.
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-10-18 | Daily new-card cap (10) removed; replaced by a 10-100 daily-goal slider counting answers across all quizzes | The player should be able to study as much as they like; the goal is a target, not a limit |
 | 2026-10-15 | Suspended/removed list and search moved to a separate screen opened from Settings | The list made Settings long and the keyboard hid the results |
 | 2026-10-15 | Menu entries renamed "Remove for 1 week/month/permanently"; heading removed | The heading looked like a button and did nothing |
 | 2026-10-15 | Suspend/remove, theme setting, reset-all confirmation added | Control over the pool; reset-all used to wipe everything on one tap |
@@ -199,7 +210,7 @@ Newest first. Add an entry whenever a decision changes the design.
 ## 12. Known limitations and ideas
 
 - No progress view (streaks, per-card mastery, history).
-- No setting for the daily new-card limit; it is only changeable in code.
+- The review cap per session (100) still applies; a finished session can simply be restarted.
 - No custom app icon, accessibility pass, or tablet/landscape layout.
 - The 10 s "hard" threshold may be strict for slow, deliberate answers.
 - The explanation is visible for only 0.5 s; a longer delay after wrong answers is an option.

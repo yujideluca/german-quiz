@@ -46,7 +46,7 @@ class CardAvailabilityTest {
             "c1" to CardProgress("c1").withSuspension(SuspensionDuration.ONE_WEEK, now),
             "c2" to CardProgress("c2").withSuspension(SuspensionDuration.PERMANENT, now),
         )
-        val q = StudyPipeline.buildQueue(cards, progress, now, ZoneOffset.UTC, QueueLimits(), SchedulerConfig(), NoopStudyLog)
+        val q = StudyPipeline.buildQueue(cards, progress, now, QueueLimits(), SchedulerConfig(), NoopStudyLog)
         assertEquals(listOf("c3"), q.cards.map { it.id })
     }
 

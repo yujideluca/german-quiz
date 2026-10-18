@@ -1,0 +1,29 @@
+package dev.yuji.quiz.domain
+
+import java.time.Instant
+import java.time.ZoneId
+
+const val MIN_DAILY_GOAL = 10
+const val MAX_DAILY_GOAL = 100
+const val DAILY_GOAL_STEP = 10
+const val DEFAULT_DAILY_GOAL = 20
+
+/** Answers given on one study day (all quizzes together). */
+data class DailyTally(val epochDay: Long, val answered: Int)
+
+/** Today's training status shown to the player. */
+data class DailyProgress(val answered: Int, val goal: Int) {
+    val reached: Boolean get() = answered >= goal
+    val fraction: Float get() = (answered.toFloat() / goal).coerceIn(0f, 1f)
+}
+
+/** Snaps any stored value onto the slider's grid (10, 20, ... 100). */
+fun clampDailyGoal(value: Int): Int =
+    (Math.round(value.toDouble() / DAILY_GOAL_STEP).toInt() * DAILY_GOAL_STEP).coerceIn(MIN_DAILY_GOAL, MAX_DAILY_GOAL)
+
+fun epochDayOf(nowMillis: Long, zone: ZoneId): Long = Instant.ofEpochMilli(nowMillis).atZone(zone).toLocalDate().toEpochDay()
+
+/** The stored tally counts only if it belongs to today; otherwise today starts at zero. */
+fun DailyTally.forDay(epochDay: Long) = if (this.epochDay == epochDay) this else DailyTally(epochDay, 0)
+
+fun DailyTally.plusAnswer(epochDay: Long): DailyTally = forDay(epochDay).let { it.copy(answered = it.answered + 1) }

@@ -1,11 +1,18 @@
 package dev.yuji.quiz
 
+import dev.yuji.quiz.data.InMemoryTrainingStore
 import dev.yuji.quiz.data.ProgressStore
+import dev.yuji.quiz.data.TrainingStore
 import dev.yuji.quiz.debug.LogChannel
 import dev.yuji.quiz.debug.StudyLog
 import dev.yuji.quiz.debug.debug
 import dev.yuji.quiz.domain.Card
 import dev.yuji.quiz.domain.Clock
+import dev.yuji.quiz.domain.DailyProgress
+import dev.yuji.quiz.domain.clampDailyGoal
+import dev.yuji.quiz.domain.epochDayOf
+import dev.yuji.quiz.domain.forDay
+import dev.yuji.quiz.domain.plusAnswer
 import dev.yuji.quiz.domain.GameMode
 import dev.yuji.quiz.domain.CardStatus
 import dev.yuji.quiz.domain.GraderConfig
@@ -40,6 +47,7 @@ class StudyController(
     private val graderConfig: GraderConfig = GraderConfig(),
     private val limits: QueueLimits = QueueLimits(),
     private val zone: ZoneId = ZoneId.systemDefault(),
+    private val training: TrainingStore = InMemoryTrainingStore(),
 ) {
     private var progressById = store.loadAll()
     private val cardsById: Map<String, Card> = deck.values.flatten().associateBy { it.id }
@@ -71,9 +79,20 @@ class StudyController(
             val progress = updated.progressById.getValue(card.id)
             store.save(progress)
             progressById = progressById + (card.id to progress)
+            training.tally = training.tally.plusAnswer(today())
         }
         return updated
     }
+
+    /** Answers given today across all quizzes against the player's daily goal. */
+    fun dailyProgress() = DailyProgress(training.tally.forDay(today()).answered, training.dailyGoal)
+
+    fun setDailyGoal(goal: Int) {
+        training.dailyGoal = clampDailyGoal(goal)
+        log.debug(LogChannel.SESSION) { "daily goal set to ${training.dailyGoal}" }
+    }
+
+    private fun today() = epochDayOf(clock.nowMillis(), zone)
 
     fun advance(session: StudySession): StudySession = StudyEngine.advance(session, clock.nowMillis())
 
@@ -128,7 +147,6 @@ class StudyController(
         modeCards = deck[mode].orEmpty(),
         progressById = progressById,
         nowMillis = clock.nowMillis(),
-        zone = zone,
         limits = limits,
         config = schedulerConfig,
         log = log,

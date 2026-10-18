@@ -52,14 +52,14 @@ class MainActivity : ComponentActivity() {
                   Box(Modifier.fillMaxSize().safeDrawingPadding()) {
                     val state by vm.state.collectAsState()
                     when (val s = state) {
-                        is UiState.ModeSelect -> ModeSelectScreen(s.modes, { vm.start(it.mode) }, vm::openSettings)
+                        is UiState.ModeSelect -> ModeSelectScreen(s.modes, s.daily, { vm.start(it.mode) }, vm::openSettings)
                         is UiState.Studying -> StudyScreen(
-                            s.session, s.choices, vm.debugFlags.showCardOverlay,
+                            s.session, s.choices, s.daily, vm.debugFlags.showCardOverlay,
                             vm::answer, vm::suspendCurrentCard, vm::backToModes,
                         )
                         is UiState.Finished -> FinishedScreen(s.session, vm::backToModes)
                         is UiState.Settings -> SettingsScreen(
-                            s, vm::backToModes, vm::setThemeMode, vm::setSearchQuery, vm::restoreCard,
+                            s, vm::backToModes, vm::setThemeMode, vm::setDailyGoal, vm::setSearchQuery, vm::restoreCard,
                             vm::restoreAllSuspended, vm::restoreAllRemoved, vm::resetAllProgress,
                         )
                         is UiState.Failed -> Text(s.message)

@@ -12,7 +12,7 @@ class StudyEngineTest {
     private val cfg = SchedulerConfig()
     private val card = Card("article:Tisch", GameMode.ARTICLE, "Tisch", null, listOf("der", "die", "das"), "der", "der Tisch", false)
     private fun session() = StudyEngine.start(
-        GameMode.ARTICLE, StudyQueue(listOf(card), QueueStats(0, 0, 1, 9)), emptyMap(), nowMillis = 0, choiceSeed = 1,
+        GameMode.ARTICLE, StudyQueue(listOf(card), QueueStats(0, 0, 1)), emptyMap(), nowMillis = 0, choiceSeed = 1,
     )
     private fun answer(s: StudySession, choice: String, at: Long = 3_000, log: dev.yuji.quiz.debug.StudyLog = NoopStudyLog) =
         StudyEngine.answer(s, choice, at, cfg, GraderConfig(), log)
@@ -51,7 +51,7 @@ class StudyEngineTest {
 
     @Test fun matureCardLeavesTheSessionAfterGoodAnswer() {
         val mature = CardProgress(card.id, phase = CardPhase.REVIEW, intervalDays = 5, dueAtMillis = 0, firstSeenAtMillis = 1)
-        val s0 = StudyEngine.start(GameMode.ARTICLE, StudyQueue(listOf(card), QueueStats(0, 1, 0, 9)), mapOf(card.id to mature), 0, 1)
+        val s0 = StudyEngine.start(GameMode.ARTICLE, StudyQueue(listOf(card), QueueStats(0, 1, 0)), mapOf(card.id to mature), 0, 1)
         val s = StudyEngine.advance(answer(s0, "der", at = 5_000), 6_000)
         assertTrue(s.isFinished)
         assertTrue(s.progressById.getValue(card.id).intervalDays > 5)

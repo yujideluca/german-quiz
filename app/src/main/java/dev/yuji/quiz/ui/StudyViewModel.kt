@@ -11,9 +11,11 @@ import dev.yuji.quiz.content.CardFactory
 import dev.yuji.quiz.data.AssetVocabularySource
 import dev.yuji.quiz.data.FileProgressStore
 import dev.yuji.quiz.data.SharedPreferencesSettingsStore
+import dev.yuji.quiz.data.SharedPreferencesTrainingStore
 import dev.yuji.quiz.data.ThemeMode
 import dev.yuji.quiz.debug.DebugFlags
 import dev.yuji.quiz.domain.CardStatus
+import dev.yuji.quiz.domain.DailyProgress
 import dev.yuji.quiz.domain.GameMode
 import dev.yuji.quiz.domain.ManagedCard
 import dev.yuji.quiz.domain.ManagedCounts
@@ -29,11 +31,12 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
 sealed interface UiState {
-    data class ModeSelect(val modes: List<ModeOverview>) : UiState
-    data class Studying(val session: StudySession, val choices: List<String>) : UiState
+    data class ModeSelect(val modes: List<ModeOverview>, val daily: DailyProgress) : UiState
+    data class Studying(val session: StudySession, val choices: List<String>, val daily: DailyProgress) : UiState
     data class Finished(val session: StudySession) : UiState
     data class Settings(
         val themeMode: ThemeMode,
+        val dailyGoal: Int,
         val counts: ManagedCounts,
         val query: String,
         val results: List<ManagedCard>,
@@ -59,11 +62,12 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
             store = FileProgressStore(File(app.filesDir, "progress.json"), log),
             clock = SystemClock,
             log = log,
+            training = SharedPreferencesTrainingStore(app),
         )
     }.onFailure { android.util.Log.e("Quiz", "failed to initialise", it) }.getOrNull()
 
     private val _state = MutableStateFlow<UiState>(
-        controller?.let { UiState.ModeSelect(it.overview()) } ?: UiState.Failed("Could not load vocabulary")
+        controller?.let { UiState.ModeSelect(it.overview(), it.dailyProgress()) } ?: UiState.Failed("Could not load vocabulary")
     )
     val state: StateFlow<UiState> = _state
 
@@ -100,7 +104,7 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
 
     fun backToModes() = withController { c ->
         advanceJob?.cancel()
-        _state.update { UiState.ModeSelect(c.overview()) }
+        _state.update { UiState.ModeSelect(c.overview(), c.dailyProgress()) }
     }
 
     // ---- settings ---------------------------------------------------------------------------
@@ -115,6 +119,8 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
         _themeMode.value = mode
         _state.update { settingsState(c) }
     }
+
+    fun setDailyGoal(goal: Int) = settingsAction { it.setDailyGoal(goal) }
 
     fun setSearchQuery(query: String) = withController { c ->
         searchQuery = query
@@ -132,12 +138,12 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     private fun settingsState(c: StudyController) =
-        UiState.Settings(_themeMode.value, c.managedCounts(), searchQuery, c.managedCards(searchQuery))
+        UiState.Settings(_themeMode.value, c.dailyProgress().goal, c.managedCounts(), searchQuery, c.managedCards(searchQuery))
 
     // ---- plumbing ---------------------------------------------------------------------------
 
     private fun render(c: StudyController, session: StudySession) = _state.update {
-        if (session.isFinished) UiState.Finished(session) else UiState.Studying(session, c.choices(session))
+        if (session.isFinished) UiState.Finished(session) else UiState.Studying(session, c.choices(session), c.dailyProgress())
     }
 
     private inline fun withController(block: (StudyController) -> Unit) {

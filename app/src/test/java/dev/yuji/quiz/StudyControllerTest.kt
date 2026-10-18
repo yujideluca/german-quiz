@@ -8,7 +8,6 @@ import dev.yuji.quiz.debug.NoopStudyLog
 import dev.yuji.quiz.domain.Clock
 import dev.yuji.quiz.domain.DAY_MILLIS
 import dev.yuji.quiz.domain.GameMode
-import dev.yuji.quiz.domain.QueueLimits
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -21,7 +20,7 @@ class StudyControllerTest {
         listOf(PrepositionEntry("V", "warten", "auf", "A", "Ich warte ___ den Bus.")),
     )
     private fun controller(store: InMemoryProgressStore) =
-        StudyController(deck, store, clock, NoopStudyLog, limits = QueueLimits(maxNewCardsPerDay = 5))
+        StudyController(deck, store, clock, NoopStudyLog)
 
     @Test fun overviewListsEveryModeWithNewCards() {
         val o = controller(InMemoryProgressStore()).overview().associateBy { it.mode }
@@ -63,6 +62,47 @@ class StudyControllerTest {
         }
         now += 2 * DAY_MILLIS
         assertEquals(1, controller(store).overview().first { it.mode == GameMode.PREPOSITION }.stats.reviewsDue)
+    }
+}
+
+class DailyGoalTest {
+    private var now = 100 * DAY_MILLIS + 3_600_000
+    private val deck = CardFactory.buildDeck(
+        listOf(NounEntry("der", "Tisch", "Tische"), NounEntry("die", "Lampe", "Lampen")),
+        listOf(PrepositionEntry("V", "warten", "auf", "A", "Ich warte ___ den Bus.")),
+    )
+    private fun controller(training: dev.yuji.quiz.data.InMemoryTrainingStore) =
+        StudyController(deck, InMemoryProgressStore(), Clock { now }, NoopStudyLog, zone = java.time.ZoneOffset.UTC, training = training)
+
+    @Test fun answersInAnyQuizCountTowardTheSameDailyGoalAndNothingCapsTheQueue() {
+        val c = controller(dev.yuji.quiz.data.InMemoryTrainingStore(dailyGoal = 10))
+        var a = c.startSession(GameMode.ARTICLE)
+        a = c.answer(a, a.currentCard!!.correctChoice)
+        var p = c.startSession(GameMode.PREPOSITION)
+        c.answer(p, p.currentCard!!.correctChoice)
+        assertEquals(dev.yuji.quiz.domain.DailyProgress(2, 10), c.dailyProgress())
+        assertEquals(2, c.overview().first { it.mode == GameMode.ARTICLE }.stats.let { it.newAvailable + it.learningDue } )
+    }
+
+    @Test fun goalReachedKeepsStudyingPossible() {
+        val c = controller(dev.yuji.quiz.data.InMemoryTrainingStore(dailyGoal = 3))
+        var s = c.startSession(GameMode.ARTICLE)
+        repeat(12) { if (s.currentCard != null) { s = c.answer(s, s.currentCard!!.correctChoice); s = c.advance(s) } }
+        assertTrue(c.dailyProgress().reached)
+        assertEquals(4, c.dailyProgress().answered)   // 2 cards x 2 learning steps, past the goal of 3
+    }
+
+    @Test fun tallyResetsOnANewDayAndGoalSnapsToTheSlider() {
+        val t = dev.yuji.quiz.data.InMemoryTrainingStore()
+        val c = controller(t)
+        var s = c.startSession(GameMode.PREPOSITION)
+        c.answer(s, s.currentCard!!.correctChoice)
+        assertEquals(1, c.dailyProgress().answered)
+        now += DAY_MILLIS
+        assertEquals(0, c.dailyProgress().answered)
+        c.setDailyGoal(37); assertEquals(40, c.dailyProgress().goal)
+        c.setDailyGoal(500); assertEquals(100, c.dailyProgress().goal)
+        c.setDailyGoal(1); assertEquals(10, c.dailyProgress().goal)
     }
 }
 

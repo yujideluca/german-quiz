@@ -3,11 +3,10 @@ package dev.yuji.quiz.domain
 import dev.yuji.quiz.debug.LogChannel
 import dev.yuji.quiz.debug.StudyLog
 import dev.yuji.quiz.debug.debug
-import java.time.ZoneId
 
 data class CardWithProgress(val card: Card, val progress: CardProgress)
 
-data class QueueStats(val learningDue: Int, val reviewsDue: Int, val newAvailable: Int, val newBudgetLeft: Int)
+data class QueueStats(val learningDue: Int, val reviewsDue: Int, val newAvailable: Int)
 
 data class StudyQueue(val cards: List<Card>, val stats: QueueStats)
 
@@ -44,13 +43,9 @@ object StudyPipeline {
             .sortedBy { it.progress.dueAtMillis }
             .take(limit)
 
-    /** How many new cards were first seen since [dayStartMillis] (counts against the daily budget). */
-    fun countIntroducedSince(items: List<CardWithProgress>, dayStartMillis: Long) =
-        items.count { (it.progress.firstSeenAtMillis ?: Long.MIN_VALUE) >= dayStartMillis }
-
-    /** Step 4: unseen cards in deck order, capped by the remaining daily budget. */
-    fun selectNewCards(items: List<CardWithProgress>, budget: Int) =
-        items.filter { it.progress.phase == CardPhase.NEW }.take(budget.coerceAtLeast(0))
+    /** Step 4: every unseen card, in deck order. There is no daily cap; the daily goal is only a target. */
+    fun selectNewCards(items: List<CardWithProgress>) =
+        items.filter { it.progress.phase == CardPhase.NEW }
 
     /** Step 5: keep the main list's order and slot one extra item after every [every] main items. */
     fun <T> interleave(main: List<T>, extra: List<T>, every: Int): List<T> {
@@ -71,7 +66,6 @@ object StudyPipeline {
         modeCards: List<Card>,
         progressById: Map<String, CardProgress>,
         nowMillis: Long,
-        zone: ZoneId,
         limits: QueueLimits,
         config: SchedulerConfig,
         log: StudyLog,
@@ -80,15 +74,12 @@ object StudyPipeline {
         val items = excludeUnavailable(all, nowMillis)
         val learning = selectLearningDue(items, nowMillis, config.learnAheadMinutes)
         val reviews = selectReviewsDue(items, nowMillis, limits.maxReviewsPerSession)
-        val introduced = countIntroducedSince(all, startOfDayMillis(nowMillis, zone))
-        val budget = limits.maxNewCardsPerDay - introduced
-        val newCards = selectNewCards(items, budget)
+        val newCards = selectNewCards(items)
         val ordered = learning + interleave(reviews, newCards, limits.reviewsPerNewCard)
-        val stats = QueueStats(learning.size, reviews.size, newCards.size, budget.coerceAtLeast(0))
+        val stats = QueueStats(learning.size, reviews.size, newCards.size)
         log.debug(LogChannel.PIPELINE) {
             "queue built: ${ordered.size} cards (learning=${learning.size}, reviews=${reviews.size}, " +
-                "new=${newCards.size}, introducedToday=$introduced, budgetLeft=${stats.newBudgetLeft}, " +
-                "hidden=${all.size - items.size})"
+                "new=${newCards.size}, hidden=${all.size - items.size})"
         }
         return StudyQueue(ordered.map { it.card }, stats)
     }

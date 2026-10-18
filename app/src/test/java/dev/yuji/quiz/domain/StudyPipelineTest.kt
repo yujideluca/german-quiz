@@ -1,7 +1,6 @@
 package dev.yuji.quiz.domain
 
 import dev.yuji.quiz.debug.NoopStudyLog
-import java.time.ZoneOffset
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -16,19 +15,18 @@ class StudyPipelineTest {
         CardProgress(id, phase = phase, dueAtMillis = due, intervalDays = 3, firstSeenAtMillis = firstSeen)
 
     private fun build(progress: Map<String, CardProgress>, limits: QueueLimits = QueueLimits()) =
-        StudyPipeline.buildQueue(cards, progress, now, ZoneOffset.UTC, limits, cfg, NoopStudyLog)
+        StudyPipeline.buildQueue(cards, progress, now, limits, cfg, NoopStudyLog)
 
-    @Test fun unseenDeckOffersOnlyDailyNewLimit() {
-        val q = build(emptyMap(), QueueLimits(maxNewCardsPerDay = 10))
-        assertEquals(10, q.cards.size)
-        assertEquals(10, q.stats.newAvailable)
+    @Test fun unseenDeckOffersEveryNewCardWithNoDailyCap() {
+        val q = build(emptyMap())
+        assertEquals(30, q.cards.size)
+        assertEquals(30, q.stats.newAvailable)
     }
 
-    @Test fun cardsIntroducedTodayConsumeTheBudget() {
+    @Test fun cardsIntroducedTodayDoNotReduceTheNewCards() {
         val today = now - MINUTE_MILLIS
         val seen = (1..4).associate { "c$it" to progress("c$it", CardPhase.REVIEW, now + DAY_MILLIS, today) }
-        val q = build(seen, QueueLimits(maxNewCardsPerDay = 10))
-        assertEquals(6, q.stats.newAvailable)
+        assertEquals(26, build(seen).stats.newAvailable)
     }
 
     @Test fun dueReviewsAreOverdueFirstAndFutureOnesExcluded() {
@@ -37,8 +35,8 @@ class StudyPipelineTest {
             "c2" to progress("c2", CardPhase.REVIEW, now - 5 * DAY_MILLIS),
             "c3" to progress("c3", CardPhase.REVIEW, now + DAY_MILLIS),
         )
-        val q = build(p, QueueLimits(maxNewCardsPerDay = 0))
-        assertEquals(listOf("c2", "c1"), q.cards.map { it.id })
+        val q = build(p)
+        assertEquals(listOf("c2", "c1"), q.cards.take(2).map { it.id })
     }
 
     @Test fun learningCardsComeFirstAndLearnAheadWindowApplies() {
@@ -47,8 +45,8 @@ class StudyPipelineTest {
             "c2" to progress("c2", CardPhase.LEARNING, now + 5 * MINUTE_MILLIS),
             "c3" to progress("c3", CardPhase.LEARNING, now + 60 * MINUTE_MILLIS), // outside 20 min window
         )
-        val q = build(p, QueueLimits(maxNewCardsPerDay = 0))
-        assertEquals(listOf("c2", "c1"), q.cards.map { it.id })
+        val q = build(p)
+        assertEquals(listOf("c2", "c1"), q.cards.take(2).map { it.id })
     }
 
     @Test fun interleaveSlotsExtrasAfterEveryNMain() {

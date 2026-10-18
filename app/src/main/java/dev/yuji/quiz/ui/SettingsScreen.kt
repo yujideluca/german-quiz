@@ -17,6 +17,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
+import androidx.compose.material3.Slider
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -31,6 +32,9 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
 import dev.yuji.quiz.data.ThemeMode
 import dev.yuji.quiz.domain.CardStatus
+import dev.yuji.quiz.domain.DAILY_GOAL_STEP
+import dev.yuji.quiz.domain.MAX_DAILY_GOAL
+import dev.yuji.quiz.domain.MIN_DAILY_GOAL
 import dev.yuji.quiz.domain.ManagedCard
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -47,6 +51,7 @@ fun SettingsScreen(
     state: UiState.Settings,
     onBack: () -> Unit,
     onTheme: (ThemeMode) -> Unit,
+    onDailyGoal: (Int) -> Unit,
     onQuery: (String) -> Unit,
     onRestoreCard: (String) -> Unit,
     onRestoreSuspended: () -> Unit,
@@ -87,6 +92,16 @@ fun SettingsScreen(
                 Text(label, style = MaterialTheme.typography.bodyLarge)
             }
         }
+
+        HorizontalDivider()
+        Text("Daily goal", style = MaterialTheme.typography.titleMedium)
+        var goal by remember(state.dailyGoal) { mutableStateOf(state.dailyGoal.toFloat()) }
+        Text("${goal.toInt()} questions per day (any quiz)", style = MaterialTheme.typography.bodyLarge)
+        Slider(
+            value = goal, onValueChange = { goal = it }, onValueChangeFinished = { onDailyGoal(goal.toInt()) },
+            valueRange = MIN_DAILY_GOAL.toFloat()..MAX_DAILY_GOAL.toFloat(),
+            steps = (MAX_DAILY_GOAL - MIN_DAILY_GOAL) / DAILY_GOAL_STEP - 1,
+        )
 
         HorizontalDivider()
         Text("Removed questions", style = MaterialTheme.typography.titleMedium)
