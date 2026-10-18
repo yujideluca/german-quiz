@@ -64,6 +64,23 @@ class StudyEngineTest {
         assertEquals(shuffled.choices.toSet(), StudyEngine.choicesFor(s).toSet())
     }
 
+    @Test fun shuffledChoicesDoNotMoveWhileTheAnswerFeedbackIsShowing() {
+        val shuffled = card.copy(shuffleChoices = true, choices = listOf("auf", "an", "über", "bei"), correctChoice = "auf")
+        for (seed in 1L..60L) {
+            val before = session().copy(queue = listOf(shuffled), choiceSeed = seed)
+            val shownBefore = StudyEngine.choicesFor(before)
+            val answered = answer(before, "auf", at = 5_000)
+            assertEquals("seed $seed: buttons moved after tapping", shownBefore, StudyEngine.choicesFor(answered))
+        }
+    }
+
+    @Test fun nextRepetitionMayReshuffleButStaysAPermutation() {
+        val shuffled = card.copy(shuffleChoices = true, choices = listOf("auf", "an", "über", "bei"), correctChoice = "auf")
+        val answered = answer(session().copy(queue = listOf(shuffled)), "auf", at = 5_000)
+        val next = StudyEngine.advance(answered, 6_000)
+        next.currentCard?.let { assertEquals(shuffled.choices.toSet(), StudyEngine.choicesFor(next).toSet()) }
+    }
+
     @Test fun answeringWritesATraceWhenChannelIsEnabled() {
         val log = InMemoryStudyLog(setOf(LogChannel.SESSION))
         answer(session(), "der", log = log)

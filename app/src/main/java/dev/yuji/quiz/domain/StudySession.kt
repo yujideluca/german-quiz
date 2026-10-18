@@ -44,11 +44,15 @@ object StudyEngine {
         choiceSeed: Long,
     ) = StudySession(mode, queue.cards, progressById, nowMillis, choiceSeed)
 
-    /** Choices in presentation order; stable for a given card, seed and repetition count. */
+    /**
+     * Choices in presentation order; stable for a given card, seed and repetition count.
+     * While the answer feedback is showing, the count from *before* the answer is used, because
+     * answering increments the repetitions and would otherwise reshuffle the buttons under the player's finger.
+     */
     fun choicesFor(session: StudySession): List<String> {
         val card = session.currentCard ?: return emptyList()
         if (!card.shuffleChoices) return card.choices
-        val reps = session.progressById[card.id]?.repetitions ?: 0
+        val reps = session.lastAnswer?.before?.repetitions ?: session.progressById[card.id]?.repetitions ?: 0
         val seed = session.choiceSeed xor card.id.hashCode().toLong() xor (reps.toLong() shl 32)
         return card.choices.shuffled(Random(seed))
     }
