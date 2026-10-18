@@ -23,9 +23,8 @@
   "preposition": "auf",
   "case": "A",
   "sentence": "Wir freuen uns ___ den Urlaub.",
-  "alsoValidPrepositions": [
-   "über"
-  ]
+  "alsoValidPrepositions": [],
+  "hint": "looking forward to something in the future"
  },
  {
   "kind": "V",
@@ -33,9 +32,8 @@
   "preposition": "über",
   "case": "A",
   "sentence": "Sie freut sich ___ das Geschenk.",
-  "alsoValidPrepositions": [
-   "auf"
-  ]
+  "alsoValidPrepositions": [],
+  "hint": "being happy about something present or past"
  },
  {
   "kind": "V",
@@ -211,7 +209,8 @@
   "preposition": "für",
   "case": "A",
   "sentence": "Er entschuldigt sich ___ die Verspätung.",
-  "alsoValidPrepositions": []
+  "alsoValidPrepositions": [],
+  "hint": "what you apologise for"
  },
  {
   "kind": "V",
@@ -219,7 +218,8 @@
   "preposition": "bei",
   "case": "D",
   "sentence": "Sie entschuldigt sich ___ ihrem Lehrer.",
-  "alsoValidPrepositions": []
+  "alsoValidPrepositions": [],
+  "hint": "who you apologise to"
  },
  {
   "kind": "V",
@@ -365,7 +365,8 @@
   "preposition": "aus",
   "case": "D",
   "sentence": "Das Team besteht ___ zehn Personen.",
-  "alsoValidPrepositions": []
+  "alsoValidPrepositions": [],
+  "hint": "consist of (what it is made of)"
  },
  {
   "kind": "V",
@@ -373,7 +374,8 @@
   "preposition": "auf",
   "case": "D",
   "sentence": "Er besteht ___ seinem Recht.",
-  "alsoValidPrepositions": []
+  "alsoValidPrepositions": [],
+  "hint": "insist on"
  },
  {
   "kind": "V",
@@ -391,7 +393,8 @@
   "sentence": "Wir sprechen ___ das Problem.",
   "alsoValidPrepositions": [
    "von"
-  ]
+  ],
+  "hint": "talk about a topic"
  },
  {
   "kind": "V",
@@ -399,7 +402,8 @@
   "preposition": "mit",
   "case": "D",
   "sentence": "Ich spreche ___ meinem Chef.",
-  "alsoValidPrepositions": []
+  "alsoValidPrepositions": [],
+  "hint": "talk to a person"
  },
  {
   "kind": "V",
@@ -473,7 +477,8 @@
   "preposition": "für",
   "case": "A",
   "sentence": "Ich halte das ___ eine gute Idee.",
-  "alsoValidPrepositions": []
+  "alsoValidPrepositions": [],
+  "hint": "consider something to be"
  },
  {
   "kind": "V",
@@ -481,7 +486,8 @@
   "preposition": "von",
   "case": "D",
   "sentence": "Was hältst du ___ diesem Plan?",
-  "alsoValidPrepositions": []
+  "alsoValidPrepositions": [],
+  "hint": "think of / have an opinion about"
  },
  {
   "kind": "V",
@@ -677,9 +683,7 @@
   "preposition": "für",
   "case": "A",
   "sentence": "Sie kämpfen ___ mehr Rechte.",
-  "alsoValidPrepositions": [
-   "gegen"
-  ]
+  "alsoValidPrepositions": []
  },
  {
   "kind": "V",

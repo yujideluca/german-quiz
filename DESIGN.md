@@ -139,6 +139,16 @@ resets cards only). Older installs migrate their single stored day count into th
 - Nouns with several equally valid plurals are deliberately **left out** of the plural mode
   (or listed under "also valid"), so the quiz never marks a correct answer wrong.
 
+### Hints for verbs with several prepositions
+
+When the same headword appears with different prepositions (*sich freuen auf / über*,
+*sich entschuldigen für / bei*, *bestehen aus / auf*, *sprechen über / mit*, *halten für / von*) the
+sentence alone can be ambiguous, so each of those rows has a seventh TSV column, `hint`
+(e.g. "looking forward to something in the future"). The app shows it under the headword as
+"Hint: ...". `build_vocab.py` **fails** if a headword with several prepositions has a row without a
+hint, so a new ambiguous pair cannot be added by accident. Because the hint now decides the
+meaning, the rows are no longer each other's "also valid" alternative.
+
 ### Distractors
 
 Wrong options must be plausible but never accidentally correct (`DistractorFactory`):
@@ -149,7 +159,8 @@ Wrong options must be plausible but never accidentally correct (`DistractorFacto
   `-n` is only offered after words ending in `-e`, and `-s` only after vowels, because
   "Tischn" or "Tischs" are obviously fake and would make the answer guessable.
 - **Deterministic:** distractors are seeded from the entry, so a given card always shows the
-  same options, which keeps tests and bug reports reproducible.
+  same options, which keeps tests and bug reports reproducible. The *order* of the buttons is
+  shuffled per repetition but frozen while the answer feedback is on screen.
 
 ## 6. Persistence
 
@@ -178,6 +189,8 @@ Jetpack Compose + Material 3, one `StudyViewModel` exposing a sealed `UiState`
 (`ModeSelect`, `Studying`, `Finished`, `Settings`, `Failed`).
 
 - Answer buttons use large text and a minimum 68 dp height for thumb use.
+- Prepositions show the optional hint (italic, under the headword) and the sentence in a larger
+  headline size.
 - The correct answer turns green and a wrong pick red; the explanation shows under the question.
 - The mode screen opens with a **Today: n / goal** card and progress bar; the study header shows
   the same count.
@@ -213,6 +226,8 @@ Newest first. Add an entry whenever a decision changes the design.
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-10-18 | Optional `hint` per preposition row, mandatory (build-checked) for headwords with several prepositions; sentence font enlarged; `kämpfen für` no longer accepts `gegen` | A sentence like "Wir freuen uns ___ den Urlaub" has two plausible answers without a clue; `gegen` would mean fighting against more rights |
+| 2026-10-18 | Shuffled answer buttons are seeded with the repetition count from *before* the answer while feedback shows | Answering bumped the count, so Prepositions and Plural reshuffled the buttons under the finger and the green answer jumped |
 | 2026-10-18 | Calendar made compact and moved to the top of the home screen; app title removed; separate calendar screen deleted | The streak should be visible at a glance without opening anything |
 | 2026-10-18 | Streak calendar: per-day answer history, month view coloured light yellow -> orange-red by answers, streak = consecutive days with any answer | Visible training habit; colour shows effort, not just attendance |
 | 2026-10-18 | Daily new-card cap (10) removed; replaced by a 10-100 daily-goal slider counting answers across all quizzes | The player should be able to study as much as they like; the goal is a target, not a limit |

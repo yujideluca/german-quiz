@@ -21,4 +21,6 @@ data class PrepositionEntry(
     /** Sentence containing exactly one "___". */
     val sentence: String,
     val alsoValidPrepositions: List<String> = emptyList(),
+    /** Says which meaning is asked when the headword takes several prepositions; shown under the headword. */
+    val hint: String? = null,
 )

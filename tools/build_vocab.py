@@ -42,7 +42,7 @@ def load_nouns():
 def load_prepositions():
     out, errors, seen = [], [], set()
     for n, c in rows(DATA / "prepositions.tsv"):
-        if len(c) not in (5, 6) or c[0] not in KINDS or c[3] not in CASES:
+        if len(c) not in (5, 6, 7) or c[0] not in KINDS or c[3] not in CASES:
             errors.append(f"prepositions.tsv:{n} malformed: {c}"); continue
         if c[4].count("___") != 1:
             errors.append(f"prepositions.tsv:{n} sentence needs exactly one ___: {c[4]}"); continue
@@ -50,9 +50,24 @@ def load_prepositions():
         if key in seen:
             errors.append(f"prepositions.tsv:{n} duplicate {key}"); continue
         seen.add(key)
-        alts = [a.strip() for a in c[5].split(",")] if len(c) == 6 and c[5] else []
-        out.append({"kind": c[0], "headword": c[1], "preposition": c[2], "case": c[3],
-                    "sentence": c[4], "alsoValidPrepositions": alts})
+        alts = [a.strip() for a in c[5].split(",")] if len(c) >= 6 and c[5] else []
+        entry = {"kind": c[0], "headword": c[1], "preposition": c[2], "case": c[3],
+                 "sentence": c[4], "alsoValidPrepositions": alts}
+        if len(c) == 7:
+            if not c[6].strip():
+                errors.append(f"prepositions.tsv:{n} empty hint column"); continue
+            entry["hint"] = c[6].strip()
+        out.append(entry)
+    # The same headword with different prepositions is ambiguous without a hint saying which meaning is asked.
+    by_headword = {}
+    for e in out:
+        by_headword.setdefault((e["kind"], e["headword"]), []).append(e)
+    for (kind, headword), group in by_headword.items():
+        if len({e["preposition"] for e in group}) > 1:
+            for e in group:
+                if "hint" not in e:
+                    errors.append(f"prepositions.tsv: '{headword} {e['preposition']}' needs a hint "
+                                  f"(the headword has several prepositions)")
     return out, errors
 
 

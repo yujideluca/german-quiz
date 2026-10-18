@@ -42,6 +42,24 @@ class ContentTest {
         DistractorFactory.pluralDistractors(n).forEach { assertFalse("${n.singular}: $it", it in accepted) }
     }
 
+    @Test fun everyHeadwordWithSeveralPrepositionsCarriesAHintOnEachCard() {
+        val groups = preps.groupBy { it.kind to it.headword }.filterValues { g -> g.map { it.preposition }.toSet().size > 1 }
+        assertTrue("expected the known ambiguous verbs", groups.keys.map { it.second }.containsAll(listOf("sich freuen", "sprechen", "halten")))
+        groups.values.flatten().forEach { assertFalse("${it.headword} ${it.preposition} lacks a hint", it.hint.isNullOrBlank()) }
+        // the hint reaches the card, and unambiguous verbs stay clean
+        val freuen = preps.first { it.headword == "sich freuen" && it.preposition == "auf" }
+        assertEquals(freuen.hint, CardFactory.prepositionCard(freuen).hint)
+        assertTrue(CardFactory.prepositionCard(freuen).hint!!.contains("future"))
+        assertEquals(null, CardFactory.prepositionCard(preps.first { it.headword == "warten" }).hint)
+    }
+
+    @Test fun hintedVerbsDoNotAcceptTheOtherMeaningAsAlsoValid() {
+        val auf = preps.first { it.headword == "sich freuen" && it.preposition == "auf" }
+        assertTrue(auf.alsoValidPrepositions.isEmpty())
+        val kaempfen = preps.first { it.headword == "kämpfen" && it.preposition == "für" }
+        assertFalse("gegen" in kaempfen.alsoValidPrepositions)
+    }
+
     @Test fun prepositionDistractorsNeverContainValidAnswers() = preps.forEach { p ->
         val d = DistractorFactory.prepositionDistractors(p)
         assertEquals(3, d.size)

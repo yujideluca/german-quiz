@@ -17,6 +17,8 @@ data class Card(
     val explanation: String,
     /** False keeps the canonical order (der/die/das); true shuffles on every presentation. */
     val shuffleChoices: Boolean,
+    /** Optional clue about which meaning or context is asked (e.g. which preposition a verb takes here). */
+    val hint: String? = null,
 ) {
     init {
         require(correctChoice in choices) { "Card $id: correct choice '$correctChoice' not in $choices" }

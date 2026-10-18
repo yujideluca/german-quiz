@@ -27,6 +27,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
 import dev.yuji.quiz.ModeOverview
 import dev.yuji.quiz.domain.ActivityCalendar
@@ -115,7 +116,11 @@ fun StudyScreen(
             }
         }
         Text(card.prompt, style = MaterialTheme.typography.displaySmall)
-        card.context?.let { Text(it, style = MaterialTheme.typography.titleMedium) }
+        card.hint?.let {
+            Text("Hint: $it", style = MaterialTheme.typography.titleMedium, fontStyle = FontStyle.Italic,
+                color = MaterialTheme.colorScheme.primary)
+        }
+        card.context?.let { Text(it, style = MaterialTheme.typography.headlineSmall) }
         choices.forEach { option ->
             val (container, content) = when {
                 answer == null -> MaterialTheme.colorScheme.primary to MaterialTheme.colorScheme.onPrimary

@@ -1,10 +1,11 @@
-# kind|headword|preposition|case|sentence with ___|also-valid prepositions (comma separated, optional)
+# kind|headword|preposition|case|sentence with ___|also-valid prepositions (comma separated, optional)|hint (optional)
+# hint: mandatory when the same headword appears with different prepositions; it tells the player which meaning is asked
 # kind: V = verb + preposition, A = adjective + preposition, N = noun + preposition, E = fixed expression
 # case: A = Akkusativ, D = Dativ (case governed by the preposition in this collocation)
 V|warten|auf|A|Ich warte ___ den Bus.
 V|denken|an|A|Er denkt oft ___ seine Familie.|über
-V|sich freuen|auf|A|Wir freuen uns ___ den Urlaub.|über
-V|sich freuen|über|A|Sie freut sich ___ das Geschenk.|auf
+V|sich freuen|auf|A|Wir freuen uns ___ den Urlaub.||looking forward to something in the future
+V|sich freuen|über|A|Sie freut sich ___ das Geschenk.||being happy about something present or past
 V|sich ärgern|über|A|Ich ärgere mich ___ den Lärm.
 V|sich interessieren|für|A|Er interessiert sich ___ Geschichte.
 V|sich bewerben|um|A|Sie bewirbt sich ___ eine Stelle.
@@ -26,8 +27,8 @@ V|sich schützen|vor|D|Man schützt sich ___ der Sonne.
 V|sich ausruhen|von|D|Ich ruhe mich ___ der Arbeit aus.
 V|sich erholen|von|D|Sie erholt sich ___ der Krankheit.
 V|sich bedanken|für|A|Ich bedanke mich ___ die Einladung.
-V|sich entschuldigen|für|A|Er entschuldigt sich ___ die Verspätung.
-V|sich entschuldigen|bei|D|Sie entschuldigt sich ___ ihrem Lehrer.
+V|sich entschuldigen|für|A|Er entschuldigt sich ___ die Verspätung.||what you apologise for
+V|sich entschuldigen|bei|D|Sie entschuldigt sich ___ ihrem Lehrer.||who you apologise to
 V|sich beteiligen|an|D|Wir beteiligen uns ___ dem Wettbewerb.
 V|sich wenden|an|A|Wenden Sie sich bitte ___ den Kundenservice.
 V|sich erkundigen|nach|D|Ich erkundige mich ___ dem Preis.
@@ -45,11 +46,11 @@ V|sich verabschieden|von|D|Wir verabschieden uns ___ unseren Gästen.
 V|anfangen|mit|D|Wir fangen ___ der Arbeit an.
 V|aufhören|mit|D|Er hört ___ dem Rauchen auf.
 V|teilnehmen|an|D|Sie nimmt ___ dem Kurs teil.
-V|bestehen|aus|D|Das Team besteht ___ zehn Personen.
-V|bestehen|auf|D|Er besteht ___ seinem Recht.
+V|bestehen|aus|D|Das Team besteht ___ zehn Personen.||consist of (what it is made of)
+V|bestehen|auf|D|Er besteht ___ seinem Recht.||insist on
 V|abhängen|von|D|Es hängt ___ dem Wetter ab.
-V|sprechen|über|A|Wir sprechen ___ das Problem.|von
-V|sprechen|mit|D|Ich spreche ___ meinem Chef.
+V|sprechen|über|A|Wir sprechen ___ das Problem.|von|talk about a topic
+V|sprechen|mit|D|Ich spreche ___ meinem Chef.||talk to a person
 V|träumen|von|D|Sie träumt ___ einer Weltreise.
 V|glauben|an|A|Er glaubt ___ seinen Erfolg.
 V|zweifeln|an|D|Ich zweifle ___ seiner Ehrlichkeit.
@@ -58,8 +59,8 @@ V|fragen|nach|D|Sie fragt ___ dem Weg.
 V|suchen|nach|D|Wir suchen ___ einer Lösung.
 V|riechen|nach|D|Es riecht ___ frischem Brot.
 V|schmecken|nach|D|Die Suppe schmeckt ___ Knoblauch.
-V|halten|für|A|Ich halte das ___ eine gute Idee.
-V|halten|von|D|Was hältst du ___ diesem Plan?
+V|halten|für|A|Ich halte das ___ eine gute Idee.||consider something to be
+V|halten|von|D|Was hältst du ___ diesem Plan?||think of / have an opinion about
 V|rechnen|mit|D|Wir rechnen ___ Verspätungen.
 V|achten|auf|A|Bitte achten Sie ___ die Zeit.
 V|aufpassen|auf|A|Sie passt ___ die Kinder auf.
@@ -83,7 +84,7 @@ V|hoffen|auf|A|Wir hoffen ___ besseres Wetter.
 V|sorgen|für|A|Eltern sorgen ___ ihre Kinder.
 V|danken|für|A|Ich danke dir ___ deine Hilfe.
 V|bitten|um|A|Er bittet ___ Hilfe.
-V|kämpfen|für|A|Sie kämpfen ___ mehr Rechte.|gegen
+V|kämpfen|für|A|Sie kämpfen ___ mehr Rechte.
 V|klagen|über|A|Er klagt ___ Rückenschmerzen.
 V|ausgeben|für|A|Wir geben viel Geld ___ Essen aus.
 V|umgehen|mit|D|Er geht gut ___ Kindern um.

@@ -47,6 +47,7 @@ object CardFactory {
             correctChoice = entry.preposition,
             explanation = "${entry.headword} + ${entry.preposition}  ($caseName)",
             shuffleChoices = true,
+            hint = entry.hint,
         )
     }
 
