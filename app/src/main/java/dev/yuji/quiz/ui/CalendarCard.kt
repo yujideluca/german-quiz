@@ -22,6 +22,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import dev.yuji.quiz.domain.ActivityCalendar
 import dev.yuji.quiz.domain.CalendarDay
@@ -42,6 +43,7 @@ fun ActivityCalendarCard(
     onPreviousMonth: () -> Unit,
     onNextMonth: () -> Unit,
     onSettings: () -> Unit,
+    compact: Boolean = false,
 ) {
     Card(Modifier.fillMaxWidth()) {
         Column(Modifier.padding(horizontal = 12.dp, vertical = 6.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
@@ -68,18 +70,18 @@ fun ActivityCalendarCard(
             val cells: List<CalendarDay?> = List(calendar.leadingBlanks) { null } + calendar.days
             cells.chunked(7).forEach { week ->
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(3.dp)) {
-                    week.forEach { day -> DayCell(day, Modifier.weight(1f)) }
+                    week.forEach { day -> DayCell(day, Modifier.weight(1f), if (compact) COMPACT_CELL_HEIGHT else CELL_HEIGHT) }
                     repeat(7 - week.size) { Box(Modifier.weight(1f)) }
                 }
             }
-            Legend()
+            if (!compact) Legend()
         }
     }
 }
 
 @Composable
-private fun DayCell(day: CalendarDay?, modifier: Modifier) {
-    val cell = modifier.height(CELL_HEIGHT)
+private fun DayCell(day: CalendarDay?, modifier: Modifier, height: Dp) {
+    val cell = modifier.height(height)
     if (day == null) {
         Box(cell)
         return
@@ -114,3 +116,4 @@ private fun Legend() {
 }
 
 private val CELL_HEIGHT = 28.dp
+private val COMPACT_CELL_HEIGHT = 20.dp

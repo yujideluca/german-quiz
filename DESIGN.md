@@ -14,6 +14,8 @@ Three study modes over a fixed, curated B2 pool (nothing beyond the words every 
 
 | Mode | Question | Pool |
 |---|---|---|
+| 2026-10-18 | Home screen has a compact form below 720 dp of safe height (smaller calendar cells, no legend, no mode instruction line, tighter padding); screen-fit test added over a table of phone sizes | "Fits without scrolling" must hold on small phones too, and a test now guards it |
+| 2026-10-18 | Home screen compacted so the calendar, daily goal and all three mode cards fit without scrolling: each mode card is a single row (title, instruction and counts on the left, Study button on the right), tighter card padding and spacing | Everything on the home screen should be visible at a glance; the scroll container stays only as a fallback for very small screens |
 | **Der · Die · Das** | Pick the article of a noun | 318 nouns |
 | **Prepositions** | Pick the missing preposition in a sentence (verbs, adjectives, nouns and set expressions with prepositions) | 175 items |
 | **Plural forms** | Pick the plural of a noun | the same 318 nouns |
@@ -218,7 +220,15 @@ was verified on the phone by injecting due times into `progress.json`.
 Every UI change is additionally exercised on a real phone (a Motorola edge 50 fusion over adb)
 and the log is checked for crashes before a change is considered done.
 
-Run: `source ~/dev/env.sh && ./gradlew testDebugUnitTest assembleDebug`
+**Screen-fit test** (`androidTest/.../ui/HomeScreenFitTest`, instrumented): composes the home screen
+in a box of each phone's safe-area size (360x592 up to 448x890 dp, worst case a six-week calendar month)
+and asserts the vertical scroll range is zero, i.e. nothing hides below the fold. It runs on a device or
+emulator because Robolectric has no real fonts and inflates text heights by about a third. Add a row to
+its phone table when a new screen shape matters. `gradle.properties` keeps the APKs installed after the
+run, otherwise AGP would uninstall the app and wipe the phone's progress.
+
+Run: `source ~/dev/env.sh && ./gradlew testDebugUnitTest assembleDebug`;
+screen fit (phone or emulator attached): `./gradlew connectedDebugAndroidTest`
 
 ## 11. Decision log
 

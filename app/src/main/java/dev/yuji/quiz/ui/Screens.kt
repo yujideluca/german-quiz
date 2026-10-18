@@ -1,6 +1,7 @@
 package dev.yuji.quiz.ui
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -51,36 +52,49 @@ fun ModeSelectScreen(
     onPreviousMonth: () -> Unit,
     onNextMonth: () -> Unit,
 ) {
+    BoxWithConstraints(Modifier.fillMaxSize()) {
+    // Short screens drop the optional detail so the whole home screen still fits without scrolling.
+    val compact = maxHeight < COMPACT_HOME_HEIGHT
     Column(
-        Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp),
+        Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(if (compact) 8.dp else 16.dp),
+        verticalArrangement = Arrangement.spacedBy(if (compact) 6.dp else 8.dp),
     ) {
-        ActivityCalendarCard(calendar, onPreviousMonth, onNextMonth, onSettings)
+        ActivityCalendarCard(calendar, onPreviousMonth, onNextMonth, onSettings, compact)
         DailyGoalCard(daily)
         modes.forEach { m ->
             val due = m.stats.learningDue + m.stats.reviewsDue + m.stats.newAvailable
             Card(Modifier.fillMaxWidth()) {
-                Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                    Text(m.mode.title, style = MaterialTheme.typography.titleLarge)
-                    Text(m.mode.instruction, style = MaterialTheme.typography.bodyMedium)
-                    Text(
-                        "New ${m.stats.newAvailable} · Learning ${m.stats.learningDue} · " +
-                            "Review ${m.stats.reviewsDue} · Deck ${m.totalCards}",
-                        style = MaterialTheme.typography.labelLarge,
-                    )
+                Row(
+                    Modifier.padding(start = 16.dp, top = 8.dp, end = 8.dp, bottom = 8.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                ) {
+                    Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                        Text(m.mode.title, style = MaterialTheme.typography.titleMedium)
+                        if (!compact) Text(m.mode.instruction, style = MaterialTheme.typography.bodySmall)
+                        Text(
+                            "New ${m.stats.newAvailable} · Learning ${m.stats.learningDue} · " +
+                                "Review ${m.stats.reviewsDue} · Deck ${m.totalCards}",
+                            style = MaterialTheme.typography.labelMedium,
+                        )
+                    }
                     Button(onClick = { onPick(m) }, enabled = due > 0) {
-                        Text(if (due > 0) "Study ($due)" else "All done for now")
+                        Text(if (due > 0) "Study ($due)" else "Done")
                     }
                 }
             }
         }
     }
+    }
 }
+
+/** Safe-area height below which the home screen switches to its compact form. */
+private val COMPACT_HOME_HEIGHT = 720.dp
 
 @Composable
 private fun DailyGoalCard(daily: DailyProgress) {
     Card(Modifier.fillMaxWidth()) {
-        Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Column(Modifier.padding(horizontal = 16.dp, vertical = 10.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
             Text(
                 if (daily.reached) "Daily goal reached ✓  ${daily.answered} / ${daily.goal}"
                 else "Today: ${daily.answered} / ${daily.goal} questions",
