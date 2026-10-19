@@ -4,13 +4,13 @@ An offline Android app for drilling basic B2 German vocabulary with Anki-style s
 This file explains **how the app is built** and **why** each choice was made. It is a living
 document: see [How this file is maintained](#how-this-file-is-maintained).
 
-Last updated: 2026-10-18
+Last updated: 2026-10-19
 
 ---
 
 ## 1. What the app is
 
-Three study modes over a fixed, curated B2 pool (nothing beyond the words every B2 speaker should know):
+Four study modes over a fixed, curated B2 pool (nothing beyond the words every B2 speaker should know):
 
 | Mode | Question | Pool |
 |---|---|---|
@@ -19,6 +19,7 @@ Three study modes over a fixed, curated B2 pool (nothing beyond the words every 
 | **Der · Die · Das** | Pick the article of a noun | 318 nouns |
 | **Prepositions** | Pick the missing preposition in a sentence (verbs, adjectives, nouns and set expressions with prepositions) | 175 items |
 | **Plural forms** | Pick the plural of a noun | the same 318 nouns |
+| **Präteritum** | Pick the er/sie/es Präteritum of a verb | 136 inseparable verbs (strong, mixed, modal, common weak) |
 
 Each question is multiple choice. Cards come back according to a spaced-repetition scheduler, so
 wrong or slow answers return soon and well-known ones are pushed out to days, weeks and months.
@@ -190,7 +191,7 @@ Wrong options must be plausible but never accidentally correct (`DistractorFacto
 Jetpack Compose + Material 3, one `StudyViewModel` exposing a sealed `UiState`
 (`ModeSelect`, `Studying`, `Finished`, `Settings`, `Failed`).
 
-- Answer buttons use large text and a minimum 68 dp height for thumb use.
+- Answer buttons use large text and a minimum 68 dp height (at the reference phone; scaled with screen height, see the decision log) for thumb use.
 - Prepositions show the optional hint (italic, under the headword) and the sentence in a larger
   headline size.
 - The correct answer turns green and a wrong pick red; the explanation shows under the question.
@@ -222,7 +223,7 @@ and the log is checked for crashes before a change is considered done.
 
 **Screen-fit test** (`androidTest/.../ui/HomeScreenFitTest`, instrumented): composes the home screen
 in a box of each phone's safe-area size (360x592 up to 448x890 dp, worst case a six-week calendar month)
-and asserts the vertical scroll range is zero, i.e. nothing hides below the fold. It runs on a device or
+and, for phones at least 800 dp tall, asserts the vertical scroll range is zero, i.e. nothing hides below the fold (shorter phones may scroll, so text stays readable). It runs on a device or
 emulator because Robolectric has no real fonts and inflates text heights by about a third. Add a row to
 its phone table when a new screen shape matters. `gradle.properties` keeps the APKs installed after the
 run, otherwise AGP would uninstall the app and wipe the phone's progress.
@@ -236,6 +237,8 @@ Newest first. Add an entry whenever a decision changes the design.
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-10-19 | Screens scale with their height (`ui/ScreenScale.kt`): layout (paddings, spacing, calendar cells, answer-button height) = height / 880 dp capped to 0.8-1.2, text = same ratio capped to 1.0-1.15 (text never shrinks below normal); applied to home, question and finished screens, not Settings. Readability beats fitting: shorter phones scroll, and the screen-fit test now only requires a fit from 800 dp of height. Replaces the fixed compact sizes; the compact flag now only drops the legend and mode instruction lines below 820 dp | Elements should follow the phone size instead of two fixed sizes; text must stay readable, so a small phone scrolls rather than shrinking it |
+| 2026-10-19 | Fourth mode, Präteritum (`tools/data/verbs.tsv` -> `verbs.json`, `VerbEntry`, `preteriteCard`); distractors are the regularised weak form (gehte), Partizip II, Präsens, infinitive; separable verbs left out; home screen compact form now below 820 dp with tighter spacing | A fourth card overflowed 5 of 7 phone sizes in the screen-fit test; separable verbs split in the Präteritum (er fing an) and don't fit a single-word choice |
 | 2026-10-18 | Optional `hint` per preposition row, mandatory (build-checked) for headwords with several prepositions; sentence font enlarged; `kämpfen für` no longer accepts `gegen` | A sentence like "Wir freuen uns ___ den Urlaub" has two plausible answers without a clue; `gegen` would mean fighting against more rights |
 | 2026-10-18 | Shuffled answer buttons are seeded with the repetition count from *before* the answer while feedback shows | Answering bumped the count, so Prepositions and Plural reshuffled the buttons under the finger and the green answer jumped |
 | 2026-10-18 | Calendar made compact and moved to the top of the home screen; app title removed; separate calendar screen deleted | The streak should be visible at a glance without opening anything |

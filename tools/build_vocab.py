@@ -71,6 +71,21 @@ def load_prepositions():
     return out, errors
 
 
+def load_verbs():
+    out, errors, seen = [], [], set()
+    for n, c in rows(DATA / "verbs.tsv"):
+        if len(c) != 4 or not all(x.strip() for x in c):
+            errors.append(f"verbs.tsv:{n} malformed: {c}"); continue
+        inf, pret, perfect, pres = (x.strip() for x in c)
+        if not re.fullmatch(r"(hat|ist) \S+", perfect):
+            errors.append(f"verbs.tsv:{n} perfect must be 'hat/ist <participle>': {perfect}"); continue
+        if inf in seen:
+            errors.append(f"verbs.tsv:{n} duplicate verb {inf}"); continue
+        seen.add(inf)
+        out.append({"infinitive": inf, "preterite": pret, "perfect": perfect, "present": pres})
+    return out, errors
+
+
 def _api_get(url):
     """GET JSON, sleeping for Retry-After on HTTP 429 (Wikimedia rate limit)."""
     req = urllib.request.Request(url, headers={"User-Agent": "QuizAppVocabVerifier/1.0 (personal project)"})
@@ -129,15 +144,17 @@ def main():
 
     nouns, e1 = load_nouns()
     preps, e2 = load_prepositions()
-    errors = e1 + e2
+    verbs, e3 = load_verbs()
+    errors = e1 + e2 + e3
     if errors:
         print("\n".join(errors)); sys.exit(1)
 
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "nouns.json").write_text(json.dumps(nouns, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "prepositions.json").write_text(json.dumps(preps, ensure_ascii=False, indent=1), encoding="utf-8")
+    (OUT / "verbs.json").write_text(json.dumps(verbs, ensure_ascii=False, indent=1), encoding="utf-8")
     kinds = {k: sum(p["kind"] == k for p in preps) for k in sorted(KINDS)}
-    print(f"nouns: {len(nouns)} | preposition items: {len(preps)} {kinds} -> {OUT}")
+    print(f"nouns: {len(nouns)} | preposition items: {len(preps)} {kinds} | verbs: {len(verbs)} -> {OUT}")
 
     if a.verify_nouns:
         problems, unchecked = verify_nouns(nouns)

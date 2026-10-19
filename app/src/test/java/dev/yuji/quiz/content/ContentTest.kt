@@ -2,6 +2,7 @@ package dev.yuji.quiz.content
 
 import dev.yuji.quiz.data.parseNouns
 import dev.yuji.quiz.data.parsePrepositions
+import dev.yuji.quiz.data.parseVerbs
 import dev.yuji.quiz.domain.GameMode
 import java.io.File
 import org.junit.Assert.assertEquals
@@ -12,7 +13,8 @@ import org.junit.Test
 class ContentTest {
     private val nouns = parseNouns(File("src/main/assets/vocab/nouns.json").readText())
     private val preps = parsePrepositions(File("src/main/assets/vocab/prepositions.json").readText())
-    private val deck = CardFactory.buildDeck(nouns, preps)
+    private val verbs = parseVerbs(File("src/main/assets/vocab/verbs.json").readText())
+    private val deck = CardFactory.buildDeck(nouns, preps, verbs)
 
     @Test fun poolHasReasonableSize() {
         assertTrue(nouns.size >= 250)
@@ -80,4 +82,31 @@ class ContentTest {
     }
 
     @Test fun everySentenceHasExactlyOneBlank() = preps.forEach { assertEquals(it.sentence, 1, it.sentence.split("___").size - 1) }
+
+    @Test fun preteriteCardsHaveFourDistinctChoicesAndTheRegularisedMistake() = verbs.forEach { v ->
+        val card = CardFactory.preteriteCard(v)
+        assertEquals(card.id, 4, card.choices.size)
+        assertEquals(v.preterite, card.correctChoice)
+        val weak = DistractorFactory.weakPreterite(v.infinitive)
+        if (weak != v.preterite) assertTrue("${v.infinitive}: $weak missing", weak in card.choices)
+    }
+
+    @Test fun preteriteDistractorsAreOtherFormsOfTheSameVerb() = verbs.forEach { v ->
+        val forms = setOf(DistractorFactory.weakPreterite(v.infinitive), v.perfect.substringAfter(' '), v.present, v.infinitive, "ge" + v.perfect.substringAfter(' '))
+        DistractorFactory.preteriteDistractors(v).forEach {
+            assertTrue("${v.infinitive}: $it", it in forms)
+            assertFalse("${v.infinitive}: $it equals the answer", it == v.preterite)
+        }
+    }
+
+    @Test fun weakPreteriteFollowsTheRegularPattern() {
+        assertEquals("gehte", DistractorFactory.weakPreterite("gehen"))
+        assertEquals("findete", DistractorFactory.weakPreterite("finden"))
+        assertEquals("arbeitete", DistractorFactory.weakPreterite("arbeiten"))
+        assertEquals("nehmte", DistractorFactory.weakPreterite("nehmen"))
+        assertEquals("kommte", DistractorFactory.weakPreterite("kommen"))
+        assertEquals("machte", DistractorFactory.weakPreterite("machen"))
+    }
+
+    @Test fun preteritePoolHasReasonableSize() = assertTrue(verbs.size >= 100)
 }

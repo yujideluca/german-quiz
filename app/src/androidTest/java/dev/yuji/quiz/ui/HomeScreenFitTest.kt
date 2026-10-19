@@ -41,6 +41,9 @@ class HomeScreenFitTest(private val phone: Phone) {
     }
 
     companion object {
+        /** Phones at least this tall must show the whole home screen; shorter ones may scroll. */
+        const val MUST_FIT_FROM_HEIGHT_DP = 800
+
         /** Smallest to largest phones in use; heights already exclude system bars. */
         @JvmStatic @Parameters(name = "{0}")
         fun phones(): List<Phone> = listOf(
@@ -81,6 +84,9 @@ class HomeScreenFitTest(private val phone: Phone) {
         }).fetchSemanticsNodes().maxOf {
             it.config[SemanticsProperties.VerticalScrollAxisRange].maxValue()
         }
-        assertEquals("px of home content hidden below the fold on ${phone.name}", 0f, overflow, 0f)
+        // Readable text wins over fitting: only phones tall enough for the normal-size layout must fit.
+        if (phone.heightDp >= MUST_FIT_FROM_HEIGHT_DP) {
+            assertEquals("px of home content hidden below the fold on ${phone.name}", 0f, overflow, 0f)
+        }
     }
 }

@@ -45,13 +45,14 @@ fun ActivityCalendarCard(
     onSettings: () -> Unit,
     compact: Boolean = false,
 ) {
+    val scale = LocalScreenScale.current
     Card(Modifier.fillMaxWidth()) {
-        Column(Modifier.padding(horizontal = 12.dp, vertical = 6.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        Column(Modifier.padding(horizontal = scale.dp(12.dp), vertical = scale.dp(6.dp)), verticalArrangement = Arrangement.spacedBy(scale.dp(4.dp))) {
             Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                 TextButton(onClick = onPreviousMonth) { Text("‹") }
                 Text(
                     "${calendar.month.month.getDisplayName(TextStyle.SHORT, Locale.ENGLISH)} ${calendar.month.year}",
-                    style = MaterialTheme.typography.titleMedium,
+                    style = scale.style(MaterialTheme.typography.titleMedium),
                 )
                 TextButton(onClick = onNextMonth, enabled = calendar.canGoNext) { Text("›") }
                 Box(Modifier.weight(1f))
@@ -60,17 +61,17 @@ fun ActivityCalendarCard(
             Text(
                 "Streak ${calendar.currentStreak} · longest ${calendar.longestStreak} · " +
                     "${calendar.trainedDaysInMonth} ${if (calendar.trainedDaysInMonth == 1) "day" else "days"} this month",
-                style = MaterialTheme.typography.labelMedium,
+                style = scale.style(MaterialTheme.typography.labelMedium),
             )
             Row(Modifier.fillMaxWidth()) {
                 WeekdayLetters.forEach {
-                    Text(it, Modifier.weight(1f), textAlign = TextAlign.Center, style = MaterialTheme.typography.labelSmall)
+                    Text(it, Modifier.weight(1f), textAlign = TextAlign.Center, style = scale.style(MaterialTheme.typography.labelSmall))
                 }
             }
             val cells: List<CalendarDay?> = List(calendar.leadingBlanks) { null } + calendar.days
             cells.chunked(7).forEach { week ->
-                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(3.dp)) {
-                    week.forEach { day -> DayCell(day, Modifier.weight(1f), if (compact) COMPACT_CELL_HEIGHT else CELL_HEIGHT) }
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(scale.dp(3.dp))) {
+                    week.forEach { day -> DayCell(day, Modifier.weight(1f), scale.dp(CELL_HEIGHT)) }
                     repeat(7 - week.size) { Box(Modifier.weight(1f)) }
                 }
             }
@@ -81,12 +82,13 @@ fun ActivityCalendarCard(
 
 @Composable
 private fun DayCell(day: CalendarDay?, modifier: Modifier, height: Dp) {
+    val scale = LocalScreenScale.current
     val cell = modifier.height(height)
     if (day == null) {
         Box(cell)
         return
     }
-    val shape = RoundedCornerShape(6.dp)
+    val shape = RoundedCornerShape(scale.dp(6.dp))
     val trained = day.answered > 0
     val background = if (trained) heat(day.answered)
     else MaterialTheme.colorScheme.surfaceVariant.copy(alpha = if (day.isFuture) 0.35f else 0.8f)
@@ -97,23 +99,23 @@ private fun DayCell(day: CalendarDay?, modifier: Modifier, height: Dp) {
         },
         contentAlignment = Alignment.Center,
     ) {
-        Text("${day.date.dayOfMonth}", color = numberColor, style = MaterialTheme.typography.labelMedium)
+        Text("${day.date.dayOfMonth}", color = numberColor, style = scale.style(MaterialTheme.typography.labelMedium))
     }
 }
 
 @Composable
 private fun Legend() {
+    val scale = LocalScreenScale.current
     Row(Modifier.fillMaxWidth().padding(top = 2.dp), verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-        Text("1", style = MaterialTheme.typography.labelSmall)
+        Text("1", style = scale.style(MaterialTheme.typography.labelSmall))
         Box(
             Modifier.weight(1f).height(6.dp).clip(RoundedCornerShape(3.dp)).background(
                 Brush.horizontalGradient(listOf(heat(1), heat(HEAT_FULL_ANSWERS / 2), heat(HEAT_FULL_ANSWERS)))
             )
         )
-        Text("$HEAT_FULL_ANSWERS+ answers", style = MaterialTheme.typography.labelSmall)
+        Text("$HEAT_FULL_ANSWERS+ answers", style = scale.style(MaterialTheme.typography.labelSmall))
     }
 }
 
 private val CELL_HEIGHT = 28.dp
-private val COMPACT_CELL_HEIGHT = 20.dp

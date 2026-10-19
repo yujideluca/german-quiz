@@ -35,6 +35,30 @@ object DistractorFactory {
         return (ordered + extra).take(count)
     }
 
+    /**
+     * Wrong Präteritum forms a learner might produce. The regularised weak form ("gehte") comes first
+     * because it is the typical mistake; the rest are other forms of the same verb (Partizip II,
+     * Präsens, infinitive, ge-prefixed participle), which are never a valid er/sie/es Präteritum.
+     */
+    fun preteriteDistractors(verb: VerbEntry, count: Int = 3): List<String> {
+        val participle = verb.perfect.substringAfter(' ')
+        val others = listOf(participle, verb.present, verb.infinitive)
+            .filter { it != verb.preterite }.distinct()
+            .shuffled(Random(seedOf("preterite:${verb.infinitive}")))
+        // Fills the gap when forms coincide (telefoniert is both Präsens and Partizip II).
+        val spare = "ge$participle"
+        val weak = weakPreterite(verb.infinitive).takeIf { it != verb.preterite }
+        return (listOfNotNull(weak) + others + spare).distinct().take(count)
+    }
+
+    /** The form a learner would build by treating the verb as regular: gehen -> gehte, finden -> findete. */
+    internal fun weakPreterite(infinitive: String): String {
+        val stem = if (infinitive.endsWith("en")) infinitive.dropLast(2) else infinitive.dropLast(1)
+        val needsE = stem.last() in "td" ||
+            (stem.length > 1 && stem.last() in "mn" && stem[stem.length - 2] != stem.last() && stem[stem.length - 2] !in "aeiouäöülrh")
+        return stem + if (needsE) "ete" else "te"
+    }
+
     /** Adds an umlaut to the last umlaut-able vowel: Haus -> Häus, Hand -> Händ, Baum -> Bäum. */
     internal fun withUmlaut(word: String): String {
         val au = word.lastIndexOf("au")

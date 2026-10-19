@@ -60,7 +60,7 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
     private val controller: StudyController? = runCatching {
         val source = AssetVocabularySource(app)
         StudyController(
-            deck = CardFactory.buildDeck(source.nouns(), source.prepositions()),
+            deck = CardFactory.buildDeck(source.nouns(), source.prepositions(), source.verbs()),
             store = FileProgressStore(File(app.filesDir, "progress.json"), log),
             clock = SystemClock,
             log = log,

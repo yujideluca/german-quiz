@@ -24,3 +24,14 @@ data class PrepositionEntry(
     /** Says which meaning is asked when the headword takes several prepositions; shown under the headword. */
     val hint: String? = null,
 )
+
+@Serializable
+data class VerbEntry(
+    val infinitive: String,
+    /** Präteritum, 3rd person singular (er/sie/es). */
+    val preterite: String,
+    /** Perfekt, 3rd person singular, with auxiliary: "ist gegangen". */
+    val perfect: String,
+    /** Präsens, 3rd person singular. */
+    val present: String,
+)

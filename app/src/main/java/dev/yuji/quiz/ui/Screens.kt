@@ -55,9 +55,10 @@ fun ModeSelectScreen(
     BoxWithConstraints(Modifier.fillMaxSize()) {
     // Short screens drop the optional detail so the whole home screen still fits without scrolling.
     val compact = maxHeight < COMPACT_HOME_HEIGHT
+    ScaledScreen { scale ->
     Column(
-        Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(if (compact) 8.dp else 16.dp),
-        verticalArrangement = Arrangement.spacedBy(if (compact) 6.dp else 8.dp),
+        Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(scale.dp(16.dp)),
+        verticalArrangement = Arrangement.spacedBy(scale.dp(8.dp)),
     ) {
         ActivityCalendarCard(calendar, onPreviousMonth, onNextMonth, onSettings, compact)
         DailyGoalCard(daily)
@@ -65,40 +66,42 @@ fun ModeSelectScreen(
             val due = m.stats.learningDue + m.stats.reviewsDue + m.stats.newAvailable
             Card(Modifier.fillMaxWidth()) {
                 Row(
-                    Modifier.padding(start = 16.dp, top = 8.dp, end = 8.dp, bottom = 8.dp),
+                    Modifier.padding(start = scale.dp(16.dp), top = scale.dp(8.dp), end = scale.dp(8.dp), bottom = scale.dp(8.dp)),
                     verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    horizontalArrangement = Arrangement.spacedBy(scale.dp(8.dp)),
                 ) {
-                    Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                        Text(m.mode.title, style = MaterialTheme.typography.titleMedium)
-                        if (!compact) Text(m.mode.instruction, style = MaterialTheme.typography.bodySmall)
+                    Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(scale.dp(2.dp))) {
+                        Text(m.mode.title, style = scale.style(MaterialTheme.typography.titleMedium))
+                        if (!compact) Text(m.mode.instruction, style = scale.style(MaterialTheme.typography.bodySmall))
                         Text(
                             "New ${m.stats.newAvailable} · Learning ${m.stats.learningDue} · " +
                                 "Review ${m.stats.reviewsDue} · Deck ${m.totalCards}",
-                            style = MaterialTheme.typography.labelMedium,
+                            style = scale.style(MaterialTheme.typography.labelMedium),
                         )
                     }
                     Button(onClick = { onPick(m) }, enabled = due > 0) {
-                        Text(if (due > 0) "Study ($due)" else "Done")
+                        Text(if (due > 0) "Study ($due)" else "Done", style = scale.style(MaterialTheme.typography.labelLarge))
                     }
                 }
             }
         }
     }
     }
+    }
 }
 
 /** Safe-area height below which the home screen switches to its compact form. */
-private val COMPACT_HOME_HEIGHT = 720.dp
+private val COMPACT_HOME_HEIGHT = 820.dp
 
 @Composable
 private fun DailyGoalCard(daily: DailyProgress) {
+    val scale = LocalScreenScale.current
     Card(Modifier.fillMaxWidth()) {
-        Column(Modifier.padding(horizontal = 16.dp, vertical = 10.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+        Column(Modifier.padding(horizontal = scale.dp(16.dp), vertical = scale.dp(10.dp)), verticalArrangement = Arrangement.spacedBy(scale.dp(6.dp))) {
             Text(
                 if (daily.reached) "Daily goal reached ✓  ${daily.answered} / ${daily.goal}"
                 else "Today: ${daily.answered} / ${daily.goal} questions",
-                style = MaterialTheme.typography.titleMedium,
+                style = scale.style(MaterialTheme.typography.titleMedium),
             )
             LinearProgressIndicator(progress = { daily.fraction }, modifier = Modifier.fillMaxWidth())
         }
@@ -117,24 +120,25 @@ fun StudyScreen(
 ) {
     val card = session.currentCard ?: return
     val answer = session.lastAnswer
+    ScaledScreen { scale ->
     Column(
-        Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp),
+        Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(scale.dp(16.dp)),
+        verticalArrangement = Arrangement.spacedBy(scale.dp(12.dp)),
     ) {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically) {
-            Text("${session.mode.title} · ${session.queue.size} left · today ${daily.answered}/${daily.goal}", style = MaterialTheme.typography.labelLarge)
+            Text("${session.mode.title} · ${session.queue.size} left · today ${daily.answered}/${daily.goal}", style = scale.style(MaterialTheme.typography.labelLarge))
             Row(verticalAlignment = Alignment.CenterVertically) {
-                TextButton(onClick = onQuit) { Text("Quit") }
+                TextButton(onClick = onQuit) { Text("Quit", style = scale.style(MaterialTheme.typography.labelLarge)) }
                 CardMenu(enabled = answer == null, onSuspend = onSuspend)
             }
         }
-        Text(card.prompt, style = MaterialTheme.typography.displaySmall)
+        Text(card.prompt, style = scale.style(MaterialTheme.typography.displaySmall))
         card.hint?.let {
-            Text("Hint: $it", style = MaterialTheme.typography.titleMedium, fontStyle = FontStyle.Italic,
+            Text("Hint: $it", style = scale.style(MaterialTheme.typography.titleMedium), fontStyle = FontStyle.Italic,
                 color = MaterialTheme.colorScheme.primary)
         }
-        card.context?.let { Text(it, style = MaterialTheme.typography.headlineSmall) }
+        card.context?.let { Text(it, style = scale.style(MaterialTheme.typography.headlineSmall)) }
         choices.forEach { option ->
             val (container, content) = when {
                 answer == null -> MaterialTheme.colorScheme.primary to MaterialTheme.colorScheme.onPrimary
@@ -149,13 +153,14 @@ fun StudyScreen(
             )
             Button(
                 onClick = { onChoose(option) }, colors = colors, enabled = answer == null,
-                modifier = Modifier.fillMaxWidth().heightIn(min = 68.dp),
-            ) { Text(option, style = MaterialTheme.typography.headlineSmall) }
+                modifier = Modifier.fillMaxWidth().heightIn(min = scale.dp(68.dp)),
+            ) { Text(option, style = scale.style(MaterialTheme.typography.headlineSmall)) }
         }
         if (answer != null) {
-            Text(card.explanation, style = MaterialTheme.typography.bodyLarge)
+            Text(card.explanation, style = scale.style(MaterialTheme.typography.bodyLarge))
             if (showDebug) DebugOverlay(card.id, answer)
         }
+    }
     }
 }
 
@@ -191,14 +196,14 @@ private fun DebugOverlay(cardId: String, a: AnswerRecord) {
 }
 
 @Composable
-fun FinishedScreen(session: StudySession, onBack: () -> Unit) {
+fun FinishedScreen(session: StudySession, onBack: () -> Unit) = ScaledScreen { scale ->
     Column(
-        Modifier.fillMaxSize().padding(16.dp),
-        verticalArrangement = Arrangement.spacedBy(16.dp, Alignment.CenterVertically),
+        Modifier.fillMaxSize().padding(scale.dp(16.dp)),
+        verticalArrangement = Arrangement.spacedBy(scale.dp(16.dp), Alignment.CenterVertically),
     ) {
-        Text("Session complete", style = MaterialTheme.typography.headlineLarge)
+        Text("Session complete", style = scale.style(MaterialTheme.typography.headlineLarge))
         Text("${session.correctCount} correct · ${session.wrongCount} wrong",
-            style = MaterialTheme.typography.titleLarge)
+            style = scale.style(MaterialTheme.typography.titleLarge))
         OutlinedButton(onClick = onBack, modifier = Modifier.fillMaxWidth()) { Text("Back to modes") }
     }
 }

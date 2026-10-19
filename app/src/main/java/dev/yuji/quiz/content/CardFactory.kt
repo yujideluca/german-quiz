@@ -51,9 +51,29 @@ object CardFactory {
         )
     }
 
-    fun buildDeck(nouns: List<NounEntry>, prepositions: List<PrepositionEntry>): Map<GameMode, List<Card>> = mapOf(
+    fun preteriteCard(verb: VerbEntry): Card {
+        val choices = (listOf(verb.preterite) + DistractorFactory.preteriteDistractors(verb))
+            .shuffled(Random(("preterite-order:" + verb.infinitive).hashCode().toLong()))
+        return Card(
+            id = "preterite:${verb.infinitive}",
+            mode = GameMode.PRETERITE,
+            prompt = verb.infinitive,
+            context = "Präteritum: er/sie/es ___",
+            choices = choices,
+            correctChoice = verb.preterite,
+            explanation = "${verb.infinitive}  –  ${verb.preterite}  –  ${verb.perfect}",
+            shuffleChoices = true,
+        )
+    }
+
+    fun buildDeck(
+        nouns: List<NounEntry>,
+        prepositions: List<PrepositionEntry>,
+        verbs: List<VerbEntry> = emptyList(),
+    ): Map<GameMode, List<Card>> = mapOf(
         GameMode.ARTICLE to nouns.map(::articleCard),
         GameMode.PLURAL to nouns.map(::pluralCard),
         GameMode.PREPOSITION to prepositions.map(::prepositionCard),
+        GameMode.PRETERITE to verbs.map(::preteriteCard),
     )
 }
