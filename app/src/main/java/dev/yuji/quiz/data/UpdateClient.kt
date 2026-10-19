@@ -7,13 +7,16 @@ import java.net.HttpURLConnection
 import java.net.URL
 import java.security.MessageDigest
 
-/** Reads the update feed (a public GitHub repo holding only `latest.json` and the newest APK). */
-// raw.githubusercontent.com caches files for 5 minutes; the query strings make each fetch a fresh URL.
+/**
+ * Reads the update feed (a public GitHub repo holding only `latest.json` and the newest APK).
+ * Files come through the GitHub contents API, which is cached for at most 60 s; raw.githubusercontent.com
+ * caches for 5 minutes and ignores query strings, so it would hide a fresh release.
+ */
 class UpdateClient(private val baseUrl: String = FEED_URL) {
 
     /** Returns the manifest, or throws with a human-readable message. */
     fun fetchManifest(): UpdateManifest {
-        val text = open("$baseUrl/latest.json?t=${System.currentTimeMillis()}").use { it.readBytes().decodeToString() }
+        val text = open("$baseUrl/latest.json").use { it.readBytes().decodeToString() }
         return parseUpdateManifest(text) ?: error("The update feed is malformed")
     }
 
@@ -21,7 +24,7 @@ class UpdateClient(private val baseUrl: String = FEED_URL) {
     fun downloadApk(manifest: UpdateManifest, target: File) {
         target.parentFile?.mkdirs()
         val digest = MessageDigest.getInstance("SHA-256")
-        open("$baseUrl/${manifest.apk}?v=${manifest.versionCode}").use { input ->
+        open("$baseUrl/${manifest.apk}").use { input ->
             target.outputStream().use { out ->
                 val buffer = ByteArray(BUFFER_BYTES)
                 while (true) {
@@ -43,12 +46,17 @@ class UpdateClient(private val baseUrl: String = FEED_URL) {
         connectTimeout = TIMEOUT_MILLIS
         readTimeout = TIMEOUT_MILLIS
         useCaches = false
-        if (responseCode != HttpURLConnection.HTTP_OK) error("Update server answered $responseCode")
+        setRequestProperty("Accept", "application/vnd.github.raw+json")
+        when (responseCode) {
+            HttpURLConnection.HTTP_OK -> Unit
+            HttpURLConnection.HTTP_FORBIDDEN -> error("GitHub's hourly request limit was reached; try again later")
+            else -> error("Update server answered $responseCode")
+        }
         inputStream
     }
 
     companion object {
-        const val FEED_URL = "https://raw.githubusercontent.com/yujideluca/german-quiz-releases/main"
+        const val FEED_URL = "https://api.github.com/repos/yujideluca/german-quiz-releases/contents"
         private const val TIMEOUT_MILLIS = 15_000
         private const val BUFFER_BYTES = 64 * 1024
     }
