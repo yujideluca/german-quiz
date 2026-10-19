@@ -225,7 +225,7 @@ private fun UpdateSection(
     onInstall: (dev.yuji.quiz.domain.UpdateManifest) -> Unit,
 ) {
     Text("App updates", style = MaterialTheme.typography.titleMedium)
-    Text("Installed version ${BuildConfig.VERSION_NAME}", style = MaterialTheme.typography.bodyMedium)
+    Text("Installed version ${BuildConfig.VERSION_NAME} · ${BuildConfig.CHANNEL_LABEL} channel", style = MaterialTheme.typography.bodyMedium)
     val status = when (update) {
         UpdateState.Idle -> null
         UpdateState.Checking -> "Checking GitHub…"

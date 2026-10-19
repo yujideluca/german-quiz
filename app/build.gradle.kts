@@ -30,6 +30,25 @@ android {
             keyPassword = props.getProperty("keyPassword")
         }
     } else null
+    // Two release channels, each following its own branch of the public feed repo:
+    // stable (the real app, branch "main") and beta (a separate app next to it, branch "bleeding-edge").
+    flavorDimensions += "channel"
+    productFlavors {
+        create("stable") {
+            dimension = "channel"
+            buildConfigField("String", "UPDATE_REF", "\"main\"")
+            buildConfigField("String", "CHANNEL_LABEL", "\"stable\"")
+            manifestPlaceholders["appLabel"] = "Deutsch B2"
+        }
+        create("beta") {
+            dimension = "channel"
+            applicationIdSuffix = ".beta"
+            versionNameSuffix = "-beta"
+            buildConfigField("String", "UPDATE_REF", "\"bleeding-edge\"")
+            buildConfigField("String", "CHANNEL_LABEL", "\"bleeding edge (test)\"")
+            manifestPlaceholders["appLabel"] = "Deutsch B2 beta"
+        }
+    }
     buildTypes {
         debug { ownSigning?.let { signingConfig = it } }
         release {

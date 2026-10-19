@@ -19,12 +19,14 @@ class UpdateClientTest {
     private lateinit var server: HttpServer
     private var forbidden = false
     private var acceptHeader: String? = null
+    private val queries = mutableListOf<String?>()
     private lateinit var client: UpdateClient
 
     @Before fun start() {
         server = HttpServer.create(InetSocketAddress("127.0.0.1", 0), 0)
         server.createContext("/") { ex ->
             acceptHeader = ex.requestHeaders.getFirst("Accept")
+            queries += ex.requestURI.query
             val body = when {
                 forbidden -> null
                 ex.requestURI.path.endsWith("latest.json") ->
@@ -46,6 +48,19 @@ class UpdateClientTest {
         val m = client.fetchManifest()
         assertEquals(8, m.versionCode)
         assertEquals("application/vnd.github.raw+json", acceptHeader)
+    }
+
+    @Test fun `follows the configured feed branch for the manifest and the apk`() {
+        val beta = UpdateClient("http://127.0.0.1:${server.address.port}", ref = "bleeding-edge")
+        val target = File.createTempFile("update", ".apk")
+        beta.downloadApk(beta.fetchManifest(), target)
+        target.delete()
+        assertEquals(listOf("ref=bleeding-edge", "ref=bleeding-edge"), queries)
+    }
+
+    @Test fun `the default channel is the stable branch`() {
+        client.fetchManifest()
+        assertEquals(listOf("ref=main"), queries)
     }
 
     @Test fun `downloads the apk and keeps it when the checksum matches`() {

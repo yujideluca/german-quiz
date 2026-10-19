@@ -11,12 +11,13 @@ import java.security.MessageDigest
  * Reads the update feed (a public GitHub repo holding only `latest.json` and the newest APK).
  * Files come through the GitHub contents API, which is cached for at most 60 s; raw.githubusercontent.com
  * caches for 5 minutes and ignores query strings, so it would hide a fresh release.
+ * [ref] is the feed branch to follow: "main" for the stable app, "bleeding-edge" for the beta app.
  */
-class UpdateClient(private val baseUrl: String = FEED_URL) {
+class UpdateClient(private val baseUrl: String = FEED_URL, private val ref: String = "main") {
 
     /** Returns the manifest, or throws with a human-readable message. */
     fun fetchManifest(): UpdateManifest {
-        val text = open("$baseUrl/latest.json").use { it.readBytes().decodeToString() }
+        val text = open("$baseUrl/latest.json?ref=$ref").use { it.readBytes().decodeToString() }
         return parseUpdateManifest(text) ?: error("The update feed is malformed")
     }
 
@@ -24,7 +25,7 @@ class UpdateClient(private val baseUrl: String = FEED_URL) {
     fun downloadApk(manifest: UpdateManifest, target: File) {
         target.parentFile?.mkdirs()
         val digest = MessageDigest.getInstance("SHA-256")
-        open("$baseUrl/${manifest.apk}").use { input ->
+        open("$baseUrl/${manifest.apk}?ref=$ref").use { input ->
             target.outputStream().use { out ->
                 val buffer = ByteArray(BUFFER_BYTES)
                 while (true) {

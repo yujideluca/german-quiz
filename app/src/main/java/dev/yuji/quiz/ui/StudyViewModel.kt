@@ -225,7 +225,7 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
 
     // ---- app updates ------------------------------------------------------------------------
 
-    private val updateClient = UpdateClient()
+    private val updateClient = UpdateClient(ref = BuildConfig.UPDATE_REF)
     private val updateFile = File(app.cacheDir, "updates/update.apk")
     private val _update = MutableStateFlow<UpdateState>(UpdateState.Idle)
     val update: StateFlow<UpdateState> = _update
