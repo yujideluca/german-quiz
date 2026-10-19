@@ -11,6 +11,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
@@ -30,6 +31,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
+import dev.yuji.quiz.BuildConfig
 import dev.yuji.quiz.data.ThemeMode
 import dev.yuji.quiz.domain.CardStatus
 import dev.yuji.quiz.domain.DAILY_GOAL_STEP
@@ -57,6 +59,9 @@ fun SettingsScreen(
     onRestoreSuspended: () -> Unit,
     onRestoreRemoved: () -> Unit,
     onResetAll: () -> Unit,
+    update: UpdateState,
+    onCheckUpdate: () -> Unit,
+    onInstallUpdate: (dev.yuji.quiz.domain.UpdateManifest) -> Unit,
 ) {
     var confirm by remember { mutableStateOf<Confirm?>(null) }
     var showRemoved by rememberSaveable { mutableStateOf(false) }
@@ -116,6 +121,9 @@ fun SettingsScreen(
         OutlinedButton(onClick = { confirm = Confirm.ALL_PROGRESS }, modifier = Modifier.fillMaxWidth()) {
             Text("Reset all progress")
         }
+
+        HorizontalDivider()
+        UpdateSection(update, onCheckUpdate, onInstallUpdate)
     }
 
     confirm?.let { action ->
@@ -204,3 +212,34 @@ private fun ManagedCardRow(managed: ManagedCard, onRestore: (String) -> Unit) {
 }
 
 private const val MAX_RESULTS = 40
+
+@Composable
+private fun UpdateSection(
+    update: UpdateState,
+    onCheck: () -> Unit,
+    onInstall: (dev.yuji.quiz.domain.UpdateManifest) -> Unit,
+) {
+    Text("App updates", style = MaterialTheme.typography.titleMedium)
+    Text("Installed version ${BuildConfig.VERSION_NAME}", style = MaterialTheme.typography.bodyMedium)
+    val status = when (update) {
+        UpdateState.Idle -> null
+        UpdateState.Checking -> "Checking GitHub…"
+        UpdateState.UpToDate -> "You have the latest version."
+        is UpdateState.Available -> "Version ${update.manifest.versionName} is available. Your progress is kept."
+        is UpdateState.Downloading -> "Downloading version ${update.manifest.versionName}…"
+        is UpdateState.NeedsPermission ->
+            "Allow this app to install updates in the screen that just opened, then tap Update again."
+        is UpdateState.Failed -> "Update failed: ${update.message}"
+    }
+    status?.let { Text(it, style = MaterialTheme.typography.bodyMedium) }
+    val busy = update is UpdateState.Checking || update is UpdateState.Downloading
+    val pending = (update as? UpdateState.Available)?.manifest ?: (update as? UpdateState.NeedsPermission)?.manifest
+    if (pending != null) {
+        Button(onClick = { onInstall(pending) }, enabled = !busy, modifier = Modifier.fillMaxWidth()) {
+            Text("Update to ${pending.versionName}")
+        }
+    }
+    OutlinedButton(onClick = onCheck, enabled = !busy, modifier = Modifier.fillMaxWidth()) {
+        Text("Check for updates")
+    }
+}

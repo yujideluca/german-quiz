@@ -7,11 +7,13 @@ import dev.yuji.quiz.BuildConfig
 import dev.yuji.quiz.ModeOverview
 import dev.yuji.quiz.StudyController
 import dev.yuji.quiz.android.AndroidStudyLog
+import dev.yuji.quiz.android.ApkInstaller
 import dev.yuji.quiz.content.CardFactory
 import dev.yuji.quiz.data.AssetVocabularySource
 import dev.yuji.quiz.data.FileProgressStore
 import dev.yuji.quiz.data.SharedPreferencesSettingsStore
 import dev.yuji.quiz.data.SharedPreferencesTrainingStore
+import dev.yuji.quiz.data.UpdateClient
 import dev.yuji.quiz.data.ThemeMode
 import dev.yuji.quiz.debug.DebugFlags
 import dev.yuji.quiz.domain.ActivityCalendar
@@ -23,13 +25,17 @@ import dev.yuji.quiz.domain.ManagedCounts
 import dev.yuji.quiz.domain.StudySession
 import dev.yuji.quiz.domain.SuspensionDuration
 import dev.yuji.quiz.domain.SystemClock
+import dev.yuji.quiz.domain.UpdateManifest
+import dev.yuji.quiz.domain.isNewerThan
 import java.io.File
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 sealed interface UiState {
     data class ModeSelect(val modes: List<ModeOverview>, val daily: DailyProgress, val calendar: ActivityCalendar) : UiState
@@ -43,6 +49,17 @@ sealed interface UiState {
         val results: List<ManagedCard>,
     ) : UiState
     data class Failed(val message: String) : UiState
+}
+
+/** Progress of the "update from GitHub" flow, shown in Settings. */
+sealed interface UpdateState {
+    data object Idle : UpdateState
+    data object Checking : UpdateState
+    data object UpToDate : UpdateState
+    data class Available(val manifest: UpdateManifest) : UpdateState
+    data class Downloading(val manifest: UpdateManifest) : UpdateState
+    data class NeedsPermission(val manifest: UpdateManifest) : UpdateState
+    data class Failed(val message: String) : UpdateState
 }
 
 class StudyViewModel(app: Application) : AndroidViewModel(app) {
@@ -157,6 +174,41 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
 
     private fun settingsState(c: StudyController) =
         UiState.Settings(_themeMode.value, c.dailyProgress().goal, c.managedCounts(), searchQuery, c.managedCards(searchQuery))
+
+    // ---- app updates ------------------------------------------------------------------------
+
+    private val updateClient = UpdateClient()
+    private val updateFile = File(app.cacheDir, "updates/update.apk")
+    private val _update = MutableStateFlow<UpdateState>(UpdateState.Idle)
+    val update: StateFlow<UpdateState> = _update
+
+    init { checkForUpdate() }
+
+    fun checkForUpdate() {
+        if (_update.value is UpdateState.Checking || _update.value is UpdateState.Downloading) return
+        _update.value = UpdateState.Checking
+        viewModelScope.launch {
+            _update.value = runCatching { withContext(Dispatchers.IO) { updateClient.fetchManifest() } }.fold(
+                onSuccess = { if (it.isNewerThan(BuildConfig.VERSION_CODE)) UpdateState.Available(it) else UpdateState.UpToDate },
+                onFailure = { UpdateState.Failed(it.message ?: "Could not check for updates") },
+            )
+        }
+    }
+
+    /** Downloads the new APK and opens Android's installer; study progress lives in app data and survives. */
+    fun installUpdate(manifest: UpdateManifest) {
+        _update.value = UpdateState.Downloading(manifest)
+        viewModelScope.launch {
+            val result = runCatching { withContext(Dispatchers.IO) { updateClient.downloadApk(manifest, updateFile) } }
+            _update.value = result.fold(
+                onSuccess = {
+                    if (ApkInstaller.install(getApplication(), updateFile)) UpdateState.Available(manifest)
+                    else UpdateState.NeedsPermission(manifest)
+                },
+                onFailure = { UpdateState.Failed(it.message ?: "Download failed") },
+            )
+        }
+    }
 
     // ---- plumbing ---------------------------------------------------------------------------
 

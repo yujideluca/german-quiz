@@ -14,18 +14,19 @@ Four study modes over a fixed, curated B2 pool (nothing beyond the words every B
 
 | Mode | Question | Pool |
 |---|---|---|
+| 2026-10-19 | In-app update from GitHub: on start and from Settings the app reads `latest.json` in the public repo `yujideluca/german-quiz-releases` (only the newest APK lives there; `tools/publish_apk.sh` builds, writes versionCode/sha256 and pushes). A higher versionCode shows a dialog; Update downloads, checks the SHA-256 and opens Android's installer. Progress survives because the package name and signing key (`~/.android/debug.keystore`) stay the same | The main repo is private, so the feed is a separate public repo with nothing but the APK. Needs the "install unknown apps" permission; Google Play Protect may block the install (see limitations) |
 | 2026-10-18 | Home screen has a compact form below 720 dp of safe height (smaller calendar cells, no legend, no mode instruction line, tighter padding); screen-fit test added over a table of phone sizes | "Fits without scrolling" must hold on small phones too, and a test now guards it |
 | 2026-10-18 | Home screen compacted so the calendar, daily goal and all three mode cards fit without scrolling: each mode card is a single row (title, instruction and counts on the left, Study button on the right), tighter card padding and spacing | Everything on the home screen should be visible at a glance; the scroll container stays only as a fallback for very small screens |
-| **Der · Die · Das** | Pick the article of a noun | 318 nouns |
-| **Prepositions** | Pick the missing preposition in a sentence (verbs, adjectives, nouns and set expressions with prepositions) | 175 items |
-| **Plural forms** | Pick the plural of a noun | the same 318 nouns |
-| **Präteritum** | Pick the er/sie/es Präteritum of a verb | 136 inseparable verbs (strong, mixed, modal, common weak) |
+| **Der · Die · Das** | Pick the article of a noun | 484 nouns |
+| **Prepositions** | Pick the missing preposition in a sentence (verbs, adjectives, nouns and set expressions with prepositions) | 309 items |
+| **Plural forms** | Pick the plural of a noun | the same 484 nouns |
+| **Präteritum** | Pick the er/sie/es Präteritum of a verb | 253 inseparable verbs (strong and mixed first, plus modals and frequent regular verbs) |
 
 Each question is multiple choice. Cards come back according to a spaced-repetition scheduler, so
 wrong or slow answers return soon and well-known ones are pushed out to days, weeks and months.
 
 Target: Android 8.0+ (`minSdk 26`), built with `compileSdk 37` / `targetSdk 36`.
-Package: `dev.yuji.quiz`. Single `app` module, no backend, no network access at runtime.
+Package: `dev.yuji.quiz`. Single `app` module, no backend, no network access except the update check (see the decision log, 2026-10-19).
 
 ## 2. Design goals (from the original brief)
 
@@ -138,7 +139,7 @@ resets cards only). Older installs migrate their single stored day count into th
   writes the JSON the app bundles in `assets/vocab/`. It exits non-zero on any problem, so bad
   data cannot reach the app.
 - `--verify-nouns` cross-checks the gender and plural of every noun against de.wiktionary.org.
-  All 318 nouns were verified with no mismatches.
+  All 484 nouns were verified with no mismatches (the 166 B2 additions were checked the same way; *Ausdruck* was dropped because Wiktionary lists two plurals with different meanings, *Ausdrücke* and *Ausdrucke*, and the second would be an accidentally correct distractor).
 - Nouns with several equally valid plurals are deliberately **left out** of the plural mode
   (or listed under "also valid"), so the quiz never marks a correct answer wrong.
 
@@ -237,6 +238,10 @@ Newest first. Add an entry whenever a decision changes the design.
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-10-19 | Own signing key: debug and release builds are both signed with `~/.android/german-quiz-release.jks` (credentials in `~/.android/german-quiz-signing.properties`, outside the repo; the build falls back to the default debug key if that file is missing). The feed now ships the minified, non-debuggable release APK. Update fetches add a query string (`?t=`, `?v=`) because raw.githubusercontent.com caches for 5 minutes | Same approach as Mihon (own persistent key, release build). Play Protect went from "Harmful app blocked" (debug key, debuggable) to the soft "App scan recommended: hasn't seen this app before". Losing the key means no in-place update, so it must be backed up |
+| 2026-10-19 | In-app update from GitHub: on start and from Settings the app reads `latest.json` in the public repo `yujideluca/german-quiz-releases` (only the newest APK lives there; `tools/publish_apk.sh` builds, writes versionCode and sha256, and pushes). A higher versionCode shows a dialog; Update downloads, checks the SHA-256 and opens Android's installer. Progress survives because package name and signing key (`~/.android/debug.keystore`) stay the same | The main repo is private, so the feed is a separate public repo holding nothing but the APK. Needs the "install unknown apps" permission; Google Play Protect may block the install (see limitations) |
+| 2026-10-19 | Noun pool grown from 318 to 484 and preposition pool from 175 to 309 with B2-exam material: abstract and argumentative nouns, work, health, law, media, environment; verb/adjective/noun + preposition pairs and fixed expressions (auf jeden Fall, in Kauf nehmen, ...). Where a second preposition is also correct in the sentence it is listed as "also valid" | Same principle as the verb pool: content useful for the B2 test; nouns re-verified against Wiktionary |
+| 2026-10-19 | Präteritum pool grown from 136 to 253 verbs: B2-frequent prefixed strong/mixed verbs (be-, er-, ver-, ent-, über-, unter-) and other strong verbs first, plus common regular verbs. Excluded: reflexive-only verbs, verbs ending in -eln/-ern (the regularised distractor builder does not handle them), and verbs with two valid forms or two auxiliaries | The exam rewards the irregular verbs; the excluded ones would make the distractors wrong or the card ambiguous |
 | 2026-10-19 | Screens scale with their height (`ui/ScreenScale.kt`): layout (paddings, spacing, calendar cells, answer-button height) = height / 880 dp capped to 0.8-1.2, text = same ratio capped to 1.0-1.15 (text never shrinks below normal); applied to home, question and finished screens, not Settings. Readability beats fitting: shorter phones scroll, and the screen-fit test now only requires a fit from 800 dp of height. Replaces the fixed compact sizes; the compact flag now only drops the legend and mode instruction lines below 820 dp | Elements should follow the phone size instead of two fixed sizes; text must stay readable, so a small phone scrolls rather than shrinking it |
 | 2026-10-19 | Fourth mode, Präteritum (`tools/data/verbs.tsv` -> `verbs.json`, `VerbEntry`, `preteriteCard`); distractors are the regularised weak form (gehte), Partizip II, Präsens, infinitive; separable verbs left out; home screen compact form now below 820 dp with tighter spacing | A fourth card overflowed 5 of 7 phone sizes in the screen-fit test; separable verbs split in the Präteritum (er fing an) and don't fit a single-word choice |
 | 2026-10-18 | Optional `hint` per preposition row, mandatory (build-checked) for headwords with several prepositions; sentence font enlarged; `kämpfen für` no longer accepts `gegen` | A sentence like "Wir freuen uns ___ den Urlaub" has two plausible answers without a clue; `gegen` would mean fighting against more rights |
@@ -258,6 +263,7 @@ Newest first. Add an entry whenever a decision changes the design.
 
 ## 12. Known limitations and ideas
 
+- Play Protect shows "App scan recommended" for an app it has not seen; the user must pick "Scan app" (or More details) once per new APK. Registering the package in the Android Developer Console (limited distribution account) might remove it; untested. The installer intent also shows an app chooser; `ACTION_INSTALL_PACKAGE` would avoid it.
 - Progress view covers streaks only; no per-card mastery or accuracy history. A day's colour does not record which goal was set that day.
 - The review cap per session (100) still applies; a finished session can simply be restarted.
 - No custom app icon, accessibility pass, or tablet/landscape layout.

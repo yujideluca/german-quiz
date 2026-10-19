@@ -19,6 +19,11 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.TextButton
 import androidx.compose.ui.Modifier
 import dev.yuji.quiz.data.ThemeMode
 import dev.yuji.quiz.ui.FinishedScreen
@@ -27,6 +32,7 @@ import dev.yuji.quiz.ui.SettingsScreen
 import dev.yuji.quiz.ui.StudyScreen
 import dev.yuji.quiz.ui.StudyViewModel
 import dev.yuji.quiz.ui.UiState
+import dev.yuji.quiz.ui.UpdateState
 
 class MainActivity : ComponentActivity() {
     private val vm: StudyViewModel by viewModels()
@@ -51,6 +57,25 @@ class MainActivity : ComponentActivity() {
                 Surface(Modifier.fillMaxSize()) {
                   Box(Modifier.fillMaxSize().safeDrawingPadding()) {
                     val state by vm.state.collectAsState()
+                    val updateState by vm.update.collectAsState()
+                    var dismissedVersion by rememberSaveable { mutableStateOf(0) }
+                    (updateState as? UpdateState.Available)?.manifest
+                        ?.takeIf { state is UiState.ModeSelect && it.versionCode != dismissedVersion }
+                        ?.let { found ->
+                            AlertDialog(
+                                onDismissRequest = { dismissedVersion = found.versionCode },
+                                title = { Text("Update available") },
+                                text = { Text("Version ${found.versionName} is ready on GitHub. Your progress is kept.") },
+                                confirmButton = {
+                                    TextButton(onClick = { dismissedVersion = found.versionCode; vm.installUpdate(found) }) {
+                                        Text("Update")
+                                    }
+                                },
+                                dismissButton = {
+                                    TextButton(onClick = { dismissedVersion = found.versionCode }) { Text("Later") }
+                                },
+                            )
+                        }
                     when (val s = state) {
                         is UiState.ModeSelect -> ModeSelectScreen(
                             s.modes, s.daily, s.calendar, { vm.start(it.mode) }, vm::openSettings,
@@ -64,6 +89,7 @@ class MainActivity : ComponentActivity() {
                         is UiState.Settings -> SettingsScreen(
                             s, vm::backToModes, vm::setThemeMode, vm::setDailyGoal, vm::setSearchQuery, vm::restoreCard,
                             vm::restoreAllSuspended, vm::restoreAllRemoved, vm::resetAllProgress,
+                            updateState, vm::checkForUpdate, vm::installUpdate,
                         )
                         is UiState.Failed -> Text(s.message)
                     }
