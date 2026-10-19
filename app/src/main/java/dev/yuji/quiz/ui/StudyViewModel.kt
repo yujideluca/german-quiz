@@ -30,7 +30,7 @@ import dev.yuji.quiz.domain.StudySession
 import dev.yuji.quiz.domain.SuspensionDuration
 import dev.yuji.quiz.domain.SystemClock
 import dev.yuji.quiz.domain.UpdateManifest
-import dev.yuji.quiz.domain.isNewerThan
+import dev.yuji.quiz.domain.shouldCheckForUpdate
 import java.io.File
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -63,6 +63,7 @@ sealed interface UpdateState {
     data class Available(val manifest: UpdateManifest) : UpdateState
     data class Downloading(val manifest: UpdateManifest) : UpdateState
     data class NeedsPermission(val manifest: UpdateManifest) : UpdateState
+    data class DownloadFailed(val manifest: UpdateManifest, val message: String) : UpdateState
     data class Failed(val message: String) : UpdateState
 }
 
@@ -230,16 +231,26 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
     private val _update = MutableStateFlow<UpdateState>(UpdateState.Idle)
     val update: StateFlow<UpdateState> = _update
 
-    init { checkForUpdate() }
+    private var lastCheckAtMillis: Long? = null
+    private val _promptDismissed = MutableStateFlow(false)
+    /** True after "Later": the popup stays hidden until the app is opened again. */
+    val promptDismissed: StateFlow<Boolean> = _promptDismissed
+
+    /** Called every time the app comes to the foreground: asks the feed (at most every 30 s) and re-arms the popup. */
+    fun onAppOpened() {
+        _promptDismissed.value = false
+        if (shouldCheckForUpdate(System.currentTimeMillis(), lastCheckAtMillis)) checkForUpdate()
+    }
+
+    fun dismissUpdatePrompt() { _promptDismissed.value = true }
 
     fun checkForUpdate() {
         if (_update.value is UpdateState.Checking || _update.value is UpdateState.Downloading) return
-        _update.value = UpdateState.Checking
+        lastCheckAtMillis = System.currentTimeMillis()
+        _update.value = stateWhileChecking(_update.value)
         viewModelScope.launch {
-            _update.value = runCatching { withContext(Dispatchers.IO) { updateClient.fetchManifest() } }.fold(
-                onSuccess = { if (it.isNewerThan(BuildConfig.VERSION_CODE)) UpdateState.Available(it) else UpdateState.UpToDate },
-                onFailure = { UpdateState.Failed(it.message ?: "Could not check for updates") },
-            )
+            val result = runCatching { withContext(Dispatchers.IO) { updateClient.fetchManifest() } }
+            _update.value = stateAfterCheck(_update.value, result, BuildConfig.VERSION_CODE)
         }
     }
 
@@ -253,7 +264,7 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
                     if (ApkInstaller.install(getApplication(), updateFile)) UpdateState.Available(manifest)
                     else UpdateState.NeedsPermission(manifest)
                 },
-                onFailure = { UpdateState.Failed(it.message ?: "Download failed") },
+                onFailure = { UpdateState.DownloadFailed(manifest, it.message ?: "Download failed") },
             )
         }
     }

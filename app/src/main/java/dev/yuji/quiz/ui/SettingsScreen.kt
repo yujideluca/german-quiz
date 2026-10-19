@@ -234,11 +234,13 @@ private fun UpdateSection(
         is UpdateState.Downloading -> "Downloading version ${update.manifest.versionName}…"
         is UpdateState.NeedsPermission ->
             "Allow this app to install updates in the screen that just opened, then tap Update again."
+        is UpdateState.DownloadFailed -> "Download failed: ${update.message}"
         is UpdateState.Failed -> "Update failed: ${update.message}"
     }
     status?.let { Text(it, style = MaterialTheme.typography.bodyMedium) }
     val busy = update is UpdateState.Checking || update is UpdateState.Downloading
     val pending = (update as? UpdateState.Available)?.manifest ?: (update as? UpdateState.NeedsPermission)?.manifest
+        ?: (update as? UpdateState.DownloadFailed)?.manifest
     if (pending != null) {
         Button(onClick = { onInstall(pending) }, enabled = !busy, modifier = Modifier.fillMaxWidth()) {
             Text("Update to ${pending.versionName}")

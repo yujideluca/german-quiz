@@ -24,4 +24,16 @@ class AppUpdateTest {
         assertFalse(m.isNewerThan(3))
         assertFalse(m.isNewerThan(4))
     }
+
+    @Test fun `the first open always checks`() {
+        assertTrue(shouldCheckForUpdate(nowMillis = 1_000, lastCheckMillis = null))
+    }
+
+    @Test fun `reopening within the minimum gap reuses the last result`() {
+        assertFalse(shouldCheckForUpdate(nowMillis = 100_000, lastCheckMillis = 100_000 - UPDATE_CHECK_MIN_GAP_MILLIS + 1))
+    }
+
+    @Test fun `reopening after the minimum gap checks again`() {
+        assertTrue(shouldCheckForUpdate(nowMillis = 100_000, lastCheckMillis = 100_000 - UPDATE_CHECK_MIN_GAP_MILLIS))
+    }
 }

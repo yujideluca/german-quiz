@@ -20,12 +20,7 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.runtime.setValue
-import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.TextButton
 import androidx.compose.ui.Modifier
 import dev.yuji.quiz.data.ThemeMode
 import dev.yuji.quiz.ui.BackupActions
@@ -35,10 +30,18 @@ import dev.yuji.quiz.ui.SettingsScreen
 import dev.yuji.quiz.ui.StudyScreen
 import dev.yuji.quiz.ui.StudyViewModel
 import dev.yuji.quiz.ui.UiState
+import dev.yuji.quiz.ui.UpdatePromptDialog
 import dev.yuji.quiz.ui.UpdateState
+import dev.yuji.quiz.ui.updatePromptFor
 
 class MainActivity : ComponentActivity() {
     private val vm: StudyViewModel by viewModels()
+
+    /** Every time the app comes to the foreground: look for a newer version. */
+    override fun onStart() {
+        super.onStart()
+        vm.onAppOpened()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,24 +71,9 @@ class MainActivity : ComponentActivity() {
                             vm::applyPendingBackup, vm::discardPendingBackup, vm::setBackupNotice,
                         )
                     }
-                    var dismissedVersion by rememberSaveable { mutableStateOf(0) }
-                    (updateState as? UpdateState.Available)?.manifest
-                        ?.takeIf { state is UiState.ModeSelect && it.versionCode != dismissedVersion }
-                        ?.let { found ->
-                            AlertDialog(
-                                onDismissRequest = { dismissedVersion = found.versionCode },
-                                title = { Text("Update available") },
-                                text = { Text("Version ${found.versionName} is ready on GitHub. Your progress is kept.") },
-                                confirmButton = {
-                                    TextButton(onClick = { dismissedVersion = found.versionCode; vm.installUpdate(found) }) {
-                                        Text("Update")
-                                    }
-                                },
-                                dismissButton = {
-                                    TextButton(onClick = { dismissedVersion = found.versionCode }) { Text("Later") }
-                                },
-                            )
-                        }
+                    val promptDismissed by vm.promptDismissed.collectAsState()
+                    updatePromptFor(updateState, promptDismissed, onHomeScreen = state is UiState.ModeSelect)
+                        ?.let { UpdatePromptDialog(it, vm::installUpdate, vm::dismissUpdatePrompt) }
                     // Back returns to the home screen from everywhere else; on home it leaves the app.
                     BackHandler(enabled = state !is UiState.ModeSelect && state !is UiState.Failed) { vm.backToModes() }
                     when (val s = state) {

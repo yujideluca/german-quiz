@@ -18,3 +18,10 @@ fun parseUpdateManifest(text: String): UpdateManifest? =
     runCatching { manifestJson.decodeFromString<UpdateManifest>(text) }.getOrNull()
 
 fun UpdateManifest.isNewerThan(installedVersionCode: Int): Boolean = versionCode > installedVersionCode
+
+/** Minimum time between two automatic update checks, so quickly switching apps does not hammer the feed. */
+const val UPDATE_CHECK_MIN_GAP_MILLIS = 30_000L
+
+/** True when the app was opened and the last check is old enough (or there was none yet). */
+fun shouldCheckForUpdate(nowMillis: Long, lastCheckMillis: Long?, minGapMillis: Long = UPDATE_CHECK_MIN_GAP_MILLIS): Boolean =
+    lastCheckMillis == null || nowMillis - lastCheckMillis >= minGapMillis
