@@ -4,6 +4,7 @@ import android.graphics.Color as AndroidColor
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.SystemBarStyle
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
@@ -85,6 +86,8 @@ class MainActivity : ComponentActivity() {
                                 },
                             )
                         }
+                    // Back returns to the home screen from everywhere else; on home it leaves the app.
+                    BackHandler(enabled = state !is UiState.ModeSelect && state !is UiState.Failed) { vm.backToModes() }
                     when (val s = state) {
                         is UiState.ModeSelect -> ModeSelectScreen(
                             s.modes, s.daily, s.calendar, { vm.start(it.mode) }, vm::openSettings,
