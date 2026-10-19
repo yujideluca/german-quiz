@@ -174,6 +174,8 @@ Wrong options must be plausible but never accidentally correct (`DistractorFacto
 - The theme choice is a separate, tiny settings store.
 - A corrupt progress file is logged on the `STORAGE` channel and treated as empty rather than
   crashing the app.
+- **Backup.** `ProgressBackup` (card states + answer history + daily goal + theme) is exported and imported
+  as a JSON file via Android's document picker; `ProgressStore.replaceAll` applies an import in a single write.
 
 ## 7. Card management (suspend / remove)
 
@@ -238,6 +240,7 @@ Newest first. Add an entry whenever a decision changes the design.
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-10-19 | Progress backup: Settings > Backup exports one JSON file (`ProgressBackup`: format version, card states, answer history, daily goal, theme) and imports it back. Files go through Android's document picker (`CreateDocument` / `OpenDocument`), so the user picks local storage or Google Drive and the app needs no storage permission. Import replaces the current progress after a confirmation that shows the backup's date, card count and study days; entries with a mismatching card id, non-positive history counts and cards no longer in the deck are dropped, a file from a newer format is refused | Moving to a new phone (or reinstalling after a signing change) must not lose progress. Replace, not merge: simpler to explain and no conflict rules. The codec lives in `domain/` and is JVM-tested; the Android part is only the picker in `ui/BackupSection.kt` |
 | 2026-10-19 | Own signing key: debug and release builds are both signed with `~/.android/german-quiz-release.jks` (credentials in `~/.android/german-quiz-signing.properties`, outside the repo; the build falls back to the default debug key if that file is missing). The feed now ships the minified, non-debuggable release APK. Update fetches add a query string (`?t=`, `?v=`) because raw.githubusercontent.com caches for 5 minutes | Same approach as Mihon (own persistent key, release build). Play Protect went from "Harmful app blocked" (debug key, debuggable) to the soft "App scan recommended: hasn't seen this app before". Losing the key means no in-place update, so it must be backed up |
 | 2026-10-19 | In-app update from GitHub: on start and from Settings the app reads `latest.json` in the public repo `yujideluca/german-quiz-releases` (only the newest APK lives there; `tools/publish_apk.sh` builds, writes versionCode and sha256, and pushes). A higher versionCode shows a dialog; Update downloads, checks the SHA-256 and opens Android's installer. Progress survives because package name and signing key (`~/.android/debug.keystore`) stay the same | The main repo is private, so the feed is a separate public repo holding nothing but the APK. Needs the "install unknown apps" permission; Google Play Protect may block the install (see limitations) |
 | 2026-10-19 | Noun pool grown from 318 to 484 and preposition pool from 175 to 309 with B2-exam material: abstract and argumentative nouns, work, health, law, media, environment; verb/adjective/noun + preposition pairs and fixed expressions (auf jeden Fall, in Kauf nehmen, ...). Where a second preposition is also correct in the sentence it is listed as "also valid" | Same principle as the verb pool: content useful for the B2 test; nouns re-verified against Wiktionary |

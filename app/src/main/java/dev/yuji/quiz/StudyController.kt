@@ -8,6 +8,7 @@ import dev.yuji.quiz.debug.StudyLog
 import dev.yuji.quiz.debug.debug
 import dev.yuji.quiz.domain.Card
 import dev.yuji.quiz.domain.Clock
+import dev.yuji.quiz.domain.ProgressBackup
 import dev.yuji.quiz.domain.DailyProgress
 import dev.yuji.quiz.domain.clampDailyGoal
 import dev.yuji.quiz.domain.epochDayOf
@@ -143,6 +144,24 @@ class StudyController(
     private fun persist(progress: dev.yuji.quiz.domain.CardProgress) {
         store.save(progress)
         progressById = progressById + (progress.cardId to progress)
+    }
+
+    fun exportBackup(appVersion: String, themeMode: String?) = ProgressBackup(
+        exportedAtMillis = clock.nowMillis(),
+        appVersion = appVersion,
+        progress = progressById,
+        history = training.history,
+        dailyGoal = training.dailyGoal,
+        themeMode = themeMode,
+    )
+
+    /** Replaces the current progress with the backup's. States for cards no longer in the deck are ignored. */
+    fun importBackup(backup: ProgressBackup) {
+        progressById = backup.progress.filterKeys { it in cardsById }
+        store.replaceAll(progressById)
+        training.history = backup.history
+        training.dailyGoal = backup.dailyGoal
+        log.debug(LogChannel.STORAGE) { "imported backup: ${progressById.size} card states, ${backup.history.size} study days" }
     }
 
     fun resetAllProgress() {

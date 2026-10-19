@@ -20,12 +20,14 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.TextButton
 import androidx.compose.ui.Modifier
 import dev.yuji.quiz.data.ThemeMode
+import dev.yuji.quiz.ui.BackupActions
 import dev.yuji.quiz.ui.FinishedScreen
 import dev.yuji.quiz.ui.ModeSelectScreen
 import dev.yuji.quiz.ui.SettingsScreen
@@ -58,6 +60,13 @@ class MainActivity : ComponentActivity() {
                   Box(Modifier.fillMaxSize().safeDrawingPadding()) {
                     val state by vm.state.collectAsState()
                     val updateState by vm.update.collectAsState()
+                    val backupUi by vm.backup.collectAsState()
+                    val backupActions = remember {
+                        BackupActions(
+                            vm::backupFileName, vm::exportBackupText, vm::readBackup,
+                            vm::applyPendingBackup, vm::discardPendingBackup, vm::setBackupNotice,
+                        )
+                    }
                     var dismissedVersion by rememberSaveable { mutableStateOf(0) }
                     (updateState as? UpdateState.Available)?.manifest
                         ?.takeIf { state is UiState.ModeSelect && it.versionCode != dismissedVersion }
@@ -90,6 +99,7 @@ class MainActivity : ComponentActivity() {
                             s, vm::backToModes, vm::setThemeMode, vm::setDailyGoal, vm::setSearchQuery, vm::restoreCard,
                             vm::restoreAllSuspended, vm::restoreAllRemoved, vm::resetAllProgress,
                             updateState, vm::checkForUpdate, vm::installUpdate,
+                            backupUi, backupActions,
                         )
                         is UiState.Failed -> Text(s.message)
                     }

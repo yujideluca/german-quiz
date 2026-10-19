@@ -7,7 +7,11 @@ import dev.yuji.quiz.data.InMemoryProgressStore
 import dev.yuji.quiz.debug.NoopStudyLog
 import dev.yuji.quiz.domain.Clock
 import dev.yuji.quiz.domain.DAY_MILLIS
+import dev.yuji.quiz.domain.BackupParse
 import dev.yuji.quiz.domain.GameMode
+import dev.yuji.quiz.domain.ProgressBackup
+import dev.yuji.quiz.domain.decodeBackup
+import dev.yuji.quiz.domain.encodeBackup
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -39,6 +43,37 @@ class StudyControllerTest {
         val articleStats = c2.overview().first { it.mode == GameMode.ARTICLE }.stats
         assertEquals(1, articleStats.learningDue)           // seen card is now in learning
         assertEquals(1, articleStats.newAvailable)
+    }
+
+    @Test fun exportedProgressRestoresOnAnotherPhone() {
+        val oldPhone = controller(InMemoryProgressStore())
+        var s = oldPhone.startSession(GameMode.ARTICLE)
+        s = oldPhone.answer(s, s.currentCard!!.correctChoice)
+        oldPhone.setDailyGoal(70)
+        val file = encodeBackup(oldPhone.exportBackup("1.5", "DARK"))
+
+        val newStore = InMemoryProgressStore()
+        val newPhone = controller(newStore)
+        newPhone.importBackup((decodeBackup(file) as BackupParse.Ok).backup)
+
+        assertEquals(oldPhone.overview().map { it.stats }, newPhone.overview().map { it.stats })
+        assertEquals(oldPhone.dailyProgress(), newPhone.dailyProgress())
+        assertEquals(70, newPhone.dailyProgress().goal)
+        assertEquals(1, newStore.loadAll().size)
+    }
+
+    @Test fun importReplacesExistingProgressAndIgnoresUnknownCards() {
+        val store = InMemoryProgressStore()
+        val c = controller(store)
+        var s = c.startSession(GameMode.PLURAL)
+        c.answer(s, s.currentCard!!.correctChoice)               // progress that the import must replace
+        val stranger = dev.yuji.quiz.domain.CardProgress("no-such-card")
+        c.importBackup(ProgressBackup(
+            exportedAtMillis = now, appVersion = "1.5", progress = mapOf("no-such-card" to stranger),
+            history = emptyMap(), dailyGoal = 50,
+        ))
+        assertTrue(store.loadAll().isEmpty())
+        assertEquals(0, c.dailyProgress().answered)
     }
 
     @Test fun resetClearsProgress() {

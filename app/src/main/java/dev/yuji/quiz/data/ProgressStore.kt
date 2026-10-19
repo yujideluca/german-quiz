@@ -14,6 +14,8 @@ interface ProgressStore {
     fun loadAll(): Map<String, CardProgress>
     fun save(progress: CardProgress)
     fun clear()
+    /** Replaces every stored state in one write (used when importing a backup). */
+    fun replaceAll(all: Map<String, CardProgress>)
 }
 
 class InMemoryProgressStore(initial: Map<String, CardProgress> = emptyMap()) : ProgressStore {
@@ -21,6 +23,7 @@ class InMemoryProgressStore(initial: Map<String, CardProgress> = emptyMap()) : P
     override fun loadAll(): Map<String, CardProgress> = map.toMap()
     override fun save(progress: CardProgress) { map[progress.cardId] = progress }
     override fun clear() = map.clear()
+    override fun replaceAll(all: Map<String, CardProgress>) { map.clear(); map.putAll(all) }
 }
 
 /** One JSON file, rewritten atomically (temp file + rename) after every answer. */
@@ -39,6 +42,11 @@ class FileProgressStore(private val file: File, private val log: StudyLog = Noop
     override fun clear() {
         cache = mutableMapOf()
         file.delete()
+    }
+
+    override fun replaceAll(all: Map<String, CardProgress>) {
+        cache = all.toMutableMap()
+        flush()
     }
 
     private fun cache(): MutableMap<String, CardProgress> = cache ?: run {

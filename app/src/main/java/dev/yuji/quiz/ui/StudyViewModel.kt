@@ -17,6 +17,10 @@ import dev.yuji.quiz.data.UpdateClient
 import dev.yuji.quiz.data.ThemeMode
 import dev.yuji.quiz.debug.DebugFlags
 import dev.yuji.quiz.domain.ActivityCalendar
+import dev.yuji.quiz.domain.BackupParse
+import dev.yuji.quiz.domain.ProgressBackup
+import dev.yuji.quiz.domain.decodeBackup
+import dev.yuji.quiz.domain.encodeBackup
 import dev.yuji.quiz.domain.CardStatus
 import dev.yuji.quiz.domain.DailyProgress
 import dev.yuji.quiz.domain.GameMode
@@ -174,6 +178,50 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
 
     private fun settingsState(c: StudyController) =
         UiState.Settings(_themeMode.value, c.dailyProgress().goal, c.managedCounts(), searchQuery, c.managedCards(searchQuery))
+
+    // ---- backup -----------------------------------------------------------------------------
+
+    private var pendingBackup: ProgressBackup? = null
+    private val _backup = MutableStateFlow(BackupUi())
+    val backup: StateFlow<BackupUi> = _backup
+
+    fun backupFileName() = "german-quiz-progress-${java.time.LocalDate.now()}.json"
+
+    fun exportBackupText(): String? = controller?.let {
+        encodeBackup(it.exportBackup(BuildConfig.VERSION_NAME, _themeMode.value.name))
+    }
+
+    /** Parses a chosen file and asks for confirmation before anything is replaced. */
+    fun readBackup(text: String) {
+        when (val parsed = decodeBackup(text)) {
+            is BackupParse.Invalid -> { pendingBackup = null; _backup.value = BackupUi(notice = parsed.reason) }
+            is BackupParse.Ok -> {
+                pendingBackup = parsed.backup
+                _backup.value = BackupUi(pending = BackupSummary(
+                    parsed.backup.progress.size, parsed.backup.history.size, parsed.backup.exportedAtMillis))
+            }
+        }
+    }
+
+    fun applyPendingBackup() = withController { c ->
+        val backup = pendingBackup ?: return@withController
+        pendingBackup = null
+        c.importBackup(backup)
+        backup.themeMode?.let { name -> runCatching { ThemeMode.valueOf(name) }.getOrNull() }?.let {
+            settingsStore.themeMode = it
+            _themeMode.value = it
+        }
+        calendarMonth = null
+        _backup.value = BackupUi(notice = "Progress restored: ${backup.progress.size} cards, ${backup.history.size} study days.")
+        _state.update { settingsState(c) }
+    }
+
+    fun discardPendingBackup() {
+        pendingBackup = null
+        _backup.value = BackupUi()
+    }
+
+    fun setBackupNotice(text: String) { _backup.value = BackupUi(notice = text) }
 
     // ---- app updates ------------------------------------------------------------------------
 

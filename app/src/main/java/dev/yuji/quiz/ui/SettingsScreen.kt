@@ -62,6 +62,8 @@ fun SettingsScreen(
     update: UpdateState,
     onCheckUpdate: () -> Unit,
     onInstallUpdate: (dev.yuji.quiz.domain.UpdateManifest) -> Unit,
+    backup: BackupUi,
+    backupActions: BackupActions,
 ) {
     var confirm by remember { mutableStateOf<Confirm?>(null) }
     var showRemoved by rememberSaveable { mutableStateOf(false) }
@@ -115,6 +117,9 @@ fun SettingsScreen(
         OutlinedButton(onClick = { showRemoved = true }, modifier = Modifier.fillMaxWidth()) {
             Text("Manage suspended and removed questions")
         }
+
+        HorizontalDivider()
+        BackupSection(backup, backupActions)
 
         HorizontalDivider()
         Text("Progress", style = MaterialTheme.typography.titleMedium)
