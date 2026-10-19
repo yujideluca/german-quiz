@@ -1,5 +1,6 @@
 package dev.yuji.quiz.content
 
+import dev.yuji.quiz.data.parseErrorSentences
 import dev.yuji.quiz.data.parseNouns
 import dev.yuji.quiz.data.parsePrepositions
 import dev.yuji.quiz.data.parseVerbs
@@ -14,7 +15,8 @@ class ContentTest {
     private val nouns = parseNouns(File("src/main/assets/vocab/nouns.json").readText())
     private val preps = parsePrepositions(File("src/main/assets/vocab/prepositions.json").readText())
     private val verbs = parseVerbs(File("src/main/assets/vocab/verbs.json").readText())
-    private val deck = CardFactory.buildDeck(nouns, preps, verbs)
+    private val errors = parseErrorSentences(File("src/main/assets/vocab/errors.json").readText())
+    private val deck = CardFactory.buildDeck(nouns, preps, verbs, errors)
 
     @Test fun poolHasReasonableSize() {
         assertTrue(nouns.size >= 250)
@@ -109,4 +111,44 @@ class ContentTest {
     }
 
     @Test fun preteritePoolHasReasonableSize() = assertTrue(verbs.size >= 100)
+
+    @Test fun errorSentencesAreBigEnoughAndCoverBothRegisters() {
+        assertTrue(errors.size >= 100)
+        assertEquals(setOf("Forumsbeitrag", "Formelle E-Mail"), errors.map { it.register }.toSet())
+        assertTrue("every error type should have several sentences", errors.groupBy { it.errorType }.values.all { it.size >= 3 })
+    }
+
+    @Test fun errorCardOffersTheChunksInOrderAndTheWrongChunkIsTheAnswer() {
+        deck.getValue(GameMode.ERROR_SPOT).forEach { card ->
+            val entry = errors.first { "error:${it.id}" == card.id }
+            assertEquals(card.id, entry.segments, card.choices)
+            assertEquals(card.id, entry.segments[entry.errorIndex], card.correctChoice)
+            assertFalse("chunks keep the sentence order", card.shuffleChoices)
+        }
+    }
+
+    @Test fun errorCardExplanationShowsTheCorrectedSentenceRuleAndExpression() {
+        val entry = errors.first { it.id == "F01" }
+        val card = CardFactory.errorCard(entry)
+        assertTrue(card.explanation, card.explanation.startsWith("✓ Meiner Ansicht nach wird Plastik heute viel zu oft benutzt"))
+        assertTrue(card.explanation.contains(entry.rule))
+        assertTrue(card.explanation.contains("Redemittel: " + entry.expression))
+        assertFalse("the corrected sentence must not repeat the wrong chunk", card.explanation.substringBefore("\n").contains(card.correctChoice))
+    }
+
+    @Test fun everyErrorSentenceHasADistinctFixAndExpression() = errors.forEach {
+        assertTrue(it.id, it.fix.isNotBlank() && it.fix != it.segments[it.errorIndex])
+        assertTrue(it.id, it.expression.isNotBlank() && it.rule.isNotBlank())
+        assertTrue(it.id, it.segments.size in 3..5)
+    }
+
+    @Test fun errorModeWaitsForANextTapWhileTheOtherModesAdvanceByThemselves() {
+        assertFalse(GameMode.ERROR_SPOT.autoAdvances)
+        assertTrue(GameMode.entries.filter { it != GameMode.ERROR_SPOT }.all { it.autoAdvances })
+    }
+
+    @Test fun errorDeckIsMixedSoTheFirstSentencesAreNotOneErrorType() {
+        val firstTypes = deck.getValue(GameMode.ERROR_SPOT).take(10).map { c -> errors.first { "error:${it.id}" == c.id }.errorType }
+        assertTrue(firstTypes.toString(), firstTypes.toSet().size >= 4)
+    }
 }

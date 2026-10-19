@@ -82,7 +82,7 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
     private val controller: StudyController? = runCatching {
         val source = AssetVocabularySource(app)
         StudyController(
-            deck = CardFactory.buildDeck(source.nouns(), source.prepositions(), source.verbs()),
+            deck = CardFactory.buildDeck(source.nouns(), source.prepositions(), source.verbs(), source.errorSentences()),
             store = FileProgressStore(File(app.filesDir, "progress.json"), log),
             clock = SystemClock,
             log = log,
@@ -103,7 +103,7 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
         val studying = _state.value as? UiState.Studying ?: return@withController
         val updated = c.answer(studying.session, choice)
         render(c, updated)
-        if (updated.isAwaitingAdvance) scheduleAdvance()
+        if (updated.isAwaitingAdvance && updated.mode.autoAdvances) scheduleAdvance()
     }
 
     /** Suspend for a week / month or remove permanently; the card leaves the running session. */
@@ -122,7 +122,8 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
         }
     }
 
-    private fun next() = withController { c ->
+    /** Moves to the next question; used by the "Next" button of modes that do not advance by themselves. */
+    fun next() = withController { c ->
         (_state.value as? UiState.Studying)?.let { render(c, c.advance(it.session)) }
     }
 

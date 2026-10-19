@@ -35,3 +35,22 @@ data class VerbEntry(
     /** Präsens, 3rd person singular. */
     val present: String,
 )
+
+/** A B2 writing sentence (forum post or formal e-mail) split into tappable chunks, exactly one of which is wrong. */
+@Serializable
+data class ErrorSentenceEntry(
+    /** Stable key, e.g. "F01"; the card id is "error:<id>". */
+    val id: String,
+    /** "Forumsbeitrag" or "Formelle E-Mail". */
+    val register: String,
+    /** Human-readable error category, e.g. "Preposition and case". */
+    val errorType: String,
+    val segments: List<String>,
+    /** Index in [segments] of the chunk that contains the error. */
+    val errorIndex: Int,
+    /** What the wrong chunk should read instead. */
+    val fix: String,
+    val rule: String,
+    /** The Redemittel or fixed phrase the sentence practises. */
+    val expression: String,
+)

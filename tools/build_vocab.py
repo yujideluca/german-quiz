@@ -17,6 +17,21 @@ OUT = ROOT / "app/src/main/assets/vocab"
 ARTICLES = {"der", "die", "das"}
 KINDS = {"V", "A", "N", "E"}
 CASES = {"A", "D"}
+REGISTERS = {"F": "Forumsbeitrag", "M": "Formelle E-Mail"}
+ERROR_TYPES = {
+    "PASSIV": "Passive: werden, not sein",
+    "VERBSTELLUNG": "Word order: verb position",
+    "DEKLINATION": "Article / adjective ending",
+    "PRAEPOSITION": "Preposition and case",
+    "REKTION": "Verb or noun + preposition / case",
+    "ANREDE": "Sie vs. du (formal register)",
+    "SCHREIBUNG": "Capitalisation and spelling",
+    "PLURAL": "Plural and gender",
+    "WORTWAHL": "Word choice / collocation",
+    "KONNEKTOR": "Connector",
+    "INFINITIV": "Infinitive with zu / um … zu",
+    "KONJUGATION": "Verb form and agreement",
+}
 
 
 def rows(path):
@@ -86,6 +101,40 @@ def load_verbs():
     return out, errors
 
 
+def load_errors():
+    """Sentences with one wrong chunk to tap. Chunks are separated by ' / '; the wrong one is wrapped in {{ }}."""
+    out, errors, seen = [], [], set()
+    for n, c in rows(DATA / "errors.tsv"):
+        where = f"errors.tsv:{n}"
+        if len(c) != 7 or not all(x.strip() for x in c):
+            errors.append(f"{where} needs 7 non-empty columns, got {len(c)}: {c[:1]}"); continue
+        id_, register, kind, sentence, fix, rule, expression = (x.strip() for x in c)
+        if id_ in seen:
+            errors.append(f"{where} duplicate id {id_}"); continue
+        seen.add(id_)
+        if register not in REGISTERS:
+            errors.append(f"{where} unknown register {register}"); continue
+        if kind not in ERROR_TYPES:
+            errors.append(f"{where} unknown type {kind}"); continue
+        raw = [x.strip() for x in sentence.split(" / ")]
+        wrong = [i for i, chunk in enumerate(raw) if "{{" in chunk or "}}" in chunk]
+        if len(wrong) != 1 or not re.fullmatch(r"\{\{[^{}]+\}\}", raw[wrong[0]]):
+            errors.append(f"{where} exactly one whole chunk must be wrapped in {{{{ }}}}: {sentence}"); continue
+        chunks = [chunk[2:-2].strip() if i == wrong[0] else chunk for i, chunk in enumerate(raw)]
+        if len(chunks) < 3 or any(not chunk for chunk in chunks):
+            errors.append(f"{where} needs at least 3 non-empty chunks"); continue
+        if len(set(chunks)) != len(chunks):
+            errors.append(f"{where} duplicate chunk text (the player could not tell them apart): {chunks}"); continue
+        if fix == chunks[wrong[0]]:
+            errors.append(f"{where} fix equals the wrong chunk"); continue
+        if fix in chunks:
+            errors.append(f"{where} fix text appears as another chunk (answer would be ambiguous): {fix}"); continue
+        out.append({"id": id_, "register": REGISTERS[register], "errorType": ERROR_TYPES[kind],
+                    "segments": chunks, "errorIndex": wrong[0], "fix": fix, "rule": rule,
+                    "expression": expression})
+    return out, errors
+
+
 def _api_get(url):
     """GET JSON, sleeping for Retry-After on HTTP 429 (Wikimedia rate limit)."""
     req = urllib.request.Request(url, headers={"User-Agent": "QuizAppVocabVerifier/1.0 (personal project)"})
@@ -145,7 +194,8 @@ def main():
     nouns, e1 = load_nouns()
     preps, e2 = load_prepositions()
     verbs, e3 = load_verbs()
-    errors = e1 + e2 + e3
+    sentences, e4 = load_errors()
+    errors = e1 + e2 + e3 + e4
     if errors:
         print("\n".join(errors)); sys.exit(1)
 
@@ -153,8 +203,9 @@ def main():
     (OUT / "nouns.json").write_text(json.dumps(nouns, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "prepositions.json").write_text(json.dumps(preps, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "verbs.json").write_text(json.dumps(verbs, ensure_ascii=False, indent=1), encoding="utf-8")
+    (OUT / "errors.json").write_text(json.dumps(sentences, ensure_ascii=False, indent=1), encoding="utf-8")
     kinds = {k: sum(p["kind"] == k for p in preps) for k in sorted(KINDS)}
-    print(f"nouns: {len(nouns)} | preposition items: {len(preps)} {kinds} | verbs: {len(verbs)} -> {OUT}")
+    print(f"nouns: {len(nouns)} | preposition items: {len(preps)} {kinds} | verbs: {len(verbs)} | error sentences: {len(sentences)} -> {OUT}")
 
     if a.verify_nouns:
         problems, unchecked = verify_nouns(nouns)

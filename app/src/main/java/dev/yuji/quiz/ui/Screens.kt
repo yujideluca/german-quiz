@@ -1,6 +1,9 @@
 package dev.yuji.quiz.ui
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -18,6 +21,7 @@ import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -30,6 +34,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
+import dev.yuji.quiz.domain.Card as StudyCard
+import dev.yuji.quiz.domain.GameMode
 import dev.yuji.quiz.ModeOverview
 import dev.yuji.quiz.domain.ActivityCalendar
 import dev.yuji.quiz.domain.AnswerRecord
@@ -91,7 +97,7 @@ fun ModeSelectScreen(
 }
 
 /** Safe-area height below which the home screen switches to its compact form. */
-private val COMPACT_HOME_HEIGHT = 820.dp
+private val COMPACT_HOME_HEIGHT = 900.dp
 
 @Composable
 private fun DailyGoalCard(daily: DailyProgress) {
@@ -117,6 +123,7 @@ fun StudyScreen(
     onChoose: (String) -> Unit,
     onSuspend: (SuspensionDuration) -> Unit,
     onQuit: () -> Unit,
+    onNext: () -> Unit,
 ) {
     val card = session.currentCard ?: return
     val answer = session.lastAnswer
@@ -133,6 +140,9 @@ fun StudyScreen(
                 CardMenu(enabled = answer == null, onSuspend = onSuspend)
             }
         }
+        if (card.mode == GameMode.ERROR_SPOT) {
+            ErrorSpotBody(card, choices, answer?.chosen, onChoose)
+        } else {
         Text(card.prompt, style = scale.style(MaterialTheme.typography.displaySmall))
         card.hint?.let {
             Text("Hint: $it", style = scale.style(MaterialTheme.typography.titleMedium), fontStyle = FontStyle.Italic,
@@ -156,11 +166,51 @@ fun StudyScreen(
                 modifier = Modifier.fillMaxWidth().heightIn(min = scale.dp(68.dp)),
             ) { Text(option, style = scale.style(MaterialTheme.typography.headlineSmall)) }
         }
+        }
         if (answer != null) {
             Text(card.explanation, style = scale.style(MaterialTheme.typography.bodyLarge))
+            if (!card.mode.autoAdvances) {
+                Button(onClick = onNext, modifier = Modifier.fillMaxWidth().heightIn(min = scale.dp(56.dp))) {
+                    Text("Next", style = scale.style(MaterialTheme.typography.titleLarge))
+                }
+            }
             if (showDebug) DebugOverlay(card.id, answer)
         }
     }
+    }
+}
+
+/**
+ * "Fehler finden": the sentence is laid out as tappable chunks. After answering, the wrong chunk is green
+ * (the right answer) and a wrong tap is red, the same colours the multiple-choice buttons use.
+ */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun ErrorSpotBody(card: StudyCard, chunks: List<String>, chosen: String?, onChoose: (String) -> Unit) {
+    val scale = LocalScreenScale.current
+    Text(card.prompt, style = scale.style(MaterialTheme.typography.headlineMedium))
+    Text("Tap the part that is wrong", style = scale.style(MaterialTheme.typography.titleMedium), fontStyle = FontStyle.Italic,
+        color = MaterialTheme.colorScheme.primary)
+    FlowRow(
+        horizontalArrangement = Arrangement.spacedBy(scale.dp(8.dp)),
+        verticalArrangement = Arrangement.spacedBy(scale.dp(8.dp)),
+    ) {
+        chunks.forEach { chunk ->
+            val (container, content) = when {
+                chosen == null -> MaterialTheme.colorScheme.surfaceVariant to MaterialTheme.colorScheme.onSurfaceVariant
+                chunk == card.correctChoice -> CorrectGreen to Color.White
+                chunk == chosen -> MaterialTheme.colorScheme.error to MaterialTheme.colorScheme.onError
+                else -> MaterialTheme.colorScheme.surface to MaterialTheme.colorScheme.onSurfaceVariant
+            }
+            Surface(
+                onClick = { onChoose(chunk) }, enabled = chosen == null,
+                color = container, contentColor = content, shape = MaterialTheme.shapes.medium,
+                border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
+            ) {
+                Text(chunk, style = scale.style(MaterialTheme.typography.titleLarge),
+                    modifier = Modifier.padding(horizontal = scale.dp(12.dp), vertical = scale.dp(10.dp)))
+            }
+        }
     }
 }
 

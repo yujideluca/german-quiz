@@ -10,7 +10,7 @@ Last updated: 2026-10-19
 
 ## 1. What the app is
 
-Four study modes over a fixed, curated B2 pool (nothing beyond the words every B2 speaker should know):
+Five study modes over a fixed, curated B2 pool (nothing beyond what every B2 speaker should know):
 
 | Mode | Question | Pool |
 |---|---|---|
@@ -18,8 +18,9 @@ Four study modes over a fixed, curated B2 pool (nothing beyond the words every B
 | **Prepositions** | Pick the missing preposition in a sentence (verbs, adjectives, nouns and set expressions with prepositions) | 309 items |
 | **Plural forms** | Pick the plural of a noun | the same 484 nouns |
 | **Präteritum** | Pick the er/sie/es Präteritum of a verb | 253 inseparable verbs (strong and mixed first, plus modals and frequent regular verbs) |
+| **Fehler finden** | Tap the one wrong part of a B2 writing sentence (forum post or formal e-mail) | 121 sentences, 12 error types |
 
-Each question is multiple choice. Cards come back according to a spaced-repetition scheduler, so
+Each question is multiple choice (in Fehler finden the "choices" are the sentence's chunks). Cards come back according to a spaced-repetition scheduler, so
 wrong or slow answers return soon and well-known ones are pushed out to days, weeks and months.
 
 Target: Android 8.0+ (`minSdk 26`), built with `compileSdk 37` / `targetSdk 36`.
@@ -186,6 +187,27 @@ Wrong options must be plausible but never accidentally correct (`DistractorFacto
 - The ⋮ button is disabled during the half-second answer feedback, so a card cannot be
   suspended mid-transition.
 
+### Fehler finden (error spotting)
+
+- Source: `tools/data/errors.tsv`, one row per sentence: `id|register|type|sentence|fix|rule|expression`.
+  The sentence is written as 3-5 chunks separated by ` / `; the wrong chunk is wrapped in `{{ }}`.
+  `build_vocab.py` fails unless exactly one whole chunk is marked, chunks are distinct, the fix differs
+  from the wrong chunk and is not another chunk, and register and type are known.
+- Every sentence practises a Redemittel, Nomen-Verb-Verbindung or fixed phrase from Giovanni's own lists
+  (`expression` column: *Es stellt sich die Frage, ob …*, *Maßnahmen ergreifen*, *Bezug nehmen auf*, …) and
+  contains **one** error of a kind Giovanni actually made in the corrected B2 mock exams and class texts of
+  Oct 2026. Error types and sentence counts: verb position 16, word choice / collocation 16, verb or noun +
+  preposition 15, article / adjective ending 13, preposition and case 13, passive (werden, not sein) 9,
+  capitalisation / spelling 9, plural and gender 9, Sie vs. du 7, connectors 6, verb form 5, zu-infinitive 3.
+- **Correctness checks.** Every corrected sentence must pass `tools/check_errors_languagetool.py` (LanguageTool, PICKY level) with no
+  warning, and no warning may fall on a chunk other than the marked one. LanguageTool only recognises about a quarter of the planted errors,
+  so that the marked chunk is really wrong, and the only wrong one, is checked by hand sentence by sentence. Rule of thumb used: an error
+  counts only if a native speaker would not accept it in careful writing (so sein-Passiv sentences carry a process cue such as
+  "jede Woche", and constructions that are merely colloquial or possible in speech, like *Bitte teilen Sie mir mit, falls …*, were removed).
+- It reuses the normal `Card`: `choices` = the chunks in sentence order (`shuffleChoices = false`),
+  `correctChoice` = the wrong chunk, `explanation` = the corrected sentence, the rule and the expression.
+  Grading, scheduling and persistence are unchanged.
+
 ## 8. UI
 
 Jetpack Compose + Material 3, one `StudyViewModel` exposing a sealed `UiState`
@@ -195,9 +217,11 @@ Jetpack Compose + Material 3, one `StudyViewModel` exposing a sealed `UiState`
 - Prepositions show the optional hint (italic, under the headword) and the sentence in a larger
   headline size.
 - The correct answer turns green and a wrong pick red; the explanation shows under the question.
+- Fehler finden lays the sentence out as tappable chunks (`ErrorSpotBody`, a `FlowRow`); after the answer the wrong
+  chunk is green, a wrong tap red.
 - The mode screen opens with a **Today: n / goal** card and progress bar; the study header shows
   the same count.
-- The next question appears automatically **0.5 s** after an answer (no "Next" button).
+- The next question appears automatically **0.5 s** after an answer (no "Next" button), except in Fehler finden (`GameMode.autoAdvances = false`): its explanation is a sentence plus a rule, so the player reads it and taps **Next**.
 - Theme: system default / light / night, remembered, with status and navigation bars following
   it (edge-to-edge).
 - "Reset all progress" lives in Settings behind a confirmation dialog.
@@ -237,6 +261,7 @@ Newest first. Add an entry whenever a decision changes the design.
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-10-19 | Fifth mode, **Fehler finden** (`GameMode.ERROR_SPOT`, `tools/data/errors.tsv` -> `errors.json`, `ErrorSentenceEntry`, `CardFactory.errorCard`): 121 forum-post and formal-e-mail sentences, each with one wrong chunk to tap. Chunks are 1-5 words, so the tap target is a phrase, not a single word. Error types were taken from Giovanni's corrected writing (passive with sein, verb position, adjective endings, preposition + case, verb + preposition, du/Sie, capitalisation, plural/gender, collocations such as *Maßnahmen machen*) rather than from a generic list. Version 2.0 (11) | Giovanni's mistakes repeat in the same few patterns, and spotting them in a finished sentence trains the self-correction the Schreiben exam needs. Reusing the multiple-choice `Card` kept the scheduler, grader and backup untouched; only the screen differs. The mode does not auto-advance (a 0.5 s flash is too short to read a rule; a **Next** button replaces it), its new cards are shuffled once with a fixed seed so they do not arrive grouped by error type, and a fifth mode card overflowed the home screen on a 2400 px phone, so the compact home form now starts below 900 dp instead of 820 dp (instruction lines and calendar legend drop out) |
 | 2026-10-19 | The update check runs **every time the app comes to the foreground** (`MainActivity.onStart` -> `StudyViewModel.onAppOpened`), at most once per 30 s (`shouldCheckForUpdate`), instead of only when the process is created. A newer version opens a popup on the home screen (never during a study session): Update downloads right away and the popup turns into "Updating…" with a progress bar until Android's installer opens; "Later" hides it only until the next open; a failed download offers "Try again"; the missing install permission has its own step. A known update stays on screen while the feed is asked again, and a failed check (offline, rate limit) never hides it (`stateWhileChecking` / `stateAfterCheck`) | The old behaviour checked once per process, so a phone that kept the app in memory never noticed a release, "Later" was remembered, and tapping Update gave no feedback. The popup and state rules are pure functions (`updatePromptFor`, `stateAfterCheck`) with unit tests |
 | 2026-10-19 | Two release channels. The feed repo has two branches: `main` (stable, what users get) and `bleeding-edge` (testing). The build has two flavors: `stable` (`dev.yuji.quiz`, "Deutsch B2", follows `main`) and `beta` (`dev.yuji.quiz.beta`, "Deutsch B2 beta", version suffix `-beta`, follows `bleeding-edge`); both are signed with the same key and can be installed side by side with separate data. `tools/publish_apk.sh beta` publishes to bleeding-edge; `tools/publish_apk.sh promote` rebuilds the stable flavor and publishes it to `main` only if bleeding-edge holds that same versionCode and git commit (recorded as `commit` in `latest.json`) and the tree is clean. Promotion happens only when Giovanni says the beta is good | A broken build must never reach users: every change is first tried in the beta app, and the stable branch can only receive what was already published and tested there. A flavor (separate package) was chosen over a runtime switch so test data never mixes with the real progress; the cost is that promotion rebuilds from the same commit instead of copying the tested bytes |
 | 2026-10-19 | The update client reads `latest.json` and the APK through the GitHub contents API (`Accept: application/vnd.github.raw+json`) instead of raw.githubusercontent.com. A 403 is reported as the hourly request limit (60 per IP without a token) | raw.githubusercontent.com caches for 5 minutes and ignores query strings (a random `?t=` still gave `x-cache: HIT`), so a fresh release stayed invisible and a stale manifest could meet a new APK (checksum failure). The API caches for at most 60 s and returned the new version immediately |

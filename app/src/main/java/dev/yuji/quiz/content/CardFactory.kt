@@ -7,6 +7,7 @@ import kotlin.random.Random
 /** Turns vocabulary entries into cards. One function per game mode. */
 object CardFactory {
     private val ARTICLES = listOf("der", "die", "das")
+    private const val ERROR_DECK_SEED = 2026L
 
     fun articleCard(noun: NounEntry) = Card(
         id = "article:${noun.singular}",
@@ -66,14 +67,32 @@ object CardFactory {
         )
     }
 
+    fun errorCard(entry: ErrorSentenceEntry): Card {
+        val wrong = entry.segments[entry.errorIndex]
+        val corrected = entry.segments.mapIndexed { i, chunk -> if (i == entry.errorIndex) entry.fix else chunk }
+        return Card(
+            id = "error:${entry.id}",
+            mode = GameMode.ERROR_SPOT,
+            prompt = entry.register,
+            context = entry.segments.joinToString(" "),
+            choices = entry.segments,
+            correctChoice = wrong,
+            explanation = "✓ ${corrected.joinToString(" ")}\n\n${entry.errorType}: ${entry.rule}\nRedemittel: ${entry.expression}",
+            shuffleChoices = false,
+        )
+    }
+
     fun buildDeck(
         nouns: List<NounEntry>,
         prepositions: List<PrepositionEntry>,
         verbs: List<VerbEntry> = emptyList(),
+        errorSentences: List<ErrorSentenceEntry> = emptyList(),
     ): Map<GameMode, List<Card>> = mapOf(
         GameMode.ARTICLE to nouns.map(::articleCard),
         GameMode.PLURAL to nouns.map(::pluralCard),
         GameMode.PREPOSITION to prepositions.map(::prepositionCard),
         GameMode.PRETERITE to verbs.map(::preteriteCard),
+        // Shuffled once (fixed seed) so new sentences do not arrive grouped by error type or register.
+        GameMode.ERROR_SPOT to errorSentences.shuffled(Random(ERROR_DECK_SEED)).map(::errorCard),
     )
 }
