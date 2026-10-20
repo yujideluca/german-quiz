@@ -41,17 +41,33 @@ APP = [
  (D+"domain/DailyGoal.kt", "coerceIn(MIN_DAILY_GOAL, MAX_DAILY_GOAL)", "coerceIn(MIN_DAILY_GOAL, MAX_DAILY_GOAL + 10)", "daily goal above 100"),
  (D+"domain/AppUpdate.kt", "nowMillis - lastCheckMillis >= minGapMillis", "nowMillis - lastCheckMillis > minGapMillis", "update check gap boundary"),
  (D+"data/ProgressStore.kt", "                    keepDamagedCopy()\n", "", "damaged progress file not preserved"),
+ (D+"domain/DailyGoal.kt", "val reached: Boolean get() = answered >= goal", "val reached: Boolean get() = answered > goal", "goal reached one answer too late"),
+ (D+"domain/DailyGoal.kt", "(answered.toFloat() / goal).coerceIn(0f, 1f)", "(answered.toFloat() / goal)", "bar can overflow past full"),
+ (D+"domain/DailyGoal.kt", "(this[epochDay] ?: 0) + 1)", "(this[epochDay] ?: 0) + 2)", "an answer counts twice"),
+ (D+"domain/DailyGoal.kt", "fun AnswerHistory.answeredOn(epochDay: Long): Int = this[epochDay] ?: 0", "fun AnswerHistory.answeredOn(epochDay: Long): Int = this[epochDay - 1] ?: 0", "bar shows yesterday's count"),
+ (D+"StudyController.kt", "if (card != null && updated !== session) {", "if (card != null) {", "rejected answers still counted"),
+ (D+"data/TrainingStore.kt", "val c = count.toIntOrNull()?.takeIf { it > 0 } ?: return@mapNotNull null", "val c = count.toIntOrNull() ?: return@mapNotNull null", "damaged day counts accepted"),
 ]
+
 WEB = [
  ("src/domain.js", "learningStepsMinutes: [10]", "learningStepsMinutes: [1]", "web: missed card returns after 1 min"),
  ("src/domain.js", "graduatingIntervalDays: 3", "graduatingIntervalDays: 1", "web: first correct answer -> 1 day"),
  ("src/domain.js", "learnAheadMinutes: 0", "learnAheadMinutes: 20", "web: learn-ahead window is back"),
  ("src/domain.js", "phase === 'REVIEW' && responseMillis >= config.hardMinMillis", "responseMillis >= config.hardMinMillis", "web: slow correct answer on a new card is HARD"),
  ("src/domain.js", "easyIntervalDays: 5", "easyIntervalDays: 4", "web: easy interval drift"),
+ ("src/domain.js", "reached: answered >= goal", "reached: answered > goal", "web: goal reached one answer too late"),
+ ("src/domain.js", "fraction: clamp(answered / goal, 0, 1)", "fraction: answered / goal", "web: bar can overflow past full"),
+ ("src/domain.js", "answeredOn(history, day) + 1 })", "answeredOn(history, day) + 2 })", "web: an answer counts twice"),
+ ("src/domain.js", "Math.round(daily.fraction * 100)", "Math.floor(daily.fraction * 100)", "web: bar width rounds down"),
 ]
 
-def run(cmd, cwd):
-    return subprocess.run(cmd, cwd=cwd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+def run(cmd, cwd, limit=900):
+    # A mutant can make the code loop forever; a run that exceeds the limit counts as killed.
+    try:
+        return subprocess.run(cmd, cwd=cwd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, timeout=limit)
+    except subprocess.TimeoutExpired:
+        subprocess.run("pkill -f '[G]radle Test Executor'", shell=True)
+        return subprocess.CompletedProcess(cmd, 124, "", "timeout")
 
 def check(base, rows, test_cmd, label):
     survived = []
@@ -66,7 +82,7 @@ def check(base, rows, test_cmd, label):
             t = time.time()
             r = run(test_cmd, base)
             killed = r.returncode != 0
-            print(f"  [{label}] {'killed  ' if killed else 'SURVIVED'} {why}  ({time.time() - t:.0f}s)")
+            print(f"  [{label}] {'killed  ' if killed else 'SURVIVED'} {why}  ({time.time() - t:.0f}s)", flush=True)
             if not killed:
                 survived.append((path, why))
         finally:

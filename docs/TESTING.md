@@ -37,6 +37,11 @@ failed), because the rule was never written down and tests restated the implemen
   checked against an independent oracle written from the requirements, not from the code.
 * **Conformance** (`src/test/resources/conformance/scheduler.json`, hand-computed from the requirements):
   the Kotlin and the JavaScript scheduler must reproduce every row; the gate checks both copies are identical.
+* **Progress bar** (DG-2..DG-5): `DailyProgressPropertyTest` (2 000 random histories of answers, repeated taps,
+  card management, goal changes, midnight, restarts and backups against a plain tally), `conformance/daily_bar.json`
+  (goal snapping, fraction, percent and "reached" vectors; Kotlin and JavaScript both run it), boundary tests
+  (empty, 90 %, exactly full, midnight to the millisecond) and `androidTest/.../DailyBarAcceptanceTest`
+  (real view model, real vocabulary, in-memory store, fake clock).
 * **Mutation check** (`tools/mutation_check.py`): plants known faults (wrong constants, flipped
   comparisons) in the scheduler, grader, pipeline and session; every mutant must make a test fail.
   This validates the tests themselves.
@@ -59,4 +64,7 @@ failed), because the rule was never written down and tests restated the implemen
 
 * Compose screens and `StudyViewModel`/`MainActivity` are only exercised on a device (UI-1, A-level);
   they hold little logic because decisions live in `domain/` and are covered there.
+* The `ON_RESUME` call in `MainActivity` that makes the home screen refresh (DG-4) is checked by reading
+  the code and by testing `StudyViewModel.refreshHome()` on the device; no automated test moves a real
+  activity through the background overnight.
 * Coverage percentages are a floor, not a proof: requirement coverage (section 4.3) and mutation score are the real measures.

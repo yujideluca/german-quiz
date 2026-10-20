@@ -4,7 +4,7 @@ An offline Android app for drilling basic B2 German vocabulary with Anki-style s
 This file explains **how the app is built** and **why** each choice was made. It is a living
 document: see [How this file is maintained](#how-this-file-is-maintained).
 
-Last updated: 2026-10-19
+Last updated: 2026-10-20
 
 ---
 
@@ -112,7 +112,9 @@ A separate, purely motivational target (`DailyGoal.kt`, `TrainingStore`): a Sett
 one shared per-day count (a re-shown learning card counts again). Counts are kept **per local
 calendar day** as a history (`AnswerHistory`, epoch day -> answers, stored as `day:count;...` in
 the `training` preferences); today's count is simply today's entry, so it restarts at zero after
-midnight. Reaching the goal changes only the display ("Daily goal reached ✓"); nothing stops the
+midnight. The home screen is a snapshot of that count, so `MainActivity` calls
+`StudyViewModel.refreshHome()` on every `ON_RESUME`; the bar is `answered / goal`, held between 0 and 1.
+Reaching the goal changes only the display ("Daily goal reached ✓"); nothing stops the
 player from continuing.
 
 ### Streak calendar
@@ -288,6 +290,7 @@ Newest first. Add an entry whenever a decision changes the design.
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-10-20 | **Progress bar checked with the QA process** (requirements DG-2..DG-5, `DailyProgressPropertyTest`, shared `daily_bar.json` vectors, `DailyBarAcceptanceTest` on the device, six app and four web mutants; 40 of 40 killed). Version 2.6 (17). Found and fixed: **the home screen was a snapshot**, so after the phone slept past midnight the app still showed yesterday's full bar and yesterday's due counts until the player entered a quiz and came back. `StudyViewModel.refreshHome()` now runs on every `ON_RESUME` (the web version already re-rendered on `visibilitychange`). The web bar width moved into `barPercent()` so it can be tested | The domain arithmetic was right in all 2 000 random histories; the defect sat in the layer between the numbers and the screen, which the old tests never reached |
 | 2026-10-19 | **Language setting.** Settings > Language: Use system default (default), English, Deutsch, Português (Brasil), Español. All app text except the German questions and answer options is translated (UI strings, mode names, update and backup messages, calendar month and weekday names, and the English explanation text in the vocabulary data via `assets/i18n/<lang>.json`). The activity recreates itself on change; see section 8 "Languages". Version 2.2 (13) | The app is used by people whose first language differs, and German-learning text should not be mixed with English menus when the learner prefers another language. Android string resources fell out naturally (plurals, formats, fallback to English), a per-app locale wrapper avoids needing AppCompat or Android 13's per-app language API (minSdk 26), and keying the data translations by the English original left `vocab/*.json` untouched, so the web version's vocabulary sync check is unaffected. Technical failure details such as a server's error text are still shown as the system gives them. The web version got the same setting (`src/i18n.js`, stored in localStorage `quiz.language`, re-rendered in place, no reload) |
 | 2026-10-19 | **Spacing changed**: a new card answered correctly now comes back after **3 days** (was 1 min, 10 min, then 1 day); a wrong answer on a new card repeats after **10 minutes** (not earlier: no learn-ahead, no requeue in the session; first Giovanni saw missed cards as the first question on returning) and then also goes to 3 days. Later correct answers lengthen the gap as before (x ease 2.5: 3, 8, 20, 50, 125 days; slow answers grow it less, fast ones more). `SchedulerConfig`: `learningStepsMinutes [10]`, `learnAheadMinutes 0`, `graduatingIntervalDays 3`, `easyIntervalDays 5`; the web `SCHEDULER` mirrors it. Saved progress needs no migration (a card stuck in step 2 graduates to 3 days on its next correct answer). Version 2.4 (15) | Giovanni saw the same cards return within minutes and the next day; they want a card shown only after 3 days and later the more often it is answered correctly. Lapses (wrong answer on a review card) are unchanged: 10 min relearning, then 1 day |
 | 2026-10-19 | **Quality assurance framework** (version 2.5 (16)): requirements catalogue with IDs, `REQ` tags in tests with a traceability gate, property-based test with an independent oracle (2 000 random histories), hand-computed conformance vectors shared by app and web, boundary-value tests, a mutation check (30 planted faults), JaCoCo coverage floor, Android lint, a device acceptance test on the real deck, and `tools/quality_gate.sh` in front of every publish. Found and fixed while building it: **(1)** a correct but slow answer (10 s or more) on a new or relearning card was graded HARD and made the card come back after 10 minutes (HARD and EASY now apply to cards in REVIEW only; web fixed too); **(2)** a damaged `progress.json` was silently replaced by the next save (now kept as `progress.json.corrupt` first); **(3)** lint error: calendar month and weekday names read `Locale.getDefault()` in a non-observable way (now `LocalConfiguration`) | The spacing bug of the same day showed that tests which restate the code cannot protect a rule that was never written down. Requirements first, tests derived from them, tests checked by mutation, and a gate nobody has to remember |

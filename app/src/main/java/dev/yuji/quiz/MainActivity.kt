@@ -21,6 +21,8 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.compose.LifecycleEventEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
@@ -95,6 +97,7 @@ class MainActivity : ComponentActivity() {
                             vm::applyPendingBackup, vm::discardPendingBackup, vm::setBackupNotice,
                         )
                     }
+                    LifecycleEventEffect(Lifecycle.Event.ON_RESUME) { vm.refreshHome() }
                     val promptDismissed by vm.promptDismissed.collectAsState()
                     updatePromptFor(updateState, promptDismissed, onHomeScreen = state is UiState.ModeSelect)
                         ?.let { UpdatePromptDialog(it, vm::installUpdate, vm::dismissUpdatePrompt) }

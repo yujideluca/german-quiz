@@ -26,6 +26,10 @@ decision in `DESIGN.md`. Level: **U** unit, **I** integration (controller with s
 | PE-3 | Backups round-trip; foreign, newer or damaged files are rejected with a readable reason; untrustworthy entries are dropped. | D | U I |
 | PE-4 | "Reset all progress" clears cards only, not the training history. | D | I |
 | DG-1 | Daily goal is 10..100 in steps of 10; answers in any mode count toward one per-day total that restarts at midnight. | D | U I |
+| DG-2 | The progress bar shows today's answers divided by the daily goal: empty with no answers, proportional in between, full from the moment the goal is reached, never below empty, above full or undefined; the "goal reached" text appears exactly when the bar is full. | D | U P |
+| DG-3 | Every accepted answer, right or wrong, in any mode raises today's count by exactly one. Rejected or repeated answers, removing or restoring a card, and resetting card progress leave it unchanged. | D | U P I |
+| DG-4 | The bar stays consistent when things around it change: a new goal rescales it at once and keeps the count; the count survives a restart; a new day starts empty; a restored backup replaces count and goal; damaged stored values fall back to safe ones. | D | U P I |
+| DG-5 | What the player sees equals the computed value: the bar's filled share and the "answered / goal" text show the same numbers on the phone and in the web version, for the same inputs (shared vectors). | D | C A |
 | CA-1 | Streak and calendar: a day with at least one answer is trained; an empty today does not break a streak; longest streak and month totals are correct. | D | U I |
 | MG-1 | Suspending (week, month, permanent), restoring and searching cards work; suspension ends on time and survives restart. | D | U I |
 | LG-1 | Languages: the default follows the phone and falls back to English; an explicit choice wins; every string exists in every language with identical placeholders; only questions and answer options stay German. | G | U |

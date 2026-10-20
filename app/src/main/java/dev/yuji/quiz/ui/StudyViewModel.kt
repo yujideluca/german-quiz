@@ -22,6 +22,7 @@ import dev.yuji.quiz.data.SharedPreferencesTrainingStore
 import dev.yuji.quiz.data.UpdateClient
 import dev.yuji.quiz.data.ThemeMode
 import dev.yuji.quiz.debug.DebugFlags
+import dev.yuji.quiz.debug.StudyLog
 import dev.yuji.quiz.domain.ActivityCalendar
 import dev.yuji.quiz.domain.BackupParse
 import dev.yuji.quiz.domain.BackupProblem
@@ -75,7 +76,11 @@ sealed interface UpdateState {
     data class Failed(val message: String) : UpdateState
 }
 
-class StudyViewModel(app: Application) : AndroidViewModel(app) {
+class StudyViewModel @JvmOverloads constructor(
+    app: Application,
+    /** Builds the controller; tests pass one with in-memory stores and a fake clock. */
+    controllerFactory: ((Application, StudyLog) -> StudyController)? = null,
+) : AndroidViewModel(app) {
     private var advanceJob: Job? = null
     private var searchQuery = ""
     private var calendarMonth: java.time.YearMonth? = null
@@ -95,14 +100,16 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
         getApplication<Application>().withLanguage(settingsStore.language).getString(id, *args)
 
     private val controller: StudyController? = runCatching {
-        val source = AssetVocabularySource(app)
-        StudyController(
-            deck = CardFactory.buildDeck(source.nouns(), source.prepositions(), source.verbs(), source.errorSentences()),
-            store = FileProgressStore(File(app.filesDir, "progress.json"), log),
-            clock = SystemClock,
-            log = log,
-            training = SharedPreferencesTrainingStore(app),
-        )
+        controllerFactory?.invoke(app, log) ?: run {
+            val source = AssetVocabularySource(app)
+            StudyController(
+                deck = CardFactory.buildDeck(source.nouns(), source.prepositions(), source.verbs(), source.errorSentences()),
+                store = FileProgressStore(File(app.filesDir, "progress.json"), log),
+                clock = SystemClock,
+                log = log,
+                training = SharedPreferencesTrainingStore(app),
+            )
+        }
     }.onFailure { android.util.Log.e("Quiz", "failed to initialise", it) }.getOrNull()
 
     private val _state = MutableStateFlow<UiState>(
@@ -140,6 +147,14 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
     /** Moves to the next question; used by the "Next" button of modes that do not advance by themselves. */
     fun next() = withController { c ->
         (_state.value as? UiState.Studying)?.let { render(c, c.advance(it.session)) }
+    }
+
+    /**
+     * The home screen is a snapshot (daily bar, due counts, calendar). Call when the app returns to the
+     * foreground so a snapshot taken yesterday never shows yesterday's bar after midnight.
+     */
+    fun refreshHome() = withController { c ->
+        _state.update { if (it is UiState.ModeSelect) modeSelectState(c) else it }
     }
 
     fun backToModes() = withController { c ->
