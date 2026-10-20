@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # The web version (https://yujideluca.github.io/german-quiz-web/, repo yujideluca/german-quiz-web, clone ~/dev/QuizWeb)
 # must always match the user version of the Android app. Exits 2 and says what is behind when it does not:
-#   - a vocabulary file (nouns, prepositions, verbs, errors) differs from the app's assets/vocab
+#   - a vocabulary file (nouns, prepositions, verbs, errors) differs from the app's assets/vocab, or a translation file
+#     (assets/i18n/de|pt|es.json) differs from the web's i18n/
 #   - the set of modes differs (GameMode.kt storage ids vs MODES in the web's src/domain.js)
 #   - the web clone has uncommitted work or commits that are not on GitHub yet
 # tools/publish_apk.sh promote runs it at the end. Fix = port the change into ~/dev/QuizWeb (copy the vocab files, port code
@@ -13,6 +14,10 @@ problems=()
 
 for f in nouns prepositions verbs errors; do
   cmp -s "$root/app/src/main/assets/vocab/$f.json" "$web/vocab/$f.json" || problems+=("vocab/$f.json differs from the app's")
+done
+
+for f in de pt es; do
+  cmp -s "$root/app/src/main/assets/i18n/$f.json" "$web/i18n/$f.json" || problems+=("i18n/$f.json differs from the app's")
 done
 
 app_modes=$(sed -n 's/^ *[A-Z_]*("\([a-z]*\)",.*/\1/p' "$root/app/src/main/java/dev/yuji/quiz/domain/GameMode.kt" | sort | tr '\n' ' ')
