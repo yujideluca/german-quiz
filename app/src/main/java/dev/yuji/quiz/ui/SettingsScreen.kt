@@ -1,6 +1,7 @@
 package dev.yuji.quiz.ui
 
 import androidx.activity.compose.BackHandler
+import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -29,9 +30,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
 import dev.yuji.quiz.BuildConfig
+import dev.yuji.quiz.R
+import dev.yuji.quiz.data.AppLanguage
 import dev.yuji.quiz.data.ThemeMode
 import dev.yuji.quiz.domain.CardStatus
 import dev.yuji.quiz.domain.DAILY_GOAL_STEP
@@ -42,10 +46,18 @@ import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-private enum class Confirm(val title: String, val body: String) {
-    SUSPENDED("Reset suspended cards?", "All suspended questions return to the pool."),
-    REMOVED("Reset removed cards?", "All permanently removed questions return to the pool."),
-    ALL_PROGRESS("Reset all progress?", "This erases every learning state, suspension and removal. It cannot be undone."),
+private enum class Confirm(@StringRes val title: Int, @StringRes val body: Int) {
+    SUSPENDED(R.string.confirm_suspended_title, R.string.confirm_suspended_body),
+    REMOVED(R.string.confirm_removed_title, R.string.confirm_removed_body),
+    ALL_PROGRESS(R.string.confirm_all_title, R.string.confirm_all_body),
+}
+
+private fun languageNameRes(language: AppLanguage): Int = when (language) {
+    AppLanguage.SYSTEM -> R.string.use_system_default
+    AppLanguage.ENGLISH -> R.string.language_name_english
+    AppLanguage.GERMAN -> R.string.language_name_german
+    AppLanguage.PORTUGUESE -> R.string.language_name_portuguese
+    AppLanguage.SPANISH -> R.string.language_name_spanish
 }
 
 @Composable
@@ -53,6 +65,7 @@ fun SettingsScreen(
     state: UiState.Settings,
     onBack: () -> Unit,
     onTheme: (ThemeMode) -> Unit,
+    onLanguage: (AppLanguage) -> Unit,
     onDailyGoal: (Int) -> Unit,
     onQuery: (String) -> Unit,
     onRestoreCard: (String) -> Unit,
@@ -80,15 +93,15 @@ fun SettingsScreen(
     ) {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically) {
-            Text("Settings", style = MaterialTheme.typography.headlineMedium)
-            TextButton(onClick = onBack) { Text("Done") }
+            Text(stringResource(R.string.settings_title), style = MaterialTheme.typography.headlineMedium)
+            TextButton(onClick = onBack) { Text(stringResource(R.string.common_done)) }
         }
 
-        Text("Appearance", style = MaterialTheme.typography.titleMedium)
+        Text(stringResource(R.string.settings_appearance), style = MaterialTheme.typography.titleMedium)
         listOf(
-            ThemeMode.SYSTEM to "Use system default",
-            ThemeMode.LIGHT to "Light mode",
-            ThemeMode.DARK to "Night mode",
+            ThemeMode.SYSTEM to R.string.use_system_default,
+            ThemeMode.LIGHT to R.string.theme_light,
+            ThemeMode.DARK to R.string.theme_dark,
         ).forEach { (mode, label) ->
             Row(
                 Modifier.fillMaxWidth().selectable(selected = state.themeMode == mode, role = Role.RadioButton,
@@ -96,14 +109,27 @@ fun SettingsScreen(
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 RadioButton(selected = state.themeMode == mode, onClick = null, modifier = Modifier.padding(8.dp))
-                Text(label, style = MaterialTheme.typography.bodyLarge)
+                Text(stringResource(label), style = MaterialTheme.typography.bodyLarge)
             }
         }
 
         HorizontalDivider()
-        Text("Daily goal", style = MaterialTheme.typography.titleMedium)
+        Text(stringResource(R.string.settings_language), style = MaterialTheme.typography.titleMedium)
+        AppLanguage.entries.forEach { language ->
+            Row(
+                Modifier.fillMaxWidth().selectable(selected = state.language == language, role = Role.RadioButton,
+                    onClick = { onLanguage(language) }),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                RadioButton(selected = state.language == language, onClick = null, modifier = Modifier.padding(8.dp))
+                Text(stringResource(languageNameRes(language)), style = MaterialTheme.typography.bodyLarge)
+            }
+        }
+
+        HorizontalDivider()
+        Text(stringResource(R.string.settings_daily_goal), style = MaterialTheme.typography.titleMedium)
         var goal by remember(state.dailyGoal) { mutableStateOf(state.dailyGoal.toFloat()) }
-        Text("${goal.toInt()} questions per day (any quiz)", style = MaterialTheme.typography.bodyLarge)
+        Text(stringResource(R.string.settings_daily_goal_value, goal.toInt()), style = MaterialTheme.typography.bodyLarge)
         Slider(
             value = goal, onValueChange = { goal = it }, onValueChangeFinished = { onDailyGoal(goal.toInt()) },
             valueRange = MIN_DAILY_GOAL.toFloat()..MAX_DAILY_GOAL.toFloat(),
@@ -111,20 +137,20 @@ fun SettingsScreen(
         )
 
         HorizontalDivider()
-        Text("Removed questions", style = MaterialTheme.typography.titleMedium)
-        Text("Suspended: ${state.counts.suspended}  ·  Removed: ${state.counts.removed}",
+        Text(stringResource(R.string.settings_removed_title), style = MaterialTheme.typography.titleMedium)
+        Text(stringResource(R.string.settings_removed_counts, state.counts.suspended, state.counts.removed),
             style = MaterialTheme.typography.bodyMedium)
         OutlinedButton(onClick = { showRemoved = true }, modifier = Modifier.fillMaxWidth()) {
-            Text("Manage suspended and removed questions")
+            Text(stringResource(R.string.settings_manage_removed))
         }
 
         HorizontalDivider()
         BackupSection(backup, backupActions)
 
         HorizontalDivider()
-        Text("Progress", style = MaterialTheme.typography.titleMedium)
+        Text(stringResource(R.string.settings_progress), style = MaterialTheme.typography.titleMedium)
         OutlinedButton(onClick = { confirm = Confirm.ALL_PROGRESS }, modifier = Modifier.fillMaxWidth()) {
-            Text("Reset all progress")
+            Text(stringResource(R.string.settings_reset_all))
         }
 
         HorizontalDivider()
@@ -134,8 +160,8 @@ fun SettingsScreen(
     confirm?.let { action ->
         AlertDialog(
             onDismissRequest = { confirm = null },
-            title = { Text(action.title) },
-            text = { Text(action.body) },
+            title = { Text(stringResource(action.title)) },
+            text = { Text(stringResource(action.body)) },
             confirmButton = {
                 TextButton(onClick = {
                     when (action) {
@@ -144,9 +170,9 @@ fun SettingsScreen(
                         Confirm.ALL_PROGRESS -> onResetAll()
                     }
                     confirm = null
-                }) { Text("Reset") }
+                }) { Text(stringResource(R.string.common_reset)) }
             },
-            dismissButton = { TextButton(onClick = { confirm = null }) { Text("Cancel") } },
+            dismissButton = { TextButton(onClick = { confirm = null }) { Text(stringResource(R.string.common_cancel)) } },
         )
     }
 }
@@ -166,31 +192,31 @@ private fun RemovedQuestionsScreen(
     ) {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically) {
-            Text("Removed questions", style = MaterialTheme.typography.headlineMedium)
-            TextButton(onClick = onBack) { Text("Back") }
+            Text(stringResource(R.string.settings_removed_title), style = MaterialTheme.typography.headlineMedium)
+            TextButton(onClick = onBack) { Text(stringResource(R.string.common_back)) }
         }
-        Text("Suspended: ${state.counts.suspended}  ·  Removed: ${state.counts.removed}",
+        Text(stringResource(R.string.settings_removed_counts, state.counts.suspended, state.counts.removed),
             style = MaterialTheme.typography.bodyMedium)
         OutlinedButton(onClick = onResetSuspended, enabled = state.counts.suspended > 0,
-            modifier = Modifier.fillMaxWidth()) { Text("Reset all suspended cards") }
+            modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.removed_reset_suspended)) }
         OutlinedButton(onClick = onResetRemoved, enabled = state.counts.removed > 0,
-            modifier = Modifier.fillMaxWidth()) { Text("Reset all removed cards") }
+            modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.removed_reset_removed)) }
 
         OutlinedTextField(
             value = state.query, onValueChange = onQuery, singleLine = true,
-            label = { Text("Search suspended or removed cards") },
+            label = { Text(stringResource(R.string.removed_search)) },
             modifier = Modifier.fillMaxWidth(),
         )
         if (state.results.isEmpty()) {
             Text(
-                if (state.counts.suspended + state.counts.removed == 0) "No suspended or removed cards."
-                else "No card matches “${state.query}”.",
+                if (state.counts.suspended + state.counts.removed == 0) stringResource(R.string.removed_none)
+                else stringResource(R.string.removed_no_match, state.query),
                 style = MaterialTheme.typography.bodyMedium,
             )
         }
         state.results.take(MAX_RESULTS).forEach { managed -> ManagedCardRow(managed, onRestoreCard) }
         if (state.results.size > MAX_RESULTS) {
-            Text("Showing $MAX_RESULTS of ${state.results.size}. Refine the search to see more.",
+            Text(stringResource(R.string.removed_showing, MAX_RESULTS, state.results.size),
                 style = MaterialTheme.typography.labelMedium)
         }
     }
@@ -200,8 +226,8 @@ private fun RemovedQuestionsScreen(
 private fun ManagedCardRow(managed: ManagedCard, onRestore: (String) -> Unit) {
     val fmt = remember { SimpleDateFormat("d MMM yyyy", Locale.getDefault()) }
     val status = when (managed.status) {
-        CardStatus.REMOVED -> "Removed"
-        CardStatus.SUSPENDED -> "Suspended until ${fmt.format(Date(managed.suspendedUntilMillis))}"
+        CardStatus.REMOVED -> stringResource(R.string.card_status_removed)
+        CardStatus.SUSPENDED -> stringResource(R.string.card_status_suspended, fmt.format(Date(managed.suspendedUntilMillis)))
     }
     Card(Modifier.fillMaxWidth()) {
         Row(Modifier.padding(12.dp), verticalAlignment = Alignment.CenterVertically,
@@ -209,9 +235,9 @@ private fun ManagedCardRow(managed: ManagedCard, onRestore: (String) -> Unit) {
             Column(Modifier.weight(1f)) {
                 Text(managed.card.prompt, style = MaterialTheme.typography.titleMedium)
                 managed.card.context?.let { Text(it, style = MaterialTheme.typography.bodySmall) }
-                Text("${managed.card.mode.title} · $status", style = MaterialTheme.typography.labelMedium)
+                Text("${stringResource(managed.card.mode.titleRes())} · $status", style = MaterialTheme.typography.labelMedium)
             }
-            TextButton(onClick = { onRestore(managed.card.id) }) { Text("Restore") }
+            TextButton(onClick = { onRestore(managed.card.id) }) { Text(stringResource(R.string.common_restore)) }
         }
     }
 }
@@ -224,18 +250,17 @@ private fun UpdateSection(
     onCheck: () -> Unit,
     onInstall: (dev.yuji.quiz.domain.UpdateManifest) -> Unit,
 ) {
-    Text("App updates", style = MaterialTheme.typography.titleMedium)
-    Text("Installed version ${BuildConfig.VERSION_NAME} · ${BuildConfig.CHANNEL_LABEL} channel", style = MaterialTheme.typography.bodyMedium)
+    Text(stringResource(R.string.update_title), style = MaterialTheme.typography.titleMedium)
+    Text(stringResource(R.string.update_installed, BuildConfig.VERSION_NAME, BuildConfig.CHANNEL_LABEL), style = MaterialTheme.typography.bodyMedium)
     val status = when (update) {
         UpdateState.Idle -> null
-        UpdateState.Checking -> "Checking GitHub…"
-        UpdateState.UpToDate -> "You have the latest version."
-        is UpdateState.Available -> "Version ${update.manifest.versionName} is available. Your progress is kept."
-        is UpdateState.Downloading -> "Downloading version ${update.manifest.versionName}…"
-        is UpdateState.NeedsPermission ->
-            "Allow this app to install updates in the screen that just opened, then tap Update again."
-        is UpdateState.DownloadFailed -> "Download failed: ${update.message}"
-        is UpdateState.Failed -> "Update failed: ${update.message}"
+        UpdateState.Checking -> stringResource(R.string.update_checking)
+        UpdateState.UpToDate -> stringResource(R.string.update_up_to_date)
+        is UpdateState.Available -> stringResource(R.string.update_available, update.manifest.versionName)
+        is UpdateState.Downloading -> stringResource(R.string.update_downloading, update.manifest.versionName)
+        is UpdateState.NeedsPermission -> stringResource(R.string.update_needs_permission)
+        is UpdateState.DownloadFailed -> stringResource(R.string.update_download_failed, update.message)
+        is UpdateState.Failed -> stringResource(R.string.update_failed, update.message)
     }
     status?.let { Text(it, style = MaterialTheme.typography.bodyMedium) }
     val busy = update is UpdateState.Checking || update is UpdateState.Downloading
@@ -243,10 +268,10 @@ private fun UpdateSection(
         ?: (update as? UpdateState.DownloadFailed)?.manifest
     if (pending != null) {
         Button(onClick = { onInstall(pending) }, enabled = !busy, modifier = Modifier.fillMaxWidth()) {
-            Text("Update to ${pending.versionName}")
+            Text(stringResource(R.string.update_button_to, pending.versionName))
         }
     }
     OutlinedButton(onClick = onCheck, enabled = !busy, modifier = Modifier.fillMaxWidth()) {
-        Text("Check for updates")
+        Text(stringResource(R.string.update_check))
     }
 }

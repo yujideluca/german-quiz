@@ -14,8 +14,8 @@ android {
         applicationId = "dev.yuji.quiz"
         minSdk = 26
         targetSdk = 36
-        versionCode = 12
-        versionName = "2.1"
+        versionCode = 13
+        versionName = "2.2"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     // Same key for debug and release builds, so any build can update any other in place and keep app data.

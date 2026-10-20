@@ -13,12 +13,17 @@ import java.security.MessageDigest
  * caches for 5 minutes and ignores query strings, so it would hide a fresh release.
  * [ref] is the feed branch to follow: "main" for the stable app, "bleeding-edge" for the beta app.
  */
+/** Why an update step failed. The message stays English (logs, tests); the screen translates by [kind]. */
+enum class UpdateFailureKind { MALFORMED_FEED, CHECKSUM_MISMATCH, RATE_LIMIT, SERVER_ERROR }
+
+class UpdateFailure(val kind: UpdateFailureKind, message: String, val httpCode: Int = 0) : IllegalStateException(message)
+
 class UpdateClient(private val baseUrl: String = FEED_URL, private val ref: String = "main") {
 
     /** Returns the manifest, or throws with a human-readable message. */
     fun fetchManifest(): UpdateManifest {
         val text = open("$baseUrl/latest.json?ref=$ref").use { it.readBytes().decodeToString() }
-        return parseUpdateManifest(text) ?: error("The update feed is malformed")
+        return parseUpdateManifest(text) ?: throw UpdateFailure(UpdateFailureKind.MALFORMED_FEED, "The update feed is malformed")
     }
 
     /** Downloads the APK into [target] and verifies its SHA-256; deletes the file when it does not match. */
@@ -39,7 +44,7 @@ class UpdateClient(private val baseUrl: String = FEED_URL, private val ref: Stri
         val actual = digest.digest().joinToString("") { "%02x".format(it) }
         if (!actual.equals(manifest.sha256, ignoreCase = true)) {
             target.delete()
-            error("Downloaded file is corrupt (checksum mismatch)")
+            throw UpdateFailure(UpdateFailureKind.CHECKSUM_MISMATCH, "Downloaded file is corrupt (checksum mismatch)")
         }
     }
 
@@ -50,8 +55,9 @@ class UpdateClient(private val baseUrl: String = FEED_URL, private val ref: Stri
         setRequestProperty("Accept", "application/vnd.github.raw+json")
         when (responseCode) {
             HttpURLConnection.HTTP_OK -> Unit
-            HttpURLConnection.HTTP_FORBIDDEN -> error("GitHub's hourly request limit was reached; try again later")
-            else -> error("Update server answered $responseCode")
+            HttpURLConnection.HTTP_FORBIDDEN ->
+                throw UpdateFailure(UpdateFailureKind.RATE_LIMIT, "GitHub's hourly request limit was reached; try again later")
+            else -> throw UpdateFailure(UpdateFailureKind.SERVER_ERROR, "Update server answered $responseCode", responseCode)
         }
         inputStream
     }

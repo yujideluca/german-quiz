@@ -1,9 +1,15 @@
 package dev.yuji.quiz.ui
 
 import android.app.Application
+import androidx.annotation.StringRes
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import dev.yuji.quiz.BuildConfig
+import dev.yuji.quiz.R
+import dev.yuji.quiz.android.withLanguage
+import dev.yuji.quiz.data.AppLanguage
+import dev.yuji.quiz.data.UpdateFailure
+import dev.yuji.quiz.data.UpdateFailureKind
 import dev.yuji.quiz.ModeOverview
 import dev.yuji.quiz.StudyController
 import dev.yuji.quiz.android.AndroidStudyLog
@@ -18,6 +24,7 @@ import dev.yuji.quiz.data.ThemeMode
 import dev.yuji.quiz.debug.DebugFlags
 import dev.yuji.quiz.domain.ActivityCalendar
 import dev.yuji.quiz.domain.BackupParse
+import dev.yuji.quiz.domain.BackupProblem
 import dev.yuji.quiz.domain.ProgressBackup
 import dev.yuji.quiz.domain.decodeBackup
 import dev.yuji.quiz.domain.encodeBackup
@@ -47,6 +54,7 @@ sealed interface UiState {
     data class Finished(val session: StudySession) : UiState
     data class Settings(
         val themeMode: ThemeMode,
+        val language: AppLanguage,
         val dailyGoal: Int,
         val counts: ManagedCounts,
         val query: String,
@@ -79,6 +87,13 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
     private val _themeMode = MutableStateFlow(settingsStore.themeMode)
     val themeMode: StateFlow<ThemeMode> = _themeMode
 
+    private val _language = MutableStateFlow(settingsStore.language)
+    val language: StateFlow<AppLanguage> = _language
+
+    /** Text for messages the view model produces itself (notices, errors), in the language chosen in Settings. */
+    private fun t(@StringRes id: Int, vararg args: Any): String =
+        getApplication<Application>().withLanguage(settingsStore.language).getString(id, *args)
+
     private val controller: StudyController? = runCatching {
         val source = AssetVocabularySource(app)
         StudyController(
@@ -91,7 +106,7 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
     }.onFailure { android.util.Log.e("Quiz", "failed to initialise", it) }.getOrNull()
 
     private val _state = MutableStateFlow<UiState>(
-        controller?.let { modeSelectState(it) } ?: UiState.Failed("Could not load vocabulary")
+        controller?.let { modeSelectState(it) } ?: UiState.Failed(t(R.string.load_failed))
     )
     val state: StateFlow<UiState> = _state
 
@@ -161,6 +176,13 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
         _state.update { settingsState(c) }
     }
 
+    /** Takes effect after the activity restarts (MainActivity watches [language] and recreates itself). */
+    fun setLanguage(language: AppLanguage) {
+        settingsStore.language = language
+        _language.value = language
+        controller?.let { c -> _state.update { settingsState(c) } }
+    }
+
     fun setDailyGoal(goal: Int) = settingsAction { it.setDailyGoal(goal) }
 
     fun setSearchQuery(query: String) = withController { c ->
@@ -179,7 +201,7 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     private fun settingsState(c: StudyController) =
-        UiState.Settings(_themeMode.value, c.dailyProgress().goal, c.managedCounts(), searchQuery, c.managedCards(searchQuery))
+        UiState.Settings(_themeMode.value, _language.value, c.dailyProgress().goal, c.managedCounts(), searchQuery, c.managedCards(searchQuery))
 
     // ---- backup -----------------------------------------------------------------------------
 
@@ -196,7 +218,13 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
     /** Parses a chosen file and asks for confirmation before anything is replaced. */
     fun readBackup(text: String) {
         when (val parsed = decodeBackup(text)) {
-            is BackupParse.Invalid -> { pendingBackup = null; _backup.value = BackupUi(notice = parsed.reason) }
+            is BackupParse.Invalid -> {
+                pendingBackup = null
+                _backup.value = BackupUi(notice = t(when (parsed.problem) {
+                    BackupProblem.NOT_A_BACKUP -> R.string.backup_invalid_file
+                    BackupProblem.TOO_NEW -> R.string.backup_too_new
+                }))
+            }
             is BackupParse.Ok -> {
                 pendingBackup = parsed.backup
                 _backup.value = BackupUi(pending = BackupSummary(
@@ -214,7 +242,7 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
             _themeMode.value = it
         }
         calendarMonth = null
-        _backup.value = BackupUi(notice = "Progress restored: ${backup.progress.size} cards, ${backup.history.size} study days.")
+        _backup.value = BackupUi(notice = t(R.string.backup_restored, backup.progress.size, backup.history.size))
         _state.update { settingsState(c) }
     }
 
@@ -251,6 +279,7 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
         _update.value = stateWhileChecking(_update.value)
         viewModelScope.launch {
             val result = runCatching { withContext(Dispatchers.IO) { updateClient.fetchManifest() } }
+                .withUserMessage(R.string.update_check_failed_default)
             _update.value = stateAfterCheck(_update.value, result, BuildConfig.VERSION_CODE)
         }
     }
@@ -265,10 +294,24 @@ class StudyViewModel(app: Application) : AndroidViewModel(app) {
                     if (ApkInstaller.install(getApplication(), updateFile)) UpdateState.Available(manifest)
                     else UpdateState.NeedsPermission(manifest)
                 },
-                onFailure = { UpdateState.DownloadFailed(manifest, it.message ?: "Download failed") },
+                onFailure = { UpdateState.DownloadFailed(manifest, it.userMessage(R.string.update_download_failed_default)) },
             )
         }
     }
+
+    /** The failure's message in the chosen language; unknown failures keep their own text, or [fallback] when empty. */
+    private fun Throwable.userMessage(@StringRes fallback: Int): String = when (this) {
+        is UpdateFailure -> when (kind) {
+            UpdateFailureKind.MALFORMED_FEED -> t(R.string.update_err_feed)
+            UpdateFailureKind.CHECKSUM_MISMATCH -> t(R.string.update_err_checksum)
+            UpdateFailureKind.RATE_LIMIT -> t(R.string.update_err_rate_limit)
+            UpdateFailureKind.SERVER_ERROR -> t(R.string.update_err_server, httpCode)
+        }
+        else -> message ?: t(fallback)
+    }
+
+    private fun <T> Result<T>.withUserMessage(@StringRes fallback: Int): Result<T> =
+        fold(onSuccess = { Result.success(it) }, onFailure = { Result.failure(IllegalStateException(it.userMessage(fallback), it)) })
 
     // ---- plumbing ---------------------------------------------------------------------------
 

@@ -21,17 +21,23 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.pluralStringResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import dev.yuji.quiz.R
 import dev.yuji.quiz.domain.ActivityCalendar
 import dev.yuji.quiz.domain.CalendarDay
 import dev.yuji.quiz.domain.HEAT_FULL_ANSWERS
 import dev.yuji.quiz.domain.heatColorRgb
+import java.time.DayOfWeek
 import java.time.format.TextStyle
 import java.util.Locale
 
-private val WeekdayLetters = listOf("M", "T", "W", "T", "F", "S", "S")
+/** Narrow weekday names, Monday first, in the language on screen. */
+private fun weekdayLetters(locale: Locale) = DayOfWeek.entries.map { it.getDisplayName(TextStyle.NARROW, locale) }
 
 /** Warm-spectrum colour of a trained day. Text on top is always dark: every colour in the ramp is light enough. */
 private fun heat(answered: Int) = Color(0xFF000000.toInt() or heatColorRgb(answered))
@@ -51,20 +57,22 @@ fun ActivityCalendarCard(
             Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                 TextButton(onClick = onPreviousMonth) { Text("‹") }
                 Text(
-                    "${calendar.month.month.getDisplayName(TextStyle.SHORT, Locale.ENGLISH)} ${calendar.month.year}",
+                    "${calendar.month.month.getDisplayName(TextStyle.SHORT, Locale.getDefault())} ${calendar.month.year}",
                     style = scale.style(MaterialTheme.typography.titleMedium),
                 )
                 TextButton(onClick = onNextMonth, enabled = calendar.canGoNext) { Text("›") }
                 Box(Modifier.weight(1f))
-                TextButton(onClick = onSettings) { Text("Settings") }
+                TextButton(onClick = onSettings) { Text(stringResource(R.string.calendar_settings)) }
             }
             Text(
-                "Streak ${calendar.currentStreak} · longest ${calendar.longestStreak} · " +
-                    "${calendar.trainedDaysInMonth} ${if (calendar.trainedDaysInMonth == 1) "day" else "days"} this month",
+                stringResource(
+                    R.string.calendar_streak, calendar.currentStreak, calendar.longestStreak,
+                    pluralStringResource(R.plurals.calendar_days, calendar.trainedDaysInMonth, calendar.trainedDaysInMonth),
+                ),
                 style = scale.style(MaterialTheme.typography.labelMedium),
             )
             Row(Modifier.fillMaxWidth()) {
-                WeekdayLetters.forEach {
+                weekdayLetters(Locale.getDefault()).forEach {
                     Text(it, Modifier.weight(1f), textAlign = TextAlign.Center, style = scale.style(MaterialTheme.typography.labelSmall))
                 }
             }
@@ -114,7 +122,7 @@ private fun Legend() {
                 Brush.horizontalGradient(listOf(heat(1), heat(HEAT_FULL_ANSWERS / 2), heat(HEAT_FULL_ANSWERS)))
             )
         )
-        Text("$HEAT_FULL_ANSWERS+ answers", style = scale.style(MaterialTheme.typography.labelSmall))
+        Text(stringResource(R.string.calendar_legend, HEAT_FULL_ANSWERS), style = scale.style(MaterialTheme.typography.labelSmall))
     }
 }
 

@@ -15,8 +15,8 @@ Five study modes over a fixed, curated B2 pool (nothing beyond what every B2 spe
 | Mode | Question | Pool |
 |---|---|---|
 | **Der · Die · Das** | Pick the article of a noun | 484 nouns |
-| **Prepositions** | Pick the missing preposition in a sentence (verbs, adjectives, nouns and set expressions with prepositions) | 309 items |
-| **Plural forms** | Pick the plural of a noun | the same 484 nouns |
+| **Präpositionen** | Pick the missing preposition in a sentence (verbs, adjectives, nouns and set expressions with prepositions) | 309 items |
+| **Pluralformen** | Pick the plural of a noun | the same 484 nouns |
 | **Präteritum** | Pick the er/sie/es Präteritum of a verb | 253 inseparable verbs (strong and mixed first, plus modals and frequent regular verbs) |
 | **Fehler finden** | Tap the one wrong part of a B2 writing sentence (forum post or formal e-mail) | 121 sentences, 12 error types |
 
@@ -155,7 +155,7 @@ meaning, the rows are no longer each other's "also valid" alternative.
 
 Wrong options must be plausible but never accidentally correct (`DistractorFactory`):
 
-- **Prepositions:** drawn from a pool of common prepositions, excluding the answer and any
+- **Präpositionen:** drawn from a pool of common prepositions, excluding the answer and any
   alternative that is also valid.
 - **Plurals:** generated from German plural patterns (`-e`, `-en`, `-er`, umlaut variants).
   `-n` is only offered after words ending in `-e`, and `-s` only after vowels, because
@@ -169,7 +169,7 @@ Wrong options must be plausible but never accidentally correct (`DistractorFacto
 - Progress is a single JSON file (`FileProgressStore`), rewritten **atomically** (temp file +
   rename) after every answer, so a crash or kill never leaves a half-written file.
 - The store sits behind a `ProgressStore` interface; tests use `InMemoryProgressStore`.
-- The theme choice is a separate, tiny settings store.
+- The theme and language choices are a separate, tiny settings store (`SettingsStore`, SharedPreferences).
 - A corrupt progress file is logged on the `STORAGE` channel and treated as empty rather than
   crashing the app.
 - **Backup.** `ProgressBackup` (card states + answer history + daily goal + theme) is exported and imported
@@ -214,7 +214,7 @@ Jetpack Compose + Material 3, one `StudyViewModel` exposing a sealed `UiState`
 (`ModeSelect`, `Studying`, `Finished`, `Settings`, `Failed`).
 
 - Answer buttons use large text and a minimum 68 dp height (at the reference phone; scaled with screen height, see the decision log) for thumb use.
-- Prepositions show the optional hint (italic, under the headword) and the sentence in a larger
+- Präpositionen show the optional hint (italic, under the headword) and the sentence in a larger
   headline size.
 - The correct answer turns green and a wrong pick red; the explanation shows under the question.
 - Fehler finden lays the sentence out as tappable chunks (`ErrorSpotBody`, a `FlowRow`); after the answer the wrong
@@ -225,6 +225,27 @@ Jetpack Compose + Material 3, one `StudyViewModel` exposing a sealed `UiState`
 - Theme: system default / light / night, remembered, with status and navigation bars following
   it (edge-to-edge).
 - "Reset all progress" lives in Settings behind a confirmation dialog.
+
+### Languages
+
+Everything the app says itself is translated; the learning content is not. Questions, example sentences, answer options and
+the corrected sentence stay German in every language.
+
+- Languages: English, Deutsch, Português (Brasil), Español. Settings > Language lists them (each in its own name) after
+  **Use system default**, which is the default: it follows the phone's language and falls back to English when the phone uses
+  another one (`AppLanguage.effective`). The choice is stored in `SettingsStore.language`.
+- UI text lives in Android string resources (`res/values/strings.xml` = English, `values-de`, `values-pt`, `values-es`). The
+  mode names and instruction lines are resources too (`ui/ModeText.kt`), so "Prepositions" reads **Präpositionen** in German,
+  **Preposições** in Portuguese and **Preposiciones** in Spanish. `domain/` and `content/` stay Android-free: `GameMode` only
+  carries a developer `label`, and failures carry a kind (`BackupProblem`, `UpdateFailureKind`) that the UI maps to a string.
+- Applying a language: `MainActivity.attachBaseContext` wraps the context with the stored language (`Context.withLanguage`,
+  which also sets the JVM default locale for dates and month names), and the activity **recreates itself** when the choice
+  changes. The `StudyViewModel` survives the recreation, so Settings stays open. Text the view model produces itself (backup
+  notices, update errors) goes through its `t()` helper with the same language.
+- The English prose inside the vocabulary data (the 12 preposition hints, the 12 error types and 116 rules of Fehler finden) is
+  translated by `assets/i18n/<de|pt|es>.json`, keyed by the English original (`ContentTranslations`). Text without an entry is
+  shown as written, so a new rule only needs a translation added to the three files. `ContentTranslationsTest` fails when
+  one is missing; `StringResourcesTest` fails when a language lacks a string or its `%1$s` placeholders differ.
 
 ## 9. Debuggability
 
@@ -261,6 +282,8 @@ Newest first. Add an entry whenever a decision changes the design.
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-10-19 | **Language setting.** Settings > Language: Use system default (default), English, Deutsch, Português (Brasil), Español. All app text except the German questions and answer options is translated (UI strings, mode names, update and backup messages, calendar month and weekday names, and the English explanation text in the vocabulary data via `assets/i18n/<lang>.json`). The activity recreates itself on change; see section 8 "Languages". Version 2.2 (13) | The app is used by people whose first language differs, and German-learning text should not be mixed with English menus when the learner prefers another language. Android string resources fell out naturally (plurals, formats, fallback to English), a per-app locale wrapper avoids needing AppCompat or Android 13's per-app language API (minSdk 26), and keying the data translations by the English original left `vocab/*.json` untouched, so the web version's vocabulary sync check is unaffected. Technical failure details such as a server's error text are still shown as the system gives them |
+| 2026-10-19 | Mode names are German when the app language is German: **Prepositions** became **Präpositionen** and **Plural forms** became **Pluralformen** (first in `GameMode.title`, web `MODES`; since the language setting the titles are string resources, see the next row). Version 2.2 (13). Storage ids (`preposition`, `plural`) are unchanged, so saved progress and backups are not affected. The instruction lines under the titles stay English | All five mode names should read as German vocabulary the learner is drilling (Der · Die · Das, Präteritum, Fehler finden). Titles are display-only; the ids are what the scheduler and backups key on |
 | 2026-10-19 | The app gets a **launcher icon**: an adaptive icon (version 2.1 (12); `mipmap-anydpi-v26/ic_launcher.xml`, background colour `#1A1118`, foreground `mipmap-xxxhdpi/ic_launcher_foreground.png`, 432 px) showing a Heighway dragon curve that runs from pastel pink to red. The image was rendered by the exported Processing app `drachenkurve` (`~/dev/processing-sketches/drachenkurve`, run with `DRACHEN_ICON=1`: 10 folding steps, square canvas); both flavors share it | Until now the app had no icon and showed Android's default. `minSdk 26` means adaptive icons are always available, so no per-density legacy PNGs are needed. The dragon sits inside the central 55 % so round and squircle masks do not cut it. The web version uses the same image for its icons (`QuizWeb/icons`) | 
 | 2026-10-19 | Fifth mode, **Fehler finden** (`GameMode.ERROR_SPOT`, `tools/data/errors.tsv` -> `errors.json`, `ErrorSentenceEntry`, `CardFactory.errorCard`): 121 forum-post and formal-e-mail sentences, each with one wrong chunk to tap. Chunks are 1-5 words, so the tap target is a phrase, not a single word. Error types were taken from Giovanni's corrected writing (passive with sein, verb position, adjective endings, preposition + case, verb + preposition, du/Sie, capitalisation, plural/gender, collocations such as *Maßnahmen machen*) rather than from a generic list. Version 2.0 (11) | Giovanni's mistakes repeat in the same few patterns, and spotting them in a finished sentence trains the self-correction the Schreiben exam needs. Reusing the multiple-choice `Card` kept the scheduler, grader and backup untouched; only the screen differs. The mode does not auto-advance (a 0.5 s flash is too short to read a rule; a **Next** button replaces it), its new cards are shuffled once with a fixed seed so they do not arrive grouped by error type, and a fifth mode card overflowed the home screen on a 2400 px phone, so the compact home form now starts below 900 dp instead of 820 dp (instruction lines and calendar legend drop out) |
 | 2026-10-19 | The update check runs **every time the app comes to the foreground** (`MainActivity.onStart` -> `StudyViewModel.onAppOpened`), at most once per 30 s (`shouldCheckForUpdate`), instead of only when the process is created. A newer version opens a popup on the home screen (never during a study session): Update downloads right away and the popup turns into "Updating…" with a progress bar until Android's installer opens; "Later" hides it only until the next open; a failed download offers "Try again"; the missing install permission has its own step. A known update stays on screen while the feed is asked again, and a failed check (offline, rate limit) never hides it (`stateWhileChecking` / `stateAfterCheck`) | The old behaviour checked once per process, so a phone that kept the app in memory never noticed a release, "Later" was remembered, and tapping Update gave no feedback. The popup and state rules are pure functions (`updatePromptFor`, `stateAfterCheck`) with unit tests |
@@ -298,7 +321,7 @@ Newest first. Add an entry whenever a decision changes the design.
 - Play Protect shows "App scan recommended" for an app it has not seen; the user must pick "Scan app" (or More details) once per new APK. Registering the package in the Android Developer Console (limited distribution account) might remove it; untested. The installer intent also shows an app chooser; `ACTION_INSTALL_PACKAGE` would avoid it.
 - Progress view covers streaks only; no per-card mastery or accuracy history. A day's colour does not record which goal was set that day.
 - The review cap per session (100) still applies; a finished session can simply be restarted.
-- No custom app icon, accessibility pass, or tablet/landscape layout.
+- No accessibility pass or tablet/landscape layout. The web version is not translated yet (English only).
 - The 10 s "hard" threshold may be strict for slow, deliberate answers.
 - The explanation is visible for only 0.5 s; a longer delay after wrong answers is an option.
 

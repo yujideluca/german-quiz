@@ -19,7 +19,15 @@ data class ProgressBackup(
 
 sealed interface BackupParse {
     data class Ok(val backup: ProgressBackup) : BackupParse
-    data class Invalid(val reason: String) : BackupParse
+    /** [reason] is the English text for logs and tests; the screen shows a translation chosen by [problem]. */
+    data class Invalid(val problem: BackupProblem) : BackupParse {
+        val reason: String get() = problem.englishReason
+    }
+}
+
+enum class BackupProblem(val englishReason: String) {
+    NOT_A_BACKUP("This is not a German Quiz progress file."),
+    TOO_NEW("This file was made by a newer version of the app. Update the app first."),
 }
 
 private val backupJson = Json { ignoreUnknownKeys = true; prettyPrint = true }
@@ -29,9 +37,9 @@ fun encodeBackup(backup: ProgressBackup): String = backupJson.encodeToString(Pro
 /** Reads a backup file. Entries that cannot be trusted are dropped instead of failing the whole import. */
 fun decodeBackup(text: String): BackupParse {
     val backup = runCatching { backupJson.decodeFromString(ProgressBackup.serializer(), text) }
-        .getOrElse { return BackupParse.Invalid("This is not a German Quiz progress file.") }
+        .getOrElse { return BackupParse.Invalid(BackupProblem.NOT_A_BACKUP) }
     if (backup.format > BACKUP_FORMAT) {
-        return BackupParse.Invalid("This file was made by a newer version of the app. Update the app first.")
+        return BackupParse.Invalid(BackupProblem.TOO_NEW)
     }
     return BackupParse.Ok(
         backup.copy(

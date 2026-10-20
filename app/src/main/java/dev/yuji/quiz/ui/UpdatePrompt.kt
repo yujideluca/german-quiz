@@ -9,7 +9,9 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import dev.yuji.quiz.R
 import dev.yuji.quiz.domain.UpdateManifest
 
 /** What the update popup shows; null from [updatePromptFor] means no popup. */
@@ -37,20 +39,21 @@ fun updatePromptFor(update: UpdateState, dismissed: Boolean, onHomeScreen: Boole
 fun UpdatePromptDialog(prompt: UpdatePrompt, onUpdate: (UpdateManifest) -> Unit, onLater: () -> Unit) {
     val version = prompt.manifest.versionName
     val update = @Composable { label: String -> TextButton(onClick = { onUpdate(prompt.manifest) }) { Text(label) } }
-    val later = @Composable { TextButton(onClick = onLater) { Text("Later") } }
+    val updateLabel = stringResource(R.string.common_update)
+    val later = @Composable { TextButton(onClick = onLater) { Text(stringResource(R.string.common_later)) } }
     when (prompt) {
         is UpdatePrompt.Offer -> AlertDialog(
             onDismissRequest = onLater,
-            title = { Text("Update available") },
-            text = { Text("Version $version is ready on GitHub. Your progress is kept.") },
-            confirmButton = { update("Update") }, dismissButton = later,
+            title = { Text(stringResource(R.string.prompt_offer_title)) },
+            text = { Text(stringResource(R.string.prompt_offer_text, version)) },
+            confirmButton = { update(updateLabel) }, dismissButton = later,
         )
         is UpdatePrompt.Downloading -> AlertDialog(
             onDismissRequest = {},                                  // seconds long; fails visibly on a timeout
-            title = { Text("Updating…") },
+            title = { Text(stringResource(R.string.prompt_updating_title)) },
             text = {
                 Column(Modifier.fillMaxWidth()) {
-                    Text("Downloading version $version. Android will ask you to confirm the install.")
+                    Text(stringResource(R.string.prompt_updating_text, version))
                     LinearProgressIndicator(Modifier.fillMaxWidth().padding(top = 16.dp))
                 }
             },
@@ -58,18 +61,17 @@ fun UpdatePromptDialog(prompt: UpdatePrompt, onUpdate: (UpdateManifest) -> Unit,
         )
         is UpdatePrompt.NeedsPermission -> AlertDialog(
             onDismissRequest = onLater,
-            title = { Text("Allow updates") },
+            title = { Text(stringResource(R.string.prompt_permission_title)) },
             text = {
-                Text("Android needs your permission to install updates from this app. " +
-                    "Allow it in the screen that opened, then tap Update again.")
+                Text(stringResource(R.string.prompt_permission_text))
             },
-            confirmButton = { update("Update") }, dismissButton = later,
+            confirmButton = { update(updateLabel) }, dismissButton = later,
         )
         is UpdatePrompt.DownloadFailed -> AlertDialog(
             onDismissRequest = onLater,
-            title = { Text("Update failed") },
-            text = { Text("${prompt.message}. Your progress is safe.") },
-            confirmButton = { update("Try again") }, dismissButton = later,
+            title = { Text(stringResource(R.string.prompt_failed_title)) },
+            text = { Text(stringResource(R.string.prompt_failed_text, prompt.message)) },
+            confirmButton = { update(stringResource(R.string.prompt_try_again)) }, dismissButton = later,
         )
     }
 }

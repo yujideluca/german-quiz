@@ -32,8 +32,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
+import dev.yuji.quiz.R
 import dev.yuji.quiz.domain.Card as StudyCard
 import dev.yuji.quiz.domain.GameMode
 import dev.yuji.quiz.ModeOverview
@@ -77,16 +79,16 @@ fun ModeSelectScreen(
                     horizontalArrangement = Arrangement.spacedBy(scale.dp(8.dp)),
                 ) {
                     Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(scale.dp(2.dp))) {
-                        Text(m.mode.title, style = scale.style(MaterialTheme.typography.titleMedium))
-                        if (!compact) Text(m.mode.instruction, style = scale.style(MaterialTheme.typography.bodySmall))
+                        Text(stringResource(m.mode.titleRes()), style = scale.style(MaterialTheme.typography.titleMedium))
+                        if (!compact) Text(stringResource(m.mode.instructionRes()), style = scale.style(MaterialTheme.typography.bodySmall))
                         Text(
-                            "New ${m.stats.newAvailable} · Learning ${m.stats.learningDue} · " +
-                                "Review ${m.stats.reviewsDue} · Deck ${m.totalCards}",
+                            stringResource(R.string.home_stats, m.stats.newAvailable, m.stats.learningDue,
+                                m.stats.reviewsDue, m.totalCards),
                             style = scale.style(MaterialTheme.typography.labelMedium),
                         )
                     }
                     Button(onClick = { onPick(m) }, enabled = due > 0) {
-                        Text(if (due > 0) "Study ($due)" else "Done", style = scale.style(MaterialTheme.typography.labelLarge))
+                        Text(if (due > 0) stringResource(R.string.home_study, due) else stringResource(R.string.common_done), style = scale.style(MaterialTheme.typography.labelLarge))
                     }
                 }
             }
@@ -105,8 +107,8 @@ private fun DailyGoalCard(daily: DailyProgress) {
     Card(Modifier.fillMaxWidth()) {
         Column(Modifier.padding(horizontal = scale.dp(16.dp), vertical = scale.dp(10.dp)), verticalArrangement = Arrangement.spacedBy(scale.dp(6.dp))) {
             Text(
-                if (daily.reached) "Daily goal reached ✓  ${daily.answered} / ${daily.goal}"
-                else "Today: ${daily.answered} / ${daily.goal} questions",
+                if (daily.reached) stringResource(R.string.daily_reached, daily.answered, daily.goal)
+                else stringResource(R.string.daily_progress, daily.answered, daily.goal),
                 style = scale.style(MaterialTheme.typography.titleMedium),
             )
             LinearProgressIndicator(progress = { daily.fraction }, modifier = Modifier.fillMaxWidth())
@@ -134,9 +136,9 @@ fun StudyScreen(
     ) {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically) {
-            Text("${session.mode.title} · ${session.queue.size} left · today ${daily.answered}/${daily.goal}", style = scale.style(MaterialTheme.typography.labelLarge))
+            Text(stringResource(R.string.study_header, stringResource(session.mode.titleRes()), session.queue.size, daily.answered, daily.goal), style = scale.style(MaterialTheme.typography.labelLarge))
             Row(verticalAlignment = Alignment.CenterVertically) {
-                TextButton(onClick = onQuit) { Text("Quit", style = scale.style(MaterialTheme.typography.labelLarge)) }
+                TextButton(onClick = onQuit) { Text(stringResource(R.string.study_quit), style = scale.style(MaterialTheme.typography.labelLarge)) }
                 CardMenu(enabled = answer == null, onSuspend = onSuspend)
             }
         }
@@ -145,7 +147,7 @@ fun StudyScreen(
         } else {
         Text(card.prompt, style = scale.style(MaterialTheme.typography.displaySmall))
         card.hint?.let {
-            Text("Hint: $it", style = scale.style(MaterialTheme.typography.titleMedium), fontStyle = FontStyle.Italic,
+            Text(stringResource(R.string.study_hint, LocalContentTranslations.current.hint(it)), style = scale.style(MaterialTheme.typography.titleMedium), fontStyle = FontStyle.Italic,
                 color = MaterialTheme.colorScheme.primary)
         }
         card.context?.let { Text(it, style = scale.style(MaterialTheme.typography.headlineSmall)) }
@@ -168,10 +170,10 @@ fun StudyScreen(
         }
         }
         if (answer != null) {
-            Text(card.explanation, style = scale.style(MaterialTheme.typography.bodyLarge))
+            Text(LocalContentTranslations.current.explanation(card.explanation), style = scale.style(MaterialTheme.typography.bodyLarge))
             if (!card.mode.autoAdvances) {
                 Button(onClick = onNext, modifier = Modifier.fillMaxWidth().heightIn(min = scale.dp(56.dp))) {
-                    Text("Next", style = scale.style(MaterialTheme.typography.titleLarge))
+                    Text(stringResource(R.string.study_next), style = scale.style(MaterialTheme.typography.titleLarge))
                 }
             }
             if (showDebug) DebugOverlay(card.id, answer)
@@ -189,7 +191,7 @@ fun StudyScreen(
 private fun ErrorSpotBody(card: StudyCard, chunks: List<String>, chosen: String?, onChoose: (String) -> Unit) {
     val scale = LocalScreenScale.current
     Text(card.prompt, style = scale.style(MaterialTheme.typography.headlineMedium))
-    Text("Tap the part that is wrong", style = scale.style(MaterialTheme.typography.titleMedium), fontStyle = FontStyle.Italic,
+    Text(stringResource(R.string.errors_tap_wrong), style = scale.style(MaterialTheme.typography.titleMedium), fontStyle = FontStyle.Italic,
         color = MaterialTheme.colorScheme.primary)
     FlowRow(
         horizontalArrangement = Arrangement.spacedBy(scale.dp(8.dp)),
@@ -222,11 +224,11 @@ private fun CardMenu(enabled: Boolean, onSuspend: (SuspensionDuration) -> Unit) 
         Text("⋮", style = MaterialTheme.typography.headlineSmall)
     }
     DropdownMenu(expanded = open, onDismissRequest = { open = false }) {
-        DropdownMenuItem(text = { Text("Remove for 1 week") },
+        DropdownMenuItem(text = { Text(stringResource(R.string.card_remove_week)) },
             onClick = { open = false; onSuspend(SuspensionDuration.ONE_WEEK) })
-        DropdownMenuItem(text = { Text("Remove for 1 month") },
+        DropdownMenuItem(text = { Text(stringResource(R.string.card_remove_month)) },
             onClick = { open = false; onSuspend(SuspensionDuration.ONE_MONTH) })
-        DropdownMenuItem(text = { Text("Remove permanently") },
+        DropdownMenuItem(text = { Text(stringResource(R.string.card_remove_permanent)) },
             onClick = { open = false; onSuspend(SuspensionDuration.PERMANENT) })
     }
 }
@@ -251,9 +253,9 @@ fun FinishedScreen(session: StudySession, onBack: () -> Unit) = ScaledScreen { s
         Modifier.fillMaxSize().padding(scale.dp(16.dp)),
         verticalArrangement = Arrangement.spacedBy(scale.dp(16.dp), Alignment.CenterVertically),
     ) {
-        Text("Session complete", style = scale.style(MaterialTheme.typography.headlineLarge))
-        Text("${session.correctCount} correct · ${session.wrongCount} wrong",
+        Text(stringResource(R.string.finished_title), style = scale.style(MaterialTheme.typography.headlineLarge))
+        Text(stringResource(R.string.finished_score, session.correctCount, session.wrongCount),
             style = scale.style(MaterialTheme.typography.titleLarge))
-        OutlinedButton(onClick = onBack, modifier = Modifier.fillMaxWidth()) { Text("Back to modes") }
+        OutlinedButton(onClick = onBack, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.finished_back)) }
     }
 }
