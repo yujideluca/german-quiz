@@ -127,9 +127,10 @@ class DailyGoalTest {
         repeat(12) {
             val card = s.currentCard
             if (card != null) {
-                // miss each card once (it comes back in the session), then answer it correctly
+                // miss each card once, wait out its 10 minutes, then answer it correctly
                 val pick = if (missed.add(card.id)) card.choices.first { it != card.correctChoice } else card.correctChoice
                 s = c.advance(c.answer(s, pick))
+                if (s.currentCard == null) { now += 11 * 60_000; s = c.startSession(GameMode.ARTICLE) }
             }
         }
         assertTrue(c.dailyProgress().reached)

@@ -48,12 +48,15 @@ class PeriodizationSimulationTest {
         assertEquals(1, stats().reviewsDue)
     }
 
-    @Test fun firstWrongAnswerRepeatsAfterOneMinuteThenWaitsThreeDays() {
+    @Test fun firstWrongAnswerWaitsTenMinutesAndIsNotOfferedEarlierWhenYouComeBack() {
         val s1 = study(false)
         assertEquals(CardPhase.LEARNING, progress().phase)
-        assertEquals(MINUTE_MILLIS, progress().dueAtMillis - now)
-        assertEquals("missed card is asked again in this session", 2, s1.queue.size)
+        assertEquals(10 * MINUTE_MILLIS, progress().dueAtMillis - now)
+        assertEquals("missed card does not come straight back in this session", 1, s1.queue.size)
+        now += 9 * MINUTE_MILLIS
+        assertEquals("leaving and returning within 10 minutes: not offered", 0, stats().learningDue)
         now += MINUTE_MILLIS
+        assertEquals("after 10 minutes it is the first card", 1, stats().learningDue)
         study(true)
         assertEquals(CardPhase.REVIEW, progress().phase)
         assertEquals(3, progress().intervalDays)

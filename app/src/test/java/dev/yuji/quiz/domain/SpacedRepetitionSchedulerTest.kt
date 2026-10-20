@@ -15,7 +15,7 @@ class SpacedRepetitionSchedulerTest {
         val p = next(fresh(), ReviewGrade.AGAIN)
         assertEquals(CardPhase.LEARNING, p.phase)
         assertEquals(0, p.learningStep)
-        assertEquals(now + 1 * MINUTE_MILLIS, p.dueAtMillis)
+        assertEquals(now + 10 * MINUTE_MILLIS, p.dueAtMillis)
     }
 
     @Test fun firstGoodGraduatesToThreeDays() {
@@ -25,10 +25,10 @@ class SpacedRepetitionSchedulerTest {
         assertEquals(now + 3 * DAY_MILLIS, p.dueAtMillis)
     }
 
-    @Test fun againOnNewRepeatsAfterOneMinuteThenGoodGraduates() {
+    @Test fun againOnNewRepeatsAfterTenMinutesThenGoodGraduates() {
         val a = next(fresh(), ReviewGrade.AGAIN)
         assertEquals(CardPhase.LEARNING, a.phase)
-        assertEquals(now + MINUTE_MILLIS, a.dueAtMillis)
+        assertEquals(now + 10 * MINUTE_MILLIS, a.dueAtMillis)
         val b = next(a, ReviewGrade.GOOD)
         assertEquals(CardPhase.REVIEW, b.phase)
         assertEquals(3, b.intervalDays)

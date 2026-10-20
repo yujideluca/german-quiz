@@ -24,12 +24,11 @@ class StudyEngineTest {
         assertTrue(s.isAwaitingAdvance)
     }
 
-    @Test fun missedCardIsRequeuedInTheSameSession() {
+    @Test fun missedCardWaitsAndIsNotRequeued() {
         val s = answer(session(), "die")
-        assertEquals(2, s.queue.size)               // current + requeued copy
+        assertEquals(1, s.queue.size)               // only the current card: no copy is queued behind it
         val after = StudyEngine.advance(s, 4_000)
-        assertEquals(1, after.queue.size)
-        assertFalse(after.isFinished)
+        assertTrue(after.isFinished)
     }
 
     @Test fun wrongAnswerCountsAndIsAgain() {

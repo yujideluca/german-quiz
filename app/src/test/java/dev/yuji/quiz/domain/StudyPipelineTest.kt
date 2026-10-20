@@ -39,14 +39,15 @@ class StudyPipelineTest {
         assertEquals(listOf("c2", "c1"), q.cards.take(2).map { it.id })
     }
 
-    @Test fun learningCardsComeFirstAndLearnAheadWindowApplies() {
+    @Test fun learningCardsComeFirstOnceTheirWaitIsOver() {
         val p = mapOf(
             "c1" to progress("c1", CardPhase.REVIEW, now - DAY_MILLIS),
-            "c2" to progress("c2", CardPhase.LEARNING, now + 5 * MINUTE_MILLIS),
-            "c3" to progress("c3", CardPhase.LEARNING, now + 60 * MINUTE_MILLIS), // outside 20 min window
+            "c2" to progress("c2", CardPhase.LEARNING, now - 1),                    // wait is over
+            "c3" to progress("c3", CardPhase.LEARNING, now + 5 * MINUTE_MILLIS),    // still waiting: not offered
         )
         val q = build(p)
         assertEquals(listOf("c2", "c1"), q.cards.take(2).map { it.id })
+        assertTrue("c3" !in q.cards.map { it.id })
     }
 
     @Test fun interleaveSlotsExtrasAfterEveryNMain() {
