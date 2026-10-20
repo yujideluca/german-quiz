@@ -3,12 +3,12 @@
     <string name="mode_article_title">Der · Die · Das</string>
     <string name="mode_preposition_title">Preposições</string>
     <string name="mode_plural_title">Formas do plural</string>
-    <string name="mode_preterite_title">Präteritum</string>
+    <string name="mode_preterite_title">Pretérito</string>
     <string name="mode_errors_title">Encontrar o erro</string>
     <string name="mode_article_instruction">Escolha o artigo correto</string>
     <string name="mode_preposition_instruction">Complete com a preposição que falta</string>
     <string name="mode_plural_instruction">Escolha a forma correta do plural</string>
-    <string name="mode_preterite_instruction">Escolha a forma correta do Präteritum</string>
+    <string name="mode_preterite_instruction">Escolha a forma correta do pretérito</string>
     <string name="mode_errors_instruction">Toque na parte errada da frase</string>
     <string name="common_done">Concluído</string>
     <string name="common_back">Voltar</string>

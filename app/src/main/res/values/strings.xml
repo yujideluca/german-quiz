@@ -7,12 +7,12 @@
     <string name="mode_article_title">Der · Die · Das</string>
     <string name="mode_preposition_title">Prepositions</string>
     <string name="mode_plural_title">Plural forms</string>
-    <string name="mode_preterite_title">Präteritum</string>
+    <string name="mode_preterite_title">Past tense</string>
     <string name="mode_errors_title">Find the mistake</string>
     <string name="mode_article_instruction">Choose the correct article</string>
     <string name="mode_preposition_instruction">Fill in the missing preposition</string>
     <string name="mode_plural_instruction">Choose the correct plural form</string>
-    <string name="mode_preterite_instruction">Choose the correct Präteritum form</string>
+    <string name="mode_preterite_instruction">Choose the correct past tense form</string>
     <string name="mode_errors_instruction">Tap the part of the sentence that is wrong</string>
     <string name="common_done">Done</string>
     <string name="common_back">Back</string>
