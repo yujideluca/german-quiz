@@ -1,5 +1,7 @@
 package dev.yuji.quiz
 
+// REQ PE-1 PE-3 PE-4 DG-1 CA-1 MG-1 QU-2 SE-3
+
 import dev.yuji.quiz.content.CardFactory
 import dev.yuji.quiz.content.NounEntry
 import dev.yuji.quiz.content.PrepositionEntry

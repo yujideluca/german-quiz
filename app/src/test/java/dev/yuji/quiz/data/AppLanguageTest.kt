@@ -1,5 +1,7 @@
 package dev.yuji.quiz.data
 
+// REQ LG-1
+
 import java.util.Locale
 import org.junit.Assert.assertEquals
 import org.junit.Test

@@ -235,7 +235,7 @@ private fun CardMenu(enabled: Boolean, onSuspend: (SuspensionDuration) -> Unit) 
 
 @Composable
 private fun DebugOverlay(cardId: String, a: AnswerRecord) {
-    val fmt = SimpleDateFormat("MM-dd HH:mm", Locale.getDefault())
+    val fmt = SimpleDateFormat("MM-dd HH:mm", Locale.ROOT)
     Text(
         "debug · $cardId\n" +
             "grade=${a.grade} ${a.responseMillis}ms\n" +

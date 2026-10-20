@@ -1,5 +1,7 @@
 package dev.yuji.quiz.content
 
+// REQ LG-1
+
 import java.io.File
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonArray

@@ -1,6 +1,7 @@
 import java.util.Properties
 
 plugins {
+    jacoco
     id("com.android.application")
     id("org.jetbrains.kotlin.plugin.compose")
     id("org.jetbrains.kotlin.plugin.serialization")
@@ -14,8 +15,8 @@ android {
         applicationId = "dev.yuji.quiz"
         minSdk = 26
         targetSdk = 36
-        versionCode = 15
-        versionName = "2.4"
+        versionCode = 16
+        versionName = "2.5"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     // Same key for debug and release builds, so any build can update any other in place and keep app data.
@@ -50,7 +51,10 @@ android {
         }
     }
     buildTypes {
-        debug { ownSigning?.let { signingConfig = it } }
+        debug {
+            ownSigning?.let { signingConfig = it }
+            enableUnitTestCoverage = true
+        }
         release {
             ownSigning?.let { signingConfig = it }
             isMinifyEnabled = true

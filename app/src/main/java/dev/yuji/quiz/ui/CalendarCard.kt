@@ -21,6 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
@@ -57,7 +58,7 @@ fun ActivityCalendarCard(
             Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                 TextButton(onClick = onPreviousMonth) { Text("‹") }
                 Text(
-                    "${calendar.month.month.getDisplayName(TextStyle.SHORT, Locale.getDefault())} ${calendar.month.year}",
+                    "${calendar.month.month.getDisplayName(TextStyle.SHORT, LocalConfiguration.current.locales[0])} ${calendar.month.year}",
                     style = scale.style(MaterialTheme.typography.titleMedium),
                 )
                 TextButton(onClick = onNextMonth, enabled = calendar.canGoNext) { Text("›") }
@@ -72,7 +73,7 @@ fun ActivityCalendarCard(
                 style = scale.style(MaterialTheme.typography.labelMedium),
             )
             Row(Modifier.fillMaxWidth()) {
-                weekdayLetters(Locale.getDefault()).forEach {
+                weekdayLetters(LocalConfiguration.current.locales[0]).forEach {
                     Text(it, Modifier.weight(1f), textAlign = TextAlign.Center, style = scale.style(MaterialTheme.typography.labelSmall))
                 }
             }

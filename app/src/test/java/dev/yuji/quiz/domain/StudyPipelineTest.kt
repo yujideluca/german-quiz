@@ -1,5 +1,7 @@
 package dev.yuji.quiz.domain
 
+// REQ QU-1 QU-2
+
 import dev.yuji.quiz.debug.NoopStudyLog
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue

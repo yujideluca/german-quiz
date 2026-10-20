@@ -51,9 +51,20 @@ class FileProgressStore(private val file: File, private val log: StudyLog = Noop
 
     private fun cache(): MutableMap<String, CardProgress> = cache ?: run {
         val loaded = runCatching { json.decodeFromString(serializer, file.readText()) }
-            .onFailure { if (file.exists()) log.debug(LogChannel.STORAGE) { "progress file unreadable: ${it.message}" } }
+            .onFailure {
+                if (file.exists()) {
+                    log.debug(LogChannel.STORAGE) { "progress file unreadable: ${it.message}" }
+                    keepDamagedCopy()
+                }
+            }
             .getOrDefault(emptyMap())
         loaded.toMutableMap().also { cache = it }
+    }
+
+    /** A file we cannot read is kept next to the original, so the next save cannot destroy the only copy. */
+    private fun keepDamagedCopy() {
+        val copy = File(file.path + ".corrupt")
+        runCatching { file.copyTo(copy, overwrite = !copy.exists()) }
     }
 
     private fun flush() {

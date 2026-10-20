@@ -1,5 +1,7 @@
 package dev.yuji.quiz.domain
 
+// REQ UP-1
+
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull

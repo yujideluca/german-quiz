@@ -1,5 +1,7 @@
 package dev.yuji.quiz.domain
 
+// REQ GR-1
+
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

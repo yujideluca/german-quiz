@@ -1,5 +1,7 @@
 package dev.yuji.quiz.domain
 
+// REQ MG-1 QU-1
+
 import dev.yuji.quiz.debug.NoopStudyLog
 import java.time.ZoneOffset
 import org.junit.Assert.assertEquals

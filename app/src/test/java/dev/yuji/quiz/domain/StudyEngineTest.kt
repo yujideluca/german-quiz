@@ -1,5 +1,7 @@
 package dev.yuji.quiz.domain
 
+// REQ SE-1 SE-2 SP-2
+
 import dev.yuji.quiz.debug.InMemoryStudyLog
 import dev.yuji.quiz.debug.LogChannel
 import dev.yuji.quiz.debug.NoopStudyLog

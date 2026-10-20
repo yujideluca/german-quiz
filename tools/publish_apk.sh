@@ -8,6 +8,7 @@
 #   tools/publish_apk.sh promote  build the stable flavor and publish it to main, but only if the
 #                                 version on bleeding-edge is this exact commit (so what was tested is what ships)
 #
+# Both modes first run tools/quality_gate.sh (tests, coverage, traceability, conformance, lint; promote adds the mutation check).
 # After a promote the script checks that the web version (https://yujideluca.github.io/german-quiz-web/) is in step with the app
 # (tools/check_web_sync.sh) and exits 2 if it is not: the web version is updated every time the user version is.
 #
@@ -41,6 +42,8 @@ else
     || { echo "refusing to promote: bleeding-edge does not hold version $code of commit ${commit:0:7}. Publish it there with 'beta' and test it first."; exit 1; }
 fi
 
+# Exit criteria of docs/TESTING.md; a promote also has to survive the mutation check.
+tools/quality_gate.sh $([ "$mode" = promote ] && echo --mutation)
 ./gradlew "test${flavor}DebugUnitTest" "assemble${flavor}Release" -q
 
 git -C "$feed" checkout -q "$branch" 2>/dev/null || git -C "$feed" checkout -q -b "$branch" origin/main

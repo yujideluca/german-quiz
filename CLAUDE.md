@@ -24,3 +24,8 @@
   `PeriodizationSimulationTest`; when you touch the scheduler, queue or session code, check those rules against what the
   **player sees when they leave and re-open a quiz** (`StudyController.startSession`), not only against the scheduler's output.
   A rule that Giovanni states is a requirement, so write it into this list and into a test in the same change.
+- **Quality assurance:** follow `docs/TESTING.md`. A behaviour Giovanni states is first a row in `docs/REQUIREMENTS.md`
+  (with an ID), then a test tagged `// REQ <ID>`, then code. `tools/quality_gate.sh` must pass (it is run by
+  `publish_apk.sh`; `promote` adds `--mutation`). When you add a rule to the scheduler, queue or session, add a
+  mutant for it to `tools/mutation_check.py` and a vector to `app/src/test/resources/conformance/scheduler.json`
+  (copy it to `~/dev/QuizWeb/tests/conformance/`). Report which levels were actually run, and which could not be.

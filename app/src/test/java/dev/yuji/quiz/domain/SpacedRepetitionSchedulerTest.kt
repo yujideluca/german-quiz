@@ -1,5 +1,7 @@
 package dev.yuji.quiz.domain
 
+// REQ SP-1 SP-2 SP-3 SP-4 SP-5 SP-6 GR-1
+
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -98,5 +100,24 @@ class SpacedRepetitionSchedulerTest {
         val b = next(a, ReviewGrade.GOOD, at = 99)
         assertEquals(5L, b.firstSeenAtMillis)
         assertEquals(2, b.repetitions)
+    }
+
+    @Test fun correctAnswersLengthenTheGapEvenAtTheLowestEase() {   // REQ SP-3 (low-ease boundary)
+        var p = review(1, ease = cfg.minimumEase)
+        var last = p.intervalDays
+        repeat(10) {
+            p = next(p, ReviewGrade.GOOD, p.dueAtMillis)
+            assertTrue("interval ${p.intervalDays} must exceed $last", p.intervalDays > last)
+            last = p.intervalDays
+        }
+    }
+
+    @Test fun moreLearningStepsAreWalkedInOrderBeforeGraduating() {   // the step logic is general, not tied to one step
+        val two = SchedulerConfig(learningStepsMinutes = listOf(1, 10))
+        val a = SpacedRepetitionScheduler.scheduleNext(fresh(), ReviewGrade.GOOD, now, two)
+        assertEquals(CardPhase.LEARNING, a.phase)
+        assertEquals(now + 10 * MINUTE_MILLIS, a.dueAtMillis)
+        val b = SpacedRepetitionScheduler.scheduleNext(a, ReviewGrade.GOOD, now, two)
+        assertEquals(CardPhase.REVIEW, b.phase)
     }
 }
