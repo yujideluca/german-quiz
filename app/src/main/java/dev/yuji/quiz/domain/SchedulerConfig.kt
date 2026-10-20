@@ -2,10 +2,10 @@ package dev.yuji.quiz.domain
 
 /** Anki-style (SM-2 variant) parameters. Defaults mirror Anki's defaults. */
 data class SchedulerConfig(
-    val learningStepsMinutes: List<Int> = listOf(1, 10),
+    val learningStepsMinutes: List<Int> = listOf(1),
     val relearningStepsMinutes: List<Int> = listOf(10),
-    val graduatingIntervalDays: Int = 1,
-    val easyIntervalDays: Int = 4,
+    val graduatingIntervalDays: Int = 3,
+    val easyIntervalDays: Int = 5,
     val startingEase: Double = 2.5,
     val minimumEase: Double = 1.3,
     val easyBonus: Double = 1.3,

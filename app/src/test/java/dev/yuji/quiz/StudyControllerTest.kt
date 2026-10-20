@@ -41,7 +41,8 @@ class StudyControllerTest {
 
         val c2 = controller(store)                          // simulated app restart
         val articleStats = c2.overview().first { it.mode == GameMode.ARTICLE }.stats
-        assertEquals(1, articleStats.learningDue)           // seen card is now in learning
+        assertEquals(0, articleStats.learningDue)
+        assertEquals(0, articleStats.reviewsDue)            // seen card waits 3 days
         assertEquals(1, articleStats.newAvailable)
     }
 
@@ -90,12 +91,12 @@ class StudyControllerTest {
         val store = InMemoryProgressStore()
         val c = controller(store)
         var s = c.startSession(GameMode.PREPOSITION)
-        // answer twice correctly: learning step 0 -> 1 -> graduated (interval 1 day)
-        repeat(2) {
-            s = c.answer(s, s.currentCard!!.correctChoice)
-            s = c.advance(s)
-        }
+        // one correct answer sends the card away for 3 days
+        s = c.answer(s, s.currentCard!!.correctChoice)
+        s = c.advance(s)
         now += 2 * DAY_MILLIS
+        assertEquals("not due after 2 days", 0, controller(store).overview().first { it.mode == GameMode.PREPOSITION }.stats.reviewsDue)
+        now += DAY_MILLIS
         assertEquals(1, controller(store).overview().first { it.mode == GameMode.PREPOSITION }.stats.reviewsDue)
     }
 }
@@ -116,15 +117,23 @@ class DailyGoalTest {
         var p = c.startSession(GameMode.PREPOSITION)
         c.answer(p, p.currentCard!!.correctChoice)
         assertEquals(dev.yuji.quiz.domain.DailyProgress(2, 10), c.dailyProgress())
-        assertEquals(2, c.overview().first { it.mode == GameMode.ARTICLE }.stats.let { it.newAvailable + it.learningDue } )
+        assertEquals(1, c.overview().first { it.mode == GameMode.ARTICLE }.stats.let { it.newAvailable + it.learningDue } )   // the answered card now waits 3 days
     }
 
     @Test fun goalReachedKeepsStudyingPossible() {
         val c = controller(dev.yuji.quiz.data.InMemoryTrainingStore(dailyGoal = 3))
         var s = c.startSession(GameMode.ARTICLE)
-        repeat(12) { if (s.currentCard != null) { s = c.answer(s, s.currentCard!!.correctChoice); s = c.advance(s) } }
+        val missed = mutableSetOf<String>()
+        repeat(12) {
+            val card = s.currentCard
+            if (card != null) {
+                // miss each card once (it comes back in the session), then answer it correctly
+                val pick = if (missed.add(card.id)) card.choices.first { it != card.correctChoice } else card.correctChoice
+                s = c.advance(c.answer(s, pick))
+            }
+        }
         assertTrue(c.dailyProgress().reached)
-        assertEquals(4, c.dailyProgress().answered)   // 2 cards x 2 learning steps, past the goal of 3
+        assertEquals(4, c.dailyProgress().answered)   // 2 cards x (1 miss + 1 correct), past the goal of 3
     }
 
     @Test fun dayCountResetsOnANewDayButHistoryIsKeptAndGoalSnapsToTheSlider() {
@@ -144,8 +153,9 @@ class DailyGoalTest {
 
     @Test fun calendarReflectsAnswersAndStreak() {
         val c = controller(dev.yuji.quiz.data.InMemoryTrainingStore())
+        val modes = listOf(GameMode.ARTICLE, GameMode.ARTICLE, GameMode.PREPOSITION)   // answered cards wait 3 days
         repeat(3) { day ->
-            val s = c.startSession(GameMode.ARTICLE)
+            val s = c.startSession(modes[day])
             c.answer(s, s.currentCard!!.correctChoice)
             if (day < 2) now += DAY_MILLIS
         }

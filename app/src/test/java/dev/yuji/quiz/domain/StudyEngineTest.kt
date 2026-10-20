@@ -17,15 +17,15 @@ class StudyEngineTest {
     private fun answer(s: StudySession, choice: String, at: Long = 3_000, log: dev.yuji.quiz.debug.StudyLog = NoopStudyLog) =
         StudyEngine.answer(s, choice, at, cfg, GraderConfig(), log)
 
-    @Test fun correctAnswerScoresAndSchedulesLearning() {
+    @Test fun correctAnswerScoresAndSchedulesThreeDaysOut() {
         val s = answer(session(), "der")
         assertEquals(1, s.correctCount)
-        assertEquals(CardPhase.LEARNING, s.progressById.getValue(card.id).phase)
+        assertEquals(CardPhase.REVIEW, s.progressById.getValue(card.id).phase)
         assertTrue(s.isAwaitingAdvance)
     }
 
-    @Test fun learningCardIsRequeuedInTheSameSession() {
-        val s = answer(session(), "der")
+    @Test fun missedCardIsRequeuedInTheSameSession() {
+        val s = answer(session(), "die")
         assertEquals(2, s.queue.size)               // current + requeued copy
         val after = StudyEngine.advance(s, 4_000)
         assertEquals(1, after.queue.size)
