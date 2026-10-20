@@ -260,7 +260,7 @@ the corrected sentence stay German in every language.
 
 JVM unit tests cover the scheduler, grader, pipeline, availability/search, session engine,
 content generation and an end-to-end controller test (including persistence across sessions).
-`PeriodizationSimulationTest` follows one card through days of study with a fake clock (learning
+`SpacingRulesTest` pins the promise for every mode (new cards, first correct answer -> 3 days, never earlier, each later correct answer later than the last). `PeriodizationSimulationTest` follows one card through days of study with a fake clock (learning
 steps, 3 -> 8 -> 20 -> 50 -> 125 day intervals, lapse and relearning, HARD/EASY timing). The same schedule
 was verified on the phone by injecting due times into `progress.json`.
 Every UI change is additionally exercised on a real phone (a Motorola edge 50 fusion over adb)
