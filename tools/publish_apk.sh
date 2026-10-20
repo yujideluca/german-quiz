@@ -8,6 +8,9 @@
 #   tools/publish_apk.sh promote  build the stable flavor and publish it to main, but only if the
 #                                 version on bleeding-edge is this exact commit (so what was tested is what ships)
 #
+# After a promote the script checks that the web version (https://yujideluca.github.io/german-quiz-web/) is in step with the app
+# (tools/check_web_sync.sh) and exits 2 if it is not: the web version is updated every time the user version is.
+#
 # Bump versionCode/versionName in app/build.gradle.kts first: the app only offers an update when versionCode is
 # higher than the installed one. The working tree must be committed. Keep the same signing key
 # (~/.android/german-quiz-release.jks) or Android refuses to update in place.
@@ -49,3 +52,4 @@ git -C "$feed" add german-quiz.apk latest.json
 git -C "$feed" commit -q -m "$mode $name (versionCode $code, ${commit:0:7})"
 git -C "$feed" push -q origin "$branch"
 echo "$mode: published $name ($code) to $branch sha256=$sha"
+if [ "$mode" = promote ]; then "$root/tools/check_web_sync.sh"; fi

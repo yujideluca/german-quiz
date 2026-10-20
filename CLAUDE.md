@@ -12,3 +12,8 @@
 - **Releases:** run `tools/publish_apk.sh beta` after committing: it goes to the feed's `bleeding-edge`
   branch (the beta app). Run `tools/publish_apk.sh promote` (feed branch `main`, what users get) **only when
   Giovanni says the beta is good**; it refuses unless bleeding-edge holds that same commit.
+- **The web version follows the user version.** Every time the user version is updated (a `promote`), update the web version too:
+  https://yujideluca.github.io/german-quiz-web/ (repo `yujideluca/german-quiz-web`, clone `~/dev/QuizWeb`, plain ES modules, `npm test`).
+  Port the change (copy the `vocab/*.json` files, port code and tests, bump `VERSION` in its `sw.js`), push, and confirm the live
+  site serves it. `tools/check_web_sync.sh` (run at the end of `promote`) fails with exit 2 while the web version is behind. Giovanni
+  asked for this once; do not wait to be asked again. Say in the report that the web link was updated (and give it).
