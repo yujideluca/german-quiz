@@ -17,3 +17,10 @@
   Port the change (copy the `vocab/*.json` and `i18n/*.json` files, port code and tests (UI text: regenerate `src/strings.js` from the app's string resources), bump `VERSION` in its `sw.js`), push, and confirm the live
   site serves it. `tools/check_web_sync.sh` (run at the end of `promote`) fails with exit 2 while the web version is behind. Giovanni
   asked for this once; do not wait to be asked again. Say in the report that the web link was updated (and give it).
+- **Spacing rules are the app's first principle; never change them silently, and never trust the scheduler's defaults.**
+  (1) A new card answered correctly returns after 3 days, never earlier. (2) A wrong answer returns after 10 minutes, never
+  earlier: not in the same session, not as the first card when the player leaves the quiz and comes back. (3) Every further
+  correct answer pushes the next showing later than the last one. These are pinned by `SpacingRulesTest` and
+  `PeriodizationSimulationTest`; when you touch the scheduler, queue or session code, check those rules against what the
+  **player sees when they leave and re-open a quiz** (`StudyController.startSession`), not only against the scheduler's output.
+  A rule that Giovanni states is a requirement, so write it into this list and into a test in the same change.

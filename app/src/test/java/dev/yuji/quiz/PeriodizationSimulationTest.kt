@@ -113,4 +113,15 @@ class PeriodizationSimulationTest {
         study(true, seconds = 1)
         assertEquals(3, progress().intervalDays)
     }
+
+    /** The real user flow: miss a card, leave the quiz, come back (a new session), at different times. */
+    @Test fun leavingAndReturningNeverShowsAMissedCardEarly() {
+        study(false)
+        now += MINUTE_MILLIS
+        assertEquals("1 min later: nothing to study", null, c.startSession(GameMode.ARTICLE).currentCard)
+        now += 8 * MINUTE_MILLIS
+        assertEquals("9 min later: still nothing", null, c.startSession(GameMode.ARTICLE).currentCard)
+        now += MINUTE_MILLIS
+        assertEquals("10 min later: the missed card", id, c.startSession(GameMode.ARTICLE).currentCard!!.id)
+    }
 }
