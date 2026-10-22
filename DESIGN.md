@@ -376,12 +376,11 @@ Newest first. Add an entry whenever a decision changes the design. **Type** is t
 
 ## 12. Known limitations and ideas
 
-- Play Protect shows "App scan recommended" for an app it has not seen; the user must pick "Scan app" (or More details) once per new APK. Registering the package in the Android Developer Console (limited distribution account) might remove it; untested. The installer intent also shows an app chooser; `ACTION_INSTALL_PACKAGE` would avoid it.
-- Progress view covers streaks only; no per-card mastery or accuracy history. A day's colour does not record which goal was set that day.
-- The review cap per session (100) still applies; a finished session can simply be restarted.
-- No accessibility pass or tablet/landscape layout. The web version's UI text (`src/strings.js`) is generated from the same strings and its `i18n/*.json` files are copies of the app's; `tools/check_web_sync.sh` compares them.
-- The 10 s "hard" threshold may be strict for slow, deliberate answers.
-- The explanation is visible for only 0.5 s; a longer delay after wrong answers is an option.
+Tracked as GitHub Issues since 2026-10-22, so there is one prioritised list (policy: `docs/MAINTENANCE.md`):
+[debt](https://github.com/yujideluca/german-quiz/issues?q=is%3Aopen+label%3Adebt) (labelled `P1`..`P3`) and
+[ideas](https://github.com/yujideluca/german-quiz/issues?q=is%3Aopen+label%3Aidea). The items that stood here moved to
+issues #6 to #9; the web version's UI text (`src/strings.js`) is generated from the app's strings and its `i18n/*.json`
+files are copies, compared by `tools/check_web_sync.sh`.
 
 ## How this file is maintained
 
