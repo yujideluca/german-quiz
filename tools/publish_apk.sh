@@ -8,6 +8,10 @@
 #   tools/publish_apk.sh promote  build the stable flavor and publish it to main, but only if the
 #                                 version on bleeding-edge is this exact commit (so what was tested is what ships)
 #
+# A version may be promoted once it survives the automated tests updated for what it changes (docs/adr/0011):
+# the gate with the mutation check, and tools/check_tests_updated.sh against the last stable release (code that
+# changed without any test change is refused). From then on, promoting is Giovanni's decision; no waiting time.
+#
 # Both modes first run tools/quality_gate.sh (tests, coverage, traceability, conformance, lint; promote adds the mutation check).
 # After a promote the script checks that the web version (https://yujideluca.github.io/german-quiz-web/) is in step with the app
 # (tools/check_web_sync.sh) and exits 2 if it is not: the web version is updated every time the user version is.
@@ -17,7 +21,7 @@
 # (~/.android/german-quiz-release.jks) or Android refuses to update in place.
 set -euo pipefail
 mode="${1:-}"
-[ "$mode" = beta ] || [ "$mode" = promote ] || { sed -n '2,11p' "$0"; exit 1; }
+[ "$mode" = beta ] || [ "$mode" = promote ] || { sed -n '2,15p' "$0"; exit 1; }
 
 source "$HOME/dev/env.sh"
 root="$(cd "$(dirname "$0")/.." && pwd)"
@@ -40,6 +44,14 @@ else
   tested=$(manifest bleeding-edge || true)
   [ "$(echo "$tested" | field versionCode)" = "$code" ] && [ "$(echo "$tested" | field commit)" = "$commit" ] \
     || { echo "refusing to promote: bleeding-edge does not hold version $code of commit ${commit:0:7}. Publish it there with 'beta' and test it first."; exit 1; }
+fi
+
+# Tests must have been updated for what changed since the last stable release (ADR-0011). Beta only warns,
+# so the gap shows up before Giovanni is asked to promote.
+stable_commit=$(manifest main | field commit || true)
+if [ -n "$stable_commit" ]; then
+  if [ "$mode" = promote ]; then tools/check_tests_updated.sh "$stable_commit"
+  else tools/check_tests_updated.sh "$stable_commit" || echo "WARNING: promote will refuse this version until its tests are updated"; fi
 fi
 
 # Exit criteria of docs/TESTING.md; a promote also has to survive the mutation check.

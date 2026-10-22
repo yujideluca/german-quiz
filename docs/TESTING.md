@@ -59,7 +59,8 @@ failed), because the rule was never written down and tests restated the implemen
 4. The conformance vectors in the app (`core/src/test/resources/conformance/`) and in the web clone are identical.
 5. Fitness functions hold (`tools/fitness_check.py`): `:core` has no Android, no Kotlin file over 400 lines, the gate
    finishes within 20 minutes; `publish_apk.sh` also checks the release APK stays under 3 MB (ADR-0009).
-6. Before a **promote**: the mutation check kills every mutant (`--mutation`).
+6. Before a **promote**: the mutation check kills every mutant (`--mutation`), and `tools/check_tests_updated.sh`
+   shows the tests changed with the code since the last stable release (ADR-0011).
 7. Not automatable here and therefore stated openly in each report: instrumented tests need an unlocked
    phone; UI looks (taste), real-world update installs.
 

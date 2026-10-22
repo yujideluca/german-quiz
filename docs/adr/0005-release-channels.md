@@ -1,6 +1,6 @@
 # ADR-0005: Two release channels: beta first, stable only on Giovanni's word
 
-- **Status:** accepted (reconstructed 2026-10-22)
+- **Status:** accepted (reconstructed 2026-10-22); amended by [ADR-0011](0011-promote-after-updated-tests.md) (when a version may be promoted)
 - **Date:** 2026-10-19
 - **Type (ISO/IEC/IEEE 14764):** preventive
 - **Decided by:** Giovanni

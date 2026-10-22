@@ -38,7 +38,7 @@ decision-log row of Type *Preventive* (or "no changes needed") and close or re-p
 2. `python3 tools/metrics.py --days 30`: note deployment frequency, lead time, rework rate, preventive share. Ask:
    - Is the rework rate rising? Then a requirement or test is missing somewhere (ADR-0008).
    - Is the preventive share far below 20 %? Then schedule the top `debt` issues.
-   - Are betas promoted within minutes? Then the beta channel is not being used to test (ADR-0005).
+   - Time in beta is not a warning sign (ADR-0011: the updated tests are the condition, then Giovanni decides).
 3. `python3 tools/fitness_check.py`: which file is closest to 400 lines? Split it before it crosses.
 4. Do `DESIGN.md` section 3 (diagrams, tree) and the ADRs still match the code? Is every structural change since the
    last review covered by an ADR?

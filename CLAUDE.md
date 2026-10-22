@@ -6,7 +6,9 @@
 2. **Logic is framework-free**: scheduler, grader, queue, session and content live in `:core`, which has no Android;
    an `import android.*` there does not compile (ADR-0009).
 3. **Requirement, then test, then code** (ADR-0008): checked by the traceability gate.
-4. **Nothing reaches the player without the beta app first** (ADR-0005): checked by `publish_apk.sh promote`.
+4. **Nothing reaches the player without the beta app first** (ADR-0005), and a version is eligible for promote once it
+   survives the automated tests updated for what it changes (ADR-0011): gate with mutation + `tools/check_tests_updated.sh`,
+   both run by `publish_apk.sh promote`. Then promoting is Giovanni's call; no minimum time in beta.
 5. **The web twin behaves like the user version** (ADR-0006): shared vectors, `check_web_sync.sh`, both CIs.
 6. **Decisions are written where the code is**: decision-log row with its Type in `DESIGN.md`; an ADR in `docs/adr/`
    for structural ones; the C4 diagrams in `DESIGN.md` section 3 change in the same commit.
@@ -29,7 +31,8 @@
   `tools/fitness_check.py` are raised only on purpose, with a decision-log row saying why.
 - **Releases:** run `tools/publish_apk.sh beta` after committing: it goes to the feed's `bleeding-edge`
   branch (the beta app). Run `tools/publish_apk.sh promote` (feed branch `main`, what users get) **only when
-  Giovanni says the beta is good**; it refuses unless bleeding-edge holds that same commit.
+  Giovanni says the beta is good**; it refuses unless bleeding-edge holds that same commit and the tests were updated
+  since the last stable release (ADR-0011). When a beta passes, tell Giovanni it is eligible and let them decide.
 - **The web version follows the user version.** Every time the user version is updated (a `promote`), update the web version too:
   https://yujideluca.github.io/german-quiz-web/ (repo `yujideluca/german-quiz-web`, clone `~/dev/QuizWeb`, plain ES modules, `npm test`).
   While the app version is still in beta, its web port waits on the web branch `web-<versionName>` (CI picks it up);
