@@ -329,6 +329,12 @@ the corrected sentence stay German in every language.
   Logging lambdas are lazy, so disabled channels cost nothing.
 - A debug-build overlay under each question shows card id, grade, response time, phase
   transition, ease, interval, lapses and due time.
+- **Local feed for end-to-end tests.** `./gradlew assembleBetaDebug -PfeedUrl=http://127.0.0.1:8099` builds an app that reads
+  the feed from the laptop instead of GitHub; serve a checkout of a sandbox feed with `python3 -m http.server 8099` and run
+  `adb reverse tcp:8099 tcp:8099`. With `FEED_DIR=<sandbox clone>` the publish scripts write to that sandbox, so a question
+  pool (or an APK) can be tried on the phone without publishing anything. Plain HTTP is allowed to localhost only, and
+  only in debug builds (`src/debug/res/xml/network_security_config.xml`). Clear a test pool afterwards with
+  `adb shell run-as dev.yuji.quiz.beta rm -rf files/content`.
 
 ## 10. Testing
 
