@@ -2,13 +2,14 @@
 """Build the app's vocabulary assets from tools/data/*.tsv and validate them.
 
 Usage:
-  build_vocab.py                  validate + write app/src/main/assets/vocab/*.json
+  build_vocab.py                  validate + write app/src/main/assets/vocab/*.json and refresh
+                                  assets/content.json (pool version, see tools/content_manifest.py)
   build_vocab.py --verify-nouns   additionally cross-check gender and plural of every
                                   noun against de.wiktionary.org (needs network)
 
 Fails (exit 1) on any structural problem so bad data never reaches the app.
 """
-import argparse, json, re, sys, time, urllib.error, urllib.parse, urllib.request
+import argparse, json, re, subprocess, sys, time, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -205,6 +206,7 @@ def main():
     (OUT / "verbs.json").write_text(json.dumps(verbs, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "errors.json").write_text(json.dumps(sentences, ensure_ascii=False, indent=1), encoding="utf-8")
     kinds = {k: sum(p["kind"] == k for p in preps) for k in sorted(KINDS)}
+    subprocess.run([sys.executable, str(ROOT / "tools/content_manifest.py")], check=True)  # new version if anything changed
     print(f"nouns: {len(nouns)} | preposition items: {len(preps)} {kinds} | verbs: {len(verbs)} | error sentences: {len(sentences)} -> {OUT}")
 
     if a.verify_nouns:

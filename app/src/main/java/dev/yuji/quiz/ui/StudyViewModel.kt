@@ -14,8 +14,7 @@ import dev.yuji.quiz.ModeOverview
 import dev.yuji.quiz.StudyController
 import dev.yuji.quiz.android.AndroidStudyLog
 import dev.yuji.quiz.android.ApkInstaller
-import dev.yuji.quiz.content.CardFactory
-import dev.yuji.quiz.data.AssetVocabularySource
+import dev.yuji.quiz.data.ActiveContent
 import dev.yuji.quiz.data.FileProgressStore
 import dev.yuji.quiz.data.SharedPreferencesSettingsStore
 import dev.yuji.quiz.data.SharedPreferencesTrainingStore
@@ -60,6 +59,9 @@ sealed interface UiState {
         val counts: ManagedCounts,
         val query: String,
         val results: List<ManagedCard>,
+        /** Version of the question pool in use, and whether it was downloaded (otherwise built into the app). */
+        val poolVersion: Int = 0,
+        val poolDownloaded: Boolean = false,
     ) : UiState
     data class Failed(val message: String) : UiState
 }
@@ -99,16 +101,21 @@ class StudyViewModel @JvmOverloads constructor(
     private fun t(@StringRes id: Int, vararg args: Any): String =
         getApplication<Application>().withLanguage(settingsStore.language).getString(id, *args)
 
-    private val controller: StudyController? = runCatching {
+    private val updateClient = UpdateClient(BuildConfig.FEED_URL, ref = BuildConfig.UPDATE_REF)
+    /** The question pool in use and its updates from the feed (ADR-0012); its files also hold the translations. */
+    val pool = QuestionPool(app, updateClient, log, viewModelScope)
+
+    private fun controllerFor(app: Application, active: ActiveContent) = StudyController(
+        deck = active.deck,
+        store = FileProgressStore(File(app.filesDir, "progress.json"), log),
+        clock = SystemClock,
+        log = log,
+        training = SharedPreferencesTrainingStore(app),
+    )
+
+    private var controller: StudyController? = runCatching {
         controllerFactory?.invoke(app, log) ?: run {
-            val source = AssetVocabularySource(app)
-            StudyController(
-                deck = CardFactory.buildDeck(source.nouns(), source.prepositions(), source.verbs(), source.errorSentences()),
-                store = FileProgressStore(File(app.filesDir, "progress.json"), log),
-                clock = SystemClock,
-                log = log,
-                training = SharedPreferencesTrainingStore(app),
-            )
+            controllerFor(app, pool.load())
         }
     }.onFailure { android.util.Log.e("Quiz", "failed to initialise", it) }.getOrNull()
 
@@ -157,8 +164,9 @@ class StudyViewModel @JvmOverloads constructor(
         _state.update { if (it is UiState.ModeSelect) modeSelectState(c) else it }
     }
 
-    fun backToModes() = withController { c ->
+    fun backToModes() = withController { c0 ->
         advanceJob?.cancel()
+        val c = pool.takePending()?.let { applyContent(it) } ?: c0
         calendarMonth = null                                        // home always opens on the current month
         _state.update { modeSelectState(c) }
     }
@@ -216,7 +224,8 @@ class StudyViewModel @JvmOverloads constructor(
     }
 
     private fun settingsState(c: StudyController) =
-        UiState.Settings(_themeMode.value, _language.value, c.dailyProgress().goal, c.managedCounts(), searchQuery, c.managedCards(searchQuery))
+        UiState.Settings(_themeMode.value, _language.value, c.dailyProgress().goal, c.managedCounts(), searchQuery, c.managedCards(searchQuery),
+            pool.active?.version ?: 0, pool.active?.downloaded == true)
 
     // ---- backup -----------------------------------------------------------------------------
 
@@ -270,7 +279,6 @@ class StudyViewModel @JvmOverloads constructor(
 
     // ---- app updates ------------------------------------------------------------------------
 
-    private val updateClient = UpdateClient(ref = BuildConfig.UPDATE_REF)
     private val updateFile = File(app.cacheDir, "updates/update.apk")
     private val _update = MutableStateFlow<UpdateState>(UpdateState.Idle)
     val update: StateFlow<UpdateState> = _update
@@ -292,12 +300,25 @@ class StudyViewModel @JvmOverloads constructor(
         if (_update.value is UpdateState.Checking || _update.value is UpdateState.Downloading) return
         lastCheckAtMillis = System.currentTimeMillis()
         _update.value = stateWhileChecking(_update.value)
+        pool.check(::onPoolInstalled)
         viewModelScope.launch {
             val result = runCatching { withContext(Dispatchers.IO) { updateClient.fetchManifest() } }
                 .withUserMessage(R.string.update_check_failed_default)
             _update.value = stateAfterCheck(_update.value, result, BuildConfig.VERSION_CODE)
         }
     }
+
+    /** A new pool replaces the deck at once on home or Settings; during a session it waits for [backToModes] (QP-3). */
+    private fun onPoolInstalled(next: ActiveContent): Boolean {
+        if (_state.value is UiState.Studying || _state.value is UiState.Finished) return false
+        val c = applyContent(next)
+        _state.update { if (it is UiState.Settings) settingsState(c) else modeSelectState(c) }
+        return true
+    }
+
+    /** Swaps in a new deck; progress is reloaded from disk, where every answer is already saved (QP-3). */
+    private fun applyContent(next: ActiveContent): StudyController =
+        controllerFor(getApplication(), pool.activate(next)).also { controller = it }
 
     /** Downloads the new APK and opens Android's installer; study progress lives in app data and survives. */
     fun installUpdate(manifest: UpdateManifest) {

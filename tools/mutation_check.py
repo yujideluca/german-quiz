@@ -48,6 +48,11 @@ APP = [
  (D+"domain/DailyGoal.kt", "fun AnswerHistory.answeredOn(epochDay: Long): Int = this[epochDay] ?: 0", "fun AnswerHistory.answeredOn(epochDay: Long): Int = this[epochDay - 1] ?: 0", "bar shows yesterday's count"),
  (A+"StudyController.kt", "if (card != null && updated !== session) {", "if (card != null) {", "rejected answers still counted"),
  (A+"data/TrainingStore.kt", "val c = count.toIntOrNull()?.takeIf { it > 0 } ?: return@mapNotNull null", "val c = count.toIntOrNull() ?: return@mapNotNull null", "damaged day counts accepted"),
+ (D+"content/ContentPack.kt", "remote.schema == supportedSchema && remote.contentVersion > activeVersion", "remote.schema == supportedSchema && remote.contentVersion >= activeVersion", "same question pool downloaded again"),
+ (D+"content/ContentPack.kt", "downloaded.schema == supportedSchema && downloaded.contentVersion > bundled.contentVersion", "downloaded.schema == supportedSchema", "outdated downloaded pool beats the built-in one"),
+ (D+"content/ContentPack.kt", "if (!sha256(data).equals(expected, ignoreCase = true))", "if (false)", "pool files not checked against their checksums"),
+ (D+"content/ContentPack.kt", "GameMode.entries.firstOrNull { deck[it].isNullOrEmpty() }", "GameMode.entries.firstOrNull { false }", "a pool that empties a mode is accepted"),
+ (A+"data/ContentStore.kt", "        store.clear()\n    }\n    return ActiveContent(builtIn", "    }\n    return ActiveContent(builtIn", "outdated or unreadable downloaded pool kept on disk"),
 ]
 
 WEB = [

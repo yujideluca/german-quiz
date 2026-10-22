@@ -33,6 +33,10 @@
   branch (the beta app). Run `tools/publish_apk.sh promote` (feed branch `main`, what users get) **only when
   Giovanni says the beta is good**; it refuses unless bleeding-edge holds that same commit and the tests were updated
   since the last stable release (ADR-0011). When a beta passes, tell Giovanni it is eligible and let them decide.
+- **New questions need no app release** (ADR-0012): edit `tools/data/*.tsv`, run `tools/build_vocab.py` (raises the pool
+  version in `assets/content.json`), raise the pool-size floors in `ContentTest` if useful, commit, push, then
+  `tools/publish_content.sh beta`. `tools/publish_content.sh promote` (main + web version) only when Giovanni says so, like an
+  APK. A new mode or a new field in the files is an app change: raise `CONTENT_SCHEMA` and `SCHEMA` in `tools/content_manifest.py`.
 - **The web version follows the user version.** Every time the user version is updated (a `promote`), update the web version too:
   https://yujideluca.github.io/german-quiz-web/ (repo `yujideluca/german-quiz-web`, clone `~/dev/QuizWeb`, plain ES modules, `npm test`).
   While the app version is still in beta, its web port waits on the web branch `web-<versionName>` (CI picks it up);

@@ -155,6 +155,11 @@ fun SettingsScreen(
 
         HorizontalDivider()
         UpdateSection(update, onCheckUpdate, onInstallUpdate)
+        Text(
+            stringResource(R.string.pool_version, state.poolVersion,
+                stringResource(if (state.poolDownloaded) R.string.pool_downloaded else R.string.pool_built_in)),
+            style = MaterialTheme.typography.bodyMedium,
+        )
     }
 
     confirm?.let { action ->

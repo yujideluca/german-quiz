@@ -107,4 +107,14 @@
         <item quantity="one">%1$d día</item>
         <item quantity="other">%1$d días</item>
     </plurals>
+    <string name="common_ok">OK</string>
+    <string name="pool_updated_title">Banco de preguntas actualizado</string>
+    <plurals name="pool_updated_added">
+        <item quantity="one">Se añadió %1$d pregunta nueva. Tu progreso se conserva.</item>
+        <item quantity="other">Se añadieron %1$d preguntas nuevas. Tu progreso se conserva.</item>
+    </plurals>
+    <string name="pool_updated_changed">Se corrigieron preguntas. Tu progreso se conserva.</string>
+    <string name="pool_version">Banco de preguntas versión %1$d · %2$s</string>
+    <string name="pool_downloaded">descargado</string>
+    <string name="pool_built_in">incluido en la app</string>
 </resources>

@@ -29,8 +29,9 @@ git diff --quiet -- docs/TRACEABILITY.md || { echo "docs/TRACEABILITY.md changed
 step "6/7 Android lint (errors fail the gate)"
 ./gradlew lintStableDebug -q
 
-step "7/7 fitness functions (pure core module, file size)"
+step "7/7 fitness functions (pure core module, file size) and the question pool manifest"
 python3 tools/fitness_check.py
+python3 tools/content_manifest.py --check
 [ "$SECONDS" -le "$MAX_GATE_SECONDS" ] || { echo "FAIL gate took ${SECONDS}s (> ${MAX_GATE_SECONDS}s)"; exit 1; }
 echo "gate time so far: ${SECONDS}s (limit ${MAX_GATE_SECONDS}s)"
 

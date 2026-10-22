@@ -1,0 +1,13 @@
+{
+ "schema": 1,
+ "contentVersion": 1,
+ "files": {
+  "vocab/nouns.json": "42f004cc64de59cc051a2492b13af5d951b5183ec728a637f0abe5af1fd3dbc9",
+  "vocab/prepositions.json": "b27683d4afcf49a2bc18936d0e6b00b253b215b1ae9aabf36fb4d2849a126de7",
+  "vocab/verbs.json": "f64749f2da438953ccd565428f439cc6d2f8f904f414feea7809a4e3eebafa81",
+  "vocab/errors.json": "d844226e4ef8077ef1103bf49caf83b4435cd0ed95a8340be6c3f32c38732c5f",
+  "i18n/de.json": "f3d11964590109c422a6d38a21a3d836eeacdd21f97b27810c16e6858e5a3f3e",
+  "i18n/pt.json": "c3721028988c2668fe7fe324771065ebef555bdbc67aedcee3c329f0dde8f4e0",
+  "i18n/es.json": "92c533242882165a90a34b3dc991dfd8bb748f1d9143be0eed5bff44b69dde19"
+ }
+}

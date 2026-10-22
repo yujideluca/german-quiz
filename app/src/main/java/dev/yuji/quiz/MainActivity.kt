@@ -26,7 +26,6 @@ import androidx.lifecycle.compose.LifecycleEventEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import dev.yuji.quiz.android.systemLocale
 import dev.yuji.quiz.android.withLanguage
 import dev.yuji.quiz.data.AppLanguage
@@ -37,6 +36,7 @@ import dev.yuji.quiz.ui.BackupActions
 import dev.yuji.quiz.ui.FinishedScreen
 import dev.yuji.quiz.ui.LocalContentTranslations
 import dev.yuji.quiz.ui.ModeSelectScreen
+import dev.yuji.quiz.ui.PoolUpdatedDialog
 import dev.yuji.quiz.ui.SettingsScreen
 import dev.yuji.quiz.ui.StudyScreen
 import dev.yuji.quiz.ui.StudyViewModel
@@ -68,9 +68,9 @@ class MainActivity : ComponentActivity() {
             val mode by vm.themeMode.collectAsState()
             val language by vm.language.collectAsState()
             LaunchedEffect(language) { if (language != appliedLanguage) recreate() }
-            val context = LocalContext.current
-            val contentTranslations = remember(appliedLanguage) {
-                loadContentTranslations(context, appliedLanguage.effective(systemLocale().language))
+            val poolFiles by vm.pool.files.collectAsState()
+            val contentTranslations = remember(appliedLanguage, poolFiles) {
+                loadContentTranslations(poolFiles, appliedLanguage.effective(systemLocale().language))
             }
             val dark = when (mode) {
                 ThemeMode.SYSTEM -> isSystemInDarkTheme()
@@ -101,6 +101,8 @@ class MainActivity : ComponentActivity() {
                     val promptDismissed by vm.promptDismissed.collectAsState()
                     updatePromptFor(updateState, promptDismissed, onHomeScreen = state is UiState.ModeSelect)
                         ?.let { UpdatePromptDialog(it, vm::installUpdate, vm::dismissUpdatePrompt) }
+                    val poolNotice by vm.pool.notice.collectAsState()
+                    if (state is UiState.ModeSelect) poolNotice?.let { PoolUpdatedDialog(it, vm.pool::dismissNotice) }
                     // Back returns to the home screen from everywhere else; on home it leaves the app.
                     BackHandler(enabled = state !is UiState.ModeSelect && state !is UiState.Failed) { vm.backToModes() }
                     when (val s = state) {

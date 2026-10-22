@@ -107,4 +107,14 @@
         <item quantity="one">%1$d Tag</item>
         <item quantity="other">%1$d Tage</item>
     </plurals>
+    <string name="common_ok">OK</string>
+    <string name="pool_updated_title">Fragenpool aktualisiert</string>
+    <plurals name="pool_updated_added">
+        <item quantity="one">%1$d neue Frage ist dazugekommen. Dein Fortschritt bleibt erhalten.</item>
+        <item quantity="other">%1$d neue Fragen sind dazugekommen. Dein Fortschritt bleibt erhalten.</item>
+    </plurals>
+    <string name="pool_updated_changed">Fragen wurden korrigiert. Dein Fortschritt bleibt erhalten.</string>
+    <string name="pool_version">Fragenpool Version %1$d · %2$s</string>
+    <string name="pool_downloaded">heruntergeladen</string>
+    <string name="pool_built_in">in der App enthalten</string>
 </resources>

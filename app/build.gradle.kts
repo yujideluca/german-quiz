@@ -15,9 +15,14 @@ android {
         applicationId = "dev.yuji.quiz"
         minSdk = 26
         targetSdk = 36
-        versionCode = 17
-        versionName = "2.6"
+        versionCode = 18
+        versionName = "2.7"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        // `-PfeedUrl=http://127.0.0.1:8099` points a build at a local copy of the feed (with `adb reverse`), so a
+        // question-pool or APK release can be tried end to end without publishing it. Debug builds allow plain HTTP
+        // to localhost only (src/debug/res/xml/network_security_config.xml); release builds never.
+        val feedUrl = (project.findProperty("feedUrl") as String?) ?: "https://api.github.com/repos/yujideluca/german-quiz-releases/contents"
+        buildConfigField("String", "FEED_URL", "\"$feedUrl\"")
     }
     // Same key for debug and release builds, so any build can update any other in place and keep app data.
     // The key lives outside the repo; without this file the build falls back to the default debug key.

@@ -22,3 +22,4 @@ and commit history; their alternatives are the ones recorded then, nothing more.
 | [0009](0009-pure-core-module.md) | Pure Kotlin `core` module, CI and fitness functions | accepted |
 | [0010](0010-progress-backup.md) | Progress backup as one JSON file, import replaces | accepted (reconstructed) |
 | [0011](0011-promote-after-updated-tests.md) | Promote once the updated automated tests pass; then Giovanni decides | accepted |
+| [0012](0012-downloadable-question-pool.md) | The question pool is a versioned pack the app can download from the update feed | accepted |

@@ -1,5 +1,6 @@
 package dev.yuji.quiz.data
 
+import dev.yuji.quiz.content.CONTENT_MANIFEST_FILE
 import dev.yuji.quiz.domain.UpdateManifest
 import dev.yuji.quiz.domain.parseUpdateManifest
 import java.io.File
@@ -8,7 +9,7 @@ import java.net.URL
 import java.security.MessageDigest
 
 /**
- * Reads the update feed (a public GitHub repo holding only `latest.json` and the newest APK).
+ * Reads the update feed (a public GitHub repo holding `latest.json`, the newest APK and the question pool in `content/`).
  * Files come through the GitHub contents API, which is cached for at most 60 s; raw.githubusercontent.com
  * caches for 5 minutes and ignores query strings, so it would hide a fresh release.
  * [ref] is the feed branch to follow: "main" for the stable app, "bleeding-edge" for the beta app.
@@ -18,13 +19,21 @@ enum class UpdateFailureKind { MALFORMED_FEED, CHECKSUM_MISMATCH, RATE_LIMIT, SE
 
 class UpdateFailure(val kind: UpdateFailureKind, message: String, val httpCode: Int = 0) : IllegalStateException(message)
 
-class UpdateClient(private val baseUrl: String = FEED_URL, private val ref: String = "main") {
+class UpdateClient(private val baseUrl: String = FEED_URL, private val ref: String = "main") : ContentFeed {
 
     /** Returns the manifest, or throws with a human-readable message. */
     fun fetchManifest(): UpdateManifest {
         val text = open("$baseUrl/latest.json?ref=$ref").use { it.readBytes().decodeToString() }
         return parseUpdateManifest(text) ?: throw UpdateFailure(UpdateFailureKind.MALFORMED_FEED, "The update feed is malformed")
     }
+
+    /** The question pool's manifest in the feed's `content/` folder, as text (it is stored as it came). */
+    override fun fetchContentManifestText(): String = fetchBytes("$CONTENT_DIR/$CONTENT_MANIFEST_FILE").decodeToString()
+
+    /** One file of the question pool, e.g. `vocab/nouns.json`; checked against the manifest by the caller. */
+    override fun fetchContentFile(path: String): ByteArray = fetchBytes("$CONTENT_DIR/$path")
+
+    private fun fetchBytes(path: String) = open("$baseUrl/$path?ref=$ref").use { it.readBytes() }
 
     /** Downloads the APK into [target] and verifies its SHA-256; deletes the file when it does not match. */
     fun downloadApk(manifest: UpdateManifest, target: File) {
@@ -63,6 +72,8 @@ class UpdateClient(private val baseUrl: String = FEED_URL, private val ref: Stri
     }
 
     companion object {
+        /** Folder of the feed repo that holds the downloadable question pool (ADR-0012). */
+        const val CONTENT_DIR = "content"
         const val FEED_URL = "https://api.github.com/repos/yujideluca/german-quiz-releases/contents"
         private const val TIMEOUT_MILLIS = 15_000
         private const val BUFFER_BYTES = 64 * 1024

@@ -111,4 +111,14 @@
         <item quantity="one">%1$d day</item>
         <item quantity="other">%1$d days</item>
     </plurals>
+    <string name="common_ok">OK</string>
+    <string name="pool_updated_title">Question pool updated</string>
+    <plurals name="pool_updated_added">
+        <item quantity="one">%1$d new question was added. Your progress is kept.</item>
+        <item quantity="other">%1$d new questions were added. Your progress is kept.</item>
+    </plurals>
+    <string name="pool_updated_changed">Questions were corrected. Your progress is kept.</string>
+    <string name="pool_version">Question pool version %1$d · %2$s</string>
+    <string name="pool_downloaded">downloaded</string>
+    <string name="pool_built_in">built into the app</string>
 </resources>

@@ -1,6 +1,6 @@
 package dev.yuji.quiz.data
 
-// REQ UP-1
+// REQ UP-1, QP-1
 
 import com.sun.net.httpserver.HttpServer
 import dev.yuji.quiz.domain.UpdateManifest
@@ -50,6 +50,19 @@ class UpdateClientTest {
         val m = client.fetchManifest()
         assertEquals(8, m.versionCode)
         assertEquals("application/vnd.github.raw+json", acceptHeader)
+    }
+
+    @Test fun `reads the question pool from the content folder of its own feed branch`() {
+        val paths = mutableListOf<String>()
+        server.createContext("/content/") { ex ->
+            paths += ex.requestURI.path + "?" + ex.requestURI.query
+            val body = "x".toByteArray()
+            ex.sendResponseHeaders(200, body.size.toLong()); ex.responseBody.use { it.write(body) }; ex.close()
+        }
+        val beta = UpdateClient("http://127.0.0.1:${server.address.port}", ref = "bleeding-edge")
+        assertEquals("x", beta.fetchContentManifestText())
+        assertEquals(1, beta.fetchContentFile("vocab/nouns.json").size)
+        assertEquals(listOf("/content/content.json?ref=bleeding-edge", "/content/vocab/nouns.json?ref=bleeding-edge"), paths)
     }
 
     @Test fun `follows the configured feed branch for the manifest and the apk`() {

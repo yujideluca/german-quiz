@@ -10,7 +10,7 @@ Last updated: 2026-10-22
 
 ## 1. What the app is
 
-Five study modes over a fixed, curated B2 pool (nothing beyond what every B2 speaker should know):
+Five study modes over a curated B2 pool (nothing beyond what every B2 speaker should know). The pool can grow without an app update: the app downloads newer question packs from its update feed (section 5, [ADR-0012](docs/adr/0012-downloadable-question-pool.md)). Pool sizes as built into version 2.7:
 
 | Mode | Question | Pool |
 |---|---|---|
@@ -24,7 +24,7 @@ Each question is multiple choice (in Fehler finden the "choices" are the sentenc
 wrong or slow answers return soon and well-known ones are pushed out to days, weeks and months.
 
 Target: Android 8.0+ (`minSdk 26`), built with `compileSdk 37` / `targetSdk 36`.
-Package: `dev.yuji.quiz`. Two Gradle modules (`:core` pure Kotlin, `:app` Android; see section 3), no backend, no network access except the update check (see the decision log, 2026-10-19).
+Package: `dev.yuji.quiz`. Two Gradle modules (`:core` pure Kotlin, `:app` Android; see section 3), no backend, no network access except the update check and the question-pool check that runs with it (see the decision log, 2026-10-19 and 2026-10-22).
 
 ## 2. Design goals (from the original brief)
 
@@ -48,11 +48,12 @@ flowchart LR
     player([Player<br/>Android phone or browser])
     app[German Quiz<br/>Android app]
     web[German Quiz web<br/>PWA on GitHub Pages]
-    feed[(german-quiz-releases<br/>public GitHub repo:<br/>latest.json + signed APK)]
+    feed[(german-quiz-releases<br/>public GitHub repo:<br/>latest.json + signed APK<br/>+ content/ question pack)]
     drive[(Phone storage or<br/>Google Drive)]
     player -- studies with --> app
     player -- studies with --> web
-    app -- reads update manifest and APK<br/>GitHub contents API --> feed
+    app -- reads update manifest, APK<br/>and question pack<br/>GitHub contents API --> feed
+    web -. same question pack<br/>copied at promote .-> feed
     app -- backup file<br/>document picker --> drive
 ```
 
@@ -63,7 +64,7 @@ flowchart TB
     subgraph appmod[":app (Android)"]
         ui[ui/<br/>Compose screens, ViewModel]
         ctrl[StudyController<br/>the facade the UI calls]
-        data[data/<br/>progress, settings, training stores,<br/>update client, asset readers]
+        data[data/<br/>progress, settings, training stores,<br/>update client, content store and updater]
         android[android/<br/>logcat, installer, locale]
     end
     subgraph coremod[":core (pure Kotlin/JVM, no Android)"]
@@ -71,11 +72,13 @@ flowchart TB
         content[content/<br/>vocabulary models and parsers,<br/>card and distractor factories]
         debug[debug/<br/>DebugFlags, StudyLog]
     end
-    assets[(assets/vocab, assets/i18n<br/>built by tools/build_vocab.py)]
+    assets[(assets/vocab, assets/i18n, content.json<br/>built by tools/build_vocab.py)]
+    downloaded[(files/content/current<br/>downloaded question pack)]
     ui --> ctrl --> domain
     ctrl --> data
     data --> content
     data --> assets
+    data --> downloaded
     ctrl --> content
     domain --> debug
 ```
@@ -211,6 +214,28 @@ Wrong options must be plausible but never accidentally correct (`DistractorFacto
   same options, which keeps tests and bug reports reproducible. The *order* of the buttons is
   shuffled per repetition but frozen while the answer feedback is on screen.
 
+### Updating the pool without an app release
+
+The seven pool files (`vocab/*.json`, `i18n/*.json`) are one **pack** described by `content.json`: the file format
+(`schema`, 1 for now), a `contentVersion` and the SHA-256 (a fingerprint that proves a file arrived complete and
+unchanged) of every file ([ADR-0012](docs/adr/0012-downloadable-question-pool.md), requirements QP-1..QP-4).
+
+- **Making new questions:** edit `tools/data/*.tsv`, run `tools/build_vocab.py` (it validates, writes the JSON and, through
+  `tools/content_manifest.py`, raises `contentVersion` when any file changed), commit. Then
+  `tools/publish_content.sh beta` puts the pack in the feed's `content/` folder on `bleeding-edge`; after trying it in the
+  beta app, `tools/publish_content.sh promote` (Giovanni's call) copies exactly that pack to `main` and the same files to
+  the web version. The gate fails if `content.json` does not match the bundled files.
+- **On the phone** (`ContentPack.kt` in `:core`; `ContentStore`, `ContentUpdater` and `ui/QuestionPool`): with each update
+  check the app reads `content/content.json` of its own branch, downloads a pack only if its schema is 1 and its version is
+  higher than the pack in use, and installs it only if every file matches its checksum, parses and leaves every mode at least
+  one question. A failed, refused or offline download changes nothing.
+- **Which pack is used:** the downloaded one only while it is newer than the one built into the APK; an outdated or unreadable
+  downloaded pack is deleted on start. The deck is swapped at once on home or Settings and, during a study session, when the
+  player returns home. Progress is untouched (card ids come from the content), new questions start as new, and a popup on
+  the home screen says how many were added. Settings shows "Question pool version N · downloaded / built into the app".
+- A new mode or a new field in the files is not a pool change: it needs an app release and a higher `schema`, which older
+  apps ignore.
+
 ## 6. Persistence
 
 - Progress is a single JSON file (`FileProgressStore`), rewritten **atomically** (temp file +
@@ -219,6 +244,8 @@ Wrong options must be plausible but never accidentally correct (`DistractorFacto
 - The theme and language choices are a separate, tiny settings store (`SettingsStore`, SharedPreferences).
 - A corrupt progress file is logged on the `STORAGE` channel and treated as empty rather than
   crashing the app.
+- A downloaded question pack lives in `files/content/current` (written to `files/content/staging` first, then renamed),
+  so an interrupted install leaves the old pack or none, never half of one.
 - **Backup.** `ProgressBackup` (card states + answer history + daily goal + theme) is exported and imported
   as a JSON file via Android's document picker; `ProgressStore.replaceAll` applies an import in a single write.
 
@@ -336,6 +363,7 @@ Newest first. Add an entry whenever a decision changes the design. **Type** is t
 
 | Date | Type | Decision | Why |
 |---|---|---|---|
+| 2026-10-22 | Perfective | **Question pool updates without an app release** ([ADR-0012](docs/adr/0012-downloadable-question-pool.md), QP-1..QP-4). The pool files form a versioned pack (`assets/content.json`: schema, `contentVersion`, SHA-256 per file; kept by `tools/content_manifest.py`, run by `build_vocab.py` and checked by the gate). `tools/publish_content.sh beta` / `promote` publish it to the feed's `content/` folder (bleeding-edge, then main and the web version). The app checks it with every update check, installs a newer pack only after verifying every file, uses it while it is newer than the built-in one, swaps the deck on the home screen (never mid-session) and announces the number of new questions; Settings shows the pool version. Translations of the English text now come from the pack in use. Version 2.7 (18) | Giovanni: "expand the question pool without updating the app all the time". The pool changes far more often than the code, and progress is keyed by content-derived card ids, so a new pool needs no migration. Five mutants guard the version comparisons, the checksum check, the empty-mode check and the clean-up |
 | 2026-10-22 | Preventive | **Promote condition** ([ADR-0011](docs/adr/0011-promote-after-updated-tests.md)): a version is eligible for the user channel once it survives the automated tests updated for what it changes (gate with mutation, and `tools/check_tests_updated.sh` refuses code changed since the last stable release without any test change); then promoting is Giovanni's decision, with no minimum time in beta | Giovanni's ruling on issue #2: time in beta tests nothing the suite does not; what matters is that the suite was updated for the new version |
 | 2026-10-22 | Preventive | **Maintenance and evolution review.** `domain/`, `content/` (now with the vocabulary parsers) and `debug/` moved to a pure Kotlin/JVM Gradle module `:core`, so an Android import there no longer compiles; GitHub Actions runs `tools/quality_gate.sh` on every push (mutation check weekly); fitness functions (`tools/fitness_check.py`: core stays Android-free, no Kotlin file over 400 lines, release APK under 3 MB, gate under 20 min); ADRs in `docs/adr/`, C4 diagrams in section 3, and this Type column (ISO/IEC/IEEE 14764: corrective, adaptive, perfective, preventive) ([ADR-0001](docs/adr/0001-record-decisions.md), [ADR-0009](docs/adr/0009-pure-core-module.md)) | The rule "domain stays Android-free" lived only in `CLAUDE.md`, the gate only ran when publishing, and the log kept no alternatives. Rules now fail the build instead of relying on memory. The Type column shows the balance of the work: up to today 18 perfective, 9 corrective, 3 preventive, 2 adaptive (plus 4 initial) |
 | 2026-10-20 | Corrective | **Progress bar checked with the QA process** (requirements DG-2..DG-5, `DailyProgressPropertyTest`, shared `daily_bar.json` vectors, `DailyBarAcceptanceTest` on the device, six app and four web mutants; 40 of 40 killed). Version 2.6 (17). Found and fixed: **the home screen was a snapshot**, so after the phone slept past midnight the app still showed yesterday's full bar and yesterday's due counts until the player entered a quiz and came back. `StudyViewModel.refreshHome()` now runs on every `ON_RESUME` (the web version already re-rendered on `visibilitychange`). The web bar width moved into `barPercent()` so it can be tested | The domain arithmetic was right in all 2 000 random histories; the defect sat in the layer between the numbers and the screen, which the old tests never reached |

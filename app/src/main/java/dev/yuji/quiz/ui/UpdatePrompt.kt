@@ -9,6 +9,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import dev.yuji.quiz.R
@@ -75,3 +76,14 @@ fun UpdatePromptDialog(prompt: UpdatePrompt, onUpdate: (UpdateManifest) -> Unit,
         )
     }
 }
+
+/** Shown once on the home screen after a new question pool was applied; [added] may be 0 or less after corrections. */
+@Composable
+fun PoolUpdatedDialog(added: Int, onDismiss: () -> Unit) = AlertDialog(
+    onDismissRequest = onDismiss,
+    title = { Text(stringResource(R.string.pool_updated_title)) },
+    text = {
+        Text(if (added > 0) pluralStringResource(R.plurals.pool_updated_added, added, added) else stringResource(R.string.pool_updated_changed))
+    },
+    confirmButton = { TextButton(onClick = onDismiss) { Text(stringResource(R.string.common_ok)) } },
+)
