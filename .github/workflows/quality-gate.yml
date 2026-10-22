@@ -1,0 +1,65 @@
+name: quality-gate
+
+# Runs tools/quality_gate.sh, the same script publish_apk.sh runs on the laptop, so CI and a release can never
+# disagree about what "passing" means. Every push and pull request: the full gate without mutation.
+# Every Monday: the gate with the slow mutation check, so a test that stopped protecting a rule shows up within a week.
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      mutation:
+        description: "Also run the mutation check"
+        type: boolean
+        default: false
+  schedule:
+    - cron: "23 5 * * 1"
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - uses: gradle/actions/setup-gradle@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # The web twin is checked against the app (shared vectors, traceability). A port waiting for promote lives
+      # on the web branch web-<versionName>; otherwise the app is compared with the published web (main).
+      - name: Pick the matching web branch
+        id: web
+        run: |
+          v=$(sed -n 's/^ *versionName = "\(.*\)"/\1/p' app/build.gradle.kts)
+          if git ls-remote --exit-code --heads https://github.com/yujideluca/german-quiz-web "web-$v" >/dev/null; then
+            echo "ref=web-$v" >> "$GITHUB_OUTPUT"
+          else
+            echo "ref=main" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v4
+        with:
+          repository: yujideluca/german-quiz-web
+          ref: ${{ steps.web.outputs.ref }}
+          path: QuizWeb
+      - name: Quality gate
+        env:
+          QUIZWEB: ${{ github.workspace }}/QuizWeb
+        run: |
+          if [ "${{ github.event_name }}" = schedule ] || [ "${{ inputs.mutation }}" = true ]; then
+            tools/quality_gate.sh --mutation
+          else
+            tools/quality_gate.sh
+          fi
+      - name: Keep the reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: |
+            core/build/reports/
+            app/build/reports/
+          retention-days: 14

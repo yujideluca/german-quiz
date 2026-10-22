@@ -13,9 +13,9 @@ import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class ContentTranslationsTest {
-    private val vocab = File("src/main/assets/vocab")
+    private val vocab = File("../app/src/main/assets/vocab")
     private fun rows(name: String) = Json.parseToJsonElement(File(vocab, name).readText()) as JsonArray
-    private fun translations(lang: String) = ContentTranslations.parse(File("src/main/assets/i18n/$lang.json").readText())
+    private fun translations(lang: String) = ContentTranslations.parse(File("../app/src/main/assets/i18n/$lang.json").readText())
 
     private val languages = listOf("de", "pt", "es")
 

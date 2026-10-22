@@ -1,20 +1,39 @@
 # German Quiz: working notes for Claude Code
 
+## Principles (each one is checked by something; see `docs/MAINTENANCE.md`)
+
+1. **The spacing rules come first** (ADR-0007): checked by `SpacingRulesTest`, `PeriodizationSimulationTest`, vectors, mutants.
+2. **Logic is framework-free**: scheduler, grader, queue, session and content live in `:core`, which has no Android;
+   an `import android.*` there does not compile (ADR-0009).
+3. **Requirement, then test, then code** (ADR-0008): checked by the traceability gate.
+4. **Nothing reaches the player without the beta app first** (ADR-0005): checked by `publish_apk.sh promote`.
+5. **The web twin behaves like the user version** (ADR-0006): shared vectors, `check_web_sync.sh`, both CIs.
+6. **Decisions are written where the code is**: decision-log row with its Type in `DESIGN.md`; an ADR in `docs/adr/`
+   for structural ones; the C4 diagrams in `DESIGN.md` section 3 change in the same commit.
+
+## Working rules
+
 - Environment: `source ~/dev/env.sh` (JDK 21, Gradle, Android SDK). Build and test with
-  `./gradlew testStableDebugUnitTest assembleStableDebug` (flavors: `stable` and `beta`).
+  `./gradlew :core:test testStableDebugUnitTest assembleStableDebug` (flavors: `stable` and `beta`), or the whole gate
+  with `tools/quality_gate.sh`. GitHub Actions runs that gate on every push: after pushing, the run must be green.
 - After coding anything, do a first-line debug pass before reporting done: tests, install on the
   phone, exercise the changed flow, check `adb logcat` for crashes.
 - **Keep `DESIGN.md` current.** In the same commit as any change to architecture, modes,
   scheduler/grader, persistence or UI flow: add a row to the decision log (newest first), fix any
-  section that is now wrong, and bump "Last updated". When asked to commit or at the end of a
+  section that is now wrong, and bump "Last updated". Give the row its Type (Corrective, Adaptive, Perfective,
+  Preventive). A structural change (module, dependency direction, release flow, storage format, a rule with real
+  alternatives) also gets an ADR (`docs/adr/0000-template.md`), linked from the row. When asked to commit or at the end of a
   work session, check that DESIGN.md still matches the code.
-- `domain/` and `content/` stay free of Android imports so they remain JVM-testable.
+- `domain/`, `content/` and `debug/` live in the `:core` module (pure Kotlin/JVM); their tests are in `core/src/test`.
+  Never add an Android plugin or dependency to `core/build.gradle.kts` (the fitness check fails). Fitness limits in
+  `tools/fitness_check.py` are raised only on purpose, with a decision-log row saying why.
 - **Releases:** run `tools/publish_apk.sh beta` after committing: it goes to the feed's `bleeding-edge`
   branch (the beta app). Run `tools/publish_apk.sh promote` (feed branch `main`, what users get) **only when
   Giovanni says the beta is good**; it refuses unless bleeding-edge holds that same commit.
 - **The web version follows the user version.** Every time the user version is updated (a `promote`), update the web version too:
   https://yujideluca.github.io/german-quiz-web/ (repo `yujideluca/german-quiz-web`, clone `~/dev/QuizWeb`, plain ES modules, `npm test`).
-  Port the change (copy the `vocab/*.json` and `i18n/*.json` files, port code and tests (UI text: regenerate `src/strings.js` from the app's string resources), bump `VERSION` in its `sw.js`), push, and confirm the live
+  While the app version is still in beta, its web port waits on the web branch `web-<versionName>` (CI picks it up);
+  at promote, merge it into the web `main`. Port the change (copy the `vocab/*.json` and `i18n/*.json` files, port code and tests (UI text: regenerate `src/strings.js` from the app's string resources), bump `VERSION` in its `sw.js`), push, and confirm the live
   site serves it. `tools/check_web_sync.sh` (run at the end of `promote`) fails with exit 2 while the web version is behind. Giovanni
   asked for this once; do not wait to be asked again. Say in the report that the web link was updated (and give it).
 - **Spacing rules are the app's first principle; never change them silently, and never trust the scheduler's defaults.**
@@ -27,5 +46,8 @@
 - **Quality assurance:** follow `docs/TESTING.md`. A behaviour Giovanni states is first a row in `docs/REQUIREMENTS.md`
   (with an ID), then a test tagged `// REQ <ID>`, then code. `tools/quality_gate.sh` must pass (it is run by
   `publish_apk.sh`; `promote` adds `--mutation`). When you add a rule to the scheduler, queue or session, add a
-  mutant for it to `tools/mutation_check.py` and a vector to `app/src/test/resources/conformance/scheduler.json`
+  mutant for it to `tools/mutation_check.py` and a vector to `core/src/test/resources/conformance/scheduler.json`
   (copy it to `~/dev/QuizWeb/tests/conformance/`). Report which levels were actually run, and which could not be.
+- **Technical debt** (`docs/MAINTENANCE.md`): a limitation or shortcut found while working becomes a GitHub Issue
+  labelled `debt` with a priority (`P1`..`P3`) in the same session. About one session in five goes to debt or
+  prevention: when the last four sessions were all features, say so and propose the top `debt` issue; Giovanni decides.

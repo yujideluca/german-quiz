@@ -13,7 +13,8 @@ failed), because the rule was never written down and tests restated the implemen
 
 1. A rule from Giovanni becomes a row in `REQUIREMENTS.md` **before** code changes.
 2. Each requirement gets at least one test tagged `REQ <ID>` (Kotlin and JavaScript).
-3. `tools/quality_gate.sh` is the exit criterion; `publish_apk.sh` refuses to publish if it fails.
+3. `tools/quality_gate.sh` is the exit criterion; `publish_apk.sh` refuses to publish if it fails, and GitHub Actions
+   runs the same script on every push (`.github/workflows/quality-gate.yml`; with the mutation check every Monday).
 4. Defects found later get a regression test under the requirement they violated, plus a decision-log row.
 
 ## 2. Risk-based focus
@@ -51,13 +52,15 @@ failed), because the rule was never written down and tests restated the implemen
 
 ## 4. Exit criteria (the gate, `tools/quality_gate.sh`)
 
-1. All JVM tests pass (app) and `npm test` passes (web).
+1. All JVM tests pass (`:core` and `:app`) and `npm test` passes (web, including its architecture rules).
 2. Line coverage of the logic packages (`domain/`, `content/`, `StudyController`) >= 90 % and
    no logic file below 80 % (`tools/check_coverage.py`, from JaCoCo).
 3. Every requirement has a tagged test; no tag names an unknown requirement (`tools/check_traceability.py`).
-4. The conformance vectors in the app and in the web clone are identical.
-5. Before a **promote**: the mutation check kills every mutant (`--mutation`).
-6. Not automatable here and therefore stated openly in each report: instrumented tests need an unlocked
+4. The conformance vectors in the app (`core/src/test/resources/conformance/`) and in the web clone are identical.
+5. Fitness functions hold (`tools/fitness_check.py`): `:core` has no Android, no Kotlin file over 400 lines, the gate
+   finishes within 20 minutes; `publish_apk.sh` also checks the release APK stays under 3 MB (ADR-0009).
+6. Before a **promote**: the mutation check kills every mutant (`--mutation`).
+7. Not automatable here and therefore stated openly in each report: instrumented tests need an unlocked
    phone; UI looks (taste), real-world update installs.
 
 ## 5. Known gaps

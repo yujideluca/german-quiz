@@ -12,7 +12,8 @@ import os, subprocess, sys, time
 
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 web = os.environ.get("QUIZWEB", os.path.expanduser("~/dev/QuizWeb"))
-D = "app/src/main/java/dev/yuji/quiz/"
+D = "core/src/main/java/dev/yuji/quiz/"  # pure logic (core module)
+A = "app/src/main/java/dev/yuji/quiz/"   # Android app module (stores, StudyController)
 
 # (file, exact text, replacement, what the fault means)
 APP = [
@@ -40,13 +41,13 @@ APP = [
  (D+"domain/StudySession.kt", "if (session.isAwaitingAdvance || choice !in card.choices) return session", "if (session.isAwaitingAdvance) return session", "unknown choices accepted"),
  (D+"domain/DailyGoal.kt", "coerceIn(MIN_DAILY_GOAL, MAX_DAILY_GOAL)", "coerceIn(MIN_DAILY_GOAL, MAX_DAILY_GOAL + 10)", "daily goal above 100"),
  (D+"domain/AppUpdate.kt", "nowMillis - lastCheckMillis >= minGapMillis", "nowMillis - lastCheckMillis > minGapMillis", "update check gap boundary"),
- (D+"data/ProgressStore.kt", "                    keepDamagedCopy()\n", "", "damaged progress file not preserved"),
+ (A+"data/ProgressStore.kt", "                    keepDamagedCopy()\n", "", "damaged progress file not preserved"),
  (D+"domain/DailyGoal.kt", "val reached: Boolean get() = answered >= goal", "val reached: Boolean get() = answered > goal", "goal reached one answer too late"),
  (D+"domain/DailyGoal.kt", "(answered.toFloat() / goal).coerceIn(0f, 1f)", "(answered.toFloat() / goal)", "bar can overflow past full"),
  (D+"domain/DailyGoal.kt", "(this[epochDay] ?: 0) + 1)", "(this[epochDay] ?: 0) + 2)", "an answer counts twice"),
  (D+"domain/DailyGoal.kt", "fun AnswerHistory.answeredOn(epochDay: Long): Int = this[epochDay] ?: 0", "fun AnswerHistory.answeredOn(epochDay: Long): Int = this[epochDay - 1] ?: 0", "bar shows yesterday's count"),
- (D+"StudyController.kt", "if (card != null && updated !== session) {", "if (card != null) {", "rejected answers still counted"),
- (D+"data/TrainingStore.kt", "val c = count.toIntOrNull()?.takeIf { it > 0 } ?: return@mapNotNull null", "val c = count.toIntOrNull() ?: return@mapNotNull null", "damaged day counts accepted"),
+ (A+"StudyController.kt", "if (card != null && updated !== session) {", "if (card != null) {", "rejected answers still counted"),
+ (A+"data/TrainingStore.kt", "val c = count.toIntOrNull()?.takeIf { it > 0 } ?: return@mapNotNull null", "val c = count.toIntOrNull() ?: return@mapNotNull null", "damaged day counts accepted"),
 ]
 
 WEB = [
@@ -92,7 +93,7 @@ def check(base, rows, test_cmd, label):
 mode = sys.argv[1] if len(sys.argv) > 1 else ""
 survivors, total = [], 0
 if mode != "--web-only":
-    survivors += check(root, APP, "bash -c 'source ~/dev/env.sh && ./gradlew testStableDebugUnitTest -q'", "app"); total += len(APP)
+    survivors += check(root, APP, "bash -c '[ -f ~/dev/env.sh ] && source ~/dev/env.sh; ./gradlew :core:test :app:testStableDebugUnitTest -q'", "app"); total += len(APP)
 if mode != "--app-only" and os.path.isdir(web):
     survivors += check(web, WEB, "npm test --silent", "web"); total += len(WEB)
 print(f"mutation score: {total - len(survivors)}/{total} killed")

@@ -2,7 +2,7 @@
 """Requirement traceability gate.
 
 Reads the requirement IDs from docs/REQUIREMENTS.md, collects the `REQ <ID> ...` tags that tests carry
-(app: app/src/test and app/src/androidTest; web: ~/dev/QuizWeb/tests) and fails when
+(app: core/src/test, app/src/test and app/src/androidTest; web: ~/dev/QuizWeb/tests) and fails when
   * a requirement has no tagged test, or
   * a tag names a requirement that does not exist.
 Writes docs/TRACEABILITY.md (requirement -> test files) so the matrix is always current.
@@ -18,7 +18,7 @@ ids = [i for i, _ in reqs]
 tag_line = re.compile(r"^\s*(?://|\*|/\*\*)\s*REQ ((?:[A-Z]{2}-\d+[ ,]*)+)", re.M)
 found = {i: [] for i in ids}
 unknown = []
-for base, label in ((os.path.join(root, "app/src/test"), "app"), (os.path.join(root, "app/src/androidTest"), "device"),
+for base, label in ((os.path.join(root, "core/src/test"), "app"), (os.path.join(root, "app/src/test"), "app"), (os.path.join(root, "app/src/androidTest"), "device"),
                     (os.path.join(web, "tests"), "web")):
     for d, _, files in os.walk(base):
         for f in files:

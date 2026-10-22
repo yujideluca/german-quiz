@@ -20,7 +20,7 @@ for f in de pt es; do
   cmp -s "$root/app/src/main/assets/i18n/$f.json" "$web/i18n/$f.json" || problems+=("i18n/$f.json differs from the app's")
 done
 
-app_modes=$(sed -n 's/^ *[A-Z_]*("\([a-z]*\)",.*/\1/p' "$root/app/src/main/java/dev/yuji/quiz/domain/GameMode.kt" | sort | tr '\n' ' ')
+app_modes=$(sed -n 's/^ *[A-Z_]*("\([a-z]*\)",.*/\1/p' "$root/core/src/main/java/dev/yuji/quiz/domain/GameMode.kt" | sort | tr '\n' ' ')
 web_modes=$(sed -n "s/^ *{ id: '\([a-z]*\)'.*/\1/p" "$web/src/domain.js" | sort | tr '\n' ' ')
 [ "$app_modes" = "$web_modes" ] || problems+=("modes differ: app [$app_modes] web [$web_modes]")
 

@@ -2,10 +2,6 @@ package dev.yuji.quiz.content
 
 // REQ CT-1
 
-import dev.yuji.quiz.data.parseErrorSentences
-import dev.yuji.quiz.data.parseNouns
-import dev.yuji.quiz.data.parsePrepositions
-import dev.yuji.quiz.data.parseVerbs
 import dev.yuji.quiz.domain.GameMode
 import java.io.File
 import org.junit.Assert.assertEquals
@@ -14,10 +10,10 @@ import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class ContentTest {
-    private val nouns = parseNouns(File("src/main/assets/vocab/nouns.json").readText())
-    private val preps = parsePrepositions(File("src/main/assets/vocab/prepositions.json").readText())
-    private val verbs = parseVerbs(File("src/main/assets/vocab/verbs.json").readText())
-    private val errors = parseErrorSentences(File("src/main/assets/vocab/errors.json").readText())
+    private val nouns = parseNouns(File("../app/src/main/assets/vocab/nouns.json").readText())
+    private val preps = parsePrepositions(File("../app/src/main/assets/vocab/prepositions.json").readText())
+    private val verbs = parseVerbs(File("../app/src/main/assets/vocab/verbs.json").readText())
+    private val errors = parseErrorSentences(File("../app/src/main/assets/vocab/errors.json").readText())
     private val deck = CardFactory.buildDeck(nouns, preps, verbs, errors)
 
     @Test fun poolHasReasonableSize() {

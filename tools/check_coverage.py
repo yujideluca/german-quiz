@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Coverage gate: reads the JaCoCo report of the unit tests (./gradlew createStableDebugUnitTestCoverageReport).
+"""Coverage gate: reads the JaCoCo reports of the unit tests (./gradlew :core:test createStableDebugUnitTestCoverageReport):
+the core module (domain/, content/) and the app module (StudyController).
 
 Logic packages (domain/, content/ and StudyController) must reach 90 % line coverage in total, and no file in them
 may be below 80 %. domain/Clock.kt is excluded: it only wraps System.currentTimeMillis().
@@ -9,14 +10,16 @@ import os, sys
 import xml.etree.ElementTree as ET
 
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-report = os.path.join(root, "app/build/reports/coverage/test/stable/debug/report.xml")
-if not os.path.exists(report):
-    sys.exit(f"no coverage report at {report}; run ./gradlew createStableDebugUnitTestCoverageReport")
+reports = [os.path.join(root, "core/build/reports/jacoco/test/jacocoTestReport.xml"),
+           os.path.join(root, "app/build/reports/coverage/test/stable/debug/report.xml")]
+for report in reports:
+    if not os.path.exists(report):
+        sys.exit(f"no coverage report at {report}; run ./gradlew :core:test createStableDebugUnitTestCoverageReport")
 TOTAL_MIN, FILE_MIN = 90.0, 80.0
 EXCLUDE = {"domain/Clock.kt"}
 covered = missed = 0
 bad = []
-for pk in ET.parse(report).getroot().findall("package"):
+for pk in (p for r in reports for p in ET.parse(r).getroot().findall("package")):
     pkg = pk.get("name").rsplit("/", 1)[-1]
     for sf in pk.findall("sourcefile"):
         name = f"{pkg}/{sf.get('name')}"
