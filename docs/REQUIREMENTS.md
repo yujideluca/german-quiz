@@ -1,7 +1,7 @@
 # Requirements catalogue
 
 Every row is a testable promise of the app. The ID is the key used everywhere else: tests carry the tag
-`REQ <ID>` in a comment, and `tools/check_traceability.py` fails the quality gate when a requirement has
+`REQ <ID>` in a comment, and `tools/pipeline-check.sh --traceability` fails the quality gate when a requirement has
 no test or a test names an unknown requirement. Source column: **G** = stated by Giovanni, **D** = design
 decision in `DESIGN.md`. Level: **U** unit, **I** integration (controller with stores and a fake clock),
 **P** property/randomised, **C** cross-platform conformance (app and web run the same vectors),

@@ -41,3 +41,22 @@ decision_log = "DESIGN.md"
 
 [pre_push]
 guard = []   # path prefixes whose change makes a push of main worth checking; [] = every push
+
+[traceability]
+[[traceability.sources]]
+dir = "core/src/test"
+extensions = ["kt", "js", "rs"]
+label = "app"
+[[traceability.sources]]
+dir = "app/src/test"
+extensions = ["kt", "js", "rs"]
+label = "app"
+[[traceability.sources]]
+dir = "app/src/androidTest"
+extensions = ["kt", "js", "rs"]
+label = "device"
+[[traceability.sources]]
+dir = "~/dev/QuizWeb/tests"       # CI points QUIZWEB at the matching web branch
+extensions = ["kt", "js", "rs"]
+label = "web"
+env = "QUIZWEB_TESTS"

@@ -6,6 +6,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 [ -f ~/dev/env.sh ] && source ~/dev/env.sh   # laptop toolchain; CI sets up its own
 web="${QUIZWEB:-$HOME/dev/QuizWeb}"
+export QUIZWEB_TESTS="$web/tests"   # read by pipeline-check --traceability (pipeline-check.toml)
 MAX_GATE_SECONDS=1200   # fitness function: a gate that gets slow gets skipped; split or speed up tests instead
 SECONDS=0
 step() { printf '\n== %s\n' "$1"; }
@@ -23,7 +24,7 @@ step "4/7 conformance vectors identical in app and web"
 for f in scheduler daily_bar; do cmp "core/src/test/resources/conformance/$f.json" "$web/tests/conformance/$f.json"; done
 
 step "5/7 requirement traceability"
-python3 tools/check_traceability.py
+tools/pipeline-check.sh --traceability
 git diff --quiet -- docs/TRACEABILITY.md || { echo "docs/TRACEABILITY.md changed: commit the regenerated matrix"; exit 1; }
 
 step "6/7 Android lint (errors fail the gate)"

@@ -55,7 +55,7 @@ failed), because the rule was never written down and tests restated the implemen
 1. All JVM tests pass (`:core` and `:app`) and `npm test` passes (web, including its architecture rules).
 2. Line coverage of the logic packages (`domain/`, `content/`, `StudyController`) >= 90 % and
    no logic file below 80 % (`tools/check_coverage.py`, from JaCoCo).
-3. Every requirement has a tagged test; no tag names an unknown requirement (`tools/check_traceability.py`).
+3. Every requirement has a tagged test; no tag names an unknown requirement (`tools/pipeline-check.sh --traceability`).
 4. The conformance vectors in the app (`core/src/test/resources/conformance/`) and in the web clone are identical.
 5. Fitness functions hold (`tools/pipeline-check`, limits in `pipeline-check.toml`): `:core` has no Android, no Kotlin file over 400 lines, the gate
    finishes within 20 minutes; `publish_apk.sh` also checks the release APK stays under 3 MB (ADR-0009).
