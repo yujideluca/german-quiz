@@ -38,3 +38,6 @@ required_check = "gate"                  # the job name in .github/workflows/qua
 days = 30
 feed_path = "~/dev/german-quiz-releases"
 decision_log = "DESIGN.md"
+
+[pre_push]
+guard = []   # path prefixes whose change makes a push of main worth checking; [] = every push
