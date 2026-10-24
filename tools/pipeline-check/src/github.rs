@@ -32,7 +32,12 @@ pub fn ci_runs(gh: &dyn Gh, cfg: &Github) -> (Check, Option<f64>) {
         Err(e) => return (Check::skipped(CI_ID, false, &format!("cannot ask GitHub: {}", e.trim())), None),
     };
     let runs: Vec<serde_json::Value> = serde_json::from_str(&text).unwrap_or_default();
-    let done: Vec<&serde_json::Value> = runs.iter().filter(|r| r["status"] == "completed").collect();
+    // A cancelled or skipped run says nothing about the code (PC-11).
+    let undecided = ["cancelled", "skipped", "neutral", "stale"];
+    let done: Vec<&serde_json::Value> = runs
+        .iter()
+        .filter(|r| r["status"] == "completed" && !undecided.contains(&r["conclusion"].as_str().unwrap_or("")))
+        .collect();
     let rate = (!done.is_empty())
         .then(|| 100.0 * done.iter().filter(|r| r["conclusion"] == "success").count() as f64 / done.len() as f64);
     let check = match done.first() {

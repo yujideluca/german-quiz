@@ -49,3 +49,6 @@ decision in `DESIGN.md`. Level: **U** unit, **I** integration (controller with s
 | PC-6 | DORA figures come from git, the release feed and the decision log, are `null` when there is no data, and never fail the run. | D | U |
 | PC-7 | The GitHub checks (last CI run green, branch protection requires the CI job) only read, never change anything; an unavailable `gh` or no network is `pulado`, a missing protection is `falha`. | G | U |
 | PC-8 | A missing or invalid limits file stops the program with exit code 2 and a clear message; it never falls back to silent defaults. | D | U |
+| PC-9 | The architecture check also catches `import static android...` (Java), fully qualified uses such as `android.util.Log.d(...)` without an import, and ignores `android` inside comments and inside a longer name (`myandroid.Foo`, `dev.x.android.Foo`). | D | U |
+| PC-10 | Walking a source directory terminates and finishes even when it contains a symbolic link that points back up (no infinite recursion). | D | U |
+| PC-11 | A cancelled or skipped CI run is neither green nor red: "last CI run is green" looks at the most recent run that succeeded or failed. | D | U |

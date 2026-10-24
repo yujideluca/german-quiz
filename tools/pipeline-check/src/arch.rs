@@ -6,10 +6,50 @@ use std::path::Path;
 
 pub const ID: &str = "arquitetura";
 
-fn import_violates(line: &str, forbidden: &[String]) -> bool {
-    let Some(rest) = line.trim_start().strip_prefix("import ") else { return false };
-    let path = rest.trim().trim_end_matches(';');
-    forbidden.iter().any(|f| path == f || path.starts_with(&format!("{f}.")))
+/// The code of one line: `//` comments and `/* ... */` comments (also across lines) removed.
+fn code_of(line: &str, in_block: &mut bool) -> String {
+    let mut out = String::new();
+    let mut rest = line;
+    loop {
+        if *in_block {
+            match rest.find("*/") {
+                Some(i) => {
+                    *in_block = false;
+                    rest = &rest[i + 2..];
+                }
+                None => return out,
+            }
+        } else {
+            let line_c = rest.find("//");
+            let block_c = rest.find("/*");
+            match (line_c, block_c) {
+                (Some(l), Some(b)) if l < b => return out + &rest[..l],
+                (Some(l), None) => return out + &rest[..l],
+                (_, Some(b)) => {
+                    out.push_str(&rest[..b]);
+                    *in_block = true;
+                    rest = &rest[b + 2..];
+                }
+                (None, None) => return out + rest,
+            }
+        }
+    }
+}
+
+/// True when the code names a forbidden package: `import [static] pkg...` or a fully qualified use `pkg.x`.
+fn violates(code: &str, forbidden: &[String]) -> bool {
+    let trimmed = code.trim_start();
+    if let Some(rest) = trimmed.strip_prefix("import ") {
+        let path = rest.trim().trim_start_matches("static ").trim().trim_end_matches(';');
+        if forbidden.iter().any(|f| path == f || path.starts_with(&format!("{f}."))) {
+            return true;
+        }
+    }
+    let ident = |c: char| c.is_alphanumeric() || c == '_' || c == '.';
+    forbidden.iter().any(|f| {
+        let needle = format!("{f}.");
+        code.match_indices(&needle).any(|(i, _)| !code[..i].chars().next_back().is_some_and(ident))
+    })
 }
 
 pub fn check(root: &Path, cfg: &Architecture) -> Check {
@@ -18,8 +58,9 @@ pub fn check(root: &Path, cfg: &Architecture) -> Check {
     for dir in &cfg.pure_dirs {
         for file in walk(&root.join(dir)).into_iter().filter(|p| has_ext(p, &exts)) {
             let text = std::fs::read_to_string(&file).unwrap_or_default();
+            let mut in_block = false;
             for (i, line) in text.lines().enumerate() {
-                if import_violates(line, &cfg.forbidden) {
+                if violates(&code_of(line, &mut in_block), &cfg.forbidden) {
                     let rel = file.strip_prefix(root).unwrap_or(&file).display();
                     violations.push(format!("{rel}:{}: {}", i + 1, line.trim()));
                 }
@@ -53,11 +94,11 @@ mod tests {
     #[test]
     fn android_and_androidx_imports_are_violations_but_lookalikes_are_not() {
         let f = forbidden();
-        assert!(import_violates("import android.os.Bundle", &f));
-        assert!(import_violates("  import androidx.compose.runtime.Composable", &f));
-        assert!(import_violates("import android.*;", &f));
-        assert!(!import_violates("import dev.yuji.androidish.Thing", &f));
-        assert!(!import_violates("import kotlin.math.max", &f));
-        assert!(!import_violates("// import android.os.Bundle", &f));
+        assert!(violates("import android.os.Bundle", &f));
+        assert!(violates("  import androidx.compose.runtime.Composable", &f));
+        assert!(violates("import android.*;", &f));
+        assert!(!violates("import dev.yuji.androidish.Thing", &f));
+        assert!(!violates("import kotlin.math.max", &f));
+        assert!(!violates(&code_of("// import android.os.Bundle", &mut false), &f));
     }
 }

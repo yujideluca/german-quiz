@@ -1,15 +1,16 @@
 use std::path::{Path, PathBuf};
 
-/// All regular files under `dir`, sorted; a missing directory yields nothing.
+/// All regular files under `dir`, sorted; a missing directory yields nothing; symbolic links are skipped.
 pub fn walk(dir: &Path) -> Vec<PathBuf> {
     let mut out = Vec::new();
     let Ok(entries) = std::fs::read_dir(dir) else { return out };
     for e in entries.flatten() {
-        let p = e.path();
-        if p.is_dir() {
-            out.extend(walk(&p));
-        } else {
-            out.push(p);
+        // file_type() does not follow links, so a link that points back up cannot loop forever (PC-10).
+        let Ok(kind) = e.file_type() else { continue };
+        if kind.is_dir() {
+            out.extend(walk(&e.path()));
+        } else if kind.is_file() {
+            out.push(e.path());
         }
     }
     out.sort();
