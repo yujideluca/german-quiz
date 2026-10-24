@@ -46,9 +46,10 @@ jobs:
           ref: ${{ steps.web.outputs.ref }}
           path: QuizWeb
       - uses: dtolnay/rust-toolchain@stable
-      - uses: Swatinem/rust-cache@v2
+      - uses: actions/cache@v4
         with:
-          workspaces: tools/pipeline-check
+          path: ~/.cache/pipeline-check
+          key: pipeline-check-${{ hashFiles('pipeline-check.version') }}
       # pipeline-check runs tools/quality_gate.sh once, then the architecture and fitness checks, and writes
       # report.json; any `falha` fails this job (ADR-0013). The job is called "gate": branch protection requires it.
       - name: Quality gate (through pipeline-check)

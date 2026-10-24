@@ -29,8 +29,7 @@ git diff --quiet -- docs/TRACEABILITY.md || { echo "docs/TRACEABILITY.md changed
 step "6/7 Android lint (errors fail the gate)"
 ./gradlew lintStableDebug -q
 
-step "7/7 pipeline-check tests, fitness functions (pure core module, file size) and the question pool manifest"
-cargo test --quiet --manifest-path tools/pipeline-check/Cargo.toml
+step "7/7 fitness functions (pure core module, file size) and the question pool manifest"
 tools/pipeline-check.sh --measure-only
 python3 tools/content_manifest.py --check
 [ "$SECONDS" -le "$MAX_GATE_SECONDS" ] || { echo "FAIL gate took ${SECONDS}s (> ${MAX_GATE_SECONDS}s)"; exit 1; }
