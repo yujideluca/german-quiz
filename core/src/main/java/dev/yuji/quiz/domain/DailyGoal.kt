@@ -14,7 +14,8 @@ typealias AnswerHistory = Map<Long, Int>
 /** Today's training status shown to the player. */
 data class DailyProgress(val answered: Int, val goal: Int) {
     val reached: Boolean get() = answered >= goal
-    val fraction: Float get() = (answered.toFloat() / goal).coerceIn(0f, 1f)
+    /** Never undefined: with no goal the bar is full once anything was answered, else empty. */
+    val fraction: Float get() = if (goal <= 0) (if (answered > 0) 1f else 0f) else (answered.toFloat() / goal).coerceIn(0f, 1f)
 }
 
 /** Snaps any stored value onto the slider's grid (10, 20, ... 100). */

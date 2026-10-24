@@ -14,13 +14,12 @@ import java.time.YearMonth
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
-import org.junit.Ignore
 import org.junit.Test
 
 /**
  * Written by the bug-finding review (docs/TESTES-AUTOMATIZADOS.md). Expected values are written by hand from the
- * requirements, never computed with the function under test. Tests marked @Ignore document a finding that waits for
- * Giovanni's decision (see the record), not a disabled check.
+ * requirements, never computed with the function under test. The three findings F1-F3 of the record were decided by
+ * Giovanni on 2026-10-24 ("deve") and are fixed.
  */
 class BugHuntTest {
     // ---- daily goal: the grid is 10..100 in steps of 10 (DG-1) ----
@@ -44,10 +43,9 @@ class BugHuntTest {
         assertEquals(MAX_DAILY_GOAL, (decodeBackup(text) as BackupParse.Ok).backup.dailyGoal)
     }
 
-    @Ignore("finding F2: DailyProgress(0, 0).fraction is NaN; DG-2 says never undefined. Unreachable today (goal is clamped); decide the value")
     @Test fun `the bar fraction is defined even for a zero goal`() {
-        val f = DailyProgress(answered = 0, goal = 0).fraction
-        assertFalse(f.isNaN())
+        assertEquals(0f, DailyProgress(answered = 0, goal = 0).fraction, 0f)
+        assertEquals(1f, DailyProgress(answered = 3, goal = 0).fraction, 0f)
     }
 
     // ---- backup import drops what cannot be trusted (PE-3) ----
@@ -128,7 +126,6 @@ class BugHuntTest {
         assertTrue(shouldCheckForUpdate(1_000 + UPDATE_CHECK_MIN_GAP_MILLIS, 1_000))
     }
 
-    @Ignore("finding F3 (hypothesis): after the phone clock is set back, no update check runs until it catches up; now < last should count as old enough")
     @Test fun `a clock set back does not block the update check`() {
         assertTrue(shouldCheckForUpdate(nowMillis = 1_000, lastCheckMillis = 5_000_000))
     }
@@ -144,7 +141,6 @@ class BugHuntTest {
         assertEquals(2, searchManagedCards(items, "  ").size)
     }
 
-    @Ignore("finding F1 (hypothesis): searching 'strasse' does not find 'Straße' because the sharp s is not folded; Giovanni to confirm the expectation")
     @Test fun `search finds the sharp s by its double s spelling`() {
         assertEquals(1, searchManagedCards(listOf(managed("Straße")), "strasse").size)
     }

@@ -33,9 +33,9 @@ fun CardProgress.withSuspension(duration: SuspensionDuration, nowMillis: Long): 
 /** Back in the pool; spaced-repetition state is kept untouched. */
 fun CardProgress.restored(): CardProgress = copy(removed = false, suspendedUntilMillis = 0L)
 
-/** Lower-cases and strips diacritics so "stuhle" finds "Stühle". */
+/** Lower-cases and strips diacritics so "stuhle" finds "Stühle"; the sharp s counts as "ss" ("strasse" finds "Straße"). */
 fun foldForSearch(text: String): String =
-    Normalizer.normalize(text, Normalizer.Form.NFD).replace(Regex("\\p{M}+"), "").lowercase().trim()
+    Normalizer.normalize(text, Normalizer.Form.NFD).replace(Regex("\\p{M}+"), "").lowercase().replace("ß", "ss").trim()
 
 /** Case- and umlaut-insensitive search over prompt, sentence, explanation and id. */
 fun searchManagedCards(items: List<ManagedCard>, query: String): List<ManagedCard> {
