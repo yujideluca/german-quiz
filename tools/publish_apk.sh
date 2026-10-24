@@ -55,7 +55,8 @@ if [ -n "$stable_commit" ]; then
 fi
 
 # Exit criteria of docs/TESTING.md; a promote also has to survive the mutation check.
-tools/quality_gate.sh $([ "$mode" = promote ] && echo --mutation)
+gate_args=(); [ "$mode" = promote ] && gate_args+=(--mutation)
+tools/quality_gate.sh ${gate_args[@]+"${gate_args[@]}"}
 ./gradlew "test${flavor}DebugUnitTest" "assemble${flavor}Release" -q
 tools/pipeline-check.sh --measure-only --apk "$apk"   # release APK size limit
 

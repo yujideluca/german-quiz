@@ -60,3 +60,6 @@ dir = "~/dev/QuizWeb/tests"       # CI points QUIZWEB at the matching web branch
 extensions = ["kt", "js", "rs"]
 label = "web"
 env = "QUIZWEB_TESTS"
+
+[shellcheck]
+extra_files = ["tools/hooks/pre-push"]
