@@ -19,7 +19,8 @@ data class DailyProgress(val answered: Int, val goal: Int) {
 
 /** Snaps any stored value onto the slider's grid (10, 20, ... 100). */
 fun clampDailyGoal(value: Int): Int =
-    (Math.round(value.toDouble() / DAILY_GOAL_STEP).toInt() * DAILY_GOAL_STEP).coerceIn(MIN_DAILY_GOAL, MAX_DAILY_GOAL)
+    // Clamp first: snapping a huge value to the grid overflowed Int and turned the maximum into the minimum.
+    Math.round(value.coerceIn(MIN_DAILY_GOAL, MAX_DAILY_GOAL).toDouble() / DAILY_GOAL_STEP).toInt() * DAILY_GOAL_STEP
 
 fun epochDayOf(nowMillis: Long, zone: ZoneId): Long = Instant.ofEpochMilli(nowMillis).atZone(zone).toLocalDate().toEpochDay()
 
