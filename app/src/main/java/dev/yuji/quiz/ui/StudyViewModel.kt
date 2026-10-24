@@ -8,12 +8,8 @@ import dev.yuji.quiz.BuildConfig
 import dev.yuji.quiz.R
 import dev.yuji.quiz.android.withLanguage
 import dev.yuji.quiz.data.AppLanguage
-import dev.yuji.quiz.data.UpdateFailure
-import dev.yuji.quiz.data.UpdateFailureKind
-import dev.yuji.quiz.ModeOverview
 import dev.yuji.quiz.StudyController
 import dev.yuji.quiz.android.AndroidStudyLog
-import dev.yuji.quiz.android.ApkInstaller
 import dev.yuji.quiz.data.ActiveContent
 import dev.yuji.quiz.data.FileProgressStore
 import dev.yuji.quiz.data.SharedPreferencesSettingsStore
@@ -22,61 +18,24 @@ import dev.yuji.quiz.data.UpdateClient
 import dev.yuji.quiz.data.ThemeMode
 import dev.yuji.quiz.debug.DebugFlags
 import dev.yuji.quiz.debug.StudyLog
-import dev.yuji.quiz.domain.ActivityCalendar
 import dev.yuji.quiz.domain.BackupParse
 import dev.yuji.quiz.domain.BackupProblem
 import dev.yuji.quiz.domain.ProgressBackup
 import dev.yuji.quiz.domain.decodeBackup
 import dev.yuji.quiz.domain.encodeBackup
 import dev.yuji.quiz.domain.CardStatus
-import dev.yuji.quiz.domain.DailyProgress
 import dev.yuji.quiz.domain.GameMode
-import dev.yuji.quiz.domain.ManagedCard
-import dev.yuji.quiz.domain.ManagedCounts
 import dev.yuji.quiz.domain.StudySession
 import dev.yuji.quiz.domain.SuspensionDuration
 import dev.yuji.quiz.domain.SystemClock
 import dev.yuji.quiz.domain.UpdateManifest
-import dev.yuji.quiz.domain.shouldCheckForUpdate
 import java.io.File
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
-
-sealed interface UiState {
-    data class ModeSelect(val modes: List<ModeOverview>, val daily: DailyProgress, val calendar: ActivityCalendar) : UiState
-    data class Studying(val session: StudySession, val choices: List<String>, val daily: DailyProgress) : UiState
-    data class Finished(val session: StudySession) : UiState
-    data class Settings(
-        val themeMode: ThemeMode,
-        val language: AppLanguage,
-        val dailyGoal: Int,
-        val counts: ManagedCounts,
-        val query: String,
-        val results: List<ManagedCard>,
-        /** Version of the question pool in use, and whether it was downloaded (otherwise built into the app). */
-        val poolVersion: Int = 0,
-        val poolDownloaded: Boolean = false,
-    ) : UiState
-    data class Failed(val message: String) : UiState
-}
-
-/** Progress of the "update from GitHub" flow, shown in Settings. */
-sealed interface UpdateState {
-    data object Idle : UpdateState
-    data object Checking : UpdateState
-    data object UpToDate : UpdateState
-    data class Available(val manifest: UpdateManifest) : UpdateState
-    data class Downloading(val manifest: UpdateManifest) : UpdateState
-    data class NeedsPermission(val manifest: UpdateManifest) : UpdateState
-    data class DownloadFailed(val manifest: UpdateManifest, val message: String) : UpdateState
-    data class Failed(val message: String) : UpdateState
-}
 
 class StudyViewModel @JvmOverloads constructor(
     app: Application,
@@ -279,34 +238,16 @@ class StudyViewModel @JvmOverloads constructor(
 
     // ---- app updates ------------------------------------------------------------------------
 
-    private val updateFile = File(app.cacheDir, "updates/update.apk")
-    private val _update = MutableStateFlow<UpdateState>(UpdateState.Idle)
-    val update: StateFlow<UpdateState> = _update
+    private val updater = AppUpdater(app, updateClient, pool, viewModelScope, text = { id, args -> t(id, *args) }, onPoolInstalled = ::onPoolInstalled)
+    val update: StateFlow<UpdateState> = updater.update
 
-    private var lastCheckAtMillis: Long? = null
-    private val _promptDismissed = MutableStateFlow(false)
     /** True after "Later": the popup stays hidden until the app is opened again. */
-    val promptDismissed: StateFlow<Boolean> = _promptDismissed
+    val promptDismissed: StateFlow<Boolean> = updater.promptDismissed
 
     /** Called every time the app comes to the foreground: asks the feed (at most every 30 s) and re-arms the popup. */
-    fun onAppOpened() {
-        _promptDismissed.value = false
-        if (shouldCheckForUpdate(System.currentTimeMillis(), lastCheckAtMillis)) checkForUpdate()
-    }
-
-    fun dismissUpdatePrompt() { _promptDismissed.value = true }
-
-    fun checkForUpdate() {
-        if (_update.value is UpdateState.Checking || _update.value is UpdateState.Downloading) return
-        lastCheckAtMillis = System.currentTimeMillis()
-        _update.value = stateWhileChecking(_update.value)
-        pool.check(::onPoolInstalled)
-        viewModelScope.launch {
-            val result = runCatching { withContext(Dispatchers.IO) { updateClient.fetchManifest() } }
-                .withUserMessage(R.string.update_check_failed_default)
-            _update.value = stateAfterCheck(_update.value, result, BuildConfig.VERSION_CODE)
-        }
-    }
+    fun onAppOpened() = updater.onAppOpened()
+    fun dismissUpdatePrompt() = updater.dismissUpdatePrompt()
+    fun checkForUpdate() = updater.checkForUpdate()
 
     /** A new pool replaces the deck at once on home or Settings; during a session it waits for [backToModes] (QP-3). */
     private fun onPoolInstalled(next: ActiveContent): Boolean {
@@ -321,33 +262,7 @@ class StudyViewModel @JvmOverloads constructor(
         controllerFor(getApplication(), pool.activate(next)).also { controller = it }
 
     /** Downloads the new APK and opens Android's installer; study progress lives in app data and survives. */
-    fun installUpdate(manifest: UpdateManifest) {
-        _update.value = UpdateState.Downloading(manifest)
-        viewModelScope.launch {
-            val result = runCatching { withContext(Dispatchers.IO) { updateClient.downloadApk(manifest, updateFile) } }
-            _update.value = result.fold(
-                onSuccess = {
-                    if (ApkInstaller.install(getApplication(), updateFile)) UpdateState.Available(manifest)
-                    else UpdateState.NeedsPermission(manifest)
-                },
-                onFailure = { UpdateState.DownloadFailed(manifest, it.userMessage(R.string.update_download_failed_default)) },
-            )
-        }
-    }
-
-    /** The failure's message in the chosen language; unknown failures keep their own text, or [fallback] when empty. */
-    private fun Throwable.userMessage(@StringRes fallback: Int): String = when (this) {
-        is UpdateFailure -> when (kind) {
-            UpdateFailureKind.MALFORMED_FEED -> t(R.string.update_err_feed)
-            UpdateFailureKind.CHECKSUM_MISMATCH -> t(R.string.update_err_checksum)
-            UpdateFailureKind.RATE_LIMIT -> t(R.string.update_err_rate_limit)
-            UpdateFailureKind.SERVER_ERROR -> t(R.string.update_err_server, httpCode)
-        }
-        else -> message ?: t(fallback)
-    }
-
-    private fun <T> Result<T>.withUserMessage(@StringRes fallback: Int): Result<T> =
-        fold(onSuccess = { Result.success(it) }, onFailure = { Result.failure(IllegalStateException(it.userMessage(fallback), it)) })
+    fun installUpdate(manifest: UpdateManifest) = updater.installUpdate(manifest)
 
     // ---- plumbing ---------------------------------------------------------------------------
 
