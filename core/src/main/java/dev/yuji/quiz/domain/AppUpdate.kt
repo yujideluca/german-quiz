@@ -24,4 +24,5 @@ const val UPDATE_CHECK_MIN_GAP_MILLIS = 30_000L
 
 /** True when the app was opened and the last check is old enough (or there was none yet). */
 fun shouldCheckForUpdate(nowMillis: Long, lastCheckMillis: Long?, minGapMillis: Long = UPDATE_CHECK_MIN_GAP_MILLIS): Boolean =
-    lastCheckMillis == null || nowMillis - lastCheckMillis >= minGapMillis
+    // A clock set back (now before the last check) must not block checks until it catches up.
+    lastCheckMillis == null || nowMillis < lastCheckMillis || nowMillis - lastCheckMillis >= minGapMillis
