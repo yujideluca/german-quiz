@@ -6,3 +6,4 @@ local.properties
 *.apk
 .idea/
 __pycache__/
+tools/pipeline-check/target/

@@ -19,10 +19,11 @@ tag_line = re.compile(r"^\s*(?://|\*|/\*\*)\s*REQ ((?:[A-Z]{2}-\d+[ ,]*)+)", re.
 found = {i: [] for i in ids}
 unknown = []
 for base, label in ((os.path.join(root, "core/src/test"), "app"), (os.path.join(root, "app/src/test"), "app"), (os.path.join(root, "app/src/androidTest"), "device"),
-                    (os.path.join(web, "tests"), "web")):
+                    (os.path.join(web, "tests"), "web"),
+                    (os.path.join(root, "tools/pipeline-check/src"), "tools"), (os.path.join(root, "tools/pipeline-check/tests"), "tools")):
     for d, _, files in os.walk(base):
         for f in files:
-            if not f.endswith((".kt", ".js")):
+            if not f.endswith((".kt", ".js", ".rs")):
                 continue
             path = os.path.join(d, f)
             text = open(path, encoding="utf-8").read()

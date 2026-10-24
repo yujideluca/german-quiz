@@ -13,7 +13,7 @@ checks, called fitness functions) and the **DORA** delivery metrics.
 | Structural decisions with alternatives and consequences | `docs/adr/` | `CLAUDE.md` rule; monthly review |
 | Architecture picture (C4 context and modules) | `DESIGN.md` section 3 (Mermaid) | changes in the same commit as the code |
 | Behaviour the app promises | `docs/REQUIREMENTS.md` | traceability gate |
-| Architecture rules | `:core` module boundary, `tools/fitness_check.py`, web `tests/architecture.test.js` | compiler, quality gate, CI |
+| Architecture rules | `:core` module boundary, `tools/pipeline-check` (limits in `pipeline-check.toml`), web `tests/architecture.test.js` | compiler, quality gate, CI |
 | Known debt and ideas | GitHub Issues with the label `debt` and a priority label (`P1`, `P2`, `P3`) | monthly review |
 
 ## 2. Technical debt
@@ -39,7 +39,7 @@ decision-log row of Type *Preventive* (or "no changes needed") and close or re-p
    - Is the rework rate rising? Then a requirement or test is missing somewhere (ADR-0008).
    - Is the preventive share far below 20 %? Then schedule the top `debt` issues.
    - Time in beta is not a warning sign (ADR-0011: the updated tests are the condition, then Giovanni decides).
-3. `python3 tools/fitness_check.py`: which file is closest to 400 lines? Split it before it crosses.
+3. `tools/pipeline-check.sh` (writes `build/pipeline-check/report.json`; the skill `revisao-manutencao` reads it): which check is in `aviso`, e.g. the file closest to 400 lines? Act before it crosses.
 4. Do `DESIGN.md` section 3 (diagrams, tree) and the ADRs still match the code? Is every structural change since the
    last review covered by an ADR?
 5. Adaptive maintenance: newer Android Gradle Plugin, Kotlin, Compose BOM, `targetSdk` required by Android? Upgrade

@@ -27,8 +27,8 @@
   alternatives) also gets an ADR (`docs/adr/0000-template.md`), linked from the row. When asked to commit or at the end of a
   work session, check that DESIGN.md still matches the code.
 - `domain/`, `content/` and `debug/` live in the `:core` module (pure Kotlin/JVM); their tests are in `core/src/test`.
-  Never add an Android plugin or dependency to `core/build.gradle.kts` (the fitness check fails). Fitness limits in
-  `tools/fitness_check.py` are raised only on purpose, with a decision-log row saying why.
+  Never add an Android plugin or dependency to `core/build.gradle.kts` (pipeline-check fails). Fitness limits in
+  `pipeline-check.toml` are raised only on purpose, with a decision-log row saying why.
 - **Releases:** run `tools/publish_apk.sh beta` after committing: it goes to the feed's `bleeding-edge`
   branch (the beta app). Run `tools/publish_apk.sh promote` (feed branch `main`, what users get) **only when
   Giovanni says the beta is good**; it refuses unless bleeding-edge holds that same commit and the tests were updated

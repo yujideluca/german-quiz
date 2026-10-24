@@ -20,7 +20,7 @@ broken tests for days. Nothing measured whether the code was getting bigger or s
 2. **CI.** `.github/workflows/quality-gate.yml` runs `tools/quality_gate.sh` on every push and pull request, and with
    the mutation check every Monday. The web repo runs its tests, including `tests/architecture.test.js`
    (who may import whom; only `app.js` and `store.js` touch the browser), on every push.
-3. **Fitness functions** (`tools/fitness_check.py`, run by the gate and by `publish_apk.sh`): `core/build.gradle.kts`
+3. **Fitness functions** (`tools/pipeline-check`, run by the gate and by `publish_apk.sh`; it replaced `fitness_check.py` in ADR-0013): `core/build.gradle.kts`
    has no Android; no Kotlin file over 400 lines; release APK under 3 MB; the gate itself under 20 minutes.
    Limits are raised only on purpose, with a decision-log row.
 

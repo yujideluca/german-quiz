@@ -1,0 +1,40 @@
+# Limits for tools/pipeline-check. Changed only on purpose, in a commit with a decision-log row (or ADR) saying why.
+# The limits below are the ones fitness_check.py enforced before; Giovanni may tighten or relax them.
+projeto = "german-quiz"
+aviso_a = 0.8            # a fitness function warns from 80 % of its limit and fails at 100 %
+
+[gate]
+command = "tools/quality_gate.sh"
+required = true
+
+[architecture]
+pure_dirs = ["core/src"]                 # the :core module has no Android (ADR-0009)
+build_files = ["core/build.gradle.kts"]
+
+[[fitness]]
+id = "arquivo-maior"                     # no Kotlin file with several jobs
+kind = "max_file_lines"
+limit = 400
+dirs = ["core/src", "app/src"]
+extensions = ["kt"]
+
+[[fitness]]
+id = "apk-bytes"                         # skipped when no release APK was built
+kind = "file_size"
+limit = 3_000_000
+path = "app/build/outputs/apk/stable/release/app-stable-release.apk"
+
+[[fitness]]
+id = "gate-segundos"                     # a slow gate gets skipped
+kind = "gate_seconds"
+limit = 1200
+
+[github]
+repo = "yujideluca/german-quiz"
+branch = "main"
+required_check = "gate"                  # the job name in .github/workflows/quality-gate.yml
+
+[dora]
+days = 30
+feed_path = "~/dev/german-quiz-releases"
+decision_log = "DESIGN.md"

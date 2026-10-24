@@ -45,21 +45,28 @@ jobs:
           repository: yujideluca/german-quiz-web
           ref: ${{ steps.web.outputs.ref }}
           path: QuizWeb
-      - name: Quality gate
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: tools/pipeline-check
+      # pipeline-check runs tools/quality_gate.sh once, then the architecture and fitness checks, and writes
+      # report.json; any `falha` fails this job (ADR-0013). The job is called "gate": branch protection requires it.
+      - name: Quality gate (through pipeline-check)
         env:
           QUIZWEB: ${{ github.workspace }}/QuizWeb
         run: |
+          gate=tools/quality_gate.sh
           if [ "${{ github.event_name }}" = schedule ] || [ "${{ inputs.mutation }}" = true ]; then
-            tools/quality_gate.sh --mutation
-          else
-            tools/quality_gate.sh
+            gate="tools/quality_gate.sh --mutation"
           fi
+          tools/pipeline-check.sh --mode ci --gate-command "$gate"
       - name: Keep the reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: reports
           path: |
+            build/pipeline-check/report.json
             core/build/reports/
             app/build/reports/
           retention-days: 14

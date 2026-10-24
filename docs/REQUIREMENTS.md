@@ -41,3 +41,11 @@ decision in `DESIGN.md`. Level: **U** unit, **I** integration (controller with s
 | QP-4 | The built-in pack's `content.json` lists the SHA-256 of every bundled vocabulary and translation file, and its version rises whenever any of them changes. | D | U |
 | UI-1 | The home screen shows calendar, goal and every mode card without scrolling on phones >= 800 dp tall. | D | A |
 | WB-1 | The web version behaves like the user version: same scheduler (conformance vectors), same content, same strings, same service-worker cache version policy. | G | C |
+| PC-1 | `pipeline-check` writes `report.json` with `schema_version`, project, date, mode (`local` or `ci`), the list of checks (id, status `ok`/`aviso`/`falha`/`pulado`, value, limit) and the `dora` block. The exit code is non-zero if and only if some check is `falha`; an `aviso` never fails. | G | U |
+| PC-2 | A fitness function is `ok` below the warning share of its limit (default 80 %, set per project), `aviso` from there up to the limit, and `falha` at 100 % of the limit or more. | G | U |
+| PC-3 | The architecture check fails when any Kotlin or Java source in the pure module imports `android.*` or `androidx.*`, or its build file names Android, even if the compiler would not notice. | G | U I |
+| PC-4 | A check that cannot run in the current mode or environment is reported `pulado`, never `ok`; a `pulado` check that the config marks required is `falha`. The report states the mode that ran. | D | U I |
+| PC-5 | The project gate runs once; a non-zero exit is `falha`, and its duration feeds the gate-time fitness function. | D | I |
+| PC-6 | DORA figures come from git, the release feed and the decision log, are `null` when there is no data, and never fail the run. | D | U |
+| PC-7 | The GitHub checks (last CI run green, branch protection requires the CI job) only read, never change anything; an unavailable `gh` or no network is `pulado`, a missing protection is `falha`. | G | U |
+| PC-8 | A missing or invalid limits file stops the program with exit code 2 and a clear message; it never falls back to silent defaults. | D | U |

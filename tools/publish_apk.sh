@@ -57,7 +57,7 @@ fi
 # Exit criteria of docs/TESTING.md; a promote also has to survive the mutation check.
 tools/quality_gate.sh $([ "$mode" = promote ] && echo --mutation)
 ./gradlew "test${flavor}DebugUnitTest" "assemble${flavor}Release" -q
-python3 tools/fitness_check.py --apk "$apk"   # release APK size limit
+tools/pipeline-check.sh --measure-only --apk "$apk"   # release APK size limit
 
 git -C "$feed" checkout -q "$branch" 2>/dev/null || git -C "$feed" checkout -q -b "$branch" origin/main
 git -C "$feed" reset -q --hard "origin/$branch" 2>/dev/null || true
