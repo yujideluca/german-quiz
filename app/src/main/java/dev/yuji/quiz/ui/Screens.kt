@@ -139,7 +139,7 @@ fun StudyScreen(
             Text(stringResource(R.string.study_header, stringResource(session.mode.titleRes()), session.queue.size, daily.answered, daily.goal), style = scale.style(MaterialTheme.typography.labelLarge))
             Row(verticalAlignment = Alignment.CenterVertically) {
                 TextButton(onClick = onQuit) { Text(stringResource(R.string.study_quit), style = scale.style(MaterialTheme.typography.labelLarge)) }
-                CardMenu(enabled = answer == null, onSuspend = onSuspend)
+                CardMenu(onSuspend = onSuspend)
             }
         }
         if (card.mode == GameMode.ERROR_SPOT) {
@@ -218,9 +218,9 @@ private fun ErrorSpotBody(card: StudyCard, chunks: List<String>, chosen: String?
 
 /** The "⋮" button in the top-right corner of a question. */
 @Composable
-private fun CardMenu(enabled: Boolean, onSuspend: (SuspensionDuration) -> Unit) {
+private fun CardMenu(onSuspend: (SuspensionDuration) -> Unit) {
     var open by remember { mutableStateOf(false) }
-    TextButton(onClick = { open = true }, enabled = enabled) {
+    TextButton(onClick = { open = true }) {
         Text("⋮", style = MaterialTheme.typography.headlineSmall)
     }
     DropdownMenu(expanded = open, onDismissRequest = { open = false }) {

@@ -1,6 +1,6 @@
 package dev.yuji.quiz
 
-// REQ PE-1 PE-3 PE-4 DG-1 CA-1 MG-1 QU-2 SE-3
+// REQ PE-1 PE-3 PE-4 DG-1 CA-1 MG-1 MG-2 QU-2 SE-3
 
 import dev.yuji.quiz.content.CardFactory
 import dev.yuji.quiz.content.NounEntry
@@ -187,6 +187,22 @@ class StudyControllerManagementTest {
         assertTrue(s.queue.none { it.id == victim })
         assertEquals(2, c.overview().first { it.mode == GameMode.ARTICLE }.stats.newAvailable)
         assertEquals(1, controller(store).managedCounts().suspended)   // persisted
+    }
+
+    @Test fun cardAnsweredWrongCanStillBeRemovedAndKeepsItsAnswer() {
+        val store = InMemoryProgressStore()
+        val c = controller(store)
+        var s = c.startSession(GameMode.ARTICLE)
+        val card = s.currentCard!!
+        s = c.answer(s, card.choices.first { it != card.correctChoice })
+        assertTrue(s.isAwaitingAdvance)
+        s = c.suspendCurrentCard(s, dev.yuji.quiz.domain.SuspensionDuration.PERMANENT)
+        assertTrue(s.queue.none { it.id == card.id })
+        assertEquals(null, s.lastAnswer)
+        assertEquals(1, c.dailyProgress().answered)            // the answer still counts
+        val saved = controller(store).managedCards().single()
+        assertEquals(dev.yuji.quiz.domain.CardStatus.REMOVED, saved.status)
+        assertTrue(store.loadAll().getValue(card.id).lastReviewedAtMillis != null)   // answer history kept
     }
 
     @Test fun suspensionEndsAfterAWeek() {

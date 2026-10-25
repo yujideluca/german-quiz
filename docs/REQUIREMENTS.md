@@ -32,6 +32,7 @@ decision in `DESIGN.md`. Level: **U** unit, **I** integration (controller with s
 | DG-5 | What the player sees equals the computed value: the bar's filled share and the "answered / goal" text show the same numbers on the phone and in the web version, for the same inputs (shared vectors). | D | C A |
 | CA-1 | Streak and calendar: a day with at least one answer is trained; an empty today does not break a streak; longest streak and month totals are correct. | D | U I |
 | MG-1 | Suspending (week, month, permanent), restoring and searching cards work; suspension ends on time and survives restart. | D | U I |
+| MG-2 | A card can be suspended or removed after it has been answered, while its feedback is shown. The answer stays counted (daily progress, scheduling history) and the card leaves the session. | G | I |
 | LG-1 | Languages: the default follows the phone and falls back to English; an explicit choice wins; every string exists in every language with identical placeholders; only questions and answer options stay German. | G | U |
 | CT-1 | Content integrity: unique card ids, exactly one correct choice among the offered choices, distractors never valid answers, expected pool sizes in every mode. | D | U A |
 | UP-1 | Updates: only a higher version code is offered; a study session is never interrupted; a failed check never hides a known update; a checksum mismatch discards the download. | D | U |
