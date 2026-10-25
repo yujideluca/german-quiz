@@ -4,7 +4,7 @@ An offline Android app for drilling basic B2 German vocabulary with Anki-style s
 This file explains **how the app is built** and **why** each choice was made. It is a living
 document: see [How this file is maintained](#how-this-file-is-maintained).
 
-Last updated: 2026-10-24
+Last updated: 2026-10-25
 
 ---
 
@@ -369,6 +369,7 @@ Newest first. Add an entry whenever a decision changes the design. **Type** is t
 
 | Date | Type | Decision | Why |
 |---|---|---|---|
+| 2026-10-25 | Preventive | **Monthly architecture review**: pipeline-check v0.4.0, local mode, report of 2026-10-25: 0 falhas, 0 avisos, 1 pulado (protecao-de-branch); 2 proposals; proposals created as german-quiz#11, pipeline-check#4 | Monthly review standard (ADR-0013): the program measures, the skill judges |
 | 2026-10-24 | Preventive | **`pipeline-check` moved to its own repository and consumed by pinned version** ([ADR-0013](docs/adr/0013-program-measures-skill-judges.md) update; ADR-0003 in `yujideluca/pipeline-check`). This repository keeps `pipeline-check.toml`, `pipeline-check.version` (v0.1.0), the small runner `tools/pipeline-check.sh` and a local pre-push check (`tools/hooks/pre-push`, enabled with `git config core.hooksPath tools/hooks`) that runs the gate before `main` is pushed, because branch protection is unavailable on a private free-plan repository. The program's requirements PC-* and its tests moved with it | The first rollout copied the crate into five repositories and a fix would have needed five edits. Rule now: a tool used by more than one project lives once and is consumed by version |
 | 2026-10-24 | Preventive | **`StudyViewModel.kt` split from 365 to 286 lines** (debt issue #10): the `UiState`/`UpdateState` types moved to `UiState.kt`, the "update from GitHub" flow (check, popup, download) to `AppUpdater.kt`; the view model's public functions are unchanged | The file was at 91 % of the 400-line limit in `pipeline-check.toml`; the update flow is the one part with its own state and no need of the study controller. Not exercised on a device in this change (no phone attached): the unit tests and the gate pass |
 | 2026-10-24 | Corrective | **First maintenance review: bug-finding tests and one fix** (`docs/TESTES-AUTOMATIZADOS.md`, `BugHuntTest.kt`). `clampDailyGoal` overflowed on very large or very small stored values (`Int.MAX_VALUE` became 10 instead of 100); it now clamps before snapping to the grid. Three findings were decided by Giovanni ("deve") and fixed the same day: the sharp s counts as "ss" in search, the bar is defined for a zero goal, and a clock set back no longer blocks the update check (web twin: same search and bar). Review proposals: split `StudyViewModel.kt` (365 of 400 lines), decide how merges are blocked without branch protection on a private free-plan repository | The old test compared the function with itself, so it could not see the overflow; a hand-written oracle did. The red CI run on `main` since 2026-10-22 was the web twin missing `daily_bar.json`; later pushes are green |
