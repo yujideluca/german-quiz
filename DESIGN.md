@@ -10,7 +10,7 @@ Last updated: 2026-10-25
 
 ## 1. What the app is
 
-Five study modes over a curated B2 pool (nothing beyond what every B2 speaker should know). The pool can grow without an app update: the app downloads newer question packs from its update feed (section 5, [ADR-0012](docs/adr/0012-downloadable-question-pool.md)). Pool sizes as built into version 2.7:
+Five study modes over a curated B2 pool (nothing beyond what every B2 speaker should know). The pool can grow without an app update: the app downloads newer question packs from its update feed (section 5, [ADR-0012](docs/adr/0012-downloadable-question-pool.md)). Pool sizes as built into version 2.7.1:
 
 | Mode | Question | Pool |
 |---|---|---|
