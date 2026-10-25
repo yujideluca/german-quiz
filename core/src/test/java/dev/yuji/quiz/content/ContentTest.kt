@@ -111,7 +111,7 @@ class ContentTest {
     @Test fun preteritePoolHasReasonableSize() = assertTrue(verbs.size >= 100)
 
     @Test fun errorSentencesAreBigEnoughAndCoverBothRegisters() {
-        assertTrue(errors.size >= 100)
+        assertTrue(errors.size >= 140)
         assertEquals(setOf("Forumsbeitrag", "Formelle E-Mail"), errors.map { it.register }.toSet())
         assertTrue("every error type should have several sentences", errors.groupBy { it.errorType }.values.all { it.size >= 3 })
     }
