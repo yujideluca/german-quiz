@@ -62,7 +62,7 @@ WEB = [
  ("src/domain.js", "phase === 'REVIEW' && responseMillis >= config.hardMinMillis", "responseMillis >= config.hardMinMillis", "web: slow correct answer on a new card is HARD"),
  ("src/domain.js", "easyIntervalDays: 5", "easyIntervalDays: 4", "web: easy interval drift"),
  ("src/domain.js", "reached: answered >= goal", "reached: answered > goal", "web: goal reached one answer too late"),
- ("src/domain.js", "fraction: clamp(answered / goal, 0, 1)", "fraction: answered / goal", "web: bar can overflow past full"),
+ ("src/domain.js", "goal > 0 ? clamp(answered / goal, 0, 1)", "goal > 0 ? answered / goal", "web: bar can overflow past full"),
  ("src/domain.js", "answeredOn(history, day) + 1 })", "answeredOn(history, day) + 2 })", "web: an answer counts twice"),
  ("src/domain.js", "Math.round(daily.fraction * 100)", "Math.floor(daily.fraction * 100)", "web: bar width rounds down"),
 ]
