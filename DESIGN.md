@@ -10,7 +10,7 @@ Last updated: 2026-11-06
 
 ## 1. What the app is
 
-Six study modes over a curated B2 pool (the sixth, FSP-Fälle, prepares the medical German exam that follows B2) (nothing beyond what every B2 speaker should know). The pool can grow without an app update: the app downloads newer question packs from its update feed (section 5, [ADR-0012](docs/adr/0012-downloadable-question-pool.md)). Pool sizes as built into version 2.7.1:
+Six study modes: five over a curated B2 pool (nothing beyond what every B2 speaker should know), and FSP-Fälle, which prepares the medical German exam that follows B2. The pool can grow without an app update: the app downloads newer question packs from its update feed (section 5, [ADR-0012](docs/adr/0012-downloadable-question-pool.md)). Pool sizes as built into version 2.8.0 (pool 8):
 
 | Mode | Question | Pool |
 |---|---|---|
