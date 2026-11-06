@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # The web version (https://yujideluca.github.io/german-quiz-web/, repo yujideluca/german-quiz-web, clone ~/dev/QuizWeb)
 # must always match the user version of the Android app. Exits 2 and says what is behind when it does not:
-#   - a vocabulary file (nouns, prepositions, verbs, errors) differs from the app's assets/vocab, or a translation file
+#   - a vocabulary file (nouns, prepositions, verbs, errors, fsp_cases) differs from the app's assets/vocab, or a translation file
 #     (assets/i18n/de|pt|es.json) differs from the web's i18n/
 #   - the set of modes differs (GameMode.kt storage ids vs MODES in the web's src/domain.js)
 #   - the web clone has uncommitted work or commits that are not on GitHub yet
@@ -12,7 +12,7 @@ root="$(cd "$(dirname "$0")/.." && pwd)"
 web="${WEB_DIR:-$HOME/dev/QuizWeb}"
 problems=()
 
-for f in nouns prepositions verbs errors; do
+for f in nouns prepositions verbs errors fsp_cases; do
   cmp -s "$root/app/src/main/assets/vocab/$f.json" "$web/vocab/$f.json" || problems+=("vocab/$f.json differs from the app's")
 done
 
