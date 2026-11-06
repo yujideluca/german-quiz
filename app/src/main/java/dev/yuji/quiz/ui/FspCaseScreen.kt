@@ -69,7 +69,8 @@ fun FspCaseBody(run: FspCaseRun, answer: AnswerRecord?, onPick: (Int) -> Unit, o
             disabledContainerColor = container, disabledContentColor = content,
         )
         Button(
-            onClick = { onPick(i) }, colors = colors, enabled = !run.solved && !wrong,
+            // Rounded rectangle, not the default pill: answers run to several lines and a pill clips their corners.
+            onClick = { onPick(i) }, colors = colors, enabled = !run.solved && !wrong, shape = MaterialTheme.shapes.medium,
             modifier = Modifier.fillMaxWidth().heightIn(min = scale.dp(56.dp)),
         ) { Text(step.options[i], style = scale.style(MaterialTheme.typography.bodyLarge), textAlign = TextAlign.Start, modifier = Modifier.fillMaxWidth()) }
         if (wrong || right) {
