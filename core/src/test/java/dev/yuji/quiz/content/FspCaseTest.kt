@@ -68,6 +68,9 @@ class FspCaseTest {
         assertTrue(solved.solved)
         assertEquals("only a first-try right answer counts", listOf(false), solved.firstTry)
         assertSame("picks after solving are ignored", solved, solved.pick(wrong))
+        val untried = (0..3).first { it != step.answer && it != wrong }
+        assertSame("an untried option after solving is ignored", solved, solved.pick(untried))
+        assertSame("the right answer again is ignored", solved, solved.pick(step.answer))
         val moved = solved.next()
         assertEquals(1, moved.stepIndex)
         assertTrue(moved.wrongPicks.isEmpty())
