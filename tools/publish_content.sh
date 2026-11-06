@@ -21,8 +21,9 @@ source "$HOME/dev/env.sh"
 root="$(cd "$(dirname "$0")/.." && pwd)"
 feed="${FEED_DIR:-$HOME/dev/german-quiz-releases}"
 web="${WEB_DIR:-$HOME/dev/QuizWeb}"
-files=(vocab/nouns.json vocab/prepositions.json vocab/verbs.json vocab/errors.json i18n/de.json i18n/pt.json i18n/es.json)
 cd "$root"
+# The pack's files are the ones its manifest lists (= CONTENT_FILES), so a new pool file can never be left out.
+mapfile -t files < <(python3 -I -c 'import json; print("\n".join(json.load(open("app/src/main/assets/content.json"))["files"]))')
 
 git -C "$feed" fetch -q origin
 pool_version() { git -C "$feed" show "origin/$1:content/content.json" 2>/dev/null \
