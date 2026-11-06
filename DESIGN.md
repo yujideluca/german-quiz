@@ -4,7 +4,7 @@ An offline Android app for drilling basic B2 German vocabulary with Anki-style s
 This file explains **how the app is built** and **why** each choice was made. It is a living
 document: see [How this file is maintained](#how-this-file-is-maintained).
 
-Last updated: 2026-10-25
+Last updated: 2026-10-31
 
 ---
 
@@ -18,7 +18,7 @@ Five study modes over a curated B2 pool (nothing beyond what every B2 speaker sh
 | **Präpositionen** | Pick the missing preposition in a sentence (verbs, adjectives, nouns and set expressions with prepositions) | 309 items |
 | **Pluralformen** | Pick the plural of a noun | the same 484 nouns |
 | **Präteritum** | Pick the er/sie/es Präteritum of a verb | 253 inseparable verbs (strong and mixed first, plus modals and frequent regular verbs) |
-| **Fehler finden** | Tap the one wrong part of a B2 writing sentence (forum post or formal e-mail) | 144 sentences, 12 error types |
+| **Fehler finden** | Tap the one wrong part of a B2 writing sentence (forum post or formal e-mail) | 177 sentences, 12 error types |
 
 Each question is multiple choice (in Fehler finden the "choices" are the sentence's chunks). Cards come back according to a spaced-repetition scheduler, so
 wrong or slow answers return soon and well-known ones are pushed out to days, weeks and months.
@@ -270,9 +270,9 @@ unchanged) of every file ([ADR-0012](docs/adr/0012-downloadable-question-pool.md
 - Every sentence practises a Redemittel, Nomen-Verb-Verbindung or fixed phrase from Giovanni's own lists
   (`expression` column: *Es stellt sich die Frage, ob …*, *Maßnahmen ergreifen*, *Bezug nehmen auf*, …) and
   contains **one** error of a kind Giovanni actually made in the corrected B2 mock exams and class texts of
-  Oct 2026. Error types and sentence counts: word choice / collocation 19, verb position 18, verb or noun +
-  preposition 17, article / adjective ending 17, capitalisation / spelling 14, preposition and case 13, plural and
-  gender 13, passive (werden, not sein) 9, verb form 7, Sie vs. du 7, connectors 6, zu-infinitive 4.
+  Oct 2026. Error types and sentence counts: word choice / collocation 30, article / adjective ending 25, verb position 20, verb or noun +
+  preposition 18, capitalisation / spelling / compounds 20, preposition and case 14, plural and
+  gender 14, passive (werden, not sein) 10, verb form 7, Sie vs. du 7, connectors 7, zu-infinitive 5.
 - **Correctness checks.** Every corrected sentence must pass `tools/check_errors_languagetool.py` (LanguageTool, PICKY level) with no
   warning, and no warning may fall on a chunk other than the marked one. LanguageTool only recognises about a quarter of the planted errors,
   so that the marked chunk is really wrong, and the only wrong one, is checked by hand sentence by sentence. Rule of thumb used: an error
@@ -369,6 +369,8 @@ Newest first. Add an entry whenever a decision changes the design. **Type** is t
 
 | Date | Type | Decision | Why |
 |---|---|---|---|
+| 2026-10-31 | Perfective | **22 new "Fehler finden" sentences from Giovanni's three texts of 2026-10-31** (forum posts on remote work, AI in studies and children on social media; pool version 7, 155 to 177 sentences, `errors.tsv` F83-F104, rules translated into de / pt / es). Same method as the earlier rows: new wording that practises an expression, one error Giovanni made in those texts per sentence, no text of his copied. Errors covered: missing `werden` in a modal passive, verb position in an indirect question and after `und` in a dass-clause, calques from Portuguese (`Fragen machen`, `Hausarbeit antworten`, `besorgen sich`, `Einrichtungen` for *Vorgaben*, `Verpflichtungen erledigen`), n-declension (`dem Student`), gender (`der Programm`, `den Handy`), `im Computer`, `vor soziale Medien`, plural of Artikel / Jugendliche / Kindern, `überzeugen, dass` without *davon*, `um … zu` with a new subject, and five spelling slips. The texts carry no teacher corrections, so each error was judged by hand. `ContentTest` floor raised from 150 to 170. Checked: `:core:test` green (ContentTest 22, ContentTranslationsTest 4) and LanguageTool 6.6 (PICKY) clean on all 177 corrected sentences. The pool version is 7 because `build_vocab.py` ran twice after the unpublished version 5. Pool change only, no app release (ADR-0012); not committed or published | Giovanni: update the Find the mistake list from today's texts |
+| 2026-10-29 | Perfective | **11 new "Fehler finden" sentences from Giovanni's two newest texts** (a forum post on a sugar tax and a formal e-mail about a broken heating; pool version 5, 144 to 155 sentences, `errors.tsv` F76-F82 and M70-M73, rules translated into de / pt / es). Same method as the 2026-10-25 row: new wording that practises an expression from Giovanni's lists and carries one error he made in those texts (`zu` after a modal verb, `die Preise Steigerung` for *Preissteigerung*, `desto mehrere Menschen`, `gesunde Essen`, `Zucker bilanzieren`, `passiert` for *entstanden*, `und endlich` for a sequence, `dieser Monat` for a date, `am schnellsten` for *so schnell wie möglich*, missing comma after the salutation); no text of his is copied. The two texts carry no corrections in the document, so the errors were found and checked by hand. Checked with LanguageTool 6.6 (PICKY): all 155 corrected sentences clean, no warning outside a marked chunk. `ContentTest` floor raised from 140 to 150. Pool change only, no app release (ADR-0012); not yet published to the feed | Giovanni: add the relevant mistakes of the two texts last corrected to the Find the mistake pool. Read as the two newest texts at the end of the B2 document, after the four used on 2026-10-25 |
 | 2026-10-25 | Preventive | **Monthly architecture review**: pipeline-check v0.4.0, local mode, report of 2026-10-25: 0 falhas, 0 avisos, 1 pulado (protecao-de-branch); 2 proposals; proposals created as german-quiz#11, pipeline-check#4 | Monthly review standard (ADR-0013): the program measures, the skill judges |
 | 2026-10-24 | Preventive | **`pipeline-check` moved to its own repository and consumed by pinned version** ([ADR-0013](docs/adr/0013-program-measures-skill-judges.md) update; ADR-0003 in `yujideluca/pipeline-check`). This repository keeps `pipeline-check.toml`, `pipeline-check.version` (v0.1.0), the small runner `tools/pipeline-check.sh` and a local pre-push check (`tools/hooks/pre-push`, enabled with `git config core.hooksPath tools/hooks`) that runs the gate before `main` is pushed, because branch protection is unavailable on a private free-plan repository. The program's requirements PC-* and its tests moved with it | The first rollout copied the crate into five repositories and a fix would have needed five edits. Rule now: a tool used by more than one project lives once and is consumed by version |
 | 2026-10-24 | Preventive | **`StudyViewModel.kt` split from 365 to 286 lines** (debt issue #10): the `UiState`/`UpdateState` types moved to `UiState.kt`, the "update from GitHub" flow (check, popup, download) to `AppUpdater.kt`; the view model's public functions are unchanged | The file was at 91 % of the 400-line limit in `pipeline-check.toml`; the update flow is the one part with its own state and no need of the study controller. Not exercised on a device in this change (no phone attached): the unit tests and the gate pass |

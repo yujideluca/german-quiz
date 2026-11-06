@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "contentVersion": 4,
+ "contentVersion": 7,
  "files": {
   "vocab/nouns.json": "42f004cc64de59cc051a2492b13af5d951b5183ec728a637f0abe5af1fd3dbc9",
   "vocab/prepositions.json": "b27683d4afcf49a2bc18936d0e6b00b253b215b1ae9aabf36fb4d2849a126de7",
   "vocab/verbs.json": "f64749f2da438953ccd565428f439cc6d2f8f904f414feea7809a4e3eebafa81",
-  "vocab/errors.json": "78f82691e5ec8c99ac051ca8198294bb0e48582348a5b2f4dc98b0cafff8fd14",
-  "i18n/de.json": "de8a48b9a898c428b294458c23ad5c04cc2222fa6871332c85fdaf3b42df65a1",
-  "i18n/pt.json": "11fda5bfdc3d8bf4fccc51a39ac58d6b01a3b654420a28b4b27da6d2c5eaf47d",
-  "i18n/es.json": "4eac91548cfdb32eb07016c332fe356590846d912ec2dda302bd00d2984ee4cf"
+  "vocab/errors.json": "ccab784d8f9d15b54286decf95aa0efaa01026d96ad0f4eb88e4349b902409c4",
+  "i18n/de.json": "1c21aae23c62352a4a05501befb2750d8400e938dfdb7c605a4f67cbba12d078",
+  "i18n/pt.json": "fb81c670dd847105d13e9695628a7fb8d022e10987e0a55793562d3ef40f4f7e",
+  "i18n/es.json": "63b152f55492b116096143efa7914d08aac07a28d3dc9cad9fa7fc4f4485e48b"
  }
 }
