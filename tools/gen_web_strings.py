@@ -3,17 +3,18 @@
 
     python3 tools/gen_web_strings.py [~/dev/QuizWeb/src/strings.js]
 
-Android's %1$s / %1$d placeholders become {0}, {1}, ...; plurals become <name>_one / <name>_other. The update popup, update and
-backup strings are Android-only and skipped; the few web-only texts are defined below.
+Android's %1$s / %1$d placeholders become {0}, {1}, ...; plurals become <name>_one / <name>_other. The update popup, update,
+question-pool (pool_*, common_ok) and backup strings are Android-only and skipped; the few web-only texts are defined below.
 """
 import json, os, re, sys
 import xml.etree.ElementTree as ET
 
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 res = os.path.join(root, "app/src/main/res")
+if len(sys.argv) > 1 and sys.argv[1].startswith("-"): sys.exit(__doc__)   # e.g. --help: never write a file named like a flag
 target = sys.argv[1] if len(sys.argv) > 1 else os.path.expanduser("~/dev/QuizWeb/src/strings.js")
 FOLDERS = {"en": "values", "de": "values-de", "pt": "values-pt", "es": "values-es"}
-SKIP = re.compile(r"^(update_|prompt_|backup_(?!title))")
+SKIP = re.compile(r"^(update_|prompt_|pool_|common_ok$|backup_(?!title))")
 
 # Web-only texts: (en, de, pt, es)
 EXTRA = {
