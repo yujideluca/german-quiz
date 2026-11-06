@@ -1,0 +1,691 @@
+{
+  "id": "malignes-lymphom",
+  "area": "Hämatologie/Onkologie",
+  "title": "Knoten am Hals und nächtliches Schwitzen",
+  "diagnosis": "Malignes Lymphom (klassisches Hodgkin-Lymphom)",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Lukas Hartmann, 28 Jahre, stellt sich am Vormittag auf Überweisung seines Hausarztes in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Hartmann sitzt im Untersuchungszimmer und wirkt etwas besorgt.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Hallo Herr Hartmann, setzen Sie sich bitte, ich schaue mir gleich Ihren Hals an.",
+        "Guten Tag, ich bin Dr. Silva. Haben Sie Ihre Versichertenkarte und die Überweisung vom Hausarzt dabei? Die brauchen wir zuerst für die Anmeldung.",
+        "Guten Tag, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Hartmann?",
+        "Hi, was fehlt Ihnen denn?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Sie stellen sich nicht vor, und die Untersuchung kommt erst nach der Anamnese.",
+        "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Ihre Funktion nennen Sie nicht.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung."
+      ],
+      "reply": "Patient: „Ja, Lukas Hartmann. Guten Tag, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Sie sind doch noch keine dreißig, oder?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Wie hoch ist Ihr Body-Mass-Index?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
+      ],
+      "reply": "Patient: „Ich bin 28, 1,82 Meter groß und wiege im Moment 66 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Haben Sie einen Knoten am Hals?",
+        "Welche Symptomatik liegt bei Ihnen vor, und seit wann besteht die Lymphadenopathie?",
+        "Warum gehen Sie erst jetzt zum Arzt und nicht schon früher?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen.",
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "„Symptomatik“ und „Lymphadenopathie“ sind Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
+      ],
+      "reply": "Patient: „Ich habe seit ein paar Wochen einen Knoten links am Hals. Und nachts schwitze ich ganz furchtbar.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten wissen, wo der Knoten sitzt und ob es weitere gibt. Was sagen Sie?",
+      "options": [
+        "Wo genau ist die Lymphadenopathie lokalisiert, und ist sie unilateral oder bilateral ausgeprägt? Wie viele Lymphknotenstationen sind insgesamt betroffen?",
+        "Der Knoten sitzt bestimmt links seitlich am Hals, stimmt das so?",
+        "Haben Sie nur diesen einen Knoten?",
+        "Zeigen Sie mir bitte, wo Sie den Knoten fühlen. Haben Sie noch andere geschwollene Stellen bemerkt, zum Beispiel in der Achsel oder in der Leiste?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachsprache („Lymphadenopathie“, „lokalisiert“, „unilateral“); der Patient versteht sie nicht.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
+        "Geschlossene Frage; andere Stellen wie Achsel oder Leiste erfragen Sie so nicht.",
+        "Richtig: laienverständlich, mit Beispielen für weitere Lymphknotenstationen, ohne die Antwort vorzugeben."
+      ],
+      "reply": "Patient: „Hier links seitlich am Hals. Und in der linken Achsel habe ich seit zwei Wochen auch einen kleineren.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Wann haben Sie den Knoten zum ersten Mal bemerkt, und wie war die Progredienz seit der Erstmanifestation?",
+        "Wann genau haben Sie den Knoten bemerkt, und ist er seitdem größer, kleiner oder gleich geblieben?",
+        "Seit wann haben Sie den Knoten?",
+        "Hatten Sie vorher eine Erkältung oder Halsschmerzen? Dann ist der Knoten bestimmt davon gekommen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache: „Progredienz“ und „Erstmanifestation“ versteht der Patient nicht.",
+        "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Das erfasst nur den Beginn, nicht den Verlauf. Fragen Sie auch nach Veränderungen.",
+        "Suggestiv und eine voreilige Erklärung: Sie geben die Ursache schon vor."
+      ],
+      "reply": "Patient: „Ich habe ihn vor sechs Wochen beim Rasieren bemerkt. Er ist seitdem langsam größer geworden, jetzt etwa wie eine Pflaume. Erkältet war ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Schmerzen und Beschaffenheit des Knotens. Welche Formulierung passt?",
+      "options": [
+        "Ist der Knoten indolent, derb und verschieblich?",
+        "Ist der Knoten schmerzhaft?",
+        "Tut der Knoten weh, und wie stark ist es auf einer Skala von 0 bis 10? Wie fühlt er sich an, eher weich oder fest, und lässt er sich verschieben?",
+        "Wie stark schmerzt der Knoten auf einer Skala von 1 bis 100, und ist die Haut darüber gerötet und heiß, wie bei einer Entzündung?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache („indolent“, „derb“). Der Patient versteht sie nicht.",
+        "Geschlossene Frage; Stärke und Beschaffenheit fehlen.",
+        "Richtig: Schmerz auf der üblichen Skala von 0 bis 10 und eine laienverständliche Frage nach der Konsistenz.",
+        "Unübliche Skala (in Deutschland 0 bis 10), und Sie legen eine Entzündung nahe."
+      ],
+      "reply": "Patient: „Nein, wehtun tut er gar nicht, 0 von 10. Er fühlt sich fest an, wie Gummi, und lässt sich etwas hin und her schieben.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Haben Sie Pruritus, Dyspnoe, Husten, Dysphagie oder eine Tonsillitis gehabt?",
+        "Haben Sie auch Luftnot?",
+        "Sie sind bestimmt ständig müde und erschöpft, oder?",
+        "Haben Sie Husten oder Luftnot, Schluckbeschwerden oder Juckreiz? Ist Ihnen sonst etwas aufgefallen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Nur Fachbegriffe („Pruritus“, „Dyspnoe“, „Dysphagie“). Sagen Sie „Juckreiz“, „Luftnot“, „Schluckbeschwerden“.",
+        "Zu eng: Husten, Schluckbeschwerden und Juckreiz fragen Sie so nicht.",
+        "Suggestiv: Sie unterstellen das Symptom.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache und Raum für weitere Angaben."
+      ],
+      "reply": "Patient: „Ein Juckreiz am ganzen Körper, seit etwa drei Wochen, und ich bin müde. Husten oder Luftnot habe ich nicht, Schlucken geht normal.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Haben Sie Fieber gemessen? Schwitzen Sie nachts? Hat sich Ihr Gewicht verändert? Wie sind Appetit, Stuhlgang und Wasserlassen?",
+        "Haben Sie Febris, Hyperhidrose, eine Gewichtsabnahme, eine Appetenzminderung, Obstipation oder Diarrhö oder eine Miktionsstörung?",
+        "Wie ist die Vegetativa?",
+        "Ist sonst alles normal bei Ihnen? Dann können wir direkt weitermachen."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fieber, Nachtschweiß, Gewicht, Appetit, Stuhlgang und Wasserlassen in Laiensprache (B-Symptomatik).",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Febris, Hyperhidrose, Obstipation, Miktion).",
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Zu allgemein; der Patient sagt einfach „ja“."
+      ],
+      "reply": "Patient: „Abends hatte ich öfter 38,3 Grad. Nachts bin ich drei- bis viermal pro Woche nassgeschwitzt und muss das Bett neu beziehen. Ich habe in zwei Monaten acht Kilo abgenommen, von 74 auf 66, ohne Diät. Der Appetit ist etwas geringer, Stuhlgang und Wasserlassen sind normal.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Sind Sie sonst gesund?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel Asthma oder Zucker? Wurden Sie schon einmal operiert, oder hatten Sie schwere Infektionen?",
+        "Sie haben bestimmt eine Immunschwäche, oder?",
+        "Haben Sie Vorerkrankungen wie eine Autoimmunerkrankung oder eine Immunsuppression, einen Z. n. Splenektomie, und gab es Voroperationen oder stationäre Aufenthalte?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Richtig: mit Beispielen, laienverständlich, und Operationen und Infektionen sind mitgefragt.",
+        "Suggestiv und beängstigend: Sie unterstellen eine Erkrankung.",
+        "Vollständig, aber in Fachsprache („Immunsuppression“, „Splenektomie“). Mit Patienten sprechen Sie Laiensprache."
+      ],
+      "reply": "Patient: „Chronisch krank bin ich nicht. Mit 17 hatte ich das Pfeiffersche Drüsenfieber. Operiert wurde ich nur an den Weisheitszähnen, mit 22.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Welche Pharmaka applizieren Sie?",
+        "Nehmen Sie Tabletten?",
+        "Welche Medikamente nehmen Sie regelmäßig oder bei Bedarf ein, und in welcher Dosierung? Auch Mittel ohne Rezept?",
+        "Sie nehmen doch sicher regelmäßig Antibiotika wegen des Knotens, nicht wahr? Und bestimmt auch noch Vitamine und Schmerzmittel, oder?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache („Pharmaka“, „applizieren“).",
+        "Zu ungenau: Name, Dosis und Mittel ohne Rezept fehlen.",
+        "Richtig: Name, Dosierung, Bedarfsmedikation und frei verkäufliche Mittel.",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Regelmäßig nichts. Wegen des Fiebers habe ich ungefähr zweimal pro Woche abends eine Paracetamol 500 genommen.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Allergien?",
+        "Haben Sie eine Penicillinallergie? Das ist wichtig, weil wir Ihnen vielleicht ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
+        "Sind Sie hypersensibel?",
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Pollen oder Lebensmittel? Wie äußert sich das?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Zu eng: Allergien gegen Pollen, Lebensmittel oder andere Medikamente übersehen Sie.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl.",
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion."
+      ],
+      "reply": "Patient: „Ich habe Heuschnupfen auf Gräserpollen, da muss ich niesen und die Augen tränen. Gegen Medikamente habe ich nichts.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
+        "Sind Sie Raucher oder Alkoholiker?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus?",
+        "Trinken Sie zu viel? Das kommt bei Studenten ja häufig vor, und Rauchen tun die meisten auch."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: neutral, konkret, mit Menge.",
+        "„Alkoholiker“ ist wertend und verletzend.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Wertend, ungenau und mit einem Vorurteil über Studenten."
+      ],
+      "reply": "Patient: „Ich rauche seit 5 Jahren etwa 10 Zigaretten am Tag. Am Wochenende trinke ich zwei, drei Bier. Drogen nehme ich nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Hat Ihre Familie dieselbe Krankheit?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Krebs-, Blut- oder Herzerkrankungen?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders."
+      ],
+      "answer": 2,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar.",
+        "Richtig: offen, mit passenden Beispielen, auch Bluterkrankungen sind genannt.",
+        "Zu eng: Großeltern und Geschwister fehlen, und häufige Erkrankungen erfahren Sie so nicht."
+      ],
+      "reply": "Patient: „Meine Großmutter hatte Brustkrebs mit 70. Mein Vater hat Bluthochdruck. Blutkrebs oder Lymphknotenerkrankungen gibt es bei uns nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was ist Ihr sozialer Status?",
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen? Haben Sie Kinder?",
+        "Sind Sie verheiratet, wie viele Personen leben in Ihrem Haushalt, und wie lautet Ihre genaue Adresse? Das brauchen wir für die Akte.",
+        "Können Sie sich als Student die Behandlung überhaupt leisten?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Unklar und unangenehm formuliert.",
+        "Richtig: Beruf, Wohnsituation und Kinder, wichtig für Versorgung und Therapieplanung.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Unangemessen und beleidigend."
+      ],
+      "reply": "Patient: „Ich studiere Maschinenbau und wohne mit zwei Mitbewohnern in einer WG in Stuttgart. Eine feste Freundin habe ich, Kinder habe ich keine.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben ein Hodgkin-Lymphom, wahrscheinlich im Stadium II mit B-Symptomatik.",
+        "Das ist bestimmt nur ein Infekt, der von selbst wieder vergeht. Machen Sie sich keine Sorgen, in ein paar Wochen ist alles vorbei.",
+        "Sie haben sicher Blutkrebs, das ist eine sehr gefährliche Erkrankung, und die Chemotherapie müssen wir sofort beginnen.",
+        "Ich vermute, dass die Lymphknoten wegen einer Erkrankung des Lymphsystems vergrößert sind. Das kann auch eine Art Lymphdrüsenkrebs sein, aber sicher ist das noch nicht. Dafür brauchen wir weitere Untersuchungen."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachsprache und eine Diagnose, die noch nicht gesichert ist.",
+        "Verharmlosend und medizinisch falsch: Nachtschweiß, Fieber und Gewichtsverlust sind Warnzeichen.",
+        "Falsch und beängstigend: ohne Gewebeprobe gibt es keine gesicherte Diagnose und keine Chemotherapie.",
+        "Richtig: Verdacht (nicht Gewissheit), ehrlich, in Laiensprache und mit dem nächsten Schritt."
+      ],
+      "reply": "Patient: „Krebs? Oh Gott. Was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Wie wird das jetzt untersucht, und kann man das heilen?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Wir geben Ihnen eine Woche ein Antibiotikum, und wenn der Knoten dann nicht kleiner ist, sehen wir weiter.",
+        "Zuerst nehmen wir Blut ab und machen einen Ultraschall sowie Bilder von Brustkorb und Bauch. Dann muss der Knoten entfernt und unter dem Mikroskop untersucht werden. Erst danach wissen wir sicher, was es ist. Viele dieser Erkrankungen lassen sich heute gut behandeln.",
+        "Das kann man sicher heilen, es gibt dabei überhaupt kein Risiko. Sie brauchen nur ein paar Tabletten und müssen nicht ins Krankenhaus.",
+        "Die Behandlung kann ich Ihnen nicht erklären, das sollen Sie mit dem Onkologen besprechen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Gefährlich: bei Nachtschweiß, Fieber und Gewichtsverlust darf die Abklärung nicht verzögert werden.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich.",
+        "Ein Heilungsversprechen ohne Diagnose ist unseriös, und Tabletten allein reichen nicht.",
+        "Unprofessionell: Sie lassen den Patienten mit seinen Fragen allein."
+      ],
+      "reply": "Patient: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Hartmann ist 28 und hat einen Knoten am Hals.",
+        "Herr Lukas Hartmann, ein 28-jähriger Patient, stellte sich heute auf Überweisung seines Hausarztes in unserer Notaufnahme wegen einem Knoten am Hals vor, der zunehmend Beschwerden bereite.",
+        "Herr Lukas Hartmann, ein 28-jähriger Patient, stellte sich heute auf Überweisung seines Hausarztes in unserer Notaufnahme mit einer seit sechs Wochen bestehenden, schmerzlosen Lymphknotenschwellung linkszervikal und Nachtschweiß vor.",
+        "Herr Lukas Hartmann, ein 38-jähriger Patient, stellte sich heute notfallmäßig mit seit sechs Tagen bestehenden, schmerzhaften Lymphknotenschwellungen rechts zervikal und Husten in unserer Notaufnahme vor."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Grammatik: „wegen“ verlangt den Genitiv („wegen eines Knotens“), und das Leitsymptom ist zu ungenau.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Überweisung, Leitsymptom mit Dauer.",
+        "Inhaltlich falsch: Der Patient ist 28 Jahre alt, die Schwellung besteht seit sechs Wochen, ist schmerzlos und liegt links."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Der Patient bemerkte vor sechs Wochen eine schmerzlose, derbe, verschiebliche und pflaumengroße Lymphknotenschwellung linkszervikal, seitdem progredient. Seit zwei Wochen besteht zusätzlich ein kleinerer Lymphknoten axillär links, seit drei Wochen ein generalisierter Pruritus.",
+        "Der Patient bemerkte vor sechs Tagen eine schmerzhafte, weiche und gerötete Lymphknotenschwellung rechts zervikal im Anschluss an einen grippalen Infekt, seitdem regredient. Zusätzlich bestehe ein Hautausschlag am ganzen Körper mit starkem Brennen (NRS 6/10), dazu Gelenkschmerzen und ein Fieberschub bis 40 °C, der mit einem Schüttelfrost einhergehe.",
+        "Der Patient hat vor sechs Wochen einen Knoten am Hals bemerkt, der langsam größer wird und nicht wehtut.",
+        "Der Patient bemerkte vor sechs Wochen eine schmerzlose Lymphknotenschwellung linkszervikal, seitdem progredient. Zusätzlich bestehen seit drei Wochen ein generalisierter Pruritus."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachsprache und alle Merkmale (Beginn, Lage, Konsistenz, Verlauf, weitere Lymphknoten, Pruritus).",
+        "Inhaltlich falsch: Die Schwellung ist schmerzlos, derb und links, besteht seit sechs Wochen und wächst. Es gab keinen Infekt.",
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Grammatik: „bestehen“ passt nicht zu „ein generalisierter Pruritus“ (Singular: „besteht“). Außerdem fehlt der axilläre Lymphknoten."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Er hat Fieber, schwitzt nachts und hat abgenommen.",
+        "Begleitend berichtete der Patient über abendliches Fieber bis 39,5 °C, Nachtschweiß einmal pro Monat sowie eine Gewichtszunahme von 8 kg in zwei Monaten. Husten und Dyspnoe wurden bejaht. Der Appetit sei gesteigert, Miktion und Defäkation unauffällig.",
+        "Begleitend berichtete der Patient über abendliches Fieber bis 38,3 °C. Nachtschweiß und Gewichtsverlust wurden verneint. Husten und Dyspnoe wurden verneint.",
+        "Begleitend berichtete der Patient über abendliches Fieber bis 38,3 °C, mehrfach pro Woche auftretenden Nachtschweiß mit Durchnässung der Bettwäsche sowie einen ungewollten Gewichtsverlust von 8 kg in zwei Monaten (74 kg auf 66 kg). Husten, Dyspnoe und Dysphagie wurden verneint. Leicht verminderter Appetit, Miktion und Defäkation unauffällig."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache und ohne Zahlen; Fieberhöhe, Häufigkeit und Gewichtsverlust fehlen.",
+        "Inhaltlich falsch: Fieber bis 38,3 °C, Nachtschweiß mehrfach pro Woche, Gewichtsabnahme, Husten und Dyspnoe wurden verneint.",
+        "Inhaltlich falsch: Nachtschweiß und Gewichtsverlust bestehen. Die B-Symptomatik gehört dokumentiert.",
+        "Richtig: vollständig, Fachsprache, Zahlen und Negativbefunde dokumentiert."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: keine. Medikamente: Paracetamol.",
+        "Keine chronischen Vorerkrankungen bekannt. Z. n. infektiöser Mononukleose im Alter von 17 Jahren. Z. n. Weisheitszahnentfernung im Alter von 22 Jahren. Keine Dauermedikation; Paracetamol 500 mg bei Bedarf (ca. 2-mal wöchentlich abends).",
+        "Als Vorerkrankungen sind ein Asthma bronchiale und ein Diabetes mellitus Typ 1 bekannt. Z. n. Splenektomie im Kindesalter. Medikation: Salbutamol bei Bedarf, Insulin nach Schema, Paracetamol 500 mg 1-0-1.",
+        "Keine chronischen Vorerkrankungen. Medikation: Paracetamol 500 mg 1-1-1-1 dauerhaft, außerdem Ibuprofen 400 mg 1-0-1."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Laiensprache, ohne Dosierung, und die Voroperation fehlt.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierung als Bedarfsmedikation.",
+        "Inhaltlich falsch: Der Patient hat keine chronischen Erkrankungen und keine Splenektomie.",
+        "Inhaltlich falsch: Paracetamol nahm der Patient nur bei Bedarf, Ibuprofen wurde nicht genannt."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Keine Allergien. Er raucht und trinkt Alkohol, Student.",
+        "Allergie: Penicillin (Exanthem). Nikotinkonsum ca. 25 py, täglicher Alkoholkonsum. Familienanamnese: Vater Non-Hodgkin-Lymphom, Großmutter Leukämie. Der Patient ist Maschinenbauer, verheiratet und hat zwei Kinder.",
+        "Pollenallergie (Gräser) mit Rhinokonjunktivitis, keine Medikamentenallergie. Nikotinkonsum ca. 2,5 py, Alkoholkonsum am Wochenende (zwei bis drei Bier), Drogenkonsum wird verneint. Familienanamnese: Großmutter Mammakarzinom mit 70 J., Vater arterielle Hypertonie, keine hämatologischen Erkrankungen. Der Patient studiert Maschinenbau, lebt in einer WG und hat eine Partnerin, keine Kinder.",
+        "Pollenallergie (Gräser) mit Rhinokonjunktivitis. Nikotinkonsum ca. 5 py, Alkoholkonsum am Wochenende (zwei bis drei Bier). Familienanamnese: Großmutter Mammakarzinom mit 70 J., Vater arterielle Hypertonie. Der Patient studiert Maschinenbau, lebt in einer WG, keine Kinder."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Laiensprache; die Pollenallergie fehlt, Angaben sind unvollständig.",
+        "Inhaltlich falsch: Allergie gegen Pollen (nicht Penicillin), etwa 2,5 py, Alkohol nur am Wochenende, keine hämatologische Familienanamnese, ledig, keine Kinder.",
+        "Richtig: 10 Zigaretten am Tag über 5 Jahre sind 0,5 Packungen mal 5 Jahre, also 2,5 py; Negativbefunde sind dokumentiert.",
+        "Falsch gerechnet: 10 Zigaretten am Tag über 5 Jahre sind 2,5 py, nicht 5 py."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Lymphdrüsenkrebs.",
+        "Anamnestisch besteht der Verdacht auf eine bakterielle Lymphadenitis bei Pharyngitis. Differenzialdiagnostisch kommen ein Lipom, eine Struma, eine Parotitis und eine Sialolithiasis der Glandula submandibularis in Betracht, eine hämatologische Erkrankung ist unwahrscheinlich.",
+        "Es besteht ein gesichertes Hodgkin-Lymphom im Stadium IIB.",
+        "Anamnestisch besteht der Verdacht auf ein malignes Lymphom, am ehesten ein klassisches Hodgkin-Lymphom, mit B-Symptomatik. Differenzialdiagnostisch kommen ein Non-Hodgkin-Lymphom, eine infektiöse Mononukleose und eine Tuberkulose in Betracht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Passt nicht zum Befund: Der Knoten ist schmerzlos und derb, und B-Symptomatik spricht gegen eine einfache Lymphadenitis.",
+        "Ohne Histologie und Staging ist die Diagnose nicht gesichert, ein Stadium kann nicht angegeben werden.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (u. a. Differenzialblutbild, BSG, LDH, HIV- und Hepatitis-Serologie), eine Lymphknotensonographie und ein Staging mittels PET-CT (alternativ CT von Hals, Thorax und Abdomen). Zur Diagnosesicherung ist eine Lymphknotenexstirpation mit histologischer Untersuchung indiziert, danach die Vorstellung im Tumorboard.",
+        "Wir machen Blut und Ultraschall und warten ab.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und eine Feinnadelpunktion des Lymphknotens. Bei unklarem Ergebnis beginnen wir empirisch mit Prednisolon 100 mg täglich.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und eine Lymphknotensonographie. Danach beginnen wir eine kalkulierte Antibiose mit Amoxicillin/Clavulansäure 875/125 mg 1-0-1 und kontrollieren den Befund in drei Monaten."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Labor, Bildgebung, histologische Sicherung und Tumorboard in vollständigen Sätzen.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Gefährlich: Kortison vor der Biopsie kann die Histologie verfälschen, und eine Feinnadelpunktion reicht für die Lymphomdiagnostik nicht.",
+        "Gefährlich: Die Abklärung wird um Monate verzögert, eine Antibiose ist bei diesem Befund nicht indiziert."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Der Patient hat einen Knoten, er heißt Hartmann.",
+        "Also, der junge Mann schwitzt nachts ganz viel ...",
+        "Ich möchte Ihnen Herrn Hartmann vorstellen, einen Patienten mit einem malignen Lymphom im Stadium II, der sich wegen Nachtschweiß in unserer Notaufnahme vorgestellt hat. Die Therapie mit Chemotherapie sollte noch heute beginnen.",
+        "Ich möchte Ihnen Herrn Lukas Hartmann vorstellen, einen 28-jährigen Patienten, der sich auf Überweisung des Hausarztes mit einer seit sechs Wochen bestehenden, schmerzlosen Lymphknotenschwellung am Hals links und B-Symptomatik vorgestellt hat."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich; Alter und Leitsymptom fehlen.",
+        "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
+        "Sie beginnen mit einer ungesicherten Diagnose und einem Stadium statt mit dem Leitsymptom.",
+        "Richtig: Name, Alter, Leitsymptom, Dauer und B-Symptomatik in einem Satz."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Er hat geschwollene Lymphknoten und schwitzt.",
+        "Der Lymphknoten ist pflaumengroß, derb, verschieblich und schmerzlos; zusätzlich besteht ein kleinerer axillärer Lymphknoten links. Begleitend bestehen Fieber bis 38,3 °C, Nachtschweiß, ein Gewichtsverlust von 8 kg in zwei Monaten und ein generalisierter Pruritus. Husten und Dyspnoe wurden verneint.",
+        "Der Lymphknoten ist weich, druckschmerzhaft und gerötet; es besteht Fieber bis 39,5 °C nach einem Infekt, aber kein Nachtschweiß und kein Gewichtsverlust. Der Patient hat Husten und Atemnot und zusätzlich Durchfall.",
+        "Er hat Fieber, Husten und Durchfall."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu unspezifisch; Details fehlen.",
+        "Richtig: knapp, strukturiert, mit relevanten Positiv- und Negativbefunden.",
+        "Inhaltlich falsch: Der Knoten ist schmerzlos und derb, Nachtschweiß und Gewichtsverlust bestehen, Husten und Atemnot wurden verneint.",
+        "Inhaltlich falsch: Husten und Durchfall hat der Patient nicht, der Knoten fehlt."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist gesund.",
+        "Bekannt sind ein Diabetes mellitus Typ 1 und ein Z. n. Splenektomie. Es besteht eine Penicillinallergie mit Exanthem. Der Vater hatte ein Lymphom, die Mutter eine Leukämie. Der Patient raucht seit 25 Jahren eine Schachtel pro Tag.",
+        "Keine relevanten Vorerkrankungen; Z. n. infektiöser Mononukleose mit 17 Jahren. Keine Dauermedikation, Paracetamol bei Bedarf. Pollenallergie. Nikotin ca. 2,5 py. In der Familie keine hämatologischen Erkrankungen.",
+        "Er nimmt Paracetamol, sonst nichts."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu knapp; die durchgemachte Mononukleose und die Risikofaktoren fehlen.",
+        "Inhaltlich falsch: Der Patient hat keinen Diabetes, keine Splenektomie, keine Penicillinallergie, und es gibt kein Lymphom in der Familie.",
+        "Richtig: relevante Vorgeschichte mit Mononukleose, Medikation, Allergie, Noxen und Familienanamnese.",
+        "Unvollständig: Vorerkrankungen, Allergie und Noxen fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich vermute ein malignes Lymphom, am ehesten ein klassisches Hodgkin-Lymphom mit B-Symptomatik. Differenzialdiagnostisch denke ich an ein Non-Hodgkin-Lymphom, eine infektiöse Mononukleose und eine Tuberkulose.",
+        "Ich denke an eine Erkältung.",
+        "Es handelt sich sicher um eine Mononukleose, weil der Patient jung ist. Differenzialdiagnostisch denke ich höchstens noch an eine bakterielle Lymphadenitis und eine Sarkoidose, ein Lymphom schließe ich aus, weitere Diagnostik ist nicht nötig.",
+        "Ich weiß es nicht genau."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache, die B-Symptomatik ist berücksichtigt.",
+        "Passt nicht zu B-Symptomatik und derbem Lymphknoten.",
+        "Zu sicher („sicher“, „ich schließe aus“). Bei B-Symptomatik muss ein Lymphom zuerst bedacht werden.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde ihn nach Hause schicken und eine Kontrolle in drei Monaten vereinbaren.",
+        "Ich würde Prednisolon 100 mg geben und eine Feinnadelpunktion machen, damit die Schwellung schnell abnimmt und wir eine Zellprobe haben.",
+        "Ich würde Blut abnehmen, inklusive Differenzialblutbild, BSG, LDH sowie HIV- und Hepatitis-Serologie, und den Hals sonographieren. Zum Staging ein PET-CT (alternativ CT von Hals, Thorax und Abdomen), zur Sicherung eine Lymphknotenexstirpation mit Histologie. Vorher Fertilitätsberatung und Tumorboard.",
+        "Ich würde eine Antibiose mit Amoxicillin geben und ihn in vier Wochen wieder einbestellen, falls der Knoten dann noch da ist."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gefährlich: Fieber, Nachtschweiß und Gewichtsverlust müssen zügig abgeklärt werden.",
+        "Gefährlich: Kortison vor der Biopsie verfälscht die Histologie, und eine Feinnadelpunktion reicht nicht aus.",
+        "Richtig: Labor, Staging, histologische Sicherung, Fertilitätsberatung und Tumorboard.",
+        "Falsch: Eine Antibiose ist hier nicht indiziert, und das Abwarten verzögert die Diagnose."
+      ],
+      "reply": "Oberarzt: „Gut. Welchen Befund erwarten Sie in der Histologie?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich erwarte Langhans-Riesenzellen mit verkäsenden Granulomen als Zeichen einer Tuberkulose und dazu Auer-Stäbchen in den Zellen des Lymphknotens.",
+        "Ich erwarte beim klassischen Hodgkin-Lymphom Hodgkin- und mehrkernige Reed-Sternberg-Zellen in einem entzündlichen Zellhintergrund; sie sind typischerweise CD30- und CD15-positiv.",
+        "Ich erwarte gar nichts.",
+        "Eine vergrößerte Milz."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: Langhans-Riesenzellen sprechen für eine Tuberkulose, Auer-Stäbchen für eine akute myeloische Leukämie.",
+        "Richtig: Reed-Sternberg-Zellen sind typisch für das klassische Hodgkin-Lymphom.",
+        "In der Prüfung erwartet man eine begründete Antwort.",
+        "Das ist keine histologische Angabe und nicht typisch für diese Frage."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Lymphadenopathie“?",
+      "options": [
+        "Lymphknotenvergrößerung",
+        "Milzvergrößerung",
+        "Entzündung der Lymphgefäße",
+        "Vermehrung der weißen Blutkörperchen"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Splenomegalie.",
+        "Das ist die Lymphangitis.",
+        "Das ist die Leukozytose."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „B-Symptomatik“?",
+      "options": [
+        "Blutarmut mit Müdigkeit",
+        "Juckreiz und Hautausschlag",
+        "Husten und Atemnot",
+        "Fieber, Nachtschweiß und ungewollter Gewichtsverlust"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Anämie.",
+        "Das sind Pruritus und Exanthem.",
+        "Das sind Husten und Dyspnoe.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Pruritus“?",
+      "options": [
+        "Hautausschlag",
+        "Juckreiz",
+        "Hautrötung",
+        "trockene Haut"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist das Exanthem.",
+        "Richtig.",
+        "Das ist das Erythem.",
+        "Das ist die Xerosis."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „zervikal“?",
+      "options": [
+        "am Bauch",
+        "in der Leiste",
+        "am Hals",
+        "unter der Achsel"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist abdominal.",
+        "Das ist inguinal.",
+        "Richtig.",
+        "Das ist axillär."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Exstirpation“?",
+      "options": [
+        "vollständige operative Entfernung",
+        "Gewebeprobe mit einer dünnen Nadel",
+        "Spiegelung mit einer Kamera",
+        "Bestrahlung"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Feinnadelpunktion.",
+        "Das ist die Endoskopie.",
+        "Das ist die Radiatio."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

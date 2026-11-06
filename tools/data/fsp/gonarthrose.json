@@ -1,0 +1,691 @@
+{
+  "id": "gonarthrose",
+  "area": "Unfallchirurgie/Orthopädie",
+  "title": "Schmerzen im rechten Knie beim Gehen",
+  "diagnosis": "Gonarthrose",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Wolfgang Becker, 68 Jahre, stellt sich am Vormittag in der orthopädischen Ambulanz vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Becker sitzt auf dem Stuhl und reibt sich das rechte Knie.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Morgen, Herr Becker. Bitte machen Sie das Hosenbein hoch, ich schaue mir Ihr Knie gleich einmal genau an und bewege es durch.",
+        "Hallo, setzen Sie sich, was haben Sie denn?",
+        "Guten Morgen, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Becker?",
+        "Guten Morgen, Herr Becker. Bevor wir anfangen: Haben Sie Ihre Überweisung und Ihre Versichertenkarte dabei? Die brauchen wir zuerst für die Abrechnung."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Die körperliche Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor."
+      ],
+      "reply": "Patient: „Ja, Becker. Guten Morgen, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Wie hoch ist Ihr Body-Mass-Index?",
+        "Sie sind doch schon über sechzig, oder?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Ich bin 68, 1,76 Meter groß und wiege 94 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Schmerzen im Knie?",
+        "Welche Symptomatik führt Sie zu uns, und wie lange besteht sie schon?",
+        "Warum kommen Sie erst jetzt zum Arzt und nicht schon vor einem halben Jahr?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen."
+      ],
+      "reply": "Patient: „Mein rechtes Knie tut seit etwa einem Jahr weh, und in den letzten Monaten ist es deutlich schlimmer geworden.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten wissen, wo genau das Knie wehtut und wann. Was sagen Sie?",
+      "options": [
+        "Wo im Knie spüren Sie den Schmerz, und bei welchen Bewegungen tut es besonders weh, zum Beispiel beim Treppensteigen oder beim Aufstehen?",
+        "Ist der Schmerz eher medial oder lateral lokalisiert, und tritt er unter Belastung oder in Ruhe auf, mit oder ohne Ausstrahlung in den Unterschenkel?",
+        "Der Schmerz sitzt bestimmt innen am Knie und kommt vom Treppensteigen, richtig?",
+        "Wo tut es weh?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben.",
+        "„Medial“, „lateral“ und „lokalisiert“ sind Fachwörter; der Patient versteht sie nicht.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
+        "Zu ungenau: Auslöser und Bewegungen erfahren Sie so nicht."
+      ],
+      "reply": "Patient: „Innen am Knie. Besonders beim Treppensteigen, vor allem bergab, und wenn ich nach langem Sitzen aufstehe. Gestürzt bin ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch progredient?",
+        "Seit wann haben Sie die Schmerzen?",
+        "Wie hat es angefangen, und wie hat es sich seitdem entwickelt? Gibt es Zeiten, in denen es besser oder schlechter ist?",
+        "Hat es plötzlich angefangen?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „progredient“ versteht der Patient nicht.",
+        "Das hat der Patient schon gesagt (seit etwa einem Jahr). Fragen Sie nach dem Verlauf.",
+        "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Geschlossene Frage; sie erfasst den Verlauf nicht."
+      ],
+      "reply": "Patient: „Es kam ganz langsam. Nach dem Sitzen brauche ich ein paar Schritte, bis das Knie wieder läuft. Nach etwa 500 Metern Gehen muss ich stehen bleiben.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "options": [
+        "Wie stark sind die Schmerzen von 1 bis 100, wenn Sie das Knie belasten, und wie stark im Liegen?",
+        "Wie würden Sie die Schmerzen beschreiben, eher stechend, ziehend oder dumpf? Und wie stark sind sie auf einer Skala von 0 bis 10, in Ruhe und beim Gehen?",
+        "Sind die Schmerzen eher nozizeptiv oder neuropathisch, und wie hoch ist der NRS-Wert?",
+        "Tut es sehr weh?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
+        "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10, getrennt nach Ruhe und Belastung.",
+        "Fachsprache („nozizeptiv“, „neuropathisch“, „NRS“); der Patient versteht sie nicht.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe."
+      ],
+      "reply": "Patient: „Es ist ein ziehender, manchmal stechender Schmerz. In Ruhe etwa 3 von 10, beim Gehen und Treppensteigen 7 von 10.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Hatten Sie Krepitationen, einen Gelenkerguss, eine Morgensteifigkeit oder Blockierungen im Sinne einer Meniskussymptomatik?",
+        "Haben Sie sonst noch was am Knie?",
+        "Das Knie ist sicher auch dick und rot, oder?",
+        "Ist das Knie morgens steif, geschwollen oder warm? Knackt es, oder hat es schon einmal blockiert oder ist weggeknickt?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „steif“, „geschwollen“, „knackt“, „blockiert“.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Suggestiv: Sie unterstellen das Symptom.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, auch Entzündungszeichen und Instabilität."
+      ],
+      "reply": "Patient: „Morgens ist es etwa zehn Minuten steif. Manchmal ist es leicht geschwollen, und es knackt. Rot oder heiß war es nie, blockiert hat es auch nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Hatten Sie Fieber? Wie sind Appetit, Stuhlgang und Wasserlassen? Wie schlafen Sie, und hat sich Ihr Gewicht in letzter Zeit verändert?",
+        "Wie ist die Vegetativa?",
+        "Haben Sie Schüttelfrost, Nachtschweiß, Dysurie, Obstipation und Diarrhö, und wie ist Ihr Gewichtsverlauf in der Anamnese? Auch Nachtschweiß ist wichtig.",
+        "Ist sonst alles normal bei Ihnen?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fieber, Appetit, Gewicht, Stuhlgang, Wasserlassen und Schlaf in Laiensprache.",
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Obstipation, Diarrhö).",
+        "Zu allgemein; der Patient sagt einfach „ja“."
+      ],
+      "reply": "Patient: „Fieber hatte ich nicht. Appetit, Stuhlgang und Wasserlassen sind normal, ich schlafe gut. Ich habe in den letzten drei Jahren etwa 8 Kilo zugenommen.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, einen Diabetes mellitus oder eine KHK, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck, Zucker oder Magenprobleme? Und wurden Sie schon einmal operiert, vielleicht auch am Knie?",
+        "Sind Sie gesund?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „KHK“). Mit Patienten sprechen Sie Laiensprache.",
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patient: „Ich habe Bluthochdruck. Vor zehn Jahren hatte ich ein Magengeschwür. Am rechten Knie wurde ich vor 25 Jahren am Meniskus operiert.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Tabletten?",
+        "Sie nehmen doch sicher Ibuprofen gegen die Schmerzen?",
+        "Welche Medikamente nehmen Sie regelmäßig oder bei Bedarf ein, und in welcher Dosierung? Auch Schmerzmittel und Mittel ohne Rezept?",
+        "Welche Pharmaka applizieren Sie, und wie oft nehmen Sie diese zu sich?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu ungenau: Dosis und Mittel ohne Rezept fehlen.",
+        "Suggestivfrage. Fragen Sie offen.",
+        "Richtig: Name, Dosierung, Bedarfsmedikation und frei verkäufliche Mittel.",
+        "Fachsprache („Pharmaka“, „applizieren“)."
+      ],
+      "reply": "Patient: „Ramipril 5 mg morgens gegen den Blutdruck. Gegen die Knieschmerzen nehme ich etwa dreimal pro Woche eine Ibuprofen 400.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
+        "Allergie?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht ein Antibiotikum geben müssen, und Penicillin nehmen wir am häufigsten.",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Zu eng: Allergien gegen andere Medikamente, zum Beispiel Schmerzmittel, übersehen Sie.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patient: „Gegen Novalgin. Davon habe ich einen Hautausschlag bekommen.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucher oder Alkoholiker?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus, und konsumieren Sie zusätzlich Substanzen im Sinne von Drogen, die Sie nicht verschrieben bekommen haben?",
+        "Trinken Sie zu viel?",
+        "Rauchen Sie oder haben Sie früher geraucht? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Alkoholiker“ ist wertend und verletzend.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Wertend und ungenau.",
+        "Richtig: neutral, konkret, mit Menge und früherem Konsum."
+      ],
+      "reply": "Patient: „Ich habe 20 Jahre lang eine Schachtel am Tag geraucht, vor zehn Jahren habe ich aufgehört. Abends trinke ich ein bis zwei Bier. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Gelenkprobleme, Herz- oder Krebserkrankungen?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Hat Ihre Familie dieselbe Krankheit?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Richtig: offen, mit passenden Beispielen.",
+        "Zu eng: Geschwister und Kinder fehlen, und Gelenkerkrankungen in der Familie erfahren Sie so nicht.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
+      ],
+      "reply": "Patient: „Meine Mutter hatte auch kaputte Knie, sie hat mit 72 beidseitig neue Kniegelenke bekommen. Mein Vater hatte mit 70 einen Herzinfarkt.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Was haben Sie beruflich gemacht oder machen Sie noch? Wie wohnen Sie, gibt es zum Beispiel Treppen im Haus?",
+        "Haben Sie Geld?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: der Beruf und die Wohnsituation fehlen, die Adresse gehört nicht in die Sozialanamnese.",
+        "Richtig: Beruf und Wohnsituation, beides wichtig für die Belastung des Knies und die Versorgung.",
+        "Unangemessen."
+      ],
+      "reply": "Patient: „Ich war Fliesenleger und bin seit drei Jahren in Rente. Ich wohne mit meiner Frau in einem Haus, das Schlafzimmer ist im ersten Stock. Wir haben zwei erwachsene Kinder.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Ich vermute, dass der Knorpel in Ihrem Kniegelenk abgenutzt ist. Das nennt man Verschleiß oder Arthrose. Der Knorpel wirkt wie ein Polster zwischen den Knochen, und wenn er dünner wird, reiben die Knochen stärker aufeinander.",
+        "Sie haben eine Gonarthrose Grad drei nach Kellgren und Lawrence.",
+        "Das ist wahrscheinlich nichts Schlimmes, nur eine normale Alterserscheinung wie graue Haare. Dagegen kann man leider nichts machen, Sie müssen damit leben und Ihre Schmerzen aushalten, auch bei jedem Schritt und jeder Treppe, die Sie täglich steigen müssen. Das ist eben das Alter, Herr Becker, und Ihre Arthrose geht nie wieder weg.",
+        "Sie haben sicher Rheuma, das müssen wir sofort mit Kortison behandeln."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung des Gelenks.",
+        "Fachsprache und ohne Bildgebung nicht zu belegen; der Patient versteht die Diagnose nicht.",
+        "Verharmlosend und falsch: Man kann die Beschwerden gut behandeln.",
+        "Falsch und beängstigend; die Diagnose ist nicht gesichert."
+      ],
+      "reply": "Patient: „Verschleiß also. Und was machen wir jetzt?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Brauche ich ein neues Kniegelenk?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, ein neues Kniegelenk ist die einzige Lösung, wir planen die Operation für nächste Woche.",
+        "Das entscheidet der Chef, ich weiß es nicht.",
+        "Nein, Sie brauchen nur Ibuprofen, dann geht es Ihnen bald wieder gut. Mehr müssen Sie nicht tun.",
+        "Zuerst untersuche ich das Knie und wir machen ein Röntgenbild im Stehen. Meistens beginnt man ohne Operation, mit Krankengymnastik, Gewichtsabnahme und Schmerzmitteln. Ein neues Gelenk ist erst ein Thema, wenn das nicht mehr ausreicht. Das besprechen wir dann in Ruhe."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu früh und zu sicher: die Diagnose ist noch nicht gesichert, und zuerst behandelt man konservativ.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Falsch: Wegen des Magengeschwürs in der Vorgeschichte sollte man kein Ibuprofen empfehlen, und Bewegung und Gewicht gehören dazu.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich."
+      ],
+      "reply": "Patient: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Wolfgang Becker (68 J.) hat sich heute in unserer Ambulanz vorgestellt wegen Schmerzen.",
+        "Herr Becker ist 68 und hat Knieweh.",
+        "Der Patient Herr Becker stellt sich heute vor wegen Knieschmerzen rechts seit einem Jahr, 68-jährig.",
+        "Herr Wolfgang Becker, ein 68-jähriger Patient, stellte sich heute in unserer orthopädischen Ambulanz mit seit etwa einem Jahr bestehenden, zunehmenden Schmerzen im rechten Kniegelenk vor."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das Leitsymptom ist zu ungenau, und es fehlen Dauer und Seite.",
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Satzbau falsch: die Altersangabe hängt am Ende, das Verb „vorstellen“ steht unglücklich.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptom."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Schmerzen im Knie haben langsam angefangen und werden beim Gehen und Treppensteigen stärker.",
+        "Die Beschwerden seien schleichend aufgetreten und würden belastungsabhängig medial verspürt, NRS 7.",
+        "Die Beschwerden sind schleichend ohne Trauma aufgetreten, seitdem progredient, belastungsabhängig medial rechts mit Anlaufschmerz und einer Gehstrecke von ca. 500 m (NRS 3/10 in Ruhe, 7/10 unter Belastung).",
+        "Die Beschwerden sind akut nach einem Sturz aufgetreten, seitdem regredient, ruheabhängig lateral links mit einer Gehstrecke von ca. 5 km (NRS 7/10 in Ruhe, 3/10 unter Belastung)."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Konjunktiv-I-Mischung und unvollständig; außerdem fehlen „/10“ und die Gehstrecke.",
+        "Richtig: Fachsprache und alle Merkmale (Beginn, Verlauf, Auslöser, Lokalisation, Anlaufschmerz, Intensität).",
+        "Inhaltlich falsch: kein Sturz, der Verlauf ist progredient, das Knie ist rechts betroffen, und der Schmerz ist belastungsabhängig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Es bestehen eine Morgensteifigkeit von ca. 10 min, gelegentliche Schwellungen und Krepitationen. Rötung, Überwärmung, Fieber und Blockierungen wurden verneint. Gewichtszunahme von ca. 8 kg in 3 Jahren, sonst vegetativ unauffällig.",
+        "Das Knie ist manchmal dick und knackt.",
+        "Es bestehen eine Morgensteifigkeit von ca. 10 min, gelegentliche Schwellungen und Krepitationen. Rötung, Überwärmung und Fieber werden bejaht, Blockierungen wurden verneint. Gewichtsabnahme von ca. 8 kg in 3 Jahren.",
+        "Die Patient klagte über Steifigkeit und Schwellung des Knie."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Umgangssprache und unvollständig.",
+        "Inhaltlich falsch: Rötung, Überwärmung und Fieber wurden verneint, und der Patient hat zugenommen.",
+        "Grammatik: „Der Patient“ und „des Knies“; außerdem fehlen die Negativbefunde."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Bluthochdruck, Magen. Medikamente: Ramipril, Ibuprofen.",
+        "An Vorerkrankungen sind eine arterielle Hypotonie und ein Diabetes mellitus Typ 2 bekannt. Z. n. Appendektomie vor 25 Jahren. Medikation: Ramipril 5 mg 0-0-1, Ibuprofen 400 mg 1-1-1.",
+        "An Vorerkrankungen sind eine arterielle Hypertonie und ein Z. n. Ulcus ventriculi vor 10 Jahren bekannt. Z. n. Teilmeniskektomie rechts vor 25 Jahren. Medikation: Ramipril 5 mg 1-0-0, Ibuprofen 400 mg bei Bedarf (ca. 3-mal pro Woche).",
+        "Medikation: Ramipril 5 mg 1-0-1."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Inhaltlich falsch: Hypertonie (nicht Hypotonie), kein Diabetes, operiert wurde der Meniskus, und Ramipril wird morgens genommen.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierschema im Format morgens-mittags-abends.",
+        "Dosierschema falsch (Ramipril 1-0-0), und Vorerkrankungen sowie Ibuprofen fehlen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Metamizolallergie (Exanthem). Nikotin: Ex-Raucher mit ca. 20 py, Beendigung vor 10 Jahren. Alkohol: täglich 1-2 Bier. Familienanamnese: Mutter Gonarthrose mit beidseitiger Knie-TEP, Vater Myokardinfarkt mit 70 J. Der Patient ist Fliesenleger im Ruhestand, verheiratet, lebt mit seiner Ehefrau in einem Haus, Schlafzimmer im 1. Stock.",
+        "Allergie: keine. Noxen: Nikotinabusus.",
+        "Metamizolallergie (Anaphylaxie). Nikotinkonsum aktuell ca. 40 py.",
+        "Er verträgt kein Novalgin und raucht nicht mehr."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: eine Schachtel (20 Zigaretten) am Tag über 20 Jahre sind 20 pack years (py = Packungsjahre); die Reaktion war ein Exanthem.",
+        "Falsch: die Metamizolallergie fehlt.",
+        "Falsch: Reaktion war ein Exanthem, der Patient raucht nicht mehr, und es sind 20 py.",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Es besteht eine gesicherte Gonarthrose rechts, medial betont, und eine weitere Diagnostik mit Bildgebung oder Labor ist nach der Anamnese nicht erforderlich. Die Therapie kann sofort beginnen und nach wenigen Wochen abgeschlossen werden, eine Kontrolle ist unnötig.",
+        "Anamnestisch besteht der Verdacht auf eine Gonarthrose rechts. Differenzialdiagnostisch kommen eine degenerative Meniskopathie, eine Koxarthrose mit Schmerzprojektion ins Knie und eine Gonarthritis in Betracht.",
+        "Diagnose: Kniearthrose.",
+        "Anamnestisch besteht der Verdacht auf eine Kreuzbandruptur bei Z. n. Sturz. Differenzialdiagnostisch kommen eine Patellaluxation, eine Tibiakopffraktur und eine Bakerzyste in Betracht."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Ohne Bildgebung und klinische Untersuchung ist die Diagnose noch nicht gesichert.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen.",
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Passt nicht: Es gab keinen Sturz und kein Trauma, die Beschwerden begannen schleichend."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir machen Röntgen und geben Schmerzmittel.",
+        "Zur weiteren Abklärung empfehlen wir eine klinische Untersuchung sowie eine Röntgenaufnahme des rechten Kniegelenks im Stand in 2 Ebenen. Therapeutisch empfehlen wir Physiotherapie, Gewichtsreduktion und eine topische Analgesie mit Diclofenac-Gel; auf orale NSAR wird bei Z. n. Ulkus verzichtet. Bei Therapieversagen ist die Indikation zur Knie-TEP zu prüfen.",
+        "Zur weiteren Abklärung empfehlen wir eine Röntgenaufnahme des rechten Kniegelenks. Therapeutisch empfehlen wir Metamizol 500 mg 1-1-1 sowie Ibuprofen 600 mg 1-1-1 und die sofortige Implantation einer Knie-TEP.",
+        "Zur weiteren Abklärung empfehlen wir eine Koloskopie."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu umgangssprachlich und unvollständig.",
+        "Richtig: Diagnostik und Therapie in vollständigen Sätzen, mit Blick auf Ulkusanamnese und stufenweises Vorgehen.",
+        "Gefährlich: Metamizolallergie, Ulkusanamnese und ACE-Hemmer sprechen gegen diese Medikation, und die sofortige TEP ist nicht indiziert.",
+        "Nicht die passende Untersuchung für diesen Verdacht."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Herr Becker hat eine Gonarthrose.",
+        "Der Patient Herr Becker ist 68 Jahre alt, er arbeitet nicht mehr, und sein rechtes Knie tut ihm seit einiger Zeit sehr weh. Er heißt mit Vornamen Wolfgang und hat mich heute Morgen in der Ambulanz besucht, weil es nicht besser wird.",
+        "Der Patient hat Knieweh, er heißt Becker.",
+        "Ich möchte Ihnen Herrn Wolfgang Becker vorstellen, einen 68-jährigen Patienten, der sich heute mit seit etwa einem Jahr bestehenden, zunehmenden Schmerzen im rechten Kniegelenk vorgestellt hat."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
+        "Unstrukturiert und umgangssprachlich.",
+        "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Die Schmerzen traten akut nach einem Sturz auf und bestehen in Ruhe und nachts. Begleitend bestehen Rötung, Überwärmung und Fieber. Eine Morgensteifigkeit wurde verneint.",
+        "Er hat alles Mögliche am Knie.",
+        "Die Schmerzen sind schleichend aufgetreten, belastungsabhängig medial rechts mit Anlaufschmerz und einer Gehstrecke von ca. 500 m (NRS 7/10 unter Belastung). Es bestehen eine Morgensteifigkeit von ca. 10 min und Krepitationen. Entzündungszeichen und Blockierungen wurden verneint.",
+        "Er hat Fieber, ein rotes Knie und ein Trauma."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Es gab keinen Sturz, und Rötung, Überwärmung und Fieber wurden verneint.",
+        "Keine Information.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
+        "Inhaltlich falsch: Fieber, Rötung und Trauma wurden verneint."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist gesund.",
+        "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 2. Keine Allergien. Er nimmt kein Schmerzmittel.",
+        "Bekannt sind eine arterielle Hypertonie und ein Z. n. Ulcus ventriculi vor 10 Jahren. Z. n. Teilmeniskektomie rechts vor 25 Jahren. Er nimmt Ramipril 5 mg und bei Bedarf Ibuprofen 400 mg. Wichtig: Metamizolallergie mit Exanthem. Die Mutter hatte eine Gonarthrose.",
+        "Er nimmt Ramipril, sonst nichts."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: es gibt relevante Vorerkrankungen.",
+        "Inhaltlich falsch: kein Diabetes, es besteht eine Metamizolallergie, und er nimmt Ibuprofen.",
+        "Richtig: relevante Vorgeschichte, Ulkus und Ibuprofen für die Analgesie wichtig, dazu die Allergie.",
+        "Unvollständig: Diagnosen, Ibuprofen und Allergie fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich vermute eine Gonarthrose rechts, medial betont. Differenzialdiagnostisch denke ich an eine degenerative Meniskopathie, eine Koxarthrose mit Schmerzprojektion ins Knie und eine Gonarthritis.",
+        "Ich denke an Arthrose.",
+        "Ich weiß es nicht genau.",
+        "Es handelt sich sicher um eine rheumatoide Arthritis, weil das Knie morgens steif ist. Differenzialdiagnostisch denke ich höchstens noch an eine Kreuzbandruptur und eine Tibiakopffraktur."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
+        "Zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
+        "Zu sicher („sicher“), und die Morgensteifigkeit dauert nur 10 Minuten; bei rheumatoider Arthritis wären es über 60 Minuten."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde ihn nach Hause schicken.",
+        "Ich würde Metamizol und Ibuprofen 600 mg dreimal täglich geben und sofort eine Knie-TEP planen.",
+        "Ich würde Kortison in das Kniegelenk spritzen und eine Arthroskopie mit Knorpelglättung planen, ohne vorher ein Röntgenbild zu machen.",
+        "Ich würde das Knie klinisch untersuchen und eine Röntgenaufnahme im Stand in 2 Ebenen veranlassen. Therapeutisch Physiotherapie, Gewichtsreduktion und topisches Diclofenac, wegen des Ulkus in der Vorgeschichte ohne orale NSAR und wegen der Allergie ohne Metamizol. Bei Therapieversagen würde ich die Endoprothetik besprechen."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Nicht ausreichend: Die Beschwerden müssen abgeklärt und behandelt werden.",
+        "Gefährlich: Metamizolallergie, Ulkusanamnese und ACE-Hemmer; die TEP ist nicht sofort indiziert.",
+        "Fachlich falsch: Die Arthroskopie bringt bei Gonarthrose laut Leitlinie keinen Nutzen, und die Bildgebung kommt zuerst.",
+        "Richtig: Diagnostik und stufenweise Therapie mit Blick auf Allergie und Ulkus."
+      ],
+      "reply": "Oberarzt: „Gut. Was erwarten Sie im Röntgenbild?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich erwarte eine Verbreiterung des Gelenkspalts mit ausgeprägter Weichteilschwellung und osteolytischen Herden am Tibiakopf als Zeichen eines Gelenkinfekts.",
+        "Ich erwarte gar nichts.",
+        "Ich erwarte eine Gelenkspaltverschmälerung, vor allem medial, dazu Osteophyten, eine subchondrale Sklerosierung und eventuell subchondrale Zysten.",
+        "Eine Lungenverschattung."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Nicht passend: Das spräche für eine septische Arthritis; bei Gonarthrose ist der Gelenkspalt verschmälert, nicht verbreitert, und Fieber und Entzündungszeichen fehlen.",
+        "In der Prüfung erwartet man eine begründete Antwort.",
+        "Richtig: typische Röntgenzeichen einer Gonarthrose.",
+        "Nicht typisch für diesen Verdacht."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Gonarthrose“?",
+      "options": [
+        "Hüftgelenkverschleiß",
+        "Kniegelenkentzündung",
+        "Kniegelenkverschleiß",
+        "Schulterverschleiß"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Koxarthrose.",
+        "Das ist die Gonarthritis.",
+        "Richtig.",
+        "Das ist die Omarthrose."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Krepitation“?",
+      "options": [
+        "Reiben oder Knirschen im Gelenk",
+        "Gelenkerguss",
+        "Muskelkrampf",
+        "Gelenksteife"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist der Erguss.",
+        "Das ist ein Spasmus.",
+        "Das ist die Ankylose."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Osteophyten“?",
+      "options": [
+        "Knochenbrüche",
+        "Knochenanbauten am Gelenkrand",
+        "Knorpelschäden",
+        "Knochenentzündung"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das sind Frakturen.",
+        "Richtig.",
+        "Das sind Chondropathien.",
+        "Das ist die Osteomyelitis."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Genu varum“?",
+      "options": [
+        "X-Bein",
+        "Überstreckbares Knie",
+        "O-Bein",
+        "Kniescheibenverrenkung"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist das Genu valgum.",
+        "Das ist das Genu recurvatum.",
+        "Richtig.",
+        "Das ist die Patellaluxation."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Arthroskopie“?",
+      "options": [
+        "Röntgenuntersuchung des Gelenks",
+        "Gelenkpunktion",
+        "Gelenkersatz",
+        "Gelenkspiegelung"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Arthrographie bzw. das Röntgen.",
+        "Das ist die Arthrozentese.",
+        "Das ist die Endoprothese.",
+        "Richtig."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

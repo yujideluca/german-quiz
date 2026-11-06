@@ -1,0 +1,691 @@
+{
+  "id": "herzinsuffizienz",
+  "area": "Kardiologie",
+  "title": "Luftnot und dicke Beine",
+  "diagnosis": "Dekompensierte Herzinsuffizienz bei ischämischer Kardiomyopathie",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Heinz Berger, 74 Jahre, stellt sich am Vormittag in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Berger sitzt auf der Liege und atmet schwer.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Tag, Herr Berger. Setzen Sie sich bitte gleich in den Rollstuhl, ich bringe Sie sofort zum Röntgen.",
+        "Hallo, Herr Berger, na, wo drückt der Schuh?",
+        "Guten Tag, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Berger?",
+        "Guten Tag, Herr Berger. Bevor wir beginnen: Ich brauche Ihre Versichertenkarte und die Überweisung vom Hausarzt, sonst kann ich Sie nicht aufnehmen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Ohne Vorstellung und ohne Anamnese. Erst begrüßen, sich vorstellen und zuhören.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor."
+      ],
+      "reply": "Patient: „Ja, Berger. Guten Tag, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Sie sind doch bestimmt über siebzig, nicht wahr?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Wie hoch ist Ihr Body-Mass-Index, und wie ist Ihr aktueller Körpergewichtsstatus?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum, und bei welcher Krankenkasse sind Sie versichert?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Fachsprache. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
+      ],
+      "reply": "Patient: „Ich bin 74, 1,78 Meter groß und wiege im Moment 91 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Atemnot?",
+        "Welche Symptomatik liegt bei Ihnen vor, und seit wann besteht sie?",
+        "Warum kommen Sie erst jetzt, wo es Ihnen so schlecht geht, und nicht schon früher zu Ihrem Hausarzt?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
+        "Richtig: Eine offene Frage lässt den Patienten selbst erzählen."
+      ],
+      "reply": "Patient: „Ich bekomme kaum noch Luft, und meine Beine sind ganz dick geworden.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten wissen, wann die Luftnot auftritt. Was sagen Sie?",
+      "options": [
+        "Wann bekommen Sie schlecht Luft, zum Beispiel beim Treppensteigen, beim Gehen oder auch in Ruhe?",
+        "Haben Sie eine Belastungsdyspnoe oder eine Ruhedyspnoe, und liegt auch eine Orthopnoe vor?",
+        "Sie bekommen vor allem beim Treppensteigen schlecht Luft, stimmt das?",
+        "Bekommen Sie die Luftnot nur, wenn Sie sich aufregen, oder bilden Sie sich das vielleicht nur ein?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben.",
+        "Nur Fachwörter („Dyspnoe“, „Orthopnoe“); der Patient versteht sie nicht.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
+        "Wertend und unterstellend. Das zerstört das Vertrauen."
+      ],
+      "reply": "Patient: „Schon nach einem Stockwerk muss ich stehen bleiben. Nachts brauche ich drei Kissen, sonst kann ich nicht liegen.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Wie war der zeitliche Verlauf seit der Erstmanifestation: akut, subakut oder chronisch progredient?",
+        "Seit wann haben Sie die Luftnot?",
+        "Wann genau hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben?",
+        "Hat es plötzlich angefangen?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „progredient“ versteht der Patient nicht.",
+        "Beginn ja, aber der Verlauf fehlt. Fragen Sie auch, ob es besser oder schlechter wird.",
+        "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Geschlossene Frage; sie erfasst den Verlauf nicht."
+      ],
+      "reply": "Patient: „Seit etwa zwei Wochen wird es langsam schlimmer. In dieser Zeit habe ich fünf Kilo zugenommen.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach der Stärke der Luftnot. Welche Formulierung passt?",
+      "options": [
+        "Wie stark ist die Dyspnoe nach der NYHA-Klassifikation, und wie hoch ist Ihre Ejektionsfraktion?",
+        "Wie weit kommen Sie noch, bevor Sie Luft holen müssen, zum Beispiel auf ebener Strecke oder beim Treppensteigen? Und haben Sie auch im Sitzen oder in Ruhe Luftnot?",
+        "Ist es sehr schlimm?",
+        "Wie stark ist die Luftnot auf einer Skala von 1 bis 100, und wie lange halten Sie das noch aus, bevor Sie einen Notarzt rufen?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache: Das NYHA-Stadium bestimmen Sie selbst, und die Ejektionsfraktion kennt der Patient nicht.",
+        "Richtig: Die Belastbarkeit wird konkret erfragt (Grundlage der NYHA-Einteilung), auch die Luftnot in Ruhe.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
+        "Unübliche Skala und eine unpassende zweite Frage. Fragen Sie nach der Belastbarkeit."
+      ],
+      "reply": "Patient: „Auf der Straße schaffe ich vielleicht 100 Meter, beim Treppensteigen brauche ich nach einem Stockwerk eine Pause. In Ruhe geht es, aber im Liegen nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Haben Sie eine Orthopnoe, paroxysmale nächtliche Dyspnoe, Tussis, Palpitationen oder Synkopen?",
+        "Haben Sie auch Brustschmerzen, die in den linken Arm ausstrahlen, wenn Sie sich anstrengen?",
+        "Sie haben bestimmt auch Herzrasen und Schwindel und fallen manchmal in Ohnmacht, oder?",
+        "Haben Sie auch Husten, Brustschmerzen, Herzklopfen oder Schwindel? Sind Ihnen die Beine oder der Bauch dicker geworden?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Husten“, „Herzklopfen“, „Ohnmacht“.",
+        "Geschlossen und zu eng; andere Begleitsymptome übersehen Sie.",
+        "Suggestiv: Sie unterstellen die Symptome.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, auch Husten und Wassereinlagerungen."
+      ],
+      "reply": "Patient: „Nachts muss ich trocken husten. Brustschmerzen habe ich keine, Herzrasen und Schwindel auch nicht. Die Beine sind seit zwei Wochen dick, abends sind die Schuhe zu eng.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Hatten Sie Fieber? Wie sind Appetit, Stuhlgang und Wasserlassen? Müssen Sie nachts öfter zur Toilette?",
+        "Wie ist die Vegetativa?",
+        "Haben Sie Fieber, Nachtschweiß, Inappetenz, Nykturie, Obstipation und Diarrhö?",
+        "Ist sonst alles normal bei Ihnen, oder haben Sie in der letzten Zeit irgendetwas bemerkt, was Ihnen Sorgen macht?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fieber, Appetit, Stuhlgang und Wasserlassen in Laiensprache, mit Blick auf nächtliches Wasserlassen.",
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe.",
+        "Zu allgemein; der Patient sagt einfach „ja“ oder „nein“."
+      ],
+      "reply": "Patient: „Fieber hatte ich nicht. Der Appetit ist schlecht, ich bin nach wenig Essen schon satt. Der Stuhlgang ist normal. Nachts muss ich zwei- bis dreimal zur Toilette.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie eine KHK, eine arterielle Hypertonie oder einen Diabetes mellitus, und gab es Voroperationen oder Stents?",
+        "Sind Sie gesund?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel am Herzen, Bluthochdruck oder Zucker? Und wurden Sie schon einmal operiert?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („KHK“, „arterielle Hypertonie“). Mit Patienten sprechen Sie Laiensprache.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
+        "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patient: „Vor sechs Jahren hatte ich einen Herzinfarkt, damals bekam ich zwei Stents. Dazu Bluthochdruck und Zucker, Typ 2. Operiert wurde ich einmal am Leistenbruch.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Welche Pharmaka applizieren Sie, und in welcher Dosierung?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept?",
+        "Sie nehmen doch sicher Wassertabletten und Blutdrucktabletten, die Sie jeden Tag bekommen, oder etwa nicht?",
+        "Nehmen Sie Tabletten, und wenn ja, nehmen Sie diese auch wirklich jeden Tag zuverlässig ein?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache („Pharmaka“, „applizieren“).",
+        "Richtig: Name, Dosierung und auch frei verkäufliche Mittel (zum Beispiel Schmerzmittel).",
+        "Suggestivfrage. Fragen Sie offen.",
+        "Zu ungenau (Name und Dosis fehlen) und leicht vorwurfsvoll."
+      ],
+      "reply": "Patient: „Ramipril 5 Milligramm, Bisoprolol 5 Milligramm, Torasemid 10 Milligramm und ASS 100 Milligramm, alle morgens. Metformin 1000 Milligramm morgens und abends, Atorvastatin 40 Milligramm abends. Wegen Rückenschmerzen nehme ich seit einer Woche Ibuprofen 400, meist zweimal am Tag.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Allergie?",
+        "Sind Sie gegen Jod oder Kontrastmittel allergisch? Das ist wichtig, weil wir vielleicht gleich eine Untersuchung mit Kontrastmittel machen.",
+        "Sind Sie hypersensibel?",
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Zu eng: Andere Allergien übersehen Sie.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl.",
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion."
+      ],
+      "reply": "Patient: „Gegen Penicillin. Da bekomme ich einen Ausschlag am ganzen Körper.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
+        "Sind Sie Raucher, oder trinken Sie regelmäßig zu viel, wie es bei Männern in Ihrem Alter oft vorkommt?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus?",
+        "Trinken Sie zu viel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: neutral, konkret, mit Menge.",
+        "Wertend und verallgemeinernd; zwei Fragen in einer.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Wertend und ungenau."
+      ],
+      "reply": "Patient: „Ich rauche seit 40 Jahren etwa 10 Zigaretten am Tag. Abends ein Bier, am Wochenende zwei. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel am Herzen, Schlaganfälle oder Zucker?",
+        "Hat Ihre Familie dieselbe Krankheit?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Zu eng: Geschwister und Kinder fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Richtig: offen, mit passenden Beispielen.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
+      ],
+      "reply": "Patient: „Mein Vater ist mit 58 an einem Herzinfarkt gestorben. Meine Mutter hatte mit 78 einen Schlaganfall.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Wie ist Ihr sozialer Status, Ihr Familienstand und Ihr Bildungsabschluss, und was haben Sie zuletzt verdient?",
+        "Was machen oder machten Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen, und gibt es bei Ihnen Treppen?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Können Sie sich Ihre Medikamente überhaupt leisten?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Unklar und unangenehm formuliert.",
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Entlassung und Versorgung.",
+        "Zu eng und teilweise Verwaltung: Der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Unangemessen und unhöflich."
+      ],
+      "reply": "Patient: „Ich bin Rentner, früher war ich Schlosser. Ich wohne mit meiner Frau im zweiten Stock, ohne Aufzug.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Ich vermute, dass Ihr Herz zu schwach ist und das Blut nicht mehr gut weiterpumpt. Dadurch staut sich Wasser in der Lunge und in den Beinen. Das müssen wir noch untersuchen.",
+        "Sie haben eine dekompensierte Herzinsuffizienz mit Lungenödem und peripheren Ödemen.",
+        "Das ist nur das Alter, da kann man nichts machen. Gehen Sie nach Hause und legen Sie die Beine hoch.",
+        "Sie haben bestimmt einen neuen Herzinfarkt, wir müssen Sie sofort ins Herzkatheterlabor bringen, sonst sterben Sie."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung des Mechanismus.",
+        "Fachsprache; der Patient versteht die Diagnose nicht.",
+        "Verharmlosend und medizinisch falsch.",
+        "Voreilig, falsch begründet und beängstigend."
+      ],
+      "reply": "Patient: „Mein Herz ist zu schwach? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Muss ich im Krankenhaus bleiben?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Sie bekommen eine Wassertablette, und dann können Sie wieder nach Hause gehen. Weitere Untersuchungen brauchen Sie nicht.",
+        "Das entscheidet der Oberarzt, ich weiß es nicht.",
+        "Zuerst schreiben wir ein EKG und nehmen Blut ab. Danach machen wir ein Röntgenbild der Lunge und einen Ultraschall vom Herzen. Sie bekommen bei Bedarf Sauerstoff und Medikamente, die das Wasser ausschwemmen. Zur Überwachung bleiben Sie bei uns im Krankenhaus.",
+        "Wir geben Ihnen jetzt viel Flüssigkeit über eine Infusion, damit das Herz besser arbeiten kann, und schicken Sie morgen früh wieder heim."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: Bei Luftnot in Ruhe im Liegen sind Diagnostik und stationäre Überwachung nötig.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich.",
+        "Gefährlich: Bei Wasserstau im Körper darf man keine Infusion in großer Menge geben."
+      ],
+      "reply": "Patient: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Berger ist 74 und kriegt schlecht Luft, außerdem hat er dicke Beine.",
+        "Herr Heinz Berger, ein 74-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit zwei Wochen zunehmender Luftnot, Beinödemen und einer Gewichtszunahme vor.",
+        "Herr Heinz Berger, ein 74-jähriger Patient, stellte sich heute in unserem Notaufnahme mit seit zwei Wochen zunehmender Luftnot, Beinödemen und einer Gewichtszunahme vor.",
+        "Herr Heinz Berger (74 J.) hat sich heute in unsere Notaufnahme vorgestellt wegen Luftnot und Schwellungen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptome.",
+        "Grammatik: „die Notaufnahme“ ist feminin, also „in unserer Notaufnahme“ (Dativ).",
+        "Grammatik: „in unserer Notaufnahme“ (Dativ, wo?); außerdem fehlt die Gewichtszunahme."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Luft ist seit zwei Wochen schlechter geworden, er braucht nachts drei Kissen, und die Beine sind dick.",
+        "Die Belastungsdyspnoe besteht seit ca. zwei Monaten mit abnehmender Tendenz (aktuell nur bei schwerer Belastung, NYHA I), dazu Orthopnoe (3 Kissen), nächtlicher Reizhusten, beidseitige Beinödeme und eine Gewichtsabnahme von 5 kg.",
+        "Die Belastungsdyspnoe besteht seit zwei Wochen, wobei der Patient nachts drei Kissen benötigen und beidseitige Beinödeme und Gewichtszunahme von 5 kg aufweisen.",
+        "Die Belastungsdyspnoe besteht seit ca. zwei Wochen mit zunehmender Tendenz (aktuell nach einem Stockwerk, NYHA III), dazu Orthopnoe (3 Kissen), nächtlicher Reizhusten, beidseitige Beinödeme und eine Gewichtszunahme von 5 kg."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Inhaltlich falsch: zwei Wochen, zunehmend, nach einem Stockwerk (NYHA III) und Gewichtszunahme.",
+        "Grammatik: „benötigt“ und „weist … auf“ (Singular), außerdem fehlt der Artikel „eine“.",
+        "Richtig: Fachsprache und alle Merkmale (Dauer, Verlauf, Belastbarkeit, Orthopnoe, Ödeme, Gewicht)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete der Patient über trockenen nächtlichen Husten und Inappetenz mit frühem Sättigungsgefühl sowie Nykturie (2- bis 3-mal). Thoraxschmerzen, Palpitationen, Schwindel und Fieber wurden verneint. Stuhlgang unauffällig.",
+        "Begleitend berichtete der Patient über Thoraxschmerzen mit Ausstrahlung in den linken Arm, Palpitationen und Fieber. Husten, Inappetenz und Nykturie wurden verneint.",
+        "Er hustet nachts und hat keinen Hunger, Fieber hat er nicht.",
+        "Begleitend berichtete der Patient über trockenen nächtlichen Husten, Inappetenz mit frühem Sättigungsgefühl sowie Nykturie (2- bis 3-mal). Thoraxschmerzen, Palpitationen und Schwindel wurden verneint. Fieber bis 38,5 °C."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Inhaltlich falsch: Der Patient hatte Husten, Inappetenz und Nykturie und verneinte Thoraxschmerzen.",
+        "Umgangssprache und unvollständig.",
+        "Inhaltlich falsch: Fieber wurde verneint."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Herzinfarkt, Bluthochdruck, Zucker. Medikamente: Ramipril, Bisoprolol, Torasemid, ASS, Statin, Metformin.",
+        "KHK mit Z. n. Myokardinfarkt und Stentimplantation vor 6 Jahren, arterielle Hypertonie, Diabetes mellitus Typ 2, Z. n. Appendektomie. Medikation: Ramipril 5 mg 0-0-1, Bisoprolol 5 mg 1-0-0, Torasemid 10 mg 1-1-1, ASS 100 mg 1-0-0, Metformin 1000 mg 1-0-1.",
+        "KHK mit Z. n. Myokardinfarkt und Stentimplantation vor 6 Jahren, arterielle Hypertonie, Diabetes mellitus Typ 2, Z. n. Leistenhernien-OP. Medikation: Ramipril 5 mg 1-0-0, Bisoprolol 5 mg 1-0-0, Torasemid 10 mg 1-0-0, ASS 100 mg 1-0-0, Metformin 1000 mg 1-0-1, Atorvastatin 40 mg 0-0-1, Ibuprofen 400 mg 1-0-1 seit 1 Woche.",
+        "KHK mit Z. n. Myokardinfarkt und Stentimplantation vor 6 Jahren, arterielle Hypertonie, Diabetes mellitus Typ 2, Z. n. Leistenhernien-OP. Medikation: Ramipril 5 mg 1-0-0, Bisoprolol 5 mg 1-0-0, Torasemid 10 mg 1-0-0, ASS 100 mg 1-0-0, Metformin 1000 mg 1-0-1, Atorvastatin 40 mg 0-0-1."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Laiensprache und ohne Dosierung; Ibuprofen fehlt.",
+        "Falsch: Operiert wurde der Leistenbruch, Ramipril und Torasemid werden morgens (1-0-0) genommen, Atorvastatin und Ibuprofen fehlen.",
+        "Richtig: Fachbegriffe, Z. n. und Dosierschema; die NSAR-Einnahme ist wichtig dokumentiert.",
+        "Unvollständig: Ibuprofen 400 mg 1-0-1 seit einer Woche fehlt, und das ist der wahrscheinliche Auslöser."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: keine. Noxen: Nikotinabusus. Wohnt allein.",
+        "Penicillinallergie (Exanthem). Nikotinkonsum ca. 20 py, Alkohol: abends 1 Bier, am Wochenende 2. Familienanamnese: Vater Myokardinfarkt mit 58 J., Mutter Apoplex mit 78 J. Der Patient ist Rentner (ehem. Schlosser), verheiratet, lebt mit seiner Ehefrau im 2. OG ohne Aufzug.",
+        "Penicillinallergie (Anaphylaxie). Nikotinkonsum ca. 40 py, kein Alkohol. Familienanamnese: Vater Apoplex mit 58 J., Mutter Myokardinfarkt mit 78 J. Der Patient ist Rentner (ehem. Schlosser), verheiratet, wohnt im Erdgeschoss.",
+        "Er verträgt kein Penicillin und raucht seit Jahren."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: Die Penicillinallergie fehlt, und der Patient wohnt mit seiner Frau.",
+        "Richtig: 10 Zigaretten am Tag über 40 Jahre sind 20 pack years (py).",
+        "Falsch: Die Reaktion war ein Exanthem, es sind 20 py, die Eltern sind vertauscht und der Patient trinkt Bier und wohnt im 2. OG.",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Anamnestisch besteht der Verdacht auf eine kardiale Dekompensation bei ischämischer Herzinsuffizienz, ausgelöst durch die NSAR-Einnahme. Differenzialdiagnostisch kommen ein akutes Koronarsyndrom, eine Lungenembolie und eine COPD-Exazerbation in Betracht.",
+        "Es besteht eine gesicherte dekompensierte Herzinsuffizienz.",
+        "Diagnose: Herzschwäche.",
+        "Anamnestisch besteht der Verdacht auf eine akute Cholezystitis bei Cholezystolithiasis. Differenzialdiagnostisch kommen eine Pankreatitis, ein Ulcus duodeni und eine Divertikulitis in Betracht."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht statt Gewissheit, Auslöser benannt, sinnvolle Differenzialdiagnosen.",
+        "Ohne EKG, Labor und Echokardiographie ist die Diagnose noch nicht gesichert.",
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Passt nicht zu den Leitsymptomen: Luftnot, Orthopnoe und Beinödeme sprechen nicht für eine Erkrankung der Gallenblase."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir machen EKG und Blut.",
+        "Zur weiteren Abklärung empfehlen wir ein EKG, eine Blutentnahme und eine Röntgenaufnahme des Thorax. Therapeutisch empfehlen wir eine Infusion mit 1000 ml Vollelektrolytlösung und die Fortführung von Ibuprofen zur Schmerztherapie.",
+        "Zur weiteren Abklärung empfehlen wir eine Gastroskopie.",
+        "Zur weiteren Abklärung empfehlen wir ein EKG, eine Blutentnahme (u. a. NT-proBNP, hochsensitives Troponin, Retentionswerte, Elektrolyte, Blutbild), eine Röntgenaufnahme des Thorax und eine Echokardiographie. Therapeutisch Oberkörperhochlagerung, Sauerstoff bei Hypoxie und Furosemid i. v.; Ibuprofen pausieren."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu umgangssprachlich und unvollständig.",
+        "Gefährlich: Bei Überwässerung verschlechtert eine Infusion die Herzinsuffizienz, und NSAR fördern Wassereinlagerungen.",
+        "Nicht die passende Untersuchung für diesen Verdacht.",
+        "Richtig: Diagnostik und Therapie in vollständigen Sätzen, NSAR abgesetzt."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Der Mann hat dicke Beine und keine Luft, er heißt Berger.",
+        "Herr Berger hat eine Herzinsuffizienz.",
+        "Ich möchte Ihnen Herrn Heinz Berger vorstellen, einen 74-jährigen Patienten, der sich heute mit seit zwei Wochen zunehmender Luftnot, Beinödemen und einer Gewichtszunahme von 5 kg vorgestellt hat.",
+        "Also, der Herr hat ja früher viel geraucht und einen Herzinfarkt gehabt, und jetzt ist er wieder da mit irgendwas an der Lunge ..."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Richtig: Name, Alter, Leitsymptome und zeitlicher Verlauf in einem Satz.",
+        "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Er hat alles Mögliche.",
+        "Die Belastungsdyspnoe besteht seit zwei Monaten und nur bei schwerer Belastung (NYHA I). Nachts besteht keine Orthopnoe. Es gibt ein einseitiges Beinödem links und eine Gewichtsabnahme von 5 kg. Thoraxschmerzen wurden bejaht, Husten und Fieber wurden verneint.",
+        "Er hat Fieber, Husten mit gelbem Auswurf und Brustschmerzen.",
+        "Die Belastbarkeit ist auf ein Stockwerk begrenzt (NYHA III), nachts besteht Orthopnoe mit drei Kissen und trockener Husten. Dazu bestehen beidseitige Beinödeme und eine Gewichtszunahme von 5 kg. Thoraxschmerzen und Fieber wurden verneint."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Keine Information.",
+        "Inhaltlich falsch: Die Ödeme sind beidseitig, es besteht eine Gewichtszunahme, Orthopnoe und NYHA III; Thoraxschmerzen wurden verneint.",
+        "Inhaltlich falsch: Fieber und Brustschmerzen wurden verneint, der Husten ist trocken.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Bekannt sind eine KHK mit Z. n. Myokardinfarkt und zwei Stents vor sechs Jahren, eine arterielle Hypertonie und ein Diabetes mellitus Typ 2. Seit einer Woche nimmt er Ibuprofen ein. Wichtig: Penicillinallergie mit Exanthem. Der Vater starb mit 58 Jahren an einem Herzinfarkt.",
+        "Er ist herzgesund und hat keine Vorerkrankungen, nur etwas Bluthochdruck, der gut eingestellt ist.",
+        "Bekannt sind eine KHK mit Stents, eine arterielle Hypertonie und ein Diabetes mellitus Typ 1. Er nimmt keine Schmerzmittel, und Allergien sind nicht bekannt. Der Vater lebt noch und ist gesund.",
+        "Er nimmt Torasemid und Ramipril, sonst nichts."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: relevante Vorgeschichte, Auslöser (NSAR) und Allergie.",
+        "Falsch: Es gibt eine bekannte KHK.",
+        "Inhaltlich falsch (Typ 2, Ibuprofen, Penicillinallergie).",
+        "Unvollständig: Diagnosen, Ibuprofen und Allergie fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an eine Erkrankung der Lunge, wahrscheinlich eine Bronchitis, und würde ein Antibiotikum geben.",
+        "Ich vermute eine dekompensierte Herzinsuffizienz bei ischämischer Kardiomyopathie, ausgelöst durch die NSAR-Einnahme. Differenzialdiagnostisch denke ich an ein akutes Koronarsyndrom, eine Lungenembolie und eine COPD-Exazerbation.",
+        "Ich weiß es nicht genau.",
+        "Es handelt sich sicher um eine Pneumonie, weil der Patient nachts hustet. Differenzialdiagnostisch denke ich höchstens noch an eine Bronchitis, eine Herzerkrankung schließe ich aus; ich würde ein Antibiotikum geben."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "Richtig: Verdachtsdiagnose, Auslöser und Differenzialdiagnosen in Fachsprache.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
+        "Zu sicher, und die Herzerkrankung auszuschließen ist bei diesen Befunden falsch."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde ihn mit einem Rezept für mehr Wassertabletten nach Hause schicken.",
+        "Ich würde Blut abnehmen und ein Röntgen-Thorax machen. Therapeutisch gebe ich Metoprolol i. v. zur Frequenzsenkung und eine Infusion mit 1000 ml Kochsalzlösung, um den Kreislauf zu stabilisieren. Ibuprofen kann er weiter nehmen.",
+        "Ich würde ein EKG schreiben und Blut abnehmen, inklusive NT-proBNP, Troponin, Kreatinin, Elektrolyten und Blutbild, dazu Röntgen-Thorax und Echokardiographie. Therapeutisch Oberkörperhochlagerung, Sauerstoff bei Hypoxie, Furosemid 40 mg i. v. und Bilanzierung; Ibuprofen absetzen. Stationäre Aufnahme mit Monitoring.",
+        "Ich würde eine Koloskopie machen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gefährlich: Bei Orthopnoe und 5 kg Gewichtszunahme ist eine stationäre Behandlung nötig.",
+        "Gefährlich: Ein i. v.-Betablocker bei Dekompensation und eine große Infusion verschlechtern die Lage, NSAR sind zu meiden.",
+        "Richtig: Diagnostik, Therapie und stationäre Überwachung, NSAR abgesetzt.",
+        "Nicht die erste Untersuchung bei diesem Verdacht."
+      ],
+      "reply": "Oberarzt: „Gut. Was erwarten Sie in der Echokardiographie?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich erwarte eine reduzierte linksventrikuläre Ejektionsfraktion unter 40 %, vermutlich mit Hypokinesie im Bereich des alten Infarktes, einen dilatierten linken Ventrikel und eine gestaute Vena cava inferior.",
+        "Eine normale Pumpfunktion mit einer Ejektionsfraktion von 65 % und einem unauffälligen Herzen.",
+        "Ich erwarte gar nichts.",
+        "Ich erwarte einen großen Perikarderguss mit diastolischem Kollaps des rechten Ventrikels als Zeichen einer Perikardtamponade, bei sonst normaler Pumpfunktion."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: typische Echozeichen einer ischämischen Herzinsuffizienz mit reduzierter Ejektionsfraktion (HFrEF).",
+        "Passt nicht zu den Befunden; bei diesem Verdacht erwartet man eine reduzierte Pumpfunktion.",
+        "In der Prüfung erwartet man eine begründete Antwort.",
+        "Nicht typisch für diesen Verdacht; eine Tamponade verursacht eher Hypotonie und gestaute Halsvenen ohne Lungenstauung."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Dyspnoe“?",
+      "options": [
+        "Husten",
+        "Herzklopfen",
+        "Luftnot",
+        "Schwindel"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist Tussis.",
+        "Das ist die Palpitation.",
+        "Richtig.",
+        "Das ist Vertigo."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Orthopnoe“?",
+      "options": [
+        "Luftnot im Liegen, die sich im Sitzen bessert",
+        "Luftnot nur bei Anstrengung",
+        "Atemstillstand im Schlaf",
+        "schnelle, flache Atmung"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Belastungsdyspnoe.",
+        "Das ist die Schlafapnoe.",
+        "Das ist die Tachypnoe."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Ödem“?",
+      "options": [
+        "Bluterguss",
+        "Blutarmut",
+        "Verhärtung des Gewebes",
+        "Wassereinlagerung im Gewebe"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist das Hämatom.",
+        "Das ist die Anämie.",
+        "Das ist die Induration.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Nykturie“?",
+      "options": [
+        "Bettnässen",
+        "nächtliches Wasserlassen",
+        "Schmerzen beim Wasserlassen",
+        "fehlende Urinausscheidung"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Enuresis.",
+        "Richtig.",
+        "Das ist die Dysurie.",
+        "Das ist die Anurie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Synkope“?",
+      "options": [
+        "Drehschwindel",
+        "Krampfanfall",
+        "kurze Ohnmacht",
+        "Herzrasen"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist Vertigo.",
+        "Das ist ein epileptischer Anfall (Konvulsion).",
+        "Richtig.",
+        "Das ist die Tachykardie."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

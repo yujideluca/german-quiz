@@ -1,6 +1,7 @@
 package dev.yuji.quiz.ui
 
 import dev.yuji.quiz.ModeOverview
+import dev.yuji.quiz.content.FspCaseRun
 import dev.yuji.quiz.data.AppLanguage
 import dev.yuji.quiz.data.ThemeMode
 import dev.yuji.quiz.domain.ActivityCalendar
@@ -12,7 +13,13 @@ import dev.yuji.quiz.domain.UpdateManifest
 
 sealed interface UiState {
     data class ModeSelect(val modes: List<ModeOverview>, val daily: DailyProgress, val calendar: ActivityCalendar) : UiState
-    data class Studying(val session: StudySession, val choices: List<String>, val daily: DailyProgress) : UiState
+    data class Studying(
+        val session: StudySession,
+        val choices: List<String>,
+        val daily: DailyProgress,
+        /** The FSP case being played when the current card is one (ADR-0014). */
+        val caseRun: FspCaseRun? = null,
+    ) : UiState
     data class Finished(val session: StudySession) : UiState
     data class Settings(
         val themeMode: ThemeMode,

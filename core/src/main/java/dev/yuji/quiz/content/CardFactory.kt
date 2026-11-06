@@ -82,11 +82,28 @@ object CardFactory {
         )
     }
 
+    /**
+     * A whole FSP case as one card (FS-4): the player plays the case, and the result is answered as [FSP_PASSED] or
+     * [FSP_FAILED]. The prompt is the complaint, never the diagnosis (FS-5); the diagnosis is the explanation.
+     */
+    fun fspCaseCard(case: FspCase) = Card(
+        id = "fsp:${case.id}",
+        mode = GameMode.FSP_CASE,
+        prompt = case.title,
+        context = case.patient,
+        choices = listOf(FSP_PASSED, FSP_FAILED),
+        correctChoice = FSP_PASSED,
+        explanation = case.diagnosis,
+        shuffleChoices = false,
+        hint = case.area,
+    )
+
     fun buildDeck(
         nouns: List<NounEntry>,
         prepositions: List<PrepositionEntry>,
         verbs: List<VerbEntry> = emptyList(),
         errorSentences: List<ErrorSentenceEntry> = emptyList(),
+        fspCases: List<FspCase> = emptyList(),
     ): Map<GameMode, List<Card>> = mapOf(
         GameMode.ARTICLE to nouns.map(::articleCard),
         GameMode.PLURAL to nouns.map(::pluralCard),
@@ -94,5 +111,7 @@ object CardFactory {
         GameMode.PRETERITE to verbs.map(::preteriteCard),
         // Shuffled once (fixed seed) so new sentences do not arrive grouped by error type or register.
         GameMode.ERROR_SPOT to errorSentences.shuffled(Random(ERROR_DECK_SEED)).map(::errorCard),
+        // Kept in file order: the build writes the cases ordered by area of medicine (FS-2).
+        GameMode.FSP_CASE to fspCases.map(::fspCaseCard),
     )
 }

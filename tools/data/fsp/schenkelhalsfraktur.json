@@ -1,0 +1,691 @@
+{
+  "id": "schenkelhalsfraktur",
+  "area": "Unfallchirurgie/Orthopädie",
+  "title": "Sturz mit Schmerzen in der Leiste",
+  "diagnosis": "Mediale Schenkelhalsfraktur",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Frau Hildegard Keller, 81 Jahre, wird am Mittag nach einem Sturz im Bad in der Notaufnahme vorgestellt.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Frau Keller liegt auf der Trage in der Notaufnahme. Ihr rechtes Bein wirkt verkürzt und nach außen gedreht.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Hallo, Oma, was haben Sie denn jetzt wieder angestellt?",
+        "Guten Tag. Bleiben Sie bitte liegen, ich bewege jetzt kurz Ihr Bein hin und her, um zu sehen, ob es wehtut.",
+        "Guten Tag, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Frau Keller?",
+        "Guten Tag, Frau Keller. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte und Ihren Personalausweis dabei? Die brauchen wir zuerst für die Anmeldung."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Respektlos und ohne Vorstellung. „Oma“ ist keine angemessene Anrede.",
+        "Die Untersuchung kommt nach der Anamnese, und bei Verdacht auf einen Bruch darf man das Bein nicht einfach bewegen. Erst begrüßen und sich vorstellen.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität der Patientin.",
+        "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor."
+      ],
+      "reply": "Patientin: „Ja, Keller. Guten Tag, Herr Doktor. Mein Bein tut so weh.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Wie ist Ihr Body-Mass-Index?",
+        "Sie sind doch schon über achtzig, oder?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Suggestivfrage und wenig höflich: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
+      ],
+      "reply": "Patientin: „Ich bin 81, 1,60 Meter groß und wiege etwa 58 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie sich das Bein gebrochen?",
+        "Welche Symptomatik besteht bei Ihnen nach dem Trauma?",
+        "Warum passen Sie als ältere Dame nicht besser auf, wo Sie hintreten?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Geschlossene Frage und vorschnelle Diagnose. Beginnen Sie offen.",
+        "„Symptomatik“ und „Trauma“ sind Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll und herablassend. Das stört das Vertrauen gleich zu Beginn.",
+        "Richtig: eine offene Frage lässt die Patientin selbst erzählen."
+      ],
+      "reply": "Patientin: „Ich bin heute Morgen im Bad gestürzt, und seitdem habe ich starke Schmerzen in der rechten Leiste. Aufstehen kann ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten wissen, wo genau der Schmerz sitzt und was ihn verstärkt. Was sagen Sie?",
+      "options": [
+        "Ist der Schmerz inguinal lokalisiert, und gibt es eine Ausstrahlung ins Femur oder ins Knie? Besteht eine Belastungsabhängigkeit der Beschwerden im Sinne einer mechanischen Genese?",
+        "Wo genau tut es weh, und zieht der Schmerz irgendwohin, zum Beispiel in den Oberschenkel oder das Knie? Wird er bei Bewegung schlimmer?",
+        "Der Schmerz sitzt bestimmt direkt im Hüftgelenk und wird beim Laufen schlimmer, nicht wahr? Das ist nach einem Sturz ganz typisch.",
+        "Tut es irgendwo weh?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Inguinal“, „lokalisiert“ und „Femur“ sind Fachwörter; die Patientin versteht sie nicht.",
+        "Richtig: laienverständlich, mit Beispielen, und Sie fragen nach dem Einfluss der Bewegung.",
+        "Suggestivfrage: Sie geben Ort und Verlauf vor, die Patientin könnte nur zustimmen.",
+        "Das hat die Patientin schon gesagt (rechte Leiste). Fragen Sie genauer."
+      ],
+      "reply": "Patientin: „Hier in der rechten Leiste. Es zieht in den Oberschenkel bis zum Knie. Wenn ich das Bein bewege, wird es viel schlimmer.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Sturzhergang und dem Verlauf?",
+      "options": [
+        "Wann genau ist der Sturz erfolgt, und war ein Synkopenereignis oder eine Bewusstlosigkeit beteiligt?",
+        "Sie sind bestimmt über einen Teppich gestolpert, oder?",
+        "Können Sie mir bitte genau beschreiben, wie es zu dem Sturz gekommen ist und was danach passiert ist?",
+        "Seit wann haben Sie die Schmerzen?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache („Synkopenereignis“); die Patientin versteht die Frage nicht.",
+        "Suggestivfrage. Sie geben die Ursache des Sturzes vor.",
+        "Richtig: offen und laienverständlich; die Patientin erzählt Hergang, Zeit und Folgen selbst.",
+        "Das hat die Patientin schon gesagt (heute Morgen). Fragen Sie nach dem Hergang."
+      ],
+      "reply": "Patientin: „Heute gegen 9 Uhr bin ich im Bad auf dem nassen Boden ausgerutscht und auf die rechte Seite gefallen. Danach konnte ich nicht mehr aufstehen. Mein Sohn hat mich nach etwa einer Stunde gefunden. Mit dem Kopf bin ich nicht aufgeschlagen, bewusstlos war ich nicht, und schwindlig war mir auch nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "options": [
+        "Sind die Schmerzen eher ischialgiform oder radikulär, und wie hoch ist der Wert auf der visuellen Analogskala?",
+        "Wie stark sind die Schmerzen von 1 bis 100?",
+        "Tut es sehr weh?",
+        "Wie würden Sie die Schmerzen beschreiben, eher stechend, dumpf oder ziehend? Wie stark sind sie in Ruhe und bei Bewegung auf einer Skala von 0 bis 10?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachsprache („ischialgiform“, „radikulär“, „Analogskala“); die Patientin versteht sie nicht.",
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
+        "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10, getrennt für Ruhe und Bewegung."
+      ],
+      "reply": "Patientin: „Es sticht. In Ruhe sind es etwa 4 von 10, bei jeder Bewegung 9 von 10.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen und weiteren Verletzungen?",
+      "options": [
+        "Haben Sie sich außer am Bein noch woanders wehgetan, zum Beispiel am Kopf, am Rücken oder am Handgelenk? Spüren Sie im Bein ein Kribbeln oder etwas Taubes?",
+        "Bestehen Parästhesien oder Hypästhesien im Bein, und gibt es Hinweise auf ein Schädel-Hirn-Trauma, eine Wirbelfraktur oder eine Synkope?",
+        "Haben Sie sonst noch was?",
+        "Sie haben sich bestimmt auch den Kopf angestoßen."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: konkrete Begleitverletzungen und Nervenzeichen in Laiensprache.",
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Kribbeln“, „taub“, „Kopf“, „Rücken“.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Suggestiv: Sie unterstellen eine Verletzung, die die Patientin schon verneint hat."
+      ],
+      "reply": "Patientin: „Nein, kein Kribbeln und nichts Taubes. Das rechte Handgelenk tut ein bisschen weh, aber nicht schlimm. Kopf und Rücken sind in Ordnung.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie ist die Vegetativa?",
+        "Hatten Sie Fieber? Wie sind Appetit, Stuhlgang und Wasserlassen? Wann haben Sie zuletzt etwas gegessen oder getrunken?",
+        "Bestehen Pyrexie, Inappetenz, Obstipation, Diarrhö oder Dysurie, und hat sich Ihr Körpergewicht verändert? Wie war die letzte Defäkation, und gibt es eine Veränderung der Miktion?",
+        "Ist sonst alles normal bei Ihnen?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachjargon, den eine Patientin nicht versteht.",
+        "Richtig: Fieber, Appetit, Stuhlgang, Wasserlassen in Laiensprache, dazu die letzte Mahlzeit (wichtig für eine mögliche Operation).",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Pyrexie, Inappetenz, Obstipation, Dysurie).",
+        "Zu allgemein; die Patientin sagt einfach „ja“."
+      ],
+      "reply": "Patientin: „Fieber hatte ich nicht. Appetit ist gut, Stuhlgang und Wasserlassen sind normal. Um 7 Uhr habe ich gefrühstückt, seitdem habe ich nichts mehr gegessen.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie eine arterielle Hypertonie, ein Vorhofflimmern oder eine Osteoporose, und gab es Voroperationen, Frakturen oder stationäre Aufenthalte, und sind Ihnen Dauermedikamente verordnet worden?",
+        "Sind Sie gesund?",
+        "Welche Diagnosen stehen in Ihrer Akte?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel am Herzen, Bluthochdruck oder Knochenschwund? Wurden Sie schon einmal operiert, oder haben Sie sich schon einmal einen Knochen gebrochen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „Fraktur“). Mit Patienten sprechen Sie Laiensprache.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Die Patientin kennt ihre Akte nicht. Fragen Sie direkt.",
+        "Richtig: mit Beispielen, laienverständlich, und Operationen und frühere Brüche sind mitgefragt."
+      ],
+      "reply": "Patientin: „Ich habe Bluthochdruck und ein Vorhofflimmern, seit etwa fünf Jahren. Außerdem habe ich Osteoporose, seit drei Jahren. Vor 30 Jahren wurde mir die Gebärmutter entfernt, und vor vier Jahren habe ich mir das linke Handgelenk gebrochen.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Tabletten?",
+        "Welche Pharmaka applizieren Sie, und in welcher Galenik?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, in welcher Dosierung, und wann haben Sie sie zuletzt genommen? Auch Mittel ohne Rezept?",
+        "Sie nehmen doch sicher einen Blutverdünner, oder?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu ungenau: Name, Dosis und Zeitpunkt fehlen.",
+        "Fachsprache („Pharmaka“, „applizieren“, „Galenik“).",
+        "Richtig: Name, Dosierung, Zeitpunkt der letzten Einnahme (wichtig bei Gerinnungshemmern) und frei verkäufliche Mittel.",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patientin: „Apixaban 5 mg, morgens und abends; die Morgendosis habe ich heute um 7 Uhr genommen. Bisoprolol 2,5 mg und Ramipril 5 mg jeweils morgens. Alendronsäure 70 mg einmal in der Woche und Vitamin D, 1000 Einheiten, jeden Morgen.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Pflaster oder Lebensmittel? Wie äußert sich das?",
+        "Allergie?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht gleich vor der Operation ein Antibiotikum geben möchten.",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Zu eng: Allergien gegen andere Medikamente, Pflaster oder Lebensmittel übersehen Sie. Außerdem sprechen Sie eine Operation an, bevor die Diagnose steht.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patientin: „Gegen Novalgin. Da bekam ich einen Ausschlag, und das Gesicht ist angeschwollen.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Wie ist Ihr Nikotin- und Alkoholabusus, und wie viele Packungsjahre haben Sie angesammelt?",
+        "Rauchen Sie, oder haben Sie früher geraucht? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
+        "Sind Sie Raucherin oder Alkoholikerin?",
+        "Trinken Sie zu viel?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache („Abusus“, „Packungsjahre“) und klingt nach Vorwurf.",
+        "Richtig: neutral, konkret, mit Menge und früherem Konsum.",
+        "„Alkoholikerin“ ist wertend und verletzend.",
+        "Wertend und ungenau."
+      ],
+      "reply": "Patientin: „Ich habe nie geraucht. Alkohol trinke ich kaum, nur zu Weihnachten ein Glas Sekt. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Knochenbrüche, Herz- oder Krebserkrankungen?",
+        "Hat Ihre Familie dieselbe Krankheit?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Zu eng: Geschwister und Kinder fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Richtig: offen, mit passenden Beispielen.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
+      ],
+      "reply": "Patientin: „Meine Mutter hat sich mit 85 den Oberschenkelhals gebrochen. Mein Vater hatte mit 78 einen Schlaganfall.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Haben Sie Geld?",
+        "Was haben Sie früher beruflich gemacht? Wie wohnen Sie, allein oder mit jemandem zusammen, und kommen Sie im Alltag ohne Hilfe zurecht?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: die Selbstständigkeit fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Unangemessen.",
+        "Richtig: Beruf, Wohnsituation und Selbstständigkeit, wichtig für Mobilisation und Entlassung."
+      ],
+      "reply": "Patientin: „Ich war Buchhalterin und bin jetzt Rentnerin. Ich wohne allein in einem Reihenhaus mit Treppen. Mein Sohn wohnt in der Nähe. Bis heute bin ich ohne Gehhilfe zurechtgekommen.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Ich vermute, dass der Oberschenkelknochen direkt am Hüftgelenk gebrochen ist, im Bereich des Schenkelhalses. Das passt zu Ihren Schmerzen und zur Stellung des Beins. Ein Röntgenbild muss es bestätigen.",
+        "Sie haben eine mediale Schenkelhalsfraktur rechts.",
+        "Es ist wahrscheinlich nur eine Prellung, das geht von selbst wieder weg.",
+        "Sie haben sicher einen Bruch, und Sie werden danach nie wieder richtig laufen können."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung und nächster Schritt.",
+        "Fachsprache; die Patientin versteht die Diagnose nicht.",
+        "Verharmlosend und medizinisch falsch.",
+        "Falsch und beängstigend: nach einer Operation können die meisten Patienten wieder gehen."
+      ],
+      "reply": "Patientin: „Gebrochen? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Die Patientin fragt: „Muss ich operiert werden?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, morgen Vormittag bekommen Sie ein neues Hüftgelenk.",
+        "Zuerst machen wir ein Röntgenbild von der Hüfte, nehmen Blut ab und geben Ihnen ein Schmerzmittel, das Sie vertragen. Wenn sich der Bruch bestätigt, ist meistens eine Operation nötig, möglichst innerhalb eines Tages. Wegen Ihres Blutverdünners besprechen wir den Zeitpunkt mit den Narkoseärzten.",
+        "Das entscheidet der Chef, ich weiß es nicht.",
+        "Nein, in Ihrem Alter operieren wir nicht mehr, Sie bleiben einfach einige Wochen im Bett liegen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu früh: die Diagnose ist noch nicht gesichert, und Art und Zeitpunkt der Operation sind offen.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, Blutverdünner angesprochen, laienverständlich.",
+        "Unprofessionell und lässt die Patientin allein.",
+        "Falsch: bei einem Bruch dieser Art ist die frühe Operation die Regel, Bettruhe schadet."
+      ],
+      "reply": "Patientin: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Frau Keller ist 81 und ist gefallen, das Bein tut weh.",
+        "Die Patientin Frau Keller stellt sich heute vor wegen Leistenschmerzen rechts nach Sturz, 81-jährig.",
+        "Frau Hildegard Keller, eine 81-jährige Patientin, stellte sich heute in unserer Notaufnahme nach einem Sturz mit Schmerzen in der rechten Leiste vor.",
+        "Frau Hildegard Keller, eine 81-jährige Patientin, stellte sich heute in unserem Notaufnahme nach einem Sturz im Bad mit Schmerzen in der rechten Leiste vor."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Satzbau falsch: die Altersangabe hängt am Ende, das Verb steht unglücklich, und der Satz ist unvollständig.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptom.",
+        "Grammatik: „Notaufnahme“ ist feminin, also „in unserer Notaufnahme“."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Patientin berichtete, am Vormittag gegen 9 Uhr im Bad auf nassem Boden ausgerutscht und auf die rechte Seite gestürzt zu sein. Ein Kopfanprall, eine Bewusstlosigkeit und Schwindel wurden verneint. Seitdem bestehen belastungsabhängige Schmerzen in der rechten Leiste mit Ausstrahlung bis zum Knie (NRS 4/10 in Ruhe, 9/10 bei Bewegung). Die Patientin wurde nach ca. einer Stunde vom Sohn aufgefunden.",
+        "Sie ist im Bad ausgerutscht und hingefallen, seitdem tut ihr die Leiste weh und sie kann nicht aufstehen.",
+        "Die Patientin berichtete, am Vormittag gegen 9 Uhr im Bad auf nassem Boden ausgerutscht und auf die linke Seite gestürzt zu sein. Ein Kopfanprall mit kurzer Bewusstlosigkeit wurde bejaht. Seitdem bestehen belastungsabhängige Schmerzen in der linken Leiste mit Ausstrahlung in den Rücken (NRS 4/10 in Ruhe, 9/10 bei Bewegung). Die Patientin wurde nach ca. einer Stunde vom Sohn aufgefunden. Aufstehen unmöglich.",
+        "Die Patientin sei im Bad ausgerutscht und auf die rechte Seite gestürzt, es bestehen belastungsabhängige Schmerzen in rechten Leiste (NRS 9)."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachsprache und alle Merkmale (Hergang, Negativbefunde, Lokalisation, Ausstrahlung, Intensität, Liegezeit).",
+        "Laiensprache; im Bericht erwartet man Fachbegriffe und mehr Details.",
+        "Inhaltlich falsch: Die Patientin stürzte auf die rechte Seite, der Schmerz sitzt rechts, und Kopfanprall und Bewusstlosigkeit wurden verneint.",
+        "Konjunktiv-I-Mischung, Grammatikfehler („in rechten Leiste“ statt „in der rechten Leiste“) und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Sie hat Schmerzen im Handgelenk und hat heute noch nichts gegessen.",
+        "Zusätzlich bestehen Parästhesien des rechten Beins und Kopfschmerzen. Fieber bis 38,5 °C. Nüchtern seit gestern Abend.",
+        "Zusätzlich bestehen leichte Schmerzen im linken Handgelenk. Parästhesien und Sensibilitätsstörungen des rechten Beins sowie Kopf- und Rückenschmerzen wurden verneint. Fieber wurde ausdrücklich verneint, Appetit, Miktion und Stuhlgang sind unauffällig. Letzte Nahrungsaufnahme um 7 Uhr (Frühstück).",
+        "Zusätzlich bestehen leichte Schmerzen im rechten Handgelenk. Parästhesien und Sensibilitätsstörungen des rechten Beins sowie Kopf- und Rückenschmerzen wurden verneint. Fieber wurde verneint, Appetit, Miktion und Stuhlgang sind unauffällig. Letzte Nahrungsaufnahme um 7 Uhr (Frühstück)."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache, unvollständig, und inhaltlich falsch: Die Patientin hat um 7 Uhr gefrühstückt.",
+        "Inhaltlich falsch: Parästhesien, Kopfschmerzen und Fieber wurden verneint, und die letzte Mahlzeit war das Frühstück um 7 Uhr.",
+        "Inhaltlich falsch: Die Schmerzen bestehen im rechten, nicht im linken Handgelenk.",
+        "Richtig: vollständig, Fachsprache, Negativbefunde und letzte Nahrungsaufnahme dokumentiert."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Bluthochdruck, Herzrhythmusstörung, Knochenschwund. Medikamente: Apixaban, Bisoprolol, Ramipril.",
+        "Vorerkrankungen: arterielle Hypertonie, Vorhofflimmern und Osteoporose. Z. n. Hysterektomie vor ca. 30 Jahren, Z. n. distaler Radiusfraktur links vor 4 Jahren. Medikation: Apixaban 5 mg 1-0-1 (letzte Einnahme heute um 7 Uhr), Bisoprolol 2,5 mg 1-0-0, Ramipril 5 mg 1-0-0, Alendronsäure 70 mg einmal wöchentlich, Vitamin D 1000 IE 1-0-0.",
+        "Vorerkrankungen: arterielle Hypertonie, Vorhofflimmern und Osteoporose. Z. n. Hysterektomie vor ca. 30 Jahren, Z. n. distaler Radiusfraktur links vor 4 Jahren. Medikation: Apixaban 5 mg 1-1-1 (letzte Einnahme gestern Abend), Bisoprolol 2,5 mg 0-0-1, Ramipril 5 mg 1-0-0, Alendronsäure 70 mg täglich, Vitamin D 1000 IE 1-0-0.",
+        "Vorerkrankungen: arterielle Hypotonie, Vorhofflimmern und Osteoporose. Z. n. Appendektomie vor ca. 30 Jahren, Z. n. Radiusfraktur rechts vor 4 Jahren. Medikation: Apixaban 5 mg 1-0-1 (letzte Einnahme heute um 7 Uhr), Bisoprolol 2,5 mg 1-0-0, Ramipril 5 mg 1-0-0."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach), Dosierschema 1-0-1 und der Zeitpunkt der letzten Apixaban-Einnahme.",
+        "Dosierschema falsch: Apixaban zweimal (1-0-1, letzte Einnahme heute 7 Uhr), Bisoprolol morgens (1-0-0), Alendronsäure nur einmal wöchentlich.",
+        "Inhaltlich falsch: Hypertonie (nicht Hypotonie), Z. n. Hysterektomie (nicht Appendektomie), und die Radiusfraktur war links."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergien: keine bekannt; Medikamentenunverträglichkeiten wurden nicht erfragt. Nikotin: nie geraucht (0 py), Alkohol gelegentlich. Familienanamnese: Mutter proximale Femurfraktur mit 85 J., Vater Apoplex mit 78 J. Die Patientin ist Rentnerin (ehemals Buchhalterin), lebt allein in einem Reihenhaus mit Treppen, der Sohn wohnt in der Nähe; bisher mobil ohne Gehhilfe.",
+        "Metamizol-Unverträglichkeit (Exanthem und Gesichtsschwellung). Nikotinkonsum ca. 15 py, Alkohol gelegentlich. Familienanamnese: Mutter Apoplex mit 85 J., Vater proximale Femurfraktur mit 78 J. Die Patientin lebt allein.",
+        "Metamizol-Unverträglichkeit (Exanthem und Gesichtsschwellung). Nikotin: nie geraucht (0 py), Alkohol gelegentlich. Familienanamnese: Mutter proximale Femurfraktur mit 85 J., Vater Apoplex mit 78 J. Die Patientin ist Rentnerin (ehemals Buchhalterin), lebt allein in einem Reihenhaus mit Treppen, der Sohn wohnt in der Nähe; bisher mobil ohne Gehhilfe.",
+        "Sie verträgt Novalgin nicht, raucht nicht und wohnt allein."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: Die Metamizol-Unverträglichkeit fehlt. Das ist für die Schmerztherapie entscheidend.",
+        "Inhaltlich falsch: Die Patientin hat nie geraucht (0 py), die Mutter hatte die Femurfraktur, der Vater den Apoplex.",
+        "Richtig: Allergie mit Reaktion, 0 py (nie geraucht), Familienanamnese und soziale Situation vollständig.",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Hüftbruch.",
+        "Es besteht eine gesicherte Schenkelhalsfraktur rechts, eine Bildgebung ist nicht erforderlich.",
+        "Anamnestisch besteht der Verdacht auf eine Radiusfraktur rechts bei Z. n. Radiusfraktur links. Differenzialdiagnostisch kommen eine Schenkelhalsfraktur, eine Schambeinastfraktur und eine Hüftkontusion in Betracht.",
+        "Anamnestisch und klinisch (verkürztes, außenrotiertes rechtes Bein) besteht der Verdacht auf eine Schenkelhalsfraktur rechts. Differenzialdiagnostisch kommen eine pertrochantäre Femurfraktur, eine Schambeinastfraktur und eine Hüftkontusion in Betracht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Ohne Bildgebung ist die Diagnose nicht gesichert; das Röntgen ist obligat.",
+        "Falsche Hauptdiagnose: Die leichten Handgelenkschmerzen erklären nicht die Leistenschmerzen und die Beinfehlstellung.",
+        "Richtig: Verdacht statt Gewissheit, Klinik genannt, sinnvolle Differenzialdiagnosen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir empfehlen eine Blutentnahme (u. a. Blutbild, Gerinnung, Kreatinin, CRP, Blutgruppe und Kreuzblut), ein EKG sowie eine Röntgenaufnahme des Beckens und der rechten Hüfte in zwei Ebenen. Analgesie mit Paracetamol und bedarfsweise Piritramid i. v. unter Meidung von Metamizol, Nahrungskarenz und Pausierung von Apixaban. Bei Bestätigung ist eine operative Versorgung innerhalb von 24 Stunden vorgesehen.",
+        "Wir machen Blut und Röntgen.",
+        "Wir empfehlen eine Blutentnahme (u. a. Blutbild, Gerinnung, Kreatinin, CRP), ein EKG sowie eine Röntgenaufnahme des Beckens und der rechten Hüfte in zwei Ebenen. Analgesie mit Metamizol 1 g i. v. und Ibuprofen 400 mg, Apixaban unverändert weiter. Bei Bestätigung ist eine operative Versorgung innerhalb von 24 Stunden vorgesehen. Eine Mobilisation ist bis dahin nicht erforderlich.",
+        "Wir empfehlen eine Blutentnahme sowie eine Röntgenaufnahme des Beckens und der rechten Hüfte. Bei Bestätigung ist eine konservative Therapie mit Bettruhe über sechs Wochen vorgesehen."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Diagnostik, Analgesie mit Rücksicht auf die Unverträglichkeit, Umgang mit Apixaban und Operationszeitpunkt nach Leitlinie.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Gefährlich: Metamizol ist unverträglich, Ibuprofen erhöht unter Apixaban das Blutungsrisiko, und Apixaban muss vor der Operation pausiert werden.",
+        "Leitlinienwidrig: Bei einer Schenkelhalsfraktur ist die operative Versorgung innerhalb von 24 Stunden Standard; Bettruhe führt zu Komplikationen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Die Patientin ist gefallen, sie heißt Keller.",
+        "Also, die Frau lag eine Stunde im Bad, und der Sohn hat sie gefunden, ich glaube, sie hat Schmerzen im Bein und irgendeine Allergie oder so, und dann haben wir sie halt hergebracht und mal geschaut ...",
+        "Frau Keller hat eine Schenkelhalsfraktur.",
+        "Ich möchte Ihnen Frau Hildegard Keller vorstellen, eine 81-jährige Patientin, die sich heute nach einem Sturz im Bad mit Schmerzen in der rechten Leiste und Belastungsunfähigkeit vorgestellt hat."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Kein strukturierter Einstieg; zuerst Patientin und Leitsymptom.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Richtig: Name, Alter, Hergang und Leitsymptom in einem Satz."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde zusammen?",
+      "options": [
+        "Die Patientin ist nach einem Schwindelanfall kollabiert und mit dem Kopf aufgeschlagen. Das linke Bein ist verkürzt und innenrotiert, die Schmerzen liegen bei 9/10 in Ruhe. Es bestehen Sensibilitätsstörungen. Bei Aufnahme war sie kaltschweißig und tachykard, der Blutdruck lag bei 70/40 mmHg.",
+        "Die Patientin ist gegen 9 Uhr auf nassem Boden ausgerutscht und auf die rechte Seite gestürzt. Kopfanprall, Bewusstlosigkeit und Schwindel wurden verneint. Das rechte Bein ist verkürzt und außenrotiert, die Schmerzen liegen bei 4/10 in Ruhe und 9/10 bei Bewegung. Sensibilitätsstörungen bestehen nicht.",
+        "Sie hat Schmerzen, mehr weiß ich nicht.",
+        "Sie ist gestürzt und hat Fieber und Kribbeln im Bein."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich falsch: kein Schwindel, kein Kopfanprall, das rechte Bein ist außenrotiert, und es bestehen keine Sensibilitätsstörungen.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
+        "Keine Information.",
+        "Inhaltlich falsch: Fieber und Kribbeln im Bein bestehen nicht."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Bekannt sind eine arterielle Hypertonie, ein Vorhofflimmern unter Apixaban 5 mg 1-0-1 mit letzter Einnahme heute um 7 Uhr und eine Osteoporose unter Alendronsäure. Wichtig: Metamizol-Unverträglichkeit mit Exanthem und Gesichtsschwellung. Die Mutter hatte eine proximale Femurfraktur.",
+        "Sie ist gesund.",
+        "Bekannt sind eine arterielle Hypertonie und ein Vorhofflimmern, aber keine Antikoagulation. Keine Allergien.",
+        "Sie nimmt Apixaban und Ramipril, sonst nichts."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: relevante Vorgeschichte, Antikoagulation mit Zeitpunkt und die Unverträglichkeit, die für die Analgesie wichtig ist.",
+        "Falsch: es gibt relevante Vorerkrankungen.",
+        "Inhaltlich falsch: Die Patientin nimmt Apixaban, und die Metamizol-Unverträglichkeit fehlt.",
+        "Unvollständig: Diagnosen, Zeitpunkt der letzten Einnahme und Unverträglichkeit fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an einen Hüftbruch.",
+        "Es handelt sich sicher um eine Hüftluxation, weil das Bein außenrotiert ist. Differenzialdiagnostisch denke ich höchstens noch an eine Koxarthrose und eine Schambeinastfraktur.",
+        "Ich vermute eine Schenkelhalsfraktur rechts. Differenzialdiagnostisch denke ich an eine pertrochantäre Femurfraktur, eine Schambeinastfraktur und eine Hüftkontusion.",
+        "Ich weiß es nicht genau."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "Zu sicher, und eine Luxation passt nicht: Sie verursacht meist Verkürzung mit Innenrotation, nicht Außenrotation, und eine Koxarthrose erklärt keinen akuten Sturzschmerz.",
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde sie mit Schmerzmitteln nach Hause schicken und in einer Woche kontrollieren.",
+        "Ich würde Blut abnehmen mit Blutbild, Gerinnung, Kreatinin und Kreuzblut, ein EKG schreiben und das Becken sowie die rechte Hüfte in zwei Ebenen röntgen. Analgesie mit Paracetamol und Piritramid i. v., kein Metamizol. Apixaban pausieren, die Patientin nüchtern lassen und die Operation innerhalb von 24 Stunden planen; dazu ein Anästhesie-Konsil.",
+        "Ich würde zuerst ein MRT der Lendenwirbelsäule machen und die Patientin bis dahin mobilisieren.",
+        "Ich würde Metamizol i. v. geben, weil es gut gegen Schmerzen hilft, und die Operation erst nach zwei Wochen planen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Gefährlich: ein Bruch muss abgeklärt und behandelt werden.",
+        "Richtig: Diagnostik, Analgesie ohne Metamizol, Apixaban pausiert, Operationszeitpunkt nach Leitlinie.",
+        "Nicht die erste Untersuchung bei diesem Verdacht, und mobilisieren darf man erst nach der Bildgebung.",
+        "Gefährlich: Die Patientin verträgt Metamizol nicht, und die Operation sollte innerhalb von 24 Stunden erfolgen."
+      ],
+      "reply": "Oberarzt: „Gut. Wenn die Fraktur disloziert ist: Welche Operation planen Sie bei dieser Patientin?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Eine Endoprothese braucht man nicht, wir legen einen Streckverband an.",
+        "Ich plane eine Verschraubung des Hüftkopfes, weil dabei das eigene Gelenk erhalten bleibt, und eine Endoprothese ist bei dislozierten Frakturen im hohen Alter nicht empfohlen.",
+        "Das weiß ich nicht.",
+        "Bei einer dislozierten Fraktur (Garden III oder IV) ist bei einer 81-jährigen Patientin eine Endoprothese indiziert, also eine Hemi- oder Totalendoprothese. Kopferhaltend verschrauben würde ich eher bei jüngeren Patienten oder bei nicht dislozierten Frakturen."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Veraltet: ein Streckverband ist keine Therapie, er verhindert nur kurz die Fehlstellung.",
+        "Leitlinienwidrig: Bei dislozierter Fraktur im hohen Alter ist die Verschraubung wegen Nekrose- und Pseudarthroserisiko nicht empfohlen.",
+        "In der Prüfung erwartet man eine begründete Antwort.",
+        "Richtig: Garden-Klassifikation und altersgerechte Wahl der Endoprothese."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Femur“?",
+      "options": [
+        "Schienbein",
+        "Oberschenkelknochen",
+        "Wadenbein",
+        "Oberarmknochen"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Tibia.",
+        "Richtig.",
+        "Das ist die Fibula.",
+        "Das ist der Humerus."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Außenrotation“?",
+      "options": [
+        "Verkürzung des Beins",
+        "Beugung im Knie",
+        "Drehung nach außen",
+        "Drehung nach innen"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Beinverkürzung.",
+        "Das ist die Flexion.",
+        "Richtig.",
+        "Das ist die Innenrotation."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Osteoporose“?",
+      "options": [
+        "Knochenschwund mit erhöhter Bruchgefahr",
+        "Gelenkverschleiß",
+        "Knochenentzündung",
+        "Knochentumor"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Arthrose.",
+        "Das ist die Osteomyelitis.",
+        "Das ist ein Knochentumor (z. B. Osteosarkom)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Endoprothese“?",
+      "options": [
+        "Gipsverband am Bein",
+        "Verschraubung des Bruchs",
+        "Spritze ins Gelenk",
+        "künstlicher Gelenkersatz"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Ruhigstellung im Gips (Immobilisation).",
+        "Das ist die Osteosynthese.",
+        "Das ist die intraartikuläre Injektion.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Antikoagulation“?",
+      "options": [
+        "Schmerzlinderung",
+        "Hemmung der Blutgerinnung",
+        "Senkung des Blutdrucks",
+        "Aufbau von Knochen"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Analgesie.",
+        "Richtig.",
+        "Das ist die antihypertensive Therapie.",
+        "Das ist der Knochenaufbau (Osteoanabolie)."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

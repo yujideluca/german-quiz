@@ -121,4 +121,17 @@
     <string name="pool_version">Question pool version %1$d · %2$s</string>
     <string name="pool_downloaded">downloaded</string>
     <string name="pool_built_in">built into the app</string>
+    <string name="mode_fsp_title">FSP cases</string>
+    <string name="mode_fsp_instruction">Simulated medical German exam (Fachsprachprüfung): pick what you would say or write</string>
+    <string name="fsp_part_1">Part 1 · Doctor–patient talk</string>
+    <string name="fsp_part_2">Part 2 · Documentation</string>
+    <string name="fsp_part_3">Part 3 · Doctor–doctor talk</string>
+    <string name="fsp_step">Step %1$d of %2$d</string>
+    <string name="fsp_try_again">Not quite. Read why and pick again.</string>
+    <string name="fsp_continue">Continue</string>
+    <string name="fsp_result_title">Case finished</string>
+    <string name="fsp_result_passed">Passed: %1$d%% right at the first try</string>
+    <string name="fsp_result_failed">Not passed: %1$d%% right at the first try (80%% needed)</string>
+    <string name="fsp_result_part">%1$s: %2$d of %3$d</string>
+    <string name="fsp_diagnosis">Diagnosis: %1$s</string>
 </resources>

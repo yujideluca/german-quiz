@@ -1,0 +1,691 @@
+{
+  "id": "benigne-prostatahyperplasie",
+  "area": "Nephrologie/Urologie",
+  "title": "Kein Wasserlassen mehr möglich und Schmerzen im Unterbauch",
+  "diagnosis": "Benigne Prostatahyperplasie mit akutem Harnverhalt",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Hans-Jürgen Weber, 71 Jahre, stellt sich am Abend in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Weber sitzt vornübergebeugt auf der Liege und hält sich den Unterbauch.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Hallo, Herr Weber, was ist denn los? Sie sehen ja furchtbar aus.",
+        "Guten Abend. Legen Sie sich bitte hin, ich taste jetzt sofort Ihren Unterbauch ab und mache einen Ultraschall.",
+        "Guten Abend, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Weber?",
+        "Guten Abend, Herr Weber. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte und Ihren Personalausweis dabei? Die brauchen wir zuerst für die Anmeldung."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu umgangssprachlich und unhöflich, und Sie stellen sich nicht vor. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Die Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Verwaltungsfragen gehören nicht an den Anfang des Arzt-Patienten-Gesprächs, und Sie stellen sich nicht vor."
+      ],
+      "reply": "Patient: „Ja, Weber. Guten Abend, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Sie sind doch bestimmt schon über siebzig, oder?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Wie ist Ihr Body-Mass-Index?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
+      ],
+      "reply": "Patient: „Ich bin 71, 1,78 Meter groß und wiege 88 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Probleme mit der Prostata?",
+        "Welche Miktionsbeschwerden führen Sie in die Notaufnahme, und seit wann besteht die Symptomatik?",
+        "Warum kommen Sie erst jetzt zu uns und nicht schon gestern Abend zum Hausarzt?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Geschlossene und suggestive Frage: Sie nehmen die Diagnose vorweg. Beginnen Sie offen.",
+        "„Miktionsbeschwerden“ und „Symptomatik“ sind Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen."
+      ],
+      "reply": "Patient: „Ich kann seit gestern Abend kein Wasser mehr lassen, und mein Unterbauch tut furchtbar weh.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten genauer wissen, was beim Wasserlassen noch geht. Was sagen Sie?",
+      "options": [
+        "Kommt gar kein Urin, oder nur ein paar Tropfen? Haben Sie das Gefühl, dass die Blase voll ist?",
+        "Liegt bei Ihnen eine Anurie oder eine Oligurie vor, und besteht ein imperativer Harndrang mit Dysurie?",
+        "Sie können bestimmt gar nichts mehr ausscheiden, stimmt das?",
+        "Kommt etwas?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: laienverständlich, konkret (nichts oder Tropfen, volle Blase), ohne die Antwort vorzugeben.",
+        "„Anurie“, „Oligurie“, „imperativer Harndrang“ und „Dysurie“ sind Fachwörter; der Patient versteht sie nicht.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
+        "Zu knapp und unhöflich; Sie erfahren nicht, wie viel Urin kommt."
+      ],
+      "reply": "Patient: „Es kommen nur ein paar Tropfen, obwohl die Blase zum Platzen voll ist. Ich muss ständig, aber es geht nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Seit wann haben Sie das?",
+        "Hat es plötzlich angefangen?",
+        "Gab es vor gestern Abend schon Veränderungen beim Wasserlassen? Und war gestern, bevor es anfing, etwas anders als sonst?",
+        "Wie war der zeitliche Verlauf der Miktionsstörung seit der Erstmanifestation: akut, subakut oder chronisch progredient, und gab es eine Triggerexposition?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das hat der Patient schon gesagt (seit gestern Abend). Fragen Sie nach dem Verlauf davor und nach Auslösern.",
+        "Geschlossene Frage; sie erfasst den Verlauf und mögliche Auslöser nicht.",
+        "Richtig: Verlauf und möglicher Auslöser in laienverständlicher, offener Form.",
+        "Fachsprache: „Erstmanifestation“, „subakut“, „progredient“ und „Triggerexposition“ versteht der Patient nicht."
+      ],
+      "reply": "Patient: „Der Strahl wird schon seit Monaten schwächer, und nachts muss ich drei- bis viermal raus. Gestern Abend hatte ich eine Erkältung und habe zwei Tabletten aus der Apotheke genommen. Danach ging gar nichts mehr.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "options": [
+        "Sind die Schmerzen kolikartig?",
+        "Sind die Schmerzen drückend, stechend oder krampfartig? Und wie stark sind sie auf einer Skala von 0 bis 10?",
+        "Wie stark sind die Schmerzen auf einer Skala von 1 bis 100, wobei 100 der schlimmste Schmerz Ihres Lebens wäre?",
+        "Tut es sehr weh?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Kolikartig“ ist Fachsprache. Beschreiben Sie es mit Wörtern wie „krampfartig“ oder „wellenartig“.",
+        "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10.",
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe."
+      ],
+      "reply": "Patient: „Ein dauernder, drückender Schmerz über dem Schambein, 7 von 10. Er wird schlimmer, wenn ich versuche zu pressen.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Hatten Sie Dysurie, Pollakisurie, Hämaturie oder Algurie, und besteht eine Flankenschmerzsymptomatik oder eine Parese?",
+        "Sie haben bestimmt auch Blut im Urin.",
+        "Haben Sie sonst noch was?",
+        "Brennt es beim Wasserlassen? Haben Sie Blut im Urin bemerkt, Schmerzen im Rücken oder in der Flanke, oder Kribbeln oder Schwäche in den Beinen? Ist Ihnen übel?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Brennen“, „Blut im Urin“, „Schwäche in den Beinen“.",
+        "Suggestiv: Sie unterstellen das Symptom.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive Hinweisen auf Infekt, Steine und Rückenmarkbeteiligung."
+      ],
+      "reply": "Patient: „Brennen tut es nicht, Blut habe ich nicht gesehen. Rücken- oder Flankenschmerzen habe ich keine, und die Beine sind in Ordnung. Übel ist mir nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Haben Sie Fieber gemessen? Wie steht es in letzter Zeit mit Appetit, Stuhlgang und Gewicht? Schwitzen Sie nachts stark?",
+        "Wie ist die Vegetativa?",
+        "Bestehen bei Ihnen Pyrexie, Nachtschweiß, Gewichtsverlust, Obstipation oder Diarrhö, und wie ausgeprägt ist Ihre Inappetenz?",
+        "Ist sonst alles normal bei Ihnen?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fieber, Appetit, Stuhlgang, Gewicht und Nachtschweiß in Laiensprache (B-Symptome, Infekt).",
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Pyrexie, Obstipation, Diarrhö, Inappetenz).",
+        "Zu allgemein; der Patient sagt einfach „ja“."
+      ],
+      "reply": "Patient: „Fieber habe ich nicht, ich habe heute Morgen 36,9 gemessen. Appetit ist normal, Stuhlgang auch, das Gewicht ist gleich geblieben. Nachts schwitze ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie eine arterielle Hypertonie, einen Diabetes mellitus oder eine KHK, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck oder Zucker? Und wurden Sie schon einmal operiert?",
+        "Sind Sie gesund?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „KHK“). Mit Patienten sprechen Sie Laiensprache.",
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patient: „Ich habe Bluthochdruck und erhöhte Cholesterinwerte. Vor zehn Jahren wurde ein Leistenbruch rechts operiert. Zucker habe ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Tabletten?",
+        "Welche Pharmaka applizieren Sie, und in welcher Dosierung, auch als Selbstmedikation ohne Rezept?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept?",
+        "Sie nehmen doch sicher schon Tabletten für die Prostata?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu ungenau: Name, Dosis und rezeptfreie Mittel fehlen.",
+        "Fachsprache („Pharmaka“, „applizieren“, „Selbstmedikation“).",
+        "Richtig: Name, Dosierung und auch frei verkäufliche Mittel.",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Ramipril 5 mg morgens und Simvastatin 20 mg abends. Gestern Abend habe ich zwei Erkältungstabletten mit Pseudoephedrin genommen.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
+        "Allergie?",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Zu eng: Allergien gegen andere Antibiotika, zum Beispiel Sulfonamide, übersehen Sie.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patient: „Gegen Cotrimoxazol, ein Antibiotikum. Da bekam ich einen Hautausschlag am Oberkörper.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucher oder Alkoholiker?",
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus, und haben Sie in der Vergangenheit Drogenerfahrungen gemacht?",
+        "Trinken Sie zu viel?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Alkoholiker“ ist wertend und verletzend.",
+        "Richtig: neutral, konkret, mit Menge.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Wertend und ungenau."
+      ],
+      "reply": "Patient: „Ich rauche seit 25 Jahren eine Schachtel am Tag, also 20 Zigaretten. Abends ein bis zwei Bier. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Hat Ihre Familie dieselbe Krankheit?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Krebs-, Herz- oder Nierenerkrankungen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Zu eng: Geschwister und Kinder fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar.",
+        "Richtig: offen, mit passenden Beispielen."
+      ],
+      "reply": "Patient: „Mein Vater hatte Prostatakrebs, der wurde bei ihm mit 74 festgestellt. Meine Mutter hatte mit 80 einen Schlaganfall.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Was machen oder machten Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
+        "Haben Sie genug Geld für Ihre Medikamente?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Entlassung und Versorgung.",
+        "Unangemessen und unterstellend."
+      ],
+      "reply": "Patient: „Ich bin Rentner, früher war ich Schreiner. Ich wohne mit meiner Frau in einem Haus, wir haben zwei erwachsene Töchter.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Ich vermute, dass Ihre Prostata vergrößert ist und die Harnröhre zudrückt, sodass die Blase sich nicht mehr entleeren kann. Die Prostata ist eine Drüse unter der Blase, die bei Männern mit dem Alter oft wächst.",
+        "Sie haben eine benigne Prostatahyperplasie mit akutem Harnverhalt und infravesikaler Obstruktion.",
+        "Das ist wahrscheinlich nur eine Blasenschwäche, das geht von allein wieder weg.",
+        "Sie haben sicher Prostatakrebs, das müssen wir sofort operieren."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung des Organs.",
+        "Fachsprache; der Patient versteht die Diagnose nicht.",
+        "Verharmlosend und medizinisch falsch: ein Harnverhalt braucht eine Behandlung.",
+        "Falsch und beängstigend."
+      ],
+      "reply": "Patient: „Und was passiert jetzt mit mir? Bekomme ich einen Schlauch?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Sie möchten dem Patienten das weitere Vorgehen erklären und seine Frage nach dem Schlauch beantworten.",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Wir schicken Sie nach Hause. Wenn Sie viel trinken, leert sich die Blase bestimmt von allein.",
+        "Morgen früh wird Ihre Prostata operiert, das ist die einzige Lösung.",
+        "Das entscheidet der Urologe, ich weiß es nicht. Bitte warten Sie, bis er kommt.",
+        "Zuerst machen wir einen Ultraschall der Blase und nehmen Blut ab. Dann legen wir Ihnen einen dünnen Schlauch durch die Harnröhre in die Blase, damit der Urin abfließen kann. Das nimmt den Druck und die Schmerzen. Danach besprechen wir mit dem Urologen, wie es mit der Prostata weitergeht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Gefährlich: eine volle Blase muss entlastet werden, sonst droht ein Nierenschaden.",
+        "Zu früh: die Diagnose ist noch nicht gesichert, und zuerst wird die Blase entlastet.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich („dünner Schlauch“)."
+      ],
+      "reply": "Patient: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Weber ist 71 und kann nicht pinkeln.",
+        "Herr Hans-Jürgen Weber, ein 71-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit gestern Abend bestehendem Harnverhalt und Unterbauchschmerzen vor.",
+        "Herr Hans-Jürgen Weber, ein 71-jähriger Patient, stellte sich heute in unsere Notaufnahme mit seit gestern Abend bestehendem Harnverhalt und starken Unterbauchschmerzen vor.",
+        "Herr Hans-Jürgen Weber, ein 71-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit einer Woche bestehendem Harnverhalt und Unterbauchschmerzen vor."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptom.",
+        "Grammatik: „in unserer Notaufnahme“ (Dativ, wo?), nicht „in unsere“.",
+        "Inhaltlich falsch: Der Harnverhalt besteht seit gestern Abend, nicht seit einer Woche."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Der Strahl ist schwach geworden, und gestern Abend ging gar nichts mehr, nachdem er Erkältungstabletten genommen hat.",
+        "Die Beschwerden seien seit Monaten progredient mit abgeschwächtem Harnstrahl und Nykturie, gestern Abend nach Pseudoephedrin kam Harnverhalt, Schmerzen NRS 7.",
+        "Seit Monaten besteht ein abgeschwächter Harnstrahl mit Nykturie (1-mal pro Nacht). Gestern Abend kam es nach Einnahme von Pseudoephedrin zum akuten Harnverhalt mit drückenden suprapubischen Schmerzen (NRS 7/10).",
+        "Seit Monaten besteht ein abgeschwächter Harnstrahl mit Nykturie (3- bis 4-mal pro Nacht). Gestern Abend kam es nach Einnahme von Pseudoephedrin zum akuten Harnverhalt mit drückenden suprapubischen Schmerzen (NRS 7/10); es entleerten sich nur Tropfen."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Konjunktiv-I-Mischung und unvollständig; außerdem fehlt „/10“.",
+        "Inhaltlich falsch: Der Patient muss nachts drei- bis viermal zur Toilette, nicht einmal.",
+        "Richtig: Fachsprache und alle Merkmale (Verlauf, Auslöser, Charakter, Lokalisation, Intensität)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Der Patient verneinte Dysurie, Hämaturie, Flanken- und Rückenschmerzen sowie sensomotorische Ausfälle der Beine. Fieber (36,9 °C) und Übelkeit bestanden nicht. Appetit, Stuhlgang und Gewicht unauffällig, kein Nachtschweiß.",
+        "Er hat kein Fieber und keine Schmerzen beim Pinkeln, sonst ist alles normal.",
+        "Der Patient verneinte Dysurie, Hämaturie, Flanken- und Rückenschmerzen. Fieber bis 38,5 °C, Nachtschweiß und ein Gewichtsverlust von 5 kg wurden berichtet, weiterhin Inappetenz.",
+        "Der Patient klagte über Hämaturie, Dysurie und Lähmungen in den Beinen. Fieber wurde verneint, ebenso Übelkeit; der Stuhlgang war regelmäßig."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Vulgär („pinkeln“) und unvollständig.",
+        "Inhaltlich falsch: Der Patient hatte kein Fieber (36,9 °C), keinen Nachtschweiß und keinen Gewichtsverlust.",
+        "Inhaltlich falsch: Hämaturie, Dysurie und Lähmungen hat der Patient verneint."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Bluthochdruck, Cholesterin. Medikamente: Ramipril, Simvastatin.",
+        "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 2. Z. n. Leistenhernienoperation rechts vor zehn Jahren. Medikation: Ramipril 5 mg 1-0-0, Simvastatin 20 mg 0-0-1, Pseudoephedrin einmalig gestern.",
+        "An Vorerkrankungen sind eine arterielle Hypertonie und eine Hypercholesterinämie bekannt. Z. n. Leistenhernienoperation rechts vor zehn Jahren. Medikation: Ramipril 5 mg 1-0-0, Simvastatin 20 mg 0-0-1, Erkältungspräparat mit Pseudoephedrin (2 Tabletten) einmalig gestern Abend.",
+        "An Vorerkrankungen sind eine arterielle Hypertonie und eine Hypercholesterinämie bekannt. Z. n. Leistenhernienoperation links vor zehn Jahren. Medikation: Ramipril 5 mg 0-0-1, Simvastatin 20 mg 1-0-0, Pseudoephedrin einmalig gestern Abend."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Inhaltlich falsch: Der Patient hat keinen Diabetes mellitus, sondern eine Hypercholesterinämie.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierschema im Format morgens-mittags-abends.",
+        "Falsch: Die Leistenhernie wurde rechts operiert, Ramipril morgens (1-0-0), Simvastatin abends (0-0-1)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: keine. Noxen: Nikotin.",
+        "Cotrimoxazol-Allergie (Exanthem). Nikotinkonsum ca. 25 py, regelmäßiger Alkoholkonsum (1 bis 2 Bier abends). Familienanamnese: Vater Prostatakarzinom (ED mit 74 J.), Mutter Apoplex mit 80 J. Der Patient ist Rentner (zuvor Schreiner), verheiratet und lebt mit seiner Ehefrau.",
+        "Cotrimoxazol-Allergie (Anaphylaxie). Nikotinkonsum ca. 25 py, Alkohol 1 bis 2 Bier abends. Familienanamnese: Vater Prostatakarzinom, Mutter Apoplex. Der Patient ist Rentner und lebt mit seiner Ehefrau.",
+        "Er verträgt kein Cotrimoxazol, raucht und trinkt Bier."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: die Cotrimoxazol-Allergie fehlt.",
+        "Richtig: 20 Zigaretten am Tag über 25 Jahre sind 25 pack years (py = Packungsjahre).",
+        "Falsch: Die Reaktion war ein Exanthem, keine Anaphylaxie.",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Prostatavergrößerung.",
+        "Es besteht ein gesicherter akuter Harnverhalt bei Prostatakarzinom.",
+        "Anamnestisch besteht der Verdacht auf einen akuten Harnverhalt bei benigner Prostatahyperplasie. Differenzialdiagnostisch kommen eine Appendizitis, eine Cholezystitis und eine Divertikulitis in Betracht.",
+        "Anamnestisch besteht der Verdacht auf einen akuten Harnverhalt bei benigner Prostatahyperplasie, ausgelöst durch Pseudoephedrin. Differenzialdiagnostisch kommen eine Urethrastriktur, eine Prostatitis, ein Prostatakarzinom und eine neurogene Blasenentleerungsstörung in Betracht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Ohne Untersuchung und Labor ist weder der Harnverhalt gesichert noch ein Karzinom nachgewiesen.",
+        "Die Differenzialdiagnosen passen nicht: Appendizitis, Cholezystitis und Divertikulitis verursachen keinen Harnverhalt.",
+        "Richtig: Verdacht statt Gewissheit, Auslöser genannt, sinnvolle Differenzialdiagnosen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (Blutbild, CRP, Kreatinin, Elektrolyte), einen Urinstatus mit Urinkultur und eine Sonographie von Harnblase und Nieren. Therapeutisch ist ein transurethraler Blasenkatheter mit Bilanzierung indiziert; PSA erst im Verlauf. Vorstellung in der Urologie.",
+        "Wir machen Blut und Ultraschall.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und eine Sonographie. Bei einem Infekt beginnen wir eine Antibiose mit Cotrimoxazol.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und eine Blasensonographie. Der Patient soll viel trinken und mit einem Spasmolytikum bis zum nächsten Morgen abwarten."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Diagnostik und Therapie in vollständigen Sätzen; der PSA-Wert ist nach Harnverhalt und Katheter verfälscht.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Gefährlich: der Patient hat eine Cotrimoxazol-Allergie.",
+        "Gefährlich: die Blase muss entlastet werden; Spasmolytika und viel Trinken verschlimmern den Harnverhalt."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Der Mann kann nicht pinkeln, er heißt Weber.",
+        "Herr Weber hat eine Prostatavergrößerung.",
+        "Ich möchte Ihnen Herrn Hans-Jürgen Weber vorstellen, einen 71-jährigen Patienten, der sich heute mit seit gestern Abend bestehendem Harnverhalt und Unterbauchschmerzen vorgestellt hat.",
+        "Also, der Herr hatte gestern eine Erkältung und hat Tabletten aus der Apotheke genommen, und dann ging nichts mehr, und jetzt hat er Schmerzen im Bauch."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz.",
+        "Kein strukturierter Einstieg und Umgangssprache; zuerst Patient und Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Er hat alles Mögliche.",
+        "Seit Monaten bestehen ein abgeschwächter Harnstrahl und eine Nykturie. Gestern Abend kam es nach Pseudoephedrin zum Harnverhalt mit Unterbauchschmerzen (NRS 7/10). Dysurie, Hämaturie, Fieber und neurologische Ausfälle wurden verneint.",
+        "Seit Monaten bestehen ein abgeschwächter Harnstrahl und eine Nykturie. Gestern Abend kam es nach Pseudoephedrin zum Harnverhalt mit Unterbauchschmerzen (NRS 7/10). Dysurie und Fieber bis 38,5 °C wurden berichtet, Hämaturie und neurologische Ausfälle wurden verneint.",
+        "Er hat Fieber, Hämaturie und Rückenschmerzen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Keine Information.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
+        "Inhaltlich falsch: Dysurie und Fieber wurden verneint (36,9 °C).",
+        "Inhaltlich falsch: Fieber, Hämaturie und Rückenschmerzen wurden verneint."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist gesund.",
+        "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 2. Es bestehen keine Allergien. Der Vater hatte ein Kolonkarzinom, der Patient ist Nichtraucher.",
+        "Er nimmt Ramipril und Simvastatin, sonst nichts.",
+        "Bekannt sind eine arterielle Hypertonie und eine Hypercholesterinämie. Wichtig: Cotrimoxazol-Allergie mit Exanthem. Der Vater hatte ein Prostatakarzinom, der Patient raucht ca. 25 py."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch: es gibt relevante Vorerkrankungen.",
+        "Inhaltlich falsch: kein Diabetes, eine Cotrimoxazol-Allergie, der Vater hatte ein Prostatakarzinom, der Patient raucht.",
+        "Unvollständig: Diagnosen, Allergie und Familienanamnese fehlen.",
+        "Richtig: relevante Vorgeschichte, die Allergie, die für die Antibiose wichtig ist, und das familiäre Prostatakarzinom."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich vermute einen akuten Harnverhalt bei benigner Prostatahyperplasie, ausgelöst durch Pseudoephedrin. Differenzialdiagnostisch denke ich an eine Urethrastriktur, eine Prostatitis und ein Prostatakarzinom.",
+        "Ich denke an die Prostata.",
+        "Ich weiß es nicht genau.",
+        "Es handelt sich sicher um eine Nephrolithiasis, weil der Patient Schmerzen hat. Differenzialdiagnostisch denke ich höchstens noch an eine Appendizitis und eine Pankreatitis."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdachtsdiagnose, Auslöser und Differenzialdiagnosen in Fachsprache.",
+        "Zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
+        "Zu sicher („sicher“), und eine Nephrolithiasis erklärt den Harnverhalt mit voller Blase nicht."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde ihn nach Hause schicken und ihm viel Trinken empfehlen.",
+        "Ich würde ihm ein Spasmolytikum geben und abwarten, bis sich die Blase von selbst entleert.",
+        "Ich würde die Blase sonographisch darstellen, Blut (Blutbild, CRP, Kreatinin, Elektrolyte) und Urin abnehmen und einen transurethralen Dauerkatheter legen. Wir bilanzieren die Urinmenge, setzen Pseudoephedrin ab und beginnen Tamsulosin 0,4 mg 1-0-0. Die Urologie wird hinzugezogen.",
+        "Ich würde Cotrimoxazol geben, weil es gut in die Prostata geht, und die Blase danach mit einem Katheter spülen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gefährlich: ein Harnverhalt muss sofort entlastet werden, sonst droht ein Nierenschaden.",
+        "Gefährlich: Spasmolytika erschweren die Blasenentleerung zusätzlich, und die Entlastung ist dringend.",
+        "Richtig: Diagnostik, Entlastung, Bilanzierung, Alphablocker und Konsil.",
+        "Fachlich falsch: Der Patient hat eine Cotrimoxazol-Allergie, und ohne Infektzeichen ist keine Antibiose indiziert."
+      ],
+      "reply": "Oberarzt: „Gut. Auf welche Komplikation achten Sie nach der Entlastung der Blase?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich erwarte eine Anurie mit Nierenversagen, weil der Katheter die Nieren schädigt.",
+        "Nach der Entlastung kann eine postobstruktive Polyurie auftreten, gelegentlich auch eine Makrohämaturie ex vacuo. Deshalb bilanzieren wir, kontrollieren Elektrolyte und Kreatinin und ersetzen bei Bedarf Flüssigkeit.",
+        "Ich erwarte gar nichts.",
+        "Ich erwarte hohes Fieber und eine Urosepsis, weil jeder Katheter sofort eine Infektion auslöst, und gebe deshalb vorsorglich ein Breitspektrumantibiotikum."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: Der Katheter entlastet die Nieren; typisch ist eher eine vermehrte Urinausscheidung.",
+        "Richtig: postobstruktive Polyurie und Hämaturie ex vacuo, mit passender Überwachung.",
+        "In der Prüfung erwartet man eine begründete Antwort.",
+        "Falsch: Eine routinemäßige Antibiotikaprophylaxe ist nicht indiziert, und nicht jeder Katheter löst sofort eine Urosepsis aus."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Nykturie“?",
+      "options": [
+        "nächtliches Wasserlassen",
+        "häufiges Wasserlassen kleiner Mengen am Tag",
+        "Schmerzen beim Wasserlassen",
+        "Blut im Urin"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Pollakisurie.",
+        "Das ist die Dysurie.",
+        "Das ist die Hämaturie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Harnverhalt“?",
+      "options": [
+        "Blasenentzündung",
+        "Urinverlust ohne Kontrolle",
+        "Unfähigkeit, trotz voller Blase Wasser zu lassen",
+        "stark vermehrte Urinmenge"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Zystitis.",
+        "Das ist die Harninkontinenz.",
+        "Richtig.",
+        "Das ist die Polyurie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Pollakisurie“?",
+      "options": [
+        "nächtliches Wasserlassen",
+        "häufiges Wasserlassen kleiner Urinmengen",
+        "Schmerzen beim Wasserlassen",
+        "fehlende Urinproduktion"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Nykturie.",
+        "Richtig.",
+        "Das ist die Dysurie.",
+        "Das ist die Anurie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Hämaturie“?",
+      "options": [
+        "Eiweiß im Urin",
+        "Zucker im Urin",
+        "Eiter im Urin",
+        "Blut im Urin"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Proteinurie.",
+        "Das ist die Glukosurie.",
+        "Das ist die Pyurie.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Dysurie“?",
+      "options": [
+        "Urinverlust beim Husten",
+        "fehlende Urinausscheidung",
+        "Schmerzen oder Brennen beim Wasserlassen",
+        "vermehrte Urinausscheidung"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Belastungsinkontinenz.",
+        "Das ist die Anurie.",
+        "Richtig.",
+        "Das ist die Polyurie."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

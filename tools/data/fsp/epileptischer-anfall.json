@@ -1,0 +1,691 @@
+{
+  "id": "epileptischer-anfall",
+  "area": "Neurologie",
+  "title": "Zusammengebrochen mit Zuckungen am Morgen",
+  "diagnosis": "Erstmaliger epileptischer Anfall",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Tobias Wagner, 31 Jahre, wird am Morgen vom Rettungsdienst in die Notaufnahme gebracht. Seine Ehefrau begleitet ihn.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Wagner liegt auf der Liege, seine Frau steht neben ihm. Der Rettungsdienst hat ihn vor einer halben Stunde gebracht.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Hallo, Herr Wagner, Sie hatten wohl einen Anfall. Was ist denn genau passiert?",
+        "Guten Morgen. Bitte setzen Sie sich auf, ich muss sofort Ihre Reflexe und Ihre Pupillen untersuchen.",
+        "Guten Morgen, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Wagner? Und wer ist die Dame an Ihrer Seite?",
+        "Guten Morgen, Herr Wagner. Bevor wir beginnen: Haben Sie Ihre Versichertenkarte dabei, und wer ist Ihr Hausarzt? Das brauchen wir zuerst für die Anmeldung."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu umgangssprachlich, ohne Vorstellung, und Sie nehmen die Diagnose schon vorweg.",
+        "Die Untersuchung kommt nach dem Gespräch. Erst begrüßen und sich vorstellen.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor, prüfen die Identität und klären, wer die Begleitperson ist.",
+        "Verwaltungsfragen gehören nicht an den Anfang, und Sie stellen sich nicht vor."
+      ],
+      "reply": "Patient: „Ja, Wagner. Das ist meine Frau Nadine.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Wie hoch ist Ihr Body-Mass-Index, und wann genau sind Sie geboren? Das brauche ich für die Dokumentation und für die Abrechnung.",
+        "Sie sind noch jung, oder?",
+        "Wie viel wiegen Sie?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient, und das Geburtsdatum ist Verwaltung. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Unvollständig: Alter und Größe fehlen."
+      ],
+      "reply": "Patient: „Ich bin 31, 1,82 Meter groß und wiege etwa 78 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie einen Krampfanfall gehabt?",
+        "Welche Symptomatik führte zur Vorstellung bei uns?",
+        "Warum haben Sie nicht zuerst Ihren Hausarzt angerufen, bevor der Rettungswagen gekommen ist?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte, woran Sie sich erinnern."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Geschlossene Frage, die die Antwort vorgibt. Beginnen Sie offen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll und unpassend: Der Patient war bewusstlos und konnte den Rettungsdienst gar nicht selbst rufen.",
+        "Richtig: eine offene Frage, die auch die Erinnerungslücke berücksichtigt."
+      ],
+      "reply": "Patient: „Ich war beim Frühstück, und dann bin ich auf dem Küchenboden aufgewacht. Meine Frau sagt, ich hatte einen Krampfanfall.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": "Herr Wagner kann sich an den Anfall nicht erinnern. Seine Frau hat ihn beobachtet.",
+      "question": "Sie möchten von Frau Wagner genau wissen, wie der Anfall ablief. Was sagen Sie?",
+      "options": [
+        "Frau Wagner, hat Ihr Mann einen tonisch-klonischen Anfall mit Aura und Absence gehabt?",
+        "Frau Wagner, Sie haben es gesehen: Was ist genau passiert? Wurde Ihr Mann steif, hat er gezuckt, und wenn ja, an welchen Körperteilen?",
+        "Hat er sich nur am Arm geschüttelt?",
+        "Ihr Mann hat sicher gekrampft und die Augen verdreht, nicht wahr?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache („tonisch-klonisch“, „Aura“, „Absence“), die Frau Wagner nicht versteht.",
+        "Richtig: offene, laienverständliche Frage an die Zeugin mit konkreten Beispielen.",
+        "Geschlossen und zu eng: Sie erfahren nichts über Versteifung, Beine oder Gesicht.",
+        "Suggestivfrage. Die Zeugin könnte nur zustimmen."
+      ],
+      "reply": "Ehefrau: „Er ist plötzlich vom Stuhl gefallen, wurde ganz steif und hat dann an Armen und Beinen auf beiden Seiten gezuckt. Die Augen waren verdreht, und sein Gesicht wurde blau.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Zeitpunkt, Dauer und Verlauf?",
+      "options": [
+        "Wie war die zeitliche Dynamik des Ereignisses von der Erstmanifestation bis zur postiktalen Reorientierung, und wie lange dauerte der Krampf?",
+        "Wie lange hat es gedauert?",
+        "Um wie viel Uhr war das, wie lange hat das Zucken gedauert, und wie war Ihr Mann danach? War er gleich wieder ansprechbar?",
+        "War es nur ein Anfall?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache („Erstmanifestation“, „postiktal“, „Reorientierung“), die die Frau nicht versteht.",
+        "Zu ungenau: Uhrzeit, Verlauf und die Zeit danach fehlen.",
+        "Richtig: Uhrzeit, Dauer und Zustand danach in einer verständlichen Frage.",
+        "Geschlossene Frage; Uhrzeit, Dauer und Verlauf erfahren Sie nicht."
+      ],
+      "reply": "Ehefrau: „Es war um halb acht. Das Zucken dauerte ungefähr zwei Minuten, ich habe auf die Uhr geschaut. Danach war er etwa eine halbe Stunde verwirrt und sehr müde. Es war nur dieser eine Anfall.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach den Beschwerden, die Herr Wagner jetzt hat. Welche Formulierung passt?",
+      "options": [
+        "Wie fühlen Sie sich jetzt? Haben Sie Schmerzen, zum Beispiel am Kopf, an der Zunge oder in den Muskeln, und wie stark sind sie auf einer Skala von 0 bis 10?",
+        "Haben Sie Kopfschmerzen?",
+        "Wie stark ist Ihr Schmerz auf der visuellen Analogskala von 1 bis 100, und würden Sie ihn eher als neuropathisch, nozizeptiv oder viszeral einordnen?",
+        "Tut Ihnen alles weh?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen für die Lokalisation und der üblichen Skala von 0 bis 10.",
+        "Geschlossen und zu eng: Zunge und Muskeln erfahren Sie so nicht.",
+        "Unübliche Skala und Fachwörter („neuropathisch“, „nozizeptiv“, „viszeral“). In Deutschland fragt man 0 bis 10.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe."
+      ],
+      "reply": "Patient: „Mein Kopf brummt, so 4 von 10. Die Zunge tut richtig weh, 5 von 10, und Arme und Beine fühlen sich an wie nach einem Marathon.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Hatten Sie Nausea, Emesis, eine Aura, einen Zungenbiss oder eine Enuresis, und bestehen fokal-neurologische Defizite wie Parese, Aphasie oder Visusminderung?",
+        "Haben Sie sonst noch was?",
+        "Haben Sie sich auf die Zunge gebissen oder eingenässt? Gab es vorher ein komisches Gefühl, oder sind Ihnen Lähmungen, Sprach- oder Sehstörungen aufgefallen?",
+        "Sie haben sich bestimmt auf die Zunge gebissen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Zungenbiss“, „eingenässt“, „Lähmung“, „Sprachstörung“.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Richtig: konkrete Begleitsymptome und Ausfälle in Laiensprache, inklusive Vorboten.",
+        "Suggestiv: Sie unterstellen das Symptom."
+      ],
+      "reply": "Patient: „Ich habe mir seitlich auf die Zunge gebissen, das spüre ich. Meine Frau sagt, ich habe eingenässt. Vorher hatte ich kein komisches Gefühl, soweit ich weiß. Lähmungen, Sprach- oder Sehstörungen habe ich jetzt nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie ist die Vegetativa?",
+        "Hatten Sie Fieber oder Schüttelfrost? Wie sind Appetit, Schlaf, Stuhlgang und Wasserlassen, und haben Sie abgenommen?",
+        "Haben Sie Pyrexie, Nachtschweiß, Insomnie, Appetenzminderung, Dysurie, Obstipation, Diarrhö und einen unbeabsichtigten Gewichtsverlust?",
+        "Ist sonst alles normal bei Ihnen?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Richtig: Fieber, Appetit, Schlaf, Stuhlgang, Wasserlassen und Gewicht in Laiensprache.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Pyrexie, Insomnie, Dysurie, Obstipation).",
+        "Zu allgemein; der Patient sagt einfach „ja“."
+      ],
+      "reply": "Patient: „Fieber hatte ich nicht. Appetit, Stuhlgang und Wasserlassen sind normal. Geschlafen habe ich in den letzten zwei Nächten nur vier bis fünf Stunden, weil unser Sohn krank war. Abgenommen habe ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie eine Epilepsie, einen Schädel-Hirn-Trauma, eine Meningitis oder eine arterielle Hypertonie, und gab es Voroperationen?",
+        "Sind Sie sonst gesund?",
+        "Hatten Sie schon einmal solche Anfälle oder Ohnmachten, und was hat der Arzt damals dazu gesagt?",
+        "Welche Erkrankungen hatten Sie bisher, zum Beispiel einen Unfall mit Kopfverletzung, eine Hirnhautentzündung oder Anfälle als Kind? Wurden Sie schon einmal operiert?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachsprache und ein Grammatikfehler („einen Schädel-Hirn-Trauma“ muss „ein Schädel-Hirn-Trauma“ heißen).",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Zu eng: Kopfverletzung, Hirnhautentzündung und Operationen fehlen.",
+        "Richtig: laienverständlich, mit den für Anfälle wichtigen Beispielen, und die Operationen sind mitgefragt."
+      ],
+      "reply": "Patient: „Als Kind hatte ich mit zwei Jahren Fieberkrämpfe, das hat mir meine Mutter erzählt. Eine Kopfverletzung oder Hirnhautentzündung hatte ich nie. Operiert wurde ich nur an den Weisheitszähnen.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie regelmäßig Medikamente ein? Auch Mittel ohne Rezept, pflanzliche Mittel oder Nahrungsergänzung?",
+        "Nehmen Sie Antikonvulsiva, Antidepressiva oder Neuroleptika ein, und in welcher Dosierung applizieren Sie diese?",
+        "Sie nehmen doch bestimmt keine Tabletten?",
+        "Tabletten?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: regelmäßige und frei verkäufliche Mittel sind eingeschlossen.",
+        "Fachsprache („Antikonvulsiva“, „Neuroleptika“, „applizieren“) und zu eng.",
+        "Suggestivfrage. Fragen Sie offen.",
+        "Kein vollständiger Satz und zu ungenau."
+      ],
+      "reply": "Patient: „Regelmäßig nichts. Nur manchmal Ibuprofen 400 bei Rückenschmerzen, zuletzt vor einer Woche. Nahrungsergänzungsmittel nehme ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Sind Sie allergisch?",
+        "Sind Sie gegen Kontrastmittel allergisch? Das ist wichtig, weil wir Ihnen vielleicht gleich eine Computertomographie machen, und dabei geben wir oft Kontrastmittel.",
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Geschlossene, zu knappe Frage; Auslöser und Reaktion bleiben offen.",
+        "Zu eng: Allergien gegen Medikamente, Lebensmittel oder Pflaster übersehen Sie.",
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patient: „Gegen Haselnüsse. Da schwellen mir die Lippen an. Gegen Medikamente habe ich keine Allergie.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucher oder Alkoholiker?",
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche und wie viel gestern Abend? Nehmen Sie Drogen?",
+        "Wie ist Ihr Nikotin-, Alkohol- und Drogenabusus?",
+        "Sie trinken wahrscheinlich zu viel, oder? Das kann nämlich einen Anfall auslösen, und dann müssen wir über eine Entzugsbehandlung sprechen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Alkoholiker“ ist wertend und verletzend.",
+        "Richtig: neutral, konkret, mit Menge und mit Blick auf den Vorabend.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Suggestiv, wertend und voreilig: Sie unterstellen eine Alkoholkrankheit."
+      ],
+      "reply": "Patient: „Ich rauche seit acht Jahren etwa 10 Zigaretten am Tag. Alkohol trinke ich sonst nur am Wochenende, ein bis zwei Bier. Gestern Abend waren es drei Bier zu 0,5 Liter. Drogen nehme ich keine.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese bezüglich neurologischer Erkrankungen?",
+        "Hat in Ihrer Familie jemand auch Anfälle?",
+        "Sind Ihre Eltern und Geschwister noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Krampfanfälle, Schlaganfälle oder Herzerkrankungen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Familienanamnese“ und „neurologisch“ sind Fachwörter.",
+        "Zu eng und suggestiv; andere Erkrankungen erfahren Sie nicht.",
+        "Zu eng: Todesursachen allein reichen nicht, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Richtig: offen, mit passenden Beispielen."
+      ],
+      "reply": "Patient: „Mein Onkel väterlicherseits hat Epilepsie, er nimmt Tabletten. Mein Vater hat Bluthochdruck. Meine Mutter ist gesund.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was machen Sie beruflich, arbeiten Sie zum Beispiel auf Leitern oder mit Maschinen? Wie wohnen Sie, und fahren Sie Auto?",
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie hoch ist Ihr monatliches Einkommen? Wie lautet Ihre genaue Adresse?",
+        "Haben Sie eine feste Arbeit?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beruf, Wohnsituation und Autofahren, alles wichtig für Sicherheit und Beratung.",
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: Einkommen und Adresse gehören nicht in die Sozialanamnese, Beruf und Autofahren fehlen.",
+        "Zu eng; Sie erfahren weder die Tätigkeit noch die Wohnsituation."
+      ],
+      "reply": "Patient: „Ich bin Elektriker und arbeite oft auf Leitern und Baustellen. Ich wohne mit meiner Frau und unserem zweijährigen Sohn im Haus. Ich fahre jeden Tag mit dem Auto zur Arbeit.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben ganz sicher eine Epilepsie, und die bleibt Ihr Leben lang. Sie müssen dann immer Tabletten nehmen und dürfen nie wieder Auto fahren.",
+        "Ich vermute, dass es ein epileptischer Anfall war: eine kurze Störung der elektrischen Aktivität im Gehirn. Warum das passiert ist, müssen wir noch klären.",
+        "Sie hatten einen generalisierten tonisch-klonischen Anfall bei erstmaliger Genese.",
+        "Das war wahrscheinlich nur ein Kreislaufkollaps, da müssen Sie sich keine Sorgen machen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Voreilig und beängstigend: Eine Epilepsie ist nach einem einzelnen Anfall nicht gesichert.",
+        "Richtig: Verdacht statt Gewissheit, Laiensprache, ehrlich offen für die Ursachensuche.",
+        "Fachsprache; der Patient versteht die Diagnose nicht.",
+        "Verharmlosend und medizinisch unpassend: Zuckungen und Zungenbiss sprechen für einen Anfall."
+      ],
+      "reply": "Patient: „Ein Anfall? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Kann ich nach Hause, und darf ich morgen wieder Auto fahren?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, das war ein einmaliger Anfall. Sie dürfen nach Hause und können morgen wieder Auto fahren.",
+        "Das entscheidet der Oberarzt, ich weiß es nicht.",
+        "Nein, wir möchten Sie heute hierbehalten. Wir nehmen Blut ab, schreiben ein EKG, machen eine Bildgebung vom Kopf und eine Hirnstrommessung, das EEG. Auto fahren dürfen Sie vorerst nicht; das besprechen wir mit den Neurologen.",
+        "Wir machen eine Kernspintomographie und schicken Sie dann direkt mit einer Dauertherapie nach Hause. Autofahren ist erlaubt, wenn Sie sich fit fühlen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch und gefährlich: Die Ursache ist nicht geklärt, und nach einem Anfall besteht zunächst ein Fahrverbot.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, Fahrverbot, laienverständlich.",
+        "Falsch: Eine Dauertherapie wird nach einem ersten Anfall nicht routinemäßig begonnen, und Autofahren ist vorerst verboten."
+      ],
+      "reply": "Patient: „Verstehe. Dann fahre ich vorerst nicht. Danke für die Erklärung.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": null,
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Der 31-jährige Patient Tobias Wagner stellte sich heute Morgen in Begleitung seiner Ehefrau mit dem Rettungsdienst in unserer Notaufnahme vor, nachdem er einen Anfall hatte, an dem er sich nicht erinnert.",
+        "Herr Tobias Wagner, ein 31-jähriger Patient, wurde heute Morgen nach einem erstmaligen Krampfanfall mit Bewusstseinsverlust durch den Rettungsdienst in unsere Notaufnahme gebracht.",
+        "Herr Wagner ist 31 und hat gekrampft.",
+        "Herr Tobias Wagner (31 J.) hat sich heute in unserer Notaufnahme mit dem Rettungsdienst vorgestellt wegen Krampf."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Grammatikfehler: „an dem er sich nicht erinnert“ muss „an den er sich nicht erinnert“ heißen (sich erinnern an + Akkusativ).",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptom.",
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Satzbau und Grammatik falsch („wegen Krampf“), das Leitsymptom ist ungenau."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Um 7:30 Uhr kam es beim Frühstück zu einem Sturz mit Zucken, das ungefähr zwei Minuten dauerte, und danach war er müde.",
+        "Fremdanamnestisch kam es um 7:30 Uhr ohne Prodromi zu einem Sturz mit tonischer Versteifung, gefolgt von klonischen Zuckungen der linken Extremitäten über ca. 20 Minuten, anschließend postiktale Verwirrtheit.",
+        "Fremdanamnestisch seien um 7:30 Uhr ein Sturz mit generalisierten Zuckungen aufgetreten, ca. zwei Minuten, mit Zyanose.",
+        "Fremdanamnestisch kam es um 7:30 Uhr beim Frühstück ohne Aura zu einem Sturz mit tonischer Versteifung, gefolgt von generalisierten klonischen Zuckungen über ca. 2 Minuten mit Zyanose und Blickdeviation. Anschließend postiktale Verwirrtheit für ca. 30 Minuten. Amnesie für das Ereignis."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Inhaltlich falsch: Die Zuckungen betrafen beide Körperseiten und dauerten ca. 2 Minuten.",
+        "Konjunktiv („seien aufgetreten“) passt nicht in den Befund, und es ist unvollständig: Verwirrtheit danach und Amnesie fehlen.",
+        "Richtig: Fachsprache und alle Merkmale (Zeit, Ablauf, Dauer, Zyanose, postiktale Phase, Amnesie)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Er hat sich auf die Zunge gebissen und hat eingepinkelt. Kopfweh hat er auch.",
+        "Es bestanden ein lateraler Zungenbiss und Einnässen. Kopfschmerzen (NRS 4/10), Zungenschmerzen (NRS 5/10) und Myalgien. Fokal-neurologische Defizite wurden verneint. Fieber bis 38,5 °C, Schlafdefizit (vier bis fünf Stunden), Appetit, Stuhlgang und Miktion unauffällig.",
+        "Es bestanden ein lateraler Zungenbiss und Einnässen. Kopfschmerzen (NRS 4/10), Zungenschmerzen (NRS 5/10) und Myalgien. Fokal-neurologische Defizite, Sprach- und Sehstörungen wurden verneint. Kein Fieber; Schlafdefizit (vier bis fünf Stunden in den letzten zwei Nächten); Appetit, Stuhlgang und Miktion unauffällig.",
+        "Es bestanden ein Zungenbiss, Einnässen und eine Hemiparese links. Kein Fieber."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Vulgär („eingepinkelt“) und unvollständig.",
+        "Inhaltlich falsch: Der Patient hatte kein Fieber.",
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Inhaltlich falsch: Eine Hemiparese wurde verneint, und die Angaben sind unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: keine. Medikation: keine.",
+        "Anamnestisch Fieberkrämpfe im Alter von zwei Jahren. Kein Z. n. Schädel-Hirn-Trauma oder Meningitis. Z. n. Weisheitszahnentfernung. Dauermedikation: keine; Bedarfsmedikation: Ibuprofen 400 mg bei Bedarf, zuletzt vor einer Woche.",
+        "Anamnestisch bekannte Epilepsie seit dem Kindesalter. Z. n. Schädel-Hirn-Trauma. Medikation: Levetiracetam 500 mg 1-0-1, Ibuprofen 400 mg 1-0-1.",
+        "Kinderkrankheit Fieberkrämpfe. Medikamente nimmt er manchmal gegen Rücken, Ibuprofen 400."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: Fieberkrämpfe im Kindesalter und die Bedarfsmedikation fehlen.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach), Negativbefunde und genaue Angabe der Bedarfsmedikation.",
+        "Inhaltlich falsch: Es ist keine Epilepsie und kein Schädel-Hirn-Trauma bekannt, und der Patient nimmt weder Levetiracetam noch Ibuprofen regelmäßig.",
+        "Laiensprache und ohne Dosierungsangabe in Fachform."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Haselnussallergie (Lippenschwellung). Nikotinkonsum ca. 8 py, gelegentlicher Alkoholkonsum, gestern Abend drei Bier à 0,5 l, gelegentlicher Cannabiskonsum. Familienanamnese: Onkel väterlicherseits mit Epilepsie, Vater arterielle Hypertonie. Der Patient ist Elektriker, verheiratet, lebt mit Ehefrau und Sohn (2 J.) und fährt täglich Auto.",
+        "Allergie: keine. Nikotin: 4 py.",
+        "Haselnussallergie (Lippenschwellung). Nikotinkonsum ca. 4 py, am Wochenende Alkohol, gestern Abend drei Bier à 0,5 l, keine Drogen. Familienanamnese: Onkel väterlicherseits mit Epilepsie, Vater arterielle Hypertonie. Der Patient ist Elektriker, verheiratet, lebt mit Ehefrau und Sohn (2 J.) und fährt täglich Auto.",
+        "Er verträgt keine Nüsse, raucht, trinkt und hat einen Onkel mit Epilepsie."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: 10 Zigaretten am Tag über 8 Jahre sind ca. 4 py, nicht 8, und Drogenkonsum wurde verneint.",
+        "Unvollständig: Die Art der Allergie, Alkohol, Familienanamnese und Sozialanamnese fehlen.",
+        "Richtig: 10 Zigaretten am Tag über 8 Jahre sind etwa 4 py (pack years), alle Angaben stimmen.",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Epilepsie.",
+        "Es besteht eine gesicherte Epilepsie mit generalisierten Anfällen. Differenzialdiagnostisch kommen ein Schlaganfall, ein Myokardinfarkt und eine Migräne in Betracht.",
+        "Anamnestisch besteht der Verdacht auf einen Fieberkrampf. Differenzialdiagnostisch kommen eine Synkope, ein Schlaganfall und eine Migräne in Betracht.",
+        "Anamnestisch besteht der Verdacht auf einen erstmaligen generalisierten tonisch-klonischen Anfall, möglicherweise durch Schlafentzug und Alkohol provoziert. Differenzialdiagnostisch kommen eine konvulsive Synkope, ein symptomatischer Anfall bei intrakranieller Läsion und eine metabolische Ursache (z. B. Hypoglykämie) in Betracht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache-nah, kein Verdacht und keine Differenzialdiagnosen; eine Epilepsie ist nach einem Anfall nicht gesichert.",
+        "Zu sicher: Eine Epilepsie setzt mehr als einen unprovozierten Anfall oder ein hohes Wiederholungsrisiko voraus. Auch die Differenzialdiagnosen passen nicht.",
+        "Fachlich falsch: Ein Fieberkrampf betrifft Kleinkinder und setzt Fieber voraus; der Patient hatte kein Fieber.",
+        "Richtig: Verdacht statt Gewissheit, Provokationsfaktoren und sinnvolle Differenzialdiagnosen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir empfehlen eine sofortige antikonvulsive Dauertherapie mit Phenytoin 300 mg 1-0-1 und die Entlassung nach Hause mit ambulanter Wiedervorstellung beim Hausarzt in einer Woche.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (u. a. Blutbild, Elektrolyte, Glukose, Nieren- und Leberwerte, CK), ein 12-Kanal-EKG, eine cMRT (alternativ CCT), ein EEG sowie ein neurologisches Konsil. Wir empfehlen eine stationäre Überwachung. Eine Dauertherapie ist nach einem ersten Anfall nicht routinemäßig indiziert. Fahrverbot.",
+        "Wir machen Blut und ein CT.",
+        "Zur weiteren Abklärung empfehlen wir eine Röntgen-Thorax-Aufnahme und eine Gastroskopie."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Nicht leitliniengerecht: Nach einem ersten Anfall beginnt man nicht routinemäßig eine Dauertherapie, und ohne Abklärung darf der Patient nicht entlassen werden.",
+        "Richtig: Diagnostik, Überwachung und Therapieentscheidung in vollständigen Sätzen.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Nicht die passenden Untersuchungen für diesen Verdacht."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Ich möchte Ihnen Herrn Tobias Wagner vorstellen, einen 31-jährigen Patienten, der heute Morgen nach einem erstmaligen Krampfanfall mit Bewusstseinsverlust und Zungenbiss vom Rettungsdienst zu uns gebracht wurde.",
+        "Der Patient hat gekrampft, er heißt Wagner.",
+        "Also, der Mann ist beim Frühstück umgekippt ...",
+        "Herr Wagner hat eine Epilepsie, die wir behandeln müssen, und er kommt mit dem Rettungswagen, weil er gestern Abend Alkohol getrunken hat und heute Morgen im Bett gekrampft haben soll."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Name, Alter, Leitsymptom und Zeitpunkt in einem Satz.",
+        "Unstrukturiert und umgangssprachlich.",
+        "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
+        "Sie beginnen mit einer ungesicherten Diagnose, und der Satz enthält einen Fehler: Der Anfall war beim Frühstück, nicht im Bett."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Der Anfall dauerte laut Ehefrau ca. 20 Minuten mit Zuckungen nur der linken Körperhälfte und ohne Zungenbiss. Eine postiktale Verwirrtheit bestand nicht.",
+        "Er hat alles Mögliche.",
+        "Er hat Kopfschmerzen und Muskelkater.",
+        "Fremdanamnestisch ein generalisierter tonisch-klonischer Anfall von ca. 2 Minuten Dauer mit Zyanose, lateralem Zungenbiss und Einnässen, danach ca. 30 Minuten postiktal verwirrt. Aktuell Kopfschmerzen und Myalgien, keine fokal-neurologischen Ausfälle, kein Fieber."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich falsch: Der Anfall dauerte ca. 2 Minuten, betraf beide Seiten, es gab einen Zungenbiss und eine postiktale Phase.",
+        "Keine Information.",
+        "Unvollständig: Der Anfall selbst fehlt.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist gesund und hatte noch nie Beschwerden.",
+        "Als Kind Fieberkrämpfe mit zwei Jahren, sonst keine Vorerkrankungen, kein Schädel-Hirn-Trauma, keine Meningitis. Keine Dauermedikation. Familienanamnese positiv: Onkel väterlicherseits mit Epilepsie. Schlafdefizit und Alkohol am Vorabend (drei Bier). Haselnussallergie.",
+        "Bekannte Epilepsie seit der Kindheit unter Levetiracetam, das er vor zwei Tagen abgesetzt hat. Keine Allergien. Familienanamnese leer, aber Schlafdefizit und Alkoholkonsum am Vorabend.",
+        "Er nimmt Ibuprofen und raucht."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: Es gibt relevante Angaben (Fieberkrämpfe, Familienanamnese, Schlafdefizit).",
+        "Richtig: relevante Risikofaktoren und Auslöser, Familienanamnese und Allergie.",
+        "Inhaltlich falsch: Es ist keine Epilepsie bekannt, es gab keine Medikation, und die Familienanamnese ist positiv.",
+        "Unvollständig: Die wichtigen Angaben fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich vermute einen erstmaligen generalisierten tonisch-klonischen Anfall, möglicherweise durch Schlafentzug und Alkohol provoziert. Differenzialdiagnostisch denke ich an eine konvulsive Synkope, einen symptomatischen Anfall bei intrakranieller Läsion und eine metabolische Ursache wie eine Hypoglykämie.",
+        "Ich denke an einen Krampf.",
+        "Ich bin nicht sicher, vielleicht etwas mit dem Kopf.",
+        "Es handelt sich sicher um eine Epilepsie, weil der Onkel auch eine hat. Differenzialdiagnostisch denke ich höchstens an eine Migräne und einen Schlaganfall, und eine Bildgebung ist deshalb nicht nötig."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdachtsdiagnose, Auslöser und Differenzialdiagnosen in Fachsprache.",
+        "Zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
+        "Zu sicher, die Begründung ist fachlich falsch, und eine Bildgebung ist nach einem ersten Anfall nötig."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde Herrn Wagner nach Hause schicken und ihm sagen, dass er morgen wieder Auto fahren darf.",
+        "Ich würde sofort eine Dauertherapie mit Phenytoin ansetzen.",
+        "Ich würde Blut abnehmen, ein Röntgen Thorax machen und eine Lumbalpunktion durchführen, weil bei jedem Anfall Nervenwasser entnommen werden muss.",
+        "Ich würde Blut abnehmen, u. a. Elektrolyte, Glukose, Nieren- und Leberwerte sowie CK, ein EKG schreiben und eine cMRT, alternativ ein CCT, veranlassen. Dazu ein EEG und das neurologische Konsil. Eine Dauertherapie würde ich nach einem ersten Anfall nicht routinemäßig beginnen; der Patient darf vorerst nicht Auto fahren."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Gefährlich: Die Ursache ist ungeklärt, und es besteht ein Fahrverbot.",
+        "Nicht leitliniengerecht: Nach einem ersten Anfall startet man nicht routinemäßig eine Dauertherapie, und Phenytoin ist kein Mittel erster Wahl.",
+        "Fachlich falsch: Eine Lumbalpunktion ist nur bei Verdacht auf eine Infektion des Nervensystems indiziert, nicht bei jedem Anfall.",
+        "Richtig: Diagnostik, Konsil und Therapieentscheidung nach Leitlinie, mit Fahrverbot."
+      ],
+      "reply": "Oberarzt: „Gut. Und wenn Herr Wagner hier in der Notaufnahme erneut krampft und der Anfall länger als fünf Minuten dauert?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich würde Haloperidol 5 mg i.v. und Metoprolol 5 mg i.v. geben und den Patienten fixieren, bis er sich beruhigt hat, danach würde ich Phenytoin geben.",
+        "Ich würde Lorazepam 4 mg i.v. geben (0,1 mg/kg, maximal 4 mg), ohne i.v.-Zugang Midazolam 10 mg i.m., und Atmung sowie Sauerstoffsättigung überwachen.",
+        "Ich würde abwarten, bis der Anfall von selbst aufhört.",
+        "Ich würde Phenytoin 500 mg als Kurzinfusion geben, weil Benzodiazepine immer die Atmung hemmen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch und gefährlich: Weder Haloperidol noch Metoprolol beenden einen Anfall, und Fixieren ist keine Therapie.",
+        "Richtig: Benzodiazepin als Erstlinie beim Anfall über fünf Minuten, mit Alternative und Überwachung.",
+        "Gefährlich: Ein Anfall über fünf Minuten ist ein Notfall (Status epilepticus) und muss durchbrochen werden.",
+        "Falsch: Erstlinie ist ein Benzodiazepin; Phenytoin ist Zweitlinie."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „postiktal“?",
+      "options": [
+        "vor dem Anfall",
+        "nach dem Anfall",
+        "zwischen zwei Anfällen",
+        "während des Anfalls"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist präiktal (Aura).",
+        "Richtig.",
+        "Das ist interiktal.",
+        "Das ist iktal."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Aura“?",
+      "options": [
+        "Warnzeichen vor einem Anfall, zum Beispiel ein komisches Gefühl",
+        "kurze Ohnmacht durch Kreislaufprobleme",
+        "Verwirrtheit nach dem Anfall",
+        "Muskelzucken ohne Bewusstseinsverlust"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Synkope.",
+        "Das ist die postiktale Verwirrtheit.",
+        "Das ist ein Myoklonus."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „tonisch-klonisch“?",
+      "options": [
+        "kurze Abwesenheit ohne Sturz",
+        "schlaffe Lähmung der Muskeln",
+        "Verkrampfung der Muskeln, gefolgt von rhythmischem Zucken",
+        "Zucken nur an einem Finger"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist eine Absence.",
+        "Das ist eine Atonie.",
+        "Richtig.",
+        "Das ist ein fokaler motorischer Anfall."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Status epilepticus“?",
+      "options": [
+        "erster Anfall im Leben",
+        "Anfallsfreiheit unter Therapie",
+        "Anfall im Schlaf",
+        "Anfall über fünf Minuten oder Anfälle ohne Erholung dazwischen"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist der Erstanfall.",
+        "Das ist die Remission.",
+        "Das ist ein nächtlicher (nokturnaler) Anfall.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Fremdanamnese“?",
+      "options": [
+        "Befragung des Patienten selbst",
+        "Angaben von Angehörigen oder Zeugen",
+        "Krankengeschichte der Familie",
+        "Untersuchung durch einen anderen Arzt"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Eigenanamnese.",
+        "Richtig.",
+        "Das ist die Familienanamnese.",
+        "Das ist ein Konsil."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

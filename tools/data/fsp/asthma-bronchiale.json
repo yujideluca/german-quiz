@@ -1,0 +1,691 @@
+{
+  "id": "asthma-bronchiale",
+  "area": "Pneumologie",
+  "title": "Atemnot und Pfeifen in der Brust",
+  "diagnosis": "Asthma bronchiale (Anfall)",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Frau Lena Hoffmann, 28 Jahre, stellt sich am späten Abend in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Frau Hoffmann sitzt aufrecht auf der Liege, stützt die Arme auf die Knie und atmet hörbar pfeifend.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Abend, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Frau Hoffmann?",
+        "Hallo, Sie sehen ja schlecht aus. Setzen Sie sich mal richtig hin und atmen Sie tief durch, dann geht es gleich besser.",
+        "Guten Abend. Ich lege Ihnen sofort einen Zugang und höre Ihre Lunge ab, danach reden wir.",
+        "Guten Abend, Frau Hoffmann. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte dabei, und sind Sie gesetzlich oder privat versichert? Das brauchen wir zuerst für die Anmeldung."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität der Patientin.",
+        "Zu umgangssprachlich und unhöflich, und Sie stellen sich nicht vor. Atemnot lösen Sie nicht mit einem Rat zum tiefen Atmen.",
+        "Ohne Vorstellung und ohne ein Wort an die Patientin. Erst begrüßen und sich vorstellen, dann untersuchen.",
+        "Verwaltungsfragen gehören nicht an den Anfang, besonders nicht bei einer Patientin mit Atemnot. Sie stellen sich auch nicht vor."
+      ],
+      "reply": "Patientin: „Ja ... Hoffmann ... Guten Abend, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie hoch ist Ihr Body-Mass-Index?",
+        "Sie sind noch ziemlich jung, nicht wahr, unter dreißig?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihre genaue Anschrift, und wer ist Ihr Hausarzt? Außerdem brauche ich Ihre Telefonnummer und den Namen Ihrer Krankenkasse."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Den BMI kennt kaum eine Patientin. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen nach dem Alter.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Anschrift und Hausarzt sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
+      ],
+      "reply": "Patientin: „Ich bin 28, 1,70 Meter groß und wiege 62 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Atemnot?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte, so gut es geht.",
+        "Welche Symptomatik besteht bei Ihnen, und seit wann liegt sie vor? Bitte schildern Sie mir die Beschwerden möglichst genau und in der richtigen zeitlichen Reihenfolge.",
+        "Warum haben Sie nicht zuerst Ihre Hausärztin angerufen, statt mitten in der Nacht in die Notaufnahme zu kommen?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "Richtig: eine offene Frage lässt die Patientin selbst erzählen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
+      ],
+      "reply": "Patientin: „Ich bekomme ganz schlecht Luft. Es pfeift in der Brust, und der Husten hört nicht auf.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten wissen, was die Luftnot ausgelöst haben könnte. Was sagen Sie?",
+      "options": [
+        "Haben Sie sich wieder aufgeregt? Bei Stress kommt so etwas ja oft vor.",
+        "Welche Triggerfaktoren und Allergene haben die Exazerbation provoziert? Bitte nennen Sie mir alle Noxen, denen Sie in den letzten vierundzwanzig Stunden ausgesetzt waren.",
+        "Es war bestimmt die Katze, oder?",
+        "Ist die Luftnot bei einer bestimmten Gelegenheit angefangen, zum Beispiel nach Anstrengung, in der Kälte oder bei Kontakt mit Tieren, Staub oder Pollen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Wertend und suggestiv („wieder“). Die Patientin fühlt sich beschuldigt.",
+        "„Triggerfaktoren“, „Allergene“ und „Exazerbation“ sind Fachwörter; die Patientin versteht sie nicht.",
+        "Suggestivfrage. Die Patientin könnte Ihnen nur zustimmen, und Sie wissen von der Katze nichts.",
+        "Richtig: laienverständlich, mit Beispielen für Auslöser, ohne die Antwort vorzugeben."
+      ],
+      "reply": "Patientin: „Ich war am Nachmittag bei einer Freundin, die zwei Katzen hat. Jetzt im Frühling sind auch viele Pollen unterwegs.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Seit wann haben Sie die Luftnot, und ist sie seitdem besser, schlechter oder gleich geblieben? Haben Sie schon etwas dagegen genommen?",
+        "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch rezidivierend? Bitte geben Sie auch den Zeitpunkt der Erstdiagnose an.",
+        "Seit heute Nachmittag, richtig? Und es wird immer schlimmer?",
+        "Hat es plötzlich angefangen?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beginn, Verlauf und bisherige Selbstbehandlung in einer klaren, laienverständlichen Frage.",
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „rezidivierend“ versteht die Patientin nicht.",
+        "Suggestivfrage; Sie legen Zeitpunkt und Verlauf schon fest.",
+        "Geschlossene Frage; sie erfasst den Verlauf nicht."
+      ],
+      "reply": "Patientin: „Seit etwa drei Stunden, und es wird immer schlimmer. Mein Notfallspray hat heute Abend nur kurz geholfen, ich habe schon sechs Hübe genommen.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach der Stärke der Luftnot und der Belastbarkeit. Welche Formulierung passt?",
+      "options": [
+        "Welcher NYHA-Klasse würden Sie sich zuordnen? Und wie hoch ist Ihre Belastbarkeit gemessen in Watt auf dem Fahrradergometer?",
+        "Wie stark ist die Luftnot im Moment auf einer Skala von 0 bis 10? Können Sie noch ganze Sätze sprechen, und wie viele Stockwerke schaffen Sie sonst ohne Pause?",
+        "Wie stark ist die Luftnot auf einer Skala von 1 bis 100?",
+        "Ist es schlimm?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Die NYHA-Klasse ist eine Fachklassifikation für Herzinsuffizienz und für die Patientin unverständlich.",
+        "Richtig: übliche Skala von 0 bis 10 und alltagsnahe Frage nach der Belastbarkeit.",
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe."
+      ],
+      "reply": "Patientin: „Ich kann nur in kurzen Sätzen sprechen. Es ist eine 8 von 10. Sonst schaffe ich drei Stockwerke ohne Probleme, jetzt komme ich kaum bis zum Bad.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Bestehen Husten mit Expektoration, thorakale Schmerzen, Palpitationen oder periphere Ödeme? Und bestehen zusätzlich eine Dysphagie, eine Hämoptoe oder eine Synkope?",
+        "Haben Sie Fieber und gelben Auswurf, wie bei einer Lungenentzündung?",
+        "Müssen Sie husten, und kommt dabei Schleim hoch? Haben Sie Schmerzen oder Druck in der Brust, Herzklopfen oder geschwollene Beine?",
+        "Haben Sie sonst noch was?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Husten“, „Schleim“, „Herzklopfen“, „geschwollene Beine“.",
+        "Geschlossene Frage mit vorweggenommener Diagnose; andere Symptome werden nicht erfasst.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, mit Blick auf Herz und Beine als Differenzialdiagnose.",
+        "Zu umgangssprachlich und unkonkret."
+      ],
+      "reply": "Patientin: „Ich habe trockenen Husten, nur wenig zäher, weißlicher Schleim. Die Brust fühlt sich eng an, aber es tut nicht weh. Mein Herz rast. Die Beine sind normal.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Hatten Sie Fieber oder Schüttelfrost? Wie sind Schlaf, Appetit, Gewicht, Stuhlgang und Wasserlassen?",
+        "Wie ist die Vegetativa?",
+        "Haben Sie Nachtschweiß, Gewichtsverlust, Dysurie, Obstipation und Diarrhö? Und wie sind Ihre Libido und Ihre Menstruation?",
+        "Ist sonst alles normal bei Ihnen?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fieber, Schlaf, Appetit, Gewicht, Stuhlgang und Wasserlassen in Laiensprache.",
+        "Fachjargon, den eine Patientin nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Obstipation, Diarrhö), und der Schlaf fehlt.",
+        "Zu allgemein; die Patientin sagt einfach „ja“."
+      ],
+      "reply": "Patientin: „Fieber hatte ich nicht. Wegen des Hustens wache ich seit etwa einer Woche nachts auf. Appetit, Gewicht, Stuhlgang und Wasserlassen sind normal.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie eine COPD, ein Asthma bronchiale oder eine atopische Dermatitis, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel an der Lunge, der Haut oder der Nase? Wurden Sie schon einmal operiert oder im Krankenhaus behandelt?",
+        "Sind Sie gesund? Dann brauchen wir ja nichts weiter zu fragen und können gleich mit der Behandlung anfangen.",
+        "Sie haben doch sicher Asthma, oder?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („COPD“, „atopische Dermatitis“). Mit Patienten sprechen Sie Laiensprache.",
+        "Richtig: mit Beispielen, laienverständlich, und Operationen und Klinikaufenthalte sind mitgefragt.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Suggestivfrage. Die Patientin könnte nur zustimmen."
+      ],
+      "reply": "Patientin: „Ich habe seit der Kindheit Asthma, außerdem Heuschnupfen und als Kind hatte ich Neurodermitis. Die Mandeln wurden mit acht Jahren entfernt. Vor einem Jahr war ich wegen eines Anfalls zwei Tage im Krankenhaus.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Ihre Medikamente eigentlich regelmäßig, oder vergessen Sie das oft?",
+        "Welche inhalativen Kortikosteroide und Beta-2-Sympathomimetika applizieren Sie? Und welche Applikationsform nutzen Sie für die Dauermedikation?",
+        "Welche Medikamente nehmen Sie regelmäßig oder bei Bedarf ein, und in welcher Dosierung? Auch Mittel ohne Rezept?",
+        "Nehmen Sie Tabletten?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Vorwurfsvoll und ohne konkrete Angabe zu Name und Dosis.",
+        "Fachsprache („Kortikosteroide“, „Sympathomimetika“, „applizieren“).",
+        "Richtig: Name, Dosierung, Bedarfsmedikation und auch frei verkäufliche Mittel.",
+        "Zu ungenau: Spray, Dosis und Bedarfsmedikation fehlen."
+      ],
+      "reply": "Patientin: „Symbicort 200/6, morgens und abends je einen Hub. Bei Bedarf Salbutamol-Spray, 100 Mikrogramm pro Hub. Heute habe ich sechs Hübe genommen. Dazu Cetirizin 10 Milligramm abends.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Tiere, Pollen oder Lebensmittel? Wie äußert sich das?",
+        "Allergie?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht gleich ein Antibiotikum geben möchten. Oder gegen Sulfonamide?",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Zu eng: Allergien gegen Tiere, Pollen oder Lebensmittel übersehen Sie, und ein Antibiotikum ist hier nicht geplant.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patientin: „Gegen Katzenhaare und Gräserpollen. Dann niese ich, und die Augen jucken. Gegen Medikamente habe ich keine Allergie.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
+        "Sie rauchen doch hoffentlich nicht, bei Ihrem Asthma? Das ist bei Asthma wirklich unvernünftig, das wissen Sie doch bestimmt, oder nicht?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus?",
+        "Trinken Sie zu viel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: neutral, konkret, mit Menge.",
+        "Wertend und suggestiv. Die Patientin wird sich eher rechtfertigen als ehrlich antworten.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Wertend und ungenau."
+      ],
+      "reply": "Patientin: „Ich rauche seit acht Jahren etwa fünf Zigaretten am Tag. Alkohol nur selten, ein Glas Wein am Wochenende. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Hat Ihre Mutter auch Asthma?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel an Lunge, Haut oder Herz, oder Allergien?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Zu eng: Geschwister fehlen, und häufige Erkrankungen und Allergien in der Familie erfahren Sie so nicht.",
+        "Suggestivfrage und zu eng; Sie kennen die Familie der Patientin nicht.",
+        "Richtig: offen, mit passenden Beispielen."
+      ],
+      "reply": "Patientin: „Meine Mutter hat auch Asthma und Heuschnupfen. Mein Bruder hat Neurodermitis. Mein Vater ist gesund.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen? Gibt es bei Ihnen zu Hause Haustiere?",
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Können Sie sich Ihre Medikamente überhaupt leisten? Und leben Sie von Hartz IV oder arbeiten Sie überhaupt?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beruf, Wohnsituation und Haustiere, wichtig für Auslöser und Versorgung.",
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Unangemessen und wertend."
+      ],
+      "reply": "Patientin: „Ich bin Erzieherin in einer Kita. Ich wohne mit meinem Freund zusammen. Wir haben keine Haustiere.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben einen akuten Asthmaanfall mit Bronchospasmus und exspiratorischer Obstruktion.",
+        "Das ist nur eine Panikattacke. Sie müssen sich beruhigen, dann geht die Atmung wieder normal.",
+        "Ich vermute, dass sich Ihre Atemwege verengt haben und entzündet sind, wahrscheinlich ein Asthmaanfall durch die Katzenhaare und die Pollen. Deshalb pfeift es beim Atmen. Das können wir gut behandeln.",
+        "Sie haben sicher eine Lungenentzündung, dafür brauchen Sie sofort Antibiotika und müssen auf die Intensivstation."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache; die Patientin versteht „Bronchospasmus“ und „Obstruktion“ nicht.",
+        "Verharmlosend und medizinisch falsch; Atemnot mit Giemen ist keine Panikattacke.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung und beruhigender Ausblick.",
+        "Falsch und beängstigend; es gibt keinen Hinweis auf eine Pneumonie (kein Fieber)."
+      ],
+      "reply": "Patientin: „Ein Asthmaanfall? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Die Patientin fragt: „Muss ich im Krankenhaus bleiben?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, Sie bleiben mindestens eine Woche auf der Intensivstation.",
+        "Nein, nach dem Spray können Sie sofort wieder nach Hause gehen.",
+        "Das entscheidet der Oberarzt, ich weiß es nicht.",
+        "Zuerst bekommen Sie Sauerstoff, ein Spray zum Inhalieren und Cortison. Wir messen Ihre Sauerstoffwerte, nehmen Blut ab und machen ein Röntgenbild der Lunge. Ob Sie bleiben müssen, entscheiden wir, wenn wir sehen, wie Sie darauf ansprechen."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu früh und übertrieben: die Schwere ist noch nicht beurteilt.",
+        "Gefährlich: nach einem schweren Anfall braucht es Beobachtung, bevor man entlässt.",
+        "Unprofessionell und lässt die Patientin allein.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich."
+      ],
+      "reply": "Patientin: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Frau Hoffmann ist 28 und kriegt schlecht Luft.",
+        "Frau Lena Hoffmann, eine 28-jährige Patientin, stellte sich heute Abend in unserer Notaufnahme mit seit etwa drei Stunden bestehender Atemnot und pfeifender Atmung vor.",
+        "Frau Lena Hoffmann (28 J.) hat sich heute Abend in unserer Notaufnahme vorgestellt wegen Luftnot und Husten, seit drei Tagen bestehend.",
+        "Frau Lena Hoffmann, eine 28-jährige Patientin, stellte sich heute Abend in unserer Notaufnahme mit seit etwa drei Stunden bestehende Atemnot und pfeifender Atmung vor."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort, Leitsymptom und Dauer.",
+        "Inhaltlich falsch: Die Beschwerden bestehen seit etwa drei Stunden, nicht seit drei Tagen.",
+        "Grammatik: nach „mit“ steht der Dativ, also „bestehender Atemnot“."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Beschwerden traten nach Kontakt mit Katzen und Gräserpollen auf und sind seitdem progredient. Es bestehen exspiratorisches Giemen, Husten, thorakales Engegefühl und Dyspnoe (NRS 8/10); die Patientin kann nur in kurzen Sätzen sprechen. Auf sechs Hübe Salbutamol kam es nur zu kurzzeitiger Besserung.",
+        "Sie war bei Katzen, und jetzt pfeift es in der Brust und sie kriegt kaum Luft.",
+        "Die Beschwerden traten nach Kontakt mit Katzen und Gräserpollen auf und sind seitdem regredient. Es bestehen exspiratorisches Giemen und Dyspnoe (NRS 8/10). Auf sechs Hübe Salbutamol kam es zu vollständiger Beschwerdefreiheit.",
+        "Die Beschwerden seien nach Kontakt mit Katzen aufgetreten und es besteht Dyspnoe, NRS 8."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachsprache und alle Merkmale (Auslöser, Verlauf, Symptome, Intensität, Ansprechen auf Salbutamol).",
+        "Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Inhaltlich falsch: Die Beschwerden sind progredient, und Salbutamol half nur kurz.",
+        "Konjunktiv-I-Mischung und unvollständig; außerdem fehlt „/10“."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend bestehen trockener Husten mit wenig zähem, weißlichem Auswurf, thorakales Engegefühl ohne Schmerzen sowie Palpitationen. Fieber, Schüttelfrost und Beinödeme wurden verneint. Seit etwa einer Woche nächtliches Erwachen durch Husten. Appetit, Gewicht, Stuhlgang und Miktion unauffällig.",
+        "Sie hustet und hat Herzrasen, aber kein Fieber.",
+        "Begleitend bestehen trockener Husten und Palpitationen. Thorakale Schmerzen mit Ausstrahlung in den linken Arm wurden bejaht. Fieber wurde verneint. Appetit unauffällig.",
+        "Begleitend bestehen Husten mit gelbem Auswurf und Fieber bis 38,5 °C. Palpitationen und Beinödeme wurden verneint. Appetit, Gewicht, Stuhlgang und Miktion unauffällig."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Umgangssprachlich und unvollständig.",
+        "Inhaltlich falsch: Die Patientin hat keine Brustschmerzen; das Engegefühl ist schmerzfrei.",
+        "Inhaltlich falsch: Die Patientin hatte kein Fieber und weißlichen Auswurf, dafür Palpitationen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Asthma, Heuschnupfen. Medikamente: Symbicort, Spray, Tabletten.",
+        "Vorerkrankungen: COPD, Rhinokonjunktivitis allergica. Z. n. Appendektomie im Kindesalter. Medikation: Budesonid/Formoterol 200/6 µg 1-1-1, Salbutamol 100 µg bei Bedarf, Cetirizin 10 mg 0-0-1.",
+        "Vorerkrankungen: Asthma bronchiale seit der Kindheit, Rhinokonjunktivitis allergica, atopische Dermatitis im Kindesalter. Z. n. Tonsillektomie im Alter von acht Jahren. Z. n. stationärer Behandlung bei Asthmaanfall vor einem Jahr. Medikation: Budesonid/Formoterol 200/6 µg 1-0-1, Salbutamol 100 µg bei Bedarf (heute sechs Hübe), Cetirizin 10 mg 0-0-1.",
+        "Medikation: Budesonid/Formoterol 200/6 µg 0-0-1, Salbutamol 100 µg 1-0-1, Cetirizin 10 mg 1-0-0."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Inhaltlich falsch: Asthma bronchiale (nicht COPD), Tonsillektomie (nicht Appendektomie), und Budesonid/Formoterol wird 1-0-1 genommen.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierschema im Format morgens-mittags-abends.",
+        "Dosierschema falsch: Budesonid/Formoterol morgens und abends (1-0-1), Salbutamol nur bei Bedarf, Cetirizin abends."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie gegen Katzen. Raucht. Mutter auch Asthma.",
+        "Allergien: Katzenhaare und Gräserpollen (Niesen, Augenjucken), keine Medikamentenallergien. Nikotinkonsum ca. 2 py, seltener Alkoholkonsum, kein Drogenkonsum. Familienanamnese: Mutter Asthma bronchiale und Rhinitis allergica, Bruder atopische Dermatitis. Die Patientin ist Erzieherin und lebt mit ihrem Partner, keine Haustiere.",
+        "Penicillinallergie (Exanthem). Nikotinkonsum ca. 20 py, seltener Alkoholkonsum. Familienanamnese: Mutter Asthma bronchiale. Die Patientin ist Erzieherin und lebt mit ihrem Partner.",
+        "Allergien: keine. Nikotinabusus. Familienanamnese leer."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Laiensprache und unvollständig.",
+        "Richtig: fünf Zigaretten am Tag über acht Jahre sind etwa 2 py (pack years = Packungsjahre).",
+        "Falsch: Es gibt keine Medikamentenallergie, und fünf Zigaretten über acht Jahre sind etwa 2 py, nicht 20.",
+        "Falsch: Katzenhaare und Gräserpollen fehlen, und die Familienanamnese ist positiv."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Anamnestisch besteht der Verdacht auf einen akuten Asthmaanfall bei bekanntem allergischem Asthma bronchiale. Differenzialdiagnostisch kommen eine Lungenarterienembolie, ein Spontanpneumothorax und eine Pneumonie in Betracht.",
+        "Diagnose: Asthmaanfall.",
+        "Es besteht ein gesicherter Status asthmaticus.",
+        "Anamnestisch besteht der Verdacht auf eine akute Linksherzinsuffizienz bei Z. n. Myokardinfarkt. Differenzialdiagnostisch kommen eine Pneumonie, ein Pneumothorax und ein Asthma bronchiale in Betracht."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen für eine junge Patientin.",
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Ohne Untersuchung, Peak-Flow und Blutgasanalyse ist weder die Diagnose noch der Schweregrad gesichert.",
+        "Medizinisch unpassend: Es gibt keinen Herzinfarkt in der Vorgeschichte, die Patientin ist 28 und hat ein bekanntes Asthma."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir machen Röntgen und geben Sauerstoff.",
+        "Zur weiteren Abklärung empfehlen wir ein EKG und eine Blutentnahme. Zur Frequenzkontrolle bei Tachykardie empfehlen wir Metoprolol 50 mg oral sowie Salbutamol inhalativ.",
+        "Zur weiteren Abklärung empfehlen wir ein Röntgenbild des Thorax. Zur Beruhigung empfehlen wir Lorazepam 2 mg intravenös sowie Sauerstoffgabe.",
+        "Zur weiteren Abklärung empfehlen wir Pulsoxymetrie, Peak-Flow-Messung, Blutgasanalyse, Blutentnahme (u. a. Blutbild, CRP), EKG und ein Röntgenbild des Thorax. Therapeutisch empfehlen wir Sauerstoffgabe (Ziel-SpO2 93–95 %), Salbutamol und Ipratropiumbromid inhalativ sowie Prednisolon 50 mg oral, mit Monitorüberwachung."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu umgangssprachlich und unvollständig.",
+        "Gefährlich: Betablocker sind bei Asthma kontraindiziert, sie können einen Bronchospasmus auslösen.",
+        "Gefährlich: Benzodiazepine dämpfen den Atemantrieb und sind beim Asthmaanfall nicht indiziert.",
+        "Richtig: Diagnostik und Therapie in vollständigen Sätzen, nach NVL Asthma."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Ich möchte Ihnen Frau Lena Hoffmann vorstellen, eine 28-jährige Patientin, die sich heute Abend mit seit etwa drei Stunden bestehender, progredienter Atemnot und pfeifender Atmung vorgestellt hat.",
+        "Die Patientin hat Atemnot, sie heißt Hoffmann.",
+        "Frau Hoffmann hat einen Asthmaanfall.",
+        "Also, die Frau war bei einer Freundin mit Katzen ..."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz.",
+        "Unstrukturiert und umgangssprachlich.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Kein strukturierter Einstieg; zuerst Patientin und Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Sie hat alles Mögliche.",
+        "Die Patientin spricht nur in kurzen Sätzen und gibt die Luftnot mit 8 von 10 an. Sie berichtet über exspiratorisches Giemen, trockenen Husten, thorakales Engegefühl und Palpitationen. Salbutamol wirkte trotz sechs Hüben nur kurz. Fieber wurde verneint.",
+        "Die Patientin spricht in ganzen Sätzen und gibt die Luftnot mit 3 von 10 an. Sie berichtet über Husten mit gelbem Auswurf und Fieber bis 38,5 °C. Salbutamol brachte vollständige Besserung.",
+        "Sie hat Fieber und Brustschmerzen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Keine Information.",
+        "Richtig: knapp, strukturiert, mit relevantem Negativbefund.",
+        "Inhaltlich falsch: Die Patientin spricht nur in kurzen Sätzen, Fieber und gelber Auswurf wurden verneint, Salbutamol half nur kurz.",
+        "Inhaltlich falsch: Fieber und Brustschmerzen wurden verneint."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Bekannt sind ein allergisches Asthma bronchiale seit der Kindheit mit einer stationären Behandlung vor einem Jahr sowie eine Rhinokonjunktivitis allergica. Dauermedikation: Budesonid/Formoterol 200/6 µg 1-0-1 und Cetirizin. Keine Medikamentenallergien, Nikotin ca. 2 py. Die Mutter hat ebenfalls Asthma.",
+        "Sie ist gesund.",
+        "Sie hat seit der Kindheit Asthma und nimmt nur bei Bedarf ein Spray. Sie raucht nicht, die Familie ist unauffällig.",
+        "Bekannt sind eine COPD und ein Diabetes mellitus Typ 2. Wichtig: Penicillinallergie mit Exanthem."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: relevante Vorgeschichte, Dauermedikation, Nikotin und Atopie in der Familie.",
+        "Falsch: es gibt relevante Vorerkrankungen.",
+        "Inhaltlich falsch: Sie nimmt regelmäßig Budesonid/Formoterol, raucht etwa 2 py, und die Mutter hat Asthma.",
+        "Inhaltlich falsch: Diese Erkrankungen und die Penicillinallergie bestehen nicht."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich vermute einen akuten Asthmaanfall bei allergischem Asthma bronchiale, ausgelöst durch Katzenallergene und Pollen. Differenzialdiagnostisch denke ich an eine Lungenarterienembolie, einen Spontanpneumothorax und eine Pneumonie.",
+        "Ich denke an eine Panikattacke.",
+        "Es handelt sich sicher um eine Lungenembolie, weil die Patientin Herzrasen hat. Differenzialdiagnostisch denke ich höchstens noch an eine Pneumonie und einen Myokardinfarkt.",
+        "Ich weiß es nicht genau."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
+        "Zu unpräzise und gefährlich: Giemen und bekanntes Asthma sprechen für Asthma, nicht für Panik.",
+        "Zu sicher („sicher“), und eine Lungenembolie ist hier nicht die wahrscheinlichste Diagnose.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde die Patientin am Monitor überwachen, SpO2 und Peak-Flow messen und eine Blutgasanalyse sowie ein Röntgenbild des Thorax veranlassen. Therapeutisch Sauerstoff mit Ziel 93–95 %, Salbutamol und Ipratropium inhalativ und Prednisolon 50 mg. Bei fehlendem Ansprechen würde ich Magnesiumsulfat 2 g intravenös geben und die Intensivstation informieren.",
+        "Ich würde sie nach Hause schicken und das Spray erhöhen.",
+        "Ich würde Metoprolol geben, damit das Herzrasen aufhört, und dann abwarten.",
+        "Ich würde sie mit Lorazepam intravenös beruhigen und danach die Blutgasanalyse abwarten."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Diagnostik, Stufentherapie nach NVL Asthma und Eskalation bei fehlendem Ansprechen.",
+        "Gefährlich: ein Anfall mit Sprechdyspnoe muss in der Klinik behandelt und überwacht werden.",
+        "Gefährlich: Betablocker sind bei Asthma kontraindiziert.",
+        "Gefährlich: Benzodiazepine können den Atemantrieb dämpfen."
+      ],
+      "reply": "Oberarzt: „Gut. Was hören Sie bei der Auskultation?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich erwarte ein diffuses exspiratorisches Giemen und Brummen mit verlängertem Exspirium. Eine „stille Lunge“ ohne Atemgeräusch wäre ein Alarmzeichen für einen lebensbedrohlichen Anfall.",
+        "Feuchte, feinblasige Rasselgeräusche über beiden Lungenunterfeldern wie bei einem Lungenödem, dazu ein hypersonorer Klopfschall.",
+        "Ein einseitig aufgehobenes Atemgeräusch mit hypersonorem Klopfschall, wie bei einem Pneumothorax.",
+        "Ich erwarte gar nichts."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: typischer Auskultationsbefund beim Asthmaanfall und das Alarmzeichen der stillen Lunge.",
+        "Typisch für ein Lungenödem; beim Asthma hört man Giemen und Brummen.",
+        "Das wäre ein Pneumothorax, eine Differenzialdiagnose, aber kein typischer Asthmabefund.",
+        "In der Prüfung erwartet man eine begründete Antwort."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Dyspnoe“?",
+      "options": [
+        "Husten",
+        "Atemnot",
+        "Atemstillstand",
+        "Auswurf"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist Tussis.",
+        "Richtig.",
+        "Das ist die Apnoe.",
+        "Das ist das Sputum."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Exspiration“?",
+      "options": [
+        "Einatmung",
+        "schnelle Atmung",
+        "Ausatmung",
+        "Atempause"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Inspiration.",
+        "Das ist die Tachypnoe.",
+        "Richtig.",
+        "Das ist die Apnoe."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Bronchospasmus“?",
+      "options": [
+        "Verkrampfung der Bronchialmuskulatur",
+        "Entzündung der Bronchien",
+        "Erweiterung der Bronchien",
+        "Verschleimung der Bronchien"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Bronchitis.",
+        "Das ist die Bronchodilatation.",
+        "Das ist die Bronchorrhö."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Orthopnoe“?",
+      "options": [
+        "Atemnot bei Anstrengung",
+        "Blaufärbung der Lippen",
+        "Atemnot im Liegen, besser im Sitzen",
+        "Schmerzen beim Atmen"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Belastungsdyspnoe.",
+        "Das ist die Zyanose.",
+        "Richtig.",
+        "Das sind pleuritische Schmerzen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Giemen“?",
+      "options": [
+        "Heiserkeit",
+        "Rasselgeräusch bei der Atmung",
+        "Husten mit Auswurf",
+        "pfeifendes Atemgeräusch beim Ausatmen"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Dysphonie.",
+        "Das sind Rasselgeräusche (RGs).",
+        "Das ist der produktive Husten.",
+        "Richtig."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

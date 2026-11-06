@@ -1,0 +1,691 @@
+{
+  "id": "leberzirrhose",
+  "area": "Gastroenterologie",
+  "title": "Zunehmender Bauchumfang und gelbe Augen",
+  "diagnosis": "Dekompensierte äthyltoxische Leberzirrhose mit Aszites",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Werner Hartmann, 58 Jahre, stellt sich am Vormittag in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Hartmann sitzt auf der Liege, der Bauch wölbt sich unter dem Hemd vor.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Tag, Herr Hartmann. Setzen Sie sich bitte hin und erzählen Sie mir gleich, wie viel Alkohol Sie trinken, das ist für alles Weitere wichtig.",
+        "Hallo, Herr Hartmann, wo drückt der Schuh?",
+        "Guten Tag, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Hartmann?",
+        "Guten Tag. Legen Sie sich bitte auf die Liege, ich schaue mir zuerst Ihren Bauch an."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falscher Einstieg: Sie stellen sich nicht vor und beginnen mit einer wertenden Alkoholfrage, bevor ein Vertrauensverhältnis besteht.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Die körperliche Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen."
+      ],
+      "reply": "Patient: „Ja, Hartmann. Guten Tag, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie ist Ihr Body-Mass-Index?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum, und bei welcher Krankenkasse sind Sie versichert?",
+        "Sie sind doch über fünfzig, oder?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Ich bin 58, 1,78 Meter groß und wiege jetzt 91 Kilo. Vor sechs Wochen waren es noch 83.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Bauchschmerzen?",
+        "Welche Symptomatik führt Sie zu uns, und seit wann besteht sie?",
+        "Sie trinken wahrscheinlich zu viel, und deshalb sind Sie jetzt hier, nicht wahr? Erzählen Sie mir, was los ist.",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Geschlossene Frage am Anfang, und der Patient hat vielleicht gar keine Schmerzen. Beginnen Sie offen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Suggestiv und vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen."
+      ],
+      "reply": "Patient: „Mein Bauch wird seit Wochen immer dicker, und meine Augen sind gelb geworden. Meine Hosen passen nicht mehr.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten das Leitsymptom genauer erfragen. Was sagen Sie?",
+      "options": [
+        "Ist der ganze Bauch dicker geworden oder nur eine Stelle? Und fällt Ihnen an anderen Körperstellen etwas auf, zum Beispiel an den Beinen?",
+        "Haben Sie Wasser in den Beinen?",
+        "Hat sich ein Aszites gebildet, und bestehen auch periphere Ödeme an den Unterschenkeln oder eine Anasarka am ganzen Körper?",
+        "Das ist bestimmt Wasser im Bauch, und die Beine sind auch dick, richtig?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben.",
+        "Geschlossene Frage, und sie fragt nur nach einer Körperstelle. Der Bauch selbst bleibt offen.",
+        "Voller Fachbegriffe („Aszites“, „periphere Ödeme“, „Anasarka“). Der Patient versteht sie nicht.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen."
+      ],
+      "reply": "Patient: „Der ganze Bauch ist dick und hart. Und seit zwei Wochen sind meine Knöchel angeschwollen.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Seit wann ist Ihr Bauch dicker?",
+        "Wie war der zeitliche Verlauf seit der Erstmanifestation: akut, subakut oder chronisch progredient?",
+        "Wann hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben?",
+        "Hat Ihr Bauch plötzlich zugenommen, oder ist das schon länger so? Das ist wichtig, weil wir sonst ein Blutgerinnsel in der Leber ausschließen müssen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das erfasst nur den Beginn, nicht den Verlauf. Fragen Sie auch nach der Entwicklung seitdem.",
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „progredient“ versteht der Patient nicht.",
+        "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Die Frage macht Angst, nimmt eine Verdachtsdiagnose vorweg und bietet nur zwei Antworten an."
+      ],
+      "reply": "Patient: „Vor etwa sechs Wochen ging es langsam los. Seitdem wird es stetig mehr, besonders in den letzten zwei Wochen. Die Augen sind seit drei Wochen gelb.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Beschwerden und nach der Belastbarkeit. Welche Formulierung passt?",
+      "options": [
+        "Haben Sie Dyspnoe, und in welcher NYHA-Klasse würden Sie sich selbst einordnen? Haben Sie auch eine Orthopnoe, also Atemnot im Liegen, oder eine paroxysmale nächtliche Dyspnoe? Außerdem interessiert mich, ob Sie nachts mit mehreren Kissen schlafen müssen oder aus dem Schlaf aufwachen.",
+        "Wie fühlt sich der Bauch an, eher gespannt, drückend oder schmerzhaft? Wie stark ist das auf einer Skala von 0 bis 10? Und wie weit kommen Sie noch, bevor Sie Luft holen müssen?",
+        "Tut es weh?",
+        "Der Bauch ist doch bestimmt sehr schmerzhaft, wie stark auf einer Skala von 1 bis 100?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache („Dyspnoe“, „NYHA“, „Orthopnoe“). Ein Patient kann sich nicht selbst einer Klasse zuordnen.",
+        "Richtig: Beispiele für das Gefühl, die übliche Skala von 0 bis 10 und eine laienverständliche Frage nach der Belastbarkeit.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
+        "Suggestiv und eine unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS)."
+      ],
+      "reply": "Patient: „Er ist prall und drückt, Schmerzen eher 3 von 10. Nach einem Stockwerk Treppe muss ich stehen bleiben.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Hatten Sie Hämatemesis oder Meläna, einen Pruritus, Epistaxis oder Zeichen einer hepatischen Enzephalopathie wie einen gestörten Tag-Nacht-Rhythmus? Hatten Sie außerdem eine Hepatische Enzephalopathie mit Flapping Tremor oder ein Foetor hepaticus bemerkt?",
+        "Haben Sie sonst noch was?",
+        "Sie haben bestimmt Blut erbrochen und schwarzen Stuhl gehabt.",
+        "Haben Sie Juckreiz, Nasenbluten oder blaue Flecken ohne Grund? Haben Sie Blut erbrochen oder schwarzen Stuhl bemerkt? Sind Sie tagsüber verwirrt oder sehr müde?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Bluterbrechen“, „schwarzer Stuhl“, „Juckreiz“, „Nasenbluten“.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Suggestiv: Sie unterstellen die Symptome.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive Blutungszeichen und Verwirrtheit."
+      ],
+      "reply": "Patient: „Juckreiz habe ich am ganzen Körper, und ich blute leicht aus der Nase. Blut erbrochen habe ich nicht, der Stuhl ist normal. Müde bin ich ständig, aber verwirrt nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Haben Sie Schüttelfrost, Nachtschweiß, Gewichtsverlust, Dysurie, Obstipation, Diarrhö, Inappetenz und eine Schlafstörung im Sinne einer Insomnie?",
+        "Haben Sie Fieber gemessen? Wie sind Appetit, Stuhlgang und Wasserlassen? Wie sieht der Urin aus, und wie schlafen Sie?",
+        "Wie ist die Vegetativa?",
+        "Ist sonst alles normal bei Ihnen?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Obstipation, Insomnie). Der Patient versteht sie nicht.",
+        "Richtig: Fieber, Appetit, Stuhlgang, Wasserlassen und Schlaf in Laiensprache, mit gezieltem Blick auf die Urinfarbe.",
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Zu allgemein; der Patient sagt einfach „ja“."
+      ],
+      "reply": "Patient: „Fieber hatte ich nicht. Appetit habe ich kaum, ich esse nur wenig. Der Stuhl ist normal und braun, einmal am Tag. Der Urin ist ganz dunkel, fast wie Bier. Nachts schlafe ich schlecht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck, Zucker oder Probleme mit der Leber? Und wurden Sie schon einmal operiert?",
+        "Haben Sie eine Hepatitis, eine Fettleber oder bereits eine Leberzirrhose, und gab es Voroperationen, Bluttransfusionen oder stationäre Aufenthalte?",
+        "Sind Sie gesund?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
+        "Vollständig, aber in Fachsprache („Hepatitis“, „Leberzirrhose“, „stationäre Aufenthalte“) und suggestiv, weil Sie die Diagnose schon nennen.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patient: „Vor fünf Jahren hat mein Hausarzt eine Fettleber festgestellt. Sonst nichts Besonderes, Gelbsucht hatte ich früher nie. Operiert wurde ich nur an einem Leistenbruch rechts vor zehn Jahren.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Welche Pharmaka applizieren Sie regelmäßig oder bei Bedarf, und in welcher Dosierung nehmen Sie diese ein, auch als Selbstmedikation?",
+        "Nehmen Sie Tabletten?",
+        "Welche Medikamente nehmen Sie regelmäßig oder bei Bedarf ein, und in welcher Dosierung? Auch Mittel ohne Rezept?",
+        "Sie nehmen doch sicher keine Schmerzmittel, oder?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache („Pharmaka“, „applizieren“). Mit Patienten sprechen Sie Laiensprache.",
+        "Zu ungenau: Dosis und Mittel ohne Rezept fehlen.",
+        "Richtig: Name, Dosierung und auch frei verkäufliche Mittel.",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Pantoprazol 40 mg morgens wegen des Magens. Bei Rückenschmerzen nehme ich etwa dreimal pro Woche Ibuprofen 400.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht gleich ein Antibiotikum geben müssen, und Penicillin nehmen wir am häufigsten.",
+        "Allergie?",
+        "Sind Sie hypersensibel gegen irgendetwas?",
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu eng: Allergien gegen andere Medikamente, Lebensmittel oder Pflaster übersehen Sie.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl.",
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion."
+      ],
+      "reply": "Patient: „Gegen Pflaster. Da wird die Haut rot und juckt. Gegen Medikamente nichts.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr an einem normalen Tag? Nehmen Sie Drogen?",
+        "Sind Sie Raucher oder Alkoholiker?",
+        "Wie hoch ist Ihr Nikotin- und Alkoholabusus, und wie lange besteht er schon?",
+        "Sie trinken sicher viel zu viel, das sieht man Ihnen an. Wie viel genau, seit wann, und wie oft rauchen Sie?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: neutral, konkret, mit Menge.",
+        "„Alkoholiker“ ist wertend und verletzend.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Vorwurfsvoll und wertend. Der Patient wird sich verschließen."
+      ],
+      "reply": "Patient: „Ich rauche seit 30 Jahren 20 Zigaretten am Tag. Alkohol trinke ich seit etwa 25 Jahren, jeden Tag eine Flasche Wein, am Wochenende auch Bier. Das letzte Glas hatte ich vor drei Tagen. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel an der Leber, am Herzen oder Krebs?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Hat Ihre Familie auch Alkoholprobleme?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Richtig: offen, mit passenden Beispielen.",
+        "Zu eng: Geschwister, Kinder und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Unterstellend und wertend; sie beantwortet auch nicht die medizinische Frage."
+      ],
+      "reply": "Patient: „Mein Vater ist mit 72 an einem Schlaganfall gestorben. Meine Mutter hat Zucker. Lebererkrankungen gab es nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
+        "Arbeiten Sie überhaupt noch, oder leben Sie von Sozialhilfe?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Entlassung und Versorgung.",
+        "Unhöflich und wertend."
+      ],
+      "reply": "Patient: „Ich bin Dachdecker, seit zwei Monaten krankgeschrieben. Ich bin geschieden und wohne allein im dritten Stock ohne Aufzug. Meine Tochter wohnt in Stuttgart.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben eine äthyltoxische Leberzirrhose mit Aszites und Ikterus.",
+        "Das ist wahrscheinlich nur Wasser im Bauch und in den Beinen von der Hitze, das geht von allein wieder weg.",
+        "Sie haben sicher Leberkrebs, und das ist bei Ihrem Alkoholkonsum Ihre eigene Schuld. Wir müssen schnell handeln.",
+        "Ich vermute, dass Ihre Leber vernarbt ist und nicht mehr gut arbeitet. Dadurch staut sich Flüssigkeit im Bauch, und die Haut und die Augen werden gelb. Das kann am Alkohol liegen. Genau wissen wir es erst nach den Untersuchungen."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachsprache; der Patient versteht die Diagnose nicht.",
+        "Verharmlosend und medizinisch falsch.",
+        "Falsch, beängstigend und beschuldigend.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, ehrlich und ohne Vorwurf."
+      ],
+      "reply": "Patient: „Eine vernarbte Leber? Muss ich im Krankenhaus bleiben?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Muss ich im Krankenhaus bleiben?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Nein, Sie bekommen Wassertabletten und können nach Hause gehen. Kommen Sie in einer Woche zur Kontrolle zum Hausarzt, und trinken Sie bis dahin einfach etwas weniger. Falls Sie weiterhin Beschwerden haben, vereinbaren Sie bitte selbstständig einen Termin bei einem Gastroenterologen in Ihrer Nähe.",
+        "Ich empfehle Ihnen, im Krankenhaus zu bleiben. Wir nehmen Blut ab, machen einen Ultraschall und entnehmen mit einer dünnen Nadel etwas Flüssigkeit aus dem Bauch zur Untersuchung. Alkohol dürfen Sie jetzt nicht mehr trinken; wir achten auf Entzugszeichen und behandeln Sie, wenn nötig.",
+        "Das entscheidet der Oberarzt, ich weiß es nicht.",
+        "Ja, Sie brauchen eine neue Leber, wir setzen Sie sofort auf die Transplantationsliste."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: bei Aszites mit Ikterus ist die Abklärung im Krankenhaus nötig, und Alkohol muss ganz wegfallen.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, Hinweis auf Alkoholverzicht und Entzug, laienverständlich.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Zu früh und falsch: ohne Diagnose und bei aktivem Alkoholkonsum ist keine Listung möglich."
+      ],
+      "reply": "Patient: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Hartmann ist 58 und hat einen dicken Bauch.",
+        "Der Patient Herr Hartmann stellt sich heute mit Bauchumfangszunahme und Gelbfärbung vor.",
+        "Herr Werner Hartmann, ein 58-jähriger Patient, stellte sich heute in unserer Notaufnahme vor mit seit sechs Wochen zunehmender Bauchumfang und seit drei Wochen bestehender Ikterus.",
+        "Herr Werner Hartmann, ein 58-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit sechs Wochen zunehmendem Bauchumfang und seit drei Wochen bestehendem Ikterus vor."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Präsens und Laiensprache („Gelbfärbung“); im Arztbrief steht das Präteritum mit Fachbegriffen.",
+        "Grammatik: nach „mit“ steht der Dativ („zunehmendem Bauchumfang“, „bestehendem Ikterus“).",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptome."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Beschwerden bestehen seit sechs Wochen mit progredienter Zunahme des Bauchumfangs (Gewichtszunahme von 83 auf 91 kg) und seit zwei Wochen mit Knöchelödemen sowie einem Spannungs- und Druckgefühl im Abdomen (NRS 3/10). Es besteht eine Belastungsdyspnoe nach einem Stockwerk.",
+        "Der Bauch ist seit sechs Wochen dicker geworden, und die Beine sind auch etwas geschwollen.",
+        "Die Beschwerden bestehen seit sechs Wochen mit progredienter Zunahme des Bauchumfangs (Gewichtszunahme von 83 auf 91 kg) und seit zwei Wochen mit Knöchelödemen sowie starken, kolikartigen Schmerzen im Abdomen (NRS 8/10). Eine Belastungsdyspnoe wurde verneint.",
+        "Die Beschwerden bestünden seit sechs Wochen, der Bauchumfang zunehmend, Knöchelödeme, NRS 3."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachsprache und alle Merkmale (Verlauf, Gewicht, Ödeme, Charakter, Intensität, Belastbarkeit).",
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Inhaltlich falsch: Der Patient hat ein Druckgefühl (NRS 3/10), keine Koliken, und die Belastungsdyspnoe wurde bejaht.",
+        "Konjunktiv II („bestünden“) passt nicht in den Bericht, und die Angabe ist unvollständig; Gewicht und Belastbarkeit fehlen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete der Patient über Pruritus, Epistaxis und Fatigue. Hämatemesis und Meläna wurden verneint. Fieber trat bis 38,2 °C auf, dazu bestanden eine Inappetenz und eine Bierbraunfärbung des Urins.",
+        "Er juckt sich, hat Nasenbluten und isst nichts.",
+        "Begleitend berichtete der Patient über Pruritus, rezidivierende Epistaxis und Fatigue. Hämatemesis, Meläna, Fieber und Verwirrtheit wurden verneint. Es bestehen eine Inappetenz, eine Bierbraunfärbung des Urins und Schlafstörungen bei normalem Stuhlgang.",
+        "Begleitend berichtete der Patient über Pruritus und Epistaxis. Hämatemesis und Meläna wurden bejaht. Fieber wurde verneint, der Urin sei hell."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Fieber wurde verneint.",
+        "Umgangssprache und unvollständig.",
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Inhaltlich falsch: Hämatemesis und Meläna wurden verneint, und der Urin ist bierbraun."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Fettleber und Bluthochdruck, Leistenbruch-OP. Medikamente: Pantoprazol und Ibuprofen, je nach Bedarf.",
+        "Anamnestisch ist eine Steatosis hepatis bekannt. Z. n. Leistenhernienoperation rechts vor zehn Jahren. Medikation: Pantoprazol 40 mg 1-0-0, Ibuprofen 400 mg bei Bedarf, ca. dreimal pro Woche.",
+        "Anamnestisch ist eine Steatosis hepatis bekannt. Z. n. Leistenhernienoperation links vor zehn Jahren. Medikation: Pantoprazol 40 mg 1-0-0, Ibuprofen 400 mg bei Bedarf, ca. dreimal pro Woche.",
+        "Anamnestisch ist eine Steatosis hepatis bekannt. Z. n. Leistenhernienoperation rechts vor zehn Jahren. Medikation: Pantoprazol 40 mg 0-0-1, Ibuprofen 400 mg 1-1-1 als Dauermedikation."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Laiensprache, ohne Dosierung, und der Bluthochdruck wurde nicht berichtet.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierschema im Format morgens-mittags-abends.",
+        "Inhaltlich falsch: Die Leistenhernie wurde rechts operiert.",
+        "Dosierschema falsch: Pantoprazol morgens (1-0-0), Ibuprofen nur bei Bedarf."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Kontaktallergie auf Pflaster (Erythem mit Pruritus), keine Medikamentenallergie. Nikotinkonsum ca. 30 py, täglicher Alkoholkonsum (ca. eine Flasche Wein pro Tag seit 25 Jahren, letzter Konsum vor drei Tagen). Familienanamnese: Vater Apoplex mit 72 J., Mutter Diabetes mellitus. Der Patient ist Dachdecker, geschieden und lebt allein.",
+        "Pflasterallergie (Anaphylaxie). Nikotinkonsum ca. 15 py, gelegentlicher Alkoholkonsum am Wochenende. Familienanamnese: Vater Lebererkrankung, Mutter Diabetes mellitus. Der Patient ist Dachdecker, verheiratet und lebt mit seiner Ehefrau.",
+        "Keine Allergien. Nikotinabusus.",
+        "Er verträgt keine Pflaster, raucht viel und trinkt Wein."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: 20 Zigaretten am Tag über 30 Jahre sind 30 py (pack years = Packungsjahre).",
+        "Falsch: Reaktion war ein Erythem mit Juckreiz, 30 py, täglicher Alkoholkonsum, und der Patient lebt allein.",
+        "Falsch: die Pflasterallergie und der tägliche Alkoholkonsum fehlen.",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Wasserbauch und Gelbsucht.",
+        "Es besteht eine gesicherte äthyltoxische Leberzirrhose im Stadium Child-Pugh A. Differenzialdiagnosen sind nicht erforderlich.",
+        "Anamnestisch besteht der Verdacht auf eine akute Cholezystitis bei Cholezystolithiasis. Differenzialdiagnostisch kommen eine Choledocholithiasis, eine akute Pankreatitis und ein Ulcus duodeni in Betracht.",
+        "Anamnestisch besteht der Verdacht auf eine dekompensierte äthyltoxische Leberzirrhose mit Aszites und Ikterus. Differenzialdiagnostisch kommen eine Rechtsherzinsuffizienz, eine Pfortaderthrombose und ein maligner Aszites bei hepatozellulärem Karzinom in Betracht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Ohne Labor, Bildgebung und Punktion ist die Diagnose nicht gesichert, und mit Aszites und Ikterus liegt kein Stadium A vor.",
+        "Passt nicht zu den Symptomen: Es gibt weder Koliken im Oberbauch noch Fieber, aber Aszites und Ikterus.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen für Aszites."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und eine Abdomensonographie sowie Furosemid 40 mg i. v. als Bolus. Gegen die Rückenschmerzen empfehlen wir weiterhin Ibuprofen 400 mg bei Bedarf.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (u. a. Blutbild, Gerinnung, Albumin, Bilirubin, Kreatinin, Elektrolyte, CRP), eine Abdomensonographie sowie eine diagnostische Aszitespunktion. Wir empfehlen die stationäre Aufnahme, Alkoholkarenz mit Überwachung auf Entzugssymptome und das Absetzen von Ibuprofen. Eine Ösophagogastroduodenoskopie zum Varizenscreening ist geplant.",
+        "Wir machen Blut und Ultraschall.",
+        "Zur weiteren Abklärung empfehlen wir eine Koloskopie."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Gefährlich: NSAR sind bei Leberzirrhose mit Aszites kontraindiziert (Nierenversagen, Blutung), und die Diagnostik ist unvollständig.",
+        "Richtig: Diagnostik und Therapie in vollständigen Sätzen, mit Aszitespunktion, Entzugsüberwachung und Absetzen des NSAR.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Nicht die passende Untersuchung für diesen Verdacht."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Herr Hartmann hat eine Leberzirrhose, und wir müssen etwas tun.",
+        "Der Patient hat einen dicken Bauch, er heißt Hartmann.",
+        "Ich möchte Ihnen Herrn Werner Hartmann vorstellen, einen 58-jährigen Patienten, der sich heute mit seit sechs Wochen zunehmendem Bauchumfang und seit drei Wochen bestehendem Ikterus vorgestellt hat.",
+        "Also, der Mann trinkt jeden Tag eine Flasche Wein und ist jetzt ganz gelb geworden, und sein Bauch ist dick wie bei einer Schwangeren, glaube ich ..."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Unstrukturiert und umgangssprachlich.",
+        "Richtig: Name, Alter, Leitsymptome, zeitlicher Verlauf in einem Satz.",
+        "Kein strukturierter Einstieg und wertend; zuerst Patient und Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Der Bauchumfang nahm über sechs Wochen zu, das Gewicht stieg von 83 auf 91 kg. Es bestehen Pruritus, Epistaxis, Fatigue und Fieber bis 38,2 °C. Hämatemesis und Meläna wurden verneint.",
+        "Er hat alles Mögliche.",
+        "Der Bauchumfang nahm über sechs Wochen zu, das Gewicht sank von 91 auf 83 kg. Seit zwei Wochen bestehen Knöchelödeme, seit drei Wochen ein Ikterus mit Pruritus und bierbraunem Urin. Hämatemesis und Meläna wurden verneint.",
+        "Der Bauchumfang nahm über sechs Wochen zu, das Gewicht stieg von 83 auf 91 kg. Seit zwei Wochen bestehen Knöchelödeme, seit drei Wochen ein Ikterus mit Pruritus und bierbraunem Urin. Hämatemesis, Meläna und Fieber wurden verneint."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich falsch: Fieber wurde verneint, der Ikterus fehlt.",
+        "Keine Information.",
+        "Inhaltlich falsch: Das Gewicht ist gestiegen (83 auf 91 kg), nicht gesunken.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist gesund und trinkt nur gelegentlich.",
+        "Bekannt sind eine Fettleber und ein Diabetes mellitus Typ 2. Es besteht ein täglicher Alkoholkonsum mit einer Flasche Wein seit 25 Jahren, letzter Konsum vor drei Tagen. Allergien: keine.",
+        "Er nimmt Pantoprazol und Ibuprofen, sonst nichts.",
+        "Bekannt ist eine Fettleber seit fünf Jahren. Er trinkt seit 25 Jahren täglich etwa eine Flasche Wein, der letzte Konsum war vor drei Tagen, außerdem 30 py. Wichtig: Ibuprofen 400 mg bei Bedarf, ca. dreimal pro Woche, und eine Pflasterallergie."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch: Er trinkt seit 25 Jahren täglich, und es gibt eine Fettleber.",
+        "Inhaltlich falsch: Ein Diabetes ist nicht bekannt (die Mutter hat ihn), und es gibt eine Pflasterallergie.",
+        "Unvollständig: Fettleber, Alkohol, Nikotin und Allergie fehlen.",
+        "Richtig: relevante Vorgeschichte, Alkoholanamnese mit letztem Konsum (Entzugsrisiko) und NSAR-Einnahme."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Es handelt sich sicher um eine Herzinsuffizienz, weil die Knöchel geschwollen sind. Differenzialdiagnostisch denke ich höchstens noch an eine Nephrose und eine Zöliakie.",
+        "Ich vermute eine dekompensierte äthyltoxische Leberzirrhose mit Aszites und Ikterus. Differenzialdiagnostisch denke ich an eine Rechtsherzinsuffizienz, eine Pfortaderthrombose und ein hepatozelluläres Karzinom mit malignem Aszites.",
+        "Ich denke an die Leber.",
+        "Ich weiß es nicht genau."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu sicher („sicher“), und Ikterus, Pruritus und Alkoholanamnese sprechen für die Leber, nicht für das Herz.",
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
+        "Zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde ihn nach Hause schicken.",
+        "Ich würde eine Koloskopie machen.",
+        "Ich würde den Aszites sofort mit 15 Litern ablassen, ohne Albumin und ohne vorherige Diagnostik, und danach Ibuprofen gegen die Schmerzen geben.",
+        "Ich würde Blut abnehmen (u. a. Gerinnung, Albumin, Kreatinin, Natrium) und eine Abdomensonographie durchführen. Eine diagnostische Aszitespunktion mit Bestimmung der Neutrophilen soll eine spontan bakterielle Peritonitis ausschließen. Ibuprofen würde ich absetzen, den Patienten stationär aufnehmen, auf Alkoholentzug überwachen und Thiamin geben. Eine Gastroskopie zum Varizenscreening würde ich anschließen."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Gefährlich: Aszites und Ikterus müssen stationär abgeklärt werden.",
+        "Nicht die erste Untersuchung bei diesem Verdacht.",
+        "Gefährlich: Bei einer Parazentese über 5 Liter gibt man Albumin, und Ibuprofen ist bei Zirrhose kontraindiziert.",
+        "Richtig: Diagnostik, Aszitespunktion, Medikamentenanpassung, Entzugsüberwachung und Varizenscreening."
+      ],
+      "reply": "Oberarzt: „Gut. Ab wie vielen Neutrophilen im Aszites diagnostizieren Sie eine spontan bakterielle Peritonitis?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ab mehr als 50 Neutrophilen pro Mikroliter im Aszites, unabhängig vom Kulturergebnis, und zwar immer ohne Albumingabe.",
+        "Ab mindestens 250 Neutrophilen pro Mikroliter im Aszites; dann beginne ich eine antibiotische Therapie, zum Beispiel mit Ceftriaxon, und gebe Albumin.",
+        "Das weiß ich nicht.",
+        "Ab einer Leukozytenzahl im Blut über 10 000 pro Mikroliter, unabhängig vom Aszites."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falscher Grenzwert: Die Diagnose gilt ab mindestens 250 Neutrophilen pro Mikroliter, und Albumin gehört zur Therapie.",
+        "Richtig: Grenzwert 250 Neutrophile pro Mikroliter, Antibiose mit einem Cephalosporin der 3. Generation und Albumin.",
+        "In der Prüfung erwartet man eine begründete Antwort.",
+        "Falsch: Die Diagnose wird im Aszites gestellt, nicht anhand der Blutleukozyten."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Aszites“?",
+      "options": [
+        "Beinschwellung",
+        "Bauchwassersucht",
+        "Gelbsucht",
+        "Blut im Stuhl"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist ein Ödem.",
+        "Richtig.",
+        "Das ist der Ikterus.",
+        "Das ist Hämatochezie (bzw. Meläna bei schwarzem Stuhl)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Meläna“?",
+      "options": [
+        "schwarzer, teerartiger Stuhl",
+        "Blut im Erbrochenen",
+        "fettiger Stuhl",
+        "heller Stuhl"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist Hämatemesis.",
+        "Das ist die Steatorrhö.",
+        "Das ist Acholie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Foetor hepaticus“?",
+      "options": [
+        "Mundgeruch nach Aceton",
+        "Atemnot",
+        "süßlich-muffiger Mundgeruch bei Leberversagen",
+        "Mundgeruch durch schlechte Zähne"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist Foetor acetonicus.",
+        "Das ist Dyspnoe.",
+        "Richtig.",
+        "Das ist Foetor ex ore."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Palmarerythem“?",
+      "options": [
+        "Hautjucken",
+        "blaue Flecken",
+        "gelbe Handflächen",
+        "Rötung der Handflächen"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist Pruritus.",
+        "Das sind Hämatome.",
+        "Gelbe Haut heißt Ikterus.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Ösophagusvarizen“?",
+      "options": [
+        "Speiseröhrenkrebs",
+        "erweiterte Venen in der Speiseröhre",
+        "Entzündung der Speiseröhre",
+        "Sodbrennen"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist das Ösophaguskarzinom.",
+        "Richtig.",
+        "Das ist die Ösophagitis.",
+        "Das ist Pyrosis."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

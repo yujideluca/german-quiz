@@ -1,0 +1,691 @@
+{
+  "id": "lungenembolie",
+  "area": "Pneumologie",
+  "title": "Plötzliche Atemnot und Schmerzen beim Atmen",
+  "diagnosis": "Lungenembolie",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Frau Julia Hartmann, 44 Jahre, stellt sich am Vormittag in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Frau Hartmann sitzt aufrecht auf der Liege und atmet schnell.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Tag, Frau Hartmann. Setzen Sie sich bitte sofort richtig hin und atmen Sie ruhig, ich höre als Erstes Ihre Lunge ab.",
+        "Hallo, na, Luftnot? Wie heißen Sie denn?",
+        "Guten Tag, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Frau Hartmann?",
+        "Guten Tag. Haben Sie Ihre Versichertenkarte dabei? Ohne Karte können wir Sie leider nicht aufnehmen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Die körperliche Untersuchung kommt nach der Anamnese, und Sie stellen sich nicht vor. Erst begrüßen und sich vorstellen.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität der Patientin.",
+        "Verwaltungsfragen gehören nicht an den Anfang, und bei Atemnot ist eine fehlende Karte kein Grund, die Aufnahme zu verweigern."
+      ],
+      "reply": "Patientin: „Ja, Hartmann. Guten Tag, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie ist Ihr Body-Mass-Index?",
+        "Sie sind doch noch keine fünfzig, oder?",
+        "Damit ich Ihre Daten vervollständigen kann: Wann sind Sie geboren, und bei welcher Krankenkasse sind Sie versichert? Beides brauche ich für die Aufnahme.",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht."
+      ],
+      "reply": "Patientin: „Ich bin 44, 1,70 Meter groß und wiege 78 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Haben Sie Atemnot?",
+        "Welche Symptomatik liegt bei Ihnen vor, und seit wann besteht die Dyspnoe?",
+        "Warum kommen Sie erst jetzt, wenn Sie schon so lange Probleme haben?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: eine offene Frage lässt die Patientin selbst erzählen.",
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "„Symptomatik“ und „Dyspnoe“ sind Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll und eine Annahme: Das stört das Vertrauen gleich zu Beginn."
+      ],
+      "reply": "Patientin: „Seit heute Morgen bekomme ich schlecht Luft, und rechts im Brustkorb sticht es.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten den Schmerz im Brustkorb genauer einordnen. Was fragen Sie?",
+      "options": [
+        "Ist der Schmerz pleuritisch, also atemabhängig, und liegt eine Ausstrahlung in die Schulter oder in den Rücken vor, oder ist er eher lokalisiert?",
+        "Wo genau im Brustkorb spüren Sie den Schmerz? Wird er beim Atmen, Husten oder Bewegen besser oder schlechter?",
+        "Der Schmerz ist doch bestimmt beim tiefen Einatmen am schlimmsten, nicht wahr?",
+        "Tut es im Brustkorb weh?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache („pleuritisch“, „lokalisiert“); die Patientin versteht die Frage nicht.",
+        "Richtig: Ort und Auslöser des Schmerzes, offen und in Laiensprache.",
+        "Suggestivfrage. Die Patientin könnte Ihnen nur zustimmen.",
+        "Geschlossene Frage; die Patientin hat den Schmerz schon beschrieben. Fragen Sie nach Ort und Auslöser."
+      ],
+      "reply": "Patientin: „Rechts seitlich unten. Beim tiefen Einatmen wird es schlimmer, in Ruhe ist es etwas besser. Ausstrahlen tut nichts.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Seit wann haben Sie die Beschwerden?",
+        "Ist die Dyspnoe akut, subakut oder chronisch progredient aufgetreten?",
+        "Wann genau hat es angefangen, was haben Sie dabei gemacht, und ist es seitdem besser, schlechter oder gleich geblieben?",
+        "Hat es plötzlich angefangen?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das hat die Patientin schon gesagt (seit heute Morgen). Fragen Sie nach Auslöser und Verlauf.",
+        "Fachsprache: „subakut“ und „progredient“ versteht die Patientin nicht.",
+        "Richtig: Beginn, Situation und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Geschlossene Frage; sie erfasst den Verlauf nicht."
+      ],
+      "reply": "Patientin: „Heute gegen 7 Uhr beim Treppensteigen, ganz plötzlich. Seitdem ist es ungefähr gleich schlimm.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Belastbarkeit und Stärke des Schmerzes. Welche Formulierung passt?",
+      "options": [
+        "Wie ausgeprägt ist Ihre Belastbarkeit nach NYHA, und wie beschreiben Sie die Schmerzqualität auf einer Rating-Skala von 1 bis 100?",
+        "Ist die Luftnot schlimm?",
+        "Haben Sie Angst, dass Sie ersticken?",
+        "Wie weit können Sie gehen, bevor Sie Luft holen müssen? Und wie stark ist der Schmerz von 0 bis 10?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachsprache („NYHA“) und eine unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
+        "Suggestiv und beängstigend; sie erfasst weder Belastbarkeit noch Schmerzstärke.",
+        "Richtig: konkrete Frage zur Belastbarkeit und die übliche Schmerzskala von 0 bis 10."
+      ],
+      "reply": "Patientin: „Schon im Flur muss ich stehen bleiben. Der Schmerz ist stechend, so 6 von 10.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Spüren Sie Herzklopfen oder Schwindel? Haben Sie Husten, mit oder ohne Auswurf, oder Blut dabei? Sind Sie ohnmächtig geworden? Sind Ihnen geschwollene oder schmerzende Beine aufgefallen?",
+        "Hatten Sie Palpitationen, Vertigo, Synkopen, Hämoptysen oder Beinödeme?",
+        "Sie husten bestimmt auch Blut, oder?",
+        "Haben Sie sonst noch was?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: gezielte Begleitsymptome in Laiensprache, einschließlich Husten mit Blut und Beinschwellung.",
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Herzrasen“, „Schwindel“, „Ohnmacht“, „Bluthusten“.",
+        "Suggestiv: Sie unterstellen das Symptom.",
+        "Zu umgangssprachlich und unkonkret."
+      ],
+      "reply": "Patientin: „Mein Herz rast, mir ist schwindelig. Ich huste trocken, einmal war ein bisschen Blut dabei. Ohnmächtig war ich nicht. Meine linke Wade ist seit zwei Tagen dick und tut weh.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Haben Sie Fieber, Schüttelfrost, Nachtschweiß, Gewichtsverlust, Dysurie, Obstipation oder Diarrhö bemerkt?",
+        "Haben Sie Fieber gemessen? Wie sind Appetit, Gewicht, Stuhlgang und Wasserlassen?",
+        "Wie ist die Vegetativa?",
+        "Ist sonst alles normal bei Ihnen?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Obstipation, Diarrhö).",
+        "Richtig: Fieber, Appetit, Gewicht, Stuhlgang und Wasserlassen in Laiensprache.",
+        "Fachjargon, den eine Patientin nicht versteht.",
+        "Zu allgemein; die Patientin sagt einfach „ja“."
+      ],
+      "reply": "Patientin: „Fieber hatte ich nicht, 37,2 Grad. Appetit und Gewicht sind gleich, Stuhlgang und Wasserlassen normal. Nachts schwitze ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, eine KHK oder eine Thrombose in der Vorgeschichte, und gab es Operationen oder stationäre Aufenthalte?",
+        "Sind Sie gesund?",
+        "Welche Diagnosen stehen in Ihrer Akte?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck, Zucker oder Asthma? Wurden Sie schon einmal operiert oder lagen Sie im Krankenhaus?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „KHK“). Mit Patienten sprechen Sie Laiensprache.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Die Patientin kennt ihre Akte nicht. Fragen Sie direkt.",
+        "Richtig: mit Beispielen, laienverständlich, und Operationen und Krankenhausaufenthalte sind mitgefragt."
+      ],
+      "reply": "Patientin: „Chronisch nichts, nur manchmal Migräne. Vor fünf Wochen wurde mein linkes Sprunggelenk nach einem Bruch operiert, danach war das Bein vier Wochen im Gips. Der Gips ist seit einer Woche ab. Ein Blutgerinnsel hatte ich noch nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch die Pille, Spritzen oder Mittel ohne Rezept?",
+        "Nehmen Sie Tabletten?",
+        "Welche Pharmaka applizieren Sie, und in welcher Applikationsform und Dosierung jeweils?",
+        "Sie nehmen doch sicher Schmerzmittel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Name, Dosierung, Pille, Spritzen und auch frei verkäufliche Mittel.",
+        "Zu ungenau: Dosis und andere Darreichungsformen fehlen.",
+        "Fachsprache („Pharmaka“, „applizieren“, „Applikationsform“).",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patientin: „Die Pille, Valette, eine Tablette morgens. Ibuprofen 400 bei Bedarf, in letzter Zeit etwa dreimal pro Woche. Eine Thrombosespritze, Enoxaparin 40 mg, habe ich bis zur Gipsentfernung jeden Abend bekommen.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht ein Antibiotikum geben möchten, und Penicillin ist das Mittel, das wir am häufigsten verwenden.",
+        "Sind Sie hypersensibel?",
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Kontrastmittel, Pflaster oder Pollen? Wie äußert sich das?",
+        "Allergie?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu eng: Allergien gegen Kontrastmittel, Pflaster oder Pollen übersehen Sie.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl.",
+        "Richtig: offen, mit Beispielen (auch Kontrastmittel), und Sie fragen nach der Reaktion.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich."
+      ],
+      "reply": "Patientin: „Gegen Birkenpollen, da niese ich und die Augen tränen. Gegen Medikamente nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Rauchen Sie, und trinken Sie regelmäßig zu viel Alkohol? Ich muss das genau wissen, weil Raucher oft ungesund leben.",
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus?",
+        "Sind Sie Raucherin?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Wertend und unterstellend („zu viel“, „ungesund“); das stört das Vertrauen.",
+        "Richtig: neutral, konkret, mit Menge.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Zu eng: Alkohol und Drogen fehlen, und die Menge wird nicht erfragt."
+      ],
+      "reply": "Patientin: „Ich rauche seit 20 Jahren etwa 15 Zigaretten am Tag. Alkohol nur ein Glas Wein pro Woche. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel am Herzen, an den Gefäßen oder Krebs?",
+        "Hatte Ihre Familie dieselbe Krankheit?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Zu eng: Geschwister und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Richtig: offen, mit passenden Beispielen, laienverständlich.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
+      ],
+      "reply": "Patientin: „Meine Mutter hatte mit 50 eine Beinvenenthrombose. Mein Vater hat Bluthochdruck.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Was ist Ihr sozialer Status?",
+        "Haben Sie genug Geld für die Behandlung?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Entlassung und Versorgung.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Unklar und unangenehm formuliert.",
+        "Unangemessen und kränkend."
+      ],
+      "reply": "Patientin: „Ich bin Sachbearbeiterin im Büro und wohne mit meinem Mann und unseren zwei Kindern in einer Wohnung im zweiten Stock, ohne Aufzug.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben eine Lungenembolie bei tiefer Beinvenenthrombose, ausgelöst durch die Immobilisation und die Östrogene in der Pille.",
+        "Das ist wahrscheinlich nur eine Rippenprellung oder eine Verspannung, machen Sie sich keine Sorgen.",
+        "Sie haben bestimmt eine Lungenentzündung, weil Sie so viel rauchen. Das hätten Sie sich selbst ersparen können.",
+        "Ich vermute, dass sich in Ihrem Bein ein Blutgerinnsel gebildet hat und in die Lunge gewandert ist. Das könnte die Atemnot und den Schmerz erklären. Das müssen wir jetzt schnell abklären."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachsprache und zu sicher; die Patientin versteht die Diagnose nicht, und sie ist noch nicht gesichert.",
+        "Verharmlosend und medizinisch falsch.",
+        "Vorschnelle Diagnose und Vorwurf; das passt nicht zu den Beschwerden und zerstört das Vertrauen.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung des Mechanismus."
+      ],
+      "reply": "Patientin: „Ein Blutgerinnsel in der Lunge? Ist das gefährlich? Muss ich im Krankenhaus bleiben?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Die Patientin fragt: „Ist das gefährlich, und muss ich im Krankenhaus bleiben?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Nein, das ist harmlos. Sie bekommen eine Tablette und können heute Abend nach Hause gehen.",
+        "Das kann gefährlich sein, deshalb handeln wir schnell. Sie bekommen Sauerstoff, wir nehmen Blut ab, schreiben ein EKG und machen eine Computertomografie der Lungengefäße. Wenn sich der Verdacht bestätigt, bekommen Sie ein Medikament zur Blutverdünnung und bleiben zur Überwachung bei uns.",
+        "Ja, das ist lebensgefährlich. Wir müssen Ihnen sofort ein Medikament spritzen, das das Gerinnsel auflöst, und Sie auf die Intensivstation verlegen, aber die Chancen stehen leider nicht gut.",
+        "Das entscheidet der Chef, ich weiß es nicht."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch und gefährlich: Eine Lungenembolie muss abgeklärt und behandelt werden.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich („Blutverdünnung“).",
+        "Übertrieben und beängstigend; die Lyse ist nur bei instabilem Kreislauf vorgesehen.",
+        "Unprofessionell und lässt die Patientin allein."
+      ],
+      "reply": "Patientin: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Frau Julia Hartmann ist 44 und hat seit heute Morgen Luftnot und Schmerzen in der Brust.",
+        "Die Patientin Frau Hartmann stellt sich heute vor wegen Dyspnoe und Thoraxschmerzen rechts seit Morgen, 44-jährig, in unserer Notaufnahme.",
+        "Frau Julia Hartmann, eine 44-jährige Patientin, stellte sich heute in unserer Notaufnahme mit seit dem Morgen bestehender Dyspnoe und atemabhängigen Schmerzen im rechten Thorax vor.",
+        "Frau Julia Hartmann (44 J.) hat sich heute in unsere Notaufnahme vorgestellt wegen Dyspnoe und Thoraxschmerzen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Satzbau falsch: Präsens statt Präteritum, die Altersangabe hängt am Ende, die Ortsangabe steht unglücklich.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptom.",
+        "Grammatik: „in unserer Notaufnahme“ (Dativ, wo?), und das Leitsymptom ist zu ungenau."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Luftnot hat beim Treppensteigen angefangen und ist dann geblieben, dazu sticht es rechts im Brustkorb.",
+        "Die Beschwerden seien plötzlich beim Treppensteigen aufgetreten und bestünden seitdem unverändert, NRS 6.",
+        "Die Beschwerden sind heute gegen 7 Uhr in Ruhe plötzlich aufgetreten, seitdem regredient, mit Ausstrahlung in den linken Arm (NRS 9/10) und ohne eingeschränkte Belastbarkeit.",
+        "Die Beschwerden sind heute gegen 7 Uhr beim Treppensteigen plötzlich aufgetreten, seitdem unverändert. Es bestehen atemabhängige, stechende Schmerzen rechtsseitig basal (NRS 6/10) ohne Ausstrahlung sowie eine Belastungsdyspnoe bereits beim Gehen im Flur (NYHA III)."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Konjunktiv-I-Mischung und unvollständig; außerdem fehlt „/10“.",
+        "Inhaltlich falsch: Die Beschwerden begannen beim Treppensteigen, sind unverändert, strahlen nicht aus, und die Belastbarkeit ist eingeschränkt.",
+        "Richtig: Fachsprache und alle Merkmale (Auslöser, Verlauf, Charakter, Intensität, Belastbarkeit)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete die Patientin über Palpitationen, Schwindel und trockenen Husten mit einmaliger Hämoptyse. Eine Synkope und Fieber wurden verneint. Beinschwellungen bestehen nicht. Appetit, Stuhlgang und Miktion unauffällig.",
+        "Begleitend berichtete die Patientin über Palpitationen, Schwindel und trockenen Husten mit einmaliger Hämoptyse sowie über eine seit zwei Tagen bestehende schmerzhafte Schwellung der linken Wade. Eine Synkope wurde verneint. Fieber (37,2 °C), Nachtschweiß und Gewichtsverlust wurden verneint. Appetit, Stuhlgang und Miktion unauffällig.",
+        "Sie hatte Herzrasen und hat Blut gehustet.",
+        "Die Patientin berichtete über Palpitationen, Schwindel und trockenen Husten mit einmaliger Hämoptyse sowie über eine schmerzhafte Schwellung der linken Wade seit zwei Tage. Synkope, Fieber und Nachtschweiß wurden verneint."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich falsch: Die Patientin hat seit zwei Tagen eine schmerzhafte Schwellung der linken Wade.",
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Umgangssprachlich und unvollständig.",
+        "Grammatik: „seit zwei Tagen“ (Dativ Plural nach „seit“)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Migräne. Z. n. Osteosynthese des linken oberen Sprunggelenks vor fünf Wochen bei Sprunggelenksfraktur mit Unterschenkelgips für vier Wochen (Gipsentfernung vor einer Woche). Keine Thrombose in der Vorgeschichte. Medikation: Valette (Dienogest/Ethinylestradiol) 1-0-0, Ibuprofen 400 mg bei Bedarf, Enoxaparin 40 mg s. c. 0-0-1 bis zur Gipsentfernung.",
+        "Vorerkrankungen: Migräne, Sprunggelenk operiert. Medikamente: Pille, Ibuprofen, Spritze.",
+        "Vorerkrankungen: Migräne. Z. n. Osteosynthese des rechten oberen Sprunggelenks vor fünf Monaten. Z. n. tiefer Beinvenenthrombose. Medikation: Valette 1-0-1, Ibuprofen 400 mg bei Bedarf, Enoxaparin 40 mg s. c. 0-0-1 aktuell fortlaufend.",
+        "Medikation: Valette 0-0-1, Ibuprofen 400 mg 1-1-1, Enoxaparin 40 mg 1-0-0."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach), Dosierschema und der Zeitpunkt der Gipsentfernung.",
+        "Laiensprache und ohne Dosierung.",
+        "Inhaltlich falsch: linkes Sprunggelenk, vor fünf Wochen, keine frühere Thrombose, Valette 1-0-0, Enoxaparin nur bis zur Gipsentfernung.",
+        "Dosierschema falsch: Valette morgens (1-0-0), Ibuprofen nur bei Bedarf, Enoxaparin abends (0-0-1)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: Penicillin. Noxen: Nikotinabusus.",
+        "Pollinose (Birke) mit Rhinokonjunktivitis, keine Medikamentenallergie. Nikotinkonsum ca. 30 py, gelegentlicher Alkoholkonsum (ein Glas Wein pro Woche), kein Drogenkonsum. Familienanamnese: Mutter tiefe Beinvenenthrombose mit 50 J., Vater arterielle Hypertonie. Die Patientin ist als Sachbearbeiterin im Büro tätig und verheiratet, lebt mit Ehemann und zwei Kindern im zweiten Obergeschoss ohne Aufzug.",
+        "Pollinose (Birke) mit Rhinokonjunktivitis, keine Medikamentenallergie. Nikotinkonsum ca. 15 py, gelegentlicher Alkoholkonsum (ein Glas Wein pro Woche), kein Drogenkonsum. Familienanamnese: Mutter tiefe Beinvenenthrombose mit 50 J., Vater arterielle Hypertonie. Die Patientin ist Sachbearbeiterin, verheiratet, lebt mit Ehemann und zwei Kindern im zweiten Obergeschoss ohne Aufzug.",
+        "Sie hat Heuschnupfen und raucht."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: Es besteht keine Penicillinallergie, und Familienanamnese und Sozialanamnese fehlen.",
+        "Falsch: 15 Zigaretten täglich über 20 Jahre sind 15 py, nicht 30 py.",
+        "Richtig: 15 Zigaretten am Tag über 20 Jahre sind 15 pack years (py = Packungsjahre).",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Blutgerinnsel in der Lunge.",
+        "Es besteht eine gesicherte Lungenembolie.",
+        "Anamnestisch besteht der Verdacht auf eine Pneumonie bei Nikotinabusus. Differenzialdiagnostisch kommen ein Pneumothorax, ein akutes Koronarsyndrom und eine Perikarditis in Betracht.",
+        "Anamnestisch besteht der Verdacht auf eine Lungenembolie bei Immobilisation, hormoneller Kontrazeption und Verdacht auf eine tiefe Beinvenenthrombose links. Differenzialdiagnostisch kommen ein Pneumothorax, eine Pneumonie und ein akutes Koronarsyndrom in Betracht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Ohne Bildgebung ist die Diagnose noch nicht gesichert.",
+        "Unwahrscheinlich: kein Fieber und kein Auswurf; Immobilisation, Pille und Wadenschwellung sprechen für eine Embolie.",
+        "Richtig: Verdacht statt Gewissheit, Risikofaktoren und sinnvolle Differenzialdiagnosen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (u. a. D-Dimere, Troponin, NT-proBNP, Kreatinin), ein EKG, Sauerstoff, eine Kompressionssonographie der Beinvenen und eine CT-Pulmonalisangiographie. Bei hoher klinischer Wahrscheinlichkeit beginnen wir schon vorher eine Antikoagulation mit Enoxaparin 80 mg s. c. 1-0-1. Valette wird abgesetzt. Bei Bestätigung erfolgt eine stationäre Überwachung.",
+        "Wir machen Blut, EKG und ein Röntgen vom Thorax.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und eine CT-Pulmonalisangiographie. Bei Bestätigung erfolgt sofort eine systemische Lysetherapie mit Alteplase, auch bei stabilem Kreislauf, und die Entlassung am Folgetag mit Ibuprofen als Dauermedikation.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme, ein EKG und eine CT-Pulmonalisangiographie. Valette wird fortgeführt. Zur Therapie empfehlen wir ASS 100 mg 1-0-0 und Ibuprofen 600 mg 1-1-1; auf eine Antikoagulation verzichten wir."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Diagnostik, frühe Antikoagulation (80 mg = 1 mg/kg bei 78 kg), Absetzen der Pille und Überwachung.",
+        "Zu umgangssprachlich und unvollständig; ein Röntgen schließt die Embolie nicht aus.",
+        "Gefährlich: Die Lyse ist bei stabilem Kreislauf nicht indiziert (Blutungsrisiko), und die Antikoagulation fehlt.",
+        "Gefährlich: ASS ersetzt keine Antikoagulation, Ibuprofen ist unpassend, und die Pille muss abgesetzt werden."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Also, die Frau ist die Treppe gestiegen und dann ging die Luft weg ...",
+        "Frau Hartmann hat eine Lungenembolie.",
+        "Die Patientin Frau Hartmann ist 44 und raucht, außerdem hat sie eine dicke Wade und Husten, und sie war lange im Gips, außerdem nimmt sie die Pille.",
+        "Ich möchte Ihnen Frau Julia Hartmann vorstellen, eine 44-jährige Patientin, die sich heute mit seit 7 Uhr bestehender, plötzlich aufgetretener Dyspnoe und atemabhängigen rechtsseitigen Thoraxschmerzen vorgestellt hat."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Kein strukturierter Einstieg; zuerst Patientin und Leitsymptom.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Unstrukturiert und umgangssprachlich; alles wird ohne Ordnung aufgezählt.",
+        "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Die Beschwerden traten nachts in Ruhe auf und strahlen in den linken Arm aus. Begleitend bestehen Fieber bis 38,5 °C, Husten mit gelbem Auswurf und Schüttelfrost. Eine Beinschwellung wurde verneint.",
+        "Sie hat alles Mögliche.",
+        "Die Dyspnoe trat plötzlich beim Treppensteigen auf, die Patientin ist schon im Flur belastungslimitiert (NYHA III). Begleitend bestehen Herzrasen, Schwindel, trockener Husten mit einmaliger Hämoptyse und eine seit zwei Tagen schmerzhafte Schwellung der linken Wade. Fieber und eine Synkope wurden verneint.",
+        "Sie hat Husten, Fieber und Schüttelfrost."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Die Beschwerden begannen morgens beim Treppensteigen; Fieber und Auswurf wurden verneint, die Wade ist geschwollen.",
+        "Keine Information.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
+        "Inhaltlich falsch: Fieber und Schüttelfrost bestehen nicht."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Vor fünf Wochen erfolgte eine Osteosynthese des linken oberen Sprunggelenks mit vierwöchiger Gipsimmobilisation; die Thromboseprophylaxe mit Enoxaparin endete mit der Gipsentfernung vor einer Woche. Zusätzliche Risikofaktoren sind Valette, Nikotinkonsum (ca. 15 py) und eine Beinvenenthrombose der Mutter mit 50 J. Eine eigene Thrombose ist nicht bekannt.",
+        "Sie ist gesund.",
+        "Bekannt sind eine Migräne und eine tiefe Beinvenenthrombose vor einem Jahr. Die Patientin nimmt keine Hormonpräparate. Allergie gegen Penicillin.",
+        "Sie nimmt Ibuprofen und die Pille, sonst nichts."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: relevante Risikofaktoren (Immobilisation, Operation, Pille, Rauchen, Familie) und die beendete Prophylaxe.",
+        "Falsch: Es gibt relevante Risikofaktoren.",
+        "Inhaltlich falsch: keine frühere Thrombose, sie nimmt die Pille, und sie hat keine Penicillinallergie.",
+        "Unvollständig: Operation, Immobilisation und Enoxaparin fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an eine Lungenentzündung.",
+        "Ich weiß es nicht genau.",
+        "Es handelt sich sicher um einen Spannungspneumothorax, weil die Schmerzen atemabhängig sind. Differenzialdiagnostisch denke ich höchstens noch an eine Perikarditis und eine Pneumonie.",
+        "Ich vermute eine Lungenembolie bei wahrscheinlicher tiefer Beinvenenthrombose links, begünstigt durch Immobilisation, hormonelle Kontrazeption und Nikotinkonsum. Differenzialdiagnostisch denke ich an eine Pneumonie, einen Pneumothorax und ein akutes Koronarsyndrom."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu unpräzise, und ohne Fieber und Auswurf unwahrscheinlich.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
+        "Zu sicher („sicher“), und ein Spannungspneumothorax passt nicht zu stabilem Kreislauf und Beinschwellung.",
+        "Richtig: Verdachtsdiagnose, Risikofaktoren und Differenzialdiagnosen in Fachsprache."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde sie mit einem Schmerzmittel nach Hause schicken.",
+        "Ich würde Blut abnehmen (u. a. D-Dimere, Troponin, NT-proBNP, Kreatinin), ein EKG schreiben und Sauerstoff geben. Wegen der hohen klinischen Wahrscheinlichkeit würde ich schon vor der Bildgebung mit Enoxaparin 1 mg/kg KG, also 80 mg s. c., zweimal täglich beginnen und eine CT-Pulmonalisangiographie veranlassen. Dazu Valette absetzen und die Patientin überwacht aufnehmen.",
+        "Ich würde zuerst einen D-Dimer-Test abnehmen und erst bei positivem Ergebnis weiter planen; bei negativem Test wäre eine Lungenembolie auch bei hoher klinischer Wahrscheinlichkeit ausgeschlossen, und wir könnten die Patientin entlassen.",
+        "Ich würde sofort eine systemische Lyse mit Alteplase geben."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Gefährlich: Eine Lungenembolie muss abgeklärt und behandelt werden.",
+        "Richtig: Diagnostik, frühe Antikoagulation, CT-Angiographie, Beinvenen, Pille absetzen, Überwachung.",
+        "Leitlinienwidrig: Bei hoher klinischer Wahrscheinlichkeit wird direkt bildgegeben; ein D-Dimer-Test schließt dann nichts aus.",
+        "Gefährlich: Die Lyse ist nur bei hämodynamischer Instabilität indiziert; die Patientin ist kreislaufstabil."
+      ],
+      "reply": "Oberarzt: „Gut. Wie schätzen Sie die klinische Wahrscheinlichkeit ein, und welchen Score nehmen Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich nehme den CURB-65-Score; er zeigt die Wahrscheinlichkeit einer Lungenembolie an, und die Patientin hat 0 Punkte, also eine niedrige Wahrscheinlichkeit.",
+        "Ich nehme den CHA2DS2-VASc-Score; er ergibt bei einer 44-jährigen Frau 1 Punkt, also eine niedrige Wahrscheinlichkeit.",
+        "Ich nehme den Wells-Score für die Lungenembolie: Klinische Zeichen einer Beinvenenthrombose, Lungenembolie als wahrscheinlichste Diagnose, Immobilisation im Gips und Hämoptyse ergeben mehr als 6 Punkte, also eine hohe klinische Wahrscheinlichkeit.",
+        "Ich brauche keinen Score."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: CURB-65 schätzt den Schweregrad einer Pneumonie ein, nicht die Wahrscheinlichkeit einer Embolie.",
+        "Falsch: CHA2DS2-VASc schätzt das Schlaganfallrisiko bei Vorhofflimmern ein.",
+        "Richtig: Wells-Score (oder revidierter Genfer Score) für die klinische Wahrscheinlichkeit; hier hoch.",
+        "In der Prüfung erwartet man eine begründete Antwort; die Leitlinie fordert die Einschätzung der klinischen Wahrscheinlichkeit."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Dyspnoe“?",
+      "options": [
+        "Husten",
+        "Atemnot",
+        "Brustschmerz",
+        "Atemstillstand"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist Tussis.",
+        "Richtig.",
+        "Das ist der Thoraxschmerz.",
+        "Das ist die Apnoe."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Hämoptyse“?",
+      "options": [
+        "Bluterbrechen",
+        "Blut im Urin",
+        "Bluthusten",
+        "Nasenbluten"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Hämatemesis.",
+        "Das ist die Hämaturie.",
+        "Richtig.",
+        "Das ist die Epistaxis."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Embolie“?",
+      "options": [
+        "Entzündung einer Vene",
+        "Blutarmut",
+        "Aussackung einer Arterie",
+        "Verschluss eines Gefäßes durch ein verschlepptes Blutgerinnsel"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Phlebitis.",
+        "Das ist die Anämie.",
+        "Das ist das Aneurysma.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Antikoagulation“?",
+      "options": [
+        "Blutstillung",
+        "Hemmung der Blutgerinnung",
+        "Blutreinigung",
+        "Blutdrucksenkung"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Hämostase.",
+        "Richtig.",
+        "Das ist die Dialyse (Hämofiltration).",
+        "Das ist die antihypertensive Therapie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Tachykardie“?",
+      "options": [
+        "unregelmäßiger Herzschlag",
+        "zu schneller Herzschlag",
+        "zu langsamer Herzschlag",
+        "Herzstillstand"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Arrhythmie.",
+        "Richtig.",
+        "Das ist die Bradykardie.",
+        "Das ist die Asystolie."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

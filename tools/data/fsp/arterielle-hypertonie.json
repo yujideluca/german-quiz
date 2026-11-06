@@ -1,0 +1,691 @@
+{
+  "id": "arterielle-hypertonie",
+  "area": "Kardiologie",
+  "title": "Kopfschmerzen und Schwindel",
+  "diagnosis": "Hypertensive Entgleisung bei arterieller Hypertonie",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Klaus Weber, 58 Jahre, stellt sich am Vormittag in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Weber sitzt auf der Liege und hält sich den Kopf.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Hallo, setzen Sie sich bitte, ich messe jetzt sofort Ihren Blutdruck.",
+        "Guten Tag. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte und Ihren Personalausweis dabei? Die brauchen wir zuerst für die Anmeldung.",
+        "Guten Tag, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Weber?",
+        "Na, Herr Weber, was haben Sie denn angestellt?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Keine Vorstellung, und die Untersuchung kommt nach dem Gespräch. Erst begrüßen und sich vorstellen.",
+        "Verwaltungsfragen gehören nicht an den Anfang des Arzt-Patienten-Gesprächs, und Sie stellen sich nicht vor.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Zu umgangssprachlich und fast vorwurfsvoll. In der Prüfung zählt eine höfliche, vollständige Begrüßung."
+      ],
+      "reply": "Patient: „Ja, Weber. Guten Tag, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Sie sind doch bestimmt über fünfzig, oder?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?",
+        "Wie hoch ist Ihr Body-Mass-Index?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht."
+      ],
+      "reply": "Patient: „Ich bin 58, 1,78 Meter groß und wiege etwa 96 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Haben Sie Kopfschmerzen?",
+        "Warum kommen Sie erst jetzt zu uns und nicht schon gestern Abend, als es angefangen hat?",
+        "Welche Symptomatik liegt bei Ihnen vor, und seit wann besteht sie?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen.",
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "Vorwurfsvoll und es steht noch gar nichts fest. Das stört das Vertrauen gleich zu Beginn.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache."
+      ],
+      "reply": "Patient: „Seit gestern Abend habe ich starke Kopfschmerzen, und mir ist schwindelig. Heute Morgen habe ich zu Hause den Blutdruck gemessen: 215 zu 120.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten wissen, wo die Kopfschmerzen sitzen und was sie beeinflusst. Was sagen Sie?",
+      "options": [
+        "Haben Sie Cephalgien frontal, temporal oder okzipital, und gibt es Trigger wie Photophobie, Phonophobie oder Lagewechsel, die den Befund verschlimmern?",
+        "Wo genau im Kopf tut es weh, und gibt es etwas, das den Schmerz stärker oder schwächer macht, zum Beispiel Bewegung, Licht oder Aufregung?",
+        "Es sitzt bestimmt im Hinterkopf, oder?",
+        "Tut Ihnen der Kopf weh?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache (Cephalgien, okzipital, Trigger, Photophobie); der Patient versteht sie nicht.",
+        "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
+        "Das hat der Patient schon gesagt. Fragen Sie nach Ort und Auslösern."
+      ],
+      "reply": "Patient: „Hinten am Kopf, bis in den Nacken. Beim Bücken wird es schlimmer. Licht stört mich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Seit wann haben Sie die Kopfschmerzen?",
+        "Hat es plötzlich angefangen?",
+        "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch progredient?",
+        "Wann genau hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das hat der Patient schon gesagt (seit gestern Abend). Fragen Sie nach dem Verlauf.",
+        "Geschlossene Frage; sie erfasst den Verlauf nicht.",
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „progredient“ versteht der Patient nicht.",
+        "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage."
+      ],
+      "reply": "Patient: „Gestern gegen 19 Uhr, nach viel Stress im Dienst. Seitdem wird es langsam immer schlimmer.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "options": [
+        "Wie würden Sie die Kopfschmerzen beschreiben, eher dumpf, stechend oder pochend? Und wie stark sind sie auf einer Skala von 0 bis 10?",
+        "Sind die Kopfschmerzen eher pulsierend-hämmernd oder dumpf-drückend, und wie stark sind sie auf der numerischen Rating-Skala von 0 bis 10?",
+        "Wie stark sind die Schmerzen von 1 bis 100?",
+        "Ist es ein Spannungskopfschmerz?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10.",
+        "Fachsprache („pulsierend-hämmernd“, „numerische Rating-Skala“); der Patient versteht sie schlecht.",
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
+        "Das ist eine Diagnose, keine Frage nach dem Schmerz; der Patient kann damit nichts anfangen."
+      ],
+      "reply": "Patient: „Dumpf und drückend, ungefähr 7 von 10. Pochend ist es nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Hatten Sie Nausea, Emesis, Vertigo, Visusminderung, Dyspnoe, Thoraxschmerzen oder Paresen?",
+        "Sie hatten bestimmt auch Sehstörungen, nicht wahr?",
+        "Ist Ihnen übel, haben Sie sich übergeben, ist Ihr Sehen verändert, oder gab es Luftnot, Brustschmerzen, Lähmungen oder Sprachprobleme?",
+        "Haben Sie sonst noch was?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „übel“, „übergeben“, „Sehen“, „Luftnot“.",
+        "Suggestiv: Sie unterstellen das Symptom.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive Warnzeichen für Herz und Gehirn.",
+        "Zu umgangssprachlich und unkonkret."
+      ],
+      "reply": "Patient: „Mir ist übel, übergeben habe ich mich einmal. Ich sehe etwas verschwommen. Luftnot, Brustschmerzen, Lähmungen oder Sprachprobleme habe ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie ist die Vegetativa?",
+        "Haben Sie Fieber gehabt? Wie sind Appetit, Stuhlgang, Wasserlassen und Schlaf? Hat sich Ihr Gewicht verändert?",
+        "Haben Sie Schüttelfrost, Nachtschweiß, Dysurie, Obstipation, Diarrhö und Insomnie, und hat sich Ihr Körpergewicht in letzter Zeit verändert?",
+        "Ist sonst alles normal bei Ihnen?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Richtig: Fieber, Appetit, Stuhlgang, Wasserlassen, Schlaf und Gewicht in Laiensprache.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Obstipation, Diarrhö, Insomnie).",
+        "Zu allgemein; der Patient sagt einfach „ja“."
+      ],
+      "reply": "Patient: „Fieber hatte ich nicht. Der Appetit ist wegen der Übelkeit schlecht, Stuhlgang und Wasserlassen sind normal. Geschlafen habe ich schlecht. Mein Gewicht ist gleich.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, eine Hypercholesterinämie, einen Diabetes mellitus oder eine KHK, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Sind Sie gesund?",
+        "Welche Diagnosen stehen in Ihrer Akte?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck, Zucker oder hohe Cholesterinwerte? Und wurden Sie schon einmal operiert?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „KHK“). Mit Patienten sprechen Sie Laiensprache.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Der Patient kennt seine Akte nicht. Fragen Sie direkt.",
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt."
+      ],
+      "reply": "Patient: „Bluthochdruck seit etwa zehn Jahren und zu hohe Cholesterinwerte. Zucker habe ich nicht. Operiert wurde ich vor 15 Jahren an einem Leistenbruch rechts.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Welche Pharmaka applizieren Sie regelmäßig, und in welcher Dosierung und Frequenz? Auch frei verkäufliche Präparate?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept?",
+        "Nehmen Sie Tabletten?",
+        "Sie nehmen doch sicher Ihre Blutdrucktabletten jeden Tag?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache („Pharmaka“, „applizieren“).",
+        "Richtig: Name, Dosierung und auch frei verkäufliche Mittel.",
+        "Zu ungenau: Dosis und andere Mittel fehlen.",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Ramipril 10 mg morgens, Amlodipin 5 mg abends und Simvastatin 20 mg abends. Ramipril und Amlodipin sind seit vier Tagen aufgebraucht, ich hatte noch kein neues Rezept. Gestern Abend habe ich eine Ibuprofen 400 genommen.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Sind Sie gegen Kontrastmittel allergisch? Das ist wichtig, weil wir vielleicht gleich eine Computertomographie machen, und dabei geben wir am häufigsten Kontrastmittel.",
+        "Allergie?",
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Kontrastmittel, Pflaster oder Lebensmittel? Wie äußert sich das?",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu eng: Allergien gegen Medikamente, Pflaster oder Lebensmittel übersehen Sie.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patient: „Gegen jodhaltiges Kontrastmittel, da bekam ich bei einer Untersuchung Quaddeln und Juckreiz am ganzen Körper.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
+        "Sind Sie Raucher oder Alkoholiker?",
+        "Wie hoch ist Ihr Nikotin- und Alkoholabusus, und wie lange besteht er schon, auch in Bezug auf Drogen?",
+        "Trinken Sie zu viel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: neutral, konkret, mit Menge.",
+        "„Alkoholiker“ ist wertend und verletzend.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Wertend und ungenau."
+      ],
+      "reply": "Patient: „Ich rauche seit 35 Jahren etwa 20 Zigaretten am Tag. Abends trinke ich jeden Tag zwei Flaschen Bier, je 0,5 Liter. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Wie ist die Familienanamnese?",
+        "Hat Ihre Familie auch Bluthochdruck?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Herz-, Gefäß- oder Nierenerkrankungen, Schlaganfall oder Zucker?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu eng: Geschwister und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Geschlossene Frage; sie erfasst nur eine einzige Erkrankung.",
+        "Richtig: offen, mit passenden Beispielen."
+      ],
+      "reply": "Patient: „Mein Vater hatte mit 64 einen Schlaganfall. Meine Mutter hat Bluthochdruck und Zucker.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
+        "Was ist Ihr sozialer Status?",
+        "Verdienen Sie genug?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Entlassung und Versorgung.",
+        "Unklar und unangenehm formuliert.",
+        "Unangemessen."
+      ],
+      "reply": "Patient: „Ich bin Busfahrer und wohne mit meiner Frau zusammen. Wir haben einen erwachsenen Sohn, der nicht mehr bei uns wohnt.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben eine hypertensive Entgleisung bei Unterbrechung der antihypertensiven Medikation, möglicherweise mit hypertensiver Enzephalopathie und beginnendem Endorganschaden.",
+        "Das ist bestimmt nichts Schlimmes, Sie sind nur gestresst.",
+        "Ich vermute, dass Ihr Blutdruck gefährlich hoch ist, wahrscheinlich weil Sie Ihre Tabletten seit vier Tagen nicht mehr genommen haben. Das kann Kopfschmerzen und Schwindel verursachen. Wir prüfen jetzt, ob Herz, Gehirn, Augen oder Nieren schon geschädigt sind.",
+        "Sie haben sicher einen Schlaganfall, das müssen wir sofort im CT abklären."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache; der Patient versteht die Diagnose nicht.",
+        "Verharmlosend und medizinisch falsch.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, mögliche Ursache und nächster Schritt.",
+        "Falsch und beängstigend: ein Schlaganfall ist nur eine Differenzialdiagnose."
+      ],
+      "reply": "Patient: „Das war wohl dumm von mir. Was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Wird mein Blutdruck jetzt gleich gesenkt, und muss ich hierbleiben?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, wir senken Ihren Blutdruck jetzt sofort mit einer Spritze auf Normalwerte, dann können Sie nach Hause gehen.",
+        "Zuerst messen wir den Blutdruck an beiden Armen, schreiben ein EKG und nehmen Blut und Urin ab. Wir untersuchen auch Ihre Augen und Nerven. Wenn nichts geschädigt ist, geben wir Ihnen Tabletten und senken den Blutdruck langsam über ein bis zwei Tage. Das beobachten wir hier.",
+        "Das entscheidet der Chef, ich weiß es nicht.",
+        "Nein, Sie bekommen ein Rezept und können gleich wieder gehen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch und gefährlich: ein zu schneller Blutdruckabfall schadet Gehirn, Herz und Nieren.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Zu früh: ein Endorganschaden ist noch nicht ausgeschlossen."
+      ],
+      "reply": "Patient: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Weber ist 58 und hat Kopfweh und Schwindel.",
+        "Der Patient Herr Weber stellt sich heute vor wegen Kopfschmerzen und Schwindel seit gestern Abend und erhöhten Blutdruckwerten zu Hause, 58-jährig.",
+        "Herr Klaus Weber (58 J.) hat sich heute in unsere Notaufnahme vorgestellt wegen seit gestern Abend bestehender Kopfschmerzen, Schwindel und erhöhter häuslicher Blutdruckwerte.",
+        "Herr Klaus Weber, ein 58-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit gestern Abend bestehenden Kopfschmerzen und Schwindel bei erhöhten häuslichen Blutdruckwerten vor."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Satzbau falsch: die Altersangabe hängt am Ende, und „stellt sich vor“ passt nicht zum Berichtsstil (Präteritum).",
+        "Grammatik: „in unserer Notaufnahme“ (Dativ, wo?), nicht „in unsere“.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptome."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Seit gestern Abend bestehen okzipitale Kopfschmerzen mit Ausstrahlung in den Nacken, initial nach beruflicher Belastung aufgetreten, seitdem progredient, dumpf-drückend (NRS 7/10), beim Bücken verstärkt. Zudem Schwindel; häusliche Blutdruckmessung: 215/120 mmHg.",
+        "Seit gestern Abend bestehen okzipitale Kopfschmerzen mit Ausstrahlung in den Nacken, initial nach beruflicher Belastung aufgetreten, seitdem regredient, pochend (NRS 3/10), beim Bücken gelindert. Zudem Schwindel; häusliche Blutdruckmessung: 125/80 mmHg.",
+        "Der Kopf tut ihm seit gestern weh, und der Blutdruck war zu Hause hoch.",
+        "Seit gestern Abend seien okzipitale Kopfschmerzen aufgetreten und strahlen in den Nacken, NRS 7, Blutdruck 215/120 mmHg."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachsprache und alle Merkmale (Beginn, Verlauf, Lokalisation, Charakter, Intensität, Blutdruck).",
+        "Inhaltlich falsch: Die Beschwerden sind progredient, dumpf-drückend (7/10), und der Blutdruck lag bei 215/120 mmHg.",
+        "Inhaltlich richtig, aber Laiensprache und ungenau; im Bericht erwartet man Fachbegriffe.",
+        "Konjunktiv-I-Mischung und unvollständig; außerdem fehlt „/10“."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete der Patient über Übelkeit und einmaliges Erbrechen sowie verschwommenes Sehen. Fieber, Thoraxschmerzen, Dyspnoe, Paresen und Sprachstörungen wurden bejaht. Der Appetit sei reduziert, Stuhlgang und Miktion unauffällig, Schlaf gestört.",
+        "Er hat gekotzt und sieht verschwommen.",
+        "Begleitend berichtete der Patient über Übelkeit und einmaliges Erbrechen sowie verschwommenes Sehen. Fieber, Thoraxschmerzen, Dyspnoe, Paresen und Sprachstörungen wurden verneint. Appetit bei Übelkeit reduziert, Stuhlgang und Miktion unauffällig, Schlafstörung bei konstantem Gewicht.",
+        "Der Patient klagte über Thoraxschmerzen, Dyspnoe, Lähmungen und Sprachprobleme. Fieber wurde verneint."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Fieber, Thoraxschmerzen, Dyspnoe, Paresen und Sprachstörungen hat der Patient verneint.",
+        "Vulgär („gekotzt“) und unvollständig.",
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Inhaltlich falsch: Der Patient hat Thoraxschmerzen, Dyspnoe, Lähmungen und Sprachprobleme verneint."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Bluthochdruck, Cholesterin. Medikamente: Ramipril, Amlodipin, Simvastatin.",
+        "An Vorerkrankungen sind eine arterielle Hypertonie seit ca. zehn Jahren und eine Hypercholesterinämie bekannt. Z. n. Leistenhernienoperation rechts vor 15 Jahren. Medikation: Ramipril 10 mg 1-0-0 und Amlodipin 5 mg 0-0-1 (seit vier Tagen nicht mehr eingenommen), Simvastatin 20 mg 0-0-1, Ibuprofen 400 mg einmalig gestern.",
+        "An Vorerkrankungen sind eine arterielle Hypertonie seit ca. zehn Jahren und ein Diabetes mellitus Typ 2 bekannt. Z. n. Appendektomie vor 15 Jahren. Medikation: Ramipril 10 mg 1-0-0, Amlodipin 5 mg 0-0-1, Simvastatin 20 mg 0-0-1, Ibuprofen 400 mg einmalig gestern.",
+        "Medikation: Ramipril 10 mg 0-0-1, Amlodipin 5 mg 1-1-1, Simvastatin 20 mg 1-0-0."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach), Dosierschema und die unterbrochene Einnahme.",
+        "Inhaltlich falsch: Der Patient hat keinen Diabetes, operiert wurde ein Leistenbruch, und die Einnahme ist unterbrochen.",
+        "Dosierschema falsch: Ramipril morgens (1-0-0), Amlodipin abends (0-0-1), Simvastatin abends (0-0-1)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: keine. Noxen: Nikotinabusus.",
+        "Kontrastmittelallergie (Anaphylaxie). Nikotinkonsum ca. 35 py, täglicher Alkoholkonsum. Familienanamnese: Vater Myokardinfarkt mit 64 J., Mutter arterielle Hypertonie und Diabetes mellitus. Der Patient ist Busfahrer, verheiratet, lebt mit seiner Ehefrau.",
+        "Er verträgt kein Kontrastmittel und raucht.",
+        "Kontrastmittelallergie (Urtikaria). Nikotinkonsum ca. 35 py, täglicher Alkoholkonsum (zwei Flaschen Bier à 0,5 l). Familienanamnese: Vater Apoplex mit 64 J., Mutter arterielle Hypertonie und Diabetes mellitus. Der Patient ist Busfahrer, verheiratet, lebt mit seiner Ehefrau; ein erwachsener Sohn."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch: die Kontrastmittelallergie fehlt.",
+        "Falsch: Die Reaktion war eine Urtikaria, und der Vater hatte einen Apoplex, keinen Myokardinfarkt.",
+        "Laiensprache und unvollständig.",
+        "Richtig: 20 Zigaretten am Tag über 35 Jahre sind 35 pack years (py = Packungsjahre)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Anamnestisch besteht der Verdacht auf eine hypertensive Entgleisung nach Unterbrechung der antihypertensiven Medikation. Differenzialdiagnostisch kommen eine hypertensive Enzephalopathie, eine intrazerebrale Blutung und ein akutes Koronarsyndrom in Betracht.",
+        "Diagnose: Bluthochdruck.",
+        "Es besteht eine gesicherte hypertensive Krise mit Endorganschaden.",
+        "Anamnestisch besteht der Verdacht auf einen Spannungskopfschmerz bei Z. n. Leistenhernienoperation. Differenzialdiagnostisch kommen eine Migräne, ein Clusterkopfschmerz und eine Sinusitis in Betracht; der Blutdruck ist nicht relevant."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen mit Endorganschaden.",
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Ohne Untersuchung und Diagnostik ist ein Endorganschaden noch nicht gesichert.",
+        "Der Blutdruck von 215/120 mmHg wird ignoriert; die Operation ist zudem unwichtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und eine Computertomographie des Schädels mit jodhaltigem Kontrastmittel sowie eine sofortige Blutdrucksenkung mit sublingualem Nifedipin.",
+        "Wir geben ihm Tabletten und schicken ihn heim.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutdruckmessung an beiden Armen, ein 12-Kanal-EKG, Laborkontrollen (u. a. Blutbild, Elektrolyte, Kreatinin, Troponin, Glukose), einen Urinstatus sowie eine neurologische Untersuchung und eine Fundoskopie. Bei fehlendem Endorganschaden ist eine orale antihypertensive Therapie mit schrittweiser Blutdrucksenkung über 24 bis 48 Stunden indiziert.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und ein EKG sowie die sofortige Senkung des Blutdrucks auf Normalwerte innerhalb von 30 Minuten mit Urapidil i. v."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gefährlich: Kontrastmittelallergie, und sublinguales Nifedipin senkt den Druck unkontrolliert.",
+        "Zu umgangssprachlich und unvollständig; ein Endorganschaden wird nicht ausgeschlossen.",
+        "Richtig: Diagnostik, Ausschluss eines Endorganschadens und leitliniengerechte langsame Senkung.",
+        "Gefährlich: eine zu rasche Normalisierung gefährdet die Perfusion von Gehirn, Herz und Nieren."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Ich möchte Ihnen Herrn Klaus Weber vorstellen, einen 58-jährigen Patienten, der sich heute mit seit gestern Abend bestehenden Kopfschmerzen, Schwindel und einem häuslich gemessenen Blutdruck von 215/120 mmHg vorgestellt hat.",
+        "Also, der Mann ist Busfahrer und hatte gestern viel Stress im Dienst ...",
+        "Herr Weber hat eine hypertensive Krise.",
+        "Der Patient hat Kopfweh, er heißt Weber."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Name, Alter, Leitsymptome und Blutdruck in einem Satz.",
+        "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Unstrukturiert und umgangssprachlich."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Die Kopfschmerzen sind frontal und pochend, bei Licht verstärkt, ohne Nackenbeteiligung. Begleitend bestehen Übelkeit, einmaliges Erbrechen und verschwommenes Sehen. Thoraxschmerzen wurden verneint.",
+        "Er hat alles Mögliche.",
+        "Er hat Brustschmerzen, Luftnot und Lähmungen.",
+        "Die Kopfschmerzen sind okzipital lokalisiert, strahlen in den Nacken aus und sind dumpf-drückend (NRS 7/10). Begleitend bestehen Übelkeit, einmaliges Erbrechen und verschwommenes Sehen. Thoraxschmerzen, Dyspnoe, Paresen und Sprachstörungen wurden verneint."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich falsch: Die Kopfschmerzen sitzen hinten, strahlen in den Nacken aus, sind dumpf, und Licht stört nicht.",
+        "Keine Information.",
+        "Inhaltlich falsch: Brustschmerzen, Luftnot und Lähmungen wurden verneint.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist gesund.",
+        "Bekannt sind eine arterielle Hypertonie seit ca. zehn Jahren und eine Hypercholesterinämie. Ramipril und Amlodipin wurden seit vier Tagen nicht mehr eingenommen. Wichtig: Kontrastmittelallergie mit Urtikaria. Der Vater hatte mit 64 Jahren einen Apoplex. Er raucht ca. 35 py.",
+        "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 2. Er nimmt seine Medikamente regelmäßig ein. Keine Allergien. Die Mutter hatte einen Apoplex.",
+        "Er nimmt Ramipril und Amlodipin, sonst nichts."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: es gibt relevante Vorerkrankungen.",
+        "Richtig: relevante Vorgeschichte, Ursache der Entgleisung und die Allergie, die für die Bildgebung wichtig ist.",
+        "Inhaltlich falsch: kein Diabetes, die Medikamente fehlen seit vier Tagen, es gibt eine Kontrastmittelallergie, und der Vater hatte den Apoplex.",
+        "Unvollständig: Diagnosen, Allergie und die unterbrochene Einnahme fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an hohen Blutdruck.",
+        "Es handelt sich sicher um einen hämorrhagischen Schlaganfall, weil der Patient Kopfschmerzen hat. Differenzialdiagnostisch denke ich höchstens noch an eine Migräne und eine Sinusitis.",
+        "Ich vermute eine hypertensive Entgleisung nach Absetzen der antihypertensiven Medikation, ein Endorganschaden ist noch auszuschließen. Differenzialdiagnostisch denke ich an eine hypertensive Enzephalopathie, eine intrazerebrale Blutung und ein akutes Koronarsyndrom.",
+        "Ich weiß es nicht genau."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "Zu sicher („sicher“), und die Differenzialdiagnosen berücksichtigen den Blutdruck nicht.",
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache, Endorganschaden offen.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde den Blutdruck an beiden Armen messen, ein EKG schreiben und Blut und Urin abnehmen (u. a. Troponin, Kreatinin, Elektrolyte), dazu einen neurologischen Status und eine Fundoskopie. Ohne Endorganschaden würde ich die orale Therapie wieder ansetzen und den Blutdruck über 24 bis 48 Stunden langsam senken. Bei Endorganschaden Urapidil i. v. unter Monitoring.",
+        "Ich würde ihn nach Hause schicken.",
+        "Ich würde 10 mg Nifedipin sublingual geben und den Blutdruck innerhalb einer Stunde auf 120/80 mmHg senken, bevor wir weiter untersuchen.",
+        "Ich würde sofort ein CT des Schädels mit Kontrastmittel machen, auch wenn der Patient eine Kontrastmittelallergie hat."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Diagnostik, Ausschluss eines Endorganschadens, langsame Senkung, bei Notfall Urapidil i. v.",
+        "Gefährlich: Ein Endorganschaden muss zuerst ausgeschlossen werden.",
+        "Gefährlich: Sublinguales Nifedipin und eine rasche Normalisierung sind nicht leitliniengerecht (Gefahr von Ischämie).",
+        "Gefährlich: bei Kontrastmittelallergie nicht ohne Vorbereitung; eine native Computertomographie ohne Kontrastmittel genügt zur Blutungssuche."
+      ],
+      "reply": "Oberarzt: „Gut. Wie schnell senken wir den Blutdruck, wenn kein Endorganschaden vorliegt?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Sofort innerhalb von 30 Minuten auf Normalwerte, am besten mit sublingualem Nifedipin, damit die Kopfschmerzen schnell verschwinden und kein Schlaganfall droht.",
+        "Gar nicht, solange der Patient Beschwerden hat.",
+        "Erst nach der Entlassung, das übernimmt der Hausarzt.",
+        "Schrittweise und oral innerhalb von 24 bis 48 Stunden, nicht abrupt, weil eine zu schnelle Senkung die Durchblutung von Gehirn, Herz und Nieren gefährden kann."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch und gefährlich: eine abrupte Senkung kann Infarkte von Gehirn, Herz oder Nieren auslösen.",
+        "Fachlich falsch: Die Therapie soll nicht verzögert werden.",
+        "Nicht sinnvoll: die Behandlung beginnt in der Notaufnahme.",
+        "Richtig: bei hypertensiver Dringlichkeit ohne Endorganschaden langsam und oral."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Zephalgie“?",
+      "options": [
+        "Kopfschmerz",
+        "Schwindel",
+        "Nackensteifigkeit",
+        "Ohrgeräusch"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist Vertigo.",
+        "Das ist der Meningismus.",
+        "Das ist der Tinnitus."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Vertigo“?",
+      "options": [
+        "Ohnmacht",
+        "Kopfschmerz",
+        "Herzklopfen",
+        "Schwindel"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Synkope.",
+        "Das ist die Zephalgie.",
+        "Das sind Palpitationen.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Fundoskopie“?",
+      "options": [
+        "Messung des Augeninnendrucks",
+        "Untersuchung des Augenhintergrunds",
+        "Prüfung des Gesichtsfelds",
+        "Sehtest mit der Buchstabentafel"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Tonometrie.",
+        "Richtig.",
+        "Das ist die Perimetrie.",
+        "Das ist die Visusprüfung."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Proteinurie“?",
+      "options": [
+        "Blut im Urin",
+        "Zucker im Urin",
+        "Eiweiß im Urin",
+        "nächtliches Wasserlassen"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Hämaturie.",
+        "Das ist die Glukosurie.",
+        "Richtig.",
+        "Das ist die Nykturie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Endorganschaden“?",
+      "options": [
+        "Hautausschlag durch Medikamente",
+        "Schädigung von Organen wie Herz, Gehirn, Nieren oder Augen durch hohen Blutdruck",
+        "Schädigung der Nieren durch Schmerzmittel",
+        "Absterben von Fingern und Zehen"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist ein Arzneimittelexanthem.",
+        "Richtig.",
+        "Das ist die Analgetikanephropathie.",
+        "Das ist die Akronekrose."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

@@ -1,0 +1,691 @@
+{
+  "id": "gastroenteritis",
+  "area": "Infektiologie",
+  "title": "Durchfall und Erbrechen seit gestern Abend",
+  "diagnosis": "Infektiöse Gastroenteritis",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Lukas Becker, 29 Jahre, stellt sich am Vormittag in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Becker sitzt blass auf der Liege, neben ihm steht ein Eimer.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Morgen, Herr Becker. Zeigen Sie mir bitte zuerst Ihre Versichertenkarte, dann können wir mit der Anmeldung anfangen.",
+        "Hey, was ist los bei Ihnen?",
+        "Guten Morgen, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Becker?",
+        "Guten Morgen. Gehen Sie bitte sofort auf die Toilette, ich muss Ihren Stuhl sehen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Unhöflich und ohne Vorstellung. Erst begrüßen, dann untersuchen."
+      ],
+      "reply": "Patient: „Ja, Becker. Guten Morgen, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum, und wo genau wohnen Sie?",
+        "Wie hoch ist Ihr Body-Mass-Index?",
+        "Sie sind doch noch keine dreißig, oder?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Geburtsdatum und Adresse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Ich bin 29, 1,82 Meter groß und wiege 76 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Durchfall?",
+        "Welche Symptomatik führt Sie zu uns?",
+        "Warum gehen Sie bei einem Durchfall nicht einfach zu Ihrem Hausarzt, wie alle anderen auch?",
+        "Was bringt Sie heute zu uns? Bitte erzählen Sie in Ruhe."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll und herabsetzend. Das stört das Vertrauen gleich zu Beginn.",
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen."
+      ],
+      "reply": "Patient: „Seit gestern Abend habe ich ständig Durchfall und muss mich übergeben. Ich bin total schwach.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten den Durchfall genauer erfassen. Was sagen Sie?",
+      "options": [
+        "Wie ist die Konsistenz Ihres Stuhls, und sind Ihnen Blut- oder Schleimbeimengungen im Sinne einer Hämatochezie aufgefallen?",
+        "Wie oft müssen Sie auf die Toilette, und wie sieht der Stuhl aus: eher wässrig oder fest, mit Blut oder Schleim?",
+        "Der Stuhl ist bestimmt wässrig und blutig, nicht wahr?",
+        "Wie oft haben Sie Stuhlgang?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Konsistenz“, „Beimengungen“ und „Hämatochezie“ sind Fachwörter; der Patient versteht sie nicht.",
+        "Richtig: Häufigkeit und Aussehen des Stuhls, laienverständlich, mit Beispielen und ohne die Antwort vorzugeben.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
+        "Zu knapp: Aussehen, Blut und Schleim fehlen."
+      ],
+      "reply": "Patient: „Seit gestern Abend ungefähr zehnmal. Der Stuhl ist ganz wässrig, Blut oder Schleim habe ich nicht gesehen.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und möglichem Auslöser?",
+      "options": [
+        "Wann haben die Beschwerden angefangen, und was haben Sie in den Tagen davor gegessen oder unternommen?",
+        "Seit wann haben Sie das?",
+        "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch rezidivierend?",
+        "Haben Sie etwas Verdorbenes gegessen?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beginn und mögliche Auslöser (Essen, Reisen) in einer offenen, laienverständlichen Frage.",
+        "Zu knapp; Auslöser und Verlauf fehlen.",
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „rezidivierend“ versteht der Patient nicht.",
+        "Geschlossene und suggestive Frage; sie nimmt die Antwort vorweg."
+      ],
+      "reply": "Patient: „Vorgestern war ein Grillfest bei Freunden, das Hähnchen war innen noch etwas rosa. Gestern Abend ging es los, und seitdem wird es nicht besser.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Bauchschmerzen. Welche Formulierung passt?",
+      "options": [
+        "Handelt es sich um kolikartige Schmerzen mit Tenesmen, und wie würden Sie die Intensität auf der numerischen Rating-Skala angeben?",
+        "Wie stark sind die Schmerzen von 1 bis 100?",
+        "Wie fühlt sich Ihr Bauch an? Wenn er schmerzt: eher stechend, krampfartig oder dumpf, und wie stark auf einer Skala von 0 bis 10?",
+        "Tut Ihnen der Bauch sehr weh?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache („kolikartig“, „Tenesmen“, „numerische Rating-Skala“); der Patient versteht sie nicht.",
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
+        "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe."
+      ],
+      "reply": "Patient: „Es krampft in Wellen im ganzen Bauch, vor allem vor dem Stuhlgang. So 6 von 10.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Haben Sie sonst noch was?",
+        "Ist Ihnen übel, mussten Sie sich übergeben, und haben Sie Fieber oder Kopf- und Gliederschmerzen? War im Erbrochenen Blut?",
+        "Hatten Sie Nausea oder Emesis, auch Hämatemesis, Fieber, Cephalgie, Myalgie oder Arthralgie, und ist Ihnen Meläna aufgefallen?",
+        "Sie hatten bestimmt auch Fieber."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu umgangssprachlich und unkonkret.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive der Frage nach Blut im Erbrochenen.",
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „übel“, „übergeben“, „Kopfschmerzen“, „schwarzer Stuhl“.",
+        "Suggestiv: Sie unterstellen das Symptom."
+      ],
+      "reply": "Patient: „Mir ist übel, ich habe viermal erbrochen, ohne Blut. Fieber hatte ich 38,5 Grad, und Kopf und Glieder tun weh.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese und der Flüssigkeitshaushalt. Was fragen Sie?",
+      "options": [
+        "Wie ist die Vegetativa?",
+        "Haben Sie Schüttelfrost, Nachtschweiß, Gewichtsverlust, Dysurie, Oligurie oder Polyurie, Inappetenz sowie Schwindel?",
+        "Ist sonst alles normal bei Ihnen?",
+        "Wie sind Appetit und Trinkmenge? Wie oft müssen Sie noch Wasser lassen, und welche Farbe hat der Urin? Wird Ihnen beim Aufstehen schwindelig?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Oligurie, Polyurie, Inappetenz).",
+        "Zu allgemein; der Patient sagt einfach „ja“.",
+        "Richtig: Appetit, Trinken, Wasserlassen und Schwindel in Laiensprache, gezielt auf Austrocknung."
+      ],
+      "reply": "Patient: „Essen mag ich gar nichts, und trinken kann ich kaum, weil ich es gleich wieder erbreche. Heute habe ich nur zweimal Wasser gelassen, der Urin war dunkel. Beim Aufstehen wird mir schwindelig.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Sind Sie gesund?",
+        "Haben Sie dauerhafte Erkrankungen, zum Beispiel an Lunge, Herz oder Magen-Darm? Wurden Sie schon einmal operiert?",
+        "Bestehen Vorerkrankungen wie eine arterielle Hypertonie, ein Diabetes mellitus oder eine chronisch-entzündliche Darmerkrankung, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „chronisch-entzündliche Darmerkrankung“).",
+        "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patient: „Ich habe seit der Kindheit Asthma. Vor drei Jahren wurde mir am rechten Knie das Kreuzband operiert. Sonst bin ich gesund.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Tabletten?",
+        "Welche Pharmaka applizieren Sie regelmäßig, und in welcher Dosis?",
+        "Welche Medikamente nehmen Sie regelmäßig oder bei Bedarf, und in welcher Dosierung? Auch Mittel ohne Rezept, auch in den letzten Tagen?",
+        "Sie nehmen doch sicher ein Antibiotikum gegen den Durchfall?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu ungenau: Dosis, Sprays und frei verkäufliche Mittel fehlen.",
+        "Fachsprache („Pharmaka“, „applizieren“).",
+        "Richtig: Name, Dosierung, Bedarfsmedikation und auch frei verkäufliche Mittel der letzten Tage.",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Ich nehme ein Spray mit Budesonid und Formoterol, 160/4,5 Mikrogramm, morgens und abends einen Hub. Bei Bedarf Salbutamol. Gestern Abend eine Ibuprofen 400 gegen die Kopfschmerzen, und heute Morgen eine Loperamid 2 mg gegen den Durchfall.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pollen? Wie äußert sich das?",
+        "Sind Sie gegen Antibiotika allergisch? Das ist wichtig, weil wir Ihnen vielleicht gleich eines geben möchten, und das nehmen wir bei Durchfall am häufigsten.",
+        "Allergie?",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Zu eng: Allergien gegen andere Medikamente, Lebensmittel oder Pollen übersehen Sie.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patient: „Gegen Birkenpollen, im Frühjahr habe ich Heuschnupfen mit Niesen und tränenden Augen. Gegen Medikamente oder Essen bin ich nicht allergisch.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucher oder Alkoholiker?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus?",
+        "Trinken Sie am Wochenende eigentlich viel Alkohol, so wie viele junge Männer in Ihrem Alter, und rauchen Sie vielleicht auch?",
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Alkoholiker“ ist wertend und verletzend.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Suggestiv und wertend: Sie unterstellen übermäßigen Konsum und fragen nach Menge und Drogen nicht.",
+        "Richtig: neutral, konkret, mit Menge."
+      ],
+      "reply": "Patient: „Ich rauche seit 5 Jahren etwa 10 Zigaretten am Tag. Am Wochenende trinke ich zwei Bier. Drogen nehme ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Zucker-, Herz- oder Darmerkrankungen?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Hat Ihre Familie dieselbe Krankheit?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Richtig: offen, mit passenden Beispielen.",
+        "Zu eng: Geschwister fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
+      ],
+      "reply": "Patient: „Mein Vater hat Zucker, Typ 2. Darmerkrankungen gibt es bei uns nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation und dem Umfeld?",
+      "options": [
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen? Gibt es Menschen in Ihrem Umfeld mit ähnlichen Beschwerden?",
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie hoch ist Ihr monatliches Einkommen? Wie lautet Ihre genaue Adresse, und wer wohnt im selben Haus?",
+        "Haben Sie Geld?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beruf, Wohnsituation und Kontaktpersonen; wichtig für Hygiene, Meldung und Tätigkeitsverbot.",
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: der Beruf und Erkrankte im Umfeld fehlen, Einkommen und Adresse gehören nicht in die Sozialanamnese.",
+        "Unangemessen."
+      ],
+      "reply": "Patient: „Ich bin Koch in einer Kantine und wohne mit meiner Freundin zusammen. Sie hat seit heute Morgen auch Durchfall, sie hat auch vom Hähnchen gegessen.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben eine akute infektiöse Gastroenteritis, wahrscheinlich durch Salmonellen oder Campylobacter, mit Exsikkose und Elektrolytentgleisung; dafür brauchen Sie eine Rehydratation.",
+        "Ich vermute eine Magen-Darm-Infektion, wahrscheinlich durch Bakterien aus dem nicht durchgegarten Hähnchen. Dabei entzündet sich die Darmschleimhaut, und Ihr Körper verliert viel Flüssigkeit.",
+        "Es ist bestimmt nur ein verdorbener Magen, das geht von allein wieder weg.",
+        "Sie haben sicher Darmkrebs, das müssen wir sofort untersuchen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache und zu sicher; der Patient versteht die Diagnose nicht.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung des Flüssigkeitsverlusts.",
+        "Verharmlosend; Sie lassen die Austrocknung außer Acht.",
+        "Falsch und beängstigend."
+      ],
+      "reply": "Patient: „Eine Infektion? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Bekomme ich ein Antibiotikum? Und wann kann ich wieder arbeiten?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, natürlich bekommen Sie sofort ein Antibiotikum, dann sind Sie morgen wieder gesund und können arbeiten.",
+        "Nein, das ist nur ein Magen-Darm-Infekt, Sie können morgen wieder in die Kantine gehen.",
+        "Meistens braucht man bei so einer Infektion kein Antibiotikum. Wichtig ist Flüssigkeit: Wir nehmen Blut ab, untersuchen den Stuhl und geben Ihnen eine Infusion und etwas gegen die Übelkeit. Als Koch dürfen Sie vorerst nicht arbeiten, bis geklärt ist, ob Sie Erreger ausscheiden.",
+        "Das weiß ich nicht, fragen Sie später Ihren Chef."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: Ein Antibiotikum ist meist nicht nötig, und die Antwort verspricht eine zu schnelle Heilung.",
+        "Falsch und gefährlich: Ein Koch darf nicht in der Küche arbeiten, solange er Erreger ausscheiden könnte.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, Hinweis auf das Tätigkeitsverbot, laienverständlich.",
+        "Unprofessionell und lässt den Patienten allein."
+      ],
+      "reply": "Patient: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Becker ist 29 und hat Durchfall.",
+        "Herr Lukas Becker, ein 29-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit gestern Abend bestehendem Durchfall und Erbrechen vor.",
+        "Der Patient Herr Becker stellt sich heute vor wegen Durchfall und Erbrechen seit gestern Abend, 29-jährig, in unserer Notaufnahme, wo er untersucht wird.",
+        "Herr Lukas Becker (29 J.) hat sich heute in unserem Notaufnahme vorgestellt wegen Beschwerden im Bauch."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptom.",
+        "Satzbau falsch: die Altersangabe hängt am Ende, und das Verb steht unglücklich.",
+        "Grammatik: „die Notaufnahme“ ist feminin, also „in unserer Notaufnahme“; außerdem ist das Leitsymptom zu ungenau."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Der Durchfall hat nach dem Essen von rosa Hähnchen angefangen und ist immer schlimmer geworden.",
+        "Die Beschwerden begannen gestern Abend, etwa einen Tag nach dem Verzehr von unzureichend durchgegartem Grillhähnchen. Seitdem bestehen ca. zehn wässrige Stühle mit Blutbeimengung sowie kolikartige abdominelle Schmerzen (NRS 6/10).",
+        "Die Beschwerden seien nach dem Verzehr von Grillhähnchen aufgetreten, und es bestünden wässrige Stühle, NRS 6.",
+        "Die Beschwerden begannen gestern Abend, etwa einen Tag nach dem Verzehr von unzureichend durchgegartem Grillhähnchen. Seitdem bestehen ca. zehn wässrige Stühle ohne Blut- oder Schleimbeimengung sowie krampfartige abdominelle Schmerzen (NRS 6/10)."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Inhaltlich falsch: Der Patient hat kein Blut im Stuhl bemerkt.",
+        "Konjunktiv-Mischung und unvollständig; außerdem fehlt „/10“ und die Zahl der Stühle.",
+        "Richtig: Fachsprache, Auslöser, Beginn, Stuhlfrequenz, Negativbefund und Schmerzintensität."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete der Patient über Übelkeit und viermaliges Erbrechen ohne Hämatemesis sowie Fieber bis 38,5 °C, Kopf- und Gliederschmerzen. Zudem Inappetenz, reduzierte Trinkmenge, Oligurie (zweimalige Miktion heute, dunkler Urin) und orthostatischer Schwindel.",
+        "Er hatte Fieber und hat mehrmals gekotzt.",
+        "Begleitend berichtete der Patient über Nausea und viermalige Emesis. Fieber, Cephalgie und Myalgie wurden verneint. Ausgeprägte Inappetenz, kein Schwindel.",
+        "Begleitend berichtete der Patient über Nausea und viermalige Emesis mit Hämatemesis sowie Fieber bis 38,5 °C. Zudem Polyurie und ausgeprägter orthostatischer Schwindel."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: vollständig, Fachsprache, Negativbefund (keine Hämatemesis) und Zeichen der Exsikkose.",
+        "Vulgär („gekotzt“) und unvollständig.",
+        "Inhaltlich falsch: Der Patient hatte Fieber bis 38,5 °C, Kopf- und Gliederschmerzen und Schwindel.",
+        "Inhaltlich falsch: Es gab keine Hämatemesis, und der Patient hat wenig Urin gelassen (Oligurie, nicht Polyurie)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Asthma. Medikamente: Spray, Ibuprofen, Loperamid.",
+        "An Vorerkrankungen ist ein Asthma bronchiale bekannt. Z. n. Kreuzbandplastik rechts vor drei Jahren. Medikation: Budesonid/Formoterol 160/4,5 µg 1-1-1, Salbutamol-Spray bei Bedarf, Ibuprofen 400 mg einmalig gestern, Loperamid 2 mg einmalig heute.",
+        "An Vorerkrankungen ist ein Asthma bronchiale seit der Kindheit bekannt. Z. n. Kreuzbandplastik am rechten Knie vor drei Jahren. Medikation: Budesonid/Formoterol 160/4,5 µg 1-0-1, Salbutamol-Spray bei Bedarf, Ibuprofen 400 mg einmalig gestern, Loperamid 2 mg einmalig heute.",
+        "An Vorerkrankungen ist eine COPD bekannt. Z. n. Appendektomie vor drei Jahren. Medikation: Budesonid/Formoterol 160/4,5 µg 1-0-1, Salbutamol-Spray bei Bedarf, Ibuprofen 400 mg einmalig gestern, Loperamid 2 mg einmalig heute."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Dosierschema falsch: Budesonid/Formoterol wird morgens und abends angewendet (1-0-1).",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierschema im Format morgens-mittags-abends.",
+        "Inhaltlich falsch: Der Patient hat ein Asthma bronchiale (keine COPD), und operiert wurde das Kreuzband (keine Appendektomie)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: keine. Noxen: Nikotin.",
+        "Pollenallergie (Birke), keine Medikamentenallergie. Nikotinkonsum ca. 2,5 py, am Wochenende ca. zwei Bier. Familienanamnese: Vater Diabetes mellitus Typ 2. Der Patient ist Koch in einer Kantine und lebt mit seiner Freundin, die ebenfalls an Diarrhö leidet.",
+        "Penicillinallergie (Exanthem). Nikotinkonsum ca. 2,5 py. Der Patient ist Koch und lebt allein.",
+        "Pollenallergie (Birke), keine Medikamentenallergie. Nikotinkonsum ca. 25 py, am Wochenende ca. zwei Bier. Familienanamnese: Vater Diabetes mellitus Typ 2. Der Patient ist Koch in einer Kantine und lebt mit seiner Freundin, die ebenfalls an Diarrhö leidet."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: die Pollenallergie fehlt, und es fehlen Alkohol, Familie und Beruf.",
+        "Richtig: 10 Zigaretten am Tag über 5 Jahre sind ca. 2,5 py (pack years = Packungsjahre); Beruf und erkrankte Freundin sind relevant.",
+        "Falsch: Die Allergie ist eine Pollenallergie, und der Patient lebt mit seiner Freundin.",
+        "Inhaltlich falsch: 10 Zigaretten am Tag über 5 Jahre sind ca. 2,5 py, nicht 25 py."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Magen-Darm-Grippe.",
+        "Es besteht eine gesicherte Salmonellose.",
+        "Anamnestisch besteht der Verdacht auf eine chronisch-entzündliche Darmerkrankung (Colitis ulcerosa). Differenzialdiagnostisch kommen ein Morbus Crohn, ein Reizdarmsyndrom und eine Zöliakie in Betracht.",
+        "Anamnestisch besteht der Verdacht auf eine akute infektiöse Gastroenteritis, am ehesten bakterieller Genese (Salmonellen, Campylobacter). Differenzialdiagnostisch kommen eine Norovirus-Infektion und eine Lebensmittelintoxikation (z. B. Staphylococcus aureus) in Betracht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Ohne Stuhlkultur oder PCR ist der Erreger noch nicht gesichert.",
+        "Unpassend: Die Beschwerden sind akut und treten nach einem Grillfest auf; eine chronische Darmerkrankung ist unwahrscheinlich.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen zum akuten Verlauf."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir machen Blut und Stuhl und geben Ciprofloxacin.",
+        "Zur Abklärung empfehlen wir eine Blutentnahme (u. a. Blutbild, CRP, Elektrolyte, Kreatinin) und eine Stuhluntersuchung auf Salmonellen, Campylobacter und Noroviren. Therapeutisch erfolgen eine i. v. Flüssigkeitssubstitution und eine antiemetische Therapie; eine Antibiose ist zunächst nicht indiziert. Meldung an das Gesundheitsamt; als Koch besteht ein Tätigkeitsverbot.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und eine Stuhluntersuchung. Therapeutisch erfolgen Ciprofloxacin 500 mg 1-0-1 für sieben Tage, Loperamid 4 mg bei Bedarf sowie Ibuprofen 600 mg zur Fiebersenkung. Der Patient kann ambulant entlassen werden.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme sowie ein CT des Abdomens."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu umgangssprachlich und unvollständig; ein Antibiotikum ist nicht indiziert.",
+        "Richtig: Diagnostik, Rehydratation, Antiemese, keine Antibiose, Meldepflicht und Tätigkeitsverbot.",
+        "Gefährlich: keine Indikation für Ciprofloxacin, Loperamid bei Fieber ist ungünstig, und Ibuprofen belastet bei Exsikkose die Nieren.",
+        "Nicht die passende Untersuchung: ein CT ist ohne Warnzeichen nicht nötig, und die Therapie fehlt."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Der Patient hat Durchfall, er heißt Becker.",
+        "Also, der Mann war vorgestern auf einem Grillfest bei Freunden und hat dort Hähnchen gegessen, und dann ging es bei ihm mit dem Durchfall los, und seine Freundin hat jetzt auch Durchfall, glaube ich.",
+        "Herr Becker hat eine Salmonellose.",
+        "Ich möchte Ihnen Herrn Lukas Becker vorstellen, einen 29-jährigen Patienten, der sich heute mit seit gestern Abend bestehendem wässrigem Durchfall und mehrfachem Erbrechen vorgestellt hat."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom, nicht die ganze Geschichte.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Es bestehen seit gestern Abend etwa zehn wässrige Stühle ohne Blutbeimengung, krampfartige Bauchschmerzen (NRS 6/10), viermaliges Erbrechen und Fieber bis 38,5 °C. Er ist exsikkiert: Oligurie und orthostatischer Schwindel.",
+        "Es bestehen seit drei Wochen blutig-schleimige Stühle, Gewichtsverlust und Nachtschweiß, aber kein Fieber. Er ist exsikkiert, mit Oligurie und orthostatischem Schwindel, sonst unauffällig.",
+        "Er hat alles Mögliche.",
+        "Er hat Fieber, Blut im Stuhl und Verstopfung."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: knapp, strukturiert, mit relevantem Negativbefund (kein Blut) und Zeichen der Exsikkose.",
+        "Inhaltlich falsch: Die Beschwerden bestehen seit gestern Abend, die Stühle sind wässrig ohne Blut, und der Patient hatte Fieber.",
+        "Keine Information.",
+        "Inhaltlich falsch: Der Patient hat keine Verstopfung und kein Blut im Stuhl, sondern wässrigen Durchfall."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist gesund.",
+        "Bekannt sind ein Asthma bronchiale und ein Diabetes mellitus Typ 1. Er nimmt regelmäßig Budesonid/Formoterol 1-0-1, gestern nahm er Ibuprofen ein. Keine Allergien.",
+        "Bekannt ist ein Asthma bronchiale mit Dauertherapie (Budesonid/Formoterol 1-0-1). Gestern nahm er Ibuprofen 400 mg, heute Loperamid 2 mg ein. Er ist Koch in einer Kantine, und seine Freundin hat ebenfalls Durchfall. Pollenallergie, keine Medikamentenallergie.",
+        "Er nimmt Salbutamol, sonst nichts."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: es gibt relevante Vorerkrankungen.",
+        "Inhaltlich falsch: Es besteht kein Diabetes mellitus (nur der Vater), und es gibt eine Pollenallergie.",
+        "Richtig: relevante Vorgeschichte, NSAR- und Loperamid-Einnahme, Beruf und Kontaktfall.",
+        "Unvollständig: Dauertherapie, Beruf und Kontaktfall fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an Magen-Darm-Grippe.",
+        "Ich vermute eine akute infektiöse Gastroenteritis, am ehesten bakteriell durch Salmonellen oder Campylobacter. Differenzialdiagnostisch denke ich an eine Norovirus-Infektion und eine Lebensmittelintoxikation.",
+        "Es handelt sich sicher um eine Colitis ulcerosa, weil der Patient Stuhlgang hat. Differenzialdiagnostisch denke ich höchstens noch an einen Morbus Crohn und ein Kolonkarzinom.",
+        "Ich weiß es nicht genau."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu unpräzise und Laiensprache für das Arzt-Arzt-Gespräch.",
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
+        "Zu sicher („sicher“), und bei einem akuten Beginn nach einem Grillfest ist eine chronisch-entzündliche Darmerkrankung nicht wahrscheinlich.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde ihn nach Hause schicken und Loperamid empfehlen.",
+        "Ich würde sofort Ciprofloxacin geben und eine Koloskopie machen.",
+        "Ich würde Blut abnehmen, inklusive Blutbild, CRP, Elektrolyten und Nierenwerten, und den Stuhl auf Erreger untersuchen. Therapeutisch intravenöse Vollelektrolytlösung und ein Antiemetikum, zum Beispiel Ondansetron 4 mg i. v.; kein Antibiotikum und kein Loperamid bei Fieber. Außerdem Meldung an das Gesundheitsamt und Tätigkeitsverbot als Koch.",
+        "Ich würde Blut abnehmen und den Stuhl untersuchen. Therapeutisch würde ich Ciprofloxacin 500 mg 1-0-1 für sieben Tage geben, Ibuprofen gegen das Fieber und Loperamid gegen den Durchfall, damit er schnell wieder arbeiten kann. Ambulante Entlassung."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gefährlich: Der Patient ist exsikkiert und braucht Flüssigkeit; Loperamid bei Fieber ist ungünstig.",
+        "Fachlich falsch: kein Antibiotikum ohne Indikation, und eine Koloskopie bei akuter Gastroenteritis ist nicht indiziert.",
+        "Richtig: Diagnostik, Rehydratation, Antiemese, keine Antibiose, Meldung und Tätigkeitsverbot.",
+        "Gefährlich: keine Indikation für Ciprofloxacin, Ibuprofen belastet bei Exsikkose die Nieren, Loperamid bei Fieber ist ungünstig, und ein Koch darf nicht früh wieder arbeiten."
+      ],
+      "reply": "Oberarzt: „Gut. Wann würden Sie bei einer Salmonellen-Enteritis doch ein Antibiotikum geben?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Bei jedem Patienten sofort, auch bei leichtem Verlauf, um die Dauer der Erregerausscheidung zu verkürzen und andere zu schützen.",
+        "Nie, auch nicht bei einer Sepsis, weil Antibiotika bei Darminfektionen grundsätzlich die Ausscheidung verlängern.",
+        "Bei jedem Patienten mit Fieber über 38 °C, weil Fieber immer eine bakterielle Infektion mit Antibiotikabedarf anzeigt und die Genesung beschleunigt.",
+        "Bei schwerem Verlauf mit Sepsiszeichen, bei Immunsuppression, bei Gefäßprothesen oder Herzklappenersatz sowie bei Säuglingen und sehr alten Patienten, zum Beispiel mit Ceftriaxon i. v."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch: Antibiotika verlängern oft die Ausscheidung und sind bei unkompliziertem Verlauf nicht indiziert.",
+        "Falsch: bei Sepsis ist eine Antibiose zwingend.",
+        "Falsch: Fieber allein ist keine Indikation, und viele Gastroenteritiden mit Fieber sind viral.",
+        "Richtig: typische Risikokonstellationen nach der AWMF-Leitlinie."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Exsikkose“?",
+      "options": [
+        "Überwässerung des Körpers",
+        "Blutarmut",
+        "Austrocknung des Körpers",
+        "Blutvergiftung"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Hyperhydratation.",
+        "Das ist die Anämie.",
+        "Richtig.",
+        "Das ist die Sepsis."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Tenesmen“?",
+      "options": [
+        "schmerzhafter Stuhldrang",
+        "Verstopfung",
+        "Blähungen",
+        "unwillkürlicher Stuhlabgang"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Obstipation.",
+        "Das ist der Meteorismus.",
+        "Das ist die Stuhlinkontinenz."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Oligurie“?",
+      "options": [
+        "vermehrte Urinmenge",
+        "Blut im Urin",
+        "schmerzhaftes Wasserlassen",
+        "stark verminderte Urinmenge"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Polyurie.",
+        "Das ist die Hämaturie.",
+        "Das ist die Dysurie.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Antiemetikum“?",
+      "options": [
+        "Mittel gegen Durchfall",
+        "Mittel gegen Übelkeit und Erbrechen",
+        "Abführmittel",
+        "Mittel gegen Sodbrennen"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist ein Antidiarrhoikum.",
+        "Richtig.",
+        "Das ist ein Laxans.",
+        "Das ist ein Antazidum."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Hämatochezie“?",
+      "options": [
+        "schwarzer Teerstuhl",
+        "fettiger Stuhl",
+        "frisches Blut im Stuhl",
+        "heller, entfärbter Stuhl"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Meläna.",
+        "Das ist die Steatorrhö.",
+        "Richtig.",
+        "Das ist die Acholie."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

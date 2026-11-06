@@ -1,0 +1,691 @@
+{
+  "id": "kolorektales-karzinom",
+  "area": "Allgemein- und Viszeralchirurgie",
+  "title": "Blut im Stuhl und Gewichtsverlust",
+  "diagnosis": "Kolorektales Karzinom",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Klaus Hoffmann, 64 Jahre, stellt sich am Vormittag in der chirurgischen Ambulanz vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Hoffmann sitzt im Untersuchungszimmer und wirkt blass und müde.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Tag, mein Name ist Dr. Silva, ich bin hier als Assistenzarzt tätig. Bevor wir beginnen: Haben Sie Ihre Versichertenkarte und Ihren Überweisungsschein mitgebracht?",
+        "Hallo, Sie sind der Hoffmann, oder? Setzen Sie sich.",
+        "Guten Tag, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Hoffmann?",
+        "Guten Tag, Herr Hoffmann. Machen Sie bitte den Oberkörper frei, ich untersuche Sie jetzt."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie prüfen nicht, ob es wirklich Herr Hoffmann ist.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Die körperliche Untersuchung kommt nach der Anamnese, und Sie haben sich nicht vorgestellt."
+      ],
+      "reply": "Patient: „Ja, Hoffmann. Guten Tag, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Sie sind doch bestimmt schon über sechzig, nicht wahr?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Wie lautet Ihr Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?",
+        "Wie ist Ihr BMI?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst."
+      ],
+      "reply": "Patient: „Ich bin 64, 1,78 Meter groß und wiege jetzt nur noch 78 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Blut im Stuhl bemerkt?",
+        "Welche Symptomatik führt Sie zu uns, und seit wann besteht sie?",
+        "Warum waren Sie nicht schon früher beim Hausarzt, wenn es so lange dauert?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen."
+      ],
+      "reply": "Patient: „Seit etwa drei Monaten habe ich Blut im Stuhl, der Stuhlgang ist anders geworden, und ich habe abgenommen.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": "Sie möchten das Blut im Stuhl genauer beschreiben lassen.",
+      "question": "Was fragen Sie?",
+      "options": [
+        "Wie sieht das Blut aus, hellrot oder dunkel? Ist es auf dem Stuhl oder im Stuhl?",
+        "Das Blut ist bestimmt hellrot, nicht wahr?",
+        "Handelt es sich um eine Hämatochezie oder um Meläna, und ist das Blut dem Stuhl aufgelagert oder beigemischt?",
+        "Wie viel Blut?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
+        "Fachsprache („Hämatochezie“, „Meläna“, „aufgelagert“); der Patient versteht die Frage nicht.",
+        "Zu knapp und kein vollständiger Satz; Farbe und Lage des Blutes fehlen."
+      ],
+      "reply": "Patient: „Es ist dunkelrot und mit dem Stuhl vermischt, manchmal ist auch Schleim dabei. Inzwischen fast jeden Tag.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Stuhlveränderung und dem Verlauf?",
+      "options": [
+        "Seit wann haben Sie das Blut im Stuhl?",
+        "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch progredient, und gibt es Schwankungen?",
+        "Wie hat sich der Stuhlgang verändert, und ist es seitdem besser, schlechter oder gleich geblieben?",
+        "Der Stuhl ist bestimmt dünner geworden, richtig?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das hat der Patient schon gesagt (seit etwa drei Monaten). Fragen Sie nach der Stuhlveränderung.",
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „progredient“ versteht der Patient nicht.",
+        "Richtig: offen gefragt und verständlich, Veränderung und Verlauf in einer Frage.",
+        "Suggestivfrage. Der Patient könnte nur zustimmen."
+      ],
+      "reply": "Patient: „Der Stuhl wechselt: Mal habe ich Verstopfung, dann wieder Durchfall. Oft ist er ganz dünn, wie ein Bleistift. Es wird seit drei Monaten schlimmer.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Bauchschmerzen. Welche Formulierung passt?",
+      "options": [
+        "Haben Sie Schmerzen im Abdomen, die als kolikartig oder dumpf imponieren, und wie ist die Schmerzintensität auf der visuellen Analogskala von 0 bis 10 einzuordnen?",
+        "Haben Sie Schmerzen? Sind sie eher krampfartig, stechend oder dumpf, und wie stark auf einer Skala von 0 bis 10?",
+        "Tut es weh?",
+        "Wie schlimm ist es auf einer Skala von 1 bis 100?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache („Abdomen“, „imponieren“, „visuelle Analogskala“); der Patient versteht sie nicht.",
+        "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS)."
+      ],
+      "reply": "Patient: „Krampfartig, im linken Unterbauch, vor allem vor dem Stuhlgang. So 4 von 10.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Haben Sie Nausea, Emesis oder Dyspnoe, und ist Ihnen eine Abgeschlagenheit oder Leistungsminderung aufgefallen?",
+        "Sie fühlen sich bestimmt auch müde, oder?",
+        "Sonst noch was?",
+        "Ist Ihnen übel, mussten Sie sich übergeben? Fühlen Sie sich müde, schwindelig oder schnell außer Atem?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „übel“, „erbrechen“, „Luftnot“, „müde“.",
+        "Suggestiv: Sie unterstellen das Symptom.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Richtig: konkrete Begleitsymptome (auch Zeichen einer Blutarmut) in Laiensprache."
+      ],
+      "reply": "Patient: „Übel ist mir nicht, erbrochen habe ich auch nicht. Ich bin aber ständig müde und schlapp und beim Treppensteigen schnell außer Atem. Nach dem Stuhlgang habe ich das Gefühl, nicht ganz fertig zu sein, und der Bauch ist oft gebläht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Haben Sie Fieber oder Nachtschweiß? Wie sind Appetit und Gewicht, und wie ist das Wasserlassen?",
+        "Haben Sie Pyrexie, Nachtschweiß, Inappetenz, Gewichtsabnahme, Dysurie und eine Veränderung der Defäkation?",
+        "Wie ist die Vegetativa?",
+        "Haben Sie in letzter Zeit abgenommen?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fieber, Nachtschweiß, Appetit, Gewicht und Wasserlassen in Laiensprache (B-Symptomatik, Gewichtsverlust).",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Pyrexie, Inappetenz, Dysurie, Defäkation).",
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Geschlossene Frage; Fieber, Nachtschweiß, Appetit und Wasserlassen fehlen."
+      ],
+      "reply": "Patient: „Fieber hatte ich nicht, aber nachts schwitze ich manchmal. Der Appetit ist schlecht. Ich habe ungewollt 7 Kilo abgenommen, von 85 auf 78 in drei Monaten. Das Wasserlassen ist normal.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, eine Hyperlipidämie oder eine KHK, und gab es Voroperationen oder Koloskopien?",
+        "Sind Sie sonst gesund?",
+        "Haben Sie Erkrankungen, zum Beispiel Bluthochdruck oder Zucker? Wurden Sie schon einmal operiert oder am Darm untersucht?",
+        "Welche Diagnosen hat Ihr Hausarzt in Ihre Akte geschrieben?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „Hyperlipidämie“, „KHK“).",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Richtig: mit Beispielen, laienverständlich, und Operationen und frühere Darmuntersuchungen sind mitgefragt.",
+        "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patient: „Ich habe Bluthochdruck und erhöhte Cholesterinwerte. Vor zehn Jahren wurde ich am Leistenbruch rechts operiert. Eine Darmspiegelung hatte ich noch nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Tabletten?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept, zum Beispiel Schmerzmittel oder Blutverdünner?",
+        "Welche Pharmaka applizieren Sie?",
+        "Sie nehmen doch bestimmt Aspirin gegen den Bluthochdruck?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu ungenau: Name, Dosis und frei verkäufliche Mittel fehlen.",
+        "Richtig: Name, Dosierung, frei verkäufliche Mittel und Blutverdünner (wichtig vor einer Darmspiegelung).",
+        "Fachsprache („Pharmaka“, „applizieren“).",
+        "Suggestivfrage, und Aspirin ist kein Mittel gegen Bluthochdruck."
+      ],
+      "reply": "Patient: „Ramipril 5 mg morgens und Simvastatin 20 mg abends. Blutverdünner nehme ich nicht. Bei Kopfschmerzen manchmal Paracetamol 500.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Allergie?",
+        "Sind Sie hypersensibel?",
+        "Sind Sie gegen Kontrastmittel allergisch? Das ist wichtig, weil wir vielleicht eine Computertomographie machen müssen, und dabei geben wir immer Kontrastmittel.",
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Pflaster oder Lebensmittel? Wie zeigt sich das?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl.",
+        "Zu eng: Allergien gegen andere Medikamente, Pflaster oder Lebensmittel übersehen Sie.",
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion."
+      ],
+      "reply": "Patient: „Gegen Penicillin, davon bekomme ich einen Hautausschlag.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Rauchen Sie? Wie viele Zigaretten pro Tag, und seit wann? Wie viel Alkohol trinken Sie ungefähr, und nehmen Sie Drogen?",
+        "Sind Sie Raucher oder Alkoholiker?",
+        "Wie hoch ist Ihr Nikotin- und Alkoholabusus in Packungsjahren und in Gramm Reinalkohol pro Tag?",
+        "Sie trinken sicher zu viel, wenn es Ihnen so schlecht geht, oder?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: neutral, konkret, mit Menge und Dauer (für die Packungsjahre).",
+        "„Alkoholiker“ ist wertend und verletzend.",
+        "Fachsprache („Abusus“, „Packungsjahre“) und klingt nach Vorwurf.",
+        "Wertend und suggestiv."
+      ],
+      "reply": "Patient: „Ich rauche seit 35 Jahren etwa 20 Zigaretten am Tag. Abends trinke ich meistens zwei Bier. Drogen nehme ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Gibt es in Ihrer Familie Krebserkrankungen? Sind Ihre Eltern und Geschwister noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Wie ist die Familienanamnese?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Krebs-, Herz- oder Darmerkrankungen?",
+        "Hatte Ihr Vater auch Darmkrebs?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu eng und zu belastend: andere Erkrankungen in der Familie erfahren Sie so nicht.",
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Richtig: offen, mit passenden Beispielen.",
+        "Suggestivfrage, und Sie kennen die Diagnose noch nicht."
+      ],
+      "reply": "Patient: „Mein Vater hatte Darmkrebs, mit 58 festgestellt, er ist mit 62 gestorben. Meine Mutter hat Zucker. Mein Bruder hatte Polypen im Darm.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie hoch ist Ihr Einkommen?",
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
+        "Was ist Ihr sozialer Status?",
+        "Sie sind bestimmt schon in Rente, oder?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu eng und unangemessen: der Beruf fehlt, das Einkommen gehört nicht in die Sozialanamnese.",
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Behandlung und Versorgung.",
+        "Unklar und unangenehm formuliert.",
+        "Suggestivfrage und taktlos."
+      ],
+      "reply": "Patient: „Ich bin Elektriker und wohne mit meiner Frau in einem Haus mit Treppen. Wir haben zwei erwachsene Kinder.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben ein kolorektales Karzinom, wahrscheinlich im Sigma.",
+        "Das sind bestimmt nur Hämorrhoiden, Sie müssen sich keine Sorgen machen.",
+        "Sie haben Darmkrebs, und zwar sicher schon im fortgeschrittenen Stadium. Wir müssen sofort operieren und Ihnen einen künstlichen Ausgang legen.",
+        "Ich vermute, dass im Dickdarm eine Veränderung vorliegt, die blutet, möglicherweise ein Tumor oder ein Polyp. Sicher sagen können wir das erst nach einer Darmspiegelung mit Gewebeprobe."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachsprache; der Patient versteht die Diagnose nicht, und sie ist noch nicht gesichert.",
+        "Verharmlosend und bei diesen Alarmsymptomen gefährlich.",
+        "Zu sicher, nicht belegt und beängstigend.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, ehrlich und mit dem nächsten Schritt."
+      ],
+      "reply": "Patient: „Ein Tumor? Meinen Sie Krebs? Mein Vater ist daran gestorben. Was passiert jetzt, und muss ich operiert werden?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Was passiert jetzt, und muss ich operiert werden?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, Sie werden morgen früh am Darm operiert und bekommen einen künstlichen Darmausgang.",
+        "Zuerst nehmen wir Blut ab und untersuchen Ihren Enddarm mit dem Finger. Dann planen wir eine Darmspiegelung mit Gewebeproben. Wenn sich der Verdacht bestätigt, besprechen wir das weitere Vorgehen, auch eine mögliche Operation, gemeinsam mit den Spezialisten.",
+        "Ob es Krebs ist, wissen wir nicht. Mehr kann ich Ihnen jetzt nicht sagen, der Oberarzt erklärt Ihnen später alles andere.",
+        "Nein, eine Operation brauchen Sie nicht. Wir geben Ihnen Tabletten gegen die Blutung und kontrollieren Sie in einem Jahr."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu früh: die Diagnose ist noch nicht gesichert.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Falsch und gefährlich: bei diesen Alarmsymptomen ist eine zeitnahe Abklärung nötig."
+      ],
+      "reply": "Patient: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Hoffmann ist 64 und hat Blut im Stuhl.",
+        "Herr Klaus Hoffmann (64 J.) hat sich heute in unserer Ambulanz vorgestellt wegen Blutbeimengungen im Stuhl seit drei Monaten, Stuhlunregelmäßigkeiten und eines Gewichtsverlusts von 3 kg.",
+        "Herr Klaus Hoffmann, ein 64-jähriger Patient, stellte sich heute in unserer Ambulanz mit seit etwa drei Monaten bestehenden Blutbeimengungen im Stuhl, Stuhlunregelmäßigkeiten und ungewolltem Gewichtsverlust vor.",
+        "Der Patient Herr Klaus Hoffmann stellt sich heute vor wegen Blut im Stuhl, seit drei Monaten, 64-jährig."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Inhaltlich falsch: Der Gewichtsverlust beträgt 7 kg in drei Monaten.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptome.",
+        "Satzbau falsch: die Altersangabe hängt am Ende, und es fehlen Ort und weitere Leitsymptome."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Seit ca. drei Monaten bestehen dunkelrote Blutbeimengungen im Stuhl mit zunehmender Frequenz bis zu täglich, teils mit Schleim. Zudem alternierende Obstipation und Diarrhö, zeitweise bleistiftdünner Stuhl. Krampfartige Schmerzen im linken Unterbauch vor der Defäkation (NRS 4/10), Gefühl der inkompletten Entleerung und Meteorismus.",
+        "Er hat seit drei Monaten Blut im Stuhl und mal Verstopfung, mal Durchfall und Bauchweh links unten.",
+        "Seit ca. drei Monaten bestehen hellrote Blutauflagerungen auf dem Stuhl, konstante Obstipation und Schmerzen im rechten Unterbauch ohne Bezug zur Defäkation (NRS 8/10).",
+        "Seit ca. drei Monaten besteht dunkelrote Blutbeimengungen im Stuhl, alternierend Obstipation und Diarrhö sowie krampfartige Schmerzen im linken Unterbauch (NRS 4/10) vor der Defäkation, außerdem ein Gefühl der inkompletten Entleerung."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachsprache und alle Merkmale (Dauer, Blut, Stuhlveränderung, Schmerz, Intensität).",
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Inhaltlich falsch: Das Blut ist dunkelrot und beigemischt, der Stuhl wechselt zwischen Obstipation und Diarrhö, die Schmerzen sind links (NRS 4/10).",
+        "Grammatik: „bestehen“ (Plural), nicht „besteht“, denn das Subjekt „Blutbeimengungen“ steht im Plural."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete der Patient über Nausea und Emesis sowie Fieber bis 38,5 °C. Nachtschweiß und Leistungsminderung wurden verneint. Gewichtsverlust von 2 kg in drei Monaten.",
+        "Er ist müde, schwitzt nachts und hat 7 kg abgenommen.",
+        "Der Patient hat sich ständig schlapp gefühlt, ist beim Treppensteigen aus der Puste gekommen, schwitzt nachts und hat ordentlich Gewicht verloren, weil er keinen Hunger hat.",
+        "Begleitend berichtete der Patient über Abgeschlagenheit, Belastungsdyspnoe, gelegentlichen Nachtschweiß, Inappetenz und einen ungewollten Gewichtsverlust von 7 kg in drei Monaten (85 kg auf 78 kg). Fieber, Übelkeit, Erbrechen und Miktionsbeschwerden wurden verneint."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich falsch: Übelkeit, Erbrechen und Fieber wurden verneint; Nachtschweiß und Abgeschlagenheit bestehen; der Gewichtsverlust beträgt 7 kg.",
+        "Laiensprache und unvollständig; Negativbefunde fehlen.",
+        "Falsches Register: Umgangssprache („schlapp“, „aus der Puste“); außerdem fehlen Zahlen und Negativbefunde.",
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "An Vorerkrankungen sind eine arterielle Hypotonie und eine Hypothyreose bekannt. Z. n. Appendektomie vor zehn Jahren. Medikation: Ramipril 5 mg 0-0-1, Simvastatin 20 mg 1-0-0, Paracetamol 500 mg regelmäßig.",
+        "An Vorerkrankungen sind eine arterielle Hypertonie und eine Hypercholesterinämie bekannt. Z. n. Leistenhernien-Operation rechts vor zehn Jahren, bisher keine Koloskopie. Medikation: Ramipril 5 mg 1-0-0, Simvastatin 20 mg 0-0-1, Paracetamol 500 mg bei Bedarf. Keine Antikoagulation.",
+        "Vorerkrankungen: Bluthochdruck, Cholesterin. Medikamente: Ramipril, Simvastatin.",
+        "Medikation: Ramipril 5 mg 1-0-1, Simvastatin 20 mg 1-1-1, Marcumar nach Plan."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich falsch: Hypertonie (nicht Hypotonie), Hypercholesterinämie, Leistenhernien-OP, und die Dosierschemata sind vertauscht.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierschema im Format morgens-mittags-abends.",
+        "Laiensprache und ohne Dosierung.",
+        "Falsch: Ramipril morgens (1-0-0), Simvastatin abends (0-0-1), und der Patient nimmt keine Antikoagulation."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: keine. Nikotinkonsum ca. 20 py. Alkohol: keiner. Familienanamnese unauffällig. Der Patient ist Elektriker und lebt allein.",
+        "Penicillinallergie (Anaphylaxie). Nikotinkonsum ca. 35 py, regelmäßiger Alkoholkonsum (meist zwei Bier abends). Familienanamnese: Vater kolorektales Karzinom (ED mit 58 J.). Der Patient ist Elektriker, verheiratet, zwei Kinder.",
+        "Penicillinallergie (Exanthem). Nikotinkonsum ca. 35 py, regelmäßiger Alkoholkonsum (meist zwei Bier abends). Familienanamnese: Vater kolorektales Karzinom (ED mit 58 J., verstorben mit 62 J.), Bruder Kolonpolypen, Mutter Diabetes mellitus. Der Patient ist Elektriker, verheiratet, wohnt mit seiner Frau im Haus; zwei erwachsene Kinder.",
+        "Sie verträgt kein Penicillin, raucht und trinkt Bier."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: die Penicillinallergie fehlt, es sind 35 py, und die Familienanamnese ist wegen des Vaters mit Darmkrebs nicht unauffällig.",
+        "Falsch: Die Reaktion war ein Exanthem, keine Anaphylaxie.",
+        "Richtig: 20 Zigaretten am Tag über 35 Jahre sind 35 pack years (py = Packungsjahre).",
+        "Laiensprache, falsches Geschlecht und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Darmkrebs.",
+        "Es besteht ein gesichertes Sigmakarzinom mit Lebermetastasen.",
+        "Anamnestisch besteht der Verdacht auf eine Hämorrhoidalblutung bei Obstipation. Differenzialdiagnostisch kommen eine Analfissur, eine Divertikulitis und ein Reizdarmsyndrom in Betracht. Eine weitere Abklärung ist nicht erforderlich.",
+        "Anamnestisch besteht der Verdacht auf ein kolorektales Karzinom, am ehesten im Sigma. Differenzialdiagnostisch kommen eine Divertikelkrankheit mit Blutung, eine chronisch-entzündliche Darmerkrankung und Hämorrhoiden in Betracht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Ohne Koloskopie, Histologie und Bildgebung ist weder Karzinom noch Metastasierung gesichert.",
+        "Gefährlich: Alarmsymptome (Gewichtsverlust, Stuhlveränderung, Blut, familiäre Belastung) erfordern eine Koloskopie.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (Blutbild, CRP, Ferritin, Kreatinin, Gerinnung, CEA) und eine Abdomensonographie. Bei unauffälligem Befund kann die Koloskopie in einem Jahr im Rahmen der Vorsorge erfolgen.",
+        "Zur weiteren Abklärung empfehlen wir eine rektal-digitale Untersuchung, eine Blutentnahme (u. a. Blutbild, Ferritin, Gerinnung, Kreatinin, CRP, CEA) sowie zeitnah eine komplette Koloskopie mit Biopsien. Bei histologischer Sicherung folgt das Staging mit CT von Thorax, Abdomen und Becken, anschließend die Vorstellung in der Tumorkonferenz.",
+        "Wir machen Blut und eine Spiegelung.",
+        "Zur weiteren Abklärung empfehlen wir ein Röntgen des Abdomens sowie einen Kolon-Kontrasteinlauf anstelle der Koloskopie."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Gefährlich: Bei Alarmsymptomen ist die komplette Koloskopie zeitnah nötig, nicht erst in einem Jahr.",
+        "Richtig: Diagnostik, Staging und interdisziplinäres Vorgehen nach Leitlinie in vollständigen Sätzen.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Nicht leitliniengerecht: Die Koloskopie mit Biopsie ist der Standard; der Kontrasteinlauf ersetzt sie nicht."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Ich möchte Ihnen Herrn Klaus Hoffmann vorstellen, einen 64-jährigen Patienten, der sich heute mit seit etwa drei Monaten bestehenden Blutbeimengungen im Stuhl, wechselnden Stuhlgewohnheiten und einem ungewollten Gewichtsverlust von 7 kg vorgestellt hat.",
+        "Also, der Mann hat seit Monaten Blut im Stuhl, und sein Vater ist an Darmkrebs gestorben ...",
+        "Herr Hoffmann hat ein Karzinom im Dickdarm.",
+        "Ich habe hier Herrn Hoffmann, der sich heute mit seit zwei Wochen bestehendem hellrotem Blut auf dem Stuhl nach dem Pressen und mit Schmerzen im rechten Unterbauch bei stabilem Gewicht vorgestellt hat."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Name, Alter, Leitsymptome und zeitlicher Verlauf in einem Satz.",
+        "Kein strukturierter Einstieg; zuerst Patient und Leitsymptome.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Inhaltlich falsch: Die Beschwerden bestehen seit drei Monaten, das Blut ist dunkelrot und beigemischt, und der Patient hat 7 kg abgenommen."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Es bestehen krampfartige Schmerzen im rechten Unterbauch (NRS 8/10), Fieber bis 39 °C und Erbrechen. Ein Gewichtsverlust wurde verneint.",
+        "Er hat Blut im Stuhl und Bauchweh.",
+        "Die Blutbeimengungen sind dunkelrot und mit Schleim vermischt, fast täglich. Es besteht ein Wechsel aus Obstipation und Diarrhö mit bleistiftdünnem Stuhl und krampfartigen Schmerzen im linken Unterbauch (NRS 4/10). Der Patient berichtet über Nachtschweiß, Abgeschlagenheit, Belastungsdyspnoe und 7 kg Gewichtsverlust in drei Monaten.",
+        "Er hat keine Auffälligkeiten, nur ein bisschen Verstopfung."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Die Schmerzen sind links (NRS 4/10), Fieber und Erbrechen wurden verneint, und der Gewichtsverlust beträgt 7 kg.",
+        "Umgangssprachlich und unvollständig.",
+        "Richtig: knapp, strukturiert, mit den Alarmsymptomen.",
+        "Inhaltlich falsch: Es bestehen mehrere Alarmsymptome."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist gesund, nur Bluthochdruck.",
+        "Bekannt sind eine arterielle Hypertonie und eine Hypercholesterinämie. Es bestehen keine Allergien. Der Vater verstarb an einem Magenkarzinom, der Patient raucht nicht.",
+        "Er nimmt Ramipril und Simvastatin, sonst nichts.",
+        "Bekannt sind eine arterielle Hypertonie und eine Hypercholesterinämie, Z. n. Leistenhernien-OP rechts. Eine Koloskopie wurde noch nie durchgeführt. Wichtig: Der Vater erkrankte mit 58 Jahren an einem kolorektalen Karzinom und verstarb mit 62; der Bruder hatte Kolonpolypen. Nikotinkonsum ca. 35 py, Penicillinallergie mit Exanthem."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Unvollständig: Familienanamnese, Nikotin und Allergie fehlen.",
+        "Inhaltlich falsch: Penicillinallergie, Vater mit kolorektalem Karzinom, 35 py.",
+        "Unvollständig: Diagnosen, Familie und Allergie fehlen.",
+        "Richtig: relevante Vorgeschichte, familiäre Belastung und Allergie, die für die Perioperativprophylaxe wichtig ist."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an Hämorrhoiden.",
+        "Ich vermute ein kolorektales Karzinom, am ehesten im Sigma. Differenzialdiagnostisch denke ich an eine Divertikelblutung, eine chronisch-entzündliche Darmerkrankung und Hämorrhoiden.",
+        "Es handelt sich sicher um eine Divertikulitis, weil die Schmerzen links unten sind. Differenzialdiagnostisch denke ich höchstens noch an eine Appendizitis und eine Gastroenteritis.",
+        "Ich weiß es nicht genau."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu unpräzise und bei Alarmsymptomen gefährlich verharmlosend.",
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
+        "Zu sicher, und Blutbeimengung, Gewichtsverlust und Stuhlveränderung passen nicht zu einer Divertikulitis oder Appendizitis.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde Blut abnehmen, mit Blutbild, Ferritin, Gerinnung, Kreatinin und CEA als Ausgangswert, rektal-digital untersuchen und zeitnah eine komplette Koloskopie mit Biopsien veranlassen. Bei Bestätigung folgt das Staging mit CT von Thorax, Abdomen und Becken und die Vorstellung in der Tumorkonferenz.",
+        "Ich würde ein Hämorrhoidenmittel verschreiben und ihn nach Hause schicken.",
+        "Ich würde direkt eine Hemikolektomie links planen, die Biopsie weglassen, weil der Verdacht klar ist, und vorher eine Chemotherapie geben.",
+        "Ich würde zuerst nur eine Sigmoidoskopie durchführen, weil sie schneller geht, und bei unauffälligem Befund auf die komplette Koloskopie verzichten."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Diagnostik, Staging und Tumorkonferenz nach S3-Leitlinie.",
+        "Gefährlich: Alarmsymptome müssen abgeklärt werden.",
+        "Falsch: Ohne histologische Sicherung und Staging gibt es keine Operationsplanung oder Chemotherapie.",
+        "Nicht leitliniengerecht: Es braucht die komplette Koloskopie, um synchrone Tumoren nicht zu übersehen."
+      ],
+      "reply": "Oberarzt: „Gut. Welchen Tumormarker bestimmen Sie, und wofür?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich bestimme das PSA, weil es Darmkrebs im Frühstadium zuverlässig erkennt und uns bei einem erhöhten Wert sofort sagt, dass wir operieren müssen, ohne vorher eine Koloskopie zu machen.",
+        "CA 19-9, um die Diagnose Darmkrebs zu sichern.",
+        "Ich bestimme das CEA als Ausgangswert. Es dient nicht der Diagnose, sondern der Verlaufskontrolle und Nachsorge; bei Rauchern kann es auch ohne Tumor erhöht sein.",
+        "Gar keinen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: PSA ist ein Marker für das Prostatakarzinom, nicht für Darmkrebs.",
+        "Falsch: Die Diagnose wird histologisch gesichert; CA 19-9 ist kein Standardmarker.",
+        "Richtig: CEA ist Verlaufsparameter, kein Screening- oder Diagnosetest.",
+        "In der Prüfung erwartet man eine begründete Antwort."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Hämatochezie“?",
+      "options": [
+        "schwarzer, klebriger Stuhl",
+        "frisches rotes Blut im Stuhl",
+        "Bluterbrechen",
+        "Blut im Urin"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist Meläna (Teerstuhl).",
+        "Richtig.",
+        "Das ist Hämatemesis.",
+        "Das ist Hämaturie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Tenesmen“?",
+      "options": [
+        "Verstopfung",
+        "Blähungen",
+        "Durchfall",
+        "schmerzhafter Stuhldrang mit dem Gefühl, nicht fertig zu sein"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist Obstipation.",
+        "Das ist Meteorismus.",
+        "Das ist Diarrhö.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Stoma“?",
+      "options": [
+        "künstlicher Darmausgang",
+        "Darmverschluss",
+        "Darmspiegelung",
+        "Darmentzündung"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist der Ileus.",
+        "Das ist die Koloskopie.",
+        "Das ist die Kolitis."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Adenom“?",
+      "options": [
+        "bösartiger Tumor der Darmschleimhaut",
+        "Ausstülpung der Darmwand",
+        "gutartige Wucherung der Schleimhaut, Vorstufe von Darmkrebs",
+        "Entzündung der Darmwand"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist das Karzinom.",
+        "Das ist das Divertikel.",
+        "Richtig.",
+        "Das ist die Kolitis."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Anämie“?",
+      "options": [
+        "Blutvergiftung",
+        "Blutarmut",
+        "Bluthochdruck",
+        "Blutgerinnsel"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Sepsis.",
+        "Richtig.",
+        "Das ist die Hypertonie.",
+        "Das ist der Thrombus."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

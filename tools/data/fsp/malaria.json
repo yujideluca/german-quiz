@@ -1,0 +1,691 @@
+{
+  "id": "malaria",
+  "area": "Infektiologie",
+  "title": "Fieber und Schüttelfrost seit vier Tagen",
+  "diagnosis": "Malaria tropica nach Ghana-Reise",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Jonas Becker, 38 Jahre, stellt sich am Vormittag in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Becker sitzt blass und fröstelnd auf der Liege, eine Jacke über den Schultern.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Tag, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Becker?",
+        "Guten Tag, Herr Becker. Ich bin Dr. Silva. Bitte halten Sie Abstand, ich habe Sorge, dass Sie etwas Ansteckendes aus dem Ausland mitgebracht haben.",
+        "Hallo, was haben Sie denn schon wieder?",
+        "Guten Tag. Legen Sie sich bitte hin, ich nehme sofort Blut ab."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Das verunsichert den Patienten und nimmt die Diagnose vorweg. Erst begrüßen und sich vorstellen.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Maßnahmen kommen nach dem Gespräch. Erst begrüßen und sich vorstellen."
+      ],
+      "reply": "Patient: „Ja, Becker. Guten Tag, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie ist Ihr Body-Mass-Index?",
+        "Sie sind doch noch keine vierzig, oder?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht."
+      ],
+      "reply": "Patient: „Ich bin 38, 1,82 Meter groß und wiege 85 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Fieber?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Welche Symptomatik liegt bei Ihnen vor?",
+        "Warum kommen Sie erst jetzt zu uns und nicht schon früher zum Hausarzt, wenn es Ihnen so schlecht geht?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
+      ],
+      "reply": "Patient: „Seit vier Tagen habe ich hohes Fieber mit Schüttelfrost, und es wird nicht besser.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten mehr über das Fieber wissen. Was fragen Sie?",
+      "options": [
+        "Hatten Sie ein intermittierendes oder ein remittierendes Fieber, oder eher eine Kontinua?",
+        "Das Fieber kommt bestimmt alle zwei Tage, oder?",
+        "Wie hoch war das Fieber, und ist es dauernd da, oder kommt es in Schüben mit fieberfreien Zeiten dazwischen?",
+        "Haben Sie wirklich Fieber? Ich frage nur, weil viele Patienten das Fieber ohne Thermometer einfach fühlen und sich dann täuschen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachwörter, die der Patient nicht versteht. Fragen Sie in Alltagssprache.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
+        "Richtig: laienverständlich, fragt nach Höhe und Fieberverlauf, ohne die Antwort vorzugeben.",
+        "Der Patient hat das Fieber schon genannt, und die Frage klingt misstrauisch. Fragen Sie nach Höhe und Verlauf."
+      ],
+      "reply": "Patient: „Gemessen habe ich bis 39,8 Grad. Es kommt in Schüben, alle ein bis zwei Tage, mit Schüttelfrost, und danach schwitze ich stark.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn, Verlauf und möglichen Auslösern?",
+      "options": [
+        "Wie war der zeitliche Verlauf seit der Erstmanifestation, und gab es eine Exposition in einem Endemiegebiet?",
+        "Wann hat es angefangen, und wie hat es sich seitdem entwickelt? Waren Sie in den letzten Monaten auf Reisen?",
+        "Sie waren bestimmt im Urlaub in den Tropen, richtig?",
+        "Seit wann genau haben Sie das Fieber? Und waren Sie in letzter Zeit unvorsichtig, zum Beispiel beim Essen oder bei Mückenstichen?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache: „Erstmanifestation“, „Exposition“ und „Endemiegebiet“ versteht der Patient nicht.",
+        "Richtig: Beginn, Verlauf und die entscheidende Reiseanamnese in einer offenen Frage.",
+        "Suggestivfrage. Fragen Sie offen nach Reisen.",
+        "Den Beginn hat der Patient schon genannt, und „unvorsichtig“ klingt wie ein Vorwurf."
+      ],
+      "reply": "Patient: „Vor vier Tagen ging es los mit Frösteln, seitdem wird es schlimmer. Ich war drei Wochen beruflich in Ghana, vor 12 Tagen bin ich zurückgekommen. Vorbeugende Tabletten habe ich nicht genommen, und Mücken haben mich oft gestochen.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Schmerzen und deren Stärke. Welche Formulierung passt?",
+      "options": [
+        "Haben Sie auch Schmerzen, zum Beispiel Kopf- oder Gliederschmerzen? Wie stark sind sie auf einer Skala von 0 bis 10?",
+        "Haben Sie Myalgien oder Arthralgien, und wie stark sind sie auf der NRS?",
+        "Wie stark sind die Schmerzen von 1 bis 100?",
+        "Sie haben bestimmt furchtbare Kopfschmerzen und Gliederschmerzen, wie bei einer starken Grippe, nicht wahr?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beispiele für typische Schmerzen und die übliche Skala von 0 bis 10.",
+        "Fachsprache („Myalgien“, „Arthralgien“, „NRS“). Mit Patienten sprechen Sie Laiensprache.",
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
+        "Suggestivfrage, und Sie nehmen eine Grippe vorweg."
+      ],
+      "reply": "Patient: „Ja, Kopfschmerzen 7 von 10 und Gliederschmerzen, so 6 von 10.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Hatten Sie Nausea, Emesis, Diarrhö, Husten oder einen Ikterus, vielleicht auch Petechien oder eine Dyspnoe?",
+        "Haben Sie sonst noch was?",
+        "Ist Ihnen übel, mussten Sie sich übergeben, haben Sie Durchfall oder Husten, oder ist Ihnen sonst etwas aufgefallen, zum Beispiel an Haut oder Augen?",
+        "Sie haben bestimmt auch erbrochen und Durchfall gehabt, das ist ja bei so einer Reise ganz normal."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „übel“, „erbrechen“, „Gelbfärbung“.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive Gelbfärbung („Haut oder Augen“).",
+        "Suggestiv und verharmlosend: Sie unterstellen die Symptome."
+      ],
+      "reply": "Patient: „Übel ist mir, und einmal habe ich erbrochen. Durchfall und Husten habe ich nicht. Gelb bin ich nicht, glaube ich.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie ist die Vegetativa?",
+        "Haben Sie Nachtschweiß, Gewichtsverlust, Dysurie, Obstipation und Diarrhö?",
+        "Ist sonst alles normal bei Ihnen, oder gibt es noch etwas, das Sie mir erzählen möchten?",
+        "Wie sind Appetit, Stuhlgang und Wasserlassen? Schwitzen Sie nachts, und hat sich Ihr Gewicht verändert?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Obstipation, Diarrhö).",
+        "Zu allgemein; der Patient sagt einfach „ja“ oder „nein“.",
+        "Richtig: Appetit, Stuhlgang, Wasserlassen, Nachtschweiß und Gewicht in Laiensprache."
+      ],
+      "reply": "Patient: „Appetit habe ich kaum. Stuhlgang und Wasserlassen sind normal, der Urin ist etwas dunkler. Nachts schwitze ich nach den Schüben. Das Gewicht ist gleich geblieben, glaube ich.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, einen Diabetes mellitus oder eine Hämoglobinopathie, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Sind Sie gesund?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck, Zucker oder eine Blutkrankheit? Wurden Sie schon einmal operiert?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „Hämoglobinopathie“). Mit Patienten sprechen Sie Laiensprache.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
+        "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patient: „Nein, keine chronischen Krankheiten. Vor fünf Jahren wurde ich an einem Leistenbruch rechts operiert, sonst nichts.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Tabletten?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Haben Sie in den letzten Tagen etwas gegen die Beschwerden genommen?",
+        "Welche Pharmaka applizieren Sie, und nehmen Sie Antipyretika?",
+        "Sie nehmen doch sicher Ibuprofen gegen das Fieber, oder? Ich möchte nur sicher sein, dass Sie es richtig dosieren."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu ungenau: Dosis und andere Darreichungsformen fehlen.",
+        "Richtig: Dauermedikation, Dosierung und Mittel gegen die aktuellen Beschwerden.",
+        "Fachsprache („Pharmaka“, „applizieren“, „Antipyretika“).",
+        "Suggestivfrage. Fragen Sie offen nach Namen und Dosis."
+      ],
+      "reply": "Patient: „Dauerhaft nehme ich nichts. Gegen das Fieber nehme ich Paracetamol 500 mg, bis zu dreimal am Tag.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
+        "Allergie?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht gleich ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Zu eng: Allergien gegen andere Medikamente, Lebensmittel oder Pflaster übersehen Sie.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patient: „Gegen Penicillin, da bekomme ich Hautausschlag am ganzen Körper.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucher oder Alkoholiker?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus?",
+        "Trinken Sie auf Ihren Auslandsreisen eigentlich zu viel, und rauchen Sie zu viel?",
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Alkoholiker“ ist wertend und verletzend.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Wertend und ungenau; die Menge erfahren Sie so nicht.",
+        "Richtig: neutral, konkret, mit Menge."
+      ],
+      "reply": "Patient: „Ich rauche seit 12 Jahren etwa 10 Zigaretten am Tag. Alkohol nur am Wochenende, zwei Bier. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Zucker, Herz-, Krebs- oder Blutkrankheiten?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Hat Ihre Familie auch Fieber?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Richtig: offen, mit passenden Beispielen.",
+        "Zu eng: Geschwister fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Unklar; Sie fragen nach erblichen Erkrankungen, nicht nach dem aktuellen Fieber."
+      ],
+      "reply": "Patient: „Mein Vater hat Zucker, Typ 2. Meine Mutter ist gesund, meine Schwester auch.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
+        "Hat Ihre Firma Sie überhaupt versichert, oder müssen Sie die Behandlung selbst bezahlen?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Kontakte und Versorgung.",
+        "Verwaltungs- und Kostenfrage; das gehört nicht in die Sozialanamnese."
+      ],
+      "reply": "Patient: „Ich bin Bauleiter. Ich wohne mit meiner Lebensgefährtin zusammen, sie hat keine Beschwerden.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Ich vermute, dass Sie sich in Ghana mit Malaria angesteckt haben. Das ist eine Infektion mit winzigen Parasiten, die durch Mückenstiche ins Blut gelangen. Das prüfen wir jetzt mit einer Blutuntersuchung.",
+        "Sie haben eine Malaria tropica durch Plasmodium falciparum.",
+        "Das ist wahrscheinlich nur eine Grippe, die Sie sich im Flugzeug geholt haben. Das geht von allein wieder weg.",
+        "Sie haben sicher Ebola oder Gelbfieber, deshalb müssen wir Sie sofort isolieren und die Behörden verständigen."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung und nächster Schritt.",
+        "Fachsprache; der Patient versteht die Diagnose nicht, und sie ist noch nicht gesichert.",
+        "Verharmlosend und medizinisch falsch: Nach einer Tropenreise muss man Malaria ausschließen.",
+        "Falsch und beängstigend: ohne Diagnostik gibt es keine Gewissheit."
+      ],
+      "reply": "Patient: „Malaria? Ist das gefährlich, und bin ich ansteckend?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt nach der Gefahr und nach Ansteckung.",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Das ist harmlos, in ein paar Tagen sind Sie wieder fit. Sie können nach der Blutabnahme einfach nach Hause gehen.",
+        "Ja, Sie sind hoch ansteckend, deshalb dürfen Sie niemanden mehr sehen, auch nicht Ihre Lebensgefährtin.",
+        "Das weiß ich nicht, das muss der Chef entscheiden.",
+        "Unbehandelt kann Malaria gefährlich werden, aber sie ist gut behandelbar. Von Mensch zu Mensch stecken Sie niemanden an. Wir untersuchen Ihr Blut sofort unter dem Mikroskop und nehmen Sie zur Überwachung stationär auf. Dann beginnen wir mit der Behandlung."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch und gefährlich: Malaria tropica kann schwer verlaufen und muss überwacht werden.",
+        "Falsch: Malaria wird nicht von Mensch zu Mensch übertragen, sondern durch Mückenstiche.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Richtig: ehrlich, beruhigend, nächste Schritte, laienverständlich."
+      ],
+      "reply": "Patient: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Becker ist 38 und hat hohes Fieber.",
+        "Herr Jonas Becker, ein 38-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit vier Tagen bestehendem Fieber und Schüttelfrost vor.",
+        "Herr Jonas Becker (38 J.) hat sich heute in unsere Notaufnahme vorgestellt wegen seit vier Tagen bestehendem Fieber und Schüttelfrost.",
+        "Herr Jonas Becker, ein 38-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit vier Wochen bestehendem Fieber und Schüttelfrost vor."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Umgangssprache und zu knapp; im Arztbrief fehlen Ort und Dauer.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptom.",
+        "Grammatik: „in unsere Notaufnahme“ ist falsch, richtig ist der Dativ („in unserer Notaufnahme“), und „wegen“ verlangt den Genitiv („bestehenden Fiebers“).",
+        "Inhaltlich falsch: Das Fieber besteht seit vier Tagen, nicht seit vier Wochen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Seit vier Tagen hat er Fieber und fühlt sich schlecht, er war in Afrika.",
+        "Das Fieber besteht seit vier Tagen mit Spitzen bis 38,9 °C alle ein bis zwei Tage, jeweils mit Schüttelfrost und Schwitzen. Dazu Kopfschmerzen (NRS 7/10) und Gliederschmerzen (NRS 6/10). Rückkehr vor 12 Tagen aus Ghana (drei Wochen) unter regelmäßiger Malariaprophylaxe.",
+        "Das Fieber besteht seit vier Tagen mit Spitzen bis 39,8 °C alle ein bis zwei Tage, jeweils mit Schüttelfrost und Schwitzen. Dazu Kopfschmerzen (NRS 7/10) und Gliederschmerzen (NRS 6/10). Rückkehr vor 12 Tagen aus Ghana (drei Wochen), ohne Malariaprophylaxe.",
+        "Das Fieber besteht seit vier Tagen mit Spitzen bis 39,8 °C. Der Patient ist vor 12 Tage aus Ghana zurückgekehrt, eine Prophylaxe wurde nicht durchgeführt."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Laiensprache und unvollständig; im Bericht erwartet man Fachbegriffe und Details.",
+        "Inhaltlich falsch: Die Fieberspitzen lagen bei 39,8 °C, und eine Prophylaxe wurde nicht durchgeführt.",
+        "Richtig: Fachsprache und alle Merkmale (Verlauf, Höhe, Begleitschmerzen, Reiseanamnese, fehlende Prophylaxe).",
+        "Grammatik: „vor 12 Tagen“ (Dativ), und Schmerzen und Schübe fehlen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Zusätzlich berichtete der Patient über Übelkeit und einmaliges Erbrechen. Husten und Diarrhö wurden verneint, ein Ikterus ist nicht aufgefallen. Es bestehen eine ausgeprägte Inappetenz, ein leicht dunklerer Urin und Nachtschweiß nach den Fieberschüben.",
+        "Ihm ist schlecht, er hat gekotzt, und er isst nichts.",
+        "Zusätzlich berichtete der Patient über Übelkeit und mehrfaches Erbrechen sowie Diarrhö. Husten wurde bejaht, ein Ikterus ist aufgefallen. Der Urin war hell, Nachtschweiß wurde verneint.",
+        "Zusätzlich berichtete der Patient über Übelkeit und einmalige Emesis. Husten und Diarrhö wurden verneint. Der Urin war unauffällig und Nachtschweiß wurde verneint."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Vulgär („gekotzt“) und unvollständig.",
+        "Inhaltlich falsch: einmaliges Erbrechen, keine Diarrhö, kein Ikterus, dunklerer Urin und Nachtschweiß.",
+        "Inhaltlich falsch: Der Urin war leicht dunkler, und es besteht Nachtschweiß nach den Fieberschüben."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Keine Krankheiten. Medikamente: Paracetamol.",
+        "Chronische Erkrankungen sind nicht bekannt. Z. n. Appendektomie vor fünf Jahren. Medikation: Paracetamol 500 mg 1-1-1 und Ibuprofen 400 mg 1-0-1.",
+        "Vorerkrankungen: Diabetes mellitus Typ 2. Z. n. Leistenhernienoperation links vor fünf Jahren. Medikation: Paracetamol 500 mg 0-0-1.",
+        "Chronische Erkrankungen sind nicht bekannt. Z. n. Leistenhernienoperation rechts vor fünf Jahren. Medikation: keine Dauermedikation, Paracetamol 500 mg bei Bedarf (max. 1-1-1)."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Inhaltlich falsch: operiert wurde ein Leistenbruch (Hernienoperation), und Ibuprofen wurde nicht genommen.",
+        "Inhaltlich falsch: kein Diabetes, die Operation war rechts, und Paracetamol wurde bei Bedarf bis 1-1-1 genommen.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierschema im Format morgens-mittags-abends."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Keine Allergien, raucht, trinkt manchmal Bier.",
+        "Penicillinallergie (Exanthem). Nikotinkonsum ca. 6 py, am Wochenende zwei Bier, kein Drogenkonsum. Familienanamnese: Vater Diabetes mellitus Typ 2. Der Patient ist Bauleiter und lebt mit seiner Lebensgefährtin zusammen.",
+        "Penicillinallergie (Anaphylaxie). Nikotinkonsum ca. 12 py, regelmäßiger Alkoholkonsum. Vater Diabetes mellitus Typ 2. Der Patient ist Bauleiter und lebt mit seiner Lebensgefährtin.",
+        "Penicillinallergie (Exanthem). Nikotinkonsum ca. 6 py, am Wochenende zwei Bier. Familienanamnese: Mutter Diabetes mellitus Typ 2. Der Patient ist Landwirt und lebt allein."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: die Penicillinallergie fehlt, und die Angaben sind unvollständig.",
+        "Richtig: 10 Zigaretten am Tag über 12 Jahre sind 6 pack years (py = Packungsjahre).",
+        "Falsch: Die Reaktion war ein Exanthem, 10 Zigaretten über 12 Jahre sind 6 py, und Alkohol trinkt er nur am Wochenende.",
+        "Inhaltlich falsch: Der Vater hat Diabetes, der Patient ist Bauleiter und lebt mit seiner Lebensgefährtin."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Tropenfieber.",
+        "Es besteht eine gesicherte Malaria tropica.",
+        "Anamnestisch besteht der Verdacht auf eine Malaria tropica nach Aufenthalt in Ghana ohne Chemoprophylaxe. Differenzialdiagnostisch kommen ein Dengue-Fieber, ein Typhus abdominalis und eine Virushepatitis in Betracht.",
+        "Anamnestisch besteht der Verdacht auf eine Influenza bei Z. n. Flugreise. Differenzialdiagnostisch kommen eine Pneumonie, eine Sinusitis und eine Borreliose in Betracht."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Ohne Erregernachweis ist die Diagnose noch nicht gesichert.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen für Fieber nach Tropenreise.",
+        "Medizinisch unpassend: Fieber nach Tropenreise ohne Prophylaxe ist bis zum Beweis des Gegenteils eine Malaria; es fehlt jeder Atemwegsbefund."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir empfehlen die sofortige Malariadiagnostik (dicker Tropfen, Blutausstrich, Antigen-Schnelltest), ergänzend Blutbild, CRP, Leber- und Nierenwerte, LDH, Bilirubin, Glukose und Blutkulturen. Stationäre Aufnahme zur Überwachung und bei Bestätigung eine Therapie nach Leitlinie.",
+        "Wir machen Blut und warten ab.",
+        "Wir empfehlen die ambulante Behandlung mit Paracetamol und eine Kontrolle in einer Woche beim Hausarzt. Eine Malariadiagnostik ist nicht erforderlich.",
+        "Wir empfehlen eine Malariadiagnostik mit dickem Tropfen, Blutausstrich und Schnelltest. Bei Bestätigung empfehlen wir eine Behandlung mit Chloroquin."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Diagnostik, Überwachung und Therapie in vollständigen Sätzen.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Gefährlich: Bei Fieber nach Tropenreise ist die Malariadiagnostik ein Notfall.",
+        "Leitlinienwidrig: In Westafrika ist Plasmodium falciparum gegen Chloroquin weitgehend resistent."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Der Patient hat Fieber, er heißt Becker.",
+        "Herr Becker hat eine Malaria tropica und muss sofort behandelt werden, das ist ein Notfall.",
+        "Also, der Mann war in Afrika und hat sich wahrscheinlich irgendwas geholt ...",
+        "Ich möchte Ihnen Herrn Jonas Becker vorstellen, einen 38-jährigen Patienten, der sich heute mit seit vier Tagen bestehendem Fieber bis 39,8 °C und Schüttelfrost vorgestellt hat."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
+        "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Er hat Durchfall und Husten, und er war nicht im Ausland.",
+        "Das Fieber kommt in Schüben alle ein bis zwei Tage mit Schüttelfrost und Schwitzen. Begleitend bestehen Kopf- und Gliederschmerzen, Übelkeit und einmaliges Erbrechen. Wichtig: Der Patient war drei Wochen in Ghana und kehrte vor 12 Tagen zurück, ohne Chemoprophylaxe.",
+        "Er hat alles Mögliche.",
+        "Das Fieber ist kontinuierlich ohne Schüttelfrost. Begleitend bestehen Durchfall und Husten. Der Patient war drei Wochen in Spanien und nahm eine Malariaprophylaxe ein."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich falsch: Durchfall und Husten wurden verneint, und er war in Ghana.",
+        "Richtig: knapp, strukturiert, mit der entscheidenden Reiseanamnese.",
+        "Keine Information.",
+        "Inhaltlich falsch: Das Fieber kommt in Schüben mit Schüttelfrost, der Aufenthalt war in Ghana, und es gab keine Prophylaxe."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist gesund.",
+        "Bekannt sind ein Diabetes mellitus Typ 2 und eine arterielle Hypertonie. Keine Allergien. Er nimmt Ramipril und Metformin.",
+        "Keine chronischen Erkrankungen, Z. n. Leistenhernienoperation rechts vor fünf Jahren. Keine Dauermedikation, aktuell Paracetamol 500 mg bei Bedarf. Wichtig: Penicillinallergie mit Exanthem. Nikotinkonsum ca. 6 py.",
+        "Er hat nur eine Leistenhernie und nimmt Paracetamol."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unvollständig: Operation, Allergie und Rauchen fehlen.",
+        "Inhaltlich falsch: Er hat keine chronischen Erkrankungen und keine Dauermedikation, aber eine Penicillinallergie.",
+        "Richtig: relevante Vorgeschichte, Medikation und die Allergie, die für die Therapiewahl wichtig ist.",
+        "Unvollständig: Allergie und Nikotinkonsum fehlen, und die Hernie wurde operiert."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich vermute eine Malaria tropica nach Aufenthalt in Ghana ohne Prophylaxe. Differenzialdiagnostisch denke ich an ein Dengue-Fieber, einen Typhus abdominalis und eine Virushepatitis.",
+        "Ich denke an eine Erkältung.",
+        "Ich weiß es nicht genau.",
+        "Es handelt sich sicher um eine Influenza, weil Fieber und Gliederschmerzen typisch sind. Differenzialdiagnostisch denke ich höchstens noch an eine Pneumonie und eine Sinusitis, die Reise spielt keine Rolle."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
+        "Zu unpräzise und medizinisch unpassend nach einer Tropenreise.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
+        "Zu sicher („sicher“), und die Reise nach Ghana ohne Prophylaxe darf man nicht ignorieren."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde ihn nach Hause schicken und Paracetamol geben.",
+        "Ich würde sofort einen dicken Tropfen, einen Blutausstrich und einen Schnelltest veranlassen, dazu Blutbild, Entzündungs-, Leber-, Nieren- und Gerinnungswerte, Laktat, Glukose und Blutkulturen. Der Patient sollte stationär überwacht werden. Bei unkomplizierter Malaria tropica würde ich mit Artemether/Lumefantrin beginnen.",
+        "Ich würde zuerst Ceftriaxon geben und erst bei ausbleibender Besserung nach einer Woche nach Parasiten suchen.",
+        "Ich würde eine Malariadiagnostik veranlassen und bei Bestätigung Chloroquin geben, weil das das Standardmedikament ist und in Ghana sicher wirkt."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Gefährlich: Fieber nach Tropenreise ist ein Notfall und muss abgeklärt werden.",
+        "Richtig: sofortige Diagnostik, Überwachung und leitliniengerechte Therapie.",
+        "Falsch: Die Malariadiagnostik muss sofort erfolgen; Ceftriaxon wirkt nicht gegen Plasmodien.",
+        "Fachlich falsch: Chloroquin wirkt bei Plasmodium falciparum in Westafrika wegen Resistenz nicht zuverlässig."
+      ],
+      "reply": "Oberarzt: „Gut. Welches Medikament ist bei unkomplizierter Malaria tropica die Erstlinie?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Chloroquin, weil es bei allen Plasmodien in Afrika zuverlässig wirkt und kaum Nebenwirkungen hat.",
+        "Doxycyclin als Monotherapie.",
+        "Ein Breitspektrumantibiotikum wie Piperacillin/Tazobactam.",
+        "Artemether/Lumefantrin, alternativ Atovaquon/Proguanil. Bei schwerer Malaria Artesunat i. v."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachlich falsch: Wegen der weit verbreiteten Resistenz ist Chloroquin bei Malaria tropica keine Erstlinie.",
+        "Zu langsam wirksam; Doxycyclin gibt man nur als Kombinationspartner.",
+        "Falsch: Plasmodien sind Parasiten, und der Patient hat zudem eine Penicillinallergie.",
+        "Richtig: Artemisinin-Kombination als Erstlinie, bei schwerem Verlauf Artesunat intravenös."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Splenomegalie“?",
+      "options": [
+        "Vergrößerung der Leber",
+        "Vergrößerung der Milz",
+        "Verkleinerung der Milz",
+        "Entzündung der Milz"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Hepatomegalie.",
+        "Richtig.",
+        "Das ist die Milzatrophie.",
+        "Das ist die Splenitis."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Thrombozytopenie“?",
+      "options": [
+        "Mangel an Blutplättchen",
+        "Mangel an roten Blutkörperchen",
+        "Mangel an weißen Blutkörperchen",
+        "zu viele Blutplättchen"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Anämie.",
+        "Das ist die Leukopenie.",
+        "Das ist die Thrombozytose."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Hämolyse“?",
+      "options": [
+        "Blutgerinnung",
+        "Bluterguss im Gewebe",
+        "Auflösung roter Blutkörperchen",
+        "Vermehrung der weißen Blutkörperchen"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Koagulation.",
+        "Das ist das Hämatom.",
+        "Richtig.",
+        "Das ist die Leukozytose."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Chemoprophylaxe“?",
+      "options": [
+        "Krebsbehandlung mit Zellgiften",
+        "Impfung gegen eine Krankheit",
+        "Schutz vor Mückenstichen durch Netze",
+        "vorbeugende Einnahme von Medikamenten"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Chemotherapie.",
+        "Das ist die Vakzination.",
+        "Das ist die Expositionsprophylaxe.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Parasitämie“?",
+      "options": [
+        "Bakterien im Blut",
+        "Parasiten im Blut",
+        "Viren im Blut",
+        "Pilze im Blut"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Bakteriämie.",
+        "Richtig.",
+        "Das ist die Virämie.",
+        "Das ist die Fungämie."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

@@ -31,7 +31,8 @@ EXTRA = {
 
 def clean(text):
     text = text.replace("\\'", "'").replace("\\@", "@").replace("\\?", "?")
-    return re.sub(r"%(\d+)\$[sd]", lambda m: "{" + str(int(m.group(1)) - 1) + "}", text)
+    text = re.sub(r"%(\d+)\$[sd]", lambda m: "{" + str(int(m.group(1)) - 1) + "}", text)
+    return text.replace("%%", "%")  # Android escapes a literal percent sign in formatted strings as %%
 
 out = {}
 for lang, folder in FOLDERS.items():

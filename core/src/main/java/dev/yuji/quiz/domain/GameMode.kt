@@ -12,4 +12,6 @@ enum class GameMode(
     PLURAL("plural", "Plural"),
     PRETERITE("preterite", "Präteritum"),
     ERROR_SPOT("errors", "Fehler finden", autoAdvances = false),
+    /** One card per simulated Fachsprachprüfung case; the case itself is played step by step (ADR-0014). */
+    FSP_CASE("fsp", "FSP-Fälle", autoAdvances = false),
 }

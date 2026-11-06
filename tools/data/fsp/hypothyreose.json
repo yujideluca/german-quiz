@@ -1,0 +1,691 @@
+{
+  "id": "hypothyreose",
+  "area": "Endokrinologie",
+  "title": "Müdigkeit, Frieren und Gewichtszunahme",
+  "diagnosis": "Hypothyreose (Hashimoto)",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Frau Sabine Hoffmann, 41 Jahre, stellt sich am Vormittag in der Ambulanz vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Frau Hoffmann sitzt auf dem Stuhl und wirkt müde.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Morgen, Frau Hoffmann. Bevor wir beginnen: Haben Sie Ihre Versichertenkarte und die Überweisung vom Hausarzt dabei? Ohne diese Unterlagen kann ich Sie leider nicht aufnehmen.",
+        "Hallo, setzen Sie sich, was fehlt Ihnen denn?",
+        "Guten Morgen, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Frau Hoffmann?",
+        "Guten Morgen. Ich bin der Arzt und muss Sie gleich untersuchen, legen Sie sich bitte hin."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität der Patientin.",
+        "Die Untersuchung kommt nach der Anamnese, und Sie stellen sich weder mit Namen noch mit Funktion vor."
+      ],
+      "reply": "Patientin: „Ja, Hoffmann. Guten Morgen, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie ist Ihr Body-Mass-Index?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Sie sind doch um die vierzig, oder?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum, und bei welcher Krankenkasse sind Sie versichert?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
+      ],
+      "reply": "Patientin: „Ich bin 41, 1,68 Meter groß und wiege jetzt 79 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Beschwerden mit der Schilddrüse?",
+        "Welche Symptomatik liegt bei Ihnen vor, und seit wann besteht sie?",
+        "Warum kommen Sie damit erst jetzt zu uns?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Suggestiv und geschlossen: Sie geben die Diagnose schon vor. Beginnen Sie offen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
+        "Richtig: eine offene Frage lässt die Patientin selbst erzählen."
+      ],
+      "reply": "Patientin: „Ich bin seit Monaten so müde und erschöpft, ich friere ständig, und ich habe stark zugenommen.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten die Müdigkeit genauer erfassen. Was sagen Sie?",
+      "options": [
+        "Wie genau äußert sich die Müdigkeit? Sind Sie auch nach einer ganzen Nacht Schlaf noch erschöpft, und wann am Tag ist es am schlimmsten?",
+        "Sind Sie auch tagsüber ständig müde?",
+        "Sie schlafen bestimmt zu wenig, oder?",
+        "Leiden Sie unter einer Fatigue mit Hypersomnie und verminderter Leistungsfähigkeit im Alltag?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, laienverständlich, und Sie erfragen Schlaf und Tagesverlauf, ohne die Antwort vorzugeben.",
+        "Geschlossene Frage; Sie erfahren weder die Qualität der Müdigkeit noch den Tagesverlauf.",
+        "Suggestivfrage und leicht vorwurfsvoll. Die Patientin könnte nur zustimmen.",
+        "Fachsprache („Fatigue“, „Hypersomnie“); die Patientin versteht die Frage nicht."
+      ],
+      "reply": "Patientin: „Ich schlafe neun Stunden und bin morgens trotzdem wie gerädert. Am schlimmsten ist es am Vormittag.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Hat es plötzlich angefangen?",
+        "Seit wann haben Sie die Beschwerden?",
+        "Wann haben Sie es zum ersten Mal bemerkt, und ist es seitdem besser, schlechter oder gleich geblieben?",
+        "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch progredient?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Geschlossene Frage; sie erfasst den Verlauf nicht.",
+        "Das hat die Patientin schon gesagt („seit Monaten“). Fragen Sie nach dem Verlauf.",
+        "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „progredient“ versteht die Patientin nicht."
+      ],
+      "reply": "Patientin: „Das hat vor etwa sechs Monaten langsam angefangen und wird seitdem schleichend schlimmer. Neun Kilo habe ich zugenommen, obwohl ich nicht mehr esse als früher.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach der Stärke der Müdigkeit und der Belastbarkeit. Welche Formulierung passt?",
+      "options": [
+        "Wie stark ist Ihre Erschöpfung auf einer Skala von 1 bis 100, und können Sie im Alltag noch alles wie gewohnt erledigen?",
+        "Sind Sie leistungsgemindert?",
+        "Ist Ihre Belastbarkeit im Sinne einer NYHA-Klassifikation eingeschränkt?",
+        "Wie stark belastet Sie die Müdigkeit auf einer Skala von 0 bis 10? Schaffen Sie zum Beispiel noch Treppen oder Einkäufe ohne Pause? Wie ist Ihre Stimmung?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10.",
+        "Fachsprache und zu ungenau; Sie bekommen keine verwertbare Angabe.",
+        "Die NYHA-Klassifikation gilt für Herzinsuffizienz und ist Fachsprache; hier passt eine Frage nach Alltagsbelastung.",
+        "Richtig: übliche Skala 0 bis 10, konkrete Alltagsbeispiele für die Belastbarkeit, und Sie fragen nach der Stimmung."
+      ],
+      "reply": "Patientin: „Etwa 7 von 10. Zwei Stockwerke Treppen schaffe ich, aber dann muss ich mich setzen, und abends bin ich völlig platt. Richtig traurig bin ich nicht, nur frustriert.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Haben Sie eine Obstipation, eine Xerosis cutis, eine Alopezie oder eine Dysphonie bemerkt, und leiden Sie unter Myalgien oder Parästhesien?",
+        "Ist Ihnen sonst noch etwas aufgefallen, zum Beispiel an Haut, Haaren, Stimme, Verdauung? Haben Sie Herzklopfen oder Schwitzen?",
+        "Haben Sie sonst noch was?",
+        "Sie haben bestimmt auch trockene Haut und Haarausfall."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Verstopfung“, „trockene Haut“, „Haarausfall“, „Heiserkeit“.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, auch Herzklopfen und Schwitzen als Hinweise auf eine Überfunktion.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Suggestiv: Sie unterstellen die Symptome."
+      ],
+      "reply": "Patientin: „Meine Haut ist sehr trocken, die Haare werden dünner, und die Stimme ist manchmal heiser. Verstopfung habe ich auch. Herzklopfen oder Schwitzen habe ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie ist Ihr Appetit, und wie sind Stuhlgang und Wasserlassen? Hatten Sie Fieber oder Nachtschweiß? Hat sich Ihre Regelblutung verändert?",
+        "Wie ist die Vegetativa?",
+        "Haben Sie Fieber, Nachtschweiß, Dysurie, Obstipation und Diarrhö, und wie ist Ihr Menstruationszyklus?",
+        "Ist sonst alles normal bei Ihnen?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Appetit, Stuhlgang, Wasserlassen, Fieber, Nachtschweiß und Regelblutung in Laiensprache.",
+        "Fachjargon, den eine Patientin nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Obstipation, Diarrhö, Menstruationszyklus).",
+        "Zu allgemein; die Patientin sagt einfach „ja“."
+      ],
+      "reply": "Patientin: „Fieber oder Nachtschweiß habe ich nicht. Der Appetit ist normal. Der Stuhl ist hart, nur alle drei bis vier Tage. Wasserlassen ist normal. Meine Regel ist seit einigen Monaten stärker und länger.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, einen Diabetes mellitus oder eine Arrhythmie, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Sind Sie gesund?",
+        "Welche Diagnosen stehen in Ihrer Akte?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck, Zucker oder Herzprobleme? Und wurden Sie schon einmal operiert?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „Arrhythmie“). Mit Patienten sprechen Sie Laiensprache.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Die Patientin kennt ihre Akte nicht. Fragen Sie direkt.",
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt."
+      ],
+      "reply": "Patientin: „Nein, bisher war ich eigentlich gesund. Als Kind wurden mir die Mandeln entfernt. Bei meiner Tochter vor 8 Jahren hatte ich einen Kaiserschnitt.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Welche Pharmaka applizieren Sie?",
+        "Sie nehmen doch sicher schon Schilddrüsentabletten oder Jod, weil Sie so müde sind?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Vitamine oder Mittel ohne Rezept?",
+        "Nehmen Sie Tabletten?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache („Pharmaka“, „applizieren“).",
+        "Suggestivfrage. Fragen Sie offen.",
+        "Richtig: Name, Dosierung und auch frei verkäufliche Mittel und Vitamine.",
+        "Zu ungenau: Dosis, Vitamine und andere Darreichungsformen fehlen."
+      ],
+      "reply": "Patientin: „Vitamin D 1000 Einheiten morgens und abends Magnesium 300 mg. Bei Regelschmerzen manchmal Ibuprofen 400, ungefähr einmal im Monat.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
+        "Sind Sie gegen Jod allergisch? Das ist wichtig, weil wir vielleicht ein Kontrastmittel brauchen, und das enthält meistens Jod.",
+        "Allergie?",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Zu eng: Allergien gegen andere Medikamente, Lebensmittel oder Pflaster übersehen Sie.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Fachbegriff und missverständlich: Im Alltag versteht man darunter eher Empfindlichkeit im Gefühl, nicht eine Allergie."
+      ],
+      "reply": "Patientin: „Gegen Erdnüsse. Dann schwellen meine Lippen an, und der Mund juckt.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucherin oder Alkoholikerin?",
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus, und konsumieren Sie auch Betäubungsmittel?",
+        "Trinken Sie zu viel?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Alkoholikerin“ ist wertend und verletzend.",
+        "Richtig: neutral, konkret, mit Menge.",
+        "„Abusus“ und „Betäubungsmittel“ sind Fachsprache und klingen nach Vorwurf.",
+        "Wertend und ungenau."
+      ],
+      "reply": "Patientin: „Ich rauche nicht. Am Wochenende trinke ich ein Glas Wein. Drogen nehme ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Hat Ihre Familie dieselbe Krankheit?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Herzerkrankungen, Zucker oder Krebs?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar.",
+        "Zu eng: Geschwister und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Richtig: offen, mit passenden Beispielen."
+      ],
+      "reply": "Patientin: „Meine Mutter hat eine Hashimoto-Schilddrüsenentzündung und nimmt Tabletten. Meine Schwester hat Typ-1-Diabetes. Mein Vater hat Bluthochdruck.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Was ist Ihr sozialer Status?",
+        "Verdienen Sie genug Geld?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beruf und Wohnsituation, beides wichtig für die Versorgung.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Unklar und unangenehm formuliert.",
+        "Unangemessen und indiskret."
+      ],
+      "reply": "Patientin: „Ich bin Grundschullehrerin. Ich wohne mit meinem Mann und unseren zwei Kindern, 11 und 8 Jahre alt, in einer Wohnung.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben eine Hypothyreose bei Hashimoto-Thyreoiditis.",
+        "Das ist wahrscheinlich nur Stress durch Ihren Beruf und die Kinder. Sie sollten mehr Sport machen und weniger essen, dann nehmen Sie auch wieder ab.",
+        "Ich vermute, dass Ihre Schilddrüse zu wenig Hormone herstellt. Die Schilddrüse ist eine kleine Drüse vorne am Hals, die den Stoffwechsel steuert.",
+        "Sie haben sicher einen Tumor an der Schilddrüse, das müssen wir sofort operieren."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache und zu sicher; die Patientin versteht die Diagnose nicht.",
+        "Verharmlosend und medizinisch falsch: die Beschwerden haben eine körperliche Ursache.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung des Organs.",
+        "Falsch und beängstigend."
+      ],
+      "reply": "Patientin: „Zu wenig Hormone? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Die Patientin fragt: „Muss ich jetzt lebenslang Tabletten nehmen?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Nein, wenn Sie abnehmen und mehr Sport treiben, geht die Unterfunktion von selbst wieder weg, und Sie brauchen keine Medikamente.",
+        "Zuerst nehmen wir Blut ab und schauen Ihre Hormonwerte an, und wir machen einen Ultraschall vom Hals. Wenn sich der Verdacht bestätigt, bekommen Sie ein Schilddrüsenhormon als Tablette, meist dauerhaft. Wir kontrollieren dann regelmäßig Ihre Blutwerte.",
+        "Ja, Sie müssen ab morgen Tabletten nehmen.",
+        "Das weiß ich nicht, das entscheidet der Chef."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: Sport und Abnehmen heilen eine Unterfunktion durch Autoimmunentzündung nicht.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich.",
+        "Zu früh: die Diagnose ist noch nicht durch Blutwerte gesichert.",
+        "Unprofessionell und lässt die Patientin allein."
+      ],
+      "reply": "Patientin: „Gut, dann bin ich beruhigt. Danke für die Erklärung.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Frau Sabine Hoffmann, eine 41-jährige Patientin, stellte sich heute in unserer Ambulanz mit seit zwei Wochen bestehender Gewichtsabnahme, Nervosität und Wärmeintoleranz vor.",
+        "Frau Hoffmann ist 41 und ist immer müde.",
+        "Die Patientin Frau Hoffmann stellt sich heute vor wegen Müdigkeit seit sechs Monaten, 41-jährig, in unsere Ambulanz.",
+        "Frau Sabine Hoffmann, eine 41-jährige Patientin, stellte sich heute in unserer Ambulanz mit seit etwa sechs Monaten bestehender Müdigkeit, Kälteintoleranz und Gewichtszunahme vor."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich falsch: Die Beschwerden bestehen seit sechs Monaten, und die Patientin hat zugenommen und friert.",
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Satzbau und Grammatik falsch: „in unsere Ambulanz“ (Dativ, wo?), die Altersangabe hängt am Ende.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort, Zeitraum und Leitsymptome."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Beschwerden bestehen schleichend seit ca. sechs Monaten mit ausgeprägter Fatigue (NRS 7/10) bei ausreichendem Schlaf, Kälteintoleranz und einer Gewichtszunahme von 9 kg bei unveränderter Ernährung. Die Belastbarkeit ist eingeschränkt (zwei Stockwerke ohne Pause möglich).",
+        "Die Beschwerden sind akut aufgetreten, mit Gewichtsverlust von 9 kg, Wärmeintoleranz und Nervosität (NRS 7/10).",
+        "Sie ist müde und friert und hat zugenommen.",
+        "Die Beschwerden seien schleichend aufgetreten und bestehen seit sechs Monaten, Fatigue 7."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachsprache und alle Merkmale (Verlauf, Charakter, Intensität, Gewichtsveränderung, Belastbarkeit).",
+        "Inhaltlich falsch: Der Beginn war schleichend, die Patientin hat zugenommen und friert.",
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Konjunktiv-I-Mischung und unvollständig; außerdem fehlt „/10“."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete die Patientin über Palpitationen, Hyperhidrose und Diarrhö. Obstipation, Xerosis cutis und Dysphonie wurden verneint. Die Menstruation sei unverändert, der Appetit gesteigert.",
+        "Sie hat trockene Haut, verliert Haare und ist verstopft.",
+        "Begleitend berichtete die Patientin über Xerosis cutis, diffusen Haarausfall, intermittierende Heiserkeit und Obstipation (Stuhlgang alle drei bis vier Tage). Palpitationen und Hyperhidrose wurden verneint, Fieber und Nachtschweiß lagen nicht vor. Zudem besteht seit einigen Monaten eine Hypermenorrhö.",
+        "Begleitend berichtete die Patientin über trockene Haut, Haarausfall, Heiserkeit und Verstopfung. Fieber, Nachtschweiß, Herzklopfen und Schwitzen wurden verneint."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Die Patientin hat Obstipation, trockene Haut und Heiserkeit; Palpitationen und Hyperhidrose hat sie verneint.",
+        "Zu umgangssprachlich und unvollständig; Negativbefunde fehlen.",
+        "Richtig: Fachsprache, vollständig, Negativbefunde und Zyklusveränderung dokumentiert.",
+        "Falsches Register: „trockene Haut“, „Verstopfung“ und „Herzklopfen“ sind Laiensprache; im Arztbrief schreiben Sie Fachbegriffe."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: keine. Medikamente: Vitamin D, Magnesium.",
+        "Vorerkrankungen sind nicht bekannt. Z. n. Tonsillektomie im Kindesalter und Z. n. Sectio caesarea vor acht Jahren. Medikation: Vitamin D 1000 IE 1-0-0, Magnesium 300 mg 0-0-1, Ibuprofen 400 mg bei Bedarf (ca. 1x/Monat).",
+        "Vorerkrankungen sind nicht bekannt. Z. n. Appendektomie im Kindesalter und Z. n. Sectio caesarea vor acht Jahren. Medikation: Vitamin D 1000 IE 1-0-0, Magnesium 300 mg 1-0-0, Ibuprofen 400 mg dauerhaft 1-1-1.",
+        "Als Vorerkrankung ist eine arterielle Hypertonie bekannt. Medikation: Vitamin D 1000 IE 0-0-1, Magnesium 300 mg 1-0-0, Ibuprofen 400 mg dauerhaft."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Laiensprache und ohne Dosierung; die Voroperationen fehlen.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierschema im Format morgens-mittags-abends.",
+        "Inhaltlich falsch: Operiert wurden die Mandeln (Tonsillektomie), Magnesium wird abends genommen, und Ibuprofen nur bei Bedarf.",
+        "Inhaltlich falsch: Eine arterielle Hypertonie ist nicht bekannt, und das Dosierschema stimmt nicht."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: keine. Noxen: Nikotinabusus.",
+        "Erdnussallergie (Anaphylaxie). Nikotinkonsum ca. 10 py, gelegentlicher Alkoholkonsum.",
+        "Erdnussallergie (Lippenschwellung, oraler Juckreiz). Kein Nikotinkonsum, gelegentlicher Alkoholkonsum. Familienanamnese: Mutter Hashimoto-Thyreoiditis, Schwester Diabetes mellitus Typ 2, Vater arterielle Hypertonie. Die Patientin ist Grundschullehrerin, verheiratet, lebt mit Ehemann und zwei Kindern.",
+        "Erdnussallergie (Lippenschwellung, oraler Juckreiz). Kein Nikotinkonsum, gelegentlicher Alkoholkonsum. Familienanamnese: Mutter Hashimoto-Thyreoiditis, Schwester Diabetes mellitus Typ 1, Vater arterielle Hypertonie. Die Patientin ist Grundschullehrerin, verheiratet, lebt mit Ehemann und zwei Kindern."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch: die Erdnussallergie fehlt, und die Patientin raucht nicht.",
+        "Falsch: Die Reaktion war eine Lippenschwellung mit oralem Juckreiz, keine Anaphylaxie, und die Patientin raucht nicht (kein py).",
+        "Inhaltlich falsch: Die Schwester hat einen Diabetes mellitus Typ 1, nicht Typ 2.",
+        "Richtig: Allergie mit Reaktion, Noxen, Familienanamnese und Sozialanamnese stimmen mit dem Gespräch überein."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Anamnestisch besteht der Verdacht auf eine Hyperthyreose bei Morbus Basedow. Differenzialdiagnostisch kommen ein autonomes Adenom, eine Thyreoiditis de Quervain und ein Phäochromozytom in Betracht.",
+        "Diagnose: Schilddrüsenunterfunktion.",
+        "Anamnestisch besteht der Verdacht auf eine Hypothyreose bei Hashimoto-Thyreoiditis. Differenzialdiagnostisch kommen eine Anämie, eine Depression und ein Schlafapnoe-Syndrom in Betracht.",
+        "Es besteht eine gesicherte Hashimoto-Thyreoiditis."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Medizinisch unpassend: Gewichtszunahme, Kälteintoleranz und Obstipation sprechen für eine Unterfunktion, nicht für eine Überfunktion.",
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen für Müdigkeit.",
+        "Ohne Labor und Antikörper ist die Diagnose noch nicht gesichert."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (u. a. TSH, fT4, TPO-Antikörper, Blutbild, Ferritin), eine Schilddrüsensonographie und bereits vor Vorliegen der Werte die Gabe von Levothyroxin 300 µg täglich.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (u. a. TSH, fT4, TPO-Antikörper, Blutbild, Ferritin) sowie eine Schilddrüsensonographie. Bei bestätigter Hypothyreose ist eine gewichtsadaptierte Substitution mit Levothyroxin (ca. 1,6 µg/kg KG, morgens nüchtern) mit TSH-Kontrolle nach sechs bis acht Wochen indiziert.",
+        "Wir machen Blut und Ultraschall.",
+        "Zur weiteren Abklärung empfehlen wir eine Szintigraphie mit Radiojod und eine Thyreoidektomie."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Gefährlich: Eine Therapie ohne Laborbestätigung ist falsch, und 300 µg Levothyroxin sind weit überdosiert.",
+        "Richtig: Diagnostik und Therapie in vollständigen Sätzen, mit Dosis und Kontrolle.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Nicht passend und übertrieben: Radiojod und Operation sind bei Verdacht auf Unterfunktion nicht indiziert."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Die Patientin ist müde, sie heißt Hoffmann.",
+        "Also, die Frau hat zugenommen und friert die ganze Zeit ...",
+        "Ich möchte Ihnen Frau Sabine Hoffmann vorstellen, eine 41-jährige Patientin, die sich heute mit seit etwa sechs Monaten bestehender Müdigkeit, Kälteintoleranz und Gewichtszunahme vorgestellt hat.",
+        "Frau Hoffmann hat eine Schilddrüsenunterfunktion."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Kein strukturierter Einstieg; zuerst Patientin und Leitsymptom.",
+        "Richtig: Name, Alter, Leitsymptome und zeitlicher Verlauf in einem Satz.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Die Beschwerden bestehen schleichend seit sechs Monaten: ausgeprägte Müdigkeit (NRS 7/10), Kälteintoleranz und eine Gewichtszunahme von 9 kg bei unveränderter Ernährung. Begleitend bestehen Obstipation, Xerosis cutis, Haarausfall und Heiserkeit. Palpitationen wurden verneint.",
+        "Die Beschwerden begannen akut vor zwei Wochen: Gewichtsverlust von 9 kg, Wärmeintoleranz, Diarrhö und Palpitationen. Obstipation, Xerosis cutis und Heiserkeit wurden verneint, ebenso eine Menstruationsveränderung.",
+        "Sie hat alles Mögliche.",
+        "Sie ist müde und hat Hunger."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: knapp, strukturiert, mit relevantem Negativbefund.",
+        "Inhaltlich falsch: Der Beginn war schleichend, die Patientin hat zugenommen, und sie hat Obstipation, trockene Haut und Heiserkeit.",
+        "Keine Information.",
+        "Umgangssprachlich und inhaltlich falsch: von Heißhunger war nicht die Rede."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Sie ist gesund.",
+        "Bekannt ist eine arterielle Hypertonie. Die Mutter hat einen Morbus Basedow, die Schwester einen Diabetes mellitus Typ 2. Allergien bestehen nicht. Die Patientin raucht seit 20 Jahren.",
+        "Sie nimmt Vitamin D und Magnesium, sonst nichts.",
+        "Keine Vorerkrankungen bekannt. Familienanamnestisch hat die Mutter eine Hashimoto-Thyreoiditis und die Schwester einen Diabetes mellitus Typ 1. Wichtig: Erdnussallergie. Die Medikation besteht aus Vitamin D, Magnesium und Ibuprofen bei Bedarf. Nichtraucherin."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Unvollständig: relevante Familienanamnese und Allergie fehlen.",
+        "Inhaltlich falsch: keine Hypertonie, Mutter mit Hashimoto-Thyreoiditis, Schwester Typ 1, Erdnussallergie, Nichtraucherin.",
+        "Unvollständig: die Familienanamnese und die Allergie fehlen.",
+        "Richtig: relevante Familienanamnese (Autoimmunerkrankungen), Allergie und Medikation."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Es handelt sich sicher um eine Hyperthyreose, weil die Patientin so viel Energie verbraucht. Differenzialdiagnostisch denke ich höchstens noch an ein Phäochromozytom.",
+        "Ich vermute eine Hypothyreose bei Hashimoto-Thyreoiditis, auch wegen der familiären Häufung. Differenzialdiagnostisch denke ich an eine Anämie, eine Depression und ein Schlafapnoe-Syndrom.",
+        "Ich denke an die Schilddrüse.",
+        "Ich weiß es nicht genau."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu sicher („sicher“) und medizinisch falsch: Die Symptome sprechen für eine Unterfunktion, nicht für eine Überfunktion.",
+        "Richtig: Verdachtsdiagnose mit Begründung und sinnvolle Differenzialdiagnosen in Fachsprache.",
+        "Zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde Blut abnehmen: TSH als Screeningparameter, bei erhöhtem TSH fT4 und TPO-Antikörper, dazu Blutbild und Ferritin, und eine Schilddrüsensonographie durchführen. Bei bestätigter Hypothyreose würde ich Levothyroxin gewichtsadaptiert beginnen, morgens nüchtern, und das TSH nach sechs bis acht Wochen kontrollieren.",
+        "Ich würde sofort Thiamazol geben, weil das die Schilddrüse beruhigt, und eine Szintigraphie veranlassen.",
+        "Ich würde sie nach Hause schicken.",
+        "Ich würde eine Gastroskopie machen."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Diagnostik, Therapie und Kontrolle nach Leitlinie.",
+        "Fachlich falsch: Thiamazol ist ein Thyreostatikum und würde die Unterfunktion verschlimmern.",
+        "Gefährlich: Die Verdachtsdiagnose muss abgeklärt und behandelt werden.",
+        "Nicht die passende Untersuchung für diesen Verdacht."
+      ],
+      "reply": "Oberarzt: „Gut. Was erwarten Sie im Labor?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich erwarte ein supprimiertes TSH, ein erhöhtes freies T4 und positive TSH-Rezeptor-Antikörper wie bei einem Morbus Basedow, dazu eine Tachykardie im EKG.",
+        "Ein erniedrigtes Kalzium.",
+        "Ich erwarte ein erhöhtes TSH bei erniedrigtem freiem T4 und erhöhte TPO-Antikörper. Im Ultraschall wäre die Schilddrüse typischerweise echoarm und inhomogen.",
+        "Ich erwarte gar nichts."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das sind die Befunde einer Hyperthyreose bei Morbus Basedow, nicht der Hashimoto-Thyreoiditis.",
+        "Nicht typisch für diesen Verdacht; das wäre eher ein Hypoparathyreoidismus.",
+        "Richtig: typische Laborbefunde einer primären Hypothyreose bei Hashimoto-Thyreoiditis.",
+        "In der Prüfung erwartet man eine begründete Antwort."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Hypothyreose“?",
+      "options": [
+        "Schilddrüsenüberfunktion",
+        "Schilddrüsenunterfunktion",
+        "Schilddrüsenentzündung",
+        "Kropf"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Hyperthyreose.",
+        "Richtig.",
+        "Das ist die Thyreoiditis.",
+        "Das ist die Struma."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Struma“?",
+      "options": [
+        "Kropf, Vergrößerung der Schilddrüse",
+        "Zuckerkrankheit",
+        "Heiserkeit",
+        "Schilddrüsenentfernung"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist der Diabetes mellitus.",
+        "Das ist die Dysphonie.",
+        "Das ist die Thyreoidektomie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Obstipation“?",
+      "options": [
+        "Durchfall",
+        "Blähungen",
+        "Sodbrennen",
+        "Verstopfung"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Diarrhö.",
+        "Das ist der Meteorismus.",
+        "Das ist die Pyrosis.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Alopezie“?",
+      "options": [
+        "trockene Haut",
+        "Juckreiz",
+        "Haarausfall",
+        "brüchige Nägel"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Xerosis cutis.",
+        "Das ist der Pruritus.",
+        "Richtig.",
+        "Das ist die Onychoschisis."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Bradykardie“?",
+      "options": [
+        "Herzrasen",
+        "langsamer Herzschlag",
+        "unregelmäßiger Herzschlag",
+        "Herzstolpern"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Tachykardie.",
+        "Richtig.",
+        "Das ist die Arrhythmie.",
+        "Das sind Extrasystolen."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

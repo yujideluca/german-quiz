@@ -3,6 +3,7 @@ package dev.yuji.quiz.domain
 // REQ DG-1 DG-2 MG-1 UP-1 PE-3
 
 import dev.yuji.quiz.content.CONTENT_FILES
+import dev.yuji.quiz.content.CONTENT_SCHEMA
 import dev.yuji.quiz.content.ContentCheck
 import dev.yuji.quiz.content.ContentManifest
 import dev.yuji.quiz.content.ContentProblem
@@ -87,11 +88,11 @@ class BugHuntTest {
 
     // ---- downloaded content packs (QP-2) ----
 
-    private fun manifest(schema: Int = 1, version: Int = 5, files: Map<String, String> = CONTENT_FILES.associateWith { "0".repeat(64) }) =
+    private fun manifest(schema: Int = CONTENT_SCHEMA, version: Int = 5, files: Map<String, String> = CONTENT_FILES.associateWith { "0".repeat(64) }) =
         ContentManifest(schema, version, files)
 
     @Test fun `a pack of another schema is refused before anything else`() {
-        val r = validateContentPack(manifest(schema = 2), emptyMap())
+        val r = validateContentPack(manifest(schema = CONTENT_SCHEMA + 1), emptyMap())
         assertEquals(ContentProblem.UNSUPPORTED_SCHEMA, (r as ContentCheck.Invalid).problem)
     }
 
@@ -112,7 +113,7 @@ class BugHuntTest {
         assertTrue(shouldDownloadContent(manifest(version = 6), activeVersion = 5))
         assertFalse(shouldDownloadContent(manifest(version = 5), activeVersion = 5))
         assertFalse(shouldDownloadContent(manifest(version = 4), activeVersion = 5))
-        assertFalse(shouldDownloadContent(manifest(schema = 2, version = 9), activeVersion = 5))
+        assertFalse(shouldDownloadContent(manifest(schema = CONTENT_SCHEMA + 1, version = 9), activeVersion = 5))
         assertFalse(prefersDownloaded(manifest(version = 5), manifest(version = 5)))
         assertFalse(prefersDownloaded(manifest(version = 5), null))
         assertTrue(prefersDownloaded(manifest(version = 5), manifest(version = 6)))

@@ -1,0 +1,691 @@
+{
+  "id": "schizophrenie",
+  "area": "Psychiatrie",
+  "title": "Stimmen hören und das Gefühl, verfolgt zu werden",
+  "diagnosis": "Schizophrene Psychose",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Jan Becker, 24 Jahre, wird am Abend von seiner Schwester in die psychiatrische Notaufnahme gebracht.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Becker sitzt angespannt auf dem Stuhl, neben ihm seine Schwester. Er schaut immer wieder zur Tür.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Abend, Herr Becker. Setzen Sie sich bitte, ich habe leider nicht viel Zeit. Erzählen Sie mir bitte gleich, was es mit diesen Stimmen auf sich hat.",
+        "Hallo, ich bin der Doktor. Sie sind der Patient mit der Psychose, oder?",
+        "Guten Abend, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Becker?",
+        "Guten Abend, Herr Becker. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte dabei, und wer hat Sie eigentlich hergeschickt? Die Papiere brauchen wir zuerst."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Sie stellen sich nicht vor und setzen den Patienten unter Zeitdruck. Erst begrüßen und vorstellen.",
+        "Zu umgangssprachlich, ohne Namen, und Sie nennen eine Diagnose, die noch niemand gestellt hat.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor."
+      ],
+      "reply": "Patient: „Ja, Becker. Guten Abend. Meine Schwester hat mich hergebracht.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Wie ist Ihr Body-Mass-Index?",
+        "Sie sind noch ziemlich jung, oder? Höchstens dreißig?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum, und bei welcher Krankenkasse sind Sie versichert?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
+      ],
+      "reply": "Patient: „Ich bin 24, 1,80 Meter groß und wiege etwa 68 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Stimmen gehört?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte in Ihren eigenen Worten.",
+        "Welche psychopathologische Symptomatik liegt bei Ihnen vor, und seit wann besteht die Psychose?",
+        "Ihre Schwester sagt, Sie bilden sich Dinge ein. Warum glauben Sie so etwas, obwohl es doch gar nicht stimmen kann?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen.",
+        "Fachsprache und eine vorweggenommene Diagnose („Psychose“). Mit Patienten sprechen Sie Laiensprache.",
+        "Abwertend und vorwurfsvoll. Das zerstört das Vertrauen, besonders bei einem misstrauischen Patienten."
+      ],
+      "reply": "Patient: „Seit ein paar Wochen höre ich Stimmen, und ich glaube, dass mich jemand verfolgt. Die Nachbarn überwachen mich.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten die Stimmen genauer erfassen. Was sagen Sie?",
+      "options": [
+        "Können Sie mir beschreiben, was Sie genau hören? Wie viele Stimmen sind es, kommen sie von außen oder aus dem Kopf, und was sagen sie?",
+        "Sind die Stimmen real oder halluzinatorisch? Handelt es sich um imperative, kommentierende oder dialogisierende Stimmen, und besteht eine Ich-Störung?",
+        "Die Stimmen sagen Ihnen bestimmt, dass Sie etwas Schlimmes tun sollen, oder?",
+        "Hören Sie die Stimmen?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: laienverständlich, offen, und Sie erfragen Zahl, Herkunft und Inhalt der Stimmen.",
+        "Fachsprache („halluzinatorisch“, „imperativ“, „Ich-Störung“); der Patient versteht die Frage nicht.",
+        "Suggestivfrage, die den Patienten zusätzlich ängstigt.",
+        "Das hat der Patient schon gesagt. Fragen Sie nach Zahl, Herkunft und Inhalt."
+      ],
+      "reply": "Patient: „Es sind zwei Männerstimmen, von draußen, wie aus der Wand. Sie reden über mich und sagen, was ich gerade tue. Meistens abends und nachts.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Wie war der zeitliche Verlauf seit der Erstmanifestation: akut, subakut oder schleichend, mit oder ohne Prodromalphase, und gab es eine Residualsymptomatik?",
+        "Seit wann hören Sie die Stimmen?",
+        "Wann hat es angefangen, und hat sich vorher schon etwas verändert? Wird es seitdem besser, schlechter oder bleibt es gleich?",
+        "Hat es plötzlich angefangen?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „Prodromalphase“ versteht der Patient nicht.",
+        "Fragt nur nach dem Beginn der Stimmen; die Vorphase und der Verlauf fehlen.",
+        "Richtig: Beginn, Vorphase und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Geschlossene Frage; sie erfasst Vorphase und Verlauf nicht."
+      ],
+      "reply": "Patient: „Die Stimmen sind seit drei Wochen da, in der letzten Woche wurde es schlimmer. Schon seit etwa einem halben Jahr schlafe ich schlecht, und ich habe mich zurückgezogen.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Stimmung und Gefährdung. Welche Formulierung passt?",
+      "options": [
+        "Sind Sie suizidal?",
+        "Sie wollen sich bestimmt nichts antun, oder?",
+        "Wie ist Ihre Stimmung auf einer Skala von 0 bis 10, wenn 10 sehr gut ist? Und haben Sie manchmal Gedanken, sich etwas anzutun oder nicht mehr leben zu wollen?",
+        "Wie würden Sie Ihre Stimmung auf einer Skala von 1 bis 100 einstufen? Nach Selbsttötungsgedanken fragen wir später einmal, das ist im Moment nicht so wichtig."
+      ],
+      "answer": 2,
+      "feedback": [
+        "„Suizidal“ ist Fachsprache, und die Frage ist zu knapp und abrupt.",
+        "Suggestivfrage: Der Patient könnte Ihnen nur zustimmen.",
+        "Richtig: übliche Skala 0 bis 10, und die Frage nach Suizidgedanken wird offen und direkt gestellt.",
+        "Unübliche Skala, und das Suizidscreening darf bei einer Psychose nie aufgeschoben werden."
+      ],
+      "reply": "Patient: „Ungefähr 3 von 10. Mir ist alles zu viel. Ich will mir nichts antun, und ich will auch niemandem etwas tun. Die Stimmen befehlen mir nichts.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Haben Sie Wahn, Ich-Störungen, Konzentrationsstörungen oder Angst und Unruhe, und fühlen Sie sich affektiv verflacht?",
+        "Haben Sie Schlafprobleme oder Angst? Fällt es Ihnen schwer, sich zu konzentrieren? Haben Sie das Gefühl, dass Ihre Gedanken von außen beeinflusst werden?",
+        "Haben Sie sonst noch was?",
+        "Sie haben bestimmt auch Angst vor Ihren Nachbarn."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Schlafprobleme“, „Angst“, „sich konzentrieren“.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive Gedankeneingebung.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Suggestiv: Sie unterstellen das Symptom und bestätigen den Verfolgungsgedanken."
+      ],
+      "reply": "Patient: „Ich schlafe nur drei Stunden pro Nacht. Ich habe Angst, und ich kann mich nicht konzentrieren. Manchmal habe ich das Gefühl, dass mir jemand Gedanken in den Kopf setzt.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie ist die Vegetativa?",
+        "Haben Sie Fieber, Kopfschmerzen, Krampfanfälle, Dysurie, Obstipation oder Diarrhö, Nachtschweiß und Gewichtsverlust?",
+        "Ist sonst alles normal bei Ihnen?",
+        "Wie sind Ihr Appetit und Ihr Gewicht? Wie sind Stuhlgang und Wasserlassen? Hatten Sie Fieber, starke Kopfschmerzen oder einmal einen Krampfanfall?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Obstipation, Diarrhö).",
+        "Zu allgemein; der Patient sagt einfach „ja“.",
+        "Richtig: Laiensprache, und mit Fieber, Kopfschmerzen und Krampfanfall suchen Sie gezielt nach einer körperlichen Ursache."
+      ],
+      "reply": "Patient: „Appetit habe ich kaum, ich habe etwa 5 Kilo abgenommen. Stuhlgang und Wasserlassen sind normal. Fieber, Kopfschmerzen oder Krampfanfälle hatte ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie psychiatrische oder neurologische Vorerkrankungen wie eine Epilepsie, gab es stationäre Aufenthalte, Voroperationen oder ein Schädel-Hirn-Trauma?",
+        "Hatten Sie früher schon einmal körperliche oder seelische Erkrankungen? Waren Sie schon einmal in Behandlung? Wurden Sie schon einmal operiert, oder hatten Sie eine schwere Kopfverletzung?",
+        "Sind Sie gesund?",
+        "Waren Sie schon einmal in der Psychiatrie?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („neurologisch“, „Schädel-Hirn-Trauma“).",
+        "Richtig: laienverständlich, körperlich und seelisch, mit Operationen und Kopfverletzung.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Zu eng und stigmatisierend: körperliche Erkrankungen und Operationen fehlen."
+      ],
+      "reply": "Patient: „Vor zwei Jahren war ich wegen Prüfungsangst bei einem Psychologen, sonst nichts. Operiert wurde ich nie, eine Kopfverletzung hatte ich auch nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Welche Pharmaka applizieren Sie?",
+        "Nehmen Sie Tabletten?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch pflanzliche Mittel oder Mittel ohne Rezept?",
+        "Sie nehmen doch sicher Beruhigungs- oder Schlafmittel, damit Sie überhaupt schlafen können, und bestimmt auch etwas gegen die Stimmen, oder?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache („Pharmaka“, „applizieren“).",
+        "Zu ungenau: Dosis und andere Darreichungsformen fehlen.",
+        "Richtig: Name, Dosierung und auch frei verkäufliche und pflanzliche Mittel.",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Nichts vom Arzt. Nur abends 20 Tropfen Baldrian, damit ich besser schlafe.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
+        "Allergie?",
+        "Sind Sie hypersensibel?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, falls Sie später ein Antibiotikum brauchen, und Penicillin nehmen wir am häufigsten."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl.",
+        "Zu eng: Allergien gegen andere Medikamente, Lebensmittel oder Pflaster übersehen Sie."
+      ],
+      "reply": "Patient: „Gegen Haselnüsse. Dann schwellen mir die Lippen an.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln und Drogen?",
+      "options": [
+        "Sind Sie Kiffer oder Trinker?",
+        "Wie ist Ihr Nikotin-, Alkohol- und Cannabisabusus?",
+        "Sie haben bestimmt Drogen genommen, sonst würden Sie ja keine Stimmen hören, oder?",
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen, zum Beispiel Cannabis, Ecstasy, Speed oder Pilze? Wie oft?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Wertend und abwertend; so verlieren Sie das Vertrauen.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Suggestiv und vorwurfsvoll; der Patient fühlt sich beschuldigt.",
+        "Richtig: neutral, konkret, mit Menge, Häufigkeit und Beispielen für Substanzen."
+      ],
+      "reply": "Patient: „Ich rauche seit 6 Jahren etwa 10 Zigaretten am Tag. Am Wochenende trinke ich zwei Bier. Cannabis rauche ich seit meinem 17. Lebensjahr, in den letzten Monaten fast jeden Abend einen Joint. Andere Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese bei psychiatrischen Erkrankungen?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel psychische Erkrankungen, Suchterkrankungen, Herz- oder Krebserkrankungen?",
+        "Ist in Ihrer Familie schon einmal jemand verrückt geworden?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders, und leben Ihre Großeltern noch?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Richtig: offen, mit passenden Beispielen, und die psychischen Erkrankungen sind ausdrücklich mitgefragt.",
+        "Abwertendes Wort „verrückt“; verletzend und stigmatisierend.",
+        "Zu eng: Geschwister und psychische Erkrankungen in der Familie erfahren Sie so nicht."
+      ],
+      "reply": "Patient: „Der Bruder meines Vaters hatte Schizophrenie, er lebt in einem Heim. Meine Mutter hat Bluthochdruck.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen? Wer unterstützt Sie im Alltag?",
+        "Haben Sie Geld?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: Beruf oder Studium fehlen, die Adresse gehört nicht in die Sozialanamnese.",
+        "Richtig: Beruf, Wohnsituation und Unterstützung, wichtig für die Behandlungsplanung.",
+        "Unangemessen."
+      ],
+      "reply": "Patient: „Ich studiere Informatik, 6. Semester, und bin ledig. Ich wohne allein in einer Einzimmerwohnung. Meine Schwester und meine Eltern wohnen in der Nähe, meine Schwester kommt oft vorbei.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben eine paranoid-halluzinatorische Schizophrenie mit akustischen Halluzinationen und Verfolgungswahn.",
+        "Es ist wahrscheinlich nur Stress durch das Studium. Die Stimmen sind nicht echt, das bilden Sie sich nur ein. Gehen Sie nach Hause, schlafen Sie sich aus, und in ein paar Tagen ist alles wieder gut, das verspreche ich Ihnen.",
+        "Sie sind verrückt geworden, genau wie Ihr Onkel. Das geht nicht mehr weg, Sie werden wohl für immer in ein Heim müssen.",
+        "Ich vermute, dass Ihr Denken und Ihre Wahrnehmung durch eine Erkrankung verändert sind, eine sogenannte Psychose. Das ist eine Krankheit, keine Schwäche und nicht Ihre Schuld, und sie lässt sich gut behandeln."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachsprache und eine Diagnose als Gewissheit; der Patient versteht sie nicht und erschrickt.",
+        "Verharmlosend und abwertend; der Patient fühlt sich nicht ernst genommen.",
+        "Falsch und beängstigend: Eine Psychose ist behandelbar.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, entlastend und mit Hoffnung."
+      ],
+      "reply": "Patient: „Eine Krankheit? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Muss ich hier bleiben?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich empfehle Ihnen, einige Tage bei uns auf der Station zu bleiben. Zuerst nehmen wir Blut und Urin ab und untersuchen den Kopf, um andere Ursachen auszuschließen. Dann besprechen wir mit Ihnen Tabletten, die die Stimmen und die Angst vermindern. Die Aufnahme ist freiwillig.",
+        "Das entscheiden wir allein. Wenn Sie sich weigern, sperren wir Sie auf der geschlossenen Station ein, und Sie bekommen die Tabletten, ob Sie wollen oder nicht. Außerdem bekommen Sie sofort eine Spritze, und Ihre Eltern und Ihre Schwester dürfen Sie in den ersten Wochen nicht besuchen.",
+        "Nein, Sie können nach Hause gehen. Hören Sie einfach mit dem Kiffen auf, dann verschwinden die Stimmen von allein. Kommen Sie in einem Monat wieder.",
+        "Das entscheidet der Chef, ich weiß es nicht."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: nächste Schritte, ehrliche Aussicht, freiwillige Aufnahme, laienverständlich.",
+        "Falsch: Es besteht keine akute Eigen- oder Fremdgefährdung, deshalb gilt die freiwillige Behandlung. Drohungen zerstören das Vertrauen.",
+        "Gefährlich: Eine beginnende Psychose braucht jetzt Diagnostik und Behandlung.",
+        "Unprofessionell und lässt den Patienten allein."
+      ],
+      "reply": "Patient: „Gut, ich bleibe. Danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Becker ist 24 und hört Stimmen.",
+        "Herr Jan Becker, ein 24-jähriger Patient, stellte sich heute in Begleitung seiner Schwester in unserer psychiatrischen Notaufnahme mit seit drei Wochen bestehendem Stimmenhören und Verfolgungsgedanken vor.",
+        "Herr Jan Becker, ein 24-jähriger Patient, stellte sich heute in Begleitung seiner Schwester in unserer psychiatrischen Notaufnahme mit seit drei Tagen bestehendem Stimmenhören und Verfolgungsgedanken vor.",
+        "Herr Jan Becker, ein 24-jähriger Patient, stellte sich heute in unsere psychiatrische Notaufnahme mit seit drei Wochen bestehendem Stimmenhören vor."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Umgangssprache und zu knapp; im Arztbrief fehlen Ort und Dauer.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort, Dauer und Leitsymptom.",
+        "Inhaltlich falsch: Die Beschwerden bestehen seit drei Wochen, nicht seit drei Tagen.",
+        "Grammatik: „in unserer Notaufnahme“ (Dativ, wo?), und die Verfolgungsgedanken fehlen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Der Patient hört Stimmen, fühlt sich verfolgt und schläft schlecht.",
+        "Seit drei Wochen bestehen akustische Halluzinationen in Form von zwei männlichen, imperativen Stimmen, die den Patienten zur Selbstverletzung auffordern, sowie ein Verfolgungswahn. Eine akute Suizidalität wurde bejaht.",
+        "Seit drei Wochen bestehen optische Halluzinationen in Form von zwei männlichen, kommentierenden Stimmen sowie ein Verfolgungswahn und eine Gedankeneingebung, zunehmend seit einer Woche.",
+        "Seit drei Wochen bestehen akustische Halluzinationen in Form von zwei männlichen, kommentierenden Stimmen, ein Verfolgungswahn (Überwachung durch die Nachbarn) und eine Gedankeneingebung, zunehmend seit einer Woche. Anamnestisch bestehen seit ca. sechs Monaten Schlafstörungen und sozialer Rückzug. Stimmung 3/10. Imperative Stimmen, Suizidalität und Fremdgefährdung wurden verneint."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich grob richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Inhaltlich falsch: Die Stimmen sind kommentierend, und Imperative sowie Suizidalität wurden verneint.",
+        "Inhaltlich falsch: Stimmen sind akustische, keine optischen Halluzinationen.",
+        "Richtig: Fachsprache und alle Merkmale (Halluzinationen, Wahn, Ich-Störung, Vorphase, Stimmung, Gefährdung)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete der Patient über Ein- und Durchschlafstörungen (ca. 3 h pro Nacht), Ängste und Konzentrationsstörungen. Appetitminderung mit Gewichtsverlust von ca. 5 kg. Fieber, Kopfschmerzen und Krampfanfälle wurden verneint.",
+        "Er schläft schlecht, isst wenig und hat Schiss.",
+        "Begleitend berichtete der Patient über Ein- und Durchschlafstörungen (ca. 3 h pro Nacht), Ängste und Konzentrationsstörungen. Gewichtszunahme von ca. 5 kg bei gesteigertem Appetit. Fieber, Kopfschmerzen und Krampfanfälle wurden verneint.",
+        "Begleitend berichtete der Patient über Ein- und Durchschlafstörungen (ca. 3 h pro Nacht), Ängste und Konzentrationsstörungen. Appetitminderung mit Gewichtsverlust von ca. 5 kg. Ein Krampfanfall und Fieber bis 38,5 °C wurden bejaht."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Vulgär („Schiss“) und unvollständig.",
+        "Inhaltlich falsch: Der Patient hat 5 kg abgenommen und kaum Appetit.",
+        "Inhaltlich falsch: Fieber, Kopfschmerzen und Krampfanfälle wurden verneint."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: ein Schädel-Hirn-Trauma vor zwei Jahren und eine Epilepsie. Medikation: Risperidon 2 mg 1-0-1, Baldriantropfen 20 Tropfen 1-1-1.",
+        "Er war mal beim Psychologen und nimmt Baldrian.",
+        "Keine somatischen Vorerkrankungen. Vor zwei Jahren psychologische Behandlung wegen Prüfungsangst. Keine Operationen, kein Schädel-Hirn-Trauma. Medikation: Baldriantropfen 20 Tropfen 0-0-1, keine Dauermedikation.",
+        "Keine somatischen Vorerkrankungen. Vor zwei Jahren psychologische Behandlung wegen Prüfungsangst. Keine Operationen, kein Schädel-Hirn-Trauma. Medikation: Baldriantropfen 20 Tropfen 1-1-1."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Es gibt weder Schädel-Hirn-Trauma noch Epilepsie noch eine Risperidon-Medikation.",
+        "Laiensprache und ohne Dosierung.",
+        "Richtig: Fachsprache, Negativbefunde und Dosierschema im Format morgens-mittags-abends.",
+        "Dosierschema falsch: Der Patient nimmt die Tropfen nur abends (0-0-1)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: keine. Noxen: Nikotinabusus. Er raucht Gras und ist Student.",
+        "Haselnussallergie (Lippenschwellung). Nikotinkonsum ca. 3 py, Alkohol nur am Wochenende (2 Bier), regelmäßiger Cannabiskonsum seit dem 17. Lebensjahr, zuletzt fast täglich. Familienanamnese: Onkel väterlicherseits mit Schizophrenie, Mutter mit arterieller Hypertonie. Der Patient ist Informatikstudent, ledig und lebt allein.",
+        "Haselnussallergie (Lippenschwellung). Nikotinkonsum ca. 6 py, Alkohol nur am Wochenende (2 Bier), kein Drogenkonsum. Familienanamnese: Vater mit Schizophrenie. Der Patient ist Informatikstudent, ledig und lebt allein.",
+        "Penicillinallergie (Exanthem). Nikotinkonsum ca. 3 py, Alkohol nur am Wochenende, Cannabis nur einmalig. Familienanamnese leer. Der Patient ist verheiratet und lebt mit seiner Frau."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: die Haselnussallergie fehlt, der Cannabiskonsum ist nicht korrekt dokumentiert, und die Sprache ist umgangssprachlich.",
+        "Richtig: 10 Zigaretten am Tag über 6 Jahre sind etwa 3 py (pack years), Cannabis und Familienanamnese sind dokumentiert.",
+        "Falsch: 10 Zigaretten über 6 Jahre sind etwa 3 py, der Cannabiskonsum fehlt, und der Onkel hatte die Schizophrenie.",
+        "Falsch: Die Allergie gilt Haselnüssen, Cannabis wird fast täglich konsumiert, und der Patient ist ledig und lebt allein."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Der Patient ist verrückt geworden.",
+        "Es besteht eine gesicherte Schizophrenie. Weitere Differenzialdiagnosen sind nicht nötig, da die Familienanamnese eindeutig ist.",
+        "Anamnestisch besteht der Verdacht auf eine Demenz vom Alzheimer-Typ. Differenzialdiagnostisch kommen ein Morbus Parkinson und ein Delir in Betracht.",
+        "Anamnestisch besteht der Verdacht auf eine paranoid-halluzinatorische Schizophrenie (ICD-10 F20.0). Differenzialdiagnostisch kommen eine cannabisinduzierte psychotische Störung, eine affektive Störung mit psychotischen Symptomen und eine organische Psychose (z. B. Enzephalitis, Hirntumor) in Betracht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Abwertende Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Zu sicher: Ohne Labor, Bildgebung und Drogenscreening sind organische Ursachen und Substanzen nicht ausgeschlossen.",
+        "Medizinisch unpassend: Bei einem 24-Jährigen mit Halluzinationen und Wahn ist eine Alzheimer-Demenz nicht plausibel.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir veranlassen sofort die Unterbringung auf der geschlossenen Station gegen den Willen des Patienten und eine Fixierung. Haloperidol 20 mg 1-1-1 ohne vorherige Diagnostik.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (u. a. Blutbild, CRP, Elektrolyte, Leber- und Nierenwerte, TSH, Glukose), ein Urin-Drogenscreening, ein EKG, ein cMRT sowie ein EEG. Wir empfehlen die freiwillige stationäre Aufnahme und nach der Diagnostik die Einleitung einer antipsychotischen Therapie.",
+        "Wir entlassen den Patienten mit einem Termin beim Hausarzt in einer Woche und empfehlen Cannabisabstinenz.",
+        "Wir machen Blut und ein MRT."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Gefährlich und leitlinienwidrig: Es besteht keine akute Gefährdung, und die Dosis ist weit zu hoch.",
+        "Richtig: Diagnostik zum Ausschluss organischer Ursachen, freiwillige Aufnahme und Therapie in vollständigen Sätzen.",
+        "Gefährlich: Eine akute Psychose mit Verfolgungswahn braucht sofort Diagnostik und Behandlung.",
+        "Zu umgangssprachlich und unvollständig: Drogenscreening, Aufnahme und Therapie fehlen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Ich möchte Ihnen Herrn Jan Becker vorstellen, einen 24-jährigen Patienten, der sich heute in Begleitung seiner Schwester mit seit drei Wochen bestehendem Stimmenhören und Verfolgungsgedanken vorgestellt hat.",
+        "Der Patient hört Stimmen, er heißt Becker.",
+        "Also, der junge Mann glaubt, dass ihn die Nachbarn ausspionieren, und die Schwester hat ihn hergebracht, weil er nicht mehr schläft, und ich glaube, er hat bestimmt auch Drogen genommen und ist irgendwie ziemlich komisch drauf ...",
+        "Herr Becker hat eine Schizophrenie."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Name, Alter, Leitsymptom und zeitlicher Verlauf in einem Satz.",
+        "Unstrukturiert und umgangssprachlich.",
+        "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Er hört zwei weibliche, imperative Stimmen, die ihn zur Selbstverletzung auffordern, und eine akute Suizidalität wurde bejaht. Begleitend bestehen Schlafstörungen, Ängste und Fieber bis 39 °C.",
+        "Er hat Stimmen und Angst.",
+        "Er hört zwei männliche, kommentierende Stimmen, vor allem abends und nachts, und erlebt Verfolgungsgedanken sowie Gedankeneingebung. Begleitend bestehen Schlafstörungen, Ängste, Konzentrationsstörungen und ein Gewichtsverlust von 5 kg. Imperative Stimmen, Suizidalität und Fremdgefährdung wurden verneint.",
+        "Er hört zwei männliche, kommentierende Stimmen und erlebt Verfolgungsgedanken. Begleitend bestehen Schlafstörungen, Ängste und ein Krampfanfall vor zwei Tagen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Es sind zwei männliche, kommentierende Stimmen; Imperative, Suizidalität und Fieber wurden verneint.",
+        "Keine strukturierte Information.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
+        "Inhaltlich falsch: Krampfanfälle wurden verneint."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist völlig gesund, nimmt keine Drogen, und in der Familie gibt es keine Erkrankungen.",
+        "Somatisch ist er gesund. Vor zwei Jahren war er wegen Prüfungsangst in psychologischer Behandlung. Wichtig: regelmäßiger Cannabiskonsum, zuletzt fast täglich, und Nikotin mit etwa 3 py. Der Onkel väterlicherseits hat eine Schizophrenie. Allergie gegen Haselnüsse mit Lippenschwellung.",
+        "Er nimmt Risperidon 2 mg und hatte schon zwei stationäre psychiatrische Aufenthalte, sonst nichts.",
+        "Er ist ledig, wohnt allein und studiert Informatik, sonst nichts."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: Es gibt Cannabiskonsum und eine familiäre Belastung.",
+        "Richtig: relevante Vorgeschichte, Cannabis als möglicher Auslöser und die familiäre Belastung.",
+        "Inhaltlich falsch: Es gab keine Medikation und keine stationären Aufenthalte.",
+        "Unvollständig: Cannabis, Familienanamnese und Allergie fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich vermute eine dissoziative Identitätsstörung. Differenzialdiagnostisch denke ich an ein Delirium tremens und eine Alzheimer-Demenz.",
+        "Ich denke an Stimmen.",
+        "Es handelt sich sicher um eine Cannabisintoxikation, weitere Diagnostik ist nicht nötig. Differenzialdiagnostisch denke ich höchstens an Stress durch das Studium.",
+        "Ich vermute eine paranoid-halluzinatorische Schizophrenie. Differenzialdiagnostisch denke ich an eine cannabisinduzierte psychotische Störung, eine affektive Störung mit psychotischen Symptomen und eine organische Ursache wie eine Enzephalitis."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Medizinisch unpassend: Die Symptome und das Alter sprechen für eine Psychose, nicht für diese Diagnosen.",
+        "Zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "Zu sicher („sicher“), und eine organische Ursache und eine Schizophrenie dürfen nicht übersehen werden.",
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde ihn mit einem Termin beim Hausarzt entlassen und ihm sagen, er soll mit dem Kiffen aufhören.",
+        "Ich würde Blut und Urin untersuchen, inklusive Drogenscreening, ein EKG schreiben und ein cMRT sowie ein EEG veranlassen. Ich würde dem Patienten die freiwillige stationäre Aufnahme anbieten und nach der Diagnostik ein Antipsychotikum der zweiten Generation in niedriger Dosis beginnen, zum Beispiel Risperidon 1 bis 2 mg pro Tag, nach Aufklärung und gemeinsamer Entscheidung. Außerdem empfehle ich Cannabisabstinenz.",
+        "Ich würde sofort Haloperidol 20 mg i. v. geben und ihn fixieren lassen.",
+        "Ich würde Diazepam 10 mg dreimal täglich über mehrere Wochen geben, bis die Stimmen weg sind."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Gefährlich: Eine akute Psychose mit Verfolgungswahn darf nicht ambulant abgewartet werden.",
+        "Richtig: Diagnostik, freiwillige Aufnahme und Antipsychotikum nach Leitlinie, mit Aufklärung.",
+        "Gefährlich und leitlinienwidrig: Es besteht keine akute Gefährdung, und die Dosis ist viel zu hoch.",
+        "Fachlich falsch: Benzodiazepine behandeln die Psychose nicht und machen abhängig; das Mittel der Wahl ist ein Antipsychotikum."
+      ],
+      "reply": "Oberarzt: „Gut. Wie lange soll die Rezidivprophylaxe nach der ersten Episode mindestens dauern?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Vier Wochen reichen. Sobald die Stimmen weg sind, kann das Medikament abgesetzt werden.",
+        "Lebenslang, bei jedem Patienten schon nach der ersten Episode, ohne je einen Absetzversuch zu planen.",
+        "Nach einer ersten Episode empfiehlt die S3-Leitlinie eine antipsychotische Rezidivprophylaxe über mindestens ein bis zwei Jahre. Danach würde ich das Absetzen gemeinsam mit dem Patienten besprechen und nur schrittweise ausschleichen.",
+        "Drei Monate, weil danach das Rückfallrisiko praktisch bei null liegt."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: Dann ist das Rückfallrisiko sehr hoch.",
+        "Falsch: Nicht jeder Patient braucht lebenslang Medikamente. Nach der ersten Episode sind ein bis zwei Jahre Prophylaxe empfohlen, danach wird ein Absetzversuch gemeinsam besprochen.",
+        "Richtig: leitlinienkonform und mit gemeinsamer Entscheidung.",
+        "Falsch: Nach drei Monaten ist das Rückfallrisiko noch hoch."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Halluzination“?",
+      "options": [
+        "unerschütterliche Fehlüberzeugung",
+        "Sinneswahrnehmung ohne äußeren Reiz, zum Beispiel Stimmenhören",
+        "Gedächtnislücke",
+        "Verkennung eines tatsächlich vorhandenen Reizes"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist der Wahn.",
+        "Richtig.",
+        "Das ist die Amnesie.",
+        "Das ist die Illusion."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Wahn“?",
+      "options": [
+        "Sinnestäuschung ohne äußeren Reiz",
+        "starke Angst ohne Auslöser",
+        "unerschütterliche Fehlüberzeugung, die sich nicht korrigieren lässt",
+        "sprunghaftes, überschnelles Denken"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Halluzination.",
+        "Das ist die Panikattacke.",
+        "Richtig.",
+        "Das ist die Ideenflucht."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Affektverflachung“?",
+      "options": [
+        "übertrieben gehobene Stimmung",
+        "starke Gefühlsschwankungen",
+        "tiefe Traurigkeit",
+        "verminderte Gefühlsregung und Ausdrucksfähigkeit"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Euphorie.",
+        "Das ist die Affektlabilität.",
+        "Das ist die Depression.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Suizidalität“?",
+      "options": [
+        "Gedanken oder Handlungen, sich das Leben zu nehmen",
+        "Absicht, anderen Menschen zu schaden",
+        "Abhängigkeit von einer Substanz",
+        "Verletzen der eigenen Haut ohne Tötungsabsicht"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Fremdgefährdung.",
+        "Das ist die Sucht (Abhängigkeit).",
+        "Das ist selbstverletzendes Verhalten."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Prodromalphase“?",
+      "options": [
+        "Zeit der Besserung nach der Erkrankung",
+        "Vorphase mit unspezifischen Frühsymptomen vor dem Ausbruch",
+        "Höhepunkt der akuten Erkrankung",
+        "Rückfall nach einer Besserung"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Remission.",
+        "Richtig.",
+        "Das ist die Akutphase.",
+        "Das ist das Rezidiv."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

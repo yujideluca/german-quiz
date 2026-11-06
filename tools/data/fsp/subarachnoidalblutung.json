@@ -1,0 +1,691 @@
+{
+  "id": "subarachnoidalblutung",
+  "area": "Neurologie",
+  "title": "Plötzlich stärkster Kopfschmerz beim Heben",
+  "diagnosis": "Subarachnoidalblutung",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Frau Sabine Keller, 47 Jahre, wird am frühen Abend von ihrem Ehemann in die Notaufnahme gebracht.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Frau Keller sitzt mit geschlossenen Augen auf der Liege und hält sich den Kopf. Ihr Mann steht neben ihr.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Abend, Frau Keller. Bevor ich Sie untersuche: Wann waren Sie zuletzt bei Ihrem Hausarzt, und warum sind Sie nicht gleich dorthin gegangen?",
+        "Hallo, na, wieder Kopfschmerzen?",
+        "Guten Abend, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Frau Keller?",
+        "Guten Abend. Bitte legen Sie sich hin, ich mache sofort eine Lumbalpunktion."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Vorwurfsvoll und ohne Vorstellung. Das stört das Vertrauen gleich zu Beginn.",
+        "Zu umgangssprachlich, ohne Vorstellung und mit einer Annahme.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität der Patientin.",
+        "Eine Untersuchung kommt nach der Anamnese, und eine Lumbalpunktion vor der Bildgebung wäre hier sogar gefährlich."
+      ],
+      "reply": "Patientin: „Ja, Keller. Guten Abend, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie alt sind Sie, und wie hoch ist Ihr Body-Mass-Index?",
+        "Sie sind doch noch keine fünfzig, oder?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht."
+      ],
+      "reply": "Patientin: „Ich bin 47, 1,68 Meter groß und wiege 66 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Welche Symptomatik führt Sie zu uns?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Haben Sie Kopfschmerzen?",
+        "Warum haben Sie nicht schon am Nachmittag den Rettungsdienst gerufen, wenn es so schlimm ist?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Richtig: eine offene Frage lässt die Patientin selbst erzählen.",
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "Vorwurfsvoll. Das stört das Vertrauen und hilft der Patientin nicht."
+      ],
+      "reply": "Patientin: „Ich habe plötzlich fürchterliche Kopfschmerzen bekommen, so schlimm wie noch nie in meinem Leben.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten wissen, wo genau der Kopf wehtut und ob der Schmerz zieht. Was sagen Sie?",
+      "options": [
+        "Wo genau tut der Kopf weh? Ist es eher vorne, hinten oder an einer Seite, und zieht der Schmerz irgendwohin, zum Beispiel in den Nacken?",
+        "Würden Sie den Schmerz eher als holozephal oder als okzipital lokalisiert beschreiben, und gibt es eine Ausstrahlung in die Halswirbelsäule oder in die Schultern?",
+        "Der Schmerz sitzt bestimmt an einer Seite, so wie bei Ihrer Migräne, richtig?",
+        "Tut der Kopf nur an einer Stelle weh?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben.",
+        "„Holozephal“, „okzipital“ und „Ausstrahlung“ sind Fachwörter; die Patientin versteht sie nicht.",
+        "Suggestivfrage. Die Patientin könnte Ihnen nur zustimmen, und Sie denken zu früh an Migräne.",
+        "Geschlossene Frage; sie erfasst weder die Stelle noch die Ausstrahlung."
+      ],
+      "reply": "Patientin: „Vor allem hinten am Kopf, und es zieht in den Nacken. Das ist ganz anders als meine Migräne.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: perakut, akut oder subakut, und gab es eine Prodromalphase davor?",
+        "Seit wann haben Sie die Kopfschmerzen?",
+        "Hat es plötzlich wie ein Donnerschlag angefangen?",
+        "Wann genau hat es angefangen, und was haben Sie in dem Moment gemacht? Ist es seitdem besser, schlechter oder gleich geblieben?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachsprache: „Erstmanifestation“, „perakut“ und „Prodromalphase“ versteht die Patientin nicht.",
+        "Sie erfahren nur den Beginn, nicht die Situation und nicht den Verlauf. Gerade der genaue Auslöser ist hier wichtig.",
+        "Suggestivfrage mit einem Bild („Donnerschlag“), das die Antwort vorgibt.",
+        "Richtig: Zeitpunkt, Situation und Verlauf in einer klaren, laienverständlichen Frage."
+      ],
+      "reply": "Patientin: „Vor etwa zwei Stunden, um kurz nach 16 Uhr. Ich habe eine Getränkekiste in den Kofferraum gehoben, da kam es wie ein Schlag. Seitdem ist es gleich stark geblieben.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "options": [
+        "Wie stark sind die Schmerzen auf einer Skala von 1 bis 100, und würden Sie sagen, dass sie im Rhythmus des Pulses pochen?",
+        "Wie würden Sie die Schmerzen beschreiben, eher stechend, dumpf oder pochend? Und wie stark sind sie auf einer Skala von 0 bis 10?",
+        "Sind die Schmerzen so wie bei einer Migräne?",
+        "Tut es sehr weh?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS), und die Frage nach dem Pochen gibt eine Migräne vor.",
+        "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10.",
+        "Suggestivfrage; Sie bekommen keine eigene Beschreibung und keine Stärke.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe."
+      ],
+      "reply": "Patientin: „Es ist ein furchtbarer, bohrender Schmerz, 10 von 10. Bei meiner Migräne hatte ich bisher höchstens 6.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Ist Ihnen übel, mussten Sie sich übergeben? Tut Licht weh, oder sind Ihnen Sehstörungen, Lähmungen, Gefühlsstörungen, Sprachprobleme oder eine kurze Ohnmacht aufgefallen?",
+        "Hatten Sie Nausea, Emesis, Photophobie, Meningismus, Synkope oder fokal-neurologische Ausfälle, und besteht eine Vigilanzminderung?",
+        "Sie sind bestimmt auch bewusstlos gewesen.",
+        "Haben Sie sonst noch was?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive neurologischer Ausfälle und Bewusstseinsverlust.",
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „übel“, „übergeben“, „Licht tut weh“, „Ohnmacht“.",
+        "Suggestiv: Sie unterstellen das Symptom.",
+        "Zu umgangssprachlich und unkonkret."
+      ],
+      "reply": "Patientin: „Mir ist schlecht, ich habe einmal erbrochen. Licht tut weh. Mein Mann sagt, ich war kurz weg, vielleicht eine Minute. Gelähmt bin ich nicht, sprechen geht, Doppelbilder habe ich keine.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie ist die Vegetativa?",
+        "Haben Sie Pyrexie, Nachtschweiß, Inappetenz, Dysurie, Obstipation und Diarrhö?",
+        "Haben Sie Fieber gemessen? Wie sind Appetit, Stuhlgang und Wasserlassen? Hat sich Ihr Gewicht verändert?",
+        "Ist sonst alles normal bei Ihnen, Frau Keller? Fieber haben Sie bestimmt nicht, und Stuhlgang und Wasserlassen sind sicher auch in Ordnung, oder?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachjargon, den eine Patientin nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Pyrexie, Inappetenz, Dysurie, Obstipation, Diarrhö).",
+        "Richtig: Fieber, Appetit, Stuhlgang, Wasserlassen und Gewicht in Laiensprache.",
+        "Suggestivfrage: Sie geben die Antworten vor, und die Patientin sagt einfach „ja“."
+      ],
+      "reply": "Patientin: „Fieber hatte ich nicht, 36,9 Grad. Appetit habe ich gerade keinen. Stuhlgang und Wasserlassen sind normal, das Gewicht ist gleich.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, ein polyzystisches Nierenleiden oder eine Kollagenose, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck oder Migräne? Und wurden Sie schon einmal operiert?",
+        "Sind Sie gesund?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „Kollagenose“). Mit Patienten sprechen Sie Laiensprache.",
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Die Patientin kennt ihre Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patientin: „Ich habe Bluthochdruck und Migräne. Operiert wurde ich nur an den Mandeln, als Kind. Eine Gerinnungsstörung oder eine Nierenerkrankung ist nicht bekannt.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Tabletten?",
+        "Welche Pharmaka applizieren Sie?",
+        "Sie nehmen doch sicher regelmäßig Aspirin oder einen anderen Blutverdünner, oder nicht?",
+        "Welche Medikamente nehmen Sie regelmäßig oder bei Bedarf ein, und in welcher Dosierung? Auch Mittel ohne Rezept? Haben Sie heute schon etwas gegen die Schmerzen genommen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu ungenau: Name, Dosis und Bedarfsmedikation fehlen.",
+        "Fachsprache („Pharmaka“, „applizieren“).",
+        "Suggestivfrage. Fragen Sie offen, auch nach Blutverdünnern, ohne die Antwort vorzugeben.",
+        "Richtig: Name, Dosierung, Bedarfsmedikation, freiverkäufliche Mittel und die Schmerzmittel von heute."
+      ],
+      "reply": "Patientin: „Candesartan 16 mg morgens und bei Migräne Sumatriptan 50 mg, heute nicht. Gegen die Schmerzen habe ich vorhin 1000 mg Paracetamol genommen, das hat nichts gebracht. Blutverdünner nehme ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel, Pflaster oder Kontrastmittel? Wie äußert sich das?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht gleich ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
+        "Allergie?",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen (auch Kontrastmittel, das hier gebraucht wird), und Sie fragen nach der Reaktion.",
+        "Zu eng: Allergien gegen andere Medikamente, Lebensmittel oder Kontrastmittel übersehen Sie.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patientin: „Gegen Erdnüsse, da schwellen mir die Lippen an. Medikamente vertrage ich alle.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucherin oder Alkoholikerin?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus, und konsumieren Sie Kokain oder Amphetamine?",
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
+        "Rauchen Sie zu viel?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "„Alkoholikerin“ ist wertend und verletzend.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf; die Frage unterstellt außerdem Drogen.",
+        "Richtig: neutral, konkret, mit Menge.",
+        "Wertend und ungenau; Alkohol und Drogen fehlen."
+      ],
+      "reply": "Patientin: „Ich rauche seit 25 Jahren 20 Zigaretten am Tag. Alkohol nur am Wochenende ein bis zwei Bier. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Schlaganfälle, Hirnblutungen, Herz- oder Nierenerkrankungen?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders, die Geschwister fragen wir später.",
+        "Hat Ihre Familie dieselbe Krankheit?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Richtig: offen, mit passenden Beispielen.",
+        "Zu eng: Geschwister und Kinder fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
+      ],
+      "reply": "Patientin: „Meine Mutter ist mit 58 an einer Hirnblutung gestorben. Mein Vater hat Bluthochdruck. Mein Bruder ist gesund.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Was ist Ihr sozialer Status?",
+        "Haben Sie Geld?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Entlassung und Versorgung.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Unklar und unangenehm formuliert.",
+        "Unangemessen."
+      ],
+      "reply": "Patientin: „Ich bin Buchhalterin und wohne mit meinem Mann und unseren zwei Kindern, 14 und 17, in einem Haus.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben eine Subarachnoidalblutung, vermutlich bei rupturiertem Aneurysma.",
+        "Es ist wahrscheinlich nur eine sehr schwere Migräne, vielleicht durch das Heben und den Stress ausgelöst. Sie brauchen sich keine Sorgen zu machen, bekommen eine Spritze gegen die Schmerzen und können danach bald wieder nach Hause.",
+        "Sie haben sicher einen Hirntumor, den müssen wir sofort operieren.",
+        "Ich vermute, dass in Ihrem Kopf ein Blutgefäß eingerissen ist und es zwischen Gehirn und Hirnhaut geblutet hat. Das ist ein Notfall, deshalb untersuchen wir Sie jetzt sofort weiter."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachsprache; die Patientin versteht die Diagnose nicht.",
+        "Verharmlosend und gefährlich: Eine mögliche Hirnblutung darf nicht übersehen werden.",
+        "Falsch und beängstigend.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, Dringlichkeit ehrlich benannt."
+      ],
+      "reply": "Patientin: „Eine Blutung im Kopf? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Die Patientin fragt: „Muss ich operiert werden?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, noch heute Nacht wird Ihnen der Schädel geöffnet und das Gefäß verschlossen, so ist es immer bei einer Blutung im Kopf.",
+        "Zuerst machen wir sofort eine Computertomographie vom Kopf, das ist eine Röntgenuntersuchung in einer Röhre und dauert nur wenige Minuten. Sie bekommen Schmerzmittel und etwas gegen die Übelkeit und werden überwacht. Bestätigt sich die Blutung, besprechen wir die Behandlung mit den Neurochirurgen.",
+        "Das entscheidet der Chef, ich weiß es nicht.",
+        "Nein, Sie können nach einer Spritze gegen die Schmerzen bald wieder nach Hause gehen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu früh und zu sicher: die Diagnose ist noch nicht gesichert, und der Eingriff ist nicht immer offen.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich.",
+        "Unprofessionell und lässt die Patientin allein.",
+        "Falsch und gefährlich: Bei Verdacht auf eine Blutung muss die Patientin stationär überwacht werden."
+      ],
+      "reply": "Patientin: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Frau Keller ist 47 und hat starke Kopfschmerzen.",
+        "Frau Sabine Keller (47 J.) hat sich heute in Begleitung ihrem Ehemann in unserer Notaufnahme vorgestellt wegen Kopfschmerzen, die sie seit dem Nachmittag hat und die sehr stark sind.",
+        "Frau Sabine Keller, eine 47-jährige Patientin, stellte sich heute in Begleitung ihres Ehemannes in unserer Notaufnahme mit seit ca. 16 Uhr bestehenden, schlagartig aufgetretenen Kopfschmerzen vor.",
+        "Die Patientin Frau Keller stellt sich heute vor wegen Kopfschmerzen seit Nachmittag, 47-jährig, Ehemann dabei."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Grammatik: „in Begleitung“ verlangt den Genitiv („ihres Ehemannes“), und das Leitsymptom ist zu ungenau.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptom mit Zeitangabe.",
+        "Satzbau falsch: Altersangabe und Begleitung hängen am Ende, das Verb „vorstellen“ steht unglücklich."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Kopfschmerzen traten gegen 16 Uhr beim Heben einer Getränkekiste schlagartig auf, okzipital betont mit Ausstrahlung in den Nacken (NRS 10/10), seitdem unverändert stark; im Vergleich zur bekannten Migräne deutlich stärker.",
+        "Die Kopfschmerzen haben beim Heben einer Kiste angefangen und sind schlimmer geworden.",
+        "Die Kopfschmerzen traten gegen 16 Uhr schlagartig auf, frontal betont und ohne Ausstrahlung (NRS 6/10), seitdem regredient; im Vergleich zur bekannten Migräne vergleichbar.",
+        "Die Beschwerden seien schlagartig aufgetreten und strahlen in den Nacken aus, NRS 10."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachsprache und alle Merkmale (Auslöser, Beginn, Lokalisation, Ausstrahlung, Intensität, Vergleich).",
+        "Inhaltlich richtig, aber Laiensprache und unvollständig; im Bericht erwartet man Fachbegriffe.",
+        "Inhaltlich falsch: Die Schmerzen sind okzipital, strahlen in den Nacken aus, haben NRS 10/10 und sind unverändert stark.",
+        "Konjunktiv-I-Mischung und unvollständig; außerdem fehlt „/10“."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete die Patientin über Nausea und einmalige Emesis sowie Photophobie. Eine Synkope, Paresen, Sprachstörungen und Doppelbilder wurden verneint. Fieber bestand nicht (36,9 °C).",
+        "Ihr war schlecht, und sie hat einmal gekotzt.",
+        "Die Patientin klagte über Fieber bis 38,5 °C, Schüttelfrost und Durchfall; Übelkeit und Erbrechen wurden verneint.",
+        "Begleitend berichtete die Patientin über Übelkeit, einmaliges Erbrechen und Lichtscheu. Laut Ehemann kam es zu einer kurzen Bewusstlosigkeit von etwa einer Minute. Paresen, Sprachstörungen und Doppelbilder wurden verneint. Fieber bestand nicht (36,9 °C), Inappetenz."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich falsch: Die Patientin war laut Ehemann etwa eine Minute bewusstlos (Synkope), das wurde nicht verneint.",
+        "Vulgär („gekotzt“) und unvollständig.",
+        "Inhaltlich falsch: Die Patientin hatte kein Fieber, aber Übelkeit und Erbrechen.",
+        "Richtig: vollständig, Negativbefunde dokumentiert, die kurze Bewusstlosigkeit nicht vergessen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Bluthochdruck, Migräne. Medikamente: Candesartan, Sumatriptan, Paracetamol.",
+        "Bekannt sind eine arterielle Hypertonie und eine Migräne. Z. n. Tonsillektomie im Kindesalter. Medikation: Candesartan 16 mg 1-0-0, Sumatriptan 50 mg bei Bedarf (heute nicht eingenommen), Paracetamol 1000 mg einmalig heute. Keine Antikoagulation.",
+        "Bekannt sind eine arterielle Hypotonie und ein Diabetes mellitus Typ 2. Z. n. Appendektomie im Kindesalter. Medikation: Candesartan 16 mg 1-0-0, Sumatriptan 50 mg bei Bedarf, Paracetamol 1000 mg einmalig heute. Keine Antikoagulation.",
+        "Medikation: Candesartan 16 mg 0-0-1, Sumatriptan 50 mg 1-1-1, ASS 100 mg 1-0-0."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierschema im Format morgens-mittags-abends, Antikoagulation dokumentiert.",
+        "Inhaltlich falsch: Hypertonie (nicht Hypotonie), kein Diabetes, und operiert wurden die Mandeln (Tonsillektomie).",
+        "Dosierschema falsch (Candesartan morgens, 1-0-0), und ASS nimmt die Patientin nicht ein."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: keine. Noxen: Nikotinabusus. Berufstätig.",
+        "Penicillinallergie (Exanthem). Nikotinkonsum ca. 25 py, gelegentlicher Alkoholkonsum, kein Drogenkonsum. Familienanamnese: Mutter Hirnblutung mit 58 J., Vater arterielle Hypertonie, Bruder gesund. Die Patientin ist Buchhalterin, verheiratet, lebt mit Ehemann und zwei Kindern in einem Haus.",
+        "Erdnussallergie (Angioödem der Lippen). Nikotinkonsum ca. 25 py, gelegentlicher Alkoholkonsum, kein Drogenkonsum. Familienanamnese: Mutter mit 58 J. an einer Hirnblutung verstorben, Vater arterielle Hypertonie. Die Patientin ist Buchhalterin, verheiratet, lebt mit Ehemann und zwei Kindern.",
+        "Sie verträgt keine Erdnüsse und raucht."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: die Erdnussallergie fehlt, und die Familienanamnese fehlt.",
+        "Inhaltlich falsch: Die Allergie besteht gegen Erdnüsse (Angioödem), nicht gegen Penicillin.",
+        "Richtig: 20 Zigaretten am Tag über 25 Jahre sind 25 py (pack years = Packungsjahre).",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Hirnblutung.",
+        "Anamnestisch besteht bei bekannter Migräne der Verdacht auf eine besonders schwere Migräneattacke mit Aura. Differenzialdiagnostisch kommen ein Spannungskopfschmerz, ein Clusterkopfschmerz und ein medikamenteninduzierter Kopfschmerz in Betracht.",
+        "Es besteht eine gesicherte Subarachnoidalblutung bei rupturiertem Aneurysma.",
+        "Anamnestisch besteht der Verdacht auf eine Subarachnoidalblutung, am ehesten bei rupturiertem Aneurysma. Differenzialdiagnostisch kommen eine intrazerebrale Blutung, eine Meningitis und eine Sinusvenenthrombose in Betracht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache, zu unspezifisch, keine Differenzialdiagnosen.",
+        "Gefährlich: Schlagartiger Beginn und stärkster Schmerz bedeuten bis zum Beweis des Gegenteils eine Blutung.",
+        "Ohne Bildgebung ist die Diagnose noch nicht gesichert.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir empfehlen umgehend eine native Computertomographie des Schädels, bei Blutungsnachweis eine CT-Angiographie zur Aneurysmasuche. Zudem Blutentnahme (u. a. Blutbild, Gerinnung, Kreatinin), Blutdruckeinstellung (systolisch < 160 mmHg), Analgesie, Antiemese, Überwachung auf der Intensivstation bzw. Stroke Unit sowie Konsil der Neurochirurgie.",
+        "Zur weiteren Abklärung empfehlen wir zuerst eine Lumbalpunktion, bevor eine Bildgebung durchgeführt wird, außerdem eine Analgesie mit Acetylsalicylsäure 500 mg i. v. und bei unauffälligem Liquor die Entlassung nach Hause.",
+        "Wir machen ein CT und warten ab.",
+        "Zur weiteren Abklärung empfehlen wir eine Röntgenaufnahme der Halswirbelsäule und eine Physiotherapie."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Diagnostik, Blutdruckziel, Therapie, Überwachung und Konsil in vollständigen Sätzen.",
+        "Gefährlich: Erst die Bildgebung, dann die Lumbalpunktion; ASS hemmt die Blutgerinnung und verstärkt die Blutung.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Nicht die passende Untersuchung für diesen Verdacht."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Die Patientin hat Kopfweh, sie heißt Keller.",
+        "Ich möchte Ihnen Frau Sabine Keller vorstellen, eine 47-jährige Patientin, die sich heute mit seit etwa zwei Stunden bestehenden, schlagartig aufgetretenen Kopfschmerzen vorgestellt hat.",
+        "Also, die Frau hat eine Kiste gehoben und dann ...",
+        "Frau Keller hat eine Subarachnoidalblutung, die wir zwar noch nicht bildgebend bestätigt haben, und außerdem eine Migräne und einen Bluthochdruck in der Vorgeschichte."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz.",
+        "Kein strukturierter Einstieg; zuerst Patientin und Leitsymptom.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Die Schmerzen traten schleichend über mehrere Tage auf und sind frontal betont, ohne Ausstrahlung. Begleitend bestehen Fieber bis 38,5 °C, Schüttelfrost und Nackensteifigkeit. Eine Bewusstlosigkeit und Übelkeit wurden verneint, Paresen bestehen nicht.",
+        "Sie hat alles Mögliche.",
+        "Die Schmerzen traten schlagartig beim Heben auf, okzipital betont mit Ausstrahlung in den Nacken (NRS 10/10). Begleitend bestehen Übelkeit, einmaliges Erbrechen, Photophobie und eine kurze Bewusstlosigkeit. Paresen und Sprachstörungen wurden verneint.",
+        "Sie hat Fieber, Nackenschmerzen und Durchfall."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Der Beginn war schlagartig, es bestand kein Fieber, und es gab eine kurze Bewusstlosigkeit.",
+        "Keine Information.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
+        "Inhaltlich falsch: Fieber und Durchfall bestanden nicht."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Bekannt sind eine arterielle Hypertonie und eine Migräne, die jetzigen Schmerzen sind aber deutlich stärker als sonst. Sie raucht ca. 25 py und nimmt keine Antikoagulation. Die Mutter starb mit 58 Jahren an einer Hirnblutung. Erdnussallergie.",
+        "Sie ist gesund.",
+        "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 1. Sie nimmt Phenprocoumon. Keine Allergien.",
+        "Sie nimmt Candesartan und Sumatriptan, sonst nichts."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: relevante Risikofaktoren (Hypertonie, Rauchen, Familie), keine Antikoagulation und die Allergie.",
+        "Falsch: es gibt relevante Vorerkrankungen.",
+        "Inhaltlich falsch (kein Diabetes, keine Antikoagulation, Erdnussallergie).",
+        "Unvollständig: Diagnosen, Risikofaktoren und Allergie fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an eine Migräne.",
+        "Ich weiß es nicht genau.",
+        "Es handelt sich sicher um eine Meningitis, weil die Patientin Nackenschmerzen und Lichtempfindlichkeit hat. Differenzialdiagnostisch denke ich höchstens noch an eine Migräne, einen Spannungskopfschmerz und eine Sinusitis.",
+        "Ich vermute eine Subarachnoidalblutung, am ehesten bei rupturiertem Aneurysma. Differenzialdiagnostisch denke ich an eine intrazerebrale Blutung, eine Meningitis und eine Sinusvenenthrombose."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Gefährlich: Die Patientin hat eine bekannte Migräne, die jetzigen Schmerzen sind aber ganz anders und schlagartig.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
+        "Zu sicher („sicher“), und ohne Fieber ist eine Meningitis nicht die wahrscheinlichste Diagnose.",
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde Ibuprofen geben und sie nach Hause schicken.",
+        "Ich würde zuerst eine Lumbalpunktion machen und erst danach eine Bildgebung veranlassen, außerdem Acetylsalicylsäure 500 mg i. v. zur Schmerztherapie geben.",
+        "Ich würde sofort ein natives CCT veranlassen und bei Blutungsnachweis eine CT-Angiographie. Blutdruck systolisch unter 160 mmHg halten, Analgesie und Antiemese, Nimodipin 60 mg alle 4 Stunden p. o. zur Vasospasmusprophylaxe, Überwachung auf der Intensivstation und die Neurochirurgie früh hinzuziehen.",
+        "Ich würde Heparin 5000 IE als Bolus i. v. geben und die Patientin zur Beobachtung auf die Normalstation verlegen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gefährlich: NSAR hemmen die Blutgerinnung, und der Verdacht muss sofort abgeklärt werden.",
+        "Gefährlich: Bildgebung zuerst; ASS verstärkt die Blutung.",
+        "Richtig: Bildgebung, Blutdruckziel, Nimodipin, Überwachung und Neurochirurgie.",
+        "Gefährlich: Heparin verstärkt eine Blutung, und die Patientin gehört auf die Intensivstation."
+      ],
+      "reply": "Oberarzt: „Gut. Was erwarten Sie im CT?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich erwarte eine keilförmige Hypodensität im Mediastromgebiet als Zeichen eines ischämischen Infarkts und dazu eine Mittellinienverlagerung nach links.",
+        "Ich erwarte hyperdenses Blut in den basalen Zisternen und der Sylvischen Fissur, eventuell auch in den Ventrikeln.",
+        "Ich erwarte gar nichts.",
+        "Ich erwarte ein völlig unauffälliges Bild, denn bei einer Subarachnoidalblutung ist die Computertomographie in den ersten Stunden meistens normal."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Nicht typisch: Das wäre ein ischämischer Infarkt und kein Blut im Subarachnoidalraum.",
+        "Richtig: typisches Bild einer Subarachnoidalblutung; innerhalb von 6 Stunden ist das native CCT sehr sensitiv.",
+        "In der Prüfung erwartet man eine begründete Antwort.",
+        "Falsch: In den ersten 6 Stunden ist das CCT fast immer positiv; ein negativer Befund spräche dagegen."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Meningismus“?",
+      "options": [
+        "Nackensteifigkeit mit Schmerzen beim Beugen des Kopfes",
+        "Lichtscheu",
+        "Gedächtnisverlust",
+        "Kopfschmerz beim Husten"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist Photophobie.",
+        "Das ist Amnesie.",
+        "Das ist der Hustenkopfschmerz."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Aneurysma“?",
+      "options": [
+        "Verengung eines Gefäßes",
+        "Verschluss durch ein Blutgerinnsel",
+        "Aussackung der Gefäßwand",
+        "Entzündung eines Gefäßes"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Stenose.",
+        "Das ist die Thrombose.",
+        "Richtig.",
+        "Das ist die Vaskulitis."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Photophobie“?",
+      "options": [
+        "Sehverlust auf einem Auge",
+        "Lichtempfindlichkeit",
+        "Doppelbilder",
+        "Farbenblindheit"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Amaurose.",
+        "Richtig.",
+        "Das ist die Diplopie.",
+        "Das ist die Achromatopsie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Vasospasmus“?",
+      "options": [
+        "Erweiterung der Gefäße",
+        "Verschluss eines Gefäßes durch Blutgerinnsel",
+        "Einriss einer Gefäßwand",
+        "krampfartige Verengung eines Gefäßes"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Vasodilatation.",
+        "Das ist die Thrombose bzw. Embolie.",
+        "Das ist die Ruptur.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Synkope“?",
+      "options": [
+        "Krampfanfall",
+        "Schwindel mit Drehgefühl",
+        "kurze Ohnmacht",
+        "Lähmung einer Körperhälfte"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist ein epileptischer Anfall.",
+        "Das ist der Vertigo.",
+        "Richtig.",
+        "Das ist die Hemiparese."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

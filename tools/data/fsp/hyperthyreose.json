@@ -1,0 +1,691 @@
+{
+  "id": "hyperthyreose",
+  "area": "Endokrinologie",
+  "title": "Herzrasen und Gewichtsverlust",
+  "diagnosis": "Hyperthyreose bei Morbus Basedow",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Frau Lena Hoffmann, 31 Jahre, stellt sich am Vormittag in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Frau Hoffmann sitzt unruhig auf der Liege und reibt sich die feuchten Hände.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Morgen. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte und die Überweisung Ihres Hausarztes dabei? Die brauchen wir zuerst für die Anmeldung.",
+        "Hallo, was fehlt Ihnen denn?",
+        "Guten Morgen, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Frau Hoffmann?",
+        "Guten Morgen, Frau Hoffmann. Ich bin Dr. Silva. Ziehen Sie bitte den Pullover aus, ich möchte Ihnen sofort den Hals abtasten."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Verwaltungsfragen gehören nicht an den Anfang des Arzt-Patienten-Gesprächs, und Sie stellen sich nicht mit Funktion vor.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität der Patientin.",
+        "Die körperliche Untersuchung kommt nach der Anamnese. Erst begrüßen, sich vorstellen und zuhören."
+      ],
+      "reply": "Patientin: „Ja, Hoffmann. Guten Morgen, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie alt sind Sie? Und wie lautet Ihre Telefonnummer, damit wir Sie bei Rückfragen erreichen können?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Wie ist Ihr Body-Mass-Index?",
+        "Sie sind noch keine vierzig, oder?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Die Telefonnummer ist Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht (wichtig bei Gewichtsverlust).",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen."
+      ],
+      "reply": "Patientin: „Ich bin 31, 1,70 Meter groß und wiege jetzt nur noch 54 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Herzrasen und Gewichtsverlust?",
+        "Welche Symptomatik führt Sie zu uns?",
+        "Warum kommen Sie erst jetzt zum Arzt, obwohl Sie die Beschwerden schon so lange haben?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Geschlossene Frage am Anfang, und Sie kennen die Beschwerden noch gar nicht. Beginnen Sie offen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
+        "Richtig: eine offene Frage lässt die Patientin selbst erzählen."
+      ],
+      "reply": "Patientin: „Mein Herz rast ständig, ich schwitze viel und zittere. Außerdem habe ich in den letzten Monaten stark abgenommen, obwohl ich viel esse.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten das Herzrasen genauer erfragen. Was sagen Sie?",
+      "options": [
+        "Wie fühlt sich das Herzrasen an? Schlägt Ihr Herz gleichmäßig schnell oder stolpert es, und kommt das auch in Ruhe vor?",
+        "Leiden Sie an einer Tachykardie oder an einer Arrhythmie, und besteht diese auch in Ruhe oder nur unter körperlicher Belastung?",
+        "Ihr Herz schlägt bestimmt unregelmäßig, nicht wahr?",
+        "Kommt das Herzrasen oft vor?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: laienverständlich, fragt nach Rhythmus (regelmäßig oder unregelmäßig) und nach Ruhe, ohne die Antwort vorzugeben.",
+        "Inhaltlich gut, aber „Tachykardie“ und „Arrhythmie“ sind Fachwörter; die Patientin versteht sie nicht.",
+        "Suggestivfrage. Die Patientin könnte Ihnen nur zustimmen.",
+        "Zu ungenau; Rhythmus und Auftreten in Ruhe erfahren Sie so nicht."
+      ],
+      "reply": "Patientin: „Es schlägt gleichmäßig, aber sehr schnell, auch wenn ich nur auf dem Sofa sitze. Meine Smartwatch zeigt dann oft 120.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch progredient, und gab es Triggerfaktoren?",
+        "Hat es plötzlich angefangen?",
+        "Wann genau hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben?",
+        "Sie hatten bestimmt viel Stress in letzter Zeit, und das ist der Grund für Ihre Beschwerden, oder?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „progredient“ versteht die Patientin nicht.",
+        "Geschlossene Frage; sie erfasst den Verlauf nicht.",
+        "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Suggestiv und eine voreilige Deutung. Fragen Sie offen nach dem Verlauf."
+      ],
+      "reply": "Patientin: „Vor ungefähr drei Monaten ging es langsam los. In den letzten zwei Wochen ist es deutlich schlimmer geworden.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach der Belastbarkeit. Welche Formulierung passt?",
+      "options": [
+        "Wie ist Ihre Belastbarkeit nach der NYHA-Klassifikation, und besteht eine Orthopnoe, eine Belastungsdyspnoe oder eine Angina pectoris?",
+        "Wie viele Treppen schaffen Sie, bevor Sie außer Atem sind? Und haben Sie dabei Schmerzen oder Druck in der Brust?",
+        "Sind Sie noch belastbar?",
+        "Sie können bestimmt keine Treppen mehr steigen, oder?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache („NYHA“, „Orthopnoe“, „Angina pectoris“); die Patientin versteht das nicht.",
+        "Richtig: eine konkrete, alltagsnahe Frage nach der Belastbarkeit, dazu die wichtige Frage nach Brustschmerzen.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
+        "Suggestivfrage. Die Patientin könnte Ihnen nur zustimmen."
+      ],
+      "reply": "Patientin: „Zwei Stockwerke, dann klopft das Herz bis zum Hals und ich bekomme schlecht Luft. Schmerzen in der Brust habe ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Haben Sie eine Hyperhidrosis, einen Tremor, eine Wärmeintoleranz oder eine Exophthalmus-Symptomatik bemerkt, und besteht eine innere Unruhe?",
+        "Haben Sie sonst noch was?",
+        "Sie schwitzen und zittern bestimmt auch, oder?",
+        "Schwitzen Sie stark, oder zittern Sie? Ist Ihnen schnell zu warm? Haben Sie Veränderungen an den Augen bemerkt, zum Beispiel Druckgefühl oder Doppelbilder?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Schwitzen“, „Zittern“, „zu warm“, „Augen“.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Suggestiv: Sie unterstellen das Symptom.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive Augenveränderungen (Basedow-Orbitopathie)."
+      ],
+      "reply": "Patientin: „Ja, ich schwitze selbst im Büro, mir ist immer zu warm, und die Hände zittern. Die Augen fühlen sich manchmal trocken und gereizt an, Doppelbilder habe ich nicht. Ich bin auch ständig nervös.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie ist Ihr Appetit, und wie hat sich Ihr Gewicht verändert? Wie sind Stuhlgang, Schlaf und Ihre Regelblutung? Hatten Sie Fieber?",
+        "Wie ist die Vegetativa?",
+        "Haben Sie Diarrhö, Insomnie, Oligomenorrhö, Gewichtsverlust, Fieber oder Nachtschweiß?",
+        "Essen Sie zu viel oder zu ungesund, und haben Sie deshalb Durchfall?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Appetit, Gewicht, Stuhlgang, Schlaf, Zyklus und Fieber in Laiensprache.",
+        "Fachjargon, den eine Patientin nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Diarrhö, Insomnie, Oligomenorrhö).",
+        "Wertend und suggestiv. Das stört das Vertrauen."
+      ],
+      "reply": "Patientin: „Ich habe Heißhunger und esse viel, trotzdem habe ich in drei Monaten 7 Kilo abgenommen. Der Stuhlgang ist weicher und kommt drei- bis viermal am Tag. Ich schlafe schlecht, und meine Periode ist schwächer geworden. Fieber hatte ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie eine Struma, eine Autoimmunthyreopathie oder eine arterielle Hypertonie, und gab es Voroperationen?",
+        "Sind Sie sonst gesund?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel an der Schilddrüse, am Herzen oder an der Haut? Und wurden Sie schon einmal operiert?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache („Struma“, „Autoimmunthyreopathie“, „arterielle Hypertonie“); außerdem nimmt die Frage die Diagnose vorweg.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
+        "Die Patientin kennt ihre Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patientin: „Ich habe Neurodermitis, sonst nichts. Die Mandeln wurden mir mit acht Jahren entfernt. Mit der Schilddrüse war bisher nie etwas.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Welche Pharmaka applizieren Sie regelmäßig, und nehmen Sie auch Phytotherapeutika oder Nahrungsergänzungsmittel ein?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept, die Pille oder Jodtabletten?",
+        "Nehmen Sie Tabletten?",
+        "Sie nehmen doch sicher etwas für die Schilddrüse?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache („Pharmaka“, „applizieren“, „Phytotherapeutika“).",
+        "Richtig: Name, Dosierung, freiverkäufliche Mittel, Pille und Jod, das für die Schilddrüse wichtig ist.",
+        "Zu ungenau: Dosis und andere Mittel fehlen.",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patientin: „Valette, die Pille, jeden Morgen eine Tablette. Cetirizin 10 mg abends, aber nur bei Heuschnupfen. Jod oder Ähnliches nehme ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
+        "Sind Sie gegen Jod allergisch? Das ist wichtig, weil wir vielleicht ein Kontrastmittel für eine Untersuchung brauchen, und das enthält Jod.",
+        "Allergie?",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Zu eng: Allergien gegen andere Medikamente, Lebensmittel oder Pflaster übersehen Sie.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patientin: „Heuschnupfen im Frühling. Und bei Erdnüssen schwellen mir die Lippen an.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucherin oder Alkoholikerin? Sagen Sie mir bitte ehrlich, ob Sie auch harte Drogen wie Heroin oder Kokain nehmen.",
+        "Wie ist Ihr Nikotin- und Alkoholabusus?",
+        "Rauchen Sie? Wie viel und wie lange? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
+        "Trinken Sie zu viel?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "„Alkoholikerin“ ist wertend und verletzend, und die Frage klingt nach Misstrauen.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Richtig: neutral, konkret, mit Menge und Dauer (für die Packungsjahre).",
+        "Wertend und ungenau."
+      ],
+      "reply": "Patientin: „Ich rauche seit 12 Jahren etwa 10 Zigaretten am Tag. Alkohol nur am Wochenende, ein bis zwei Bier. Drogen nehme ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Hat Ihre Familie auch eine Schilddrüsenüberfunktion?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel an der Schilddrüse, Zucker oder Rheuma?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Zu eng: Geschwister und Großeltern fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Suggestiv: Sie geben die Diagnose schon vor.",
+        "Richtig: offen, mit passenden Beispielen, auch für Autoimmunerkrankungen."
+      ],
+      "reply": "Patientin: „Meine Mutter hat eine Schilddrüsenunterfunktion, sie nimmt L-Thyroxin. Meine Großmutter hatte Rheuma. Mein Vater ist gesund.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was ist Ihr sozialer Status?",
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Haben Sie Stress im Beruf, oder was ist bei Ihnen zu Hause los? Sie wirken so nervös."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Unklar und unangenehm formuliert.",
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Therapie und Versorgung.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Wertend und suggestiv: Sie deuten die Beschwerden voreilig als Stress."
+      ],
+      "reply": "Patientin: „Ich bin Erzieherin in einer Kita und wohne mit meinem Freund zusammen. Kinder haben wir keine.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Ich vermute, dass Ihre Schilddrüse zu viele Hormone bildet. Sie sitzt vorne am Hals und steuert den Stoffwechsel. Das würde Herzrasen, Schwitzen und Abnehmen erklären.",
+        "Sie haben eine Hyperthyreose, höchstwahrscheinlich einen Morbus Basedow, also eine Autoimmunthyreopathie mit TRAK-Antikörpern und Struma.",
+        "Das ist wahrscheinlich nur Stress im Beruf. Sie sollten einfach mehr entspannen und nicht so viel nachdenken.",
+        "Sie haben sicher Schilddrüsenkrebs, das müssen wir sofort herausoperieren."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung des Organs und der Symptome.",
+        "Fachsprache; die Patientin versteht die Diagnose nicht, und „höchstwahrscheinlich“ ist vor der Diagnostik zu sicher.",
+        "Verharmlosend und medizinisch falsch.",
+        "Falsch und beängstigend."
+      ],
+      "reply": "Patientin: „Eine Überfunktion? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Die Patientin fragt: „Brauche ich jetzt Medikamente, und ist das gefährlich?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, Sie bekommen noch heute eine Radiojodtherapie. Dabei wird Ihre Schilddrüse zerstört, und Sie nehmen danach ein Leben lang Tabletten, damit Ihr Körper genug Hormone hat.",
+        "Das ist nicht gefährlich, Sie müssen nichts machen. Das geht von selbst wieder weg.",
+        "Zuerst nehmen wir Blut ab, um die Schilddrüsenwerte zu messen, schreiben ein EKG und machen einen Ultraschall vom Hals. Gegen das Herzrasen können Sie schnell ein Medikament bekommen. Wenn sich der Verdacht bestätigt, hemmen Tabletten die Hormonbildung; das besprechen wir mit den Hormonspezialisten.",
+        "Das entscheidet der Oberarzt, ich weiß es nicht und kann Ihnen dazu nichts sagen, bevor alle Untersuchungen vorliegen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu früh und falsch: ohne gesicherte Diagnose gibt es keine Radiojodtherapie, und sie ist nicht die erste Wahl.",
+        "Verharmlosend: unbehandelt kann die Erkrankung Herzrhythmusstörungen verursachen.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich (Tabletten, die die Hormonbildung hemmen).",
+        "Unprofessionell und lässt die Patientin allein."
+      ],
+      "reply": "Patientin: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Frau Hoffmann ist 31 und hat Herzrasen.",
+        "Frau Lena Hoffmann, eine 31-jährige Patientin, stellte sich heute in unserer Notaufnahme mit seit etwa drei Monaten bestehendem Herzrasen, vermehrtem Schwitzen und ungewolltem Gewichtsverlust vor.",
+        "Frau Lena Hoffmann, eine 31-jährige Patientin, stellte sich heute Vormittag in unsere Notaufnahme mit seit etwa drei Monaten bestehendem Herzrasen, vermehrtem Schwitzen und ungewolltem Gewichtsverlust vor.",
+        "Frau Lena Hoffmann wurde heute von ihrem Hausarzt mit der gesicherten Diagnose einer Hyperthyreose zugewiesen und klagt über Herzrasen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptome.",
+        "Grammatik: „in unserer Notaufnahme“ (Dativ, wo?), nicht „in unsere“ (Akkusativ).",
+        "Inhaltlich falsch: Die Patientin kam ohne gesicherte Diagnose, und eine Zuweisung ist nicht erwähnt."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Beschwerden bestehen seit etwa drei Monaten mit zuletzt progredientem Verlauf: Palpitationen (regelmäßige Tachykardie, auch in Ruhe), Belastungsdyspnoe nach zwei Stockwerken und ungewollter Gewichtsverlust von 7 kg trotz Heißhungers. Angina pectoris wurde verneint.",
+        "Seit drei Monaten hat sie Herzrasen, kriegt nach zwei Stockwerken keine Luft mehr und hat 7 Kilo abgenommen.",
+        "Die Beschwerden bestehen seit etwa drei Monaten mit zuletzt progredientem Verlauf: Palpitationen (unregelmäßige Tachykardie, nur unter Belastung), Belastungsdyspnoe nach zwei Stockwerken und ungewollter Gewichtsverlust von 7 kg trotz Heißhungers. Angina pectoris wurde verneint.",
+        "Die Beschwerden bestehen seit etwa drei Monaten mit zuletzt progredientem Verlauf: Palpitationen (regelmäßige Tachykardie, auch in Ruhe), Belastungsdyspnoe nach zwei Stockwerken und ungewollter Gewichtsverlust von 7 kg bei Appetitlosigkeit. Angina pectoris wurde verneint."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachsprache und alle Merkmale (Dauer, Verlauf, Rhythmus, Belastbarkeit, Gewichtsverlust, Negativbefund).",
+        "Umgangssprache („kriegt“, „Kilo“) und ohne Rhythmus und Verlauf.",
+        "Inhaltlich falsch: Die Tachykardie ist regelmäßig und besteht auch in Ruhe.",
+        "Inhaltlich falsch: Die Patientin hat Heißhunger, keine Appetitlosigkeit."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete die Patientin über Hyperhidrosis, Tremor beider Hände, Kälteintoleranz, Müdigkeit und Hypersomnie sowie eine Obstipation und eine Hypermenorrhö. Trockenheits- und Reizgefühl der Augen, jedoch keine Doppelbilder. Fieber wurde verneint.",
+        "Sie schwitzt viel, zittert und kann nicht schlafen, aber kein Fieber.",
+        "Begleitend berichtete die Patientin über Hyperhidrosis, Tremor beider Hände, Wärmeintoleranz, innere Unruhe und Schlafstörungen sowie eine Stuhlfrequenz von 3–4-mal täglich und eine Hypomenorrhö. Es bestehen Doppelbilder und Fieber bis 38,5 °C.",
+        "Begleitend berichtete die Patientin über Hyperhidrosis, Tremor beider Hände, Wärmeintoleranz, innere Unruhe und Schlafstörungen sowie eine Stuhlfrequenz von 3–4-mal täglich und eine Hypomenorrhö. Trockenheits- und Reizgefühl der Augen, jedoch keine Doppelbilder. Fieber wurde verneint."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich falsch: Die Patientin hat Wärmeintoleranz, Schlafstörungen, häufigeren Stuhl und eine schwächere Periode.",
+        "Umgangssprache und unvollständig.",
+        "Inhaltlich falsch: Doppelbilder und Fieber wurden verneint.",
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Neurodermitis, Schilddrüse. Medikamente: Pille, Cetirizin.",
+        "An Vorerkrankungen ist eine Neurodermitis bekannt. Z. n. Tonsillektomie im Kindesalter. Medikation: Valette (Dienogest/Ethinylestradiol) 1-0-0, Cetirizin 10 mg 0-0-1 bei Bedarf, L-Thyroxin 50 µg 1-0-0.",
+        "An Vorerkrankungen ist eine Neurodermitis bekannt. Z. n. Tonsillektomie im Kindesalter. Eine Schilddrüsenerkrankung war bisher nicht bekannt. Medikation: Valette (Dienogest/Ethinylestradiol) 1-0-0, Cetirizin 10 mg 0-0-1 bei Bedarf.",
+        "An Vorerkrankungen ist ein Asthma bronchiale bekannt. Z. n. Appendektomie im Kindesalter. Medikation: Valette 1-1-0, Cetirizin 10 mg 1-0-0."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Laiensprache, ungenau (eine Schilddrüsenerkrankung war nicht bekannt) und ohne Dosierung.",
+        "Inhaltlich falsch: Die Patientin nimmt kein L-Thyroxin, das nimmt ihre Mutter.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach), Negativbefund zur Schilddrüse und Dosierschema im Format morgens-mittags-abends.",
+        "Inhaltlich falsch: Neurodermitis (nicht Asthma), Tonsillektomie (nicht Appendektomie), Dosierschema falsch."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergien: Erdnuss (Lippenschwellung) und Pollenallergie (Rhinitis). Nikotinkonsum ca. 6 py, gelegentlicher Alkoholkonsum, kein Drogenkonsum. Familienanamnese: Mutter Hypothyreose unter L-Thyroxin, Großmutter Rheuma. Die Patientin ist Erzieherin und lebt mit ihrem Lebensgefährten, keine Kinder.",
+        "Allergien: Erdnuss (Anaphylaxie) und Pollenallergie (Rhinitis). Nikotinkonsum ca. 12 py, gelegentlicher Alkoholkonsum, kein Drogenkonsum. Familienanamnese: Mutter Hypothyreose unter L-Thyroxin, Großmutter Rheuma. Die Patientin ist Erzieherin und lebt mit ihrem Lebensgefährten.",
+        "Keine Allergien. Nikotinkonsum und Alkohol. Mutter krank.",
+        "Sie ist allergisch gegen Erdnüsse und raucht. Sie arbeitet in einer Kita."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: 10 Zigaretten am Tag über 12 Jahre sind 6 pack years (py = Packungsjahre); Reaktion, Familie und Sozialanamnese stimmen.",
+        "Falsch: Die Reaktion war eine Lippenschwellung, und 10 Zigaretten über 12 Jahre sind 6 py (nicht 12).",
+        "Falsch und unvollständig: Die Allergien fehlen, und Mengen werden nicht genannt.",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Schilddrüsenüberfunktion.",
+        "Es besteht eine gesicherte Hyperthyreose bei Morbus Basedow mit endokriner Orbitopathie.",
+        "Anamnestisch besteht der Verdacht auf eine Hypothyreose bei Hashimoto-Thyreoiditis. Differenzialdiagnostisch kommen eine Depression, eine Anämie und eine Herzinsuffizienz in Betracht.",
+        "Anamnestisch besteht der Verdacht auf eine Hyperthyreose, am ehesten im Rahmen eines Morbus Basedow. Differenzialdiagnostisch kommen eine Hashimoto-Thyreoiditis in der hyperthyreoten Phase, eine subakute Thyreoiditis de Quervain und eine Schilddrüsenautonomie in Betracht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Ohne Labor und Bildgebung ist die Diagnose nicht gesichert, und eine Orbitopathie wurde nicht festgestellt.",
+        "Medizinisch falsch: Gewichtsverlust, Tachykardie und Schwitzen sprechen für eine Überfunktion, nicht für eine Unterfunktion.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir machen Blut und ein EKG.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (u. a. TSH, fT3, fT4, TRAK, Blutbild, CRP, Leberwerte) mit Ausschluss einer Schwangerschaft, ein 12-Kanal-EKG sowie eine Schilddrüsensonographie. Symptomatisch bietet sich ein Betablocker an; bei Bestätigung ist eine thyreostatische Therapie mit Thiamazol indiziert.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und eine Schilddrüsensonographie. Bei Bestätigung ist eine sofortige Gabe von L-Thyroxin sowie eine Thyreoidektomie indiziert.",
+        "Zur weiteren Abklärung empfehlen wir eine Computertomographie des Halses mit jodhaltigem Kontrastmittel, anschließend eine Radiojodtherapie ohne vorherige Laborbestimmung."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu umgangssprachlich und unvollständig.",
+        "Richtig: Diagnostik und Therapie in vollständigen Sätzen, mit Schwangerschaftsausschluss vor einer thyreostatischen Therapie.",
+        "Gefährlich: L-Thyroxin verschlimmert eine Hyperthyreose, und eine sofortige Operation ist ohne Vorbehandlung nicht indiziert.",
+        "Gefährlich: Jodhaltiges Kontrastmittel kann eine thyreotoxische Krise auslösen, und ohne Labordiagnostik gibt es keine Therapie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Die Patientin hat Herzrasen, sie heißt Hoffmann.",
+        "Also, die Frau ist ziemlich nervös und hat stark abgenommen, aber sie isst eigentlich viel ...",
+        "Ich möchte Ihnen Frau Lena Hoffmann vorstellen, eine 31-jährige Patientin, die sich heute mit seit etwa drei Monaten bestehendem Herzrasen, Schwitzen und ungewolltem Gewichtsverlust vorgestellt hat.",
+        "Frau Hoffmann hat eine Hyperthyreose."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Kein strukturierter Einstieg; zuerst Patientin und Leitsymptom.",
+        "Richtig: Name, Alter, Leitsymptome, zeitlicher Verlauf in einem Satz.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Es bestehen eine regelmäßige Tachykardie auch in Ruhe, Belastungsdyspnoe nach zwei Stockwerken, Hyperhidrosis, Tremor und Wärmeintoleranz. Der Gewichtsverlust beträgt 7 kg in drei Monaten trotz Heißhungers. Angina pectoris und Fieber wurden verneint.",
+        "Sie hat alles Mögliche.",
+        "Es bestehen eine unregelmäßige Tachykardie nur unter Belastung, Kälteintoleranz und Müdigkeit. Der Gewichtsverlust beträgt 7 kg in drei Monaten bei Appetitlosigkeit. Angina pectoris und Fieber wurden verneint.",
+        "Sie hat Fieber, Brustschmerzen und Durchfall."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
+        "Keine Information.",
+        "Inhaltlich falsch: Die Tachykardie ist regelmäßig und besteht auch in Ruhe; die Patientin hat Wärmeintoleranz und Heißhunger.",
+        "Inhaltlich falsch: Fieber und Brustschmerzen wurden verneint."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Sie ist gesund.",
+        "Bekannt sind eine Neurodermitis und eine Hashimoto-Thyreoiditis unter L-Thyroxin. Keine Allergien. Die Mutter hat Rheuma.",
+        "Sie nimmt die Pille und Cetirizin, sonst nichts.",
+        "Bekannt ist eine Neurodermitis, Z. n. Tonsillektomie. Eine Schilddrüsenerkrankung war bisher nicht bekannt, die Mutter hat jedoch eine Hypothyreose. Wichtig: Erdnussallergie mit Lippenschwellung. Nikotinkonsum ca. 6 py. Die Patientin nimmt ein orales Kontrazeptivum."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch: es gibt relevante Vorerkrankungen und eine Allergie.",
+        "Inhaltlich falsch: Die Patientin hat keine bekannte Schilddrüsenerkrankung, sondern die Mutter; außerdem besteht eine Erdnussallergie.",
+        "Unvollständig: Diagnosen, Allergie, Familienanamnese und Nikotin fehlen.",
+        "Richtig: relevante Vorgeschichte, die positive Familienanamnese für Schilddrüsenerkrankungen und die Pille, die für die Therapieplanung wichtig ist."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an Stress.",
+        "Ich weiß es nicht genau.",
+        "Es handelt sich sicher um eine Panikstörung, weil die Patientin nervös ist. Differenzialdiagnostisch denke ich höchstens noch an eine Anämie und eine Depression, eine Schilddrüsenerkrankung schließe ich aus.",
+        "Ich vermute eine Hyperthyreose, am ehesten einen Morbus Basedow bei positiver Familienanamnese für Schilddrüsenerkrankungen. Differenzialdiagnostisch denke ich an eine Hashimoto-Thyreoiditis in der hyperthyreoten Phase, eine subakute Thyreoiditis de Quervain und eine Schilddrüsenautonomie."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu unpräzise und eine voreilige Deutung.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
+        "Zu sicher („sicher“), und Gewichtsverlust trotz Heißhungers spricht klar gegen eine reine Panikstörung.",
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde sofort eine Radiojodtherapie veranlassen und zusätzlich L-Thyroxin 100 µg geben, damit sich die Schilddrüse ruhigstellt. Eine Laborkontrolle ist erst nach der Therapie nötig.",
+        "Ich würde ein CT des Halses mit jodhaltigem Kontrastmittel machen und danach Amiodaron gegen das Herzrasen geben.",
+        "Ich würde Blut abnehmen mit TSH, fT3, fT4 und TRAK sowie Blutbild und Leberwerten, einen Schwangerschaftstest durchführen, ein EKG schreiben und eine Schilddrüsensonographie machen. Symptomatisch gebe ich einen Betablocker, zum Beispiel Propranolol 40 mg 1-1-1. Bei Bestätigung beginne ich Thiamazol 20 mg täglich mit Kontrolle von Blutbild und Leberwerten und ziehe die Endokrinologie hinzu.",
+        "Ich würde sie nach Hause schicken."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gefährlich und falsch: L-Thyroxin verschlimmert die Überfunktion, und die Therapie beginnt nie vor der Diagnostik.",
+        "Gefährlich: Jod im Kontrastmittel und Amiodaron (jodhaltig) können eine thyreotoxische Krise auslösen.",
+        "Richtig: Diagnostik, Symptomkontrolle mit Betablocker, Thyreostatikum, Kontrollen auf Nebenwirkungen (Agranulozytose) und Konsil.",
+        "Gefährlich: Tachykardie und Gewichtsverlust müssen abgeklärt und behandelt werden."
+      ],
+      "reply": "Oberarzt: „Gut. Welche Laborkonstellation erwarten Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich erwarte ein erhöhtes TSH bei erniedrigtem fT4 und positiven TPO-Antikörpern, wie bei einer Hypothyreose, die den Gewichtsverlust und das Herzrasen erklärt.",
+        "Ich erwarte ein supprimiertes TSH bei erhöhtem fT3 und fT4. Für einen Morbus Basedow spricht ein positiver Nachweis von TRAK, den Antikörpern gegen den TSH-Rezeptor.",
+        "Ich erwarte ein normales TSH und normale Schilddrüsenwerte, das Herzrasen ist dann rein psychisch bedingt und braucht keine weitere Abklärung.",
+        "Eine erhöhte Kreatinkinase."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist das Bild einer Hypothyreose, nicht einer Hyperthyreose.",
+        "Richtig: supprimiertes TSH, erhöhte periphere Hormone und TRAK als Marker des Morbus Basedow.",
+        "Falsch: Bei Verdacht auf Hyperthyreose ist das TSH supprimiert, und die Diagnostik ist nötig.",
+        "Nicht typisch für diesen Verdacht."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Hyperthyreose“?",
+      "options": [
+        "Schilddrüsenunterfunktion",
+        "Schilddrüsenüberfunktion",
+        "Schilddrüsenvergrößerung",
+        "Schilddrüsenentzündung"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Hypothyreose.",
+        "Richtig.",
+        "Das ist die Struma.",
+        "Das ist die Thyreoiditis."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Tachykardie“?",
+      "options": [
+        "zu langsamer Herzschlag",
+        "unregelmäßiger Herzschlag",
+        "zu schneller Herzschlag",
+        "Schmerzen und Enge in der Brust"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Bradykardie.",
+        "Das ist die Arrhythmie.",
+        "Richtig.",
+        "Das ist die Angina pectoris."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Exophthalmus“?",
+      "options": [
+        "Doppelbilder",
+        "Augenzittern",
+        "Lidschwellung",
+        "hervortretende Augäpfel"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Diplopie.",
+        "Das ist der Nystagmus.",
+        "Das ist das Lidödem.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Tremor“?",
+      "options": [
+        "Zittern",
+        "Schwindel",
+        "Krampfanfall",
+        "Lähmung"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist der Vertigo.",
+        "Das ist der epileptische Anfall (Konvulsion).",
+        "Das ist die Parese."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Struma“?",
+      "options": [
+        "Schluckbeschwerden",
+        "Kropf, vergrößerte Schilddrüse",
+        "Heiserkeit",
+        "Halsschmerzen"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Dysphagie.",
+        "Richtig.",
+        "Das ist die Dysphonie.",
+        "Das ist die Pharyngitis oder die Angina tonsillaris."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

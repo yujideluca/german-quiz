@@ -1,0 +1,691 @@
+{
+  "id": "bandscheibenvorfall",
+  "area": "Unfallchirurgie/Orthopädie",
+  "title": "Rückenschmerzen mit Taubheit im Bein",
+  "diagnosis": "Lumbaler Bandscheibenvorfall L5/S1 mit Radikulopathie S1",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Thomas Köhler, 46 Jahre, stellt sich am Vormittag in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Köhler sitzt vorgebeugt auf der Liege und stützt sich mit der Hand am Rücken ab.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Tag, Herr Köhler. Ich bin Dr. Silva. Bitte legen Sie sich gleich auf die Liege, ich schaue mir zuerst Ihren Rücken an, und danach reden wir.",
+        "Hallo, Herr Köhler, was haben Sie denn?",
+        "Guten Tag, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Köhler?",
+        "Guten Tag, Herr Köhler. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte und Ihren Personalausweis dabei? Die brauchen wir zuerst für die Anmeldung am Empfang."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Die körperliche Untersuchung kommt nach der Anamnese, und Sie stellen sich nicht mit Funktion vor. Erst begrüßen, dann fragen.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Verwaltungsfragen gehören nicht an den Anfang des Arzt-Patienten-Gesprächs, und Sie stellen sich nicht vor."
+      ],
+      "reply": "Patient: „Ja, Köhler. Guten Tag, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Wie ist Ihr Body-Mass-Index?",
+        "Sie sind doch noch keine fünfzig, oder?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihre genaue Anschrift, und bei welcher Krankenkasse sind Sie versichert?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Anschrift und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
+      ],
+      "reply": "Patient: „Ich bin 46, 1,80 Meter groß und wiege etwa 92 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Rückenschmerzen?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Welche Symptomatik besteht bei Ihnen, und wie lange liegt der Beginn schon zurück?",
+        "Warum kommen Sie erst jetzt in die Notaufnahme und waren nicht schon vorher bei Ihrem Hausarzt?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen.",
+        "„Symptomatik“ ist Fachsprache, und es sind zwei Fragen auf einmal. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
+      ],
+      "reply": "Patient: „Seit drei Tagen habe ich starke Schmerzen unten im Rücken, und sie ziehen in mein linkes Bein. Der linke Fuß ist außerdem so komisch taub.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten genau wissen, wohin der Schmerz zieht. Was sagen Sie?",
+      "options": [
+        "Strahlt der Schmerz irgendwohin aus?",
+        "Wie verläuft der Schmerz entlang der Dermatome, und liegt eine radikuläre Ausstrahlung vor?",
+        "Der Schmerz zieht doch sicher vom Rücken über das Gesäß in das Bein bis zum Fuß, nicht wahr?",
+        "Wo genau spüren Sie den Schmerz, und wohin zieht er? Zum Beispiel ins Gesäß, in den Oberschenkel, in die Wade oder bis in den Fuß?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Ausstrahlen“ verstehen viele Patienten nicht. Mit Beispielen ist die Frage klarer.",
+        "„Dermatome“ und „radikuläre Ausstrahlung“ sind Fachwörter; der Patient versteht sie nicht.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
+        "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben."
+      ],
+      "reply": "Patient: „Es beginnt links unten im Kreuz und zieht ins Gesäß, hinten am Oberschenkel und an der Wade entlang bis zur Ferse und außen am Fuß.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch progredient?",
+        "Seit wann haben Sie die Schmerzen?",
+        "Wann genau hat es angefangen, gab es einen Auslöser, und ist es seitdem besser, schlechter oder gleich geblieben?",
+        "Haben Sie sich beim Heben etwas gezerrt?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „progredient“ versteht der Patient nicht.",
+        "Das hat der Patient schon gesagt (seit drei Tagen). Fragen Sie nach Auslöser und Verlauf.",
+        "Richtig: Beginn, Auslöser und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Geschlossene und suggestive Frage; Sie legen den Auslöser schon fest."
+      ],
+      "reply": "Patient: „Am Montag habe ich im Lager einen schweren Karton angehoben, da hat es plötzlich gestochen. Seitdem wird das Bein schlimmer, der Rücken ist etwas besser.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "options": [
+        "Wie würden Sie die Schmerzen beschreiben, eher stechend, brennend oder dumpf? Wie stark sind sie auf einer Skala von 0 bis 10, und was macht sie besser oder schlimmer?",
+        "Sind die Schmerzen neuropathisch oder nozizeptiv, und wie hoch ist die Intensität auf der visuellen Analogskala?",
+        "Wie stark sind die Schmerzen von 1 bis 100?",
+        "Tut es sehr weh? Können Sie überhaupt noch gehen und stehen, oder liegen Sie nur noch im Bett, weil es so schlimm ist?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beispiele für die Schmerzqualität, die übliche Skala von 0 bis 10 und Modulationsfaktoren.",
+        "„Neuropathisch“, „nozizeptiv“ und „visuelle Analogskala“ sind Fachsprache.",
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
+        "Geschlossene, suggestive Frage; Sie bekommen keine verwertbare Angabe zu Art und Stärke."
+      ],
+      "reply": "Patient: „Im Bein sticht und brennt es, im Rücken ist es eher dumpf. Im Bein ist es 8 von 10. Husten, Niesen und langes Sitzen machen es schlimmer, im Liegen mit angezogenen Beinen wird es besser.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Hatten Sie Hypästhesien, Paresen, Parästhesien oder eine Inkontinenz, und ist Ihnen eine Reithosenanästhesie aufgefallen?",
+        "Sie haben bestimmt auch einen Kraftverlust im Bein bemerkt, richtig?",
+        "Haben Sie sonst noch was?",
+        "Spüren Sie ein Kribbeln oder Taubheit? Ist das Bein schwächer geworden, stolpern Sie zum Beispiel? Können Sie Urin und Stuhl wie gewohnt halten, und ist das Gefühl zwischen den Beinen normal?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Taubheit“, „Schwäche“, „Kribbeln“, „Urin halten“.",
+        "Suggestiv: Sie unterstellen das Symptom.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive Warnzeichen für ein Cauda-equina-Syndrom."
+      ],
+      "reply": "Patient: „Der Fuß ist außen taub und kribbelt. Auf der linken Zehenspitze kann ich kaum stehen, und ich stolpere manchmal. Wasserlassen und Stuhlgang sind wie immer, und zwischen den Beinen ist das Gefühl normal.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie ist die Vegetativa?",
+        "Haben Sie Fieber oder Nachtschweiß gehabt? Wie sind Appetit und Gewicht, wie sind Stuhlgang und Wasserlassen?",
+        "Haben Sie Schüttelfrost, Nachtschweiß, Gewichtsverlust, Dysurie, Obstipation und Diarrhö, und wie ist Ihr Appetit?",
+        "Ist sonst alles normal bei Ihnen, oder gibt es noch irgendetwas, das Ihnen Sorgen macht?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Richtig: Fieber, Nachtschweiß, Appetit, Gewicht, Stuhlgang und Wasserlassen in Laiensprache, mit Blick auf Red Flags.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Obstipation, Diarrhö).",
+        "Zu allgemein; der Patient sagt einfach „ja“ oder „nein“, und Sie erfahren nichts Konkretes."
+      ],
+      "reply": "Patient: „Fieber hatte ich nicht, Nachtschweiß auch nicht. Der Appetit ist gut, und mein Gewicht ist gleich geblieben. Stuhlgang und Wasserlassen sind normal.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, einen Diabetes mellitus oder eine Osteoporose, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Sind Sie gesund?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck oder Zucker? Hatten Sie schon einmal Rückenprobleme, und wurden Sie schon einmal operiert?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „Osteoporose“). Mit Patienten sprechen Sie Laiensprache.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Richtig: mit Beispielen, laienverständlich, mit Frage nach früheren Rückenproblemen und Operationen.",
+        "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patient: „Ich habe Bluthochdruck. Vor zwei Jahren hatte ich schon einmal Kreuzschmerzen, aber ohne Bein, nach zwei Wochen war es weg. Operiert wurde ich vor zehn Jahren an einem Leistenbruch rechts.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Tabletten?",
+        "Welche Medikamente nehmen Sie regelmäßig oder zurzeit ein, und in welcher Dosierung? Auch Mittel ohne Rezept?",
+        "Welche Pharmaka applizieren Sie derzeit, und in welcher Dosierung und Applikationsform?",
+        "Sie nehmen doch sicher Ibuprofen gegen die Schmerzen?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu ungenau: Name, Dosis und frei verkäufliche Mittel fehlen.",
+        "Richtig: Name, Dosierung und auch Mittel ohne Rezept.",
+        "Fachsprache („Pharmaka“, „applizieren“, „Applikationsform“).",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Amlodipin 5 mg morgens. Gegen die Schmerzen nehme ich seit drei Tagen Ibuprofen 600 mg, dreimal am Tag. Es hilft kaum.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
+        "Allergie?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Zu eng: Allergien gegen andere Medikamente, Lebensmittel oder Pflaster übersehen Sie, und ein Antibiotikum ist hier gar nicht geplant.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patient: „Gegen Metamizol. Davon bekam ich vor Jahren Quaddeln und Juckreiz am ganzen Körper.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucher oder Alkoholiker?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus?",
+        "Trinken Sie zu viel, und rauchen Sie wie ein Schlot, wie viele Männer in Ihrem Alter?",
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Alkoholiker“ ist wertend und verletzend.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Wertend, ungenau und mit einer Unterstellung.",
+        "Richtig: neutral, konkret, mit Menge."
+      ],
+      "reply": "Patient: „Ich rauche seit 25 Jahren etwa 20 Zigaretten am Tag. Alkohol nur am Wochenende, zwei Bier. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Rückenprobleme, Herzerkrankungen, Krebs oder Zucker?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Hat Ihre Familie auch Bandscheibenprobleme?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Richtig: offen, mit passenden Beispielen.",
+        "Zu eng: Geschwister und Kinder fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Sie nennen die Diagnose schon vorab und stellen eine geschlossene Frage."
+      ],
+      "reply": "Patient: „Mein Vater wurde mit 55 an der Bandscheibe operiert. Meine Mutter hat Zucker.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
+        "Haben Sie Geld?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt (hier besonders wichtig wegen der körperlichen Arbeit), die Adresse gehört nicht in die Sozialanamnese.",
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Belastung, Arbeitsfähigkeit und Versorgung.",
+        "Unangemessen."
+      ],
+      "reply": "Patient: „Ich arbeite im Lager und hebe den ganzen Tag Kisten. Ich wohne mit meiner Frau und unseren zwei Kindern, 12 und 15, in einem Reihenhaus.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Ich vermute, dass eine Bandscheibe in Ihrem unteren Rücken auf einen Nerv drückt. Das erklärt den Schmerz im Bein und die Taubheit im Fuß. Sicher wissen wir es erst nach einer Bildgebung.",
+        "Sie haben einen lumbalen Bandscheibenvorfall mit Radikulopathie S1.",
+        "Es ist wahrscheinlich nichts Schlimmes, nur ein verspannter Muskel vom Heben. Das geht von allein wieder weg, und Sie müssen sich keine Sorgen machen.",
+        "Sie haben sicher einen Tumor an der Wirbelsäule, das müssen wir sofort operieren."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, Zusammenhang mit den Beschwerden und Hinweis auf die Bildgebung.",
+        "Fachsprache; der Patient versteht die Diagnose nicht.",
+        "Verharmlosend: Ein Muskel erklärt die Taubheit und die Schwäche im Fuß nicht.",
+        "Falsch und beängstigend."
+      ],
+      "reply": "Patient: „Ein Nerv? Muss ich operiert werden?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Muss ich operiert werden?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, Sie brauchen morgen früh eine Operation an der Bandscheibe, sonst bleibt das Bein gelähmt.",
+        "Nein, Sie müssen nur ein paar Tage strikte Bettruhe einhalten, dann ist das Problem gelöst, und Sie können wieder arbeiten gehen wie bisher.",
+        "Das entscheidet der Chef, ich weiß es nicht.",
+        "Zuerst untersuchen wir Sie körperlich und neurologisch und machen eine Kernspinuntersuchung des Rückens. Sie bekommen Schmerzmittel. Die meisten Patienten brauchen keine Operation, meist helfen Schmerzmittel, Bewegung und Krankengymnastik. Nur bei Lähmung oder Problemen mit Blase und Stuhl operieren wir schnell."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu früh und falsch: Die Diagnose ist noch nicht gesichert, und die meisten Bandscheibenvorfälle werden nicht sofort operiert.",
+        "Falsch: Strikte Bettruhe ist nicht empfohlen, Bewegung ist besser. Auch die Zusage, alles bleibe wie bisher, ist nicht richtig.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Richtig: nächste Schritte, ehrliche Aussicht und Warnzeichen, laienverständlich („Kernspinuntersuchung“)."
+      ],
+      "reply": "Patient: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Thomas Köhler, ein 46-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit drei Tagen bestehenden lumbalen Schmerzen mit Ausstrahlung ins linke Bein vor.",
+        "Herr Köhler ist 46 und hat Rücken.",
+        "Herr Thomas Köhler, ein 46-jährige Patient, stellte sich heute in unserer Notaufnahme mit seit drei Tagen bestehenden lumbalen Schmerzen vor, die in das linke Bein ausstrahlen.",
+        "Herr Thomas Köhler, ein 46-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit einer Woche bestehenden lumbalen Schmerzen ohne Ausstrahlung vor."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort, Dauer und Leitsymptom.",
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Grammatikfehler: „ein 46-jähriger Patient“ (Nominativ, maskulin), nicht „ein 46-jährige Patient“.",
+        "Inhaltlich falsch: Die Schmerzen bestehen seit drei Tagen und strahlen ins linke Bein aus."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Schmerzen haben beim Heben einer Kiste angefangen und ziehen jetzt ins Bein.",
+        "Die Beschwerden seien nach einem Hebetrauma aufgetreten und strahlen ins linke Bein aus, NRS 8.",
+        "Die Beschwerden sind akut nach dem Heben eines schweren Kartons aufgetreten, seitdem im Bein progredient: lumbale Schmerzen mit Ausstrahlung ins linke Bein bis zur Ferse und zum lateralen Fußrand (NRS 8/10), stechend-brennend, Zunahme bei Husten, Niesen und Sitzen, Besserung im Liegen mit angewinkelten Beinen.",
+        "Die Beschwerden sind akut nach dem Heben eines schweren Kartons aufgetreten, seitdem im Bein progredient: lumbale Schmerzen mit Ausstrahlung ins rechte Bein bis zum Knie (NRS 8/10), stechend-brennend, Zunahme beim Gehen, Besserung im Liegen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Konjunktiv-I-Mischung und unvollständig; außerdem fehlt „/10“, Auslöser und Verlauf sind ungenau.",
+        "Richtig: Fachsprache und alle Merkmale (Auslöser, Verlauf, Charakter, Ausstrahlung, Intensität, Modulation).",
+        "Inhaltlich falsch: Die Ausstrahlung geht ins linke Bein bis zum Fuß, und beim Sitzen nimmt der Schmerz zu."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete der Patient über Kribbeln und Schwäche im Bein, außerdem über Fieber und Nachtschweiß. Blasen- und Mastdarmstörungen wurden verneint.",
+        "Er hat Taubheit im Fuß und stolpert.",
+        "Begleitend berichtete der Patient über Hypästhesie und Parästhesien am lateralen Fußrand links sowie eine Schwäche beim Zehenspitzenstand rechts. Blasen- und Mastdarmstörungen sowie eine Reithosenanästhesie wurden verneint.",
+        "Begleitend berichtete der Patient über Hypästhesie und Parästhesien am lateralen Fußrand links sowie eine Schwäche beim Zehenspitzenstand links. Blasen- und Mastdarmstörungen sowie eine Reithosenanästhesie wurden verneint. Fieber, Nachtschweiß und Gewichtsverlust bestanden nicht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich falsch: Fieber und Nachtschweiß wurden verneint.",
+        "Umgangssprachlich und unvollständig; Negativbefunde fehlen.",
+        "Inhaltlich falsch: Die Schwäche besteht links, nicht rechts, und die vegetative Anamnese fehlt.",
+        "Richtig: vollständig, Fachsprache, relevante Negativbefunde dokumentiert."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "An Vorerkrankungen sind eine arterielle Hypertonie und eine Lumbalgie vor zwei Jahren ohne Ausstrahlung bekannt. Z. n. Leistenhernien-Operation rechts vor zehn Jahren. Medikation: Amlodipin 5 mg 1-0-0, Ibuprofen 600 mg 1-1-1 seit drei Tagen.",
+        "An Vorerkrankungen sind ein Diabetes mellitus Typ 2 und eine Lumbalgie vor zwei Jahren ohne Ausstrahlung bekannt. Z. n. Cholezystektomie vor zehn Jahren. Medikation: Amlodipin 5 mg 1-0-0, Ibuprofen 600 mg 1-1-1 seit drei Tagen, Metformin 1000 mg 1-0-1.",
+        "Vorerkrankungen: Bluthochdruck, Rücken. Medikamente: Amlodipin, Ibuprofen.",
+        "Medikation: Amlodipin 5 mg 0-0-1, Ibuprofen 600 mg 1-0-0 seit drei Tagen."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierschema im Format morgens-mittags-abends.",
+        "Inhaltlich falsch: Der Patient hat Bluthochdruck (kein Diabetes), wurde an einem Leistenbruch operiert und nimmt kein Metformin.",
+        "Laiensprache und ohne Dosierung.",
+        "Dosierschema falsch: Amlodipin morgens (1-0-0), Ibuprofen dreimal täglich (1-1-1)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Ibuprofenallergie (Urtikaria). Nikotinkonsum ca. 10 py, regelmäßiger Alkoholkonsum (täglich zwei Bier). Familienanamnese: Vater Herzinfarkt mit 55 J., Mutter Diabetes mellitus. Der Patient ist Büroangestellter, ledig und lebt allein in einer Wohnung.",
+        "Metamizolallergie (Urtikaria). Nikotinkonsum ca. 25 py, gelegentlicher Alkoholkonsum (zwei Bier am Wochenende). Familienanamnese: Vater Bandscheiben-Operation mit 55 J., Mutter Diabetes mellitus. Der Patient ist Lagerarbeiter, verheiratet und lebt mit Ehefrau und zwei Kindern im Reihenhaus.",
+        "Keine Allergie. Nikotinabusus. Vater wurde operiert.",
+        "Er verträgt Metamizol nicht und raucht viel, sein Vater hatte auch Rücken."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich falsch: Die Allergie betrifft Metamizol, der Patient raucht etwa 25 py, trinkt nur am Wochenende, ist Lagerarbeiter und lebt mit seiner Familie.",
+        "Richtig: 20 Zigaretten am Tag über 25 Jahre sind 25 py (Packungsjahre); alle Angaben stimmen mit dem Gespräch überein.",
+        "Falsch: Die Metamizolallergie fehlt, die Angaben sind unvollständig.",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Hexenschuss.",
+        "Anamnestisch besteht der Verdacht auf eine Koxarthrose links. Differenzialdiagnostisch kommen eine Hüftkopfnekrose, eine Bursitis trochanterica und eine Iliosakralgelenksarthrose in Betracht.",
+        "Es besteht ein gesicherter Bandscheibenvorfall, weitere Diagnostik ist nicht erforderlich.",
+        "Anamnestisch besteht der Verdacht auf einen lumbalen Bandscheibenvorfall (L5/S1) mit Radikulopathie S1 links. Differenzialdiagnostisch kommen eine Spinalkanalstenose, ein Piriformis-Syndrom und eine spinale Raumforderung in Betracht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Die Hüfte erklärt weder die Ausstrahlung bis zum Fuß noch die Taubheit; die Beschwerden begannen nach dem Heben im Rücken.",
+        "Ohne Bildgebung ist die Diagnose noch nicht gesichert.",
+        "Richtig: Verdacht statt Gewissheit, S1-Symptomatik passt zu L5/S1, sinnvolle Differenzialdiagnosen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir empfehlen eine neurologische Untersuchung (Kraft, Reflexe, Sensibilität, Lasègue-Zeichen), Blutbild und CRP sowie eine MRT der LWS. Therapeutisch Analgesie mit Ibuprofen 600 mg 1-1-1 unter Magenschutz mit Pantoprazol 40 mg 1-0-0 (cave: Metamizolallergie), Mobilisation und Physiotherapie. Bei Cauda-Symptomen oder zunehmender Parese ist eine notfallmäßige neurochirurgische Vorstellung indiziert.",
+        "Wir empfehlen strikte Bettruhe für zwei Wochen, eine Analgesie mit Metamizol 1000 mg 1-1-1 sowie eine Röntgenaufnahme der LWS zur Beurteilung der Bandscheibe.",
+        "Wir machen eine Untersuchung und geben Schmerzmittel.",
+        "Wir empfehlen eine sofortige offene Dekompressionsoperation ohne vorherige Bildgebung."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Diagnostik, Therapie nach Leitlinie (konservativ, Mobilisation) und Red Flags, Allergie beachtet.",
+        "Gefährlich und leitlinienwidrig: Metamizol ist wegen der Allergie kontraindiziert, strikte Bettruhe wird nicht empfohlen, und Bandscheiben sieht man nicht im Röntgen.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Nicht indiziert: Ohne Bildgebung und ohne Notfallzeichen wird nicht operiert."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": null,
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Der Patient hat Rückenweh, er heißt Köhler.",
+        "Also, der Mann hat am Montag im Lager eine Kiste gehoben, und dann ging es irgendwie los mit dem Rücken und mit dem Bein, ich glaube links ...",
+        "Ich möchte Ihnen Herrn Thomas Köhler vorstellen, einen 46-jährigen Patienten, der sich heute mit seit drei Tagen bestehenden lumbalen Schmerzen mit Ausstrahlung ins linke Bein und Taubheit am linken Fuß vorgestellt hat.",
+        "Herr Köhler hat einen Bandscheibenvorfall, den wir operieren sollten."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Kein strukturierter Einstieg und unsicher formuliert; zuerst Patient und Leitsymptom.",
+        "Richtig: Name, Alter, Leitsymptom, Dauer und Begleitsymptom in einem Satz.",
+        "Sie beginnen mit einer ungesicherten Diagnose und einer Operationsempfehlung statt mit dem Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Die Schmerzen traten nach dem Heben auf und strahlen in das rechte Bein bis zum Knie aus. Eine Besserung besteht beim Gehen. Blasen- und Mastdarmstörungen wurden verneint.",
+        "Er hat starke Schmerzen und kann nicht gut stehen.",
+        "Die Schmerzen traten beim Heben auf und strahlen ins linke Bein bis zur Ferse aus. Es besteht eine Taubheit am Fußrand, der Patient kann nicht mehr urinieren und hat Fieber bis 38,5 °C.",
+        "Die Schmerzen traten akut beim Heben eines Kartons auf und strahlen ins linke Bein bis zur Ferse und zum lateralen Fußrand aus (NRS 8/10). Es bestehen eine Hypästhesie am Fußrand und eine Schwäche beim Zehenspitzenstand links. Blasen-/Mastdarmstörungen, Reithosenanästhesie und Fieber wurden verneint."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich falsch: Die Schmerzen strahlen ins linke Bein bis zum Fuß aus und werden im Sitzen schlimmer, nicht besser beim Gehen.",
+        "Keine strukturierte Information.",
+        "Inhaltlich falsch: Wasserlassen ist normal, und Fieber wurde verneint.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden (Red Flags)."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist gesund.",
+        "Bekannt sind eine arterielle Hypertonie unter Amlodipin 5 mg und eine Lumbalgie vor zwei Jahren ohne Ausstrahlung. Wichtig: Metamizolallergie mit Urtikaria. Er nimmt seit drei Tagen Ibuprofen 600 mg 1-1-1, raucht ca. 25 py, und der Vater wurde mit 55 J. an der Bandscheibe operiert.",
+        "Bekannt sind ein Diabetes mellitus Typ 2 und eine frühere Bandscheiben-Operation. Er hat keine Allergien, nimmt Metformin und Ramipril, raucht nicht, und der Vater hatte einen Herzinfarkt.",
+        "Er nimmt Amlodipin und Ibuprofen, sonst nichts."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: Es gibt relevante Vorerkrankungen.",
+        "Richtig: relevante Vorgeschichte, Medikation, Risikofaktor und die Allergie, die für die Analgesie wichtig ist.",
+        "Inhaltlich falsch: Hypertonie statt Diabetes, keine Operation, Metamizolallergie, Raucher.",
+        "Unvollständig: Diagnosen, Allergie und Familienanamnese fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich vermute einen lumbalen Bandscheibenvorfall L5/S1 mit Radikulopathie S1 links. Differenzialdiagnostisch denke ich an eine Spinalkanalstenose, ein Piriformis-Syndrom und eine spinale Raumforderung.",
+        "Es handelt sich sicher um ein Cauda-equina-Syndrom, weil der Fuß taub ist. Differenzialdiagnostisch denke ich höchstens noch an eine Hüftarthrose und eine Beinvenenthrombose.",
+        "Ich denke an einen Hexenschuss.",
+        "Ich weiß es nicht genau."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
+        "Zu sicher, und falsch: Blase, Mastdarm und Reithosenbereich sind unauffällig, ein Cauda-equina-Syndrom liegt nicht vor.",
+        "Zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde ihn nach Hause schicken und zwei Wochen strikte Bettruhe verordnen.",
+        "Ich würde ihn sofort operieren lassen, ohne weitere Diagnostik, und Metamizol als Schmerzmittel geben, weil das gut wirkt und der Patient die Allergie nur vermutet.",
+        "Ich würde einen neurologischen Status erheben und eine MRT der LWS veranlassen. Therapeutisch Analgesie mit Ibuprofen unter Magenschutz mit Pantoprazol, kein Metamizol wegen der Allergie, dazu Mobilisation und Physiotherapie. Bei Cauda-Symptomen oder zunehmender Parese würde ich sofort die Neurochirurgie hinzuziehen.",
+        "Ich würde eine Lumbalpunktion durchführen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Leitlinienwidrig: Bettruhe wird nicht empfohlen, und es fehlen Diagnostik und Verlaufskontrolle bei neurologischem Defizit.",
+        "Gefährlich: Metamizol ist bei bekannter Allergie kontraindiziert, und ohne Bildgebung wird nicht operiert.",
+        "Richtig: Diagnostik, Therapie, Allergie beachtet, Red Flags und Eskalation.",
+        "Nicht indiziert: Eine Lumbalpunktion klärt einen Bandscheibenvorfall nicht."
+      ],
+      "reply": "Oberarzt: „Gut. Welchen Befund erwarten Sie bei der Untersuchung?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich erwarte ein positives Babinski-Zeichen beidseits und einen gesteigerten Patellarsehnenreflex, dazu eine Sensibilitätsminderung an der Vorderseite des Oberschenkels und eine Schwäche beim Kniestrecken.",
+        "Ich erwarte ein positives Lasègue-Zeichen links, einen abgeschwächten Achillessehnenreflex links und eine Sensibilitätsminderung am lateralen Fußrand mit Schwäche beim Zehenspitzenstand.",
+        "Ich erwarte gar nichts.",
+        "Eine Fußheberschwäche mit Sensibilitätsminderung am Fußrücken und der Großzehe."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: Das spricht für eine zentrale Läsion bzw. die Wurzeln L3/L4, nicht für S1.",
+        "Richtig: typische Zeichen einer S1-Radikulopathie (Lasègue, ASR abgeschwächt, laterale Fußkante, Plantarflexion).",
+        "In der Prüfung erwartet man eine begründete Antwort.",
+        "Das passt zu einer L5-Radikulopathie, nicht zu S1."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Radikulopathie“?",
+      "options": [
+        "Entzündung der Bandscheibe",
+        "Verengung des Wirbelkanals",
+        "Schädigung oder Reizung einer Nervenwurzel",
+        "Muskelverspannung im Rücken"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Diszitis.",
+        "Das ist die Spinalkanalstenose.",
+        "Richtig.",
+        "Das ist die Myogelose."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Ischialgie“?",
+      "options": [
+        "Schmerz im Versorgungsgebiet des Ischiasnervs, im Bein",
+        "Schmerz im Hüftgelenk",
+        "Schmerz im Nacken",
+        "Schmerz im unteren Rücken"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Koxalgie.",
+        "Das ist die Zervikalgie.",
+        "Das ist die Lumbalgie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Hypästhesie“?",
+      "options": [
+        "Überempfindlichkeit gegen Berührung",
+        "Kribbeln",
+        "Schmerz bei leichter Berührung",
+        "vermindertes Berührungsempfinden, Taubheitsgefühl"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Hyperästhesie.",
+        "Das ist die Parästhesie.",
+        "Das ist die Allodynie.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Parese“?",
+      "options": [
+        "vollständige Lähmung",
+        "unvollständige Lähmung, Kraftminderung",
+        "Muskelkrampf",
+        "Muskelzucken"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Plegie.",
+        "Richtig.",
+        "Das ist der Spasmus.",
+        "Das ist die Faszikulation."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Miktion“?",
+      "options": [
+        "Stuhlgang",
+        "Erbrechen",
+        "Wasserlassen",
+        "Harnverhalt"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Defäkation.",
+        "Das ist die Emesis.",
+        "Richtig.",
+        "Das ist die Harnretention."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

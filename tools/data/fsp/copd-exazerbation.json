@@ -1,0 +1,691 @@
+{
+  "id": "copd-exazerbation",
+  "area": "Pneumologie",
+  "title": "Zunehmende Atemnot und Husten",
+  "diagnosis": "Infektexazerbierte COPD",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Werner Becker, 68 Jahre, stellt sich am Vormittag in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Becker sitzt vornübergebeugt auf der Liege und atmet hörbar pfeifend.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Morgen, Herr Becker. Setzen Sie sich bitte gerade hin, ich höre sofort Ihre Lunge ab.",
+        "Hallo, na, wieder die Luft weg?",
+        "Guten Morgen, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Becker?",
+        "Guten Morgen, Herr Becker. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte und die Überweisung dabei? Die brauchen wir zuerst für die Anmeldung."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Die körperliche Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Verwaltungsfragen gehören nicht an den Anfang des Arzt-Patienten-Gesprächs, und Sie stellen sich nicht vor."
+      ],
+      "reply": "Patient: „Ja, Becker. Guten Morgen, Herr Doktor.“ (atmet pfeifend)"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Sie sind doch sicher schon im Rentenalter, oder?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Wie ist Ihr Body-Mass-Index?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
+      ],
+      "reply": "Patient: „Ich bin 68, 1,76 Meter groß und wiege 74 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Atemnot?",
+        "Welche Symptomatik führt Sie zu uns?",
+        "Warum sind Sie nicht schon früher zum Arzt gegangen, wenn es Ihnen seit Tagen so schlecht geht?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen."
+      ],
+      "reply": "Patient: „Ich bekomme seit ein paar Tagen immer schlechter Luft und muss ständig husten.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten wissen, in welchen Situationen die Luft knapp wird. Was sagen Sie?",
+      "options": [
+        "Wann bekommen Sie schlecht Luft, zum Beispiel beim Gehen, beim Treppensteigen oder auch in Ruhe?",
+        "Haben Sie eine Belastungsdyspnoe oder auch eine Ruhedyspnoe, und gibt es nachts eine Orthopnoe oder eine paroxysmale Dyspnoe?",
+        "Sie bekommen bestimmt schon in Ruhe keine Luft mehr, richtig?",
+        "Wann ist die Atemnot am schlimmsten?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben.",
+        "Fachwörter („Belastungsdyspnoe“, „Orthopnoe“); der Patient versteht sie nicht.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
+        "Zu unkonkret: ohne Beispiele wird die Antwort oft ungenau."
+      ],
+      "reply": "Patient: „Beim Gehen und Treppensteigen, aber seit gestern auch, wenn ich nur still sitze.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch progredient?",
+        "Seit wann haben Sie die Atemnot?",
+        "Wann genau hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben?",
+        "Hat es plötzlich angefangen?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „progredient“ versteht der Patient nicht.",
+        "Das fragt nur nach dem Beginn, nicht nach dem Verlauf; „seit ein paar Tagen“ hat der Patient schon gesagt.",
+        "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Geschlossene Frage; sie erfasst den Verlauf nicht."
+      ],
+      "reply": "Patient: „Vor vier Tagen fing es mit Schnupfen und Husten an. Seitdem wird die Luft immer knapper.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach der Stärke der Atemnot. Welche Formulierung passt?",
+      "options": [
+        "Würden Sie Ihre Dyspnoe nach NYHA in Stadium III oder IV einordnen, oder liegt eher ein mMRC-Grad von mindestens 2 vor, und wie ist die Ruhedyspnoe?",
+        "Wie weit können Sie im Moment gehen, bevor Sie stehen bleiben müssen? Und wie viele Treppen schaffen Sie, verglichen mit früher?",
+        "Ist die Atemnot sehr schlimm?",
+        "Wie stark ist die Atemnot auf einer Skala von 1 bis 100?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Klassifikationen wie NYHA und mMRC kennt der Patient nicht. Fragen Sie nach Gehstrecke und Treppen.",
+        "Richtig: Die Belastbarkeit lässt sich in Metern und Etagen verständlich erfragen.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
+        "Unübliche Skala; besser fragen Sie nach der Belastbarkeit im Alltag."
+      ],
+      "reply": "Patient: „Nur noch etwa 50 Meter, dann muss ich stehen bleiben. Früher habe ich zwei Etagen ohne Pause geschafft, jetzt nicht einmal mehr eine.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Haben Sie Sputum, Hämoptysen, Fieber, Thoraxschmerzen oder periphere Ödeme, und ist Ihnen eine Zyanose der Lippen aufgefallen?",
+        "Haben Sie sonst noch was?",
+        "Sie haben bestimmt auch Blut gehustet.",
+        "Kommt beim Husten etwas hoch, und wie sieht es aus? Haben Sie Fieber, Schmerzen in der Brust oder geschwollene Beine bemerkt?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Auswurf“, „Bluthusten“, „Schmerzen in der Brust“, „geschwollene Beine“.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Suggestiv: Sie unterstellen das Symptom.",
+        "Richtig: Auswurf, Fieber, Brustschmerz und Beinschwellung in Laiensprache."
+      ],
+      "reply": "Patient: „Ich huste gelbgrünen Schleim ab, früher war er weißlich. Fieber hatte ich 37,9. Schmerzen in der Brust habe ich nicht, die Beine sind nicht dick, Blut war nicht dabei. Beim Atmen pfeift es.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie schlafen Sie, wie ist Ihr Appetit, und hat sich Ihr Gewicht verändert? Wie sind Stuhlgang und Wasserlassen? Schwitzen Sie nachts?",
+        "Wie ist die Vegetativa?",
+        "Haben Sie Nachtschweiß, einen Gewichtsverlust, eine Inappetenz, Schlafstörungen im Sinne einer Insomnie, eine Obstipation oder eine Dysurie?",
+        "Ist sonst alles normal bei Ihnen?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Schlaf, Appetit, Gewicht, Stuhlgang, Wasserlassen und Nachtschweiß in Laiensprache.",
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Inappetenz, Insomnie, Obstipation, Dysurie).",
+        "Zu allgemein; der Patient sagt einfach „ja“."
+      ],
+      "reply": "Patient: „Der Appetit ist schlecht, und wegen des Hustens schlafe ich kaum. Am Gewicht hat sich nichts geändert, Stuhlgang und Wasserlassen sind normal, nachts schwitze ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, einen Diabetes mellitus oder eine KHK, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Sind Sie sonst gesund?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel an der Lunge, am Herzen oder beim Blutdruck? Wurden Sie schon einmal operiert?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „KHK“). Mit Patienten sprechen Sie Laiensprache.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
+        "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patient: „Ich habe seit fünf Jahren COPD und Bluthochdruck. Letzten Winter war es schon einmal so schlimm, da habe ich vom Hausarzt Antibiotika und Cortison-Tabletten bekommen. Operiert wurde ich nur einmal, vor 15 Jahren am Leistenbruch rechts.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Welche Pharmaka inhalieren oder applizieren Sie regelmäßig, und in welcher Dosierung nehmen Sie diese peroral oder subkutan ein?",
+        "Welche Medikamente nehmen oder inhalieren Sie regelmäßig, und in welcher Dosierung? Auch Mittel ohne Rezept?",
+        "Sie inhalieren doch sicher Cortison?",
+        "Nehmen Sie Tabletten?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache („Pharmaka“, „applizieren“, „peroral“, „subkutan“).",
+        "Richtig: Name, Dosierung, Inhalativa und auch frei verkäufliche Mittel.",
+        "Suggestivfrage. Fragen Sie offen.",
+        "Zu ungenau: Dosis und Inhalationen fehlen."
+      ],
+      "reply": "Patient: „Spiriva, also Tiotropium, 18 Mikrogramm einmal morgens zum Inhalieren. Bei Bedarf Salbutamol-Spray, zuletzt etwa sechsmal am Tag. Dazu Ramipril 5 mg morgens.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Pollen oder Lebensmittel? Wie äußert sich das?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht gleich ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
+        "Allergie?",
+        "Sind Sie atopisch veranlagt?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Zu eng: Allergien gegen andere Medikamente, Pollen oder Lebensmittel übersehen Sie.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Fachsprache: „atopisch“ versteht der Patient nicht."
+      ],
+      "reply": "Patient: „Gegen Gräserpollen, dann muss ich niesen und die Augen jucken. Medikamente vertrage ich alle.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucher oder Alkoholiker?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus?",
+        "Sie rauchen bestimmt noch immer viel, nicht wahr? Das ist ja auch schuld an Ihrer Lungenkrankheit.",
+        "Rauchen Sie, und wenn ja, wie viele Zigaretten am Tag und seit wann? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Alkoholiker“ ist wertend und verletzend.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Suggestiv und vorwurfsvoll; der Patient fühlt sich beschuldigt.",
+        "Richtig: neutral, konkret, mit Menge und Dauer (für die Packungsjahre)."
+      ],
+      "reply": "Patient: „Ich rauche seit 45 Jahren 20 Zigaretten am Tag. Abends ein bis zwei Bier. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel an Lunge, Herz oder Krebs?",
+        "Wie ist die Familienanamnese?",
+        "Hat Ihre Familie auch COPD?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu eng: Geschwister und Kinder fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Richtig: offen, mit passenden Beispielen.",
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Geschlossene Frage; sie nennt schon eine bestimmte Krankheit."
+      ],
+      "reply": "Patient: „Mein Vater hatte Lungenkrebs, er starb mit 70. Er hat auch geraucht. Meine Mutter hatte einen Schlaganfall mit 80.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Was machen oder machten Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen, mit Aufzug oder über Treppen?",
+        "Haben Sie Geld?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Belastungen und die Entlassung.",
+        "Unangemessen."
+      ],
+      "reply": "Patient: „Ich bin Rentner, früher war ich Maurer. Ich wohne mit meiner Frau im zweiten Stock, ohne Aufzug.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Ich vermute, dass sich Ihre Lungenkrankheit COPD durch eine Entzündung der Bronchien verschlechtert hat. Die Bronchien sind die Atemwege in der Lunge, bei Ihnen sind sie verengt und voller Schleim.",
+        "Sie haben eine akut exazerbierte COPD, wahrscheinlich infektgetriggert durch eine bronchiale Infektion.",
+        "Es ist wahrscheinlich nur eine harmlose Erkältung, die in ein paar Tagen von allein wieder weggeht, dafür brauchen Sie keine Behandlung.",
+        "Das kommt vom Rauchen. Hätten Sie früher aufgehört, hätten Sie jetzt keine Probleme, und deshalb müssen Sie damit jetzt endlich Schluss machen."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung des Organs.",
+        "Fachsprache; der Patient versteht die Diagnose nicht.",
+        "Verharmlosend und medizinisch falsch: Bei Ruheatemnot ist eine Behandlung nötig.",
+        "Vorwurfsvoll und wertend; das zerstört das Vertrauen."
+      ],
+      "reply": "Patient: „Also ist es wieder die Lunge. Und muss ich im Krankenhaus bleiben?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Muss ich im Krankenhaus bleiben?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Nein, das ist nicht nötig. Sie bekommen ein Rezept für Tabletten und Spray, und Sie können heute noch nach Hause gehen und sich ausruhen.",
+        "Ja, Sie kommen sofort auf die Intensivstation, weil wir Sie beatmen müssen, bevor wir irgendeine Untersuchung machen.",
+        "Das entscheidet der Chef, ich weiß es nicht.",
+        "Zuerst messen wir den Sauerstoff im Blut, nehmen Blut ab und machen ein Röntgenbild der Lunge. Sie bekommen Inhalationen zum Erweitern der Atemwege und Cortison-Tabletten, wenn nötig auch ein Antibiotikum. Wegen der starken Atemnot würde ich Sie wahrscheinlich zur Beobachtung aufnehmen. Das besprechen wir mit dem Oberarzt."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu früh und riskant: Bei Atemnot in Ruhe ist eine Entlassung vor der Abklärung nicht vertretbar.",
+        "Übertrieben und beängstigend: Eine Beatmung ist jetzt nicht geplant.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich."
+      ],
+      "reply": "Patient: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Werner Becker ist 68 und hat Atemnot.",
+        "Herr Werner Becker, ein 68-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit vier Tagen zunehmender Dyspnoe und Husten vor.",
+        "Herr Werner Becker, 68 Jahre, hat sich heute in unsere Notaufnahme vorgestellt mit Dyspnoe seit vier Tagen und Husten.",
+        "Der 68-jährige Patient Herr Becker stellte sich heute vor, nachdem er seit vier Tagen unter Luftnot und Husten leidet."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptom.",
+        "Grammatik: „in unserer Notaufnahme“ (Dativ, wo?), nicht „in unsere“.",
+        "Der Ort fehlt, „Luftnot“ ist Alltagssprache, und die Zeitform wechselt (stellte … leidet)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Atemnot hat vor vier Tagen mit einem Schnupfen angefangen und ist seitdem immer schlimmer geworden, jetzt auch in Ruhe.",
+        "Die Beschwerden begannen vor vier Tagen im Rahmen eines Infekts der oberen Atemwege, seitdem regredient, mit Belastungsdyspnoe nach etwa 50 m, ohne Ruhedyspnoe und mit Husten mit weißlichem Sputum.",
+        "Die Beschwerden seien vor vier Tagen aufgetreten und würden seitdem zunehmen, Dyspnoe bei Belastung bis ca. 50 m.",
+        "Die Beschwerden begannen vor vier Tagen im Rahmen eines Infekts der oberen Atemwege, seitdem progredient, mit Belastungsdyspnoe nach etwa 50 m (früher zwei Etagen) und seit gestern auch Ruhedyspnoe. Husten mit gelbgrünem Sputum."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Inhaltlich falsch: Die Beschwerden sind progredient, es besteht seit gestern Ruhedyspnoe, und das Sputum ist gelbgrün.",
+        "Konjunktiv-Mischung und unvollständig: Ruhedyspnoe und Sputum fehlen.",
+        "Richtig: Fachsprache und alle Merkmale (Beginn, Verlauf, Belastbarkeit, Ruhedyspnoe, Sputum)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend bestehen Husten mit gelbgrünem Auswurf, Fieber bis 37,9 °C und Giemen. Thoraxschmerzen, Hämoptysen und periphere Ödeme wurden verneint. Inappetenz und Schlafstörungen bei Husten, Gewicht konstant, kein Nachtschweiß.",
+        "Er hustet gelbes Zeug ab und hat ein bisschen Fieber.",
+        "Begleitend bestehen Husten mit gelbgrünem Auswurf und Fieber bis 37,9 °C. Thoraxschmerzen und periphere Ödeme wurden bejaht, Hämoptysen verneint. Inappetenz, Gewichtsverlust von 5 kg und Nachtschweiß wurden angegeben.",
+        "Der Patient klagte über blutigen Auswurf und Brustschmerzen, Fieber wurde verneint."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Umgangssprachlich und unvollständig.",
+        "Inhaltlich falsch: Thoraxschmerzen und Ödeme wurden verneint, das Gewicht ist konstant, Nachtschweiß besteht nicht.",
+        "Inhaltlich falsch: Der Auswurf war nicht blutig, und der Patient hatte Fieber."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: COPD, Bluthochdruck. Medikamente: Spiriva, Salbutamol, Ramipril.",
+        "An Vorerkrankungen sind eine COPD und eine arterielle Hypotonie bekannt. Im Vorjahr eine Exazerbation mit Antibiose und Prednisolon. Z. n. Leistenhernien-Operation links. Medikation: Tiotropium 18 µg 1-0-0, Salbutamol-Spray bei Bedarf, Ramipril 5 mg 1-0-0.",
+        "An Vorerkrankungen sind eine COPD (seit fünf Jahren) und eine arterielle Hypertonie bekannt. Im Vorjahr eine Exazerbation mit Antibiose und systemischen Steroiden. Z. n. Leistenhernien-Operation rechts. Medikation: Tiotropium 18 µg 1-0-0, Salbutamol-Spray bei Bedarf, Ramipril 5 mg 1-0-0.",
+        "Medikation: Tiotropium 18 µg 1-0-1, Ramipril 5 mg 0-0-1, Salbutamol dauerhaft 1-1-1."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Laiensprache (Handelsname), ohne Dosierung.",
+        "Inhaltlich falsch: Hypertonie (nicht Hypotonie), und die Leistenhernie wurde rechts operiert.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierschema im Format morgens-mittags-abends.",
+        "Dosierschema falsch: Tiotropium und Ramipril morgens (1-0-0), Salbutamol nur bei Bedarf."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: Pollen. Noxen: Nikotinabusus, Alkohol. Rentner.",
+        "Gräserpollenallergie (Rhinokonjunktivitis), keine Medikamentenallergie. Nikotinkonsum ca. 45 py, regelmäßiger Alkoholkonsum (1-2 Bier abends). Familienanamnese: Vater Bronchialkarzinom, verstorben mit 70 J., Mutter Apoplex mit 80 J. Der Patient ist Rentner (zuvor Maurer) und lebt mit seiner Ehefrau im zweiten Stock ohne Aufzug.",
+        "Gräserpollenallergie (Rhinokonjunktivitis), keine Medikamentenallergie. Nikotinkonsum ca. 90 py, regelmäßiger Alkoholkonsum (1-2 Bier abends). Familienanamnese: Vater Bronchialkarzinom, verstorben mit 70 J., Mutter Apoplex mit 80 J. Der Patient ist Rentner (zuvor Maurer) und lebt mit seiner Ehefrau im zweiten Stock ohne Aufzug.",
+        "Er verträgt keine Pollen, raucht seit Jahren viel und trinkt Bier. Er wohnt mit seiner Frau."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Unvollständig und zu knapp: Reaktion, Packungsjahre, Familie und Wohnsituation fehlen.",
+        "Richtig: 20 Zigaretten am Tag über 45 Jahre sind 45 py (py = Packungsjahre).",
+        "Falsch gerechnet: 20 Zigaretten am Tag sind eine Packung, über 45 Jahre also 45 py, nicht 90.",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Lungenentzündung.",
+        "Es besteht eine gesicherte Pneumonie bei bekannter COPD.",
+        "Anamnestisch besteht der Verdacht auf ein neu aufgetretenes Asthma bronchiale bei Z. n. Pneumonie. Differenzialdiagnostisch kommen eine Pneumonie, eine Lungenembolie und ein Pneumothorax in Betracht.",
+        "Anamnestisch besteht der Verdacht auf eine akute Exazerbation einer bekannten COPD, am ehesten infektgetriggert. Differenzialdiagnostisch kommen eine Pneumonie, eine kardiale Dekompensation und eine Lungenembolie in Betracht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Ohne Röntgen und Labor ist die Pneumonie noch nicht gesichert.",
+        "Fachlich falsch: Die COPD ist bekannt, und eine Pneumonie in der Vorgeschichte gab es nicht.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Zur weiteren Abklärung empfehlen wir ein Röntgenbild und eine Blutentnahme. Therapeutisch erhält der Patient hochdosiert Sauerstoff mit 15 l/min über eine Maske und einen Betablocker intravenös zur Frequenzkontrolle.",
+        "Wir machen Röntgen und Blut und geben Spray.",
+        "Zur weiteren Abklärung empfehlen wir eine Pulsoxymetrie bzw. Blutgasanalyse, eine Blutentnahme (u. a. Blutbild, CRP, BNP), ein EKG und ein Röntgen-Thorax. Therapeutisch kurzwirksame Bronchodilatatoren inhalativ, Prednisolon 40 mg oral für fünf Tage, kontrollierte Sauerstoffgabe mit Zielsättigung 88–92 % und bei purulentem Sputum eine Antibiose.",
+        "Zur weiteren Abklärung empfehlen wir ein EKG und ein Röntgen-Thorax. Therapeutisch erhält der Patient Prednisolon 40 mg für fünf Tage und Lorazepam 2 mg intravenös gegen die Unruhe."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gefährlich: unkontrollierte hohe Sauerstoffgabe kann bei COPD eine Hyperkapnie auslösen, und Betablocker sind hier nicht indiziert.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Richtig: Diagnostik und Therapie in vollständigen Sätzen, Sauerstoff kontrolliert.",
+        "Gefährlich: Benzodiazepine können bei COPD die Atmung unterdrücken, und die Bronchodilatatoren fehlen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Ich möchte Ihnen Herrn Werner Becker vorstellen, einen 68-jährigen Patienten mit bekannter COPD, der sich heute mit seit vier Tagen zunehmender Dyspnoe und produktivem Husten vorgestellt hat.",
+        "Der Becker hat wieder seine Lunge, er pfeift ziemlich.",
+        "Herr Becker hat eine exazerbierte COPD.",
+        "Also, der Mann raucht seit Jahrzehnten wie ein Schlot, und jetzt kriegt er kaum noch Luft, das habe ich mir mal angeschaut."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Name, Alter, wichtigste Vorerkrankung, Leitsymptom, zeitlicher Verlauf in einem Satz.",
+        "Unstrukturiert und umgangssprachlich.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Umgangssprachlich und wertend; kein strukturierter Einstieg."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Er hustet viel und hat Fieber.",
+        "Es besteht eine Dyspnoe nur bei Belastung, der Husten ist trocken, Fieber besteht nicht. Thoraxschmerzen und Beinödeme wurden verneint, und ein Giemen wurde nicht bemerkt.",
+        "Es besteht eine Belastungsdyspnoe nach etwa 50 m und seit gestern auch in Ruhe. Der Husten ist produktiv mit gelbgrünem Sputum, Fieber bis 37,9 °C. Thoraxschmerzen, Hämoptysen und Beinödeme wurden verneint.",
+        "Er hat Thoraxschmerzen, blutigen Auswurf und geschwollene Beine, also eher ein kardiales Problem."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu knapp und umgangssprachlich: Dyspnoe und Sputum fehlen.",
+        "Inhaltlich falsch: Die Dyspnoe besteht seit gestern auch in Ruhe, der Husten ist produktiv, und es besteht Fieber.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
+        "Inhaltlich falsch: Thoraxschmerzen, Hämoptysen und Beinödeme wurden verneint."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist sonst gesund.",
+        "Bekannt sind eine COPD seit fünf Jahren und eine arterielle Hypertonie. Im letzten Winter gab es bereits eine Exazerbation mit Antibiose und Cortison. Er raucht seit 45 Jahren, ca. 45 py. Der Vater hatte ein Bronchialkarzinom.",
+        "Bekannt sind ein Asthma bronchiale und ein Diabetes mellitus Typ 2. Im letzten Winter gab es bereits eine Exazerbation mit Antibiose und Cortison. Er raucht ca. 15 py, und eine Penicillinallergie besteht.",
+        "Er nimmt Tiotropium und Ramipril, sonst nichts."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: es gibt relevante Vorerkrankungen.",
+        "Richtig: relevante Vorgeschichte, frühere Exazerbation und Risikofaktor Rauchen.",
+        "Inhaltlich falsch: COPD und Hypertonie, ca. 45 py, und es besteht keine Medikamentenallergie.",
+        "Unvollständig: Diagnosen, Bedarfsmedikation und Rauchen fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an eine Erkältung.",
+        "Ich weiß es nicht genau.",
+        "Es handelt sich sicher um eine Lungenembolie, weil er so kurzatmig ist. Differenzialdiagnostisch denke ich höchstens noch an ein Lungenödem und einen Pneumothorax.",
+        "Ich vermute eine infektgetriggerte akute Exazerbation einer COPD. Differenzialdiagnostisch denke ich an eine Pneumonie, eine kardiale Dekompensation und eine Lungenembolie."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu unpräzise und verharmlosend für das Arzt-Arzt-Gespräch.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
+        "Zu sicher („sicher“), und die Lungenembolie ist hier nicht die wahrscheinlichste Diagnose.",
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde Pulsoxymetrie und Blutgasanalyse veranlassen, dazu Blutbild, CRP, BNP, EKG und Röntgen-Thorax. Therapeutisch kurzwirksame Bronchodilatatoren inhalativ, Prednisolon 40 mg oral für fünf Tage und bei gelbgrünem Sputum Amoxicillin/Clavulansäure. Sauerstoff nur kontrolliert nach Zielsättigung. Wegen der Ruhedyspnoe würde ich ihn stationär aufnehmen.",
+        "Ich würde ihn nach Hause schicken.",
+        "Ich würde ihm Sauerstoff mit 15 l/min geben, bis die Sättigung 100 % beträgt, und dazu ein Beruhigungsmittel, damit er ruhiger atmet.",
+        "Ich würde sofort eine Bronchoskopie in Sedierung durchführen und danach erst weitere Diagnostik veranlassen, auch ohne Blutgasanalyse."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Diagnostik, Therapie nach Leitlinie (Bronchodilatatoren, Steroid 5 Tage, Antibiose bei purulentem Sputum) und stationäre Aufnahme.",
+        "Gefährlich: Ruhedyspnoe und Fieber müssen stationär abgeklärt werden.",
+        "Gefährlich: Zu viel Sauerstoff und Sedativa können bei COPD zur Hyperkapnie und Atemdepression führen.",
+        "Nicht die erste Maßnahme: Eine Bronchoskopie ist hier nicht indiziert und in der akuten Atemnot riskant."
+      ],
+      "reply": "Oberarzt: „Gut. Welche Sauerstoffsättigung streben Sie an, falls Sie Sauerstoff geben müssen?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich strebe eine Sättigung von mindestens 98 % an, damit das Gewebe möglichst gut mit Sauerstoff versorgt ist.",
+        "Ich strebe eine Sättigung von 80 bis 84 % an, damit der Patient nicht zu viel Sauerstoff bekommt und nicht müde wird.",
+        "Ich strebe 88 bis 92 % an, weil bei COPD eine zu hohe Sauerstoffgabe zur Hyperkapnie führen kann; ich kontrolliere dazu die Blutgasanalyse.",
+        "Das ist egal, Hauptsache der Patient bekommt viel Sauerstoff, dann geht es ihm schnell besser."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: Bei COPD kann eine so hohe Sättigung zur Hyperkapnie führen.",
+        "Zu niedrig: Die Zielsättigung liegt bei 88 bis 92 %, sonst droht eine Hypoxie.",
+        "Richtig: Zielbereich 88 bis 92 % mit Kontrolle der Blutgase.",
+        "Gefährlich und nicht begründet; in der Prüfung erwartet man einen Zielwert."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Exazerbation“?",
+      "options": [
+        "Beginn einer Erkrankung",
+        "akute Verschlechterung einer bestehenden Erkrankung",
+        "vollständige Heilung",
+        "erneutes Auftreten nach einer Heilung"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Manifestation.",
+        "Richtig.",
+        "Das ist die Restitutio.",
+        "Das ist das Rezidiv."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Dyspnoe“?",
+      "options": [
+        "Husten",
+        "Bluthusten",
+        "Atemstillstand",
+        "Atemnot"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist Tussis.",
+        "Das ist die Hämoptyse.",
+        "Das ist die Apnoe.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Sputum“?",
+      "options": [
+        "Auswurf aus den Atemwegen",
+        "Speichel",
+        "Nasensekret",
+        "Erbrochenes"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist Saliva.",
+        "Das ist die Rhinorrhö.",
+        "Das ist Vomitus."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Zyanose“?",
+      "options": [
+        "Blässe der Haut",
+        "Gelbfärbung der Haut",
+        "Blaufärbung von Haut und Schleimhäuten",
+        "Rötung der Haut"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist Pallor.",
+        "Das ist Ikterus.",
+        "Richtig.",
+        "Das ist ein Erythem."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Hämoptyse“?",
+      "options": [
+        "Bluterbrechen",
+        "Bluthusten",
+        "Blut im Stuhl",
+        "Blut im Urin"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Hämatemesis.",
+        "Richtig.",
+        "Das ist die Hämatochezie bzw. Meläna.",
+        "Das ist die Hämaturie."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

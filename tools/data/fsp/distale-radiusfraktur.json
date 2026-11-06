@@ -1,0 +1,691 @@
+{
+  "id": "distale-radiusfraktur",
+  "area": "Unfallchirurgie/Orthopädie",
+  "title": "Schmerzen im Handgelenk nach einem Sturz",
+  "diagnosis": "Distale Radiusfraktur",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Frau Renate Hoffmann, 68 Jahre, stellt sich am späten Vormittag in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Frau Hoffmann sitzt auf der Liege und stützt ihr rechtes Handgelenk mit der linken Hand.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Tag, Frau Hoffmann. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte und Ihren Personalausweis dabei? Die brauchen wir zuerst für die Anmeldung.",
+        "Hallo, was haben Sie denn angestellt?",
+        "Guten Tag, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Frau Hoffmann?",
+        "Guten Tag. Zeigen Sie mir bitte sofort Ihre Hand, ich schaue mir das Handgelenk gleich an."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität der Patientin.",
+        "Die Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen."
+      ],
+      "reply": "Patientin: „Ja, Hoffmann. Guten Tag, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie ist Ihr Body-Mass-Index?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr? Sind Sie Rechts- oder Linkshänderin?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?",
+        "Sie sind doch schon über sechzig, oder?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht, dazu die Händigkeit, die für die Therapie wichtig ist.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe, Gewicht und Händigkeit.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen."
+      ],
+      "reply": "Patientin: „Ich bin 68, 1,68 Meter groß und wiege etwa 71 Kilo. Ich bin Rechtshänderin, und ausgerechnet die rechte Hand ist betroffen.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Haben Sie sich das Handgelenk gebrochen?",
+        "Warum haben Sie nicht besser aufgepasst? In Ihrem Alter muss man eben vorsichtiger sein, das ist doch bekannt.",
+        "Welche Symptomatik liegt bei Ihnen vor?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: eine offene Frage lässt die Patientin selbst erzählen.",
+        "Geschlossene Frage und Suggestion: Sie nehmen die Diagnose vorweg.",
+        "Vorwurfsvoll und wertend. Das stört das Vertrauen gleich zu Beginn.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache."
+      ],
+      "reply": "Patientin: „Ich bin heute Morgen gestürzt, und seitdem tut mein rechtes Handgelenk furchtbar weh.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten wissen, wo genau der Schmerz sitzt und was ihn auslöst. Was sagen Sie?",
+      "options": [
+        "Ist die Lokalisation der Schmerzen radial, ulnar oder dorsal betont, und besteht eine Bewegungseinschränkung oder eine Krepitation im Bereich der Handwurzel?",
+        "Tut es nur am Handgelenk weh?",
+        "Der Schmerz sitzt bestimmt an der Daumenseite, richtig?",
+        "Wo genau tut es am meisten weh, eher an der Daumenseite oder an der Kleinfingerseite, eher auf dem Handrücken oder in der Handfläche? Und bei welcher Bewegung wird es schlimmer?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachsprache („radial“, „ulnar“, „dorsal“); die Patientin versteht die Frage nicht.",
+        "Geschlossene Frage; Seite, Stelle und Auslöser erfahren Sie so nicht.",
+        "Suggestivfrage. Die Patientin könnte Ihnen nur zustimmen.",
+        "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben, und mit Frage nach den Auslösern."
+      ],
+      "reply": "Patientin: „Hier an der Daumenseite, direkt über dem Handgelenk, und auf dem Handrücken ist es dick geschwollen. Wenn ich die Hand bewege oder abstütze, ist es kaum auszuhalten. Ellenbogen und Schulter tun nicht weh.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn, Unfallhergang und Verlauf?",
+      "options": [
+        "Seit wann haben Sie die Schmerzen?",
+        "Wie war der zeitliche Verlauf der Beschwerden seit dem Trauma: akut, subakut oder chronisch progredient?",
+        "Wann und wie genau sind Sie gestürzt, und ist es seitdem besser, schlechter oder gleich geblieben?",
+        "Sind Sie über etwas gestolpert?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu eng: Uhrzeit und Unfallhergang erfahren Sie so nicht, und der Verlauf fehlt.",
+        "Fachsprache: „Trauma“, „subakut“ und „progredient“ versteht die Patientin nicht.",
+        "Richtig: Zeitpunkt, Hergang und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Geschlossene Frage mit Vorannahme; Zeitpunkt, Hergang und Verlauf fehlen."
+      ],
+      "reply": "Patientin: „Gegen acht Uhr, vor etwa drei Stunden. Ich bin auf nassem Laub ausgerutscht und habe mich mit der ausgestreckten Hand abgefangen. Mit dem Kopf bin ich nicht aufgeschlagen, bewusstlos war ich nicht. Seitdem wird die Schwellung immer dicker.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "options": [
+        "Wie würden Sie die Schmerzen beschreiben, eher kolikartig, neuralgiform oder ischämisch? Und wie stark sind sie auf einer Skala von 1 bis 100, und wie hat sich der Schmerzcharakter seit dem Sturz verändert?",
+        "Wie würden Sie die Schmerzen beschreiben, eher stechend, dumpf oder pochend? Und wie stark sind sie auf einer Skala von 0 bis 10, in Ruhe und bei Bewegung?",
+        "Tut es sehr weh?",
+        "Sie haben bestimmt sehr starke Schmerzen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache und unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
+        "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10, getrennt für Ruhe und Bewegung.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
+        "Suggestiv: Sie unterstellen die Stärke, statt danach zu fragen."
+      ],
+      "reply": "Patientin: „Stechend, und es pocht. In Ruhe 4 von 10, bei Bewegung 7 von 10.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Haben Sie sonst noch was?",
+        "Bestehen Parästhesien oder Paresen der Finger, und hatten Sie Schwindel, eine Synkope oder einen Kopfanprall, und bestehen Hypästhesien, Dysästhesien oder eine verminderte Kapillarfüllung der Fingerkuppen?",
+        "Sie spüren die Finger bestimmt nicht mehr richtig, oder?",
+        "Kribbeln oder schlafen Ihre Finger ein, oder fühlen sie sich taub an? Können Sie alle Finger bewegen? War Ihnen schwindelig, haben Sie Kopfschmerzen, oder tut Ihnen noch etwas anderes weh?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu umgangssprachlich und unkonkret.",
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „kribbeln“, „taub“, „schwindelig“.",
+        "Suggestiv: Sie unterstellen das Symptom.",
+        "Richtig: Durchblutung, Gefühl, Beweglichkeit und mögliche Kopfverletzung in Laiensprache."
+      ],
+      "reply": "Patientin: „Ja, Daumen, Zeige- und Mittelfinger kribbeln seit etwa einer Stunde. Bewegen kann ich die Finger, aber nur mit Schmerzen. Schwindelig war mir nicht, Kopfschmerzen habe ich auch nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Haben Sie Schüttelfrost, Nachtschweiß, Gewichtsverlust, Dysurie, Obstipation und Diarrhö, und wie war Ihre Miktionsfrequenz mit Pollakisurie und Nykturie?",
+        "Haben Sie Fieber? Wie sind Appetit, Stuhlgang und Wasserlassen? Wann haben Sie zuletzt etwas gegessen oder getrunken?",
+        "Wie ist die Vegetativa?",
+        "Ist sonst alles normal bei Ihnen?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Obstipation, Diarrhö), und die letzte Mahlzeit fehlt.",
+        "Richtig: Laiensprache, und die letzte Nahrungsaufnahme ist für eine mögliche Narkose wichtig.",
+        "Fachjargon, den eine Patientin nicht versteht.",
+        "Zu allgemein; die Patientin sagt einfach „ja“."
+      ],
+      "reply": "Patientin: „Fieber habe ich nicht. Appetit, Stuhlgang und Wasserlassen sind normal. Ich habe um 7 Uhr gefrühstückt, seitdem nur einen Schluck Wasser getrunken.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen, Operationen und früheren Brüchen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, eine Osteoporose oder eine KHK oder eine Hypothyreose, und gab es Voroperationen, stationäre Aufenthalte oder Frakturen in der Vorgeschichte, auch im Kindesalter?",
+        "Sind Sie gesund?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck, Zucker oder Probleme mit den Knochen? Wurden Sie schon einmal operiert, oder haben Sie sich früher schon einmal etwas gebrochen?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „Frakturen“). Mit Patienten sprechen Sie Laiensprache.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Richtig: mit Beispielen, laienverständlich, und Operationen und frühere Brüche sind mitgefragt.",
+        "Die Patientin kennt ihre Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patientin: „Bluthochdruck und Osteoporose, die Knochendichte wurde vor zwei Jahren gemessen. Operiert wurde ich nur einmal: Die Gebärmutter wurde vor 20 Jahren wegen Myomen entfernt. Gebrochen hatte ich vorher noch nie etwas. Im letzten Jahr bin ich schon einmal gestürzt, aber ohne Verletzung.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept, zum Beispiel Schmerzmittel oder Blutverdünner?",
+        "Nehmen Sie Tabletten?",
+        "Welche Pharmaka applizieren Sie?",
+        "Sie nehmen doch bestimmt Schmerzmittel und Blutverdünner, Aspirin zum Beispiel, wie die meisten in Ihrem Alter, und wahrscheinlich noch etwas für den Magen und für die Gelenke?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Name, Dosierung, frei verkäufliche Mittel und Blutverdünner, die für Blutung und Narkose wichtig sind.",
+        "Zu ungenau: Dosis und andere Darreichungsformen fehlen.",
+        "Fachsprache („Pharmaka“, „applizieren“).",
+        "Suggestivfrage und Verallgemeinerung. Fragen Sie offen."
+      ],
+      "reply": "Patientin: „Ramipril 5 Milligramm morgens, einmal pro Woche montags Alendronsäure 70 Milligramm und jeden Morgen Vitamin D, 1000 Einheiten. Heute Morgen habe ich nach dem Sturz noch eine Tablette Paracetamol 500 genommen. Blutverdünner nehme ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Allergie?",
+        "Sind Sie gegen Novalgin allergisch? Das ist wichtig, weil wir Ihnen gleich ein Schmerzmittel geben möchten, und Novalgin nehmen wir am häufigsten.",
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Pflaster oder Kontrastmittel? Wie äußert sich das?",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Zu eng: Allergien gegen andere Medikamente, Pflaster oder Kontrastmittel übersehen Sie, und die Frage ist suggestiv.",
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patientin: „Gegen Metamizol, das Novalgin. Davon habe ich einen juckenden Ausschlag mit Quaddeln bekommen.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucherin oder Alkoholikerin?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus?",
+        "Rauchen Sie, und trinken Sie zu viel? Das ist in Ihrem Alter, mit Osteoporose, besonders schädlich für die Knochen. Wie viele Zigaretten es sind, ist mir eigentlich egal, aber aufhören sollten Sie auf jeden Fall.",
+        "Rauchen Sie, und wenn ja, wie viele Zigaretten am Tag und seit wie vielen Jahren? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Alkoholikerin“ ist wertend und verletzend.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Wertend, belehrend und ungenau: Menge und Dauer fehlen.",
+        "Richtig: neutral, konkret, mit Menge und Dauer (für die Packungsjahre)."
+      ],
+      "reply": "Patientin: „Ich rauche seit 40 Jahren etwa 10 Zigaretten am Tag. Alkohol trinke ich zwei Gläser Wein pro Woche. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Knochenbrüche, Osteoporose, Herz- oder Krebserkrankungen?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders, auch wenn es schon lange her ist.",
+        "Hat Ihre Familie dieselbe Krankheit?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Richtig: offen, mit passenden Beispielen, auch zu Knochenerkrankungen.",
+        "Zu eng: Geschwister und Kinder fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
+      ],
+      "reply": "Patientin: „Meine Mutter hat sich mit 80 den Oberschenkelhals gebrochen. Mein Vater hatte mit 75 einen Schlaganfall.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was machen Sie beruflich, oder was haben Sie früher gemacht? Wie wohnen Sie, allein oder mit jemandem zusammen, und gibt es Treppen oder Hilfe im Alltag?",
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse, und haben Sie eine Patientenverfügung oder eine Vorsorgevollmacht?",
+        "Haben Sie Geld?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beruf, Wohnsituation und Unterstützung, wichtig, weil die Patientin ihre Hand zunächst kaum benutzen kann.",
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: der Beruf und die Hilfe im Alltag fehlen, die Adresse gehört nicht in die Sozialanamnese.",
+        "Unangemessen."
+      ],
+      "reply": "Patientin: „Ich bin Rentnerin, früher war ich Buchhalterin. Ich bin Witwe und wohne allein im zweiten Stock, ohne Aufzug. Meine Tochter wohnt in der Nähe und hilft mir beim Einkaufen.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben eine distale Radiusfraktur vom Typ Colles, die wahrscheinlich disloziert ist und nach der AO-Klassifikation vermutlich als Typ A2 oder A3 mit einer Verkippung des Fragments nach dorsal einzuordnen ist.",
+        "Es ist wahrscheinlich nur eine Prellung, das geht von allein wieder weg.",
+        "Sie haben sich sicher etwas gebrochen, deshalb müssen wir die Hand sofort operieren.",
+        "Ich vermute, dass die Speiche, ein Knochen im Unterarm, direkt am Handgelenk gebrochen ist. Das passiert bei einem Sturz auf die Hand nicht selten, besonders wenn die Knochen weniger fest sind. Das Röntgenbild zeigt es uns genau."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachsprache; die Patientin versteht die Diagnose nicht, und Sie sprechen schon von Gewissheit.",
+        "Verharmlosend und medizinisch riskant: ein Bruch darf nicht übersehen werden.",
+        "Beängstigend und voreilig: Die Diagnose ist nicht gesichert, und nicht jeder Bruch wird operiert.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung mit Bezug zur Osteoporose."
+      ],
+      "reply": "Patientin: „Gebrochen? Muss ich jetzt operiert werden?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Die Patientin fragt: „Muss ich operiert werden?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, noch heute Abend wird Ihre Hand mit einer Platte operiert.",
+        "Zuerst machen wir ein Röntgenbild von Ihrem Handgelenk. Sie bekommen ein Schmerzmittel, das Sie vertragen, also kein Novalgin, und die Hand wird gekühlt und in einer Schiene ruhiggestellt. Ob eine Operation nötig ist, hängt davon ab, wie weit die Knochenstücke verschoben sind. Das besprechen wir danach mit Ihnen.",
+        "Nein, das wird nur mit einem Gips behandelt, eine Operation brauchen Sie nicht.",
+        "Das entscheidet der Chef, ich weiß es nicht."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu früh: Die Diagnose ist noch nicht gesichert, und der Zeitpunkt ist nicht festgelegt.",
+        "Richtig: nächste Schritte, Allergie beachtet, ehrliche Aussicht, laienverständlich.",
+        "Falsch: Bei verschobenen Bruchstücken ist oft eine Operation nötig; ohne Röntgenbild können Sie das nicht sagen.",
+        "Unprofessionell und lässt die Patientin allein."
+      ],
+      "reply": "Patientin: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Frau Hoffmann ist 68 und hat sich das Handgelenk kaputtgemacht.",
+        "Frau Renate Hoffmann, 68 Jahre alt, hat sich heute in unserer Notaufnahme vorgestellt wegen Schmerzen, nachdem sie ist gestürzt.",
+        "Die Patientin Frau Hoffmann stellt sich heute vor wegen Schmerzen im linken Handgelenk seit dem Morgen, 68-jährig.",
+        "Frau Renate Hoffmann, eine 68-jährige Patientin, stellte sich heute in unserer Notaufnahme mit Schmerzen im rechten Handgelenk nach einem Sturz auf die ausgestreckte Hand vor."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Grammatik: im Nebensatz steht das finite Verb am Ende („nachdem sie gestürzt ist“); außerdem ist das Leitsymptom ungenau.",
+        "Falsch: Die Beschwerden betreffen das rechte Handgelenk, und der Satzbau ist unglücklich.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort, Leitsymptom und Unfallmechanismus."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Patientin rutschte heute gegen 8 Uhr auf nassem Laub aus und stürzte auf die ausgestreckte rechte Hand. Seitdem bestehen Schmerzen im rechten Handgelenk (NRS 4/10 in Ruhe, 7/10 bei Bewegung) mit zunehmender Schwellung. Ein Kopfanprall und eine Bewusstlosigkeit wurden verneint.",
+        "Die Patientin rutschte heute gegen 8 Uhr auf nassem Laub aus und stürzte auf die ausgestreckte linke Hand. Seitdem bestehen Schmerzen im linken Handgelenk (NRS 4/10 in Ruhe, 7/10 bei Bewegung) mit zunehmender Schwellung. Ein Kopfanprall wurde verneint.",
+        "Die Patientin ist heute Morgen hingefallen, seitdem tut ihr die Hand sehr weh und ist ganz dick.",
+        "Die Patientin sei heute gegen 8 Uhr gestürzt, seitdem bestehe Schmerzen im Handgelenk, NRS 7."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachsprache und alle Merkmale (Zeitpunkt, Hergang, Seite, Intensität, Verlauf, Negativbefunde).",
+        "Inhaltlich falsch: Der Sturz ging auf die rechte Hand, und die Schmerzen sitzen rechts.",
+        "Laiensprache und unvollständig; im Bericht erwartet man Fachbegriffe und Angaben zu Hergang und Intensität.",
+        "Grammatik: „Schmerzen bestehen“ (Plural), und der Konjunktiv ist falsch gemischt; außerdem fehlen Seite und „/10“."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete die Patientin über Parästhesien an Daumen, Zeige- und Kleinfinger seit etwa einer Stunde. Die Finger waren aktiv beweglich. Schwindel, Synkope und Kopfschmerzen wurden verneint. Kein Fieber. Letzte Nahrungsaufnahme um 7 Uhr (Frühstück).",
+        "Sie spürt die Finger kaum, ihr war nicht schwindelig, und sie hat nicht gefrühstückt.",
+        "Begleitend berichtete die Patientin über Parästhesien an Daumen, Zeige- und Mittelfinger seit etwa einer Stunde. Die Finger waren aktiv beweglich. Schwindel, Synkope und Kopfschmerzen wurden verneint. Kein Fieber, Stuhlgang und Miktion unauffällig. Letzte Nahrungsaufnahme um 7 Uhr (Frühstück).",
+        "Begleitend berichtete die Patientin über Parästhesien an Daumen, Zeige- und Mittelfinger seit etwa einer Stunde. Die Finger waren aktiv beweglich. Schwindel, Synkope und Kopfschmerzen wurden verneint. Kein Fieber. Die Patientin ist seit gestern Abend nüchtern."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Das Kribbeln betrifft Daumen, Zeige- und Mittelfinger, nicht den Kleinfinger.",
+        "Umgangssprache und unvollständig: Die Parästhesien und die Negativbefunde sind nicht fachgerecht dokumentiert.",
+        "Richtig: vollständig, Fachsprache, Negativbefunde und letzte Nahrungsaufnahme dokumentiert.",
+        "Inhaltlich falsch: Die Patientin hat um 7 Uhr gefrühstückt, sie ist nicht seit gestern Abend nüchtern."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "An Vorerkrankungen sind eine arterielle Hypotonie und eine Osteoporose bekannt. Z. n. Hysterektomie vor 20 Jahren. Medikation: Ramipril 5 mg 1-0-0, Alendronsäure 70 mg einmal wöchentlich (montags), Colecalciferol 1000 IE 1-0-0, Paracetamol 500 mg einmalig heute.",
+        "An Vorerkrankungen sind eine arterielle Hypertonie und eine Osteoporose bekannt. Z. n. Hysterektomie bei Myomen vor 20 Jahren, keine Frakturen in der Vorgeschichte. Medikation: Ramipril 5 mg 1-0-0, Alendronsäure 70 mg einmal wöchentlich (montags), Colecalciferol 1000 IE 1-0-0, Paracetamol 500 mg einmalig heute. Keine Antikoagulation.",
+        "Vorerkrankungen: Bluthochdruck, schwache Knochen. Medikamente: Ramipril, Alendronsäure, Vitamin D.",
+        "Medikation: Ramipril 5 mg 0-0-1, Alendronsäure 70 mg 1-0-1, Colecalciferol 1000 IE 1-0-0."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich falsch: bekannt ist eine Hypertonie (nicht Hypotonie).",
+        "Richtig: Fachbegriffe, Z. n., Dosierschema 1-0-0 und Negativbefunde (keine Frakturen, keine Antikoagulation).",
+        "Laiensprache und ohne Dosierung.",
+        "Dosierschema falsch: Ramipril morgens (1-0-0), Alendronsäure nur einmal pro Woche."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Metamizolallergie (Urtikaria). Nikotinkonsum ca. 20 py, Alkohol ca. zwei Gläser Wein pro Woche, kein Drogenkonsum. Familienanamnese: Mutter proximale Femurfraktur mit 80 J., Vater Apoplex mit 75 J. Die Patientin ist Rechtshänderin und Rentnerin, verwitwet, und lebt allein im zweiten Stock ohne Aufzug.",
+        "Metamizolallergie (Anaphylaxie). Nikotinkonsum ca. 10 py, Alkohol ca. zwei Gläser Wein pro Woche. Familienanamnese: Mutter Femurfraktur, Vater Apoplex. Die Patientin ist Rentnerin und lebt mit ihrer Tochter zusammen.",
+        "Keine Allergien. Nikotinabusus. Sie lebt allein.",
+        "Sie verträgt kein Novalgin, raucht und trinkt ab und zu Wein."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: 10 Zigaretten am Tag über 40 Jahre sind 20 Packungsjahre (py); alle Fakten stimmen.",
+        "Falsch: Die Reaktion war eine Urtikaria (keine Anaphylaxie), 10 Zigaretten über 40 Jahre sind 20 py, und die Patientin lebt allein.",
+        "Falsch: Die Metamizolallergie fehlt, und „Nikotinabusus“ ohne Menge ist unvollständig.",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Handgelenkbruch.",
+        "Es besteht eine gesicherte, dislozierte distale Radiusfraktur rechts.",
+        "Anamnestisch besteht der Verdacht auf eine Klavikulafraktur bei Sturz auf die ausgestreckte Hand. Differenzialdiagnostisch kommen eine Humeruskopffraktur, eine Schulterluxation und eine Rotatorenmanschettenruptur in Betracht.",
+        "Anamnestisch besteht der Verdacht auf eine distale Radiusfraktur rechts (Extensionsfraktur) bei Osteoporose. Differenzialdiagnostisch kommen eine Skaphoidfraktur, eine perilunäre Luxation und eine Handgelenkdistorsion in Betracht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Ohne Röntgenbild ist die Diagnose noch nicht gesichert, und die Dislokation kennen Sie nicht.",
+        "Passt nicht zum Befund: Schulter und Ellenbogen sind schmerzfrei, der Schmerz sitzt im Handgelenk.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen, Bezug zur Osteoporose."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Zur weiteren Abklärung empfehlen wir eine Röntgenaufnahme des Thorax und ein EKG. Bei unauffälligem Befund kann die Patientin ohne Ruhigstellung mit Ibuprofen nach Hause entlassen werden.",
+        "Zur Abklärung empfehlen wir eine Röntgenaufnahme des rechten Handgelenks in zwei Ebenen. Therapeutisch erfolgen Kühlung, Ruhigstellung in einer dorsalen Unterarmschiene und Analgesie mit Paracetamol i. v. (bei Metamizolallergie) sowie engmaschige Kontrolle von Durchblutung, Motorik und Sensibilität (Parästhesien). Bei Dislokation ist eine Reposition in Anästhesie bzw. eine operative Versorgung zu prüfen.",
+        "Wir machen Röntgen und geben eine Schiene.",
+        "Wir empfehlen ein Röntgenbild des Handgelenks und eine Analgesie mit Metamizol 1 g i. v. sowie eine Ruhigstellung in einer Unterarmschiene."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Nicht die passende Untersuchung: Röntgen und Ruhigstellung des Handgelenks fehlen, und eine Entlassung ohne Behandlung ist unsicher.",
+        "Richtig: Diagnostik und Therapie in vollständigen Sätzen, Allergie beachtet, Reposition bzw. Operation bei Dislokation.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Gefährlich: Die Patientin hat eine Metamizolallergie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Ich möchte Ihnen Frau Renate Hoffmann vorstellen, eine 68-jährige Patientin, die sich heute nach einem Sturz auf die ausgestreckte rechte Hand mit Schmerzen und Schwellung im rechten Handgelenk vorgestellt hat.",
+        "Die Patientin hat sich die Hand gebrochen, sie heißt Hoffmann.",
+        "Also, die Frau ist heute Morgen auf irgendwelchem Laub ausgerutscht ...",
+        "Frau Hoffmann hat eine Radiusfraktur."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Name, Alter, Unfallmechanismus und Leitsymptom in einem Satz.",
+        "Unstrukturiert, umgangssprachlich und mit ungesicherter Diagnose.",
+        "Kein strukturierter Einstieg; zuerst Patientin und Leitsymptom.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Der Sturz ereignete sich vor drei Stunden auf nassem Laub, die Patientin fing sich mit der ausgestreckten linken Hand ab. Die Schmerzen betragen 7/10 bei Bewegung, es bestehen Parästhesien an Daumen, Zeige- und Mittelfinger. Ein Kopfanprall wurde verneint.",
+        "Sie hat alles Mögliche.",
+        "Der Sturz ereignete sich vor drei Stunden auf nassem Laub, die Patientin fing sich mit der ausgestreckten rechten Hand ab. Die Schmerzen betragen 7/10 bei Bewegung, es bestehen Parästhesien an Daumen, Zeige- und Mittelfinger. Kopfanprall und Bewusstlosigkeit wurden verneint.",
+        "Sie hat Fieber, Schwindel und Kopfschmerzen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Die Patientin fing sich mit der rechten Hand ab.",
+        "Keine Information.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
+        "Inhaltlich falsch: Fieber, Schwindel und Kopfschmerzen wurden verneint."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Sie ist gesund.",
+        "Bekannt sind eine arterielle Hypertonie und eine Osteoporose. Keine Allergien, keine Antikoagulation. Die Mutter hatte eine Femurfraktur.",
+        "Sie nimmt Ramipril und Alendronsäure, sonst nichts.",
+        "Bekannt sind eine arterielle Hypertonie und eine Osteoporose unter Alendronsäure 70 mg einmal wöchentlich. Wichtig: Metamizolallergie mit Urtikaria, keine Antikoagulation, letzte Mahlzeit um 7 Uhr. Die Mutter hatte mit 80 Jahren eine Femurfraktur."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch: Es gibt relevante Vorerkrankungen.",
+        "Inhaltlich falsch: Die Patientin hat eine Metamizolallergie.",
+        "Unvollständig: Diagnosen, Allergie und Nüchternstatus fehlen.",
+        "Richtig: relevante Vorgeschichte, Allergie, die für die Analgesie wichtig ist, und Nüchternstatus für eine mögliche Narkose."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an eine Prellung.",
+        "Ich vermute eine distale Radiusfraktur rechts bei Osteoporose. Differenzialdiagnostisch denke ich an eine Skaphoidfraktur, eine perilunäre Luxation und eine Handgelenkdistorsion.",
+        "Es handelt sich sicher um ein akutes Karpaltunnelsyndrom, weil die Finger kribbeln. Differenzialdiagnostisch denke ich höchstens noch an eine Sehnenscheidenentzündung und eine Polyneuropathie.",
+        "Ich weiß es nicht genau."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu unpräzise und verharmlosend für das Arzt-Arzt-Gespräch.",
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
+        "Zu sicher („sicher“); das Kribbeln ist ein Begleitbefund, die Fraktur ist die wahrscheinlichste Ursache.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde ein Röntgenbild des Handgelenks in zwei Ebenen veranlassen, bei Bedarf mit Kahnbeinaufnahmen. Analgesie mit Paracetamol 1 g i. v., kein Metamizol wegen der Allergie, dazu Kühlung und Ruhigstellung in einer Unterarmschiene. Bei Dislokation Reposition in Anästhesie und Besprechung der Operationsindikation mit Ihnen.",
+        "Ich würde sie ohne Röntgenbild mit einem Gips und einem Rezept für Schmerztabletten nach Hause entlassen, weil das meistens ausreicht.",
+        "Ich würde Metamizol 1 g i. v. geben, weil das am besten gegen Knochenschmerzen wirkt, und die Patientin danach nach Hause schicken.",
+        "Ich würde das Handgelenk sofort ohne Bildgebung in Vollnarkose operieren, damit nichts übersehen wird."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Diagnostik, Analgesie unter Beachtung der Allergie, Ruhigstellung und weiteres Vorgehen.",
+        "Gefährlich: Ohne Bildgebung wissen Sie nicht, ob der Bruch verschoben ist, und ein Gips ersetzt die Diagnostik nicht.",
+        "Gefährlich: Die Patientin hat eine Metamizolallergie, und ohne Röntgenbild darf sie nicht gehen.",
+        "Nicht leitliniengerecht: Vor jeder Operation steht die Bildgebung."
+      ],
+      "reply": "Oberarzt: „Gut. Die Patientin hat ein Kribbeln in Daumen, Zeige- und Mittelfinger. Welcher Nerv ist betroffen, und was bedeutet das für uns?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Der Nervus ulnaris ist betroffen; er versorgt Klein- und Ringfinger, deshalb besteht kein Handlungsbedarf.",
+        "Der Nervus radialis ist betroffen; das führt zur Fallhand, ist bei einer Radiusfraktur typisch und harmlos.",
+        "Der Nervus medianus ist betroffen. Bei zunehmenden Ausfällen droht ein akutes Karpaltunnelsyndrom; dann ist eine zügige Reposition bzw. Dekompression nötig, bis dahin engmaschige Kontrolle von Durchblutung, Motorik und Sensibilität.",
+        "Das ist ein psychisches Symptom nach dem Sturz und braucht keine Kontrolle."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: Der Nervus ulnaris versorgt Klein- und Ringfinger, und ein Handlungsbedarf besteht durchaus.",
+        "Falsch: Eine Radialisschädigung zeigt sich mit Fallhand und Sensibilitätsstörung am Handrücken, und harmlos ist sie nicht.",
+        "Richtig: Der N. medianus versorgt Daumen, Zeige- und Mittelfinger; Zunahme der Ausfälle ist dringlich.",
+        "Gefährlich: Neurologische Symptome nach einem Trauma brauchen immer eine Kontrolle."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Distorsion“?",
+      "options": [
+        "Verstauchung",
+        "Knochenbruch",
+        "Ausrenkung",
+        "Prellung"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Fraktur.",
+        "Das ist die Luxation.",
+        "Das ist die Kontusion."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Reposition“?",
+      "options": [
+        "Ruhigstellung mit Gips",
+        "operative Entfernung eines Knochens",
+        "Wiedereinrichtung verschobener Knochenenden",
+        "Verband mit Salbe"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Immobilisation.",
+        "Das ist die Resektion.",
+        "Richtig.",
+        "Das ist ein Salbenverband."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Parästhesie“?",
+      "options": [
+        "Taubheit",
+        "Missempfindung, zum Beispiel Kribbeln",
+        "Lähmung",
+        "Überempfindlichkeit gegen Schmerz"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Hypästhesie.",
+        "Richtig.",
+        "Das ist die Parese.",
+        "Das ist die Hyperalgesie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Osteoporose“?",
+      "options": [
+        "Knochenentzündung",
+        "Knochenbruch",
+        "Knochenerweichung",
+        "Knochenschwund mit erhöhter Bruchneigung"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Osteomyelitis.",
+        "Das ist die Fraktur.",
+        "Das ist die Osteomalazie.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Dislokation“?",
+      "options": [
+        "Verschiebung der Bruchstücke gegeneinander",
+        "Bruch ohne Verschiebung",
+        "Gelenkentzündung",
+        "Absterben von Knochengewebe"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist eine nicht dislozierte Fraktur.",
+        "Das ist die Arthritis.",
+        "Das ist die Nekrose."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

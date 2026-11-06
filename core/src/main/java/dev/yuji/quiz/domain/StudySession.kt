@@ -65,6 +65,8 @@ object StudyEngine {
         schedulerConfig: SchedulerConfig,
         graderConfig: GraderConfig,
         log: StudyLog,
+        /** Set by modes that grade from a score instead of the response time (FSP cases, FS-4). */
+        gradeOverride: ReviewGrade? = null,
     ): StudySession {
         val card = session.currentCard ?: return session
         if (session.isAwaitingAdvance || choice !in card.choices) return session
@@ -73,7 +75,8 @@ object StudyEngine {
             ?: SpacedRepetitionScheduler.freshProgress(card.id, schedulerConfig)
         val correct = choice == card.correctChoice
         val responseMillis = (nowMillis - session.shownAtMillis).coerceAtLeast(0)
-        val grade = AnswerGrader.grade(correct, responseMillis, before.phase, graderConfig)
+        val grade = gradeOverride ?: AnswerGrader.grade(correct, responseMillis, before.phase, graderConfig)
+        require((grade == ReviewGrade.AGAIN) == !correct) { "grade $grade contradicts correct=$correct" }
         val after = SpacedRepetitionScheduler.scheduleNext(before, grade, nowMillis, schedulerConfig)
 
         val comesBackThisSession = (after.phase == CardPhase.LEARNING || after.phase == CardPhase.RELEARNING) &&

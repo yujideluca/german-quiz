@@ -1,0 +1,691 @@
+{
+  "id": "depressive-episode",
+  "area": "Psychiatrie",
+  "title": "Niedergeschlagenheit und Erschöpfung",
+  "diagnosis": "Rezidivierende depressive Störung, schwere Episode mit Suizidalität",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Thomas Berger, 45 Jahre, stellt sich am Vormittag in der Notaufnahme vor. Seine Ehefrau hat ihn begleitet.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Berger sitzt mit gesenktem Kopf im Untersuchungszimmer, seine Frau wartet im Flur.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Tag, Herr Berger. Sie sehen sehr traurig aus und wirken völlig fertig. Haben Sie eine Depression, und denken Sie vielleicht an Suizid?",
+        "Guten Morgen, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Berger?",
+        "Hallo Herr Berger, setzen Sie sich, wir haben nicht viel Zeit.",
+        "Guten Morgen. Bitte füllen Sie zuerst diesen Aufnahmebogen aus und geben Sie mir Ihre Versichertenkarte."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Vorschnelle Diagnose und Suizid-Frage ohne Vorstellung und ohne Vertrauen. Erst begrüßen und sich vorstellen.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Unhöflich und ohne Vorstellung. Ein depressiver Patient braucht Ruhe und Zeit.",
+        "Verwaltung gehört nicht an den Anfang, und Sie stellen sich nicht vor."
+      ],
+      "reply": "Patient: „Ja, Berger. Guten Morgen, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?",
+        "Wie hoch ist Ihr BMI?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Sie sind doch Mitte vierzig, oder?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Ich bin 45, 1,80 Meter groß und wiege 74 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Was führt Sie heute zu uns? Erzählen Sie bitte in Ruhe.",
+        "Sind Sie depressiv?",
+        "Welche psychopathologischen Beschwerden führen Sie her?",
+        "Sie sehen nicht gut aus. Warum kommen Sie erst jetzt zum Arzt und nicht schon vor ein paar Wochen?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen.",
+        "Geschlossene Frage und Sie nehmen die Diagnose vorweg. Beginnen Sie offen.",
+        "„Psychopathologisch“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
+      ],
+      "reply": "Patient: „Ich bin seit Monaten so niedergeschlagen und ohne Kraft. Ich kann nicht mehr arbeiten, und ich sehe keinen Sinn mehr.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten wissen, wann die Niedergeschlagenheit am stärksten ist und ob es einen Auslöser gab. Was sagen Sie?",
+      "options": [
+        "Gab es einen Auslöser? Bestimmt hat Ihnen Ihre Arbeit zugesetzt, oder?",
+        "Liegt eine zirkadiane Schwankung der Affektlage vor, und gab es ein belastendes Lebensereignis?",
+        "Ist es morgens schlimmer?",
+        "Gibt es eine Tageszeit, zu der es Ihnen am schlechtesten geht? Und ist in letzter Zeit etwas passiert, das Sie belastet hat?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Suggestivfrage: Sie geben den Auslöser vor. Fragen Sie offen.",
+        "„Zirkadian“, „Affektlage“ und „Lebensereignis“ sind Fachwörter; der Patient versteht sie nicht.",
+        "Geschlossene Frage; den Auslöser erfahren Sie so nicht.",
+        "Richtig: laienverständlich, offen, Tagesschwankung und Auslöser in einer Frage."
+      ],
+      "reply": "Patient: „Morgens ist es am schlimmsten, abends wird es ein wenig besser. Vor drei Monaten hat meine Firma angekündigt, dass Stellen abgebaut werden. Seitdem mache ich mir ständig Sorgen.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Seit wann geht es Ihnen so?",
+        "Wann hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben?",
+        "Wie war der zeitliche Verlauf der depressiven Symptomatik seit der Erstmanifestation: akut, schleichend oder phasenhaft?",
+        "Das hat schleichend angefangen, oder?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das fragt nur nach dem Beginn, nicht nach dem Verlauf.",
+        "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Fachsprache: „Symptomatik“, „Erstmanifestation“ und „phasenhaft“ versteht der Patient nicht.",
+        "Suggestiv und geschlossen; sie erfasst den Verlauf nicht."
+      ],
+      "reply": "Patient: „Vor etwa drei Monaten hat es schleichend angefangen, seit vier Wochen ist es deutlich schlimmer. Seit sechs Wochen bin ich krankgeschrieben.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach der Stärke der Niedergeschlagenheit und nach Suizidgedanken. Welche Formulierung passt?",
+      "options": [
+        "Sie denken doch nicht daran, sich etwas anzutun, oder?",
+        "Haben Sie suizidale Ideationen oder parasuizidale Handlungen, und wie schwer ist Ihre depressive Verstimmung nach der Hamilton-Skala oder dem Beck-Depressions-Inventar einzustufen?",
+        "Wie schlecht ist Ihre Stimmung auf einer Skala von 0 bis 10, wenn 10 die beste ist? Und haben Sie schon einmal daran gedacht, sich das Leben zu nehmen?",
+        "Reden wir lieber nicht über so schlimme Dinge. Wie ist denn Ihre Stimmung?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Suggestivfrage: Sie legen dem Patienten die Antwort „nein“ in den Mund.",
+        "Nur Fachbegriffe („suizidale Ideationen“, „parasuizidal“, „Hamilton-Skala“). Fragen Sie verständlich und direkt.",
+        "Richtig: übliche Skala von 0 bis 10 und eine direkte, einfühlsame Frage nach Suizidgedanken.",
+        "Falsch: Suizidalität muss offen angesprochen werden. Das Thema zu meiden ist gefährlich."
+      ],
+      "reply": "Patient: „Bei 2 von 10. Ja, seit etwa zwei Wochen denke ich fast jeden Tag daran, mir das Leben zu nehmen. Ich habe an Tabletten gedacht, aber nichts vorbereitet. Wegen meiner Kinder habe ich es bisher nicht getan.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Leiden Sie an Insomnie, Anhedonie, Konzentrationsstörungen und Schuldgefühlen, und gab es Halluzinationen, Wahnideen, eine psychomotorische Agitation oder einen Stupor?",
+        "Haben Sie auch noch andere Beschwerden?",
+        "Sie schlafen bestimmt schlecht und können sich nicht konzentrieren.",
+        "Wie schlafen Sie? Können Sie sich konzentrieren und sich noch über etwas freuen? Machen Sie sich Vorwürfe? Hören oder sehen Sie Dinge, die andere nicht wahrnehmen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „schlafen“, „konzentrieren“, „freuen“, „Vorwürfe“.",
+        "Zu allgemein; der Patient sagt einfach „nein“.",
+        "Suggestivfrage: Sie unterstellen die Symptome.",
+        "Richtig: Schlaf, Konzentration, Freude, Schuldgefühle und psychotische Symptome in Laiensprache."
+      ],
+      "reply": "Patient: „Ich wache jeden Morgen gegen vier Uhr auf und grübele. Konzentrieren kann ich mich kaum, und nichts macht mir mehr Freude. Ich mache mir große Vorwürfe. Stimmen höre ich nicht, und ich sehe auch nichts, was nicht da ist.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie ist Ihr Appetit, und hat sich Ihr Gewicht verändert? Wie sind Stuhlgang und Wasserlassen? Hatten Sie Fieber? Wie ist Ihr Interesse an Sexualität?",
+        "Wie ist die Vegetativa?",
+        "Haben Sie Libidoverlust, Inappetenz, Gewichtsabnahme, Obstipation und Nykturie, und bestehen Fieber, Nachtschweiß oder eine sonstige B-Symptomatik?",
+        "Essen und Verdauung sind sicher normal, oder?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Appetit, Gewicht, Stuhlgang, Wasserlassen, Fieber und Libido in Laiensprache.",
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Libidoverlust, Inappetenz, Nykturie).",
+        "Suggestiv und zu allgemein; der Patient sagt einfach „ja“."
+      ],
+      "reply": "Patient: „Appetit habe ich kaum, ich habe in drei Monaten sechs Kilo abgenommen. Stuhlgang und Wasserlassen sind normal, Fieber hatte ich nicht. Interesse an Sex habe ich keins mehr.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Hatten Sie schon einmal psychische Erkrankungen, einen Suizidversuch oder eine stationäre psychiatrische Behandlung, und wie lange ist das her?",
+        "Haben Sie körperliche Erkrankungen, zum Beispiel Bluthochdruck, Zucker oder etwas mit der Schilddrüse? Waren Sie schon einmal wegen seelischer Probleme in Behandlung? Wurden Sie operiert?",
+        "Sind Sie sonst gesund?",
+        "Welche Diagnosen und welche ICD-Codes stehen in Ihrer Akte?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu eng: körperliche Erkrankungen und Operationen fehlen.",
+        "Richtig: körperliche und seelische Vorerkrankungen mit Beispielen, und die Operationen sind mitgefragt.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Der Patient kennt keine ICD-Codes. Fragen Sie direkt."
+      ],
+      "reply": "Patient: „Ich habe Bluthochdruck. Vor acht Jahren hatte ich schon einmal eine Depression, da war ich bei einer Psychotherapeutin und habe ein Jahr lang Sertralin genommen. Einen Suizidversuch hatte ich nie. Operiert wurde ich vor zehn Jahren an einem Leistenbruch.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Tabletten?",
+        "Sie nehmen sicher Antidepressiva, oder?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch pflanzliche Mittel oder Mittel ohne Rezept?",
+        "Welche Psychopharmaka, Phytopharmaka und Analgetika applizieren Sie derzeit, und in welcher Dosierung und Applikationsform?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu ungenau: Dosis und pflanzliche Mittel fehlen.",
+        "Suggestivfrage. Fragen Sie offen.",
+        "Richtig: Name, Dosierung und auch pflanzliche und frei verkäufliche Mittel.",
+        "Fachsprache („Psychopharmaka“, „Phytopharmaka“, „applizieren“)."
+      ],
+      "reply": "Patient: „Ramipril 5 mg morgens. Und seit vier Wochen nehme ich Johanniskraut-Kapseln aus der Apotheke, 300 mg morgens und abends.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Allergien?",
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Pollen oder Lebensmittel? Wie äußert sich das?",
+        "Sind Sie allergisch gegen Penicillin? Das ist wichtig, weil wir bei vielen Erkrankungen Antibiotika einsetzen, und Penicillin nehmen wir am häufigsten.",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Zu eng: Allergien gegen andere Medikamente, Pollen oder Lebensmittel übersehen Sie.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patient: „Gegen Gräserpollen, dann habe ich im Frühling Niesen und tränende Augen. Gegen Medikamente bin ich nicht allergisch.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucher oder Alkoholiker?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus?",
+        "Trinken Sie wegen Ihrer Probleme zu viel? Das sollten Sie lassen, denn Alkohol macht bei einer Depression alles nur schlimmer.",
+        "Rauchen Sie, und wenn ja, wie viel? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen oder Beruhigungsmittel?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Alkoholiker“ ist wertend und verletzend.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Wertend und belehrend, und Sie erfahren keine Menge.",
+        "Richtig: neutral, konkret, mit Menge, auch nach Drogen und Beruhigungsmitteln."
+      ],
+      "reply": "Patient: „Ich rauche seit 20 Jahren eine Schachtel am Tag. Alkohol trinke ich seit einigen Wochen jeden Abend zwei bis drei Bier, damit ich schlafen kann. Drogen nehme ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Gibt es in Ihrer Familie seelische Erkrankungen, zum Beispiel Depressionen, Suchterkrankungen oder Suizide? Und welche anderen Erkrankungen kommen vor?",
+        "Wie ist die Familienanamnese?",
+        "Hat Ihre Familie auch Depressionen?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Wie viele Geschwister haben Sie, und was machen diese beruflich?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit passenden Beispielen, auch nach Suiziden in der Familie.",
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Zu eng und geschlossen: Sucht, Suizide und andere Erkrankungen erfahren Sie so nicht.",
+        "Zu eng: seelische Erkrankungen und Suizide in der Familie erfahren Sie so nicht."
+      ],
+      "reply": "Patient: „Meine Mutter hat Depressionen und ist in Behandlung. Ihr Bruder hat sich vor vielen Jahren das Leben genommen. Mein Vater ist mit 68 an einem Herzinfarkt gestorben.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, wie viele Personen leben in Ihrem Haushalt, und wie lautet Ihre genaue Adresse?",
+        "Haben Sie Geldsorgen? Ist das der Grund, warum es Ihnen so schlecht geht?",
+        "Was machen Sie beruflich? Wie wohnen Sie, und wer unterstützt Sie im Alltag?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Suggestivfrage und nur ein Thema; Beruf und Wohnsituation fehlen.",
+        "Richtig: Beruf, Wohnsituation und Unterstützung, wichtig für die Einschätzung der Suizidalität und die Versorgung."
+      ],
+      "reply": "Patient: „Ich bin Projektleiter in einem Maschinenbauunternehmen, seit sechs Wochen krankgeschrieben. Ich bin verheiratet und wohne mit meiner Frau und unseren zwei Kindern, 12 und 15 Jahre alt, in einem Haus. Meine Frau macht sich große Sorgen.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben eine schwere depressive Episode mit akuter Suizidalität.",
+        "Ich vermute, dass Sie an einer Depression leiden. Das ist eine ernste, aber gut behandelbare Erkrankung. Es war richtig, dass Sie mir von Ihren Gedanken erzählt haben.",
+        "Das ist nur eine Phase. Sie müssen sich einfach mehr zusammenreißen, dann geht es von allein vorbei, und Ihre Kinder brauchen Sie doch.",
+        "Sie sind sicher nicht wirklich suizidal. Das sagen viele Patienten, wenn sie erschöpft sind."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache und eine Gewissheit, die Sie noch nicht haben; der Patient versteht die Diagnose nicht.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, Entlastung und Wertschätzung.",
+        "Abwertend und schuldzuweisend; eine Depression ist eine Krankheit, keine Schwäche.",
+        "Verharmlosend und gefährlich: Suizidgedanken müssen immer ernst genommen werden."
+      ],
+      "reply": "Patient: „Eine Depression? Ich dachte, ich bin einfach nur schwach. Was passiert jetzt mit mir? Kann ich nach Hause gehen?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Herr Berger fragt: „Kann ich nach Hause gehen?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, gehen Sie nach Hause und kommen Sie in einer Woche wieder, dann sehen wir weiter.",
+        "Das entscheidet allein der Oberarzt, ich weiß es nicht.",
+        "Zuerst nehmen wir Blut ab und machen ein EKG, um körperliche Ursachen auszuschließen. Wegen Ihrer Gedanken, sich das Leben zu nehmen, empfehle ich Ihnen dringend eine Aufnahme auf unserer Station, damit Sie sicher sind. Dort bekommen Sie Medikamente und Gespräche. Das besprechen wir auch mit Ihrer Frau.",
+        "Sie bekommen sofort ein Antidepressivum, das schon nach zwei Tagen wirkt, und dann sind auch die Suizidgedanken weg. Eine Aufnahme brauchen Sie dann nicht mehr, Sie können heute noch mit Ihrer Frau nach Hause fahren."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gefährlich: bei aktuellen Suizidgedanken ist eine Entlassung ohne Schutz nicht vertretbar.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Richtig: nächste Schritte, ehrliche Empfehlung zum Schutz des Patienten und Einbezug der Familie.",
+        "Falsch: Antidepressiva wirken erst nach zwei bis vier Wochen, und bei Suizidalität ist die Aufnahme angezeigt."
+      ],
+      "reply": "Patient: „Gut. Ich habe Angst, aber ich bleibe. Danke, dass Sie mir zugehört haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Thomas Berger, ein 45-jähriger Patient, stellte sich heute in Begleitung seiner Ehefrau in unserer Notaufnahme mit seit drei Monaten bestehender Niedergeschlagenheit und Suizidgedanken vor.",
+        "Herr Berger ist 45 und total fertig.",
+        "Herr Thomas Berger (45 J.) hat sich heute in unserer Notaufnahme vorgestellt, weil er seit drei Wochen bestehende Niedergeschlagenheit und Suizidgedanken hat, begleitet von seiner Ehefrau.",
+        "Herr Thomas Berger, ein 45-jähriger Patient, stellte sich heute in Begleitung seiner Ehefrau in unserer Notaufnahme mit seit drei Monate bestehender Niedergeschlagenheit und Suizidgedanken vor."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptome.",
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Inhaltlich falsch: die Beschwerden bestehen seit drei Monaten, nicht seit drei Wochen.",
+        "Grammatik: nach „seit“ steht der Dativ, also „seit drei Monaten bestehender“."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Er ist seit drei Monaten traurig und denkt seit zwei Wochen manchmal ans Sterben.",
+        "Die Beschwerden bestehen seit drei Monaten, seit vier Wochen progredient, mit Suizidgedanken seit zwei Wochen und einem Suizidversuch mit Tabletten vor einer Woche. Die Stimmung wurde mit NRS 2/10 angegeben.",
+        "Die Beschwerden bestehen seit etwa drei Monaten, begannen schleichend nach der Ankündigung eines Stellenabbaus und sind seit vier Wochen progredient. Es bestehen eine gedrückte Stimmung mit Morgentief (NRS 2/10) und Kraftlosigkeit. Seit zwei Wochen bestehen fast täglich Suizidgedanken, Suizidhandlungen wurde verneint.",
+        "Die Beschwerden bestehen seit etwa drei Monaten, begannen schleichend nach der Ankündigung eines Stellenabbaus und sind seit vier Wochen progredient. Es bestehen eine gedrückte Stimmung mit Morgentief (NRS 2/10) und Kraftlosigkeit. Seit zwei Wochen bestehen fast täglich Suizidgedanken mit Gedanken an eine Tabletteneinnahme, jedoch ohne konkrete Vorbereitung; Suizidhandlungen wurden verneint."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe und Details.",
+        "Inhaltlich falsch: Ein Suizidversuch wurde verneint; es gab nur Gedanken an eine Tabletteneinnahme ohne Vorbereitung.",
+        "Grammatik: Subjekt „Suizidhandlungen“ steht im Plural, daher „wurden verneint“. Außerdem fehlt die Angabe zur Vorbereitung.",
+        "Richtig: Fachsprache und alle Merkmale (Beginn, Auslöser, Verlauf, Stimmung, Suizidalität mit Negativbefund)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Er schläft schlecht, isst nichts mehr und hat abgenommen.",
+        "Begleitend berichtete der Patient über Früherwachen gegen 4 Uhr, Grübeln, Konzentrationsstörungen, Anhedonie und Schuldgefühle. Es bestehen Appetitlosigkeit mit Gewichtsverlust von 6 kg in drei Monaten sowie Libidoverlust. Fieber und Halluzinationen wurden verneint, Stuhlgang und Miktion sind unauffällig.",
+        "Begleitend berichtete der Patient über Hypersomnie, Grübeln, Konzentrationsstörungen, Anhedonie und Schuldgefühle. Es bestehen eine Gewichtszunahme von 6 kg in drei Monaten sowie Libidoverlust. Fieber und Halluzinationen wurden verneint.",
+        "Begleitend berichtete der Patient über Früherwachen, Grübeln und Anhedonie sowie Appetitlosigkeit. Er höre Stimmen, die ihm befehlen, sich das Leben zu nehmen. Fieber wurde verneint."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Laiensprache und unvollständig; Negativbefunde fehlen.",
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Inhaltlich falsch: Der Patient wacht früh auf (Früherwachen) und hat 6 kg abgenommen.",
+        "Inhaltlich falsch: Der Patient hört keine Stimmen, Halluzinationen wurden verneint."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Bluthochdruck, schon mal Depression. Medikamente: Ramipril, Johanniskraut.",
+        "An Vorerkrankungen sind eine arterielle Hypotonie sowie ein Suizidversuch vor acht Jahren bekannt. Z. n. Cholezystektomie vor zehn Jahren. Medikation: Ramipril 5 mg 1-0-0, Johanniskraut 300 mg 1-0-1.",
+        "An Vorerkrankungen sind eine arterielle Hypertonie und eine depressive Episode vor acht Jahren (Psychotherapie, Sertralin über ein Jahr, kein Suizidversuch) bekannt. Z. n. Leistenhernien-Operation vor zehn Jahren. Medikation: Ramipril 5 mg 1-0-0, Johanniskraut 300 mg 1-0-1 seit vier Wochen.",
+        "Medikation: Ramipril 5 mg 0-0-1, Johanniskraut 300 mg 1-1-1, Sertralin 50 mg 1-0-0."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Inhaltlich falsch: Hypertonie (nicht Hypotonie), es gab keinen Suizidversuch, und operiert wurde ein Leistenbruch.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierschema im Format morgens-mittags-abends.",
+        "Dosierschema falsch (Ramipril morgens 1-0-0, Johanniskraut 1-0-1), und Sertralin nimmt der Patient aktuell nicht."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Pollinose (Gräserpollen) mit Rhinokonjunktivitis, keine Medikamentenallergie. Nikotinkonsum ca. 20 py, seit einigen Wochen täglich 2–3 Bier, keine Drogen. Familienanamnese: Mutter Depression, Onkel mütterlicherseits Suizid, Vater Myokardinfarkt mit 68 J. Der Patient ist Projektleiter, verheiratet, lebt mit Ehefrau und zwei Kindern (12 und 15 J.), seit sechs Wochen krankgeschrieben.",
+        "Penicillinallergie (Exanthem). Nikotinkonsum ca. 10 py, gelegentlich Alkohol, keine Drogen. Familienanamnese: leer. Der Patient ist Projektleiter, verheiratet, lebt mit Ehefrau und zwei Kindern (12 und 15 J.).",
+        "Allergie: keine. Noxen: raucht und trinkt Bier. Er arbeitet als Projektleiter und wohnt mit Familie.",
+        "Pollinose (Gräserpollen). Nikotinkonsum ca. 20 py, täglich 2–3 Bier. Der Patient ist Projektleiter, verheiratet, lebt mit seine Ehefrau und zwei Kindern, seit sechs Wochen krankgeschrieben."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: eine Schachtel (20 Zigaretten) täglich über 20 Jahre sind 20 py (pack years = Packungsjahre); Familienanamnese und Sozialanamnese vollständig.",
+        "Falsch: Es gibt keine Penicillinallergie, und 20 Zigaretten über 20 Jahre sind 20 py. Die Familienanamnese ist belastet.",
+        "Laiensprache und unvollständig; die Pollinose und die Menge fehlen.",
+        "Grammatik: „mit seiner Ehefrau“ (Dativ nach „mit“). Außerdem fehlt die Familienanamnese."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Burn-out-Syndrom.",
+        "Anamnestisch besteht der Verdacht auf eine rezidivierende depressive Störung, aktuell schwere Episode ohne psychotische Symptome, mit Suizidalität. Differenzialdiagnostisch kommen eine Hypothyreose, eine alkoholinduzierte depressive Störung und eine bipolare Störung in Betracht.",
+        "Anamnestisch besteht der Verdacht auf eine leichte depressive Episode ohne Suizidalität. Differenzialdiagnostisch kommen eine Anpassungsstörung, ein Erschöpfungszustand nach Überlastung und eine Hyperthyreose in Betracht.",
+        "Es besteht eine gesicherte Schizophrenie mit Befehlshalluzinationen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Burn-out“ ist keine Diagnose nach ICD, und es gibt weder Verdacht noch Differenzialdiagnosen.",
+        "Richtig: Verdacht statt Gewissheit, Schweregrad, Suizidalität und sinnvolle Differenzialdiagnosen.",
+        "Unterschätzt den Fall: Der Patient hat Suizidgedanken und eine schwere Symptomatik.",
+        "Falsch: Der Patient hört keine Stimmen, und die Diagnose ist nicht gesichert."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir empfehlen eine ambulante Weiterbehandlung bei der Hausärztin mit Wiedervorstellung in vier Wochen sowie den Beginn von Sertralin 50 mg 1-0-0 zusätzlich zum Johanniskraut.",
+        "Wir empfehlen die Gabe von Amitriptylin 150 mg 1-0-0 ab dem ersten Tag und eine ambulante Weiterbehandlung, da trizyklische Antidepressiva am stärksten wirken.",
+        "Wir machen Blut und schicken ihn dann nach Hause.",
+        "Wir empfehlen eine stationäre Aufnahme auf der psychiatrischen Station zum Schutz vor Eigengefährdung, möglichst freiwillig, mit täglicher Einschätzung der Suizidalität. Diagnostisch: Blutbild, CRP, Elektrolyte, Leber- und Nierenwerte, TSH, Glukose, Vitamin B12, Drogenscreening und EKG. Therapeutisch: nach Absetzen des Johanniskrauts Beginn eines SSRI in Kombination mit Psychotherapie."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Gefährlich: Bei Suizidgedanken ist die ambulante Behandlung nicht ausreichend, und SSRI plus Johanniskraut kann ein Serotoninsyndrom auslösen.",
+        "Gefährlich: Amitriptylin ist bei Überdosierung toxisch (Herzrhythmusstörungen); bei Suizidalität ist es keine erste Wahl, und ambulant ist unzureichend.",
+        "Zu umgangssprachlich und unvollständig; die Suizidalität wird nicht berücksichtigt.",
+        "Richtig: Schutz, Diagnostik und Therapie in vollständigen Sätzen, mit Blick auf das Johanniskraut."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Der Mann ist traurig und will sich umbringen.",
+        "Herr Berger hat eine schwere Depression.",
+        "Ich möchte Ihnen Herrn Thomas Berger vorstellen, einen 45-jährigen Patienten, der sich heute mit seit drei Monaten bestehender Niedergeschlagenheit und seit zwei Wochen bestehenden Suizidgedanken vorgestellt hat.",
+        "Ich möchte Ihnen Herrn Thomas Berger vorstellen, einen 45-jährigen Patienten, der sich heute mit seit drei Wochen bestehender Niedergeschlagenheit und nach einem Suizidversuch mit Tabletten vorgestellt hat."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Richtig: Name, Alter, Leitsymptom und zeitlicher Verlauf in einem Satz.",
+        "Inhaltlich falsch: Die Beschwerden bestehen seit drei Monaten, und es gab keinen Suizidversuch."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Die Stimmung liegt bei 2 von 10 mit Morgentief, Früherwachen, Anhedonie, Konzentrationsstörungen und Gewichtsverlust von 6 kg. Es bestehen fast täglich Suizidgedanken ohne konkrete Vorbereitung; Suizidversuche und Halluzinationen wurden verneint. Schutzfaktoren sind die Kinder und die Ehefrau.",
+        "Der Patient berichtet über Stimmenhören, einen früheren Suizidversuch und eine gehobene Stimmung mit vermindertem Schlafbedürfnis und erhöhtem Antrieb.",
+        "Er ist traurig und hat keine Lust auf nichts.",
+        "Die Stimmung liegt bei 8 von 10 mit Abendtief, Hypersomnie, Gewichtszunahme und gesteigertem Appetit. Suizidgedanken wurden verneint, ebenso Halluzinationen. Der Patient hat keine Schutzfaktoren, lebt allein und ist seit Jahren arbeitslos."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: knapp, strukturiert, mit Suizidalität, Negativbefunden und Schutzfaktoren.",
+        "Inhaltlich falsch: Stimmenhören und Suizidversuche wurden verneint, und die Stimmung ist gedrückt, nicht gehoben.",
+        "Umgangssprachlich und ohne Informationen zur Suizidalität.",
+        "Inhaltlich falsch: Die Stimmung liegt bei 2 von 10, es bestehen Suizidgedanken, und der Patient lebt mit Frau und Kindern."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist körperlich gesund und hatte nie psychische Erkrankungen.",
+        "Bekannt ist eine arterielle Hypertonie unter Ramipril. Vor acht Jahren bestand eine depressive Episode, behandelt mit Psychotherapie und einem Jahr Sertralin, ohne Suizidversuch. Aktuell nimmt er Johanniskraut ein, was bei einem SSRI zu beachten ist. Er raucht ca. 20 py und trinkt seit Wochen täglich 2–3 Bier. Die Mutter hat eine Depression, ein Onkel starb durch Suizid.",
+        "Bekannt ist ein Diabetes mellitus Typ 2. Die Depression ist neu, es gibt keine Familienanamnese und keinen Alkoholkonsum.",
+        "Bekannt ist eine arterielle Hypertonie. Vor acht Jahren gab es einen Suizidversuch, aktuell nimmt er Sertralin 50 mg 1-0-0 ein. Er raucht ca. 10 py und trinkt keinen Alkohol. Die Familienanamnese ist leer."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: Es gibt eine frühere Depression und eine Hypertonie.",
+        "Richtig: relevante Vorgeschichte, frühere Episode, Johanniskraut als Wechselwirkungsrisiko und die belastete Familie.",
+        "Inhaltlich falsch: Bluthochdruck statt Diabetes, die Depression ist rezidivierend, und die Familie ist belastet.",
+        "Inhaltlich falsch: Es gab keinen Suizidversuch, er nimmt Johanniskraut statt Sertralin, 20 py, und er trinkt Alkohol."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an Burn-out.",
+        "Es handelt sich sicher um eine Schizophrenie, weil der Patient sich zurückzieht. Differenzialdiagnostisch denke ich höchstens noch an eine Anpassungsstörung und eine Demenz.",
+        "Ich weiß es nicht genau.",
+        "Ich vermute eine rezidivierende depressive Störung, aktuell schwere Episode ohne psychotische Symptome, mit akuter Suizidalität. Differenzialdiagnostisch denke ich an eine Hypothyreose, eine alkoholinduzierte depressive Störung und eine bipolare Störung."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Keine Diagnose nach ICD und zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "Zu sicher („sicher“), und eine Schizophrenie ist hier nicht wahrscheinlich: es gibt keine psychotischen Symptome.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
+        "Richtig: Verdachtsdiagnose mit Schweregrad und Differenzialdiagnosen in Fachsprache."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde ihn mit einem Termin beim Hausarzt nach Hause schicken und in vier Wochen wiedersehen.",
+        "Ich würde Amitriptylin 150 mg 1-0-0 verordnen und den Patienten ambulant behandeln, weil trizyklische Antidepressiva am stärksten wirken.",
+        "Ich würde den Patienten wegen akuter Suizidalität stationär aufnehmen, möglichst freiwillig, und die Suizidalität täglich strukturiert einschätzen. Ich würde Blut mit TSH, Entzündungs-, Leber- und Nierenwerten, Vitamin B12 und ein EKG veranlassen, das Johanniskraut absetzen und ein SSRI wie Sertralin beginnen, kombiniert mit Psychotherapie.",
+        "Ich würde Sertralin zusätzlich zum Johanniskraut geben, damit die Wirkung schneller eintritt, und den Patienten dazu zur Sicherheit stationär aufnehmen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gefährlich: Bei Suizidgedanken ist eine Entlassung ohne Schutz nicht vertretbar.",
+        "Gefährlich: Amitriptylin ist bei Überdosierung toxisch und bei Suizidalität keine erste Wahl; ambulant ist nicht ausreichend.",
+        "Richtig: Schutz, Diagnostik und Therapie nach Leitlinie (NVL Unipolare Depression), mit Blick auf das Johanniskraut.",
+        "Gefährlich: SSRI plus Johanniskraut kann ein Serotoninsyndrom auslösen; das Johanniskraut muss vorher abgesetzt werden."
+      ],
+      "reply": "Oberarzt: „Gut. Welches Medikament würden Sie zuerst geben, und worauf achten Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich würde Amitriptylin geben, weil es am besten wirkt und bei einer Überdosierung relativ sicher ist.",
+        "Ich würde Lorazepam 2,5 mg 1-1-1 als Dauertherapie geben, weil es die Depression heilt und der Patient damit sofort schlafen kann.",
+        "Ich würde ein SSRI wie Sertralin 50 mg 1-0-0 geben und das Johanniskraut weiternehmen lassen, weil es die Wirkung verstärkt. Die Wirkung tritt nach etwa zwei Tagen ein, sodass der Patient danach nicht mehr stationär bleiben muss und entlassen werden kann.",
+        "Ich würde ein SSRI wie Sertralin geben, zum Beispiel 50 mg 1-0-0. Das Johanniskraut muss vorher abgesetzt werden, wegen des Risikos eines Serotoninsyndroms. Ich kläre über die Wirklatenz von zwei bis vier Wochen auf und kontrolliere Natrium und EKG."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch: Amitriptylin ist bei Überdosierung gefährlich, und bei einem suizidalen Patienten keine erste Wahl.",
+        "Falsch: Benzodiazepine heilen keine Depression und machen bei Dauergabe abhängig; höchstens kurzfristig bei Unruhe.",
+        "Gefährlich und falsch: Johanniskraut plus SSRI birgt das Risiko eines Serotoninsyndroms, und die Wirklatenz beträgt zwei bis vier Wochen.",
+        "Richtig: SSRI als Mittel der ersten Wahl, Johanniskraut absetzen, Wirklatenz und Kontrollen."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Anhedonie“?",
+      "options": [
+        "Schlafstörung",
+        "Verlust der Fähigkeit, Freude zu empfinden",
+        "Angst vor Menschenmengen",
+        "Gedankenkreisen"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Insomnie.",
+        "Richtig.",
+        "Das ist die Agoraphobie.",
+        "Das ist das Grübeln (Rumination)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Suizidalität“?",
+      "options": [
+        "Neigung zu Wutausbrüchen",
+        "starke Traurigkeit",
+        "Gedanken, Pläne oder Handlungen, sich das Leben zu nehmen",
+        "Selbstverletzung ohne Tötungsabsicht"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Impulsivität bzw. Aggressivität.",
+        "Das ist die depressive Verstimmung.",
+        "Richtig.",
+        "Das ist das selbstverletzende Verhalten."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Insomnie“?",
+      "options": [
+        "Ein- oder Durchschlafstörung",
+        "übermäßiges Schlafbedürfnis",
+        "nächtliches Aufschrecken mit Schreien",
+        "Schlafwandeln"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Hypersomnie.",
+        "Das ist der Pavor nocturnus.",
+        "Das ist der Somnambulismus."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Absprachefähigkeit“?",
+      "options": [
+        "Fähigkeit, die Tragweite einer Behandlung zu verstehen",
+        "Fähigkeit, sich glaubhaft von Suizidabsichten zu distanzieren und Absprachen einzuhalten",
+        "Erlaubnis, Informationen an Angehörige weiterzugeben",
+        "Fähigkeit, das eigene Handeln zu steuern"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Einwilligungsfähigkeit.",
+        "Richtig.",
+        "Das ist die Entbindung von der Schweigepflicht.",
+        "Das ist die Steuerungsfähigkeit."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Stupor“?",
+      "options": [
+        "Fehlen von Bewegung und Sprache bei wachem Bewusstsein",
+        "Bewusstlosigkeit",
+        "starke innere Unruhe mit Bewegungsdrang",
+        "Verwirrtheit mit Desorientierung"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist das Koma.",
+        "Das ist die psychomotorische Agitiertheit.",
+        "Das ist das Delir."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

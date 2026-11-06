@@ -1,0 +1,691 @@
+{
+  "id": "hodentorsion",
+  "area": "Nephrologie/Urologie",
+  "title": "Plötzliche starke Schmerzen im Hodensack",
+  "diagnosis": "Hodentorsion",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Lukas Becker, 16 Jahre, stellt sich um 23 Uhr mit seiner Mutter in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Becker sitzt gekrümmt auf der Liege, seine Mutter steht neben ihm.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Abend, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Lukas Becker?",
+        "Guten Abend. Bevor wir anfangen: Haben Sie die Versichertenkarte Ihrer Eltern dabei, und hat Ihre Mutter die Einverständniserklärung schon unterschrieben? Die brauchen wir zuerst für die Anmeldung.",
+        "Hallo, du da, was hast du denn angestellt?",
+        "Guten Abend. Bitte ziehen Sie sich sofort die Hose aus, ich untersuche jetzt Ihren Unterleib."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor.",
+        "Zu umgangssprachlich und unhöflich, außerdem ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Die körperliche Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen."
+      ],
+      "reply": "Patient: „Ja, ich bin Lukas. Das ist meine Mutter.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie ist Ihr Body-Mass-Index, und in welcher Perzentile liegen Sie?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Sie sind doch noch nicht volljährig, oder?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Schülerausweis, und bei welcher Krankenkasse sind Sie familienversichert?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "BMI und Perzentile kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
+      ],
+      "reply": "Patient: „Ich bin 16, 1,78 Meter groß und wiege 68 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Schmerzen im Unterleib?",
+        "Welche Symptomatik führt Sie zu uns?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Warum kommen Sie erst jetzt mitten in der Nacht in die Notaufnahme? Das hätte doch auch bis morgen Zeit gehabt."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
+      ],
+      "reply": "Patient: „Seit heute Abend habe ich ganz starke Schmerzen unten links im Hodensack.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten wissen, auf welcher Seite der Schmerz sitzt und ob er ausstrahlt. Was sagen Sie?",
+      "options": [
+        "Ist der Schmerz skrotal lokalisiert, und strahlt er inguinal oder abdominal aus?",
+        "Es ist bestimmt der linke Hoden, und der Schmerz zieht in die Leiste, oder?",
+        "Ist der Schmerz im Bauch?",
+        "Wo genau tut es weh: rechts, links oder auf beiden Seiten? Zieht der Schmerz irgendwohin, zum Beispiel in die Leiste oder in den Bauch?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Skrotal“, „inguinal“ und „abdominal“ sind Fachwörter; der Patient versteht sie nicht.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
+        "Zu eng und zu ungenau: Seite und Ausstrahlung erfahren Sie so nicht.",
+        "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben."
+      ],
+      "reply": "Patient: „Nur links. Es zieht hoch bis in die Leiste und in den Unterbauch.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch rezidivierend, und gibt es eine Progredienz oder Regredienz?",
+        "Wann genau hat es angefangen, und was haben Sie in dem Moment gemacht? Ist es seitdem besser, schlechter oder gleich geblieben?",
+        "Seit wann haben Sie die Schmerzen?",
+        "Hat es plötzlich angefangen?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „rezidivierend“ versteht der Patient nicht.",
+        "Richtig: Beginn, Situation und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Das hat der Patient schon gesagt (seit heute Abend). Fragen Sie nach Auslöser und Verlauf.",
+        "Geschlossene Frage; sie erfasst den Verlauf und die Situation nicht."
+      ],
+      "reply": "Patient: „Um etwa 20 Uhr, ich saß vor dem Fernseher. Es kam von einer Sekunde auf die andere und wird seitdem schlimmer. Gestoßen oder gefallen bin ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "options": [
+        "Wie würden Sie die Schmerzen beschreiben, eher stechend, ziehend oder dumpf? Und wie stark sind sie auf einer Skala von 0 bis 10?",
+        "Sind die Schmerzen kolikartig oder neuralgiform?",
+        "Wie stark sind die Schmerzen auf einer Skala von 1 bis 100, wobei 100 der schlimmste vorstellbare Schmerz wäre, den ein Mensch haben kann?",
+        "Ist es sehr schlimm?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10.",
+        "„Kolikartig“ und „neuralgiform“ sind Fachsprache. Beschreiben Sie es mit Wörtern wie „stechend“ oder „ziehend“.",
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS), und die Frage nach der Art fehlt.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe."
+      ],
+      "reply": "Patient: „Es ist ein stechender Schmerz, die ganze Zeit, 9 von 10.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Hatten Sie Nausea oder Emesis, Fieber, Dysurie oder Urethralausfluss, und ist Ihnen eine Skrotalschwellung oder ein Hodenhochstand aufgefallen?",
+        "Sie haben bestimmt auch erbrochen und Fieber.",
+        "Ist Ihnen übel, mussten Sie sich übergeben? Haben Sie Fieber, Brennen beim Wasserlassen oder Ausfluss bemerkt? Ist der Hoden angeschwollen oder verändert?",
+        "Haben Sie sonst noch was?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „übel“, „erbrechen“, „Brennen beim Wasserlassen“, „Schwellung“.",
+        "Suggestiv: Sie unterstellen die Symptome.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive der Fragen nach Infektzeichen und Schwellung.",
+        "Zu umgangssprachlich und unkonkret."
+      ],
+      "reply": "Patient: „Mir ist übel, und ich habe einmal erbrochen. Fieber, Brennen oder Ausfluss habe ich nicht. Der Hoden ist dick geworden und sitzt irgendwie höher.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie ist die Vegetativa?",
+        "Haben Sie Schüttelfrost, Nachtschweiß, Gewichtsverlust, Dysurie, Obstipation, Diarrhö, Pollakisurie und eine veränderte Libido in den letzten Wochen?",
+        "Ist sonst alles normal bei Ihnen?",
+        "Haben Sie Fieber gemessen? Wie sind Appetit, Stuhlgang und Wasserlassen? Ist der Urin klar oder blutig?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Obstipation, Diarrhö).",
+        "Zu allgemein; der Patient sagt einfach „ja“.",
+        "Richtig: Fieber, Appetit, Stuhlgang, Wasserlassen in Laiensprache, mit gezieltem Blick auf den Urin."
+      ],
+      "reply": "Patient: „Meine Mutter hat vorhin 36,9 Grad gemessen. Appetit habe ich wegen der Übelkeit keinen. Stuhlgang und Wasserlassen sind normal, der Urin ist klar.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie ein Asthma bronchiale, eine Atopie oder ein Hodentrauma, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel Asthma oder Heuschnupfen? Wurden Sie schon einmal operiert? Hatten Sie schon einmal ähnliche Beschwerden?",
+        "Sind Sie gesund?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („Atopie“, „Hodentrauma“, „stationäre Aufenthalte“). Mit Patienten sprechen Sie Laiensprache.",
+        "Richtig: mit Beispielen, laienverständlich, und Operationen sowie frühere ähnliche Beschwerden sind mitgefragt.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patient: „Ich habe Heuschnupfen. Mit sechs wurden mir die Mandeln rausgenommen. Vor etwa drei Monaten hatte ich nachts schon mal kurz so einen Schmerz, der ging von allein weg.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept?",
+        "Nehmen Sie Tabletten?",
+        "Welche Pharmaka applizieren Sie?",
+        "Sie nehmen doch sicher Ibuprofen gegen die Schmerzen und vielleicht auch noch Tabletten gegen Heuschnupfen oder Asthma?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Name, Dosierung und frei verkäufliche Mittel.",
+        "Zu ungenau: Dosis und andere Darreichungsformen fehlen.",
+        "Fachsprache („Pharmaka“, „applizieren“).",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Cetirizin 10 mg abends gegen den Heuschnupfen. Heute um 21 Uhr habe ich eine Ibuprofen 400 genommen, geholfen hat es nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Allergie?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
+        "Sind Sie hypersensibel?",
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Zu eng: Allergien gegen andere Medikamente, Lebensmittel oder Pflaster übersehen Sie.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl.",
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion."
+      ],
+      "reply": "Patient: „Gegen Haselnüsse. Dann schwellen mir die Lippen und die Zunge an.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucher oder trinken Sie regelmäßig Alkohol?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus?",
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
+        "Trinken Sie etwa heimlich Alkohol, obwohl Sie noch so jung sind, und kiffen Sie vielleicht auch mit Ihren Freunden?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Geschlossen und ungenau: Mengen und Drogen fehlen.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Richtig: neutral, konkret, mit Menge.",
+        "Wertend und unterstellend. So verliert ein Jugendlicher das Vertrauen."
+      ],
+      "reply": "Patient: „Nein, ich rauche nicht. Auf Partys trinke ich manchmal ein Bier. Drogen nehme ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel an den Hoden, am Herzen oder Krebs? Wurde jemand an den Hoden operiert?",
+        "Sind Ihre Eltern und Ihr Bruder gesund, und wenn nicht: Seit wann sind sie krank? Das interessiert mich besonders.",
+        "Hat Ihre Familie dieselbe Krankheit?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Richtig: offen, mit passenden Beispielen, und die Operation am Hoden ist gezielt mitgefragt.",
+        "Zu eng: Onkel, Großeltern und andere Verwandte fehlen, und häufige Erkrankungen erfahren Sie so nicht.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
+      ],
+      "reply": "Patient: „Mein Vater hat Bluthochdruck. Mein Onkel, der Bruder von meinem Vater, wurde als Jugendlicher am Hoden operiert, wegen einer Verdrehung.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Gehen Sie noch zur Schule oder machen Sie schon eine Ausbildung? Mit wem leben Sie zusammen?",
+        "Was ist Ihr sozialer Status?",
+        "Sind Ihre Eltern verheiratet, wie viel verdienen sie im Monat, und wie lautet Ihre genaue Adresse mit Postleitzahl?",
+        "Haben Sie Geld?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Schule oder Beruf und Wohnsituation, beides wichtig für die weitere Versorgung.",
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: Schule und Wohnsituation fehlen, Einkommen und Adresse gehören nicht in die Sozialanamnese.",
+        "Unangemessen."
+      ],
+      "reply": "Patient: „Ich gehe in die zehnte Klasse. Ich wohne bei meinen Eltern, mit meinem jüngeren Bruder.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben eine Hodentorsion, wahrscheinlich bei einer Bell-Clapper-Deformität mit intravaginaler Torsion des Samenstrangs.",
+        "Es ist wahrscheinlich nichts Schlimmes, nur eine Zerrung vom Sport. Das geht von allein wieder weg, und Sie können bald nach Hause.",
+        "Ich vermute, dass sich Ihr Hoden um sich selbst gedreht hat und dadurch nicht mehr genug Blut bekommt. Das ist ein Notfall, denn der Hoden kann in wenigen Stunden Schaden nehmen.",
+        "Sie haben sicher Hodenkrebs, das müssen wir sofort operieren."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache; der Patient versteht die Diagnose nicht.",
+        "Verharmlosend und medizinisch falsch: Ein Notfall wird als Bagatelle dargestellt.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung und Hinweis auf die Dringlichkeit.",
+        "Falsch und beängstigend."
+      ],
+      "reply": "Patient: „Verdreht? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Muss ich operiert werden?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, aber erst morgen früh. Bis dahin können Sie nach Hause gehen, den Hoden kühlen und Ibuprofen nehmen, dann sehen wir weiter.",
+        "Nein, eine Operation brauchen Sie nicht.",
+        "Das entscheidet der Chef, ich weiß es nicht.",
+        "Zuerst untersuchen wir Sie und machen einen Ultraschall vom Hoden mit Messung der Durchblutung. Sie bekommen ein Schmerzmittel und dürfen nichts mehr essen oder trinken. Wenn sich der Verdacht bestätigt oder nicht sicher ausschließen lässt, operieren wir sofort, denn es geht um Stunden. Dabei wird der Hoden zurückgedreht und festgenäht, auch auf der anderen Seite. Das besprechen wir mit den Urologen."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Gefährlich: Bei Verdacht darf nicht bis morgen gewartet werden, der Hoden kann absterben.",
+        "Falsch: Bei bestätigter Torsion ist die sofortige Operation die Regel.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Richtig: nächste Schritte, Nüchternheit, ehrliche Aussicht und Dringlichkeit, laienverständlich."
+      ],
+      "reply": "Patient: „Okay, bitte machen Sie schnell. Danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Becker ist 16 und hat Hodenweh.",
+        "Herr Lukas Becker, ein 16-jähriger Patient, stellte sich heute in Begleitung seiner Mutter in unserer Notaufnahme mit seit 20 Uhr bestehenden Schmerzen im linken Hoden vor.",
+        "Der Patient Herr Becker stellt sich heute vor wegen Hodenschmerzen links seit 20 Uhr, 16-jährig, in Begleitung der Mutter.",
+        "Herr Lukas Becker (16 J.) hat sich heute in unsere Notaufnahme vorgestellt wegen starker Schmerzen mit seiner Mutter und seit dem Abend."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptom.",
+        "Satzbau falsch: Die Altersangabe und die Begleitung hängen am Ende, und das Leitsymptom steht unglücklich.",
+        "Grammatik: „in unserer Notaufnahme“ (Dativ, wo?), und das Leitsymptom ist zu ungenau."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Schmerzen haben beim Fernsehen angefangen und sind schlimmer geworden.",
+        "Die Beschwerden seien akut in Ruhe aufgetreten und strahlen in die Leiste aus, NRS 9.",
+        "Die Beschwerden sind um ca. 20 Uhr in Ruhe akut aufgetreten, seitdem progredient, stechend, mit Ausstrahlung in die rechte Leiste und den Oberbauch (NRS 3/10). Ein Trauma wurde bejaht.",
+        "Die Beschwerden sind um ca. 20 Uhr in Ruhe plötzlich aufgetreten, seitdem progredient, konstant stechend, mit Ausstrahlung in die linke Leiste und den Unterbauch (NRS 9/10). Ein Trauma wurde verneint."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Konjunktiv-I-Mischung und unvollständig; außerdem fehlt „/10“.",
+        "Inhaltlich falsch: Die Schmerzen sind links, sie strahlen in den Unterbauch aus, die Stärke war NRS 9/10, und ein Trauma wurde verneint.",
+        "Richtig: Fachsprache und alle Merkmale (Beginn, Verlauf, Charakter, Ausstrahlung, Intensität, Negativbefund)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete der Patient über Übelkeit und einmaliges Erbrechen sowie eine Schwellung des linken Hodens mit Hochstand. Fieber (36,9 °C), Dysurie und Urethralausfluss wurden verneint. Inappetenz.",
+        "Er hatte Übelkeit und hat einmal gekotzt.",
+        "Begleitend berichtete der Patient über Nausea und einmalige Emesis. Fieber bis 38,5 °C, Dysurie und Urethralausfluss lagen vor. Schwellung des linken Hodens, Appetit unauffällig, Stuhlgang und Miktion regelrecht, Urin klar.",
+        "Der Patient klagte über Fieber und Brennen beim Wasserlassen."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Vulgär („gekotzt“) und unvollständig.",
+        "Inhaltlich falsch: Fieber, Dysurie und Ausfluss wurden verneint (36,9 °C), und der Appetit fehlt.",
+        "Inhaltlich falsch: Der Patient hat Fieber und Brennen verneint."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Heuschnupfen, Mandeln raus. Medikamente: Cetirizin, Ibuprofen.",
+        "An Vorerkrankungen ist eine Pollinose bekannt. Z. n. Tonsillektomie im Alter von 6 Jahren. Vor ca. 3 Monaten nächtliche, spontan sistierende Hodenschmerzen. Medikation: Cetirizin 10 mg 0-0-1, Ibuprofen 400 mg einmalig um 21 Uhr.",
+        "An Vorerkrankungen ist ein Asthma bronchiale bekannt. Z. n. Appendektomie im Alter von 6 Jahren. Vor ca. 3 Monaten nächtliche Hodenschmerzen. Medikation: Cetirizin 10 mg 1-0-0, Ibuprofen 400 mg 1-1-1.",
+        "Medikation: Cetirizin 10 mg 1-0-1, Ibuprofen 400 mg einmalig um 21 Uhr. Z. n. Tonsillektomie."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach), frühere Episode und Dosierschema im Format morgens-mittags-abends.",
+        "Inhaltlich falsch: Pollinose (nicht Asthma), operiert wurden die Mandeln, Cetirizin abends (0-0-1) und Ibuprofen nur einmalig.",
+        "Dosierschema falsch: Cetirizin nimmt der Patient abends (0-0-1), und die Vorerkrankung fehlt."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Haselnussallergie (Urtikaria). Nichtraucher, regelmäßiger Alkoholkonsum. Familienanamnese: Vater mit Hodentorsion, Onkel arterielle Hypertonie. Der Patient ist Auszubildender und lebt allein.",
+        "Allergie: keine. Noxen: Nikotinabusus.",
+        "Haselnussallergie (Angioödem mit Schwellung von Lippen und Zunge). Nichtraucher (0 py), gelegentlicher Alkoholkonsum bei Feiern. Familienanamnese: Onkel väterlicherseits mit Hodentorsion im Jugendalter, Vater arterielle Hypertonie. Der Patient besucht die 10. Klasse und lebt bei seinen Eltern und seinem jüngeren Bruder.",
+        "Er verträgt keine Nüsse und trinkt Bier."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Die Reaktion war ein Angioödem, er trinkt nur gelegentlich, der Onkel hatte die Torsion, und er geht zur Schule und wohnt bei den Eltern.",
+        "Falsch: Die Haselnussallergie fehlt, und der Patient raucht nicht.",
+        "Richtig: Reaktion, Noxen, relevante Familienanamnese und Sozialanamnese in Fachsprache.",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Hodenverdrehung.",
+        "Es besteht eine gesicherte Hodentorsion links.",
+        "Anamnestisch besteht der Verdacht auf eine akute Epididymitis links. Differenzialdiagnostisch kommen eine Orchitis und eine Urethritis in Betracht.",
+        "Anamnestisch besteht der Verdacht auf eine Hodentorsion links. Differenzialdiagnostisch kommen eine Epididymitis, eine Torsion der Appendix testis und eine inkarzerierte Leistenhernie in Betracht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Ohne Bildgebung und Untersuchung ist die Diagnose noch nicht gesichert.",
+        "Gefährlich: Die Torsion fehlt. Gegen eine Epididymitis sprechen der plötzliche Beginn, fehlendes Fieber und fehlende Dysurie.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir empfehlen die sofortige Nahrungskarenz, einen intravenösen Zugang, eine analgetische Therapie, eine Farbduplexsonographie des Skrotums sowie ein dringliches urologisches Konsil. Bei Bestätigung oder nicht sicher auszuschließender Torsion ist eine notfallmäßige operative Skrotalexploration mit Detorsion und beidseitiger Orchidopexie indiziert.",
+        "Wir machen Ultraschall und schauen dann.",
+        "Zur weiteren Abklärung empfehlen wir einen Urinstatus und eine Antibiose mit Ciprofloxacin sowie eine ambulante Kontrolle in einer Woche. Eine Operation ist zunächst nicht erforderlich.",
+        "Wir empfehlen eine Blutentnahme und eine Farbduplexsonographie des Skrotums. Bei Bestätigung kann am nächsten Morgen elektiv operiert werden."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Notfallprocedere in vollständigen Sätzen, Diagnostik, Konsil und operative Therapie.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Gefährlich: Eine Torsion braucht keine ambulante Kontrolle, und Ciprofloxacin ist bei Jugendlichen nicht Mittel der Wahl.",
+        "Gefährlich: Eine bestätigte Torsion wird sofort operiert, nicht elektiv. Jede Verzögerung gefährdet den Hoden."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Der Junge hat was am Hoden, er heißt Becker.",
+        "Ich möchte Ihnen Herrn Lukas Becker vorstellen, einen 16-jährigen Patienten, der sich heute mit seit 20 Uhr bestehenden, akut aufgetretenen Schmerzen im linken Hoden vorgestellt hat.",
+        "Also, der Patient saß gemütlich vor dem Fernseher, und dann hat er plötzlich irgendwie Schmerzen bekommen, und seine Mutter hat ihn gleich hergebracht, und ...",
+        "Herr Becker hat eine Hodentorsion."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz.",
+        "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Die Schmerzen traten allmählich nach einem Fußballspiel auf und strahlen in den Oberbauch aus. Begleitend bestehen Übelkeit, einmaliges Erbrechen und Fieber bis 38,5 °C. Eine Hodenschwellung wurde verneint.",
+        "Er hat starke Schmerzen.",
+        "Er hat Fieber, Dysurie und Ausfluss.",
+        "Die Schmerzen traten plötzlich in Ruhe auf, sind stechend (NRS 9/10) und strahlen in die linke Leiste und den Unterbauch aus. Begleitend bestehen Übelkeit, einmaliges Erbrechen sowie eine Schwellung des linken Hodens mit Hochstand. Fieber, Dysurie und ein Trauma wurden verneint."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich falsch: Der Beginn war plötzlich in Ruhe, es gab kein Fieber, und die Hodenschwellung besteht.",
+        "Zu unspezifisch, keine verwertbare Information.",
+        "Inhaltlich falsch: Fieber, Dysurie und Ausfluss wurden verneint.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist gesund.",
+        "Bekannt sind ein Asthma bronchiale und eine Penicillinallergie. Der Vater hatte eine Hodentorsion, sonst ist die Familie unauffällig. Vor einem Jahr war er schon einmal in der Notaufnahme, und er nimmt regelmäßig Salbutamol bei Bedarf.",
+        "Bekannt sind eine Pollinose und ein Z. n. Tonsillektomie. Vor ca. drei Monaten traten bereits nächtliche, spontan sistierende Hodenschmerzen auf. Wichtig: Haselnussallergie mit Angioödem, die wir dem Anästhesisten mitteilen. Ein Onkel väterlicherseits hatte eine Hodentorsion.",
+        "Er nimmt Cetirizin und Ibuprofen, sonst nichts."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: Es gibt relevante Vorgeschichte und Familienanamnese.",
+        "Inhaltlich falsch: Pollinose statt Asthma, Haselnuss- statt Penicillinallergie, und der Onkel hatte die Torsion.",
+        "Richtig: relevante Vorgeschichte, frühere Episode, Familienanamnese und die Allergie, die für die Narkose wichtig ist.",
+        "Unvollständig: Diagnosen, frühere Episode und Allergie fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an eine Zerrung.",
+        "Ich weiß es nicht genau.",
+        "Es handelt sich sicher um eine Epididymitis, weil der Hoden geschwollen ist. Differenzialdiagnostisch denke ich höchstens noch an eine Urethritis und eine Orchitis.",
+        "Ich vermute eine Hodentorsion links. Differenzialdiagnostisch denke ich an eine Epididymitis, eine Torsion der Appendix testis und eine inkarzerierte Leistenhernie."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
+        "Zu sicher („sicher“), und eine Epididymitis passt nicht zu plötzlichem Beginn ohne Fieber und Dysurie bei einem Jugendlichen.",
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde Ibuprofen geben und ihn nach Hause schicken.",
+        "Ich würde den Patienten nüchtern lassen, einen Zugang legen, Analgesie geben und sofort eine Farbduplexsonographie veranlassen. Bei Bestätigung oder nicht sicher auszuschließender Torsion würde ich ohne Verzögerung die Urologie zur operativen Exploration mit Detorsion und beidseitiger Orchidopexie hinzuziehen.",
+        "Ich würde zuerst auf das Ergebnis der Urinkultur warten und dann eine Antibiose mit Ciprofloxacin beginnen, weil eine Epididymitis wahrscheinlicher ist.",
+        "Ich würde eine Computertomographie des Beckens machen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Gefährlich: Der Hoden kann innerhalb weniger Stunden absterben.",
+        "Richtig: Diagnostik, Analgesie und sofortiges Urologie-Konsil mit Operation.",
+        "Gefährlich: Warten auf die Urinkultur verzögert die Therapie, und eine Epididymitis ist hier nicht wahrscheinlicher.",
+        "Nicht die richtige Untersuchung: Strahlung ohne Nutzen und Zeitverlust."
+      ],
+      "reply": "Oberarzt: „Gut. Was finden Sie bei der Untersuchung des Hodens?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich erwarte einen erhaltenen Kremasterreflex, einen Schmerz, der beim Anheben des Hodens nachlässt (positives Prehn-Zeichen), und dazu Fieber mit Pyurie.",
+        "Ich erwarte einen kleinen, durchscheinenden blauen Punkt am oberen Hodenpol bei sonst weitgehend normalem Hoden.",
+        "Ich erwarte einen druckschmerzhaften, hochstehenden und quergelagerten Hoden, einen fehlenden Kremasterreflex und ein negatives Prehn-Zeichen.",
+        "Ich erwarte gar nichts."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das passt zur Epididymitis, nicht zur Torsion.",
+        "Das ist das „Blue-Dot-Zeichen“ der Hydatidentorsion, nicht der Hodentorsion.",
+        "Richtig: typische klinische Zeichen einer Hodentorsion.",
+        "In der Prüfung erwartet man eine begründete Antwort."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Skrotum“?",
+      "options": [
+        "Hodensack",
+        "Penisvorhaut",
+        "Damm",
+        "Leistenkanal"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist das Präputium.",
+        "Das ist das Perineum.",
+        "Das ist der Canalis inguinalis."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Kremasterreflex“?",
+      "options": [
+        "Zusammenziehen des Schließmuskels beim Berühren der Haut am After",
+        "Beugen des Knies beim Beklopfen der Sehne unter der Kniescheibe",
+        "Hochziehen des Hodens beim Bestreichen der Oberschenkelinnenseite",
+        "Würgen beim Berühren des Rachens"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist der Analreflex.",
+        "Das ist der Patellarsehnenreflex.",
+        "Richtig.",
+        "Das ist der Würgereflex."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Orchidopexie“?",
+      "options": [
+        "operative Entfernung des Hodens",
+        "operatives Annähen des Hodens im Hodensack",
+        "operative Durchtrennung der Samenleiter",
+        "operative Entfernung der Vorhaut"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Orchiektomie.",
+        "Richtig.",
+        "Das ist die Vasektomie.",
+        "Das ist die Zirkumzision."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Epididymitis“?",
+      "options": [
+        "Hodenentzündung",
+        "Prostataentzündung",
+        "Harnröhrenentzündung",
+        "Nebenhodenentzündung"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Orchitis.",
+        "Das ist die Prostatitis.",
+        "Das ist die Urethritis.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Detorsion“?",
+      "options": [
+        "Verdrehung eines Organs",
+        "Verengung eines Organs",
+        "Zurückdrehen eines verdrehten Organs",
+        "Abtragen eines Organs"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Torsion.",
+        "Das ist die Stenose.",
+        "Richtig.",
+        "Das ist die Resektion."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

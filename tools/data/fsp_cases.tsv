@@ -1,0 +1,60 @@
+# FSP case list (ADR-0014). id|area|diagnosis|leitsymptom|source|bwReports
+# Source: web research 2026-11-06 found no public Baden-Wuerttemberg exam report naming a case, so every case is a common FSP case.
+akutes-koronarsyndrom|Kardiologie|Akutes Koronarsyndrom (NSTEMI/STEMI)|Retrosternale Brustschmerzen mit Ausstrahlung in den linken Arm|common_FSP|0
+herzinsuffizienz|Kardiologie|Dekompensierte Herzinsuffizienz|Luftnot, Beinödeme, Gewichtszunahme|common_FSP|0
+vorhofflimmern|Kardiologie|Vorhofflimmern|Herzrasen, Palpitationen, Unruhe|common_FSP|0
+arterielle-hypertonie|Kardiologie|Arterielle Hypertonie / hypertensive Entgleisung|Kopfschmerzen, Schwindel, hohe Blutdruckwerte|common_FSP|0
+synkope-bradykardie|Kardiologie|Synkope bei Bradykardie / AV-Block|Kurzer Bewusstseinsverlust mit Sturz|common_FSP|0
+endokarditis|Kardiologie|Infektiöse Endokarditis|Fieber und neues Herzgeräusch bei i.v.-Drogenkonsum oder Klappenersatz|common_FSP|0
+lungenembolie|Pneumologie|Lungenembolie|Plötzliche Atemnot und pleuritischer Schmerz nach Immobilisation|common_FSP|0
+ambulant-erworbene-pneumonie|Pneumologie|Ambulant erworbene Pneumonie|Husten mit Auswurf, Fieber, Atemnot|common_FSP|0
+copd-exazerbation|Pneumologie|Exazerbierte COPD|Zunehmende Atemnot und Husten bei Raucher|common_FSP|0
+asthma-bronchiale|Pneumologie|Asthma bronchiale (Anfall)|Anfallsartige Atemnot mit Giemen|common_FSP|0
+spontanpneumothorax|Pneumologie|Spontanpneumothorax|Plötzlicher stechender Thoraxschmerz und Luftnot bei jungem schlankem Mann|common_FSP|0
+gastroduodenales-ulkus|Gastroenterologie|Ulcus ventriculi/duodeni mit Blutung|Oberbauchschmerz, Teerstuhl, NSAR-Einnahme|common_FSP|0
+gerd-refluxkrankheit|Gastroenterologie|Gastroösophageale Refluxkrankheit|Sodbrennen und retrosternales Brennen|common_FSP|0
+morbus-crohn-colitis|Gastroenterologie|Chronisch-entzündliche Darmerkrankung (Morbus Crohn / Colitis ulcerosa)|Chronische Durchfälle, blutiger Stuhl, Gewichtsverlust|common_FSP|0
+akute-pankreatitis|Gastroenterologie|Akute Pankreatitis|Gürtelförmiger Oberbauchschmerz, Übelkeit, Alkohol oder Gallensteine|common_FSP|0
+leberzirrhose|Gastroenterologie|Leberzirrhose mit Aszites|Zunehmender Bauchumfang, Ikterus, Alkoholanamnese|common_FSP|0
+akute-cholezystitis|Allgemein- und Viszeralchirurgie|Akute Cholezystitis / Cholezystolithiasis|Rechtsseitiger Oberbauchschmerz, Fieber, postprandial|common_FSP|0
+akute-appendizitis|Allgemein- und Viszeralchirurgie|Akute Appendizitis|Periumbilikaler Schmerz mit Wanderung in den rechten Unterbauch|common_FSP|0
+mechanischer-ileus|Allgemein- und Viszeralchirurgie|Mechanischer Dünndarmileus|Kolikartige Bauchschmerzen, Erbrechen, Stuhl- und Windverhalt nach Voroperation|common_FSP|0
+sigmadivertikulitis|Allgemein- und Viszeralchirurgie|Sigmadivertikulitis|Linksseitiger Unterbauchschmerz und Fieber|common_FSP|0
+inkarzerierte-hernie|Allgemein- und Viszeralchirurgie|Inkarzerierte Leistenhernie|Schmerzhafte, nicht reponible Schwellung in der Leiste|common_FSP|0
+kolorektales-karzinom|Allgemein- und Viszeralchirurgie|Kolorektales Karzinom|Blut im Stuhl, Stuhlveränderung, Gewichtsverlust|common_FSP|0
+ischaemischer-schlaganfall|Neurologie|Ischämischer Schlaganfall|Plötzliche Halbseitenlähmung und Sprachstörung|common_FSP|0
+subarachnoidalblutung|Neurologie|Subarachnoidalblutung|Vernichtungskopfschmerz, plötzlich einsetzend|common_FSP|0
+meningitis|Neurologie|Bakterielle Meningitis|Fieber, Kopfschmerz, Nackensteifigkeit|common_FSP|0
+epileptischer-anfall|Neurologie|Erstmaliger epileptischer Anfall|Krampfanfall mit Bewusstseinsverlust und Zungenbiss|common_FSP|0
+migraene|Neurologie|Migräne mit Aura|Einseitiger pulsierender Kopfschmerz mit Sehstörungen|common_FSP|0
+multiple-sklerose|Neurologie|Multiple Sklerose (Erstmanifestation)|Sehstörung oder Sensibilitätsstörung bei junger Frau|common_FSP|0
+harnwegsinfekt-pyelonephritis|Infektiologie|Akute Pyelonephritis|Fieber, Flankenschmerz, Dysurie|common_FSP|0
+sepsis|Infektiologie|Sepsis|Fieber, Schüttelfrost, Hypotonie, Verwirrtheit|common_FSP|0
+gastroenteritis|Infektiologie|Infektiöse Gastroenteritis|Durchfall und Erbrechen nach Reise oder Lebensmittel|common_FSP|0
+malaria|Infektiologie|Malaria (Reiserückkehrer)|Periodisches Fieber nach Tropenaufenthalt|common_FSP|0
+erysipel-phlegmone|Infektiologie|Erysipel / Phlegmone|Gerötetes, überwärmtes, schmerzhaftes Bein mit Fieber|common_FSP|0
+tiefe-beinvenenthrombose|Angiologie|Tiefe Beinvenenthrombose|Einseitig geschwollenes, schmerzhaftes Bein|common_FSP|0
+pavk|Angiologie|Periphere arterielle Verschlusskrankheit|Wadenschmerz beim Gehen (Claudicatio intermittens)|common_FSP|0
+akuter-arterienverschluss|Angiologie|Akuter Extremitätenarterienverschluss|Plötzlich kaltes, blasses, schmerzhaftes Bein|common_FSP|0
+bauchaortenaneurysma|Angiologie|Rupturiertes Bauchaortenaneurysma|Plötzlicher Bauch- und Rückenschmerz mit Schock|common_FSP|0
+schenkelhalsfraktur|Unfallchirurgie/Orthopädie|Schenkelhalsfraktur|Sturz bei älterer Patientin, Leistenschmerz, Verkürzung und Außenrotation|common_FSP|0
+distale-radiusfraktur|Unfallchirurgie/Orthopädie|Distale Radiusfraktur|Sturz auf die ausgestreckte Hand, Handgelenkschmerz|common_FSP|0
+bandscheibenvorfall|Unfallchirurgie/Orthopädie|Lumbaler Bandscheibenvorfall|Rückenschmerz mit Ausstrahlung ins Bein und Taubheit|common_FSP|0
+sprunggelenksdistorsion|Unfallchirurgie/Orthopädie|Supinationstrauma / Außenbandruptur|Umknicktrauma mit Schwellung am Sprunggelenk|common_FSP|0
+gonarthrose|Unfallchirurgie/Orthopädie|Gonarthrose|Belastungsabhängiger Knieschmerz und Anlaufschmerz|common_FSP|0
+diabetes-ketoazidose|Endokrinologie|Diabetische Ketoazidose / Erstmanifestation Diabetes mellitus Typ 1|Polyurie, Polydipsie, Übelkeit, Azetongeruch|common_FSP|0
+diabetes-typ-2|Endokrinologie|Diabetes mellitus Typ 2 (Beratung, Folgeschäden)|Müdigkeit, Durst, schlecht heilende Wunden|common_FSP|0
+hyperthyreose|Endokrinologie|Hyperthyreose (Morbus Basedow)|Gewichtsverlust, Herzrasen, Schwitzen, Tremor|common_FSP|0
+hypothyreose|Endokrinologie|Hypothyreose (Hashimoto)|Müdigkeit, Kälteintoleranz, Gewichtszunahme|common_FSP|0
+eisenmangelanaemie|Hämatologie/Onkologie|Eisenmangelanämie|Müdigkeit, Blässe, Belastungsdyspnoe|common_FSP|0
+akute-leukaemie|Hämatologie/Onkologie|Akute Leukämie|Fieber, Blutungsneigung, Abgeschlagenheit|common_FSP|0
+malignes-lymphom|Hämatologie/Onkologie|Malignes Lymphom|Schmerzlose Lymphknotenschwellung, B-Symptomatik|common_FSP|0
+bronchialkarzinom|Hämatologie/Onkologie|Bronchialkarzinom|Chronischer Husten, Hämoptysen, Gewichtsverlust bei Raucher|common_FSP|0
+nierenkolik|Nephrologie/Urologie|Nephrolithiasis mit Nierenkolik|Kolikartiger Flankenschmerz mit Ausstrahlung in die Leiste|common_FSP|0
+akutes-nierenversagen|Nephrologie/Urologie|Akutes Nierenversagen|Verminderte Urinmenge, Ödeme, Übelkeit|common_FSP|0
+benigne-prostatahyperplasie|Nephrologie/Urologie|Benigne Prostatahyperplasie mit Harnverhalt|Abgeschwächter Harnstrahl, Nykturie, Harnverhalt|common_FSP|0
+hodentorsion|Nephrologie/Urologie|Hodentorsion|Akuter einseitiger Hodenschmerz bei Jugendlichem|common_FSP|0
+depressive-episode|Psychiatrie|Majore Depression mit Suizidalität|Niedergeschlagenheit, Antriebslosigkeit, Suizidgedanken|common_FSP|0
+alkoholentzugssyndrom|Psychiatrie|Alkoholentzugssyndrom / Delir|Tremor, Schwitzen, Unruhe, Halluzinationen nach Alkoholstopp|common_FSP|0
+panikstoerung|Psychiatrie|Panikstörung|Anfälle von Herzrasen, Beklemmung und Todesangst|common_FSP|0
+schizophrenie|Psychiatrie|Schizophrene Psychose|Stimmenhören und Verfolgungsgedanken|common_FSP|0

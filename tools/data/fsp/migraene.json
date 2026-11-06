@@ -1,0 +1,691 @@
+{
+  "id": "migraene",
+  "area": "Neurologie",
+  "title": "Kopfschmerzen mit Flimmern vor dem Auge",
+  "diagnosis": "Migräne mit Aura",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Frau Lena Hartmann, 28 Jahre, stellt sich am Vormittag in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Frau Hartmann sitzt mit gesenktem Kopf auf der Liege und hält sich die rechte Schläfe.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Morgen, Frau Hartmann. Sie sehen schlecht aus. Legen Sie sich bitte hin, ich schaue mir zuerst Ihren Kopf an.",
+        "Hallo, was fehlt Ihnen denn?",
+        "Guten Morgen, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Frau Hartmann?",
+        "Guten Morgen, Frau Hartmann. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte dabei, und können Sie das Anmeldeformular ausfüllen? Das brauchen wir zuerst."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Die Untersuchung kommt nach der Anamnese, und Sie stellen sich nicht vor. Erst begrüßen und sich vorstellen.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität der Patientin.",
+        "Verwaltungsfragen gehören nicht an den Anfang des Arzt-Patienten-Gesprächs, und Sie stellen sich nicht vor."
+      ],
+      "reply": "Patientin: „Ja, Hartmann. Guten Morgen, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Damit ich Ihre Akte anlegen kann: Wie lautet Ihr genaues Geburtsdatum, und bei welcher Krankenkasse sind Sie versichert?",
+        "Sie sind doch noch recht jung, oder?",
+        "Wie hoch ist Ihr Body-Mass-Index?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst."
+      ],
+      "reply": "Patientin: „Ich bin 28, 1,70 Meter groß und wiege 62 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Kopfschmerzen?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Warum kommen Sie wegen Kopfschmerzen gleich in die Notaufnahme und gehen nicht zuerst zum Hausarzt?",
+        "Welche Symptomatik führt Sie zu uns?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "Richtig: eine offene Frage lässt die Patientin selbst erzählen.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache."
+      ],
+      "reply": "Patientin: „Seit heute Morgen habe ich ganz starke Kopfschmerzen auf der rechten Seite. Vorher hat es vor meinem Auge geflimmert.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten das Leitsymptom genauer erfassen. Was fragen Sie?",
+      "options": [
+        "Wo genau lokalisieren Sie die Cephalgie, und hatten Sie vorher eine visuelle Aura mit Skotomen oder Photopsien, und wie lange hat sie gedauert?",
+        "Haben Sie auch Sehstörungen gehabt?",
+        "Die Kopfschmerzen sind bestimmt in der Stirn, und Sie haben Flimmern gesehen, richtig?",
+        "Wo genau tut der Kopf weh? Und wie haben Sie das Flimmern erlebt: Was haben Sie gesehen, und wie lange hat es gedauert?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe („Cephalgie“, „Aura“, „Skotom“). Fragen Sie in Laiensprache.",
+        "Geschlossene Frage; die Patientin hat das Flimmern schon erwähnt. Fragen Sie nach Ort, Aussehen und Dauer.",
+        "Suggestivfrage. Die Patientin könnte Ihnen nur zustimmen, und die Stirn passt nicht zu ihrer Angabe.",
+        "Richtig: Ort des Schmerzes, Art und Dauer des Flimmerns, offen und laienverständlich."
+      ],
+      "reply": "Patientin: „Der Schmerz sitzt rechts an der Schläfe und hinter dem Auge. Vorher habe ich Zickzacklinien gesehen, die sich vergrößert haben. Das hat etwa 20 Minuten gedauert.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Seit wann haben Sie die Schmerzen?",
+        "Hatten Sie vor dem Auftreten der Aura schon prodromale Symptome, und ist der Verlauf bisher progredient oder konstant gewesen?",
+        "Wann genau hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben? Kennen Sie das schon von früher?",
+        "Kam das plötzlich wie ein Donnerschlag?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das hat die Patientin schon gesagt (seit heute Morgen). Fragen Sie nach dem Verlauf und nach früheren Episoden.",
+        "Fachsprache: „prodromal“ und „progredient“ versteht die Patientin nicht.",
+        "Richtig: Beginn, Verlauf und frühere Episoden in einer klaren, laienverständlichen Frage.",
+        "Suggestive, geschlossene Frage; sie erfasst den Verlauf nicht."
+      ],
+      "reply": "Patientin: „Um 7 Uhr fing das Flimmern an, danach kam der Schmerz. Seitdem ist er gleich stark. Das kenne ich schon, seit meinem 16. Lebensjahr etwa einmal im Monat, meistens vor der Periode.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "options": [
+        "Wie würden Sie den Schmerz klassifizieren, eher pulsierend oder dumpf-drückend, und welche Intensität hat er auf der numerischen Rating-Skala?",
+        "Wie würden Sie den Schmerz beschreiben, eher pulsierend, stechend oder drückend? Und wie stark ist er auf einer Skala von 0 bis 10?",
+        "Ist der Schmerz sehr schlimm?",
+        "Wie stark ist der Schmerz von 1 bis 100?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache („klassifizieren“, „Intensität“, „numerische Rating-Skala“); die Patientin versteht sie nicht.",
+        "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS)."
+      ],
+      "reply": "Patientin: „Er pocht im Takt meines Herzens, ungefähr 8 von 10. Wenn ich mich bewege, wird es schlimmer.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Ist Ihnen übel, mussten Sie sich übergeben? Stören Sie Licht oder Lärm? Gab es Lähmungen, Taubheitsgefühle oder Sprachprobleme?",
+        "Hatten Sie Nausea, Emesis, Photophobie und Phonophobie, und bestehen neurologische Ausfälle wie Hemiparese, Parästhesien oder Aphasie?",
+        "Haben Sie sonst noch was?",
+        "Sie haben bestimmt auch erbrochen und Lähmungen."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: konkrete Begleitsymptome und mögliche neurologische Ausfälle in Laiensprache.",
+        "Inhaltlich vollständig, aber nur Fachbegriffe. Sagen Sie „übel“, „Licht“, „Lärm“, „Lähmung“, „Taubheit“.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Suggestiv: Sie unterstellen die Symptome."
+      ],
+      "reply": "Patientin: „Mir ist übel, ich habe einmal erbrochen. Licht und Lärm sind mir unerträglich. Lähmungen, Taubheit oder Sprachprobleme hatte ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie ist die Vegetativa?",
+        "Haben Sie Pyrexie, Nackensteife, Nachtschweiß, Dysurie, Obstipation und Diarrhö, und hat sich Ihr Körpergewicht verändert?",
+        "Ist sonst alles normal bei Ihnen?",
+        "Hatten Sie Fieber oder einen steifen Nacken? Wie sind Appetit, Schlaf, Stuhlgang und Wasserlassen? Hat sich Ihr Gewicht verändert?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachjargon, den eine Patientin nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Pyrexie, Dysurie, Obstipation, Diarrhö).",
+        "Zu allgemein; die Patientin sagt einfach „ja“.",
+        "Richtig: Fieber und Nackensteife (Meningitis ausschließen), Appetit, Schlaf, Ausscheidung und Gewicht in Laiensprache."
+      ],
+      "reply": "Patientin: „Kein Fieber, und der Nacken ist nicht steif. Appetit habe ich wegen der Übelkeit keinen, und ich habe schlecht geschlafen. Stuhlgang und Wasserlassen sind normal, das Gewicht ist gleich.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, einen Diabetes mellitus oder eine Epilepsie, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Sind Sie gesund?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck oder Zucker? Hatten Sie schon einmal eine Thrombose oder einen Schlaganfall? Wurden Sie operiert?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „Epilepsie“). Mit Patienten sprechen Sie Laiensprache.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Richtig: mit Beispielen, laienverständlich, mit gezielter Frage nach Thrombose und Schlaganfall und nach Operationen.",
+        "Die Patientin kennt ihre Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patientin: „Außer diesen Anfällen bin ich gesund. Mit 10 Jahren wurden mir die Mandeln entfernt. Eine Thrombose oder einen Schlaganfall hatte ich nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Tabletten?",
+        "Welche Medikamente nehmen Sie regelmäßig oder bei Bedarf ein, und in welcher Dosierung? Auch Mittel ohne Rezept und die Pille?",
+        "Welche Pharmaka applizieren Sie, und nehmen Sie auch Kontrazeptiva oder Analgetika ein, und in welcher Dosis?",
+        "Sie nehmen doch sicher die Pille?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu ungenau: Name und Dosis fehlen.",
+        "Richtig: Name, Dosierung, Bedarfsmedikation, frei verkäufliche Mittel und die Pille.",
+        "Fachsprache („Pharmaka“, „applizieren“, „Kontrazeptiva“, „Analgetika“).",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patientin: „Die Antibabypille, Ethinylestradiol 0,03 Milligramm mit Levonorgestrel 0,15 Milligramm, jeden Abend. Heute um 8 Uhr habe ich Ibuprofen 400 genommen, das hat nicht geholfen.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
+        "Allergie?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht gleich ein Antibiotikum geben möchten.",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Zu eng: Allergien gegen andere Medikamente oder Lebensmittel übersehen Sie, und ein Antibiotikum ist hier nicht geplant.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patientin: „Gegen Haselnüsse. Dann kribbelt mein Mund und schwillt an.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucherin oder Alkoholikerin?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus, und wie hoch ist Ihr Koffeinkonsum in Tassen pro Tag?",
+        "Trinken Sie zu viel?",
+        "Rauchen Sie? Wie viel Alkohol und Kaffee trinken Sie ungefähr? Nehmen Sie Drogen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Alkoholikerin“ ist wertend und verletzend.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Wertend und ungenau.",
+        "Richtig: neutral, konkret, mit Menge; Kaffee ist bei Kopfschmerzen relevant."
+      ],
+      "reply": "Patientin: „Ich rauche seit 6 Jahren etwa 5 Zigaretten am Tag. Alkohol selten, ein Glas Sekt im Monat. Kaffee drei Tassen am Tag. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Wie ist die Familienanamnese?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Kopfschmerzen, Herz-Kreislauf-Erkrankungen oder einen Schlaganfall?",
+        "Hat Ihre Familie dieselbe Krankheit?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu eng: Geschwister und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Richtig: offen, mit passenden Beispielen.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
+      ],
+      "reply": "Patientin: „Meine Mutter hat auch Migräne. Mein Vater hat Bluthochdruck. Mein Großvater hatte mit 75 einen Schlaganfall.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was ist Ihr sozialer Status?",
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen? Gibt es gerade viel Stress?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Haben Sie Geld?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Unklar und unangenehm formuliert.",
+        "Richtig: Beruf, Wohnsituation und Belastung, wichtig für Auslöser und Versorgung.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Unangemessen."
+      ],
+      "reply": "Patientin: „Ich studiere Lehramt und wohne in einer WG. Ich habe gerade viel Prüfungsstress.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Ich vermute, dass Sie einen Migräneanfall haben. Dabei sind Nervenzellen im Gehirn vorübergehend sehr aktiv, das erklärt auch das Flimmern vor dem Auge. Das ist unangenehm, aber meist nicht gefährlich. Wir untersuchen Sie trotzdem gründlich.",
+        "Sie haben eine Migräne mit visueller Aura, wahrscheinlich ausgelöst durch eine kortikale Streudepolarisation.",
+        "Das ist nur Stress, Sie müssen sich einfach entspannen.",
+        "Sie haben sicher einen Hirntumor, das müssen wir sofort abklären."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung, ehrlich und beruhigend.",
+        "Fachsprache; die Patientin versteht „Aura“ und „Streudepolarisation“ nicht.",
+        "Verharmlosend und medizinisch unvollständig.",
+        "Falsch und beängstigend."
+      ],
+      "reply": "Patientin: „Ach so. Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Die Patientin fragt: „Muss mein Kopf jetzt in die Röhre?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, wir machen sofort ein CT und anschließend ein MRT vom Kopf, damit wir auf Nummer sicher gehen. Danach bekommen Sie starke Opioide gegen die Schmerzen, und Sie bleiben mehrere Tage bei uns auf Station.",
+        "Zuerst untersuche ich Sie gründlich, das heißt Nerven, Blutdruck und Nacken. Sie bekommen ein Mittel gegen die Übelkeit und ein Schmerzmittel. Wenn alles unauffällig ist, brauchen wir keine Bilder vom Kopf. Über Ihre Pille sprechen wir auch noch.",
+        "Nein, Sie bekommen nur eine Tablette gegen die Schmerzen und gehen dann gleich wieder nach Hause. Alles Weitere klärt Ihr Hausarzt.",
+        "Das weiß ich noch nicht, ich muss zuerst den Chef fragen, der entscheidet das später ganz allein."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Übertrieben: bei typischer Migräne und unauffälliger Untersuchung ist keine Bildgebung nötig, und Opioide sind nicht empfohlen.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich, und die Pille wird angesprochen.",
+        "Zu früh: ohne gründliche Untersuchung dürfen Sie niemanden entlassen.",
+        "Unprofessionell und lässt die Patientin allein."
+      ],
+      "reply": "Patientin: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Frau Lena Hartmann ist 28 und hat Kopfweh.",
+        "Die Patientin Frau Hartmann stellt sich heute vor wegen rechtsseitigen Kopfschmerzen seit morgens, 28-jährig.",
+        "Frau Lena Hartmann (28 J.) hat sich heute in unsere Notaufnahme vorgestellt wegen Schmerzen am Kopf mit einer Sehstörung.",
+        "Frau Lena Hartmann, eine 28-jährige Patientin, stellte sich heute in unserer Notaufnahme mit seit dem Morgen bestehenden rechtsseitigen Kopfschmerzen und vorausgegangenen visuellen Phänomenen vor."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Satzbau falsch: die Altersangabe hängt am Ende, und „wegen rechtsseitigen Kopfschmerzen“ braucht den Genitiv oder „aufgrund von“.",
+        "Grammatik: „in unserer Notaufnahme“ (Dativ, wo?), und das Leitsymptom ist zu ungenau.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptom."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Gegen 7 Uhr trat eine ca. 20-minütige visuelle Aura mit Zickzacklinien auf, gefolgt von pulsierenden Kopfschmerzen temporal rechts (NRS 8/10), die sich bei Bewegung verstärkten. Seitdem unverändert.",
+        "Gegen 7 Uhr traten zunächst rechtsseitige pulsierende Kopfschmerzen auf, gefolgt von einer ca. 20-minütigen visuellen Aura mit Zickzacklinien (NRS 8/10); unter Bewegung Besserung der Beschwerden, seitdem rückläufig.",
+        "Die Schmerzen haben nach dem Flimmern angefangen und sind stark.",
+        "Die Beschwerden seien morgens mit einer Aura aufgetreten und bestünden konstant, NRS 8."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachsprache und alle Merkmale (Aura, Dauer, Lokalisation, Charakter, Intensität, Verlauf).",
+        "Inhaltlich falsch: Die Aura ging dem Schmerz voraus, Bewegung verstärkte den Schmerz, und er blieb unverändert.",
+        "Laiensprache und unvollständig; im Bericht erwartet man Fachbegriffe.",
+        "Konjunktiv-I-Mischung und unvollständig; außerdem fehlt „/10“."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete die Patientin über Nausea und einmalige Emesis sowie Photophobie und Phonophobie. Fieber und Nackensteifigkeit wurden bejaht. Paresen, Parästhesien und Aphasie wurden verneint.",
+        "Ihr war schlecht, sie hat einmal gekotzt, und Licht war ihr zu hell. Sonst nichts weiter.",
+        "Begleitend berichtete die Patientin über Übelkeit und einmaliges Erbrechen sowie Photophobie und Phonophobie. Fieber und Meningismus wurden verneint, ebenso Paresen, Parästhesien und Sprachstörungen. Inappetenz, Schlafmangel.",
+        "Die Patientin klagte über Fieber, Halsschmerzen und Husten seit mehreren Tagen sowie über Gliederschmerzen. Kopfschmerzen und Sehstörungen wurden verneint; sie war bei Aufnahme bettlägerig und stark erschöpft."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Fieber und Nackensteifigkeit hat die Patientin verneint.",
+        "Vulgär („gekotzt“) und unvollständig.",
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Inhaltlich falsch: Fieber und Halsschmerzen hat die Patientin nicht genannt."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Migräne. Medikamente: Pille, Ibuprofen.",
+        "An Vorerkrankungen sind eine Migräne mit Aura und eine Epilepsie bekannt. Z. n. Tonsillektomie im Alter von 10 Jahren. Medikation: Ethinylestradiol 0,03 mg/Levonorgestrel 0,15 mg 1-0-0, Ibuprofen 400 mg einmalig heute.",
+        "Medikation: Ethinylestradiol/Levonorgestrel 0-0-1, Ibuprofen 400 mg 1-1-1.",
+        "Bekannt ist eine Migräne mit Aura seit dem 16. Lebensjahr. Z. n. Tonsillektomie im Alter von 10 Jahren. Thrombose und Schlaganfall wurden verneint. Medikation: Ethinylestradiol 0,03 mg/Levonorgestrel 0,15 mg 0-0-1, Ibuprofen 400 mg einmalig heute."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Inhaltlich falsch: Eine Epilepsie besteht nicht, und die Pille wird abends genommen (0-0-1).",
+        "Dosierschema falsch: Ibuprofen wurde nur einmalig genommen (400 mg einmalig heute).",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach), relevante Negativbefunde und Dosierschema im Format morgens-mittags-abends."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Haselnussallergie (orales Allergiesyndrom mit Schwellung der Mundschleimhaut). Nikotinkonsum ca. 1,5 py, gelegentlicher Alkoholkonsum, Kaffee 3 Tassen/Tag. Familienanamnese: Mutter Migräne, Vater arterielle Hypertonie, Großvater Apoplex mit 75 J. Die Patientin ist Lehramtsstudentin und lebt in einer WG.",
+        "Haselnussallergie (Anaphylaxie). Nikotinkonsum ca. 6 py, gelegentlicher Alkoholkonsum. Familienanamnese: Mutter Migräne, Vater Diabetes mellitus. Die Patientin ist Lehramtsstudentin und lebt mit ihrem Ehemann.",
+        "Keine Allergien. Noxen: Nikotinabusus. Familienanamnese: unauffällig.",
+        "Sie verträgt keine Nüsse und raucht ein bisschen."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: 5 Zigaretten am Tag über 6 Jahre sind etwa 1,5 pack years (py = Packungsjahre).",
+        "Falsch: Reaktion war ein oropharyngeales Kribbeln mit Schwellung, 5 Zigaretten über 6 Jahre sind etwa 1,5 py, der Vater hat Hypertonie, und die Patientin wohnt in einer WG.",
+        "Falsch: die Haselnussallergie fehlt, und die Familienanamnese ist nicht unauffällig.",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Migräne.",
+        "Anamnestisch besteht der Verdacht auf eine Migräne mit Aura. Differenzialdiagnostisch kommen eine transitorische ischämische Attacke, eine Sinusvenenthrombose und eine Subarachnoidalblutung in Betracht.",
+        "Es besteht eine gesicherte Migräne mit Aura, weitere Diagnostik ist nicht erforderlich.",
+        "Anamnestisch besteht der Verdacht auf einen Spannungskopfschmerz bei Prüfungsstress. Differenzialdiagnostisch kommen ein Clusterkopfschmerz, eine Trigeminusneuralgie und eine Sinusitis bei einer jungen Patientin in Betracht."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen (auch Sinusvenenthrombose unter der Pille).",
+        "Ohne Untersuchung ist die Diagnose noch nicht gesichert, und gefährliche Differenzialdiagnosen müssen ausgeschlossen werden.",
+        "Medizinisch unpassend: Ein Spannungskopfschmerz ist beidseitig und drückend, ohne Aura und ohne Pulsieren."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme, eine kraniale Computertomographie mit Kontrastmittel, eine Lumbalpunktion sowie eine Therapie mit Morphin. Die Pille soll unverändert weitergenommen werden.",
+        "Wir machen Blut und CT.",
+        "Zur weiteren Abklärung empfehlen wir eine neurologische Untersuchung einschließlich Prüfung auf Meningismus sowie Blutdruck- und Blutzuckermessung. Bei unauffälligem Befund ist keine Bildgebung erforderlich. Therapeutisch Metoclopramid 10 mg i. v. und Sumatriptan 50 mg p. o.; die kombinierte Pille ist auf ein östrogenfreies Präparat umzustellen.",
+        "Zur weiteren Abklärung empfehlen wir eine neurologische Untersuchung sowie Metoclopramid 10 mg i. v. und Sumatriptan 50 mg p. o. Die kombinierte Pille kann unverändert weiter eingenommen werden, da bei einer jungen Patientin kein Handlungsbedarf besteht und eine Umstellung der Verhütung nicht nötig ist."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gefährlich und unverhältnismäßig: Opioide sind bei Migräne nicht empfohlen, und die Pille muss kritisch überprüft werden.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Richtig: Diagnostik, Therapie und Konsequenz für die Verhütung in vollständigen Sätzen.",
+        "Guideline-widrig: Bei Migräne mit Aura sind östrogenhaltige Kontrazeptiva wegen des Schlaganfallrisikos zu vermeiden."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Ich möchte Ihnen Frau Lena Hartmann vorstellen, eine 28-jährige Patientin, die sich heute mit seit dem Morgen bestehenden rechtsseitigen, pulsierenden Kopfschmerzen nach einer visuellen Aura vorgestellt hat.",
+        "Ich möchte Ihnen Frau Hartmann vorstellen. Die Patientin hat Kopfweh und Flimmern, sie ist ziemlich jung und nimmt die Pille, ansonsten weiß ich noch nicht so viel über sie.",
+        "Also, die Frau hat heute Morgen Flimmern gesehen ...",
+        "Frau Hartmann hat eine Migräne mit Aura, und sie nimmt die Pille."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz.",
+        "Unstrukturiert und umgangssprachlich.",
+        "Kein strukturierter Einstieg; zuerst Patientin und Leitsymptom.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Die Schmerzen traten nach einer Aura mit Sprachstörung und Lähmung der linken Hand auf. Begleitend bestehen Übelkeit, einmaliges Erbrechen und Fieber bis 38,5 °C. Ein Meningismus wurde bejaht.",
+        "Sie hat alles Mögliche.",
+        "Sie hat Fieber, Nackensteife und Durchfall, außerdem eine Lähmung im linken Arm.",
+        "Nach einer ca. 20-minütigen visuellen Aura mit Zickzacklinien traten pulsierende Schmerzen temporal rechts auf (NRS 8/10), begleitet von Übelkeit, einmaligem Erbrechen, Photophobie und Phonophobie. Fieber, Meningismus und Paresen wurden verneint."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich falsch: Es gab keine Sprachstörung und keine Lähmung, kein Fieber und keinen Meningismus.",
+        "Keine Information.",
+        "Inhaltlich falsch: Fieber, Nackensteife, Durchfall und Lähmung wurden verneint beziehungsweise nicht berichtet.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Sie ist gesund.",
+        "Bekannt ist eine Migräne seit dem 16. Lebensjahr, etwa einmal pro Monat. Wichtig: Sie nimmt eine kombinierte Pille mit Ethinylestradiol, raucht ca. 1,5 py und hat eine Haselnussallergie. Die Mutter hat Migräne, ein Großvater hatte einen Schlaganfall.",
+        "Bekannt sind eine Epilepsie und ein Diabetes mellitus Typ 1. Sie nimmt Ibuprofen 400 mg dreimal täglich und sonst keine Medikamente. Keine Allergien, Nichtraucherin, keine Familienanamnese, kein Anhalt für weitere Vorerkrankungen oder Operationen in der Vorgeschichte.",
+        "Sie nimmt Ibuprofen, sonst nichts."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: es gibt relevante Vorgeschichte.",
+        "Richtig: relevante Vorgeschichte, die Pille und das Rauchen als Risikofaktoren, Allergie und Familienanamnese.",
+        "Inhaltlich falsch (keine Epilepsie, kein Diabetes; Raucherin; Haselnussallergie; positive Familienanamnese).",
+        "Unvollständig: die Pille, die Allergie und die Vorgeschichte fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an Stress.",
+        "Es handelt sich sicher um eine Subarachnoidalblutung, weil die Schmerzen sehr stark sind. Differenzialdiagnostisch denke ich höchstens noch an einen Spannungskopfschmerz und eine Sinusitis; eine Bildgebung ist sofort nötig.",
+        "Ich vermute eine Migräne mit Aura. Differenzialdiagnostisch denke ich an eine transitorische ischämische Attacke, eine Sinusvenenthrombose bei Einnahme der Pille und eine Subarachnoidalblutung.",
+        "Ich weiß es nicht genau."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "Zu sicher („sicher“), und eine Subarachnoidalblutung hat einen Vernichtungskopfschmerz mit plötzlichem Beginn, nicht eine Aura mit langsamem Verlauf.",
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache, mit Bezug zur Pille.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde eine Lumbalpunktion und ein MRT des ganzen Körpers machen und Morphin geben. Die Pille würde ich unverändert weiter einnehmen lassen und die Patientin danach sofort nach Hause entlassen, ohne sie weiter zu überwachen oder noch einmal zu untersuchen.",
+        "Ich würde sie neurologisch untersuchen, auch auf Meningismus, und Blutdruck und Blutzucker messen. Bei unauffälligem Befund verzichte ich auf eine Bildgebung. Therapeutisch gebe ich Metoclopramid 10 mg i. v. und Sumatriptan 50 mg p. o. Die kombinierte Pille würde ich auf ein östrogenfreies Präparat umstellen.",
+        "Ich würde sie nach Hause schicken.",
+        "Ich würde Sumatriptan 50 mg geben, weil es ein Opioid ist."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Unverhältnismäßig und gefährlich: Opioide sind bei Migräne nicht empfohlen, und die Pille ist ein Risiko.",
+        "Richtig: Untersuchung, bildgebungsfreies Vorgehen bei unauffälligem Befund, Akuttherapie und Konsequenz für die Pille.",
+        "Gefährlich: Sie dürfen nicht entlassen, ohne gründlich untersucht und behandelt zu haben.",
+        "Fachlich falsch: Sumatriptan ist ein Triptan (5-HT1B/1D-Agonist), kein Opioid."
+      ],
+      "reply": "Oberarzt: „Gut. Was ist mit der Pille?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Bei Migräne mit Aura erhöhen östrogenhaltige Kontrazeptiva das Risiko für einen ischämischen Schlaganfall, zusätzlich verstärkt durch das Rauchen. Ich würde die Pille umstellen und ein reines Gestagenpräparat oder eine Kupferspirale empfehlen.",
+        "Östrogenhaltige Pillen sind bei Migräne mit Aura unbedenklich, sie verringern sogar das Schlaganfallrisiko und können auch bei Raucherinnen jahrelang unverändert weiter eingenommen werden, ohne dass man irgendetwas ändern oder die Patientin beraten muss.",
+        "Das weiß ich nicht.",
+        "Die Pille verursacht nur Übelkeit."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Aura plus Östrogen erhöht das Schlaganfallrisiko (zusätzlich Rauchen); Alternativen ohne Östrogen.",
+        "Fachlich falsch und gefährlich: Das Risiko ist erhöht, nicht verringert, besonders bei Raucherinnen.",
+        "In der Prüfung erwartet man eine begründete Antwort.",
+        "Falsch: Sie übersehen das Schlaganfallrisiko."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Aura“?",
+      "options": [
+        "dauerhafte Lähmung einer Körperseite nach einem Schlaganfall",
+        "vorübergehende Ausfälle vor dem Kopfschmerz, zum Beispiel Flimmern",
+        "plötzlicher starker Drehschwindel mit Übelkeit",
+        "kurze Bewusstlosigkeit mit Sturz"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist eine Hemiparese.",
+        "Richtig.",
+        "Das ist Vertigo.",
+        "Das ist eine Synkope."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Photophobie“?",
+      "options": [
+        "Lärmempfindlichkeit",
+        "Geruchsempfindlichkeit",
+        "Doppelbilder",
+        "Lichtempfindlichkeit"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist Phonophobie.",
+        "Das ist Osmophobie.",
+        "Das ist Diplopie.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Meningismus“?",
+      "options": [
+        "Nackensteifigkeit durch Reizung der Hirnhäute",
+        "Hirnhautentzündung",
+        "Verspannung der Schultermuskulatur",
+        "Krampfanfall"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Meningitis; Meningismus ist das Zeichen, nicht die Entzündung selbst.",
+        "Das ist eine Myogelose.",
+        "Das ist ein epileptischer Anfall."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Cephalgie“?",
+      "options": [
+        "Schwindel",
+        "Ohrgeräusch",
+        "Kopfschmerz",
+        "Gesichtsschmerz"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist Vertigo.",
+        "Das ist Tinnitus.",
+        "Richtig.",
+        "Das ist die Prosopalgie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Skotom“?",
+      "options": [
+        "Doppelbilder",
+        "Fleck oder Ausfall im Gesichtsfeld",
+        "Nachtblindheit",
+        "Augenzittern"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist Diplopie.",
+        "Richtig.",
+        "Das ist Hemeralopie.",
+        "Das ist Nystagmus."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

@@ -4,13 +4,13 @@ An offline Android app for drilling basic B2 German vocabulary with Anki-style s
 This file explains **how the app is built** and **why** each choice was made. It is a living
 document: see [How this file is maintained](#how-this-file-is-maintained).
 
-Last updated: 2026-10-31
+Last updated: 2026-11-06
 
 ---
 
 ## 1. What the app is
 
-Five study modes over a curated B2 pool (nothing beyond what every B2 speaker should know). The pool can grow without an app update: the app downloads newer question packs from its update feed (section 5, [ADR-0012](docs/adr/0012-downloadable-question-pool.md)). Pool sizes as built into version 2.7.1:
+Six study modes over a curated B2 pool (the sixth, FSP-Fälle, prepares the medical German exam that follows B2) (nothing beyond what every B2 speaker should know). The pool can grow without an app update: the app downloads newer question packs from its update feed (section 5, [ADR-0012](docs/adr/0012-downloadable-question-pool.md)). Pool sizes as built into version 2.7.1:
 
 | Mode | Question | Pool |
 |---|---|---|
@@ -19,6 +19,7 @@ Five study modes over a curated B2 pool (nothing beyond what every B2 speaker sh
 | **Pluralformen** | Pick the plural of a noun | the same 484 nouns |
 | **Präteritum** | Pick the er/sie/es Präteritum of a verb | 253 inseparable verbs (strong and mixed first, plus modals and frequent regular verbs) |
 | **Fehler finden** | Tap the one wrong part of a B2 writing sentence (forum post or formal e-mail) | 177 sentences, 12 error types |
+| **FSP-Fälle** | Play a whole simulated Fachsprachprüfung case (Baden-Württemberg format): in each of 34 steps pick what to say to the patient, write in the Arztbrief or tell the senior doctor; a wrong pick explains why and you pick again ([ADR-0014](docs/adr/0014-fsp-case-simulations.md)) | 58 cases in 12 areas of medicine |
 
 Each question is multiple choice (in Fehler finden the "choices" are the sentence's chunks). Cards come back according to a spaced-repetition scheduler, so
 wrong or slow answers return soon and well-known ones are pushed out to days, weeks and months.
@@ -216,17 +217,17 @@ Wrong options must be plausible but never accidentally correct (`DistractorFacto
 
 ### Updating the pool without an app release
 
-The seven pool files (`vocab/*.json`, `i18n/*.json`) are one **pack** described by `content.json`: the file format
-(`schema`, 1 for now), a `contentVersion` and the SHA-256 (a fingerprint that proves a file arrived complete and
+The eight pool files (`vocab/*.json` including the FSP cases `vocab/fsp_cases.json`, `i18n/*.json`) are one **pack** described by `content.json`: the file format
+(`schema`, 2 since the FSP cases of 2026-11-06; it was 1 before), a `contentVersion` and the SHA-256 (a fingerprint that proves a file arrived complete and
 unchanged) of every file ([ADR-0012](docs/adr/0012-downloadable-question-pool.md), requirements QP-1..QP-4).
 
-- **Making new questions:** edit `tools/data/*.tsv`, run `tools/build_vocab.py` (it validates, writes the JSON and, through
+- **Making new questions:** edit `tools/data/*.tsv` (FSP cases: `tools/data/fsp/<id>.json`, listed in `tools/data/fsp_cases.tsv`), run `tools/build_vocab.py` (it validates, writes the JSON and, through
   `tools/content_manifest.py`, raises `contentVersion` when any file changed), commit. Then
   `tools/publish_content.sh beta` puts the pack in the feed's `content/` folder on `bleeding-edge`; after trying it in the
   beta app, `tools/publish_content.sh promote` (Giovanni's call) copies exactly that pack to `main` and the same files to
   the web version. The gate fails if `content.json` does not match the bundled files.
 - **On the phone** (`ContentPack.kt` in `:core`; `ContentStore`, `ContentUpdater` and `ui/QuestionPool`): with each update
-  check the app reads `content/content.json` of its own branch, downloads a pack only if its schema is 1 and its version is
+  check the app reads `content/content.json` of its own branch, downloads a pack only if its schema is the one it reads (2) and its version is
   higher than the pack in use, and installs it only if every file matches its checksum, parses and leaves every mode at least
   one question. A failed, refused or offline download changes nothing.
 - **Which pack is used:** the downloaded one only while it is newer than the one built into the APK; an outdated or unreadable
@@ -369,6 +370,7 @@ Newest first. Add an entry whenever a decision changes the design. **Type** is t
 
 | Date | Type | Decision | Why |
 |---|---|---|---|
+| 2026-11-06 | Perfective | **FSP-Fälle, a sixth mode: 58 simulated Fachsprachprüfung cases** ([ADR-0014](docs/adr/0014-fsp-case-simulations.md)). Every case follows one 34-step template of the Baden-Württemberg exam (16 steps Arzt-Patienten-Gespräch, 7 Arztbrief, 6 Arzt-Arzt-Gespräch, 5 Fachbegriffe), checked by `tools/check_fsp_cases.py` in the build and the gate. A case is one card: at least 80 % right at the first try passes (FS-4), the time spent never counts (`StudyEngine.answer` got a `gradeOverride`). Cases come in the order of the case list, grouped by area of medicine (FS-2). Pack format schema 2 (new file `vocab/fsp_cases.json`). Web search found no public BW exam report naming a case, so all 58 are classic FSP cases tagged `common_FSP`. One reference case by hand, 57 written and then reviewed by Sonnet agents | Giovanni: one consistent simulation of the whole FSP per case, ordered by area of medicine |
 | 2026-10-31 | Perfective | **22 new "Fehler finden" sentences from Giovanni's three texts of 2026-10-31** (forum posts on remote work, AI in studies and children on social media; pool version 7, 155 to 177 sentences, `errors.tsv` F83-F104, rules translated into de / pt / es). Same method as the earlier rows: new wording that practises an expression, one error Giovanni made in those texts per sentence, no text of his copied. Errors covered: missing `werden` in a modal passive, verb position in an indirect question and after `und` in a dass-clause, calques from Portuguese (`Fragen machen`, `Hausarbeit antworten`, `besorgen sich`, `Einrichtungen` for *Vorgaben*, `Verpflichtungen erledigen`), n-declension (`dem Student`), gender (`der Programm`, `den Handy`), `im Computer`, `vor soziale Medien`, plural of Artikel / Jugendliche / Kindern, `überzeugen, dass` without *davon*, `um … zu` with a new subject, and five spelling slips. The texts carry no teacher corrections, so each error was judged by hand. `ContentTest` floor raised from 150 to 170. Checked: `:core:test` green (ContentTest 22, ContentTranslationsTest 4) and LanguageTool 6.6 (PICKY) clean on all 177 corrected sentences. The pool version is 7 because `build_vocab.py` ran twice after the unpublished version 5. Pool change only, no app release (ADR-0012); not committed or published | Giovanni: update the Find the mistake list from today's texts |
 | 2026-10-29 | Perfective | **11 new "Fehler finden" sentences from Giovanni's two newest texts** (a forum post on a sugar tax and a formal e-mail about a broken heating; pool version 5, 144 to 155 sentences, `errors.tsv` F76-F82 and M70-M73, rules translated into de / pt / es). Same method as the 2026-10-25 row: new wording that practises an expression from Giovanni's lists and carries one error he made in those texts (`zu` after a modal verb, `die Preise Steigerung` for *Preissteigerung*, `desto mehrere Menschen`, `gesunde Essen`, `Zucker bilanzieren`, `passiert` for *entstanden*, `und endlich` for a sequence, `dieser Monat` for a date, `am schnellsten` for *so schnell wie möglich*, missing comma after the salutation); no text of his is copied. The two texts carry no corrections in the document, so the errors were found and checked by hand. Checked with LanguageTool 6.6 (PICKY): all 155 corrected sentences clean, no warning outside a marked chunk. `ContentTest` floor raised from 140 to 150. Pool change only, no app release (ADR-0012); not yet published to the feed | Giovanni: add the relevant mistakes of the two texts last corrected to the Find the mistake pool. Read as the two newest texts at the end of the B2 document, after the four used on 2026-10-25 |
 | 2026-10-25 | Preventive | **Monthly architecture review**: pipeline-check v0.4.0, local mode, report of 2026-10-25: 0 falhas, 0 avisos, 1 pulado (protecao-de-branch); 2 proposals; proposals created as german-quiz#11, pipeline-check#4 | Monthly review standard (ADR-0013): the program measures, the skill judges |

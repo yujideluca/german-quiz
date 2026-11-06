@@ -1,0 +1,691 @@
+{
+  "id": "endokarditis",
+  "area": "Kardiologie",
+  "title": "Fieber und Schwächegefühl seit Tagen",
+  "diagnosis": "Infektiöse Endokarditis bei i.v.-Drogenkonsum",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Markus Becker, 41 Jahre, stellt sich am Vormittag in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Becker sitzt blass und schwitzend auf der Liege.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Morgen, ich bin Dr. Silva und kümmere mich als Assistenzarzt um Sie. Entschuldigen Sie bitte die Wartezeit, in der Notaufnahme ist heute sehr viel los.",
+        "Guten Morgen, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Becker?",
+        "Na, Herr Becker, Sie sehen ja furchtbar aus. Setzen Sie sich mal richtig hin.",
+        "Hallo, ich muss gleich Blut abnehmen. Machen Sie bitte den Arm frei."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Höflich, aber Sie fragen nicht nach dem Namen. Die Identität des Patienten müssen Sie zu Beginn prüfen.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Respektlos und ohne Vorstellung. Sie sagen weder Ihren Namen noch Ihre Funktion.",
+        "Ohne Vorstellung und ohne Gespräch. Erst begrüßen und sich vorstellen, dann handeln."
+      ],
+      "reply": "Patient: „Ja, Becker. Guten Morgen.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Sie sind doch noch recht jung, unter vierzig, stimmt das?",
+        "Wie ist Ihr Body-Mass-Index, und welche Blutdruckwerte hatten Sie bei den letzten Messungen?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Wie lautet Ihre Adresse, und bei welcher Krankenkasse sind Sie versichert, damit wir die Aufnahme abschließen können?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Suggestivfrage: Sie legen die Antwort nahe. Fragen Sie offen.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Das ist Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
+      ],
+      "reply": "Patient: „Ich bin 41, 1,80 Meter groß und wiege jetzt nur noch 68 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Haben Sie Fieber?",
+        "Warum waren Sie nicht schon früher bei einem Arzt, wenn Sie sich schon so lange schlecht fühlen?",
+        "Welche Symptomatik und welche Leitbeschwerde führen Sie zu uns?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Eine offene Frage lässt den Patienten selbst erzählen.",
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
+        "„Symptomatik“ und „Leitbeschwerde“ sind Fachsprache. Mit Patienten sprechen Sie Laiensprache."
+      ],
+      "reply": "Patient: „Ich habe seit gut zehn Tagen Fieber und bin total schlapp. Mein Hausarzt hat vorgestern ein neues Geräusch am Herzen gehört und mich gleich hierher geschickt.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten das Fieber genauer erfassen. Was sagen Sie?",
+      "options": [
+        "Hatten Sie Pyrexie oder Frösteln, und wie war die Temperaturkurve über den Tag, axillär oder rektal gemessen?",
+        "Das Fieber kommt doch bestimmt abends, nicht wahr, und dazu bekommen Sie Schüttelfrost?",
+        "Hatten Sie Fieber?",
+        "Wie hoch war das Fieber, und wie oft haben Sie gemessen? Hatten Sie auch Schüttelfrost?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Pyrexie“, „Temperaturkurve“ und „axillär“ sind Fachsprache; der Patient versteht sie nicht.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
+        "Das hat der Patient schon gesagt. Fragen Sie nach Höhe, Häufigkeit und Schüttelfrost.",
+        "Richtig: laienverständlich, nach Höhe, Verlauf und Schüttelfrost, ohne die Antwort vorzugeben."
+      ],
+      "reply": "Patient: „Ich messe unter der Zunge. Abends habe ich meistens 38,5 bis 39 Grad, gestern 39,1. Dazu bekomme ich Schüttelfrost.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Wann war die Erstmanifestation, und verlief die Erkrankung seitdem akut, subakut oder chronisch rezidivierend?",
+        "Wie hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben?",
+        "Seit wann haben Sie Fieber?",
+        "Hat das Fieber nach einem Infekt angefangen, so wie bei einer Grippe, und wurde es danach schlimmer?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „rezidivierend“ versteht der Patient nicht.",
+        "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Das hat der Patient schon gesagt (seit gut zehn Tagen). Fragen Sie nach dem Verlauf.",
+        "Suggestive, geschlossene Frage; sie legt eine Grippe nahe und erfasst den Verlauf nicht offen."
+      ],
+      "reply": "Patient: „Es fing mit Gliederschmerzen und Schlappheit an, nach zwei Tagen kam das Fieber. Trotz Tabletten geht es nicht weg und wird eher schlimmer.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie möchten die Belastbarkeit erfassen. Welche Frage passt?",
+      "options": [
+        "Wie weit können Sie im Alltag noch gehen, bevor Sie Luft holen müssen? Zum Beispiel auf Treppen oder auf ebener Strecke?",
+        "Welcher NYHA-Klasse würden Sie sich zuordnen, und haben Sie eine Orthopnoe?",
+        "Können Sie noch einigermaßen laufen?",
+        "Wie belastbar sind Sie auf einer Skala von 1 bis 100, wenn Sie Treppen steigen oder schnell gehen, und wie viele Meter schaffen Sie am Stück?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: konkrete Alltagsbeispiele für die Belastbarkeit, ohne Fachbegriffe.",
+        "„NYHA“ und „Orthopnoe“ sind Fachbegriffe, die der Patient nicht kennt.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe zur Belastbarkeit.",
+        "Unübliche Skala. Fragen Sie nach Treppen und Wegstrecken im Alltag."
+      ],
+      "reply": "Patient: „Nach einem Stockwerk Treppen muss ich stehen bleiben und nach Luft ringen. Vor einem Monat ging das noch ohne Probleme.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Bestehen Tussis, Thoraxschmerzen, Palpitationen oder periphere Ödeme, und haben Sie eine Hämoptyse bemerkt?",
+        "Haben Sie sonst noch was?",
+        "Sie haben bestimmt auch starke Schmerzen in der Brust und bekommen kaum Luft, das gehört bei Ihnen ja sicher dazu, nicht wahr, Herr Becker?",
+        "Haben Sie Husten oder Schmerzen in der Brust, Herzrasen oder geschwollene Beine? Ist Ihnen sonst noch etwas aufgefallen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich gut, aber nur Fachbegriffe. Sagen Sie „Husten“, „Brustschmerzen“, „Herzrasen“, „geschwollene Beine“.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Suggestiv: Sie unterstellen das Symptom.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, mit offenem Abschluss."
+      ],
+      "reply": "Patient: „Ich habe trockenen Husten, und beim tiefen Einatmen sticht es rechts in der Brust. Herzrasen habe ich nicht, und die Beine sind nicht dick.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie sind Ihr Appetit und Ihr Gewicht? Schwitzen Sie nachts? Wie sind Stuhlgang und Wasserlassen?",
+        "Haben Sie Nachtschweiß, Inappetenz, Gewichtsverlust, Dysurie, Obstipation und Diarrhö?",
+        "Wie ist es mit der Vegetativa, also mit Appetit, Gewicht, Nachtschweiß, Miktion und Defäkation: Haben Sie dort irgendwelche Auffälligkeiten bemerkt?",
+        "Sie haben sicher abgenommen, weil Sie so viel schwitzen, oder?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Appetit, Gewicht, Nachtschweiß, Stuhlgang und Wasserlassen in Laiensprache.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Inappetenz, Dysurie, Obstipation, Diarrhö).",
+        "Fachjargon („Vegetativa“, „Miktion“, „Defäkation“), den ein Patient nicht versteht.",
+        "Suggestivfrage; Sie geben die Antwort vor."
+      ],
+      "reply": "Patient: „Nachts schwitze ich so stark, dass ich das Bettzeug wechseln muss. Appetit habe ich kaum, in zwei Monaten habe ich sechs Kilo abgenommen. Stuhlgang und Wasserlassen sind normal.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Sie haben bestimmt Hepatitis C oder HIV, das ist bei Ihrer Vorgeschichte ja häufig. Stimmt das, und wurden Sie schon operiert?",
+        "Haben Sie Vorerkrankungen, zum Beispiel am Herzen oder an der Leber, oder Infektionen? Und wurden Sie schon einmal operiert?",
+        "Sind Sie gesund?",
+        "Leiden Sie an kardialen, hepatischen oder infektiologischen Vorerkrankungen, und gab es operative Eingriffe oder stationäre Aufenthalte?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Wertend und suggestiv. Fragen Sie offen und ohne Vorurteil.",
+        "Richtig: mit Beispielen, laienverständlich, und Operationen sind mitgefragt.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Vollständig, aber in Fachsprache. Mit Patienten sprechen Sie Laiensprache."
+      ],
+      "reply": "Patient: „Ich habe Hepatitis C, die wurde vor fünf Jahren festgestellt, aber nie behandelt. Der HIV-Test war vor zwei Jahren negativ. Vor zwei Jahren wurde ein Abszess an meinem rechten Unterarm aufgeschnitten. Mit dem Herzen war nie etwas.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Methadon oder andere Mittel zur Substitution?",
+        "Welche Pharmaka applizieren Sie regelmäßig, und in welcher Galenik und Dosis?",
+        "Nehmen Sie Tabletten, Tropfen oder Spritzen, und wenn ja, wie oft am Tag? Das schreibe ich dann in Ihre Akte, damit wir nichts vergessen.",
+        "Welche Medikamente nehmen Sie ein, auch Schmerz- oder Fiebermittel, und in welcher Dosierung? Auch Mittel ohne Rezept?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Eine Annahme und eine geschlossene Frage; Sie erfahren so nichts über andere Medikamente.",
+        "Fachsprache („Pharmaka“, „applizieren“, „Galenik“).",
+        "Zu ungenau: Name, Dosis, Fiebermittel und frei verkäufliche Mittel werden nicht erfragt.",
+        "Richtig: Name, Dosierung und auch frei verkäufliche Mittel."
+      ],
+      "reply": "Patient: „Keine regelmäßigen. Gegen das Fieber nehme ich seit einer Woche Paracetamol 500 mg, etwa dreimal am Tag.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Pflaster oder Lebensmittel? Wie äußert sich das?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen gleich ein Antibiotikum geben möchten.",
+        "Sind Sie gegen irgendetwas allergisch, zum Beispiel Heuschnupfen? Das ist sicher unwichtig, aber ich frage zur Sicherheit, weil es so im Formular steht.",
+        "Besteht bei Ihnen eine Hypersensitivität gegenüber Medikamenten, Kontrastmitteln oder Latex?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Zu eng: Allergien gegen andere Stoffe übersehen Sie.",
+        "Verharmlosend und zu eng: Medikamenten- und Kontaktallergien sowie die Reaktion werden nicht erfragt.",
+        "Fachsprache („Hypersensitivität“), und die Frage ist auf wenige Stoffe verengt."
+      ],
+      "reply": "Patient: „Gegen Pflaster, da wird meine Haut rot und juckt. Gegen Medikamente nicht, soweit ich weiß.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln und Drogen?",
+      "options": [
+        "Sie sind doch bestimmt drogenabhängig, oder? Spritzen Sie etwa?",
+        "Wie ist Ihr Nikotin-, Alkohol- und Drogenabusus, und applizieren Sie intravenös?",
+        "Rauchen Sie? Trinken Sie Alkohol? Nehmen Sie Drogen, und wenn ja, welche und wie?",
+        "Rauchen und trinken Sie? Über Drogen müssen wir nicht sprechen, das ist Ihre Privatsache, solange es nicht zu viel ist."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Wertend und suggestiv; der Patient verschließt sich.",
+        "„Abusus“ und „applizieren“ sind Fachsprache und klingen nach Vorwurf.",
+        "Richtig: neutral, konkret und ohne Wertung; die Frage nach der Konsumform ist hier entscheidend.",
+        "Falsch: Drogenkonsum ist bei Fieber und Herzgeräusch eine Schlüsselinformation. Sie müssen danach fragen."
+      ],
+      "reply": "Patient: „Ich rauche seit 20 Jahren etwa 20 Zigaretten am Tag. Alkohol trinke ich nur ab und zu ein Bier. Ich spritze seit acht Jahren Heroin, meist zweimal am Tag, zuletzt gestern. Manchmal nehme ich Kokain. Die Nadeln benutze ich oft mehrfach.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Hat jemand in Ihrer Familie auch gespritzt oder eine Hepatitis?",
+        "Wie ist die Familienanamnese bezüglich kardiovaskulärer und maligner Erkrankungen, auch bei Verwandten ersten Grades?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel am Herzen oder Krebs?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Suggestiv und wertend; sie erfasst die familiären Erkrankungen nicht.",
+        "Fachsprache („Familienanamnese“, „kardiovaskulär“, „maligne“).",
+        "Zu eng: Geschwister, Kinder und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Richtig: offen, mit passenden Beispielen."
+      ],
+      "reply": "Patient: „Mein Vater hatte mit 58 einen Herzinfarkt. Meine Mutter hat Diabetes.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
+        "Arbeiten Sie überhaupt, oder leben Sie vom Bürgergeld?",
+        "Wie ist Ihr sozialer Status, wie sind Ihre Wohn- und Einkommensverhältnisse im Detail, und wer zahlt Ihre Miete?",
+        "Haben Sie Geld?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Behandlung und spätere Versorgung.",
+        "Wertend und unhöflich.",
+        "Zu aufdringlich und unklar formuliert; der Beruf und das Wohnen werden nicht einfach erfragt.",
+        "Unangemessen."
+      ],
+      "reply": "Patient: „Ich war Lagerarbeiter, bin aber seit einem Jahr arbeitslos. Ich wohne allein in einer Mietwohnung, meine Freundin besucht mich oft.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben eine infektiöse Endokarditis der Trikuspidalklappe mit septischen Lungenembolien.",
+        "Das kommt vom Spritzen. Wenn Sie damit aufgehört hätten, wäre das nicht passiert, und jetzt müssen wir es ausbaden.",
+        "Ich vermute, dass sich Ihre Herzklappen entzündet haben, wahrscheinlich durch Bakterien im Blut. Das könnte das Fieber und das Geräusch am Herzen erklären. Sicher ist das aber noch nicht.",
+        "Es ist wahrscheinlich nur ein grippaler Infekt, der noch etwas anhält. Trinken Sie viel, ruhen Sie sich zu Hause aus, und wenn es in einer Woche nicht besser ist, kommen Sie einfach wieder vorbei."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache und zu sicher; der Patient versteht die Diagnose nicht.",
+        "Vorwurfsvoll und wertend. Das zerstört das Vertrauen.",
+        "Richtig: Verdacht statt Gewissheit, Laiensprache, ohne Schuldzuweisung.",
+        "Verharmlosend und medizinisch falsch; Fieber mit neuem Herzgeräusch ist ein Notfall."
+      ],
+      "reply": "Patient: „Herzklappen? Ist das gefährlich? Muss ich operiert werden?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Muss ich operiert werden?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Zuerst nehmen wir mehrmals Blut ab, um die Bakterien nachzuweisen, und machen einen Herzultraschall. Dann bekommen Sie Antibiotika über die Vene, meist mehrere Wochen, deshalb bleiben Sie bei uns. Manchmal ist eine Operation an der Klappe nötig; das besprechen wir mit den Herzchirurgen.",
+        "Sie bekommen heute Antibiotika-Tabletten und können damit nach Hause gehen. In einer Woche gehen Sie zur Kontrolle zu Ihrem Hausarzt, dann sehen wir weiter.",
+        "Eine Operation brauchen Sie auf keinen Fall.",
+        "Das entscheidet der Oberarzt, dazu kann ich nichts sagen."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich.",
+        "Gefährlich: Eine Endokarditis braucht Blutkulturen und Antibiotika über die Vene im Krankenhaus.",
+        "Falsch: Ein sicheres Versprechen ist nicht möglich, bei manchen Patienten ist eine Operation nötig.",
+        "Unprofessionell und lässt den Patienten allein."
+      ],
+      "reply": "Patient: „Gut, danke für die Erklärung. Ich habe nur Angst vor dem Entzug hier.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Becker (41 J.) hat sich heute in unsere Notaufnahme vorgestellt wegen Fieber und ein Herzgeräusch, das der Hausarzt gehört haben soll, seit zehn Tagen.",
+        "Herr Becker ist 41 und hat Fieber.",
+        "Herr Markus Becker, ein 41-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit zehn Tagen bestehendem Fieber und einem hausärztlich neu festgestellten Herzgeräusch vor.",
+        "Der Patient Herr Becker stellt sich heute vor wegen Herzrasen und Fieber seit zehn Tagen, 41-jährig."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Grammatik: „in unserer Notaufnahme“ (Dativ) und „wegen Fieber und eines Herzgeräusches“; der Satz ist außerdem unübersichtlich.",
+        "Umgangssprache und unvollständig; im Arztbrief fehlen Ort, Dauer und das Herzgeräusch.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptom.",
+        "Inhaltlich falsch: Herzrasen wurde verneint. Außerdem hängt die Altersangabe unglücklich am Ende."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Seit etwa zehn Tagen bestehen zunächst Abgeschlagenheit und Gliederschmerzen, nach zwei Tagen Fieber bis 39,1 °C mit Schüttelfrost, progredient trotz Paracetamol. Zudem Belastungsdyspnoe bereits nach einem Stockwerk (NYHA III), trockener Reizhusten und atemabhängige Schmerzen rechtsthorakal.",
+        "Seit etwa zehn Tagen bestehen zunächst Abgeschlagenheit und Gliederschmerzen, nach zwei Tagen Fieber bis 39,1 °C mit Schüttelfrost, regredient unter Paracetamol. Zudem Belastungsdyspnoe bereits nach einem Stockwerk (NYHA I), trockener Reizhusten und atemabhängige Schmerzen linksthorakal.",
+        "Er hat seit zehn Tagen Fieber und kriegt schlecht Luft.",
+        "Seit zehn Tagen bestehen Abgeschlagenheit, Fieber bis 39,1 °C und Belastungsdyspnoe nach einem Stockwerk, ferner Husten und Schmerzen rechts, die Beschwerden seien progredient."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachsprache und alle Merkmale (Beginn, Verlauf, Höhe des Fiebers, Belastbarkeit, Begleitsymptome).",
+        "Inhaltlich falsch: Die Beschwerden sind progredient (nicht regredient), die Dyspnoe entspricht NYHA III, und die Schmerzen sind rechtsthorakal.",
+        "Umgangssprache und zu ungenau; Fachbegriffe und Details fehlen.",
+        "Konjunktiv-I-Mischung, und Schüttelfrost, NYHA-Stadium und die Lokalisation „rechtsthorakal“ fehlen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Ferner berichtete der Patient über Nachtschweiß, Inappetenz und einen Gewichtsverlust von 16 kg in zwei Wochen. Miktion und Stuhlgang sind unauffällig. Palpitationen und periphere Ödeme wurden bejaht.",
+        "Er schwitzt nachts und hat abgenommen.",
+        "Ferner berichtete der Patient über Nachtschweiß, Inappetenz und eine Gewichtszunahme von 6 kg in zwei Monaten. Miktion und Stuhlgang sind unauffällig.",
+        "Ferner berichtete der Patient über Nachtschweiß mit Wäschewechsel, Inappetenz und einen Gewichtsverlust von 6 kg in zwei Monaten. Miktion und Stuhlgang sind unauffällig. Palpitationen und periphere Ödeme wurden verneint."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich falsch: Es waren 6 kg in zwei Monaten, und Palpitationen und Ödeme wurden verneint.",
+        "Umgangssprache und unvollständig; Negativbefunde fehlen.",
+        "Inhaltlich falsch: Der Patient hat 6 kg abgenommen. Die Negativbefunde zu Herzrasen und Ödemen fehlen.",
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Bekannt sind eine Hepatitis B (ED vor fünf Jahren) und eine HIV-Infektion. Z. n. Abszessinzision am linken Unterarm vor zwei Jahren. Kardiale Vorerkrankungen bestehen nicht. Medikation: Paracetamol 500 mg 1-1-1 und Ibuprofen 400 mg 1-0-1.",
+        "Bekannt ist eine unbehandelte Hepatitis C (ED vor fünf Jahren), ein HIV-Test war vor zwei Jahren negativ. Z. n. Abszessinzision am rechten Unterarm vor zwei Jahren. Kardiale Vorerkrankungen bestehen nicht. Medikation: keine Dauermedikation, Paracetamol 500 mg 1-1-1 seit einer Woche.",
+        "Vorerkrankungen: Leberentzündung. Medikamente: Fiebertabletten.",
+        "Bekannt sind eine Hepatitis C und ein Herzklappenfehler. Medikation: Paracetamol 500 mg 3-0-0 seit einer Woche."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich falsch: Hepatitis C (nicht B), HIV-Test negativ, rechter Unterarm, und Ibuprofen wurde nicht eingenommen.",
+        "Richtig: Fachbegriffe, Z. n. und Dosierschema im Format morgens-mittags-abends.",
+        "Laiensprache und ohne Dosierung.",
+        "Inhaltlich falsch: Es gibt keine kardiale Vorerkrankung, und das Dosierschema stimmt nicht (1-1-1)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Keine Allergien. Nikotinkonsum ca. 40 py, regelmäßiger Alkoholkonsum. I.v.-Heroinkonsum seit acht Jahren, zuletzt gestern, Nadeln mehrfach verwendet. Familienanamnese: Vater Myokardinfarkt mit 58 J., Mutter Diabetes mellitus. Der Patient ist arbeitslos und lebt allein in einer Mietwohnung.",
+        "Pflasterallergie. Nikotinkonsum ca. 20 py. Heroinkonsum nasal. Familienanamnese: Mutter Myokardinfarkt mit 58 J. Lagerarbeiter, lebt allein.",
+        "Kontaktallergie auf Pflaster (Exanthem), keine Medikamentenallergien. Nikotinkonsum ca. 20 py, gelegentlich Alkohol. I.v.-Heroinkonsum seit acht Jahren, zuletzt gestern, gelegentlich Kokain. Familienanamnese: Vater Myokardinfarkt mit 58 J., Mutter Diabetes mellitus. Arbeitslos, lebt allein.",
+        "Er raucht und spritzt Heroin, hat aber keine Allergien."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Es gibt eine Pflasterallergie, es sind 20 py (nicht 40), und Alkohol trinkt er nur gelegentlich.",
+        "Inhaltlich falsch: Der Konsum ist intravenös, der Vater hatte den Herzinfarkt, und der Patient ist arbeitslos.",
+        "Richtig: 20 Zigaretten am Tag über 20 Jahre sind 20 py (Packungsjahre); Allergie, Drogenanamnese, Familie und Soziales stimmen.",
+        "Laiensprache und unvollständig; die Pflasterallergie und die Familienanamnese fehlen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Es besteht eine gesicherte infektiöse Endokarditis der Aortenklappe bei Z. n. Klappenersatz. Differenzialdiagnostisch kommen eine Pneumonie und eine Tuberkulose in Betracht.",
+        "Es besteht der Verdacht auf eine infektiöse Endokarditis bei i.v.-Drogenkonsum, am ehesten der Trikuspidalklappe. Differenzialdiagnostisch kommen eine Pneumonie, eine Sepsis bei Weichteilinfektion und eine Tuberkulose in Betracht.",
+        "Diagnose: Herzinfektion. DD: Grippe.",
+        "Es besteht der Verdacht auf eine infektiöse Endokarditis. Differenzialdiagnostisch kommen eine Appendizitis, ein Harnwegsinfekt und eine Divertikulitis in Betracht."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich falsch: Die Diagnose ist noch nicht gesichert, und es gab keinen Klappenersatz.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen.",
+        "Laiensprache und kaum sinnvolle Differenzialdiagnosen.",
+        "Die Differenzialdiagnosen passen nicht zu Husten, Dyspnoe und Herzgeräusch."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir empfehlen die ambulante Weiterbehandlung. Zunächst soll eine orale Antibiose mit Amoxicillin begonnen werden; falls das Fieber nach einer Woche fortbesteht, sollen Blutkulturen abgenommen und eine Echokardiographie durchgeführt werden.",
+        "Wir machen Blut und Herzultraschall.",
+        "Wir empfehlen die stationäre Aufnahme. Es soll sofort eine Antibiose begonnen werden; Blutkulturen sind nicht nötig. Wegen der Emboliegefahr zusätzlich eine therapeutische Heparinisierung.",
+        "Wir empfehlen die stationäre Aufnahme. Vor Beginn der Antibiose sollen mindestens drei Blutkulturpaare aus getrennten Punktionsstellen abgenommen werden, zudem Labor (u. a. Blutbild, CRP, Procalcitonin, Kreatinin, Transaminasen), EKG, Röntgen-Thorax und eine transthorakale Echokardiographie, bei Bedarf transösophageal. Anschließend kalkulierte intravenöse Antibiose in Absprache mit der Infektiologie."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Gefährlich: Antibiose vor den Blutkulturen, nur oral und ambulant. Eine Endokarditis braucht stationäre intravenöse Therapie.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Gefährlich: Ohne Blutkulturen ist der Erreger nicht bekannt, und eine therapeutische Heparinisierung erhöht das Blutungsrisiko (zerebral).",
+        "Richtig: Blutkulturen vor der Antibiose, Echokardiographie, intravenöse Therapie, stationär."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Ich habe hier einen Drogenabhängigen mit Fieber, der wahrscheinlich wieder nur ein Bett braucht und seinen Entzug überbrücken will.",
+        "Ich möchte Ihnen Herrn Markus Becker vorstellen, einen 41-jährigen Patienten, der sich mit seit zehn Tagen bestehendem Fieber und einem hausärztlich neu festgestellten Herzgeräusch vorgestellt hat.",
+        "Ich möchte Ihnen Herrn Becker vorstellen, der eine infektiöse Endokarditis hat; die Diagnose ist für mich eindeutig, und ich habe bereits alles Weitere in die Wege geleitet und die Angehörigen informiert.",
+        "Also, der Hausarzt hat ein Geräusch gehört und ihn geschickt, und er hat auch schon seit Tagen so Fieber und so."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Wertend und unprofessionell; es fehlen Name, Alter und die Fakten.",
+        "Richtig: Name, Alter, Leitsymptom und zeitlicher Verlauf in einem Satz.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Unstrukturiert und umgangssprachlich."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Das Fieber stieg morgens auf bis zu 37,8 °C ohne Schüttelfrost. Es bestehen Nachtschweiß, ein Gewichtsverlust von 6 kg in zwei Monaten und eine Belastungsdyspnoe nach einem Stockwerk sowie ein produktiver Husten mit Hämoptysen. Beinödeme wurden bejaht.",
+        "Er hat Fieber und Husten und fühlt sich schlecht.",
+        "Das Fieber stieg abends auf bis zu 39,1 °C mit Schüttelfrost. Es bestehen Nachtschweiß, ein Gewichtsverlust von 6 kg in zwei Monaten, eine Belastungsdyspnoe nach einem Stockwerk sowie trockener Husten mit atemabhängigen Schmerzen rechtsthorakal. Palpitationen und Beinödeme wurden verneint.",
+        "Es bestehen Fieber, Gewichtszunahme und Brustschmerzen links, die in den linken Arm ausstrahlen. Die Belastbarkeit ist unverändert gut."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Fieber bis 39,1 °C abends mit Schüttelfrost, trockener Husten ohne Hämoptysen, Beinödeme verneint.",
+        "Umgangssprachlich und ohne Zahlen.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
+        "Inhaltlich falsch: Gewichtsverlust, rechtsthorakale Schmerzen ohne Ausstrahlung, und die Belastbarkeit ist deutlich eingeschränkt."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist gesund und nimmt nur gelegentlich Paracetamol.",
+        "Bekannt sind eine behandelte Hepatitis B und ein Herzklappenfehler seit der Kindheit. Er konsumiert seit acht Jahren Heroin nasal und raucht ca. 40 py. Ein HIV-Test war positiv.",
+        "Er nimmt Drogen, mehr weiß ich nicht.",
+        "Bekannt sind eine unbehandelte Hepatitis C und ein Z. n. Abszessinzision am rechten Unterarm; der HIV-Test war vor zwei Jahren negativ. Kardiale Vorerkrankungen bestehen nicht. Er konsumiert seit acht Jahren i.v. Heroin, zuletzt gestern, mit mehrfach verwendeten Nadeln, und raucht ca. 20 py."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch: Es gibt relevante Vorerkrankungen und einen i.v.-Drogenkonsum.",
+        "Inhaltlich falsch: Hepatitis C unbehandelt, kein Klappenfehler, Konsum intravenös, 20 py, HIV-Test negativ.",
+        "Unvollständig; Diagnosen, Konsumform und Risikofaktoren fehlen.",
+        "Richtig: relevante Vorgeschichte und die Risikofaktoren für eine Endokarditis (i.v.-Konsum, Hautabszess)."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich vermute eine infektiöse Endokarditis, am ehesten der Trikuspidalklappe bei i.v.-Drogenkonsum, mit septischen Lungenembolien. Differenzialdiagnostisch denke ich an eine Pneumonie, eine Sepsis bei Weichteilinfektion und eine Tuberkulose.",
+        "Es handelt sich sicher um einen grippalen Infekt, weil es mit Gliederschmerzen begann. Differenzialdiagnostisch denke ich höchstens noch an eine Bronchitis und einen Harnwegsinfekt.",
+        "Ich denke, dass das Herz irgendwie infiziert ist und der Patient deshalb Fieber bekommen hat; wie das genau heißt, müsste ich nachschlagen, aber wir sollten einfach mal schauen.",
+        "Ich weiß es nicht genau."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache, passend zu Anamnese und Risiko.",
+        "Zu sicher, und ein grippaler Infekt erklärt weder das neue Herzgeräusch noch den Gewichtsverlust.",
+        "Zu unpräzise für das Arzt-Arzt-Gespräch; keine Differenzialdiagnosen.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde sofort eine Antibiose mit Amoxicillin oral beginnen. Die Blutkulturen und das Echo können wir später machen, wenn das Fieber nicht zurückgeht.",
+        "Ich würde zuerst mindestens drei Blutkulturpaare aus getrennten Punktionsstellen abnehmen, dazu Labor mit CRP, Procalcitonin, Kreatinin und Transaminasen, ein EKG und ein Röntgen-Thorax. Dann eine transthorakale Echokardiographie und nach der Blutentnahme eine kalkulierte intravenöse Antibiose, abgestimmt mit der Infektiologie und dem Endokarditis-Team.",
+        "Ich würde ihn nach Hause schicken und Paracetamol verschreiben.",
+        "Ich würde eine therapeutische Heparinisierung beginnen und ihn sofort zur Klappenoperation anmelden, ohne weitere Diagnostik."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Gefährlich: Antibiose vor Blutkulturen, nur oral, und die Diagnostik wird verzögert.",
+        "Richtig: Blutkulturen vor Antibiose, Bildgebung, intravenöse Therapie, interdisziplinär.",
+        "Gefährlich: Fieber mit neuem Herzgeräusch muss stationär abgeklärt werden.",
+        "Gefährlich: Ohne Diagnostik gibt es keine Operationsindikation, und eine Heparinisierung erhöht das Blutungsrisiko."
+      ],
+      "reply": "Oberarzt: „Gut. Und nach welchen Kriterien sichern Sie die Diagnose?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Nach den Jones-Kriterien: Hauptkriterien sind Karditis, Polyarthritis, Chorea minor, Erythema marginatum und subkutane Knötchen.",
+        "Nach dem CHA2DS2-VASc-Score, der das Schlaganfallrisiko bei Vorhofflimmern beschreibt; ein Wert von 2 oder mehr spricht für eine Antikoagulation.",
+        "Nach den modifizierten Duke-Kriterien: Hauptkriterien sind positive Blutkulturen mit typischem Erreger und der Nachweis einer Endokardbeteiligung, etwa einer Vegetation im Echo.",
+        "Nach den Wells-Kriterien, die die Wahrscheinlichkeit einer Lungenembolie bestimmen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: Die Jones-Kriterien gelten für das rheumatische Fieber.",
+        "Falsch: Der CHA2DS2-VASc-Score gilt für Vorhofflimmern.",
+        "Richtig: Die modifizierten Duke-Kriterien sind der Standard zur Diagnose der Endokarditis.",
+        "Falsch: Die Wells-Kriterien dienen der Einschätzung einer Lungenembolie bzw. Thrombose."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Endokarditis“?",
+      "options": [
+        "Herzmuskelentzündung",
+        "Herzbeutelentzündung",
+        "Absterben von Herzmuskel",
+        "Entzündung der Herzinnenhaut und der Herzklappen"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Myokarditis.",
+        "Das ist die Perikarditis.",
+        "Das ist der Myokardinfarkt.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Dyspnoe“?",
+      "options": [
+        "Atemnot",
+        "Husten",
+        "Herzrasen",
+        "Brustschmerz"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Tussis.",
+        "Das ist die Tachykardie.",
+        "Das ist der Thoraxschmerz."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Systolikum“?",
+      "options": [
+        "Herzgeräusch während der Füllungsphase",
+        "unregelmäßiger Herzschlag",
+        "Herzgeräusch während der Pumpphase des Herzens",
+        "zu langsamer Puls"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist das Diastolikum.",
+        "Das ist die Arrhythmie.",
+        "Richtig.",
+        "Das ist die Bradykardie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Bakteriämie“?",
+      "options": [
+        "Pilze im Blut",
+        "Bakterien im Blut",
+        "Viren im Blut",
+        "Blutarmut"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Fungämie.",
+        "Richtig.",
+        "Das ist die Virämie.",
+        "Das ist die Anämie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Embolie“?",
+      "options": [
+        "Verengung einer Schlagader",
+        "Bluterguss im Gewebe",
+        "Verschluss eines Gefäßes durch verschlepptes Material, etwa ein Gerinnsel",
+        "Entzündung einer Vene"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Stenose.",
+        "Das ist das Hämatom.",
+        "Richtig.",
+        "Das ist die Phlebitis."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

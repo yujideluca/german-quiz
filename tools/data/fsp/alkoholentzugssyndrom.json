@@ -1,0 +1,691 @@
+{
+  "id": "alkoholentzugssyndrom",
+  "area": "Psychiatrie",
+  "title": "Zittern, Schwitzen und Unruhe",
+  "diagnosis": "Alkoholentzugssyndrom mit beginnendem Delir",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Thomas Keller, 54 Jahre, wird am Abend von seiner Tochter in die Notaufnahme gebracht.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Keller sitzt schwitzend auf der Liege, seine Hände zittern.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Abend, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Keller?",
+        "Guten Abend, Herr Keller. Hier dürfen Sie weder rauchen noch Alkohol trinken. Haben Sie bitte Ihre Versichertenkarte dabei? Die brauchen wir zuerst.",
+        "Na, Herr Keller, wieder zu viel getrunken?",
+        "Guten Abend. Setzen Sie sich bitte ruhig hin, ich untersuche jetzt sofort Ihr Herz und Ihre Lunge."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Verwaltungsfragen und Verbote gehören nicht an den Anfang, und Sie stellen sich nicht vor.",
+        "Respektlos und wertend. Das zerstört das Vertrauen sofort.",
+        "Die körperliche Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen."
+      ],
+      "reply": "Patient: „Ja, Keller. Guten Abend, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie hoch ist Ihr Body-Mass-Index?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihre genaue Wohnadresse, und wer ist Ihr Hausarzt?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Sie sind doch noch keine sechzig, oder?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Adresse und Hausarzt sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Ich bin 54, 1,80 Meter groß und wiege 78 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Zittern und Schwitzen?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Welche Beschwerden bestehen bei Ihnen aktuell, und seit wann liegt die Symptomatik vor?",
+        "Warum haben Sie so lange gewartet, und warum kommen Sie erst jetzt zum Arzt?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
+      ],
+      "reply": "Patient: „Ich zittere am ganzen Körper und schwitze die ganze Zeit. Ich kann keine Minute stillsitzen. Meine Tochter hat mich hergebracht.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten genauer nach dem Zittern und nach der Wahrnehmung fragen. Was sagen Sie?",
+      "options": [
+        "Haben Sie Halluzinationen?",
+        "Besteht der Tremor an allen Extremitäten oder nur distal, und gibt es optische oder akustische Halluzinationen mit oder ohne Bewusstseinstrübung?",
+        "Sie sehen bestimmt weiße Mäuse, richtig?",
+        "Wo zittern Sie am meisten? Und sehen oder hören Sie manchmal Dinge, die andere nicht wahrnehmen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Halluzinationen“ ist ein Fachwort, und die Frage ist geschlossen.",
+        "Fachsprache („Tremor“, „Extremitäten“, „optisch“, „akustisch“); der Patient versteht sie nicht.",
+        "Suggestiv und abwertend. Der Patient könnte nur zustimmen oder sich schämen.",
+        "Richtig: laienverständlich, offen, ohne die Antwort vorzugeben."
+      ],
+      "reply": "Patient: „Am meisten zittern die Hände. Heute Nacht habe ich kleine Käfer an der Wand gesehen. Ich weiß, dass das nicht stimmen kann, aber ich habe mich trotzdem erschrocken.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Wann genau hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben?",
+        "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch progredient?",
+        "Das Zittern kam doch sicher, nachdem Sie mit dem Trinken aufgehört haben, nicht wahr?",
+        "Hat es plötzlich angefangen?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „progredient“ versteht der Patient nicht.",
+        "Suggestivfrage: Sie legen die Antwort schon in den Mund.",
+        "Geschlossene Frage; sie erfasst den Verlauf nicht."
+      ],
+      "reply": "Patient: „Vor drei Tagen habe ich aufgehört zu trinken. Am nächsten Morgen fing das Zittern an, gestern kam das Schwitzen dazu, und seit letzter Nacht sehe ich die Käfer. Es wird immer schlimmer.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Stimmung und Selbstgefährdung. Welche Formulierung passt?",
+      "options": [
+        "Sind Sie depressiv oder suizidal?",
+        "Wie würden Sie Ihre Affektlage beschreiben, und bestehen Suizidgedanken oder suizidale Handlungsabsichten?",
+        "Wie ist Ihre Stimmung zurzeit auf einer Skala von 0 bis 10, wobei 0 sehr schlecht und 10 sehr gut ist? Haben Sie Gedanken, sich etwas anzutun?",
+        "Sie sind sicher verzweifelt. Haben Sie schon einmal daran gedacht, sich etwas anzutun? Das fragen wir alle, die so viel trinken wie Sie."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachwörter („depressiv“, „suizidal“), und die Stimmung fragen Sie nicht mit einer Skala ab; so bekommen Sie keine klare Antwort.",
+        "Fachsprache („Affektlage“, „Suizidgedanken“, „Handlungsabsichten“); der Patient versteht sie nicht.",
+        "Richtig: Stimmungsskala von 0 bis 10 und eine direkte, ruhige Frage nach Suizidgedanken.",
+        "Wertend und unterstellend; der Patient fühlt sich bloßgestellt."
+      ],
+      "reply": "Patient: „Meine Stimmung ist eine 3. Ich schäme mich. Aber ans Sterben denke ich nicht, ich will ja wieder gesund werden.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Hatten Sie Nausea, Emesis, Palpitationen oder Cephalgie, und besteht eine zeitliche oder örtliche Desorientiertheit, ein Krampfanfall oder eine Synkope?",
+        "Ist Ihnen übel, mussten Sie sich übergeben, spüren Sie Herzrasen oder haben Sie Kopfschmerzen? Hatten Sie einen Anfall mit Krämpfen?",
+        "Haben Sie sonst noch was?",
+        "Sie haben bestimmt auch erbrochen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „übel“, „erbrechen“, „Herzrasen“, „Kopfschmerzen“.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive Krampfanfall als Alarmzeichen.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Suggestiv: Sie unterstellen das Symptom."
+      ],
+      "reply": "Patient: „Mir ist übel, ich habe heute einmal erbrochen. Mein Herz rast, und ich habe Kopfschmerzen. Einen Krampfanfall hatte ich diesmal nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie ist die Vegetativa?",
+        "Haben Sie Febris, Schlafstörungen, Inappetenz, Gewichtsverlust, Diarrhö, Obstipation, Dysurie oder Nykturie?",
+        "Ist sonst alles normal bei Ihnen?",
+        "Haben Sie Fieber gemessen? Wie schlafen Sie, und wie sind Appetit, Stuhlgang und Wasserlassen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Febris, Inappetenz, Dysurie, Nykturie).",
+        "Zu allgemein; der Patient sagt einfach „ja“.",
+        "Richtig: Fieber, Schlaf, Appetit, Stuhlgang und Wasserlassen in Laiensprache."
+      ],
+      "reply": "Patient: „Ich hatte 37,8 Grad. Schlafen kann ich seit drei Nächten kaum. Appetit habe ich keinen, der Stuhlgang ist etwas weich, und das Wasserlassen ist normal.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck, Zucker oder Magenprobleme? Und wurden Sie schon einmal operiert?",
+        "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, einen Diabetes mellitus oder eine Gastritis, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Sind Sie gesund?",
+        "Ihre Leber ist sicher schon geschädigt, oder? Welche Krankheiten haben Sie außerdem?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „Gastritis“). Mit Patienten sprechen Sie Laiensprache.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Suggestiv und beängstigend; Sie unterstellen eine Leberschädigung ohne Befund."
+      ],
+      "reply": "Patient: „Ich habe Bluthochdruck und hatte vor zwei Jahren eine Magenschleimhautentzündung. Vor vier Jahren hatte ich beim Entzug schon einmal einen Krampfanfall. Vor zehn Jahren wurde ich rechts am Leistenbruch operiert.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Welche Pharmaka applizieren Sie derzeit regelmäßig oder bei Bedarf, und in welcher Dosierung, Frequenz und Applikationsform?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept?",
+        "Nehmen Sie Tabletten?",
+        "Sie nehmen doch sicher Schlaf- oder Beruhigungstabletten, oder?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache („Pharmaka“, „applizieren“, „Applikationsform“).",
+        "Richtig: Name, Dosierung und auch frei verkäufliche Mittel.",
+        "Zu ungenau: Dosis und andere Darreichungsformen fehlen.",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Ramipril 5 mg morgens und Pantoprazol 20 mg morgens. Sonst nichts, auch keine Schlaftabletten.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Allergie?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
+        "Sind Sie hypersensibel?",
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Zu eng: Allergien gegen andere Medikamente, Lebensmittel oder Pflaster übersehen Sie.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl.",
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion."
+      ],
+      "reply": "Patient: „Gegen Penicillin, davon bekomme ich einen Ausschlag am ganzen Körper.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Wie ist Ihr Alkohol- und Nikotinabusus, und gab es schon Entzugsversuche?",
+        "Sie trinken doch bestimmt jeden Tag, oder?",
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Tag, und seit wann? Nehmen Sie Drogen?",
+        "Sind Sie Alkoholiker? Wie viele Flaschen Schnaps trinken Sie jeden Tag, und warum hören Sie nicht auf?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Suggestivfrage: Sie unterstellen die Antwort.",
+        "Richtig: neutral, konkret, mit Menge und Dauer.",
+        "„Alkoholiker“ ist wertend, und die Menge ist vorgegeben. Fragen Sie neutral."
+      ],
+      "reply": "Patient: „Ich rauche seit 30 Jahren 20 Zigaretten am Tag. Seit etwa 15 Jahren trinke ich jeden Tag acht Flaschen Bier, je einen halben Liter, am Wochenende auch Schnaps. Mein letztes Bier hatte ich vor drei Tagen. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Leber-, Herz- oder Suchterkrankungen?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Hat Ihr Vater auch so viel getrunken wie Sie?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Richtig: offen, mit passenden Beispielen.",
+        "Zu eng: Geschwister und Kinder fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Suggestiv und vorwurfsvoll; Sie unterstellen eine Antwort."
+      ],
+      "reply": "Patient: „Mein Vater hat auch viel getrunken und ist mit 62 an einer Leberzirrhose gestorben. Meine Mutter hat Zucker.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen? Gibt es Menschen, die Sie unterstützen?",
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Haben Sie wegen des Trinkens schon Ihre Arbeit oder Ihre Familie verloren?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beruf, Wohnsituation und Unterstützung, wichtig für Entlassung und Nachsorge.",
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Vorwurfsvoll und suggestiv; der Patient schämt sich und verschließt sich."
+      ],
+      "reply": "Patient: „Ich bin Lagerarbeiter. Ich bin geschieden und wohne allein. Meine Tochter, sie ist 28, wohnt in der Nähe und hat mich hergebracht.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben ein Alkoholentzugssyndrom mit beginnendem Delirium tremens bei Alkoholabhängigkeit.",
+        "Das ist wahrscheinlich nur Stress oder eine Grippe. Ruhen Sie sich zu Hause ein paar Tage aus, dann ist alles wieder gut.",
+        "Ich vermute, dass Ihr Körper auf den plötzlichen Verzicht auf Alkohol reagiert. Das nennt man Alkoholentzug. Zittern, Schwitzen und die Käfer gehören dazu. Das kann gefährlich werden, deshalb behandeln wir es.",
+        "Sie sind alkoholabhängig und haben sich das selbst eingebrockt. Jetzt müssen Sie damit zurechtkommen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache und zu sicher; der Patient versteht die Diagnose nicht.",
+        "Verharmlosend und medizinisch falsch.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung, ohne Vorwurf.",
+        "Wertend und ohne Unterstützung; so verlieren Sie das Vertrauen."
+      ],
+      "reply": "Patient: „Entzug? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Muss ich hierbleiben? Ich will eigentlich nach Hause.“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Nein, gehen Sie nach Hause. Trinken Sie in den nächsten Tagen langsam wieder etwas Bier, dann wird das Zittern von allein besser.",
+        "Das entscheidet der Chef, ich weiß es nicht.",
+        "Ja, aber Sie bekommen nur Wasser und Ruhe, Medikamente brauchen Sie nicht.",
+        "Ich empfehle Ihnen dringend, hierzubleiben, am besten auf einer Überwachungsstation, weil der Entzug gefährlich werden kann. Wir nehmen Blut ab, überwachen Puls und Blutdruck und geben Ihnen Vitamin B1 und Medikamente, die den Entzug mildern."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Gefährlich: Entzugsdelir und Krampfanfälle drohen, und Alkohol ist keine Therapie.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Falsch: ein Entzugsdelir braucht Überwachung und Medikamente, vor allem Benzodiazepine und Thiamin.",
+        "Richtig: ehrliche Empfehlung, nächste Schritte und Therapie, laienverständlich."
+      ],
+      "reply": "Patient: „Gut, dann bleibe ich. Danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Keller ist 54 und zittert und schwitzt seit Tagen.",
+        "Der Patient Herr Keller stellt sich heute vor wegen Tremor und Schwitzen, 54-jährig, gebracht von der Tochter.",
+        "Herr Thomas Keller, ein 54-jähriger Patient, wurde heute Abend von seiner Tochter in unsere Notaufnahme gebracht und stellte sich mit Tremor, Hyperhidrose und innerer Unruhe vor.",
+        "Herr Thomas Keller (54 J.) hat sich heute Abend in unsere Notaufnahme vorgestellt, begleitet von seine Tochter, mit Zittern und Schwitzen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Satzbau falsch: die Altersangabe hängt am Ende, und der Satz steht im Präsens ohne vollständige Struktur.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Begleitung und Leitsymptome.",
+        "Grammatik: „von seiner Tochter“ (Dativ nach „von“), und „Zittern“ ist hier Laiensprache."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Absatz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Der letzte Alkoholkonsum erfolgte vor drei Tagen. Am Folgetag trat ein Tremor der Hände auf, seit gestern bestehen Hyperhidrose und Unruhe, seit der letzten Nacht optische Halluzinationen bei erhaltener Krankheitseinsicht. Die Beschwerden sind progredient. Stimmung 3/10, Suizidalität verneint.",
+        "Der letzte Alkoholkonsum erfolgte vor drei Tagen. Am Folgetag trat ein Tremor der Beine auf, seit gestern bestehen Hyperhidrose und Unruhe, seit der letzten Nacht akustische Halluzinationen bei fehlender Krankheitseinsicht. Die Beschwerden sind regredient. Suizidalität wurde bejaht.",
+        "Er hat vor drei Tagen aufgehört zu trinken und zittert seitdem. Seit gestern schwitzt er viel, und heute Nacht hat er Käfer gesehen.",
+        "Der letzte Alkoholkonsum sei vor drei Tagen erfolgt, der Tremor sei am Folgetag aufgetreten, und Halluzinationen seien seit der letzten Nacht vorhanden."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachsprache und alle Merkmale (Zeitverlauf, Tremor, Hyperhidrose, Halluzinationen, Stimmung, Suizidalität).",
+        "Inhaltlich falsch: Der Tremor betraf die Hände, die Halluzinationen waren optisch, die Krankheitseinsicht war erhalten, und Suizidalität wurde verneint.",
+        "Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Konjunktiv-I-Reihung und unvollständig: Hyperhidrose, Stimmung und Suizidalität fehlen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete der Patient über Nausea und Emesis. Palpitationen und Cephalgie wurden verneint. Die Körpertemperatur lag bei 39,5 °C. Schlafstörung seit drei Nächten, Inappetenz, Stuhlgang regelrecht.",
+        "Ihm war übel, er hat gekotzt und hat Herzrasen.",
+        "Begleitend berichtete der Patient über Nausea, Emesis, Palpitationen und Cephalgie. Ein Krampfanfall wurde bejaht. Subfebrile Temperatur bis 37,8 °C, Schlafstörung seit drei Nächten, Inappetenz, weicher Stuhlgang.",
+        "Begleitend berichtete der Patient über Nausea, einmalige Emesis, Palpitationen und Cephalgie. Ein Krampfanfall wurde verneint. Subfebrile Temperatur bis 37,8 °C, Schlafstörung seit drei Nächten, Inappetenz, weicher Stuhlgang bei unauffälliger Miktion."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich falsch: Der Patient hatte Herzrasen und Kopfschmerzen, die Temperatur lag bei 37,8 °C, und der Stuhl war weich.",
+        "Vulgär („gekotzt“) und unvollständig.",
+        "Inhaltlich falsch: Einen Krampfanfall hatte der Patient diesmal nicht.",
+        "Richtig: vollständig, Fachsprache, Negativbefund (kein Krampfanfall) dokumentiert."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Bluthochdruck, Magenentzündung. Medikamente: Ramipril, Pantoprazol.",
+        "An Vorerkrankungen sind eine arterielle Hypertonie und eine Gastritis bekannt. Z. n. Entzugskrampfanfall vor vier Jahren. Z. n. Leistenhernien-Operation rechts vor zehn Jahren. Medikation: Ramipril 5 mg 1-0-0, Pantoprazol 20 mg 1-0-0.",
+        "An Vorerkrankungen sind eine arterielle Hypotonie und ein Diabetes mellitus Typ 2 bekannt. Z. n. Appendektomie vor zehn Jahren. Medikation: Ramipril 5 mg 1-0-0, Pantoprazol 20 mg 1-0-0, Diazepam 5 mg 0-0-1.",
+        "Medikation: Ramipril 5 mg 0-0-1, Pantoprazol 20 mg 1-1-1. Keine Voroperationen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierschema im Format morgens-mittags-abends.",
+        "Inhaltlich falsch: Hypertonie (nicht Hypotonie), kein Diabetes, operiert wurde die Leistenhernie, und Diazepam nimmt der Patient nicht ein.",
+        "Dosierschema falsch (beide Mittel morgens, 1-0-0), und die Voroperation fehlt."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: keine. Noxen: Alkoholabusus.",
+        "Penicillinallergie (Anaphylaxie). Alkoholkonsum ca. 4 l Bier täglich seit 15 Jahren, Nikotinkonsum ca. 15 py. Familienanamnese: Vater Leberzirrhose, Mutter Diabetes mellitus. Der Patient ist Lagerarbeiter, geschieden, lebt allein.",
+        "Penicillinallergie (Exanthem). Alkoholkonsum ca. 4 l Bier täglich (am Wochenende zusätzlich Spirituosen) seit 15 Jahren, letzter Konsum vor drei Tagen, Nikotinkonsum ca. 30 py, Drogenkonsum verneint. Familienanamnese: Vater Leberzirrhose (verstorben mit 62 J.), Mutter Diabetes mellitus. Lagerarbeiter, geschieden, lebt allein, Tochter in der Nähe.",
+        "Er verträgt kein Penicillin, trinkt viel und raucht."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: die Penicillinallergie fehlt, und Menge und Dauer des Konsums fehlen.",
+        "Falsch: Die Reaktion war ein Exanthem, und 20 Zigaretten über 30 Jahre sind 30 py, nicht 15.",
+        "Richtig: 20 Zigaretten am Tag über 30 Jahre sind 30 pack years (py), und acht Flaschen Bier à 0,5 l sind etwa 4 l.",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Es besteht der Verdacht auf ein Alkoholentzugssyndrom mit beginnendem Delirium tremens bei Alkoholabhängigkeitssyndrom. Differenzialdiagnostisch kommen eine Wernicke-Enzephalopathie, eine Hypoglykämie und eine Infektion des Zentralnervensystems in Betracht.",
+        "Diagnose: Saufen mit Zittern.",
+        "Es besteht ein gesichertes Delirium tremens, weitere Differenzialdiagnosen sind nicht erforderlich.",
+        "Es besteht der Verdacht auf eine akute Alkoholintoxikation. Differenzialdiagnostisch kommen eine Hyperglykämie, eine Pneumonie und ein Herzinfarkt in Betracht."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen.",
+        "Laiensprache und wertend, keine Differenzialdiagnosen.",
+        "Ohne Labor, Verlauf und Ausschluss anderer Ursachen ist die Diagnose noch nicht gesichert.",
+        "Medizinisch unmöglich: Der letzte Alkoholkonsum liegt drei Tage zurück, eine Intoxikation passt nicht zu Tremor und Hyperhidrose im Entzug."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir empfehlen Haloperidol als alleinige Therapie der Halluzinationen und eine ambulante Weiterbehandlung. Eine Blutentnahme und ein EKG sind nicht erforderlich.",
+        "Wir empfehlen eine Blutentnahme, eine Glukoseinfusion vor der Thiamingabe und symptomorientiert Diazepam. Bei Besserung kann der Patient noch heute entlassen werden.",
+        "Wir machen Blut, EKG und geben erst mal was zur Beruhigung, dann sehen wir weiter.",
+        "Wir empfehlen die stationäre Aufnahme mit Monitoring, eine Blutentnahme (u. a. Elektrolyte inklusive Magnesium, Glukose, Leberwerte, Lipase, CRP), Blutalkoholbestimmung und ein EKG. Therapeutisch Thiamin 100 mg i. v. vor jeder Glukosegabe sowie symptomorientiert Diazepam nach CIWA-Ar."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Gefährlich: Haloperidol allein senkt die Krampfschwelle und behandelt den Entzug nicht; ambulant ist das Delir nicht sicher.",
+        "Gefährlich: Glukose vor Thiamin kann eine Wernicke-Enzephalopathie auslösen, und eine Entlassung ist verfrüht.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Richtig: Überwachung, Diagnostik und Therapie in vollständigen Sätzen, Thiamin vor Glukose."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Der Patient ist ein Trinker, er zittert und schwitzt, und ich glaube, er sieht auch irgendwelche Tiere an der Wand, aber ganz genau weiß ich es nicht.",
+        "Ich möchte Ihnen Herrn Thomas Keller vorstellen, einen 54-jährigen Patienten, der sich heute Abend mit Tremor, Hyperhidrose und innerer Unruhe sowie seit der letzten Nacht bestehenden Halluzinationen vorgestellt hat.",
+        "Also, der Mann hat drei Tage nichts getrunken und sieht Käfer ...",
+        "Herr Keller hat ein Delirium tremens."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Unstrukturiert und abwertend („Trinker“).",
+        "Richtig: Name, Alter, Leitsymptome und zeitlicher Verlauf in einem Satz.",
+        "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Der letzte Alkoholkonsum liegt acht Tage zurück. Es bestehen ein Tremor der Beine, akustische Halluzinationen und eine Bradykardie. Ein Krampfanfall trat nicht auf.",
+        "Er hat alles Mögliche.",
+        "Der letzte Alkoholkonsum liegt drei Tage zurück. Es bestehen ein Tremor der Hände, Hyperhidrose, innere Unruhe und optische Halluzinationen bei erhaltener Krankheitseinsicht. Begleitend Übelkeit, einmaliges Erbrechen, Palpitationen und subfebrile Temperatur bis 37,8 °C. Ein Krampfanfall wurde verneint.",
+        "Er hat Fieber, einen Krampfanfall und Durchfall."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Der letzte Konsum liegt drei Tage zurück, der Tremor betrifft die Hände, die Halluzinationen sind optisch, und er hat Herzrasen.",
+        "Keine Information.",
+        "Richtig: knapp, strukturiert, mit relevantem Negativbefund.",
+        "Inhaltlich falsch: Der Patient hatte keinen Krampfanfall und keinen Durchfall, nur subfebrile Temperatur."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist sonst gesund.",
+        "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 2. Er trinkt gelegentlich ein Glas Wein und raucht nicht. Keine Allergien, keine Voroperationen und kein früherer Krampfanfall.",
+        "Er nimmt Ramipril und Pantoprazol, sonst nichts.",
+        "Bekannt sind eine arterielle Hypertonie und eine Gastritis, Dauermedikation Ramipril 5 mg und Pantoprazol 20 mg jeweils 1-0-0. Wichtig: Z. n. Entzugskrampfanfall vor vier Jahren, Alkoholkonsum von ca. 4 l Bier täglich seit 15 Jahren, Nikotinkonsum von ca. 30 py und eine Penicillinallergie mit Exanthem. Der Vater verstarb an einer Leberzirrhose."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch: es gibt relevante Vorerkrankungen und einen langjährigen Alkoholkonsum.",
+        "Inhaltlich falsch (Gastritis statt Diabetes, täglicher Alkohol, Nikotin, Penicillinallergie, früherer Krampfanfall).",
+        "Unvollständig: Diagnosen, Konsum und Allergie fehlen.",
+        "Richtig: relevante Vorgeschichte, früherer Entzugskrampfanfall als Risikofaktor für Krampfanfall und Delir."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an eine akute Alkoholintoxikation. Differenzialdiagnostisch denke ich an eine Pneumonie, eine Hyperglykämie und einen Myokardinfarkt.",
+        "Ich vermute ein Alkoholentzugssyndrom mit beginnendem Delirium tremens. Differenzialdiagnostisch denke ich an eine Wernicke-Enzephalopathie, eine Hypoglykämie und eine Infektion des Zentralnervensystems.",
+        "Ich weiß es nicht genau.",
+        "Das ist einfach ein Alkoholiker im Entzug, da gibt es nichts weiter abzuklären, er bekommt etwas zur Beruhigung."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: Der letzte Konsum liegt drei Tage zurück; eine Intoxikation erklärt Tremor, Hyperhidrose und Halluzinationen im Verlauf nicht.",
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
+        "Abwertend und ohne Differenzialdiagnosen."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde den Patienten stationär auf der Überwachungsstation aufnehmen. Ich würde Blut inklusive Elektrolyten, Magnesium, Glukose und Leberwerten abnehmen und ein EKG schreiben. Therapeutisch Thiamin i. v. vor jeder Glukosegabe, Flüssigkeit und symptomorientiert Diazepam.",
+        "Ich würde Haloperidol allein geben, weil Halluzinationen bestehen, und den Patienten nach Hause schicken, sobald sie nachlassen.",
+        "Ich würde zuerst Glukose geben und das Thiamin erst morgen ergänzen, falls der Patient noch Beschwerden hat.",
+        "Ich würde Alkohol in kleinen Mengen als Medikament geben, damit der Spiegel langsam sinkt."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Überwachung, Diagnostik und leitliniengerechte Therapie mit Benzodiazepin und Thiamin.",
+        "Gefährlich: Haloperidol allein senkt die Krampfschwelle, und der Patient gehört stationär überwacht.",
+        "Gefährlich: Thiamin muss vor Glukose gegeben werden (Wernicke-Enzephalopathie).",
+        "Nicht leitliniengerecht: Alkohol ist keine Therapie des Entzugs."
+      ],
+      "reply": "Oberarzt: „Gut. Welchen Score nutzen Sie zur Steuerung der Therapie?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich nutze die Glasgow Coma Scale und gebe bei jedem Wert unter 15 Punkten Diazepam.",
+        "Ich nutze den Child-Pugh-Score, weil der Vater eine Leberzirrhose hatte.",
+        "Ich nutze den CIWA-Ar-Score (Clinical Institute Withdrawal Assessment for Alcohol, revidiert). Ich gebe Diazepam symptomorientiert, zum Beispiel ab etwa 10 Punkten, und kontrolliere den Score anfangs stündlich.",
+        "Ich nutze keinen Score, sondern gebe Diazepam nach Gefühl, sobald der Patient unruhig wirkt."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: Die Glasgow Coma Scale misst die Bewusstseinslage und steuert keine Entzugstherapie.",
+        "Falsch: Der Child-Pugh-Score beurteilt die Leberfunktion bei Zirrhose, nicht den Entzug.",
+        "Richtig: CIWA-Ar steuert die symptomorientierte Benzodiazepin-Gabe.",
+        "In der Prüfung erwartet man eine begründete Antwort."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Tremor“?",
+      "options": [
+        "Zittern",
+        "Schwindel",
+        "Krampfanfall",
+        "Muskelschwäche"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist Vertigo.",
+        "Das ist eine Konvulsion.",
+        "Das ist eine Parese."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Hyperhidrose“?",
+      "options": [
+        "Hautjucken",
+        "Hitzewallung",
+        "übermäßiges Schwitzen",
+        "Hautrötung"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist Pruritus.",
+        "Das ist ein Flush.",
+        "Richtig.",
+        "Das ist ein Erythem."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Halluzination“?",
+      "options": [
+        "falsche feste Überzeugung",
+        "Gedächtnisverlust",
+        "Sinnestäuschung ohne reale Reizquelle",
+        "Verwirrtheit zu Ort und Zeit"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist ein Wahn.",
+        "Das ist eine Amnesie.",
+        "Richtig.",
+        "Das ist eine Desorientiertheit."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Palpitationen“?",
+      "options": [
+        "Herzklopfen, Herzrasen",
+        "Brustschmerz bei Belastung",
+        "Ohnmacht",
+        "Atemnot"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist Angina pectoris.",
+        "Das ist eine Synkope.",
+        "Das ist Dyspnoe."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Abstinenz“?",
+      "options": [
+        "Alkoholvergiftung",
+        "körperliche Abhängigkeit",
+        "Rückfall",
+        "Verzicht auf Alkohol"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist eine Intoxikation.",
+        "Das ist die Dependenz.",
+        "Das ist ein Rezidiv.",
+        "Richtig."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

@@ -15,8 +15,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "app/src/main/assets"
 MANIFEST = ASSETS / "content.json"
-SCHEMA = 1  # = CONTENT_SCHEMA in core/.../content/ContentPack.kt; raise both together when the file format changes
-FILES = ["vocab/nouns.json", "vocab/prepositions.json", "vocab/verbs.json", "vocab/errors.json",
+SCHEMA = 2  # = CONTENT_SCHEMA in core/.../content/ContentPack.kt; raise both together when the file format changes
+FILES = ["vocab/nouns.json", "vocab/prepositions.json", "vocab/verbs.json", "vocab/errors.json", "vocab/fsp_cases.json",
          "i18n/de.json", "i18n/pt.json", "i18n/es.json"]  # = CONTENT_FILES
 
 

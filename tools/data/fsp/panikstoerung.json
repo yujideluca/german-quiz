@@ -1,0 +1,691 @@
+{
+  "id": "panikstoerung",
+  "area": "Psychiatrie",
+  "title": "Herzrasen und Todesangst",
+  "diagnosis": "Panikstörung",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Frau Lena Hoffmann, 29 Jahre, stellt sich am späten Abend in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Frau Hoffmann sitzt auf der Liege, atmet schnell und wirkt sehr ängstlich.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Abend, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Frau Hoffmann?",
+        "Hallo, na, was ist denn los mit Ihnen?",
+        "Guten Abend. Setzen Sie sich bitte gerade hin, ich messe zuerst Ihren Puls und Ihren Blutdruck, dann sehen wir weiter.",
+        "Guten Abend, Frau Hoffmann. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte und Ihren Personalausweis dabei? Die brauchen wir zuerst für die Anmeldung."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität der Patientin.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Sie stellen sich nicht vor und beginnen mit der Untersuchung, bevor das Gespräch begonnen hat.",
+        "Verwaltungsfragen gehören nicht an den Anfang des Arzt-Patienten-Gesprächs, und Sie stellen sich nicht vor."
+      ],
+      "reply": "Patientin: „Ja, Hoffmann. Guten Abend, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie ist Ihr Body-Mass-Index?",
+        "Sie sind doch noch keine dreißig, oder?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht."
+      ],
+      "reply": "Patientin: „Ich bin 29, 1,70 Meter groß und wiege 62 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Herzbeschwerden?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Welche Symptomatik liegt bei Ihnen vor?",
+        "Warum rufen Sie wegen so etwas mitten in der Nacht den Rettungsdienst, anstatt morgen zum Hausarzt zu gehen?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "Richtig: eine offene Frage lässt die Patientin selbst erzählen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
+      ],
+      "reply": "Patientin: „Mein Herz hat plötzlich angefangen zu rasen, ich bekomme keine Luft, und ich habe Todesangst. Ich dachte, ich sterbe.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten wissen, wo die Beschwerden genau sitzen und ob es einen Auslöser gab. Was sagen Sie?",
+      "options": [
+        "Haben Sie Schmerzen in der Brust, die in den linken Arm ausstrahlen?",
+        "Würden Sie das Engegefühl eher retrosternal oder präkordial lokalisieren, und gab es eine Trigger-Situation?",
+        "Wo genau spüren Sie das, und was haben Sie unmittelbar davor gemacht? Gab es etwas, das es ausgelöst hat?",
+        "Das kommt sicher vom Stress im Job, richtig?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Geschlossene Suggestivfrage; die Patientin könnte nur zustimmen oder verneinen.",
+        "„Retrosternal“, „präkordial“ und „Trigger“ sind Fachwörter; die Patientin versteht sie nicht.",
+        "Richtig: offen, laienverständlich, nach Ort und Auslöser, ohne die Antwort vorzugeben.",
+        "Suggestivfrage und vorschnelle Deutung. Die Patientin könnte Ihnen nur zustimmen."
+      ],
+      "reply": "Patientin: „Es drückt mitten in der Brust, in den Arm zieht nichts. Ich habe nur auf dem Sofa gesessen und ferngesehen, da kam es aus dem Nichts.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn, Dauer und Verlauf?",
+      "options": [
+        "Wann hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben? Hatten Sie so etwas schon einmal?",
+        "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: paroxysmal oder persistierend, und gab es vergleichbare Episoden in der Vorgeschichte?",
+        "Seit wann haben Sie die Beschwerden?",
+        "Hat es plötzlich angefangen?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beginn, Verlauf und frühere Episoden in einer klaren, laienverständlichen Frage.",
+        "Fachsprache: „Erstmanifestation“, „paroxysmal“ und „persistierend“ versteht die Patientin nicht.",
+        "Zu knapp: Verlauf und frühere Episoden fehlen.",
+        "Geschlossene Frage; sie erfasst weder Dauer noch Verlauf."
+      ],
+      "reply": "Patientin: „Vor etwa einer Stunde. Nach zehn Minuten war es am schlimmsten, jetzt wird es langsam besser. Das ist jetzt die dritte Attacke in zwei Monaten, die anderen dauerten auch ungefähr eine halbe Stunde.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Beschwerden. Welche Formulierung passt?",
+      "options": [
+        "Handelt es sich um einen pektanginösen Schmerz mit Vernichtungsgefühl, und wie hoch ist die Intensität nach der NRS?",
+        "Wie stark ist die Angst von 1 bis 100?",
+        "Haben Sie sehr große Angst?",
+        "Wie würden Sie das Gefühl in der Brust beschreiben, eher stechend, drückend oder brennend? Und wie stark sind Beschwerden und Angst auf einer Skala von 0 bis 10?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachsprache („pektanginös“, „Vernichtungsgefühl“, „NRS“); die Patientin versteht die Frage nicht.",
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
+        "Richtig: Beispiele für die Qualität und die übliche Skala von 0 bis 10, für Brustdruck und Angst."
+      ],
+      "reply": "Patientin: „Drückend, so 6 von 10. Die Angst war 9 von 10, ich dachte, es ist ein Herzinfarkt.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Hatten Sie Palpitationen, Dyspnoe, Parästhesien, Tremor und Hyperhidrosis, vielleicht auch eine Derealisation oder Depersonalisation, während der Attacke?",
+        "Hatten Sie Luftnot, haben Sie geschwitzt, gezittert oder Schwindel gespürt? Haben Sie ein Kribbeln in den Händen oder im Gesicht bemerkt?",
+        "Sie haben bestimmt auch stark geschwitzt und gezittert.",
+        "Sonst noch was?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Luftnot“, „Schwitzen“, „Zittern“, „Kribbeln“.",
+        "Richtig: konkrete Begleitsymptome der Panikattacke in Laiensprache, inklusive Kribbeln.",
+        "Suggestiv: Sie unterstellen die Symptome.",
+        "Zu umgangssprachlich und unkonkret."
+      ],
+      "reply": "Patientin: „Ich habe kaum Luft bekommen, ich habe geschwitzt und gezittert, mir war schwindelig, und meine Hände und der Mund haben gekribbelt.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese und die Stimmung. Was fragen Sie?",
+      "options": [
+        "Wie ist die Vegetativa?",
+        "Haben Sie Schüttelfrost, Nachtschweiß, Gewichtsverlust, Insomnie, Appetenzminderung, eine depressive Verstimmung und suizidale Gedanken oder Intentionen?",
+        "Wie schlafen Sie, wie ist Ihr Appetit, hat sich Ihr Gewicht verändert, und hatten Sie Fieber? Wie geht es Ihnen seelisch, und denken Sie manchmal daran, sich etwas anzutun?",
+        "Sie schlafen doch sicher schlecht und haben abgenommen?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachjargon, den eine Patientin nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Insomnie, Appetenzminderung, suizidal).",
+        "Richtig: Schlaf, Appetit, Gewicht, Fieber, Stimmung, und die Frage nach Suizidgedanken direkt in Laiensprache.",
+        "Suggestivfrage; die Stimmung und die Suizidalität fragen Sie nicht ab."
+      ],
+      "reply": "Patientin: „Ich schlafe schlecht ein, esse weniger und habe zwei Kilo abgenommen. Fieber hatte ich nicht, Stuhlgang und Wasserlassen sind normal. Ich will nicht sterben, ich habe nur in der Attacke Angst davor. Mir etwas antun, das nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen, zum Beispiel am Herzen, an der Schilddrüse oder an der Lunge? Wurden Sie schon einmal operiert oder wegen ähnlicher Beschwerden untersucht?",
+        "Sind Sie gesund?",
+        "Haben Sie eine KHK, eine Hyperthyreose, eine COPD oder eine Epilepsie, und gab es Voroperationen, stationäre Aufenthalte oder psychiatrische Behandlungen?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: mit Beispielen, laienverständlich, und frühere Untersuchungen sind mitgefragt.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Vollständig, aber in Fachsprache („KHK“, „Hyperthyreose“, „COPD“).",
+        "Die Patientin kennt ihre Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patientin: „Nein, nichts Chronisches. Operiert wurde ich nur an den Weisheitszähnen. Vor zwei Jahren war ich schon einmal nachts in einer Notaufnahme, da hieß es, mein Herz sei gesund.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Tabletten?",
+        "Welche Pharmaka applizieren Sie?",
+        "Sie nehmen doch sicher Beruhigungsmittel oder Schlaftabletten, weil Sie so viel Angst haben? Das ist bei jungen Leuten heute ja ganz normal.",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept, pflanzliche Mittel oder die Pille?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu ungenau: Dosis und frei verkäufliche Mittel fehlen.",
+        "Fachsprache („Pharmaka“, „applizieren“).",
+        "Suggestivfrage. Fragen Sie offen.",
+        "Richtig: Name, Dosierung, auch frei verkäufliche und pflanzliche Mittel und die Pille."
+      ],
+      "reply": "Patientin: „Die Pille, Maxim, eine Tablette abends. Ibuprofen 400 bei Regelschmerzen, etwa einmal im Monat. Und seit zwei Wochen abends zwei Baldrian-Dragees zum Einschlafen.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Allergie?",
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Pollen oder Lebensmittel? Wie äußert sich das?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Zu eng: Allergien gegen andere Medikamente, Pollen oder Lebensmittel übersehen Sie.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patientin: „Gegen Gräserpollen, dann habe ich Niesen und tränende Augen. Gegen Medikamente nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucherin oder gar Alkoholikerin? Das sieht man bei jungen Leuten oft, wenn sie so ängstlich sind.",
+        "Wie ist Ihr Nikotin- und Alkoholabusus?",
+        "Rauchen Sie? Wie viel Alkohol und wie viel Kaffee trinken Sie ungefähr? Nehmen Sie Drogen?",
+        "Trinken Sie zu viel?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "„Alkoholikerin“ ist wertend und verletzend, und die Verknüpfung mit der Angst ist eine Unterstellung.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Richtig: neutral, konkret, mit Menge; Kaffee ist bei Angst wichtig, denn Koffein kann Panik begünstigen.",
+        "Wertend und ungenau."
+      ],
+      "reply": "Patientin: „Ich rauche seit 8 Jahren etwa 5 Zigaretten am Tag. Am Wochenende ein bis zwei Gläser Wein, aber Kaffee trinke ich fünf Tassen am Tag. Drogen nie, nur einmal mit 20 Cannabis.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel am Herzen, an der Schilddrüse oder seelische Erkrankungen wie Depressionen oder Ängste?",
+        "Wie ist die Familienanamnese?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders, und Geschwister brauche ich nicht.",
+        "Hat Ihre Mutter auch vor allem Angst?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit passenden Beispielen, auch für seelische Erkrankungen.",
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Zu eng: Geschwister fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Unterstellend und ungenau; Sie kennen die Familie nicht."
+      ],
+      "reply": "Patientin: „Meine Mutter hat Depressionen und früher auch Angstzustände. Mein Vater hat Bluthochdruck. Plötzliche Todesfälle gab es nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Haben Sie Geld?",
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen? Gab es in letzter Zeit Belastungen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: der Beruf und aktuelle Belastungen fehlen, die Adresse gehört nicht in die Sozialanamnese.",
+        "Unangemessen.",
+        "Richtig: Beruf, Wohnsituation und Belastungen, wichtig als Auslöser und für die Versorgung."
+      ],
+      "reply": "Patientin: „Ich bin Projektmanagerin, viel Stress. Ich wohne allein, mein Freund hat sich vor drei Monaten von mir getrennt. Seit drei Wochen fahre ich keine U-Bahn mehr, weil ich Angst vor einer neuen Attacke habe.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben eine Panikstörung mit Agoraphobie.",
+        "Ich vermute, dass die Angst Ihre Beschwerden ausgelöst hat, eine sogenannte Panikattacke. Das ist wahrscheinlich nicht gefährlich. Trotzdem untersuchen wir zuerst Herz, Lunge und Blut, um körperliche Ursachen auszuschließen.",
+        "Das ist nichts Körperliches, Sie bilden sich das nur ein. Reißen Sie sich zusammen und trinken Sie weniger Kaffee, dann gehen die Attacken von allein wieder weg, und wir brauchen keine Untersuchung.",
+        "Das ist ein Herzinfarkt, wir müssen sofort einen Herzkatheter machen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache; die Patientin versteht die Diagnose nicht, und sie ist noch nicht gesichert.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, und körperliche Ursachen werden zuerst ausgeschlossen.",
+        "Abwertend und falsch: Panikattacken sind echte Beschwerden, die behandelbar sind.",
+        "Falsch und beängstigend; es gibt keinen Hinweis auf einen Herzinfarkt."
+      ],
+      "reply": "Patientin: „Eine Panikattacke? Dann habe ich keinen Herzfehler? Muss ich jetzt Tabletten nehmen?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Die Patientin fragt: „Muss ich Tabletten nehmen?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, ich gebe Ihnen gleich eine Beruhigungstablette, Diazepam, und die nehmen Sie dann jeden Abend, solange Sie Angst haben. Dann ist das Problem gelöst.",
+        "Das entscheidet der Oberarzt, ich weiß es nicht.",
+        "Zuerst machen wir ein EKG und nehmen Blut ab, auch für die Schilddrüse. Wenn alles unauffällig ist, hilft vor allem eine Psychotherapie, in der man lernt, mit der Angst umzugehen. Manchmal helfen zusätzlich Medikamente, aber keine Dauerberuhigungsmittel.",
+        "Nein, Tabletten brauchen Sie sicher nicht, das geht von allein vorbei."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: Diazepam macht abhängig und wird bei Panikstörung nicht dauerhaft empfohlen.",
+        "Unprofessionell und lässt die Patientin allein.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich, Therapie nach Leitlinie.",
+        "Zu früh und zu sicher: Die Diagnose ist noch nicht gesichert, und ohne Behandlung kehren Attacken oft zurück."
+      ],
+      "reply": "Patientin: „Gut, danke, dass Sie sich Zeit nehmen. Das beruhigt mich.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Frau Lena Hoffmann, 29 J., stellte sich in unserer Notaufnahme vor, sie hat Herzrasen und Angst gehabt.",
+        "Frau Lena Hoffmann, eine 29-jährige Patientin, stellte sich heute Abend in unserer Notaufnahme mit seit einer Stunde bestehendem Herzrasen, Brustenge und Todesangst vor.",
+        "Die Patientin Lena Hoffmann ist 29 und hat Herzrasen, deshalb kam sie heute in unsere Notaufnahme.",
+        "Frau Lena Hoffmann (29 J.) hat sich heute Abend in unserer Notaufnahme mit seit einer Stunde bestehendem Herzrasen, Brustenge und Todesangst vorgestellt wegen einem akuten Angstanfall."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Umgangssprachlich und unvollständig: Dauer und Leitsymptom fehlen im Arztbrief-Stil.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort, Dauer und Leitsymptom.",
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Grammatik: „wegen“ verlangt hier den Genitiv („wegen eines Herzrasens“), und die Dauer fehlt."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Das Herz hat angefangen zu rasen, als sie auf dem Sofa saß, und sie hat Angst bekommen.",
+        "Die Beschwerden seien aus der Ruhe aufgetreten und hielten seit einer Stunde an, NRS 6.",
+        "Die Beschwerden sind unter körperlicher Belastung aufgetreten, seitdem progredient, mit Ausstrahlung in den linken Arm (NRS 6/10) sowie ausgeprägter Angst (NRS 9/10).",
+        "Die Beschwerden sind aus völliger Ruhe aufgetreten, mit Maximum nach ca. 10 Minuten und seitdem regredient. Es bestehen ein retrosternales Druckgefühl (NRS 6/10) ohne Ausstrahlung sowie ausgeprägte Angst (NRS 9/10). Dies ist die dritte derartige Episode innerhalb von zwei Monaten."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich richtig, aber Laiensprache und ohne Stärke; im Bericht erwartet man Fachbegriffe.",
+        "Konjunktiv-I-Mischung und unvollständig; außerdem fehlen „/10“ und die Angabe zur Angst.",
+        "Inhaltlich falsch: Die Beschwerden traten in Ruhe auf, sind regredient und strahlen nicht in den Arm aus.",
+        "Richtig: Fachsprache und alle Merkmale (Auslöser, Verlauf, Charakter, Ausstrahlung, Intensität, Häufigkeit)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete die Patientin über Dyspnoe, Hyperhidrosis, Tremor, Schwindel sowie Parästhesien an den Händen und perioral. Fieber wurde verneint. Es bestehen Einschlafstörungen, Inappetenz und eine Gewichtsabnahme von 2 kg. Suizidalität wurde glaubhaft verneint.",
+        "Sie hatte Luftnot, Schwitzen und Kribbeln, schlief schlecht ein und hat abgenommen.",
+        "Begleitend berichtete die Patientin über Dyspnoe, Hyperhidrosis und Tremor. Fieber bis 38,5 °C. Es bestehen Durchschlafstörungen und Gewichtszunahme von 2 kg. Suizidalität wurde bejaht.",
+        "Begleitend berichtete die Patientin über Dyspnoe, Hyperhidrosis, Tremor, Schwindel sowie Parästhesien an den Händen. Sie leidet an Einschlafstörungen und hat 2 kg abgenommen. Fieber und Suizidalität wurden verneint, der Appetit ist unverändert."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: vollständig, Fachsprache, Negativbefunde (Fieber, Suizidalität) dokumentiert.",
+        "Laiensprache und unvollständig: Fieber und Suizidalität fehlen.",
+        "Inhaltlich falsch: Die Patientin hatte kein Fieber, hat abgenommen und verneinte Suizidalität.",
+        "Inhaltlich falsch: Der Appetit ist reduziert (Inappetenz), und die Parästhesien betrafen auch den Mund."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: keine. Medikamente: die Pille, Ibuprofen, Baldrian.",
+        "Vorerkrankungen sind nicht bekannt. Z. n. Weisheitszahnentfernung. Medikation: Maxim 1-0-0, Ibuprofen 400 mg bei Bedarf, Baldrian 0-0-2.",
+        "Keine relevanten Vorerkrankungen bekannt. Z. n. Weisheitszahnentfernung. Vor zwei Jahren Vorstellung in einer Notaufnahme mit nach Angabe unauffälliger kardialer Abklärung. Medikation: orales Kontrazeptivum (Maxim) 0-0-1, Ibuprofen 400 mg bei Bedarf, Baldrian 0-0-2.",
+        "Keine Vorerkrankungen bekannt. Z. n. Appendektomie. Medikation: Maxim 0-0-1, Ibuprofen 400 mg bei Bedarf, Baldrian 0-0-2, Diazepam 5 mg bei Bedarf."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Dosierschema falsch: Maxim wird abends genommen (0-0-1), nicht morgens; die frühere Vorstellung fehlt.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach), Dosierschema morgens-mittags-abends und frühere Abklärung.",
+        "Inhaltlich falsch: operiert wurden die Weisheitszähne, und Diazepam nimmt die Patientin nicht."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: Penicillin. Noxen: Nikotinabusus. Familie: unauffällig.",
+        "Pollinose (Gräser) mit Rhinokonjunktivitis, keine Medikamentenallergien. Nikotinkonsum ca. 2 py, Alkohol am Wochenende 1-2 Gläser Wein, Koffeinkonsum ca. 5 Tassen/Tag, Cannabis einmalig mit 20 J. Familienanamnese: Mutter Depression und Angststörung, Vater arterielle Hypertonie. Die Patientin ist Projektmanagerin, lebt allein; Trennung vom Partner vor 3 Monaten.",
+        "Allergie gegen Gräserpollen. Nikotinkonsum ca. 8 py, kein Alkohol, kein Koffein. Familienanamnese: Vater Depression, Mutter Herzinfarkt. Die Patientin ist Projektmanagerin und verheiratet.",
+        "Sie hat Heuschnupfen und raucht ein bisschen, trinkt viel Kaffee."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: keine Penicillinallergie, sondern eine Pollinose; auch die Familie ist nicht unauffällig.",
+        "Richtig: 5 Zigaretten am Tag über 8 Jahre sind 2 py (Packungsjahre); alle Fakten stimmen.",
+        "Falsch: 8 py sind nicht richtig (2 py), die Patientin trinkt Alkohol und Kaffee, die Mutter hat die Depression, und sie lebt allein.",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Anamnestisch besteht der Verdacht auf eine Panikstörung (Panikattacke). Differenzialdiagnostisch kommen ein akutes Koronarsyndrom, eine Lungenembolie, eine Hyperthyreose und eine tachykarde Herzrhythmusstörung in Betracht.",
+        "Diagnose: Angstanfall.",
+        "Es besteht eine gesicherte Panikstörung, weitere Diagnostik ist nicht erforderlich.",
+        "Anamnestisch besteht der Verdacht auf eine paranoide Schizophrenie. Differenzialdiagnostisch kommen eine Lungenembolie, eine Hyperthyreose, eine Bronchitis und ein Magengeschwür in Betracht, weitere Diagnostik ist nicht nötig."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht statt Gewissheit, sinnvolle somatische Differenzialdiagnosen (Pille und Nikotin: Lungenembolie).",
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Gefährlich: Eine Panikstörung ist eine Ausschlussdiagnose, somatische Ursachen müssen zuerst geklärt werden.",
+        "Medizinisch unpassend: Es gibt keinen Hinweis auf eine Schizophrenie, und die Bronchitis erklärt die Symptome nicht."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir machen ein EKG und geben der Patientin Diazepam.",
+        "Zur weiteren Abklärung empfehlen wir ein EKG, eine Blutentnahme und die Gabe von Diazepam 10 mg dreimal täglich über mehrere Wochen.",
+        "Zur weiteren Abklärung empfehlen wir eine Koloskopie mit anschließender Gastroskopie und eine stationäre Aufnahme zur Magenspiegelung.",
+        "Zur Abklärung empfehlen wir ein 12-Kanal-EKG, eine Blutentnahme (u. a. Blutbild, Elektrolyte, Glukose, Troponin, TSH, bei Bedarf D-Dimere) sowie eine Überwachung. Nach Ausschluss somatischer Ursachen empfehlen wir Psychoedukation und die Vorstellung zur kognitiven Verhaltenstherapie, gegebenenfalls zusätzlich einen SSRI."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu umgangssprachlich und unvollständig; Diazepam ist hier nicht die Therapie der Wahl.",
+        "Leitlinienwidrig: Benzodiazepine über Wochen machen abhängig und werden bei Panikstörung nicht empfohlen.",
+        "Nicht die passende Untersuchung für diesen Verdacht.",
+        "Richtig: Ausschlussdiagnostik, dann Psychoedukation, Verhaltenstherapie und ggf. SSRI nach S3-Leitlinie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Die Patientin hat Herzrasen und Angst, sie heißt Hoffmann.",
+        "Frau Hoffmann hat eine Panikattacke.",
+        "Ich möchte Ihnen Frau Lena Hoffmann vorstellen, eine 29-jährige Patientin, die sich heute Abend mit seit einer Stunde bestehendem Herzrasen, Brustenge und Todesangst vorgestellt hat.",
+        "Also, die junge Frau hat sich furchtbar aufgeregt, und dann ging es mit dem Herzen los, und sie dachte, sie stirbt, und dann kam sie mit dem Rettungswagen hierher und hat gesagt, sie hat Angst, dass das wieder passiert."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz.",
+        "Kein strukturierter Einstieg; zuerst Patientin und Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Sie ist sehr nervös.",
+        "Die Beschwerden traten aus der Ruhe auf, mit Maximum nach etwa 10 Minuten. Begleitend bestehen Dyspnoe, Schwitzen, Tremor, Schwindel sowie periorale und akrale Parästhesien. Das Druckgefühl strahlt nicht aus. Es ist die dritte Episode in zwei Monaten. Suizidalität wurde verneint.",
+        "Die Beschwerden traten unter körperlicher Belastung auf und strahlen in den linken Arm aus. Begleitend bestehen Dyspnoe, Schwitzen, Tremor, Schwindel und Parästhesien. Es ist die erste Episode. Suizidalität wurde verneint.",
+        "Sie hat Fieber, Husten und Auswurf."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Keine verwertbare Information.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
+        "Inhaltlich falsch: Die Beschwerden traten in Ruhe auf, strahlen nicht aus, und es ist bereits die dritte Episode.",
+        "Inhaltlich falsch: Fieber, Husten und Auswurf bestehen nicht."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Keine relevanten Vorerkrankungen. Vor zwei Jahren eine Notaufnahmevorstellung mit nach Angabe unauffälliger kardialer Abklärung. Medikation: Maxim 0-0-1, Ibuprofen bei Bedarf, Baldrian. Pollenallergie. Nikotin ca. 2 py. Die Mutter hat eine Depression und eine Angststörung. Vor drei Monaten Trennung vom Partner.",
+        "Sie ist gesund und nimmt keine Medikamente.",
+        "Bekannt ist eine Schilddrüsenüberfunktion. Medikation: Thiamazol und Maxim. Keine Allergien.",
+        "Sie ist bereits wegen einer Panikstörung in psychiatrischer Behandlung und nimmt seit einem Jahr Sertralin 50 mg täglich. Außerdem ist eine Pollenallergie bekannt."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: relevante Vorgeschichte, frühere Abklärung, Pille und Nikotin (Embolierisiko), Familie und Belastung.",
+        "Falsch: Sie nimmt Maxim, Ibuprofen und Baldrian.",
+        "Inhaltlich falsch: Eine Schilddrüsenüberfunktion ist nicht bekannt, und es gibt eine Pollenallergie.",
+        "Inhaltlich falsch: Es gab bisher keine psychiatrische Behandlung und kein Sertralin."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an Stress.",
+        "Ich weiß es nicht genau.",
+        "Es handelt sich sicher um einen Myokardinfarkt, weil die Patientin ein Druckgefühl in der Brust hat. Differenzialdiagnostisch denke ich höchstens noch an eine Panikstörung, eine Perikarditis und eine Lungenembolie, die ich aber wegen der Pille nicht abklären würde.",
+        "Ich vermute eine Panikstörung mit beginnender Agoraphobie. Somatische Ursachen müssen aber zuerst ausgeschlossen werden. Differenzialdiagnostisch denke ich an ein akutes Koronarsyndrom, eine Lungenembolie, eine Hyperthyreose und eine supraventrikuläre Tachykardie."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
+        "Zu sicher („sicher“), und ein Infarkt ist bei einer 29-Jährigen mit diesem Verlauf nicht die wahrscheinlichste Diagnose.",
+        "Richtig: Verdachtsdiagnose, Ausschlussdiagnostik und Differenzialdiagnosen in Fachsprache."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde sie sofort nach Hause schicken.",
+        "Ich würde eine Gastroskopie machen.",
+        "Ich würde ein EKG schreiben und Blut abnehmen, inklusive Troponin, Elektrolyten, Blutzucker und TSH, und die Vitalparameter überwachen. Bei Verdacht auf eine Lungenembolie würde ich nach dem Wells-Score weiter vorgehen. Sind die Befunde unauffällig, würde ich aufklären und die Patientin zur Psychotherapie vorstellen.",
+        "Ich würde Diazepam 10 mg dreimal täglich ansetzen und die Patientin entlassen, weil Benzodiazepine bei Panikstörung Mittel der ersten Wahl sind."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gefährlich: Somatische Ursachen sind noch nicht ausgeschlossen.",
+        "Nicht die erste Untersuchung bei diesem Verdacht.",
+        "Richtig: Ausschlussdiagnostik, Risikoabschätzung (Wells-Score), dann Aufklärung und Psychotherapie.",
+        "Leitlinienwidrig: Benzodiazepine sind nicht Mittel der ersten Wahl, sie machen abhängig."
+      ],
+      "reply": "Oberarzt: „Gut. Wenn die Patientin Medikamente möchte: Was wäre Ihr Mittel der ersten Wahl zur Langzeitbehandlung?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ein Benzodiazepin wie Lorazepam, weil es sofort wirkt und die Angst nimmt.",
+        "Einen SSRI, zum Beispiel Escitalopram 5 mg oder Sertralin 25 mg morgens, niedrig beginnend und langsam gesteigert. Benzodiazepine vermeide ich wegen der Abhängigkeit.",
+        "Metoprolol, weil es den Herzschlag senkt und damit die Panik beendet.",
+        "Ein Neuroleptikum wie Haloperidol, weil damit die Angst am schnellsten und zuverlässigsten behandelt wird, auch über viele Monate hinweg und ohne Kontrolle."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: Benzodiazepine sind nur ausnahmsweise kurz erlaubt und nicht zur Langzeittherapie, wegen der Abhängigkeit.",
+        "Richtig: SSRI (z. B. Escitalopram, Sertralin) sind laut S3-Leitlinie Mittel der ersten Wahl.",
+        "Falsch: Betablocker behandeln die Panikstörung nicht und sind nicht empfohlen.",
+        "Falsch: Neuroleptika sind bei Panikstörung nicht indiziert und haben relevante Nebenwirkungen."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Palpitationen“?",
+      "options": [
+        "Atemnot",
+        "Herzklopfen oder Herzrasen",
+        "Kribbeln der Haut",
+        "kurze Ohnmacht"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist Dyspnoe.",
+        "Richtig.",
+        "Das sind Parästhesien.",
+        "Das ist eine Synkope."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Dyspnoe“?",
+      "options": [
+        "Husten",
+        "starkes Schwitzen",
+        "Atemnot",
+        "Schwindel"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist Tussis.",
+        "Das ist Hyperhidrosis.",
+        "Richtig.",
+        "Das ist Vertigo."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Parästhesien“?",
+      "options": [
+        "Missempfindungen wie Kribbeln oder Ameisenlaufen",
+        "vollständige oder teilweise Lähmungen von Muskeln",
+        "Schmerzen in den Muskeln nach Belastung",
+        "unwillkürliches rhythmisches Zittern der Hände"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das sind Paresen.",
+        "Das sind Myalgien.",
+        "Das ist Tremor."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Hyperventilation“?",
+      "options": [
+        "verlangsamte und flache Atmung unter dem Bedarf",
+        "vollständiger Stillstand der Atmung für längere Zeit",
+        "Husten mit schleimigem Auswurf aus der Lunge",
+        "beschleunigte und vertiefte Atmung über den Bedarf hinaus"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Hypoventilation.",
+        "Das ist die Apnoe.",
+        "Das ist produktiver Husten.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Agoraphobie“?",
+      "options": [
+        "übermäßige Angst vor Spinnen und anderen Tieren",
+        "Angst vor öffentlichen Plätzen, Menschenmengen und dem Alleinsein außerhalb der Wohnung",
+        "Angst vor engen, geschlossenen Räumen wie Aufzügen",
+        "Angst vor großen Höhen, zum Beispiel auf Türmen"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Arachnophobie.",
+        "Richtig.",
+        "Das ist die Klaustrophobie.",
+        "Das ist die Akrophobie."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

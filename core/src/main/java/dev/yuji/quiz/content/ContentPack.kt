@@ -13,11 +13,11 @@ import kotlinx.serialization.json.Json
  */
 
 /** The pack format this app reads. A pack with another schema needs a different app version and is ignored. */
-const val CONTENT_SCHEMA = 1
+const val CONTENT_SCHEMA = 2
 
 /** Every file a pack must contain, as paths relative to the pack's root. */
 val CONTENT_FILES = listOf(
-    "vocab/nouns.json", "vocab/prepositions.json", "vocab/verbs.json", "vocab/errors.json",
+    "vocab/nouns.json", "vocab/prepositions.json", "vocab/verbs.json", "vocab/errors.json", "vocab/fsp_cases.json",
     "i18n/de.json", "i18n/pt.json", "i18n/es.json",
 )
 
@@ -47,7 +47,11 @@ fun buildDeckFrom(files: ContentFiles): Map<GameMode, List<Card>> = CardFactory.
     parsePrepositions(files.read("vocab/prepositions.json")),
     parseVerbs(files.read("vocab/verbs.json")),
     parseErrorSentences(files.read("vocab/errors.json")),
+    fspCasesFrom(files),
 )
+
+/** The FSP cases of a pack, in the order of the case list (FS-2). */
+fun fspCasesFrom(files: ContentFiles): List<FspCase> = parseFspCases(files.read("vocab/fsp_cases.json"))
 
 /** True when [remote] is worth downloading: a format this app reads and newer than the pack in use. */
 fun shouldDownloadContent(remote: ContentManifest, activeVersion: Int, supportedSchema: Int = CONTENT_SCHEMA): Boolean =

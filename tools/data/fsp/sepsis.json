@@ -1,0 +1,691 @@
+{
+  "id": "sepsis",
+  "area": "Infektiologie",
+  "title": "Fieber, Schüttelfrost und Verwirrtheit",
+  "diagnosis": "Sepsis bei Pyelonephritis (Urosepsis)",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Werner Hoffmann, 71 Jahre, wird am Abend von seiner Frau in die Notaufnahme gebracht.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Hoffmann sitzt im Rollstuhl, seine Frau steht neben ihm. Er wirkt blass und zittert.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Abend, Herr Hoffmann. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte und die Überweisung Ihres Hausarztes dabei? Die brauchen wir zuerst für die Anmeldung.",
+        "Hallo, na, was haben Sie denn?",
+        "Guten Abend, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Hoffmann?",
+        "Guten Abend. Legen Sie sich bitte sofort auf die Liege, ich muss Ihnen gleich Blut abnehmen und Ihren Bauch untersuchen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Maßnahmen und Untersuchung kommen nach der Begrüßung und der Anamnese. Erst begrüßen und sich vorstellen."
+      ],
+      "reply": "Patient: „Ja, Hoffmann. Guten Abend, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Wie ist Ihr Body-Mass-Index?",
+        "Sie sind doch schon ein älterer Herr, oder?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und wer ist Ihr Hausarzt mit Adresse?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Suggestivfrage und unhöflich: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Geburtsdatum und Hausarzt mit Adresse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
+      ],
+      "reply": "Patient: „Ich bin 71, 1,75 Meter groß und wiege 78 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Fieber?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Welche Symptomatik liegt bei Ihnen vor, und seit wann besteht sie?",
+        "Warum kommen Sie erst am Abend zu uns und waren nicht schon heute Morgen beim Hausarzt?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen.",
+        "„Symptomatik“ und „besteht“ sind Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
+      ],
+      "reply": "Patient: „Seit gestern Abend habe ich Fieber und Schüttelfrost, und ich fühle mich ganz schwach. Meine Frau sagt, ich war heute Mittag völlig durcheinander.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten das Fieber und den Schüttelfrost genauer erfassen. Was sagen Sie?",
+      "options": [
+        "Hatten Sie febrile Temperaturen mit Schüttelfrost-Episoden oder einen Rigor, und wurde die Temperatur axillär oder rektal gemessen?",
+        "Sie haben bestimmt hohes Fieber gehabt, nicht wahr?",
+        "Hatten Sie Fieber?",
+        "Haben Sie Ihre Temperatur gemessen? Wie hoch war sie, und haben Sie am ganzen Körper gezittert oder gefroren?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Voller Fachbegriffe („febril“, „Rigor“, „axillär“); der Patient versteht die Frage nicht.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
+        "Das hat der Patient schon gesagt. Fragen Sie nach Höhe und Verlauf.",
+        "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben."
+      ],
+      "reply": "Patient: „Ja, gestern Abend 38,9, heute Nachmittag 39,2 Grad. Ich habe so gezittert, dass die Zähne geklappert haben, und musste mir zwei Decken holen.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Seit wann haben Sie die Beschwerden?",
+        "Wann genau hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben?",
+        "Wie war der zeitliche Verlauf seit der Erstmanifestation, akut oder schleichend progredient, und gab es vorher prodromale Zeichen?",
+        "Hat es plötzlich angefangen?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das hat der Patient schon gesagt (seit gestern Abend). Fragen Sie nach dem Verlauf.",
+        "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Fachsprache: „Erstmanifestation“, „progredient“ und „prodromal“ versteht der Patient nicht.",
+        "Geschlossene Frage; sie erfasst den Verlauf nicht."
+      ],
+      "reply": "Patient: „Vor drei Tagen hat es beim Wasserlassen gebrannt. Gestern Abend kam das Fieber dazu, und seitdem wird es immer schlimmer.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Schmerzen und nach der Belastbarkeit. Welche Formulierung passt?",
+      "options": [
+        "Würden Sie die Schmerzen als nozizeptiv oder neuropathisch einstufen, und wie ausgeprägt ist Ihre Adynamie auf einer Skala von 0 bis 10?",
+        "Tut es sehr weh?",
+        "Haben Sie Schmerzen, und wie stark sind sie auf einer Skala von 0 bis 10? Wie gut kommen Sie im Alltag zurecht, zum Beispiel beim Aufstehen?",
+        "Wie stark sind die Schmerzen von 1 bis 100?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache („nozizeptiv“, „neuropathisch“, „Adynamie“); der Patient versteht sie nicht.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
+        "Richtig: Schmerzstärke auf der üblichen Skala und die Belastbarkeit im Alltag.",
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS)."
+      ],
+      "reply": "Patient: „Rechts in der Seite, im Rücken, habe ich einen dumpfen Schmerz, so 5 von 10. Ich bin so schwach, dass ich kaum allein vom Stuhl aufstehen kann.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Ist Ihnen übel, mussten Sie sich übergeben, oder haben Sie Husten oder Durchfall? Hat sich beim Wasserlassen etwas verändert?",
+        "Hatten Sie Nausea, Emesis, Tussis oder Diarrhö, und gab es eine Dysurie, Pollakisurie oder Hämaturie, sowie Dyspnoe oder Thoraxschmerzen?",
+        "Haben Sie sonst noch was?",
+        "Sie müssen bestimmt oft zur Toilette, nicht wahr?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: konkrete Begleitsymptome in Laiensprache, auch Husten und Beschwerden beim Wasserlassen (möglicher Fokus).",
+        "Inhaltlich gut, aber nur Fachbegriffe. Sagen Sie „übel“, „erbrechen“, „Husten“, „Durchfall“, „Brennen“.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Suggestiv: Sie unterstellen das Symptom."
+      ],
+      "reply": "Patient: „Übel ist mir, erbrochen habe ich nicht. Husten oder Durchfall habe ich nicht. Ich muss ständig aufs Klo, es kommt aber nur wenig, es brennt, und der Urin ist trüb und riecht streng.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie ist die Vegetativa?",
+        "Haben Sie Nachtschweiß, Inappetenz, Gewichtsverlust, Obstipation, Diarrhö und Exsikkose, und wie sind Miktion und Diurese?",
+        "Ist sonst alles normal bei Ihnen?",
+        "Wie sind Appetit und Gewicht? Wie ist der Stuhlgang? Wie viel haben Sie getrunken, und wie viel Urin lassen Sie?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Inappetenz, Obstipation, Miktion).",
+        "Zu allgemein; der Patient sagt einfach „ja“.",
+        "Richtig: Appetit, Gewicht, Stuhlgang, Trinkmenge und Urinmenge in Laiensprache."
+      ],
+      "reply": "Patient: „Appetit habe ich seit gestern keinen, getrunken habe ich kaum etwas. Mein Gewicht ist gleich geblieben, der Stuhlgang normal. Nachtschweiß hatte ich nicht. Wasser lasse ich heute nur wenig.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, einen Diabetes mellitus oder eine benigne Prostatahyperplasie, und gab es Voroperationen?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck, Zucker oder Probleme mit der Prostata? Wurden Sie schon einmal operiert?",
+        "Sind Sie gesund?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „Prostatahyperplasie“). Mit Patienten sprechen Sie Laiensprache.",
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patient: „Ich habe Zucker, Typ 2, und Bluthochdruck. Die Prostata ist vergrößert, deswegen muss ich nachts oft raus. Vor einem Jahr hatte ich schon mal eine Blasenentzündung. Operiert wurde ich vor zehn Jahren am Leistenbruch rechts.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Welche Pharmaka applizieren Sie?",
+        "Nehmen Sie Tabletten?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept?",
+        "Sie nehmen doch sicher Metformin gegen den Zucker und ein Mittel für den Blutdruck, und vielleicht noch etwas für die Prostata, stimmt das?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache („Pharmaka“, „applizieren“).",
+        "Zu ungenau: Dosis und andere Darreichungsformen fehlen.",
+        "Richtig: Name, Dosierung und auch frei verkäufliche Mittel.",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Metformin 1000 mg morgens und abends, Ramipril 5 mg morgens und Tamsulosin 0,4 mg abends. Heute habe ich zweimal Paracetamol 500 mg genommen.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
+        "Allergie?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen gleich ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Zu eng: Allergien gegen andere Medikamente, Lebensmittel oder Pflaster übersehen Sie.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patient: „Medikamente vertrage ich alle. Ich habe nur Heuschnupfen im Frühjahr, dann niese ich und die Augen jucken.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucher oder Alkoholiker?",
+        "Wie hoch ist Ihr Nikotin- und Alkoholabusus, und seit wann konsumieren Sie diese Substanzen regelmäßig und in welcher Menge?",
+        "Trinken Sie zu viel?",
+        "Rauchen Sie, oder haben Sie früher geraucht? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Alkoholiker“ ist wertend und verletzend.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Wertend und ungenau.",
+        "Richtig: neutral, konkret, mit Menge und auch nach früherem Rauchen."
+      ],
+      "reply": "Patient: „Ich habe von 25 bis 45 etwa 20 Zigaretten am Tag geraucht, seit 26 Jahren nicht mehr. Alkohol trinke ich am Wochenende ein bis zwei Bier. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Zucker, Herz- oder Krebserkrankungen?",
+        "Wie ist die Familienanamnese?",
+        "Hat Ihre Familie dieselbe Krankheit?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu eng: Geschwister und Kinder fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Richtig: offen, mit passenden Beispielen.",
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
+      ],
+      "reply": "Patient: „Meine Mutter hatte auch Zucker. Mein Vater hatte mit 75 einen Schlaganfall.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was machen Sie beruflich, oder was haben Sie früher gemacht? Wie wohnen Sie, allein oder mit jemandem zusammen?",
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie hoch ist Ihre Rente?",
+        "Haben Sie Geld?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Entlassung und Versorgung.",
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise zu persönlich: der Beruf fehlt, die Höhe der Rente gehört nicht in die Anamnese.",
+        "Unangemessen."
+      ],
+      "reply": "Patient: „Ich bin Rentner, früher war ich Schlosser. Ich wohne mit meiner Frau in einem Haus mit Treppe. Wir haben zwei Töchter.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben eine Urosepsis mit beginnendem Organversagen bei Pyelonephritis und eventuell einer infizierten Harnstauungsniere; wegen der Hypoperfusion werden wir Sie wahrscheinlich intensivmedizinisch betreuen müssen.",
+        "Es ist wahrscheinlich nichts Schlimmes, nur ein grippaler Infekt.",
+        "Ich vermute, dass sich eine Infektion der Harnwege auf die Niere und ins Blut ausgebreitet hat. Man nennt das umgangssprachlich Blutvergiftung. Das ist gefährlich, deshalb müssen wir sofort behandeln.",
+        "Sie haben sicher einen Tumor der Prostata, das müssen wir sofort operieren. Auch die Verwirrtheit kommt bestimmt davon."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache und zu sicher; der Patient versteht die Diagnose nicht.",
+        "Verharmlosend und medizinisch falsch: Fieber, Schwäche und Verwirrtheit sind Warnzeichen.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, ehrlich über den Ernst.",
+        "Falsch und beängstigend: Es gibt keinen Hinweis auf einen Tumor."
+      ],
+      "reply": "Patient: „Blutvergiftung? Oh Gott. Was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Kann ich wieder nach Hause?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, Sie bekommen ein Antibiotikum als Tabletten und können morgen zum Hausarzt gehen.",
+        "Das entscheidet der Chef, ich weiß es nicht.",
+        "Wir warten erst die Ergebnisse der Urinkultur in zwei Tagen ab. Bis dahin bekommen Sie nur Flüssigkeit und Paracetamol gegen das Fieber, ein Antibiotikum geben wir erst danach.",
+        "Nein, Sie müssen im Krankenhaus bleiben. Wir nehmen jetzt Blut und Urin ab, Sie bekommen eine Infusion und sofort ein Antibiotikum in die Vene. Wir machen einen Ultraschall der Nieren und überwachen Sie engmaschig."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Gefährlich: bei Verdacht auf Blutvergiftung ist eine stationäre Behandlung nötig.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Gefährlich: Bei Sepsis muss das Antibiotikum sofort in die Vene, nicht erst nach der Kultur.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich."
+      ],
+      "reply": "Patient: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Hoffmann ist 71 und hat Fieber und Schüttelfrost.",
+        "Herr Werner Hoffmann, ein 71-jähriger Patient, stellte sich heute in Begleitung seiner Ehefrau in unserer Notaufnahme mit seit gestern bestehendem Fieber, Schüttelfrost und Allgemeinschwäche vor.",
+        "Herr Werner Hoffmann (71 J.) hat sich heute in unsere Notaufnahme vorgestellt wegen Fieber, Schüttelfrost und Verwirrtheit seit gestern Abend, begleitet von seiner Ehefrau, die ihn im Rollstuhl hergebracht hat.",
+        "Der Patient Herr Hoffmann stellt sich heute vor wegen Fieber und Schüttelfrost seit gestern, 71-jährig, und seine Frau."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Umgangssprache und zu knapp; Ort und Zeitpunkt fehlen.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptome.",
+        "Grammatik: „in unserer Notaufnahme“ (Dativ, wo?), nicht „in unsere“; außerdem steht „begleitet“ unglücklich am Ende.",
+        "Satzbau falsch: Altersangabe und „seine Frau“ hängen am Ende, der Ort fehlt."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Seit drei Tagen brennt es beim Wasserlassen, seit gestern kamen Fieber und Zittern dazu, und die Schwäche wurde schlimmer.",
+        "Die Beschwerden begannen vor drei Tagen mit Dysurie und Pollakisurie, seit gestern bestehen Fieber bis 38,9 °C und Schüttelfrost sowie dumpfe Schmerzen in der linken Flanke (NRS 5/10). Zudem besteht eine Adynamie; laut Ehefrau war der Patient heute Mittag zeitweise desorientiert und hat mehrfach erbrochen.",
+        "Die Beschwerden seien vor drei Tagen mit Dysurie aufgetreten, es bestehen Fieber bis 39,2 °C und Flankenschmerz rechts, NRS 5.",
+        "Die Beschwerden begannen vor drei Tagen mit Dysurie und Pollakisurie. Seit gestern Abend bestehen Fieber bis 39,2 °C mit Schüttelfrost und dumpfe Schmerzen in der rechten Flanke (NRS 5/10). Zudem besteht eine Adynamie; laut Ehefrau war der Patient heute Mittag zeitweise desorientiert."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Inhaltlich falsch: Das Fieber stieg bis 39,2 °C, und der Schmerz sitzt in der rechten Flanke.",
+        "Konjunktiv-I-Mischung und unvollständig; außerdem fehlt „/10“.",
+        "Richtig: Fachsprache und alle Merkmale (Beginn, Verlauf, Fieber, Schmerz mit NRS, Fremdanamnese)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete der Patient über Übelkeit ohne Erbrechen sowie über trüben, übelriechenden Urin bei verminderter Urinmenge. Husten und Diarrhö wurden verneint. Inappetenz und verminderte Trinkmenge seit gestern; Nachtschweiß und Gewichtsverlust wurden verneint.",
+        "Er hatte Übelkeit und hat gekotzt.",
+        "Begleitend berichtete der Patient über Nausea und mehrfache Emesis sowie über trüben Urin. Husten und Diarrhö wurden verneint. Nachtschweiß und Gewichtsverlust wurden verneint, der Appetit sei unverändert gewesen.",
+        "Der Patient klagte über Husten, Diarrhö und Nachtschweiß; eine Dysurie wurde verneint."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Vulgär („gekotzt“) und unvollständig.",
+        "Inhaltlich falsch: Der Patient hat nicht erbrochen, und der Appetit fehlt seit gestern.",
+        "Inhaltlich falsch: Husten, Diarrhö und Nachtschweiß wurden verneint, die Dysurie besteht."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Zucker, Bluthochdruck, Prostata. Medikamente: Metformin, Ramipril, Tamsulosin.",
+        "An Vorerkrankungen sind eine arterielle Hypertonie, ein Diabetes mellitus Typ 1 und eine benigne Prostatahyperplasie bekannt. Z. n. Leistenhernien-OP links vor zehn Jahren. Medikation: Metformin 1000 mg 1-0-1, Ramipril 5 mg 1-0-0, Tamsulosin 0,4 mg 0-0-1.",
+        "An Vorerkrankungen sind eine arterielle Hypertonie, ein Diabetes mellitus Typ 2 und eine benigne Prostatahyperplasie bekannt. Z. n. Zystitis vor einem Jahr, Z. n. Leistenhernien-OP rechts vor zehn Jahren. Medikation: Metformin 1000 mg 1-0-1, Ramipril 5 mg 1-0-0, Tamsulosin 0,4 mg 0-0-1, Paracetamol 500 mg 2-mal heute.",
+        "Medikation: Metformin 1000 mg 1-1-1, Ramipril 5 mg 0-0-1, Tamsulosin 0,4 mg 1-0-0."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Inhaltlich falsch: Typ 2 (nicht Typ 1), und die Hernien-OP war rechts.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierschema im Format morgens-mittags-abends.",
+        "Dosierschema falsch: Metformin zweimal (1-0-1), Ramipril morgens (1-0-0), Tamsulosin abends (0-0-1)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Penicillinallergie (Exanthem). Aktueller Nikotinkonsum ca. 20 py. Familienanamnese unauffällig.",
+        "Keine Medikamentenallergien bekannt, Pollinose. Ex-Nikotinabusus ca. 20 py, seit 26 Jahren sistiert; Alkoholkonsum am Wochenende. Familienanamnese: Mutter Diabetes mellitus, Vater Apoplex mit 75 J. Der Patient ist Rentner (ehemals Schlosser), verheiratet und lebt mit seiner Ehefrau in einem Haus mit Treppe.",
+        "Allergie: keine. Noxen: Nikotin.",
+        "Keine Allergien bekannt. Nikotinkonsum ca. 40 py, kein Alkohol. Familienanamnese: Vater Diabetes mellitus. Der Patient ist Rentner und wohnt allein in einer Wohnung im Erdgeschoss."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: Es gibt keine Penicillinallergie, der Patient raucht seit 26 Jahren nicht mehr, und die Familienanamnese ist nicht unauffällig.",
+        "Richtig: 20 Zigaretten am Tag über 20 Jahre sind 20 py (pack years = Packungsjahre).",
+        "Zu knapp und unvollständig: Pollinose, py, Alkohol, Familienanamnese und Sozialanamnese fehlen.",
+        "Inhaltlich falsch: Er hat etwa 20 py geraucht, trinkt am Wochenende Bier und wohnt mit seiner Frau in einem Haus."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Anamnestisch besteht der Verdacht auf eine Sepsis bei Pyelonephritis (Urosepsis) bei bekannter benigner Prostatahyperplasie. Differenzialdiagnostisch kommen eine Pneumonie, eine akute Prostatitis und eine infizierte Harnstauungsniere in Betracht.",
+        "Diagnose: Blutvergiftung.",
+        "Es besteht eine gesicherte Urosepsis mit septischem Schock.",
+        "Anamnestisch besteht der Verdacht auf eine Sepsis bei Pneumonie. Differenzialdiagnostisch kommen eine Pyelonephritis, eine Zystitis und eine Gastroenteritis in Betracht."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen.",
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Ohne Labor und Bildgebung ist die Diagnose noch nicht gesichert, ein Schock ist nicht belegt.",
+        "Passt nicht zur Anamnese: Der Patient hat keinen Husten, aber Dysurie und Flankenschmerz."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Zur weiteren Abklärung empfehlen wir eine Koloskopie und eine Gastroskopie.",
+        "Wir machen Blut und Urin und geben Antibiotika, wenn die Kultur da ist.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme mit Blutkulturen, eine Urindiagnostik sowie eine Abdomensonographie. Die Antibiose erfolgt nach Vorliegen der Kulturergebnisse in ca. 48 Stunden. Metformin wird fortgesetzt.",
+        "Zur weiteren Abklärung empfehlen wir zwei Blutkulturpaare, Laktat, Blutbild, CRP, Retentionsparameter und Gerinnung, eine Urindiagnostik mit Urinkultur sowie eine Nierensonographie zum Ausschluss einer Harnstauung. Therapeutisch erfolgen eine Volumengabe mit Vollelektrolytlösung und innerhalb einer Stunde eine intravenöse Antibiose. Metformin wird pausiert; die Überwachung erfolgt intermediär."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Nicht die passenden Untersuchungen für diesen Verdacht.",
+        "Zu umgangssprachlich und unvollständig; die Antibiose darf nicht auf die Kultur warten.",
+        "Gefährlich: Bei Sepsis beginnt die Antibiose innerhalb einer Stunde, und Metformin wird wegen Laktatazidose-Gefahr pausiert.",
+        "Richtig: Diagnostik, Fokussuche und Therapie in vollständigen Sätzen, nach den Sepsis-Leitlinien."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Der Patient hat Fieber, er heißt Hoffmann.",
+        "Herr Hoffmann hat eine Urosepsis.",
+        "Ich möchte Ihnen Herrn Werner Hoffmann vorstellen, einen 71-jährigen Patienten, der sich heute mit seit gestern bestehendem Fieber, Schüttelfrost und Allgemeinschwäche sowie fremdanamnestisch zeitweiser Verwirrtheit vorgestellt hat.",
+        "Also, der Mann hatte erst Brennen beim Wasserlassen und dann Fieber, und seine Frau hat ihn hergebracht, weil er so komisch war und gar nichts mehr gegessen und getrunken hat, und jetzt sitzt er im Rollstuhl und zittert ganz furchtbar, und ich glaube, er hat auch etwas mit der Blase ..."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Richtig: Name, Alter, Leitsymptome und zeitlicher Verlauf in einem Satz.",
+        "Kein strukturierter Einstieg und Umgangssprache; zuerst Patient und Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Vor drei Tagen begannen Dysurie und Pollakisurie, seit gestern bestehen Fieber bis 39,2 °C mit Schüttelfrost und dumpfe Schmerzen in der rechten Flanke. Der Urin ist trüb und übelriechend, die Urinmenge vermindert. Husten und Diarrhö wurden verneint.",
+        "Er hat alles Mögliche.",
+        "Die Beschwerden begannen vor drei Tagen mit Husten und Auswurf, seit gestern bestehen Fieber bis 39,2 °C und Schüttelfrost. Dysurie und Flankenschmerz wurden verneint, der Urin ist klar. Nachtschweiß und Gewichtsverlust bestehen seit Wochen, die Trinkmenge ist unauffällig.",
+        "Er hat Fieber, Husten und Durchfall."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
+        "Keine Information.",
+        "Inhaltlich falsch: Es gab Dysurie und Flankenschmerz, aber keinen Husten; der Urin ist trüb.",
+        "Inhaltlich falsch: Husten und Durchfall wurden verneint."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist gesund.",
+        "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 1 sowie eine Penicillinallergie. Vor einem Jahr bestand bereits eine Zystitis.",
+        "Er nimmt Metformin und Ramipril, sonst nichts.",
+        "Bekannt sind ein Diabetes mellitus Typ 2 unter Metformin, eine arterielle Hypertonie und eine benigne Prostatahyperplasie unter Tamsulosin. Vor einem Jahr bestand bereits eine Zystitis. Keine Medikamentenallergien. Ex-Raucher mit ca. 20 py."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch: es gibt relevante Vorerkrankungen.",
+        "Inhaltlich falsch: Es ist ein Diabetes Typ 2, und es gibt keine Penicillinallergie; die Prostatahyperplasie fehlt.",
+        "Unvollständig: Diagnosen, Tamsulosin und Allergiestatus fehlen.",
+        "Richtig: relevante Vorgeschichte, frühere Zystitis, Allergiestatus (wichtig für die Antibiose) und Nikotinanamnese."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an eine Blasenentzündung.",
+        "Ich vermute eine Sepsis bei Pyelonephritis, am ehesten mit urogenem Fokus bei benigner Prostatahyperplasie. Differenzialdiagnostisch denke ich an eine Pneumonie, eine akute Prostatitis und eine infizierte Harnstauungsniere.",
+        "Ich weiß es nicht genau.",
+        "Es handelt sich sicher um eine Influenza, weil Fieber und Schwäche bestehen. Differenzialdiagnostisch denke ich höchstens noch an eine Appendizitis und eine Meningitis. Eine Sepsis halte ich für ausgeschlossen, weil der Patient noch ansprechbar ist, und eine Antibiose ist deshalb nicht nötig."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu unpräzise: Fieber, Flankenschmerz und Verwirrtheit sprechen für mehr als eine Zystitis.",
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
+        "Zu sicher („sicher“), und die Dysurie spricht gegen eine Influenza."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde ihn mit Antibiotika-Tabletten nach Hause schicken.",
+        "Ich würde zuerst ein CT des Abdomens machen und die Antibiose erst nach dem Befund beginnen, damit wir nicht blind behandeln.",
+        "Ich würde sofort zwei Paar Blutkulturen und eine Urinkultur abnehmen, Laktat und Entzündungswerte bestimmen und die Nieren sonographieren. Innerhalb der ersten Stunde würde ich Piperacillin/Tazobactam 4,5 g i. v. geben und bei Hypotonie oder erhöhtem Laktat Vollelektrolytlösung infundieren, Metformin pausieren und intermediär überwachen. Bei Harnstau würde ich die Urologie zur Entlastung hinzuziehen.",
+        "Ich würde Metformin weitergeben und Ibuprofen 400 mg gegen das Fieber verordnen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gefährlich: Bei Sepsis muss der Patient stationär überwacht und sofort intravenös behandelt werden.",
+        "Fehler: Die Antibiose darf nicht auf die Bildgebung warten; sie beginnt innerhalb einer Stunde, nach den Kulturen.",
+        "Richtig: Kulturen, Fokussuche, Antibiose in der ersten Stunde, Volumen, Metformin pausieren, Überwachung und Urologie.",
+        "Gefährlich: Metformin erhöht bei Sepsis die Gefahr einer Laktatazidose, und NSAR schaden den Nieren."
+      ],
+      "reply": "Oberarzt: „Gut. Welche Kriterien hat der qSOFA-Score?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Der qSOFA umfasst drei Kriterien: Atemfrequenz von mindestens 22 pro Minute, systolischer Blutdruck von höchstens 100 mmHg und eine Veränderung des Bewusstseins. Ab zwei Kriterien ist das Risiko erhöht.",
+        "Das sind Temperatur, Puls und Blutzucker.",
+        "Der qSOFA umfasst drei Kriterien: Herzfrequenz über 90 pro Minute, Temperatur über 38 °C und Leukozyten über 12 000 pro Mikroliter. Ab zwei Kriterien liegt eine Sepsis vor.",
+        "Dazu fällt mir nichts ein."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Atemfrequenz, systolischer Blutdruck und Bewusstsein; ab zwei Punkten erhöhtes Risiko.",
+        "Falsch: Das sind keine qSOFA-Kriterien.",
+        "Falsch: Das sind die SIRS-Kriterien, nicht der qSOFA.",
+        "In der Prüfung erwartet man eine begründete Antwort."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Dysurie“?",
+      "options": [
+        "häufiger Harndrang mit kleinen Mengen",
+        "Schmerzen oder Brennen beim Wasserlassen",
+        "Blut im Urin",
+        "stark verminderte Urinmenge"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Pollakisurie.",
+        "Richtig.",
+        "Das ist die Hämaturie.",
+        "Das ist die Oligurie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Pollakisurie“?",
+      "options": [
+        "Schmerzen beim Wasserlassen",
+        "nächtliches Wasserlassen",
+        "unwillkürlicher Urinverlust",
+        "häufiges Wasserlassen kleiner Urinmengen"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Dysurie.",
+        "Das ist die Nykturie.",
+        "Das ist die Harninkontinenz.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Pyelonephritis“?",
+      "options": [
+        "Nierenbeckenentzündung",
+        "Blasenentzündung",
+        "Prostataentzündung",
+        "Harnleiterstein"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Zystitis.",
+        "Das ist die Prostatitis.",
+        "Das ist die Ureterolithiasis."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Bakteriämie“?",
+      "options": [
+        "Pilze im Blut",
+        "Eiter im Urin",
+        "Bakterien im Blut",
+        "Eiweiß im Urin"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Fungämie.",
+        "Das ist die Pyurie.",
+        "Richtig.",
+        "Das ist die Proteinurie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Oligurie“?",
+      "options": [
+        "fehlende Urinausscheidung",
+        "stark verminderte Urinmenge",
+        "vermehrte Urinmenge",
+        "Blut im Urin"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Anurie.",
+        "Richtig.",
+        "Das ist die Polyurie.",
+        "Das ist die Hämaturie."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

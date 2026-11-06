@@ -117,4 +117,17 @@
     <string name="pool_version">Banco de questões versão %1$d · %2$s</string>
     <string name="pool_downloaded">baixado</string>
     <string name="pool_built_in">incluído no app</string>
+    <string name="mode_fsp_title">Casos FSP</string>
+    <string name="mode_fsp_instruction">Prova de alemão médico simulada (Fachsprachprüfung): escolha o que você diria ou escreveria</string>
+    <string name="fsp_part_1">Parte 1 · Conversa médico-paciente</string>
+    <string name="fsp_part_2">Parte 2 · Documentação</string>
+    <string name="fsp_part_3">Parte 3 · Conversa médico-médico</string>
+    <string name="fsp_step">Passo %1$d de %2$d</string>
+    <string name="fsp_try_again">Quase. Leia o porquê e escolha de novo.</string>
+    <string name="fsp_continue">Continuar</string>
+    <string name="fsp_result_title">Caso concluído</string>
+    <string name="fsp_result_passed">Aprovado: %1$d%% certo na primeira tentativa</string>
+    <string name="fsp_result_failed">Não aprovado: %1$d%% certo na primeira tentativa (precisa de 80%%)</string>
+    <string name="fsp_result_part">%1$s: %2$d de %3$d</string>
+    <string name="fsp_diagnosis">Diagnóstico: %1$s</string>
 </resources>

@@ -39,6 +39,7 @@ import dev.yuji.quiz.R
 import dev.yuji.quiz.domain.Card as StudyCard
 import dev.yuji.quiz.domain.GameMode
 import dev.yuji.quiz.ModeOverview
+import dev.yuji.quiz.content.FspCaseRun
 import dev.yuji.quiz.domain.ActivityCalendar
 import dev.yuji.quiz.domain.AnswerRecord
 import dev.yuji.quiz.domain.DailyProgress
@@ -126,6 +127,9 @@ fun StudyScreen(
     onSuspend: (SuspensionDuration) -> Unit,
     onQuit: () -> Unit,
     onNext: () -> Unit,
+    caseRun: FspCaseRun? = null,
+    onCasePick: (Int) -> Unit = {},
+    onCaseNext: () -> Unit = {},
 ) {
     val card = session.currentCard ?: return
     val answer = session.lastAnswer
@@ -141,6 +145,10 @@ fun StudyScreen(
                 TextButton(onClick = onQuit) { Text(stringResource(R.string.study_quit), style = scale.style(MaterialTheme.typography.labelLarge)) }
                 CardMenu(onSuspend = onSuspend)
             }
+        }
+        if (card.mode == GameMode.FSP_CASE) {
+            if (caseRun != null) FspCaseBody(caseRun, answer, onCasePick, onCaseNext, onNext)
+            return@Column
         }
         if (card.mode == GameMode.ERROR_SPOT) {
             ErrorSpotBody(card, choices, answer?.chosen, onChoose)

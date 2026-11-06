@@ -53,6 +53,13 @@ APP = [
  (D+"content/ContentPack.kt", "if (!sha256(data).equals(expected, ignoreCase = true))", "if (false)", "pool files not checked against their checksums"),
  (D+"content/ContentPack.kt", "GameMode.entries.firstOrNull { deck[it].isNullOrEmpty() }", "GameMode.entries.firstOrNull { false }", "a pool that empties a mode is accepted"),
  (A+"data/ContentStore.kt", "        store.clear()\n    }\n    return ActiveContent(builtIn", "    }\n    return ActiveContent(builtIn", "outdated or unreadable downloaded pool kept on disk"),
+ (D+"content/FspCase.kt", "const val FSP_PASS_SCORE = 0.8", "const val FSP_PASS_SCORE = 0.7", "FSP case passes with 70 %"),
+ (D+"content/FspCase.kt", "fun passed(score: Double): Boolean = score >= FSP_PASS_SCORE", "fun passed(score: Double): Boolean = score > FSP_PASS_SCORE", "FSP case with exactly 80 % fails"),
+ (D+"content/FspCase.kt", "phase == CardPhase.REVIEW && score >= EASY_SCORE", "score >= EASY_SCORE", "a new FSP case graded EASY"),
+ (D+"content/FspCase.kt", "phase == CardPhase.REVIEW && score < HARD_BELOW", "phase == CardPhase.REVIEW && score <= HARD_BELOW", "HARD boundary of FSP cases moved"),
+ (D+"content/FspCase.kt", "copy(solved = true, firstTry = firstTry + wrongPicks.isEmpty())", "copy(solved = true, firstTry = firstTry + true)", "a step solved after a wrong pick counts as right"),
+ (D+"content/FspCase.kt", "if (solved || option !in s.options.indices || option in wrongPicks) return this", "if (option !in s.options.indices || option in wrongPicks) return this", "picks after solving change the step"),
+ (D+"domain/StudySession.kt", "val grade = gradeOverride ?: AnswerGrader.grade", "val grade = AnswerGrader.grade", "FSP case graded by the time it took"),
 ]
 
 WEB = [

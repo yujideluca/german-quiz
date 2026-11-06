@@ -1,0 +1,691 @@
+{
+  "id": "harnwegsinfekt-pyelonephritis",
+  "area": "Infektiologie",
+  "title": "Fieber und Schmerzen in der Seite",
+  "diagnosis": "Akute Pyelonephritis",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Frau Julia Becker, 31 Jahre, stellt sich am Abend in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Frau Becker sitzt zusammengesunken auf der Liege, sie friert und hält sich die rechte Seite.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Abend, Frau Becker. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte und Ihren Personalausweis dabei? Die brauchen wir zuerst für die Anmeldung.",
+        "Hallo, ich bin Dr. Silva. Sie sehen ja ganz schlecht aus, wo tut es denn weh?",
+        "Guten Abend, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Frau Becker?",
+        "Hallo Julia, ich bin der Dr. Silva. Du siehst krank aus, erzähl mal, was los ist."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Verwaltungsfragen gehören nicht an den Anfang, und Sie stellen sich nicht vor.",
+        "Keine Vorstellung, keine Identitätsprüfung, und die Bemerkung über das Aussehen ist unhöflich.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität der Patientin.",
+        "Das Du und der Vorname sind in der Prüfung falsch. Siezen Sie die Patientin und nennen Sie ihren Nachnamen."
+      ],
+      "reply": "Patientin: „Ja, Becker. Guten Abend, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?",
+        "Wie ist Ihr Body-Mass-Index?",
+        "Sie sind doch noch keine vierzig, oder?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Suggestivfrage: Sie legen die Antwort nahe. Fragen Sie offen.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht."
+      ],
+      "reply": "Patientin: „Ich bin 31, 1,68 Meter groß und wiege 64 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Schmerzen beim Wasserlassen?",
+        "Warum kommen Sie erst am Abend und nicht schon gestern zum Hausarzt?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Welche Symptomatik liegt bei Ihnen vor?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
+        "Richtig: eine offene Frage lässt die Patientin selbst erzählen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache."
+      ],
+      "reply": "Patientin: „Ich habe seit gestern hohes Fieber und Schüttelfrost und starke Schmerzen hier in der Seite, rechts.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten den Schmerz in der Seite genauer lokalisieren. Was sagen Sie?",
+      "options": [
+        "Der Schmerz sitzt doch sicher im Rücken, nicht wahr?",
+        "Zeigen Sie mir bitte genau, wo es wehtut. Zieht der Schmerz irgendwohin, zum Beispiel in den Rücken oder in den Unterbauch?",
+        "Handelt es sich um einen Flankenschmerz mit Ausstrahlung in die Leiste, und ist er lokalisiert oder diffus?",
+        "Wo tut es weh?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Suggestivfrage. Die Patientin könnte Ihnen nur zustimmen.",
+        "Richtig: Sie lassen zeigen und fragen laienverständlich mit Beispielen nach der Ausstrahlung.",
+        "„Flankenschmerz“, „Ausstrahlung“, „lokalisiert“ und „diffus“ sind Fachwörter; die Patientin versteht sie nicht.",
+        "Zu knapp: Seite und mögliche Ausstrahlung bleiben unklar."
+      ],
+      "reply": "Patientin: „Hier, rechts neben der Wirbelsäule, unten am Rücken. Es zieht nach vorn bis in die Leiste.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Hat es plötzlich angefangen?",
+        "Seit wann haben Sie die Schmerzen?",
+        "Wann genau hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben?",
+        "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch progredient?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Geschlossene Frage; sie erfasst den Verlauf nicht.",
+        "Das hat die Patientin schon gesagt (seit gestern). Fragen Sie nach dem Verlauf.",
+        "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „progredient“ versteht die Patientin nicht."
+      ],
+      "reply": "Patientin: „Vor zwei Tagen fing es mit Brennen beim Wasserlassen an. Gestern Abend kamen die Schmerzen in der Seite dazu, seitdem wird es schlimmer.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "options": [
+        "Sind die Schmerzen kolikartig?",
+        "Wie stark sind die Schmerzen von 1 bis 100?",
+        "Tut es sehr weh?",
+        "Wie würden Sie die Schmerzen beschreiben, eher stechend, dumpf oder krampfartig? Und wie stark sind sie auf einer Skala von 0 bis 10?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Kolikartig“ ist Fachsprache. Beschreiben Sie es mit Wörtern wie „krampfartig“ oder „wellenartig“.",
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
+        "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10."
+      ],
+      "reply": "Patientin: „Es ist ein dumpfer, dauernder Schmerz, so 6 von 10. Keine Wellen.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Hatten Sie Dysurie, Pollakisurie, Hämaturie, Nausea oder Emesis, und ist Ihnen ein Fluor vaginalis aufgefallen?",
+        "Haben Sie sonst noch was?",
+        "Sie haben bestimmt auch erbrochen.",
+        "Ist Ihnen übel, mussten Sie sich übergeben? Hat sich der Urin verändert, zum Beispiel Farbe oder Geruch, oder war Blut darin? Haben Sie Ausfluss?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Brennen“, „übel“, „erbrechen“, „Ausfluss“.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Suggestiv: Sie unterstellen das Symptom.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive Urinveränderung und gynäkologischer Differenzialdiagnose."
+      ],
+      "reply": "Patientin: „Mir ist schlecht, einmal habe ich erbrochen. Der Urin ist trüb und riecht streng, Blut habe ich nicht gesehen. Ausfluss habe ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Haben Sie Fieber gemessen? Wie sind Appetit und Stuhlgang? Müssen Sie öfter zur Toilette, und kommt dann viel oder wenig Urin?",
+        "Wie ist die Vegetativa?",
+        "Haben Sie Schüttelfrost, Nachtschweiß, Gewichtsverlust, Obstipation, Diarrhö und Pollakisurie?",
+        "Ist sonst alles normal bei Ihnen?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fieber, Appetit, Stuhlgang und Wasserlassen in Laiensprache.",
+        "Fachjargon, den eine Patientin nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Obstipation, Diarrhö, Pollakisurie).",
+        "Zu allgemein; die Patientin sagt einfach „ja“."
+      ],
+      "reply": "Patientin: „Ich hatte 39,2 Grad. Appetit habe ich keinen. Der Stuhlgang ist normal. Ich muss ständig auf die Toilette, aber es kommt nur wenig.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Welche Diagnosen stehen in Ihrer Akte?",
+        "Sind Sie gesund?",
+        "Haben Sie Vorerkrankungen wie eine rezidivierende Zystitis, eine Urolithiasis oder einen Diabetes mellitus, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Haben Sie chronische Erkrankungen oder hatten Sie das schon einmal, zum Beispiel Blasenentzündungen oder Nierensteine? Wurden Sie schon einmal operiert?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Die Patientin kennt ihre Akte nicht. Fragen Sie direkt.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Vollständig, aber in Fachsprache („rezidivierende Zystitis“, „Urolithiasis“). Mit Patienten sprechen Sie Laiensprache.",
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt."
+      ],
+      "reply": "Patientin: „Blasenentzündungen hatte ich öfter, die letzte vor acht Monaten, mit Antibiotikum. Nierensteine nicht. Zucker habe ich nicht. Operiert wurde ich noch nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Tabletten?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept? Und wann war Ihre letzte Regelblutung?",
+        "Welche Pharmaka applizieren Sie?",
+        "Sie nehmen doch sicher die Pille?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu ungenau: Dosis und andere Darreichungsformen fehlen.",
+        "Richtig: Name, Dosierung, frei verkäufliche Mittel; die letzte Regelblutung ist vor Bildgebung und Antibiose wichtig (Schwangerschaft ausschließen).",
+        "Fachsprache („Pharmaka“, „applizieren“).",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patientin: „Die Pille, Maxim, einmal morgens. Gestern habe ich zweimal Ibuprofen 400 genommen. Die letzte Periode war vor zwei Wochen.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen gleich ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
+        "Sind Sie hypersensibel?",
+        "Allergie?",
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu eng: Allergien gegen andere Medikamente, Lebensmittel oder Pflaster übersehen Sie.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion."
+      ],
+      "reply": "Patientin: „Gegen Cotrimoxazol, davon bekam ich Nesselsucht mit starkem Juckreiz. Penicillin vertrage ich.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Wie ist Ihr Nikotin- und Alkoholabusus, und wie viele Drogen nehmen Sie dazu regelmäßig?",
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
+        "Sind Sie Raucherin oder Alkoholikerin?",
+        "Trinken Sie zu viel?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Richtig: neutral, konkret, mit Menge.",
+        "„Alkoholikerin“ ist wertend und verletzend.",
+        "Wertend und ungenau."
+      ],
+      "reply": "Patientin: „Ich rauche nicht. Am Wochenende trinke ich ein Glas Wein. Drogen nehme ich nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Wie ist die Familienanamnese?",
+        "Hat Ihre Familie dieselbe Krankheit?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Nierenerkrankungen, Diabetes oder Bluthochdruck?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu eng: Geschwister fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar.",
+        "Richtig: offen, mit passenden Beispielen."
+      ],
+      "reply": "Patientin: „Meine Mutter hatte auch oft Blasenentzündungen. Mein Vater hat Bluthochdruck. Meine Schwester ist gesund.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Was ist Ihr sozialer Status?",
+        "Haben Sie Geld?",
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Unklar und unangenehm formuliert.",
+        "Unangemessen.",
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Entlassung und Versorgung."
+      ],
+      "reply": "Patientin: „Ich bin Erzieherin und wohne mit meinem Freund zusammen. Kinder habe ich keine.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Ich vermute, dass die Blasenentzündung bis zur rechten Niere aufgestiegen ist und die Niere jetzt entzündet ist. Das erklärt Fieber und Schmerz in der Seite. Wir bestätigen das noch.",
+        "Es ist wahrscheinlich nichts Schlimmes, nur eine Erkältung mit Rückenschmerzen.",
+        "Sie haben eine akute Pyelonephritis bei aszendierender Harnwegsinfektion, ausgehend von einer Zystitis, mit systemischer Entzündungsreaktion und Fieber.",
+        "Sie haben sicher einen Nierenstein, den müssen wir sofort operieren, und danach bleiben Sie bestimmt mindestens eine Woche bei uns auf der Station, damit nichts passiert."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung des Zusammenhangs.",
+        "Verharmlosend und medizinisch falsch.",
+        "Fachsprache; die Patientin versteht die Diagnose nicht.",
+        "Voreilig und beängstigend; ein Stein ist nicht gesichert."
+      ],
+      "reply": "Patientin: „Die Niere? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Die Patientin fragt: „Muss ich im Krankenhaus bleiben?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Nein, Sie bekommen nur eine Tablette gegen die Schmerzen und ein Antibiotikum zum Schlucken und können heute Abend noch nach Hause gehen. Ihr Hausarzt schaut sich das dann in ein paar Tagen noch einmal an, das reicht völlig aus.",
+        "Das entscheidet der Chef, ich weiß es nicht.",
+        "Wir nehmen Blut und Urin ab und machen einen Ultraschall der Nieren. Sie bekommen Schmerzmittel, eine Infusion und ein Antibiotikum über die Vene, das zu Ihrer Allergie passt. Wahrscheinlich bleiben Sie ein paar Tage bei uns.",
+        "Ja, morgen früh wird Ihre rechte Niere entfernt."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: bei hohem Fieber, Erbrechen und Schüttelfrost ist eine stationäre Aufnahme mit intravenöser Therapie nötig.",
+        "Unprofessionell und lässt die Patientin allein.",
+        "Richtig: nächste Schritte, Rücksicht auf die Allergie, ehrliche Aussicht, laienverständlich.",
+        "Falsch und beängstigend; eine Nierenentfernung ist hier nicht vorgesehen."
+      ],
+      "reply": "Patientin: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": null,
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Frau Julia Becker, eine 31-jährige Patientin, stellte sich heute in unserer Notaufnahme mit seit gestern bestehendem Fieber und Schmerzen in der rechten Flanke vor.",
+        "Frau Becker ist 31 und hat Fieber und Rückenweh.",
+        "Die Patientin Frau Becker stellt sich heute vor wegen Fieber und Flankenschmerzen rechts seit gestern, 31-jährig.",
+        "Frau Julia Becker (31 J.) hat sich heute in unserer Notaufnahme vorgestellt wegen Schmerzen in die Flanke."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptome.",
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Satzbau falsch: die Altersangabe hängt am Ende, das Verb steht unglücklich.",
+        "Grammatik: „Schmerzen in der Flanke“ (Dativ), und das Leitsymptom Fieber fehlt."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Beschwerden haben vor zwei Tagen mit Brennen beim Wasserlassen angefangen, seit gestern Abend sind Schmerzen in der Seite und Schüttelfrost dazugekommen.",
+        "Die Beschwerden begannen vor zwei Tagen mit Dysurie, seit gestern Abend bestehen progrediente, dumpfe Flankenschmerzen rechts mit Ausstrahlung in die Leiste (NRS 6/10) sowie Fieber und Schüttelfrost.",
+        "Die Beschwerden seien vor zwei Tagen mit Dysurie aufgetreten und strahlen in die Leiste, NRS 6.",
+        "Die Beschwerden begannen vor zwei Tagen mit Dysurie, seit gestern Abend bestehen kolikartige Flankenschmerzen links mit Ausstrahlung in die Schulter (NRS 6/10)."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Richtig: Fachsprache und alle Merkmale (Beginn, Verlauf, Charakter, Ausstrahlung, Intensität).",
+        "Konjunktiv-I-Mischung und unvollständig; außerdem fehlt „/10“.",
+        "Inhaltlich falsch: Der Schmerz ist dumpf (nicht kolikartig), rechts (nicht links) und strahlt in die Leiste aus."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete die Patientin über Nausea und zweimalige Emesis sowie Fieber bis 38,4 °C. Trüber, übelriechender Urin; Makrohämaturie und Fluor wurden verneint. Pollakisurie, Inappetenz.",
+        "Sie hatte Übelkeit und hat einmal gekotzt.",
+        "Begleitend berichtete die Patientin über Nausea und mehrmalige Emesis. Fieber wurde verneint. Makrohämaturie und Fluor wurden bejaht.",
+        "Begleitend berichtete die Patientin über Nausea und einmalige Emesis sowie Fieber bis 39,2 °C. Trüber, übelriechender Urin; Makrohämaturie und Fluor wurden verneint. Pollakisurie, Inappetenz."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich falsch: Die Patientin erbrach einmal und hatte Fieber bis 39,2 °C.",
+        "Vulgär („gekotzt“) und unvollständig.",
+        "Inhaltlich falsch: Die Patientin hatte Fieber bis 39,2 °C und einmaliges Erbrechen; Hämaturie und Fluor hat sie verneint.",
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Blasenentzündungen, keine Operationen. Medikamente: die Pille, Ibuprofen.",
+        "An Vorerkrankungen sind rezidivierende Harnwegsinfekte bekannt, zuletzt vor acht Monaten. Urolithiasis und Diabetes mellitus wurden verneint, keine Voroperationen. Medikation: Maxim 1-0-0, Ibuprofen 400 mg 2-mal gestern.",
+        "An Vorerkrankungen sind eine Urolithiasis und ein Diabetes mellitus Typ 1 bekannt. Z. n. Nephrektomie. Medikation: Maxim 1-0-1, Ibuprofen 400 mg 1-1-1.",
+        "Medikation: Maxim 0-0-1, Ibuprofen 400 mg regelmäßig 1-1-1 seit einer Woche."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Richtig: Fachbegriffe, Negativbefunde und Dosierschema im Format morgens-mittags-abends.",
+        "Inhaltlich falsch: Urolithiasis, Diabetes und Operationen wurden verneint.",
+        "Dosierschema falsch: Maxim morgens (1-0-0), und Ibuprofen wurde nur gestern zweimal genommen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: keine. Noxen: Nikotinabusus.",
+        "Cotrimoxazol-Allergie (Anaphylaxie). Nikotinkonsum ca. 10 py. Mutter rezidivierende Harnwegsinfekte, Vater arterielle Hypertonie. Die Patientin ist Erzieherin, ledig, lebt mit ihrem Lebensgefährten.",
+        "Sie verträgt kein Antibiotikum und raucht nicht.",
+        "Cotrimoxazol-Allergie (Urtikaria). Nikotinkonsum wurde verneint, gelegentlicher Alkoholkonsum. Familienanamnese: Mutter rezidivierende Harnwegsinfekte, Vater arterielle Hypertonie. Die Patientin ist Erzieherin und lebt mit ihrem Lebensgefährten."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch: die Cotrimoxazol-Allergie fehlt, und die Patientin raucht nicht.",
+        "Falsch: Die Reaktion war eine Urtikaria, keine Anaphylaxie, und die Patientin raucht nicht (kein py).",
+        "Laiensprache und unvollständig.",
+        "Richtig: Allergie mit Reaktion, Noxen, Familienanamnese und Sozialanamnese sind korrekt dokumentiert."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Nierenentzündung.",
+        "Anamnestisch besteht der Verdacht auf eine akute Pyelonephritis rechts. Differenzialdiagnostisch kommen eine Urolithiasis mit Harnstau, eine Adnexitis und eine akute Appendizitis in Betracht.",
+        "Es besteht eine gesicherte akute Pyelonephritis.",
+        "Anamnestisch besteht der Verdacht auf eine akute Cholezystitis. Differenzialdiagnostisch kommen eine Pankreatitis, ein Ulcus duodeni und eine Divertikulitis in Betracht."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen.",
+        "Ohne Urinstatus und Bildgebung ist die Diagnose noch nicht gesichert.",
+        "Passt nicht zu den Befunden: Dysurie und Flankenschmerz mit Ausstrahlung in die Leiste sprechen für den Harntrakt."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und Urinuntersuchung sowie eine Antibiose mit Cotrimoxazol.",
+        "Wir machen Blut und Ultraschall.",
+        "Zur weiteren Abklärung empfehlen wir eine Koloskopie.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (u. a. Blutbild, CRP, Kreatinin, Blutkulturen), einen Urinstatus mit Urinkultur, einen Schwangerschaftstest und eine Nierensonographie. Therapeutisch Analgesie, Flüssigkeit und Ceftriaxon 2 g i. v. 1-0-0. Stationäre Aufnahme."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Gefährlich: die Patientin hat eine Cotrimoxazol-Allergie. Außerdem fehlen Urinkultur und Sonographie.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Nicht die passende Untersuchung für diesen Verdacht.",
+        "Richtig: Diagnostik, Therapie und Aufnahme in vollständigen Sätzen, mit Blick auf die Allergie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Die Patientin hat Fieber, sie heißt Becker.",
+        "Frau Becker hat eine Nierenentzündung.",
+        "Also, die Frau hatte erst eine Blasenentzündung ...",
+        "Ich möchte Ihnen Frau Julia Becker vorstellen, eine 31-jährige Patientin, die sich heute mit seit gestern bestehendem Fieber, Schüttelfrost und Schmerzen in der rechten Flanke vorgestellt hat."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Kein strukturierter Einstieg; zuerst Patientin und Leitsymptom.",
+        "Richtig: Name, Alter, Leitsymptome, zeitlicher Verlauf in einem Satz."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Die Beschwerden begannen vor zwei Tagen mit Dysurie, seit gestern bestehen dumpfe Flankenschmerzen rechts mit Ausstrahlung in die Leiste, Fieber bis 39,2 °C und Schüttelfrost. Begleitend Nausea, einmalige Emesis; Fluor wurde verneint.",
+        "Sie hat alles Mögliche.",
+        "Die Beschwerden begannen vor zwei Tagen mit Dysurie, seit gestern bestehen kolikartige Flankenschmerzen links mit Ausstrahlung in die Schulter, Fieber bis 37,8 °C. Begleitend Nausea, einmalige Emesis; Fluor wurde bejaht.",
+        "Sie hat Fieber und Durchfall."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
+        "Keine Information.",
+        "Inhaltlich falsch: Schmerz dumpf, rechts, in die Leiste ausstrahlend; Fieber 39,2 °C; Fluor verneint.",
+        "Inhaltlich falsch: Durchfall hatte die Patientin nicht."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Sie ist gesund.",
+        "Bekannt sind rezidivierende Harnwegsinfekte, zuletzt vor acht Monaten, ohne Urolithiasis. Keine Voroperationen. Maxim 1-0-0. Wichtig: Cotrimoxazol-Allergie mit Urtikaria.",
+        "Bekannt sind ein Diabetes mellitus Typ 1 und eine Urolithiasis mit Z. n. Steinentfernung vor zwei Jahren. Keine Allergien, keine Dauermedikation. Die Mutter hatte eine Nierenerkrankung.",
+        "Sie nimmt die Pille, sonst nichts."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: es gibt relevante Vorerkrankungen.",
+        "Richtig: relevante Vorgeschichte, Medikation und die Allergie, die für die Antibiose wichtig ist.",
+        "Inhaltlich falsch (kein Diabetes, keine Urolithiasis, Cotrimoxazol-Allergie).",
+        "Unvollständig: Diagnosen und Allergie fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Es handelt sich sicher um eine Urolithiasis, weil der Schmerz in die Leiste zieht. Differenzialdiagnostisch denke ich höchstens noch an eine Appendizitis und eine Cholezystitis, und ich würde sofort eine Computertomographie veranlassen.",
+        "Ich denke an Blasenentzündung.",
+        "Ich vermute eine akute, unkomplizierte Pyelonephritis rechts bei rezidivierenden Harnwegsinfekten. Differenzialdiagnostisch denke ich an eine Urolithiasis mit Harnstau, eine Adnexitis und eine akute Appendizitis.",
+        "Ich weiß es nicht genau."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu sicher („sicher“), und Fieber mit Dysurie spricht eher für die Pyelonephritis; ein Stein ist nur eine Differenzialdiagnose.",
+        "Zu unpräzise: Fieber und Flankenschmerz zeigen, dass die Niere beteiligt ist.",
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde sie nach Hause schicken.",
+        "Ich würde Cotrimoxazol geben, weil das bei Harnwegsinfekten Standard ist, und die Patientin nach Hause entlassen.",
+        "Ich würde eine Zystoskopie machen.",
+        "Ich würde Blut abnehmen, inklusive Entzündungswerten, Kreatinin und Blutkulturen, einen Urinstatus mit Urinkultur vor Antibiose veranlassen und einen Schwangerschaftstest sowie eine Nierensonographie durchführen. Therapeutisch Analgesie, Flüssigkeit und Ceftriaxon 2 g i. v. 1-0-0, unter Beachtung der Cotrimoxazol-Allergie. Dann würde ich die Patientin stationär aufnehmen."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Gefährlich: Fieber, Schüttelfrost und Erbrechen verlangen intravenöse Therapie und stationäre Beobachtung.",
+        "Gefährlich: Cotrimoxazol ist bei dieser Patientin wegen der Allergie kontraindiziert, und die Entlassung ist nicht sicher.",
+        "Nicht die erste Untersuchung bei diesem Verdacht, und bei akuter Entzündung nicht angezeigt.",
+        "Richtig: Diagnostik, Therapie und stationäre Aufnahme, mit Blick auf die Allergie."
+      ],
+      "reply": "Oberarzt: „Gut. Was erwarten Sie im Ultraschall und im Urinstatus?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich erwarte eine vergrößerte Milz und freie Flüssigkeit im Morison-Pouch.",
+        "Ich erwarte gar nichts.",
+        "Ich erwarte im Urinstatus Leukozyten, Nitrit und Bakterien. In der Sonographie kann die rechte Niere vergrößert sein; wichtig ist der Ausschluss eines Harnstaus oder Abszesses. Klinisch erwarte ich ein klopfschmerzhaftes Nierenlager rechts.",
+        "Ich erwarte eine Luftsichel unter dem Zwerchfell als Zeichen einer Perforation und dazu ein verdicktes Colon sigmoideum mit Divertikeln."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Nicht typisch für diesen Verdacht.",
+        "In der Prüfung erwartet man eine begründete Antwort.",
+        "Richtig: typische Befunde der Pyelonephritis und Ausschluss des Harnstaus.",
+        "Nicht typisch; eine Luftsichel sucht man im Röntgen, und sie spricht für die Perforation eines Hohlorgans."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Dysurie“?",
+      "options": [
+        "häufiges Wasserlassen kleiner Mengen",
+        "Brennen oder Schmerzen beim Wasserlassen",
+        "Blut im Urin",
+        "fehlende Urinproduktion"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Pollakisurie.",
+        "Richtig.",
+        "Das ist die Hämaturie.",
+        "Das ist die Anurie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Pollakisurie“?",
+      "options": [
+        "häufiges Wasserlassen kleiner Mengen",
+        "Brennen beim Wasserlassen",
+        "nächtliches Wasserlassen",
+        "unwillkürlicher Urinverlust"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Dysurie.",
+        "Das ist die Nykturie.",
+        "Das ist die Inkontinenz."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Nierenlager“?",
+      "options": [
+        "die Gegend neben der Wirbelsäule, unter den Rippen, in der die Nieren liegen",
+        "der Bereich im Unterbauch über der Blase",
+        "die Mitte des Oberbauchs",
+        "der Bereich über dem Darmbeinkamm vorn"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Blasenregion (Suprapubis).",
+        "Das ist das Epigastrium.",
+        "Das ist die Spina iliaca anterior superior."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Leukozyturie“?",
+      "options": [
+        "weiße Blutkörperchen im Urin",
+        "rote Blutkörperchen im Urin",
+        "Eiweiß im Urin",
+        "Zucker im Urin"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Hämaturie.",
+        "Das ist die Proteinurie.",
+        "Das ist die Glukosurie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Urolithiasis“?",
+      "options": [
+        "Harnsteinleiden",
+        "Harnblasenentzündung",
+        "Nierenschwäche",
+        "Harnverhalt"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Zystitis.",
+        "Das ist die Niereninsuffizienz.",
+        "Das ist die Harnretention."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

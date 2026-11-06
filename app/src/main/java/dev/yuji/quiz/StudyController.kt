@@ -6,6 +6,11 @@ import dev.yuji.quiz.data.TrainingStore
 import dev.yuji.quiz.debug.LogChannel
 import dev.yuji.quiz.debug.StudyLog
 import dev.yuji.quiz.debug.debug
+import dev.yuji.quiz.content.FSP_FAILED
+import dev.yuji.quiz.content.FSP_PASSED
+import dev.yuji.quiz.content.FspCase
+import dev.yuji.quiz.content.FspCaseRun
+import dev.yuji.quiz.content.FspGrading
 import dev.yuji.quiz.domain.Card
 import dev.yuji.quiz.domain.Clock
 import dev.yuji.quiz.domain.ProgressBackup
@@ -51,6 +56,8 @@ class StudyController(
     private val limits: QueueLimits = QueueLimits(),
     private val zone: ZoneId = ZoneId.systemDefault(),
     private val training: TrainingStore = InMemoryTrainingStore(),
+    /** FSP cases by id; a card "fsp:<id>" is played from here (ADR-0014). */
+    private val cases: Map<String, FspCase> = emptyMap(),
 ) {
     private var progressById = store.loadAll()
     private val cardsById: Map<String, Card> = deck.values.flatten().associateBy { it.id }
@@ -75,8 +82,27 @@ class StudyController(
 
     fun choices(session: StudySession) = StudyEngine.choicesFor(session)
 
-    fun answer(session: StudySession, choice: String): StudySession {
-        val updated = StudyEngine.answer(session, choice, clock.nowMillis(), schedulerConfig, graderConfig, log)
+    fun answer(session: StudySession, choice: String): StudySession = record(session, choice, gradeOverride = null)
+
+    /** The case behind the current card, ready to play; null when the card is not an FSP case. */
+    fun startCase(session: StudySession): FspCaseRun? {
+        val card = session.currentCard ?: return null
+        if (card.mode != GameMode.FSP_CASE) return null
+        return cases[card.id.removePrefix("fsp:")]?.let { FspCaseRun(it, seed = clock.nowMillis()) }
+    }
+
+    /** FS-4: a finished case is answered with its score; the time it took never changes the grade. */
+    fun finishCase(session: StudySession, run: FspCaseRun): StudySession {
+        val card = session.currentCard ?: return session
+        if (!run.isFinished || card.id != "fsp:${run.case.id}") return session
+        val phase = (progressById[card.id] ?: SpacedRepetitionScheduler.freshProgress(card.id, schedulerConfig)).phase
+        val passed = FspGrading.passed(run.score)
+        log.debug(LogChannel.SESSION) { "case ${card.id}: score=${"%.2f".format(run.score)} passed=$passed" }
+        return record(session, if (passed) FSP_PASSED else FSP_FAILED, FspGrading.grade(run.score, phase))
+    }
+
+    private fun record(session: StudySession, choice: String, gradeOverride: dev.yuji.quiz.domain.ReviewGrade?): StudySession {
+        val updated = StudyEngine.answer(session, choice, clock.nowMillis(), schedulerConfig, graderConfig, log, gradeOverride)
         val card = session.currentCard
         if (card != null && updated !== session) {
             val progress = updated.progressById.getValue(card.id)

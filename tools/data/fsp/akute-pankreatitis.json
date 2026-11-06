@@ -1,0 +1,691 @@
+{
+  "id": "akute-pankreatitis",
+  "area": "Gastroenterologie",
+  "title": "Gürtelförmige Schmerzen im Oberbauch",
+  "diagnosis": "Akute Pankreatitis (alkoholtoxisch)",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Markus Berger, 47 Jahre, stellt sich am Vormittag in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Berger sitzt vornübergebeugt auf der Liege.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Tag, Herr Berger. Setzen Sie sich bitte gerade hin, ich schaue mir sofort Ihren Bauch an und tue Ihnen dabei vielleicht kurz weh.",
+        "Hallo, na, wo drückt der Schuh?",
+        "Guten Tag, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Berger?",
+        "Guten Tag, Herr Berger. Bevor wir beginnen: Zeigen Sie mir bitte zuerst Ihre Versichertenkarte, die Anmeldung muss vorher fertig sein."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Die Untersuchung kommt nach der Anamnese. Außerdem sollen Sie sich zuerst vorstellen und den Patienten nicht ankündigen, dass es wehtut.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor."
+      ],
+      "reply": "Patient: „Ja, Berger. Guten Tag.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihre genaue Wohnanschrift, und wer ist Ihr Hausarzt?",
+        "Wie hoch ist Ihr Body-Mass-Index?",
+        "Sie sind doch bestimmt schwer übergewichtig, oder?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Anschrift und Hausarzt sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Suggestivfrage und wertend. Fragen Sie neutral und offen."
+      ],
+      "reply": "Patient: „Ich bin 47, 1,80 Meter groß und wiege 94 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Bauchschmerzen?",
+        "Welche Symptomatik führt Sie zu uns, und seit wann besteht die Beschwerdesymptomatik?",
+        "Warum kommen Sie erst jetzt ins Krankenhaus? Das hätten Sie schon früher machen sollen.",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "„Symptomatik“ und „Beschwerdesymptomatik“ sind Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen."
+      ],
+      "reply": "Patient: „Ich habe seit gestern Abend furchtbare Schmerzen im Oberbauch, und mir ist dauernd schlecht.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten Lage und Ausstrahlung des Schmerzes klären. Was sagen Sie?",
+      "options": [
+        "Ist der Schmerz im Epigastrium lokalisiert, und strahlt er gürtelförmig nach dorsal in die Lendenwirbelsäule oder nach retrosternal aus?",
+        "Wo genau tut es weh? Zieht der Schmerz irgendwohin, zum Beispiel in den Rücken oder in die Schulter?",
+        "Der Schmerz geht bestimmt in den Rücken, richtig?",
+        "Wo tut es weh? Ist es eher links oder rechts?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachwörter (Epigastrium, dorsal, retrosternal); der Patient versteht sie nicht.",
+        "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
+        "Zu eng: Die Frage nach der Ausstrahlung fehlt, und „links oder rechts“ erfasst den Oberbauch nicht."
+      ],
+      "reply": "Patient: „Genau hier in der Mitte oben, und es zieht wie ein Gürtel bis in den Rücken.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn, Verlauf und Auslöser?",
+      "options": [
+        "Hat es plötzlich angefangen?",
+        "Seit wann haben Sie die Schmerzen?",
+        "Wann genau hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben? Gab es einen Auslöser?",
+        "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch rezidivierend, und lag ein auslösendes Ereignis vor?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Geschlossene Frage; sie erfasst weder den Verlauf noch einen Auslöser.",
+        "Das hat der Patient schon gesagt (seit gestern Abend). Fragen Sie nach Verlauf und Auslöser.",
+        "Richtig: Beginn, Verlauf und Auslöser in einer klaren, laienverständlichen Frage.",
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „rezidivierend“ versteht der Patient nicht."
+      ],
+      "reply": "Patient: „Gestern gegen 22 Uhr, nach einem Grillabend mit Freunden. Ich hatte viel Bier getrunken und fettiges Fleisch gegessen. Seitdem wird es immer schlimmer.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "options": [
+        "Wie würden Sie die Schmerzen beschreiben, eher stechend, drückend oder krampfartig? Und wie stark sind sie auf einer Skala von 0 bis 10?",
+        "Sind die Schmerzen viszeral oder somatisch, und wie lautet der NRS-Wert?",
+        "Wie stark sind die Schmerzen auf einer Skala von 1 bis 100?",
+        "Tut es sehr weh? Das ist bestimmt kaum auszuhalten, oder? Ich gebe Ihnen gleich etwas dagegen, dann wird es besser."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10.",
+        "„Viszeral“, „somatisch“ und „NRS“ sind Fachsprache. Der Patient versteht die Frage nicht.",
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
+        "Suggestiv und ungenau, dazu ein Versprechen, das Sie noch nicht geben können. Sie bekommen keine verwertbare Angabe."
+      ],
+      "reply": "Patient: „Es ist ein bohrender Dauerschmerz, 9 von 10. Im Liegen ist es schlimmer, vorgebeugt geht es etwas besser.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Hatten Sie Nausea, Emesis, Meteorismus oder Meläna, und ist Ihnen ein Ikterus der Skleren aufgefallen?",
+        "Haben Sie sonst noch was?",
+        "Sie haben bestimmt erbrochen.",
+        "Ist Ihnen übel, mussten Sie sich übergeben, ist der Bauch aufgebläht, oder ist Ihnen etwas anderes aufgefallen, zum Beispiel eine Gelbfärbung der Haut oder der Augen oder schwarzer Stuhl?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „übel“, „erbrechen“, „aufgebläht“, „Gelbfärbung“.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Suggestiv: Sie unterstellen das Symptom.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive Gelbfärbung und schwarzem Stuhl."
+      ],
+      "reply": "Patient: „Mir ist schlecht, ich habe viermal erbrochen. Der Bauch ist aufgebläht. Gelb bin ich nicht, und Blut habe ich im Erbrochenen nicht gesehen.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Haben Sie Schüttelfrost, Nachtschweiß, Gewichtsverlust, Dysurie, Obstipation, Diarrhö oder Polyurie?",
+        "Haben Sie Fieber gemessen? Wie sind Appetit, Stuhlgang und Wasserlassen? Hat sich Ihr Gewicht verändert?",
+        "Wie ist die Vegetativa?",
+        "Ist sonst alles normal bei Ihnen?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Obstipation, Diarrhö, Polyurie).",
+        "Richtig: Fieber, Appetit, Stuhlgang, Wasserlassen und Gewicht in Laiensprache.",
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Zu allgemein; der Patient sagt einfach „ja“."
+      ],
+      "reply": "Patient: „Ich hatte 37,9 Grad. Appetit habe ich keinen. Stuhlgang war gestern normal, Wasserlassen auch. Abgenommen habe ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck, Zucker oder erhöhte Blutfette? Und wurden Sie schon einmal operiert?",
+        "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, eine Hyperlipidämie oder eine Pankreatitis, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Sind Sie gesund?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „Hyperlipidämie“). Mit Patienten sprechen Sie Laiensprache.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patient: „Ich habe Bluthochdruck und zu hohe Blutfette, besonders die Triglyzeride. Vor zehn Jahren wurde ein Leistenbruch rechts operiert. Eine Gallenblasenerkrankung hatte ich noch nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Tabletten?",
+        "Welche Pharmaka applizieren Sie?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept?",
+        "Sie nehmen doch sicher Tabletten gegen den Blutdruck und gegen die Blutfette, nicht wahr? Und sicher auch Schmerzmittel?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu ungenau: Name, Dosis und frei verkäufliche Mittel fehlen.",
+        "Fachsprache („Pharmaka“, „applizieren“).",
+        "Richtig: Name, Dosierung und auch frei verkäufliche Mittel.",
+        "Suggestivfrage. Fragen Sie offen und lassen Sie den Patienten aufzählen."
+      ],
+      "reply": "Patient: „Ramipril 5 mg morgens und Atorvastatin 20 mg abends. Gegen die Schmerzen habe ich heute zwei Paracetamol 500 genommen.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Allergie?",
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Zu eng: Allergien gegen Schmerzmittel, Lebensmittel oder Pflaster übersehen Sie.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patient: „Gegen Novalgin. Da bekam ich Nesselausschlag am ganzen Körper.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucher oder Alkoholiker?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus?",
+        "Sie trinken sicher zu viel, das sieht man bei Ihrer Erkrankung ja oft. Wie viel Alkohol trinken Sie wirklich?",
+        "Rauchen Sie, und wenn ja, wie viel? Wie oft und wie viel Alkohol trinken Sie? Nehmen Sie Drogen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Alkoholiker“ ist wertend und verletzend.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Wertend und vorwurfsvoll („wirklich“); der Patient wird sich verschließen.",
+        "Richtig: neutral, konkret, mit Menge und Häufigkeit."
+      ],
+      "reply": "Patient: „Ich rauche seit 25 Jahren eine Schachtel am Tag, also 20 Zigaretten. Alkohol trinke ich jeden Tag drei bis vier Bier, am Wochenende mehr. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Zucker, Gallensteine oder Herzerkrankungen?",
+        "Wie ist die Familienanamnese?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Hat Ihre Familie dieselbe Krankheit?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit passenden Beispielen.",
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Zu eng: Geschwister und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
+      ],
+      "reply": "Patient: „Mein Vater hat Zucker, Typ 2. Mein Bruder hatte Gallensteine. Meine Mutter ist gesund.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
+        "Haben Sie Geld?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Entlassung und Versorgung.",
+        "Unangemessen."
+      ],
+      "reply": "Patient: „Ich bin LKW-Fahrer und wohne mit meiner Frau und unseren zwei Kindern zusammen.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben eine akute Pankreatitis, vermutlich alkoholtoxisch.",
+        "Ich vermute, dass Ihre Bauchspeicheldrüse entzündet ist. Das ist ein Organ hinter dem Magen, das Verdauungssäfte und Insulin herstellt. Ein möglicher Auslöser ist der Alkohol, das klären wir noch ab.",
+        "Das kommt vom Alkohol. Wenn Sie weniger getrunken hätten, wären Sie jetzt nicht hier.",
+        "Es ist wahrscheinlich nichts Schlimmes, nur eine Magenverstimmung vom fettigen Essen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache und zu sicher; der Patient versteht die Diagnose nicht.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung des Organs, ohne Vorwurf.",
+        "Vorwurfsvoll und zu sicher. Das zerstört das Vertrauen.",
+        "Verharmlosend und medizinisch falsch."
+      ],
+      "reply": "Patient: „Bauchspeicheldrüse? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Muss ich hierbleiben?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Nein, Sie bekommen ein Schmerzmittel und können nach Hause gehen, sobald es Ihnen besser geht.",
+        "Ja, aber Sie müssen mindestens drei bis fünf Tage komplett nüchtern bleiben, also nichts essen und nichts trinken, und bekommen nur Infusionen, bis die Schmerzen ganz weg sind.",
+        "Das entscheidet der Chef, ich weiß es nicht.",
+        "Ja, wir nehmen Sie stationär auf. Zuerst nehmen wir Blut ab und machen einen Ultraschall vom Bauch. Sie bekommen Schmerzmittel und eine Infusion. Sobald die Übelkeit nachlässt, dürfen Sie früh wieder etwas essen. Das besprechen wir mit dem Oberarzt."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Gefährlich: Bei starken Schmerzen und Erbrechen muss der Patient überwacht werden.",
+        "Veraltet: Eine lange Nahrungskarenz wird nicht mehr empfohlen; man beginnt früh mit dem Essen.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich, früher Kostaufbau."
+      ],
+      "reply": "Patient: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Berger ist 47 und hat Bauchweh.",
+        "Herr Markus Berger, ein 47-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit gestern Abend bestehenden gürtelförmigen Oberbauchschmerzen vor.",
+        "Herr Markus Berger (47 J.) hat sich heute in unsere Notaufnahme vorgestellt wegen Schmerzen, die schon lange bestehen und ihn sehr stören.",
+        "Herr Markus Berger, ein 47-jähriger Patient, stellte sich heute in unsere Notaufnahme mit seit gestern Abend bestehenden gürtelförmigen Oberbauchschmerzen und mehrfachem Erbrechen vor."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptom.",
+        "Das Leitsymptom ist zu ungenau, der Zeitpunkt fehlt, und „in unsere Notaufnahme“ ist falsch.",
+        "Grammatik: „in unserer Notaufnahme“ (Dativ, wo?), nicht „in unsere“."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Schmerzen haben nach dem Grillen mit viel Bier angefangen und sind immer schlimmer geworden.",
+        "Die Beschwerden sind postprandial nach fettreicher Mahlzeit und Alkoholkonsum aufgetreten, seitdem regredient, mit Ausstrahlung in die rechte Schulter (NRS 9/10).",
+        "Die Beschwerden seien postprandial aufgetreten und strahlen gürtelförmig in den Rücken aus, NRS 9.",
+        "Die Beschwerden sind gestern gegen 22 Uhr postprandial nach fettreicher Mahlzeit und Alkoholkonsum aufgetreten, seitdem progredient, konstant bohrend mit gürtelförmiger Ausstrahlung in den Rücken (NRS 9/10), Besserung in vorgebeugter Haltung."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Inhaltlich falsch: Die Beschwerden sind progredient, und sie strahlen gürtelförmig in den Rücken aus.",
+        "Konjunktiv-I-Mischung und unvollständig; außerdem fehlt „/10“.",
+        "Richtig: Fachsprache und alle Merkmale (Zeitpunkt, Auslöser, Verlauf, Charakter, Ausstrahlung, Intensität, Haltung)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete der Patient über Übelkeit, viermaliges Erbrechen und einen geblähten Bauch. Subfebrile Temperatur bis 37,9 °C. Ikterus und Hämatemesis wurden verneint. Inappetenz, Stuhlgang und Miktion unauffällig.",
+        "Er hat Übelkeit und hat viermal gekotzt.",
+        "Begleitend berichtete der Patient über Nausea und viermalige Emesis. Fieber über 39 °C und Ikterus wurden bejaht. Ausgeprägte Inappetenz, Stuhlgang und Miktion unauffällig, Gewicht stabil, kein Nachtschweiß, keine Dysurie.",
+        "Der Patient klagte über Hämatemesis und Teerstuhl."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Vulgär („gekotzt“) und unvollständig.",
+        "Inhaltlich falsch: Die Temperatur betrug nur bis 37,9 °C, und der Ikterus wurde verneint.",
+        "Inhaltlich falsch: Der Patient hat Blut im Erbrochenen verneint, einen Teerstuhl gab es nicht."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Bluthochdruck, Blutfette. Medikamente: Ramipril, Atorvastatin.",
+        "An Vorerkrankungen sind eine arterielle Hypotonie und eine Hypercholesterinämie bekannt. Z. n. Appendektomie im Kindesalter. Medikation: Ramipril 5 mg 1-0-0, Atorvastatin 20 mg 0-0-1, Paracetamol 500 mg 2 Tabletten heute. Eine Cholezystolithiasis ist bekannt, eine Allergie nicht.",
+        "An Vorerkrankungen sind eine arterielle Hypertonie und eine Hypertriglyzeridämie bekannt. Z. n. Hernioplastik bei Leistenhernie rechts vor zehn Jahren. Keine bekannte Gallenwegserkrankung. Medikation: Ramipril 5 mg 1-0-0, Atorvastatin 20 mg 0-0-1, Paracetamol 500 mg 2 Tabletten heute.",
+        "Medikation: Ramipril 5 mg 1-1-0, Atorvastatin 20 mg 1-0-0."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Inhaltlich falsch: Hypertonie (nicht Hypotonie), Hypertriglyzeridämie, und operiert wurde ein Leistenbruch (nicht der Blinddarm).",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierschema im Format morgens-mittags-abends.",
+        "Dosierschema falsch: Ramipril morgens (1-0-0), Atorvastatin abends (0-0-1)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: keine. Noxen: Nikotinabusus.",
+        "Metamizolallergie (Urtikaria). Nikotinkonsum ca. 25 py, täglicher Alkoholkonsum (3 bis 4 Bier). Familienanamnese: Vater Diabetes mellitus Typ 2, Bruder Cholezystolithiasis. Der Patient ist LKW-Fahrer, verheiratet, lebt mit Ehefrau und zwei Kindern.",
+        "Metamizolallergie (Anaphylaxie). Nikotinkonsum ca. 12 py, gelegentlicher Alkoholkonsum am Wochenende. Familienanamnese: Vater Herzinfarkt, Mutter Cholezystolithiasis. Der Patient ist Busfahrer, geschieden, lebt allein und hat keine Kinder.",
+        "Er verträgt kein Novalgin, raucht und trinkt."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: die Metamizolallergie und der Alkoholkonsum fehlen.",
+        "Richtig: 20 Zigaretten am Tag über 25 Jahre sind 25 pack years (py = Packungsjahre).",
+        "Inhaltlich falsch: Die Reaktion war eine Urtikaria, der Patient trinkt täglich, die Familienanamnese und der Beruf stimmen nicht.",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Bauchspeicheldrüsenentzündung.",
+        "Anamnestisch besteht der Verdacht auf eine akute Divertikulitis bei Z. n. Hernioplastik. Differenzialdiagnostisch kommen eine Appendizitis, eine Cholezystitis, eine Gastroenteritis und eine Nephrolithiasis links in Betracht, eine Pankreatitis wird ausgeschlossen.",
+        "Es besteht eine gesicherte alkoholtoxische Pankreatitis.",
+        "Anamnestisch besteht der Verdacht auf eine akute Pankreatitis, am ehesten alkoholtoxisch. Differenzialdiagnostisch kommen eine biliäre Pankreatitis bei Choledocholithiasis, ein perforiertes Ulcus ventriculi oder duodeni und ein Hinterwandinfarkt in Betracht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Passt nicht zum Leitsymptom: Eine Divertikulitis macht meist Schmerzen im linken Unterbauch, nicht gürtelförmig im Oberbauch.",
+        "Ohne Labor und Bildgebung ist die Diagnose noch nicht gesichert.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle und gefährliche Differenzialdiagnosen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (u. a. Blutbild, CRP, Lipase, Leberwerte, Triglyzeride, Kalzium, Kreatinin), eine Abdomensonographie sowie ein EKG mit Troponin. Therapeutisch empfehlen wir eine Analgesie unter Aussparung von Metamizol, eine Flüssigkeitstherapie mit balancierter Vollelektrolytlösung und einen frühen oralen Kostaufbau. Eine prophylaktische Antibiose ist nicht indiziert.",
+        "Wir machen Blut und Ultraschall.",
+        "Zur weiteren Abklärung empfehlen wir eine Koloskopie sowie eine konsequente Nahrungs- und Flüssigkeitskarenz über fünf Tage mit rein parenteraler Ernährung.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und eine Abdomensonographie. Zur Analgesie Metamizol 1 g i. v. und prophylaktisch eine Antibiose mit Meropenem. Zusätzlich eine strikte Nahrungskarenz, bis die Lipase wieder normal ist."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Diagnostik und Therapie in vollständigen Sätzen, Allergie beachtet, leitliniengerecht ohne prophylaktische Antibiose.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Nicht die passende Untersuchung, und die lange Nahrungskarenz entspricht nicht mehr der Leitlinie.",
+        "Gefährlich: Der Patient hat eine Metamizolallergie, und eine prophylaktische Antibiose ist nicht indiziert."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Der Patient hat Bauchweh, er heißt Berger.",
+        "Also, der Mann hat gestern gegrillt und viel Bier getrunken ...",
+        "Ich möchte Ihnen Herrn Markus Berger vorstellen, einen 47-jährigen Patienten, der sich heute mit seit gestern Abend bestehenden, progredienten gürtelförmigen Oberbauchschmerzen vorgestellt hat.",
+        "Herr Berger hat eine alkoholtoxische Pankreatitis."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
+        "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Die Schmerzen traten nüchtern am Morgen auf und strahlen in die rechte Schulter aus. Begleitend bestehen Übelkeit, viermaliges Erbrechen und Fieber über 39 °C. Ein Ikterus wurde bejaht, ebenso Teerstuhl und Gewichtsverlust über mehrere Monate.",
+        "Die Schmerzen traten gestern Abend nach Alkoholkonsum und fettreicher Mahlzeit auf und strahlen gürtelförmig in den Rücken aus (NRS 9/10). Begleitend bestehen Übelkeit, viermaliges Erbrechen und ein geblähtes Abdomen, dazu subfebrile Temperatur bis 37,9 °C. Ein Ikterus wurde verneint.",
+        "Er hat alles Mögliche.",
+        "Er hat Fieber, Ikterus und Durchfall."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich falsch: Die Schmerzen begannen abends nach dem Essen, strahlen in den Rücken aus, Fieber bestand nur bis 37,9 °C, und der Ikterus wurde verneint.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
+        "Keine Information.",
+        "Inhaltlich falsch: Ikterus und Durchfall bestehen nicht, und Fieber nur bis 37,9 °C."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist gesund.",
+        "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 2. Keine Allergien. Er raucht nicht und trinkt selten Alkohol.",
+        "Er nimmt Ramipril und Atorvastatin, sonst nichts.",
+        "Bekannt sind eine arterielle Hypertonie und eine Hypertriglyzeridämie. Er raucht ca. 25 py und trinkt täglich drei bis vier Bier. Wichtig: Metamizolallergie mit Urtikaria. Der Bruder hatte Gallensteine."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch: es gibt relevante Vorerkrankungen.",
+        "Inhaltlich falsch: Er hat keinen Diabetes, aber eine Metamizolallergie, er raucht und trinkt täglich.",
+        "Unvollständig: Diagnosen, Noxen und Allergie fehlen.",
+        "Richtig: relevante Risikofaktoren (Alkohol, Triglyzeride), Allergie für die Analgesie und familiäre Gallensteine."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich vermute eine akute Pankreatitis, am ehesten alkoholtoxisch. Differenzialdiagnostisch denke ich an eine biliäre Pankreatitis bei Choledocholithiasis, ein perforiertes Ulcus und einen Hinterwandinfarkt.",
+        "Ich denke an Gallensteine.",
+        "Ich weiß es nicht genau.",
+        "Es handelt sich sicher um eine akute Cholezystitis, weil der Bruder Gallensteine hatte. Differenzialdiagnostisch denke ich höchstens noch an eine Appendizitis, eine Gastroenteritis und eine Divertikulitis."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
+        "Zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
+        "Zu sicher („sicher“), und eine Cholezystitis passt nicht zu gürtelförmigen Schmerzen nach Alkoholexzess; die gefährlichen Differenzialdiagnosen fehlen."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde ihn nach Hause schicken.",
+        "Ich würde Metamizol 1 g i. v. zur Schmerztherapie geben und vorsorglich eine Antibiose mit Meropenem beginnen. Essen darf er fünf Tage nicht.",
+        "Ich würde Blut abnehmen, inklusive Lipase, Entzündungs-, Leber- und Cholestasewerten, Triglyzeriden und Kalzium, und eine Abdomensonographie durchführen. Therapeutisch Analgesie mit einem Opioid, zum Beispiel Piritramid, unter Beachtung der Metamizolallergie, dazu Ringer-Laktat und einen frühen oralen Kostaufbau. Dann stationäre Aufnahme mit Überwachung.",
+        "Ich würde sofort eine ERCP mit Papillotomie durchführen lassen und zusätzlich ein CT mit Kontrastmittel, bevor wir weitere Untersuchungen machen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gefährlich: Starke Schmerzen und Erbrechen müssen abgeklärt und überwacht werden.",
+        "Gefährlich: Der Patient hat eine Metamizolallergie, eine prophylaktische Antibiose ist nicht indiziert, und lange Nahrungskarenz ist veraltet.",
+        "Richtig: Diagnostik, Therapie unter Beachtung der Allergie, Kostaufbau und Überwachung.",
+        "Nicht leitliniengerecht: Eine ERCP ist nur bei Cholangitis oder Gallengangsobstruktion früh indiziert, und ein CT steht nicht am Anfang."
+      ],
+      "reply": "Oberarzt: „Gut. Welchen Laborwert erwarten Sie für die Diagnose?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich erwarte eine Lipase, die weniger als das Dreifache der Norm beträgt, zusammen mit einem erhöhten Troponin als Leitbefund.",
+        "Ich erwarte eine Lipase über dem Dreifachen der oberen Normgrenze. Zusammen mit dem typischen Schmerz sind dann zwei von drei Diagnosekriterien erfüllt, das dritte ist die Bildgebung.",
+        "Ich erwarte gar nichts.",
+        "Ich erwarte eine erniedrigte Lipase unter der Normgrenze und ein deutlich erniedrigtes CRP als Zeichen der Entzündung. Damit wäre die Diagnose durch das Labor allein bereits gesichert."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: Für die Diagnose braucht man die Lipase über dem Dreifachen der Norm; Troponin ist kein Leitbefund.",
+        "Richtig: Die Diagnose gilt bei zwei von drei Kriterien (typischer Schmerz, Lipase mehr als das Dreifache der Norm, typische Bildgebung).",
+        "In der Prüfung erwartet man eine begründete Antwort.",
+        "Falsch: Bei einer Entzündung ist die Lipase erhöht und das CRP ebenfalls."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Pankreatitis“?",
+      "options": [
+        "Leberentzündung",
+        "Entzündung der Bauchspeicheldrüse",
+        "Gallenblasenentzündung",
+        "Magenschleimhautentzündung"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Hepatitis.",
+        "Richtig.",
+        "Das ist die Cholezystitis.",
+        "Das ist die Gastritis."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Lipase“?",
+      "options": [
+        "ein Verdauungsenzym, das Fett spaltet",
+        "ein Gallenfarbstoff",
+        "ein Eiweiß im Blut",
+        "ein Blutzucker"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist Bilirubin.",
+        "Das ist zum Beispiel Albumin.",
+        "Das ist Glukose."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Meteorismus“?",
+      "options": [
+        "Wasser im Bauch",
+        "Sodbrennen",
+        "Verstopfung",
+        "Blähbauch durch Darmgase"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist Aszites.",
+        "Das ist Pyrosis.",
+        "Das ist Obstipation.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Hypertriglyzeridämie“?",
+      "options": [
+        "zu viel Zucker im Blut",
+        "erhöhte Blutfette (Triglyzeride)",
+        "zu hoher Blutdruck",
+        "zu viel Harnsäure im Blut"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Hyperglykämie.",
+        "Richtig.",
+        "Das ist die Hypertonie.",
+        "Das ist die Hyperurikämie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Nekrose“?",
+      "options": [
+        "Narbengewebe",
+        "Wasseransammlung im Gewebe",
+        "abgestorbenes Gewebe",
+        "Gewebeneubildung"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Fibrose.",
+        "Das ist ein Ödem.",
+        "Richtig.",
+        "Das ist eine Neoplasie."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

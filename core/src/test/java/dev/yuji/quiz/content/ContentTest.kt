@@ -14,7 +14,8 @@ class ContentTest {
     private val preps = parsePrepositions(File("../app/src/main/assets/vocab/prepositions.json").readText())
     private val verbs = parseVerbs(File("../app/src/main/assets/vocab/verbs.json").readText())
     private val errors = parseErrorSentences(File("../app/src/main/assets/vocab/errors.json").readText())
-    private val deck = CardFactory.buildDeck(nouns, preps, verbs, errors)
+    private val fspCases = parseFspCases(File("../app/src/main/assets/vocab/fsp_cases.json").readText())
+    private val deck = CardFactory.buildDeck(nouns, preps, verbs, errors, fspCases)
 
     @Test fun poolHasReasonableSize() {
         assertTrue(nouns.size >= 250)
@@ -140,9 +141,10 @@ class ContentTest {
         assertTrue(it.id, it.segments.size in 3..5)
     }
 
-    @Test fun errorModeWaitsForANextTapWhileTheOtherModesAdvanceByThemselves() {
-        assertFalse(GameMode.ERROR_SPOT.autoAdvances)
-        assertTrue(GameMode.entries.filter { it != GameMode.ERROR_SPOT }.all { it.autoAdvances })
+    @Test fun readingModesWaitForANextTapWhileTheOtherModesAdvanceByThemselves() {
+        val reading = setOf(GameMode.ERROR_SPOT, GameMode.FSP_CASE)
+        reading.forEach { assertFalse(it.name, it.autoAdvances) }
+        assertTrue(GameMode.entries.filter { it !in reading }.all { it.autoAdvances })
     }
 
     @Test fun errorDeckIsMixedSoTheFirstSentencesAreNotOneErrorType() {

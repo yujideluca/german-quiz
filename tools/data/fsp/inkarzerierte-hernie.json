@@ -1,0 +1,691 @@
+{
+  "id": "inkarzerierte-hernie",
+  "area": "Allgemein- und Viszeralchirurgie",
+  "title": "Schmerzhafte Schwellung in der Leiste",
+  "diagnosis": "Inkarzerierte Leistenhernie rechts",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Klaus Brandt, 67 Jahre, stellt sich am Abend in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Brandt sitzt gekrümmt auf der Liege und hält sich die rechte Leiste.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Abend, Herr Brandt. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte und Ihren Personalausweis dabei? Die brauchen wir zuerst für die Anmeldung.",
+        "Hallo, zeigen Sie mal, wo es wehtut!",
+        "Guten Abend, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Brandt?",
+        "Guten Abend. Bitte legen Sie sich flach hin und machen Sie die Hose auf, ich untersuche Sie jetzt sofort."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Die körperliche Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen."
+      ],
+      "reply": "Patient: „Ja, Brandt. Guten Abend, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Sie sind doch bestimmt schon über sechzig, nicht wahr?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Wie lautet Ihr Body-Mass-Index, und wie hoch ist Ihr Körperfettanteil?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Diese Werte kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
+      ],
+      "reply": "Patient: „Ich bin 67, 1,78 Meter groß und wiege 85 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Haben Sie Schmerzen in der Leiste, oder ist es etwas anderes?",
+        "Welche Symptomatik führt Sie zu uns?",
+        "Warum kommen Sie erst jetzt in die Notaufnahme und waren nicht schon früher bei Ihrem Hausarzt? Das hätten Sie besser früher gemacht."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen.",
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll und belehrend. Das stört das Vertrauen gleich zu Beginn."
+      ],
+      "reply": "Patient: „Seit heute Morgen habe ich starke Schmerzen rechts in der Leiste, und meine Beule dort geht nicht mehr zurück.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten die Schwellung genauer kennen. Was fragen Sie?",
+      "options": [
+        "Handelt es sich bei der Schwellung um eine reponible oder irreponible Hernie, und liegt sie inguinal oder femoral?",
+        "Die Schwellung sitzt bestimmt links in der Leiste und wird beim Husten oder Pressen größer, und sie tut vor allem bei Bewegung weh, oder?",
+        "Wo sitzt die Schwellung?",
+        "Können Sie mir zeigen, wo genau die Schwellung sitzt? Und wird sie größer, wenn Sie husten, pressen oder schwer heben?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachsprache; der Patient versteht „reponibel“, „inguinal“ und „femoral“ nicht.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
+        "Unvollständig: Die Auslöser, ein wichtiges Merkmal, fehlen.",
+        "Richtig: laienverständlich, nach Ort und Auslösern, ohne die Antwort vorzugeben."
+      ],
+      "reply": "Patient: „Genau hier rechts in der Leiste. Wenn ich huste oder schwer hebe, wird die Beule größer.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Seit wann haben Sie die Schmerzen?",
+        "Seit wann haben Sie die Beule, und was war heute Morgen anders als sonst? Ist sie seitdem größer oder schmerzhafter geworden?",
+        "Wie war der zeitliche Verlauf seit der Erstmanifestation der Hernie: reponibel, inkarzeriert oder strangulierend, mit akutem Beginn?",
+        "Ist die Beule plötzlich aufgetreten?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das hat der Patient schon gesagt (seit heute Morgen). Fragen Sie nach Beginn der Beule und Verlauf.",
+        "Richtig: Beginn, Auslöser und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Fachsprache: „Erstmanifestation“, „inkarzeriert“ und „strangulierend“ versteht der Patient nicht.",
+        "Geschlossene Frage; sie erfasst den Verlauf nicht."
+      ],
+      "reply": "Patient: „Die Beule habe ich seit etwa einem halben Jahr, im Liegen ging sie immer zurück. Heute gegen 8 Uhr habe ich einen Getränkekasten getragen, da ist sie größer geworden und ließ sich nicht mehr zurückdrücken. Seitdem wird der Schmerz immer schlimmer.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "options": [
+        "Wie stark sind die Schmerzen von 1 bis 100?",
+        "Handelt es sich um einen viszeralen oder einen somatischen Schmerz, und wie hoch ist die Schmerzintensität auf der numerischen Rating-Skala?",
+        "Wie würden Sie die Schmerzen beschreiben, eher stechend, dumpf oder ziehend? Und wie stark sind sie auf einer Skala von 0 bis 10?",
+        "Tut es sehr weh?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
+        "Fachsprache; der Patient versteht „viszeral“, „somatisch“ und „Rating-Skala“ nicht.",
+        "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe."
+      ],
+      "reply": "Patient: „Ein stechender, dauernder Schmerz, ungefähr 7 von 10. Früher hat es nur manchmal gezogen.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Ist Ihnen übel, mussten Sie sich übergeben? Gehen noch Winde ab, und hatten Sie Stuhlgang? Haben Sie Blut im Stuhl bemerkt?",
+        "Hatten Sie Nausea, Emesis, Hämatochezie oder Meläna, und ist Ihnen ein Meteorismus mit Stuhl- und Windverhalt aufgefallen? Besteht der Verdacht auf einen Ileus?",
+        "Sie haben bestimmt auch erbrochen und keinen Stuhlgang mehr.",
+        "Haben Sie sonst noch was?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: konkrete Begleitsymptome des Darms in Laiensprache, auch Stuhl, Winde und Blut.",
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „übel“, „erbrechen“, „Blähungen“, „Winde“.",
+        "Suggestiv: Sie unterstellen die Symptome.",
+        "Zu umgangssprachlich und unkonkret."
+      ],
+      "reply": "Patient: „Mir ist übel, und ich habe zweimal erbrochen. Seit gestern Abend hatte ich keinen Stuhlgang mehr, und Winde gehen kaum ab. Blut habe ich nicht gesehen.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie ist die Vegetativa?",
+        "Bestehen Fieber, Schüttelfrost, Nachtschweiß, Dysurie, Pollakisurie, Gewichtsverlust, Inappetenz oder Dyspnoe, und wie ist Ihre Miktion?",
+        "Ist sonst alles normal bei Ihnen?",
+        "Haben Sie Fieber gemessen? Wie sind Appetit und Gewicht, und gibt es Probleme beim Wasserlassen oder Nachtschweiß?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Pollakisurie, Dyspnoe, Miktion).",
+        "Zu allgemein; der Patient sagt einfach „ja“.",
+        "Richtig: Fieber, Appetit, Gewicht, Wasserlassen und Nachtschweiß in Laiensprache."
+      ],
+      "reply": "Patient: „Fieber habe ich nicht, ich habe nachgemessen: 37,4 Grad. Appetit habe ich keinen. Das Gewicht ist gleich, Wasserlassen ist normal, Nachtschweiß habe ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, ein Vorhofflimmern oder eine COPD, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck, Zucker oder Herz- und Lungenerkrankungen? Und wurden Sie schon einmal operiert?",
+        "Sind Sie gesund?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „COPD“). Mit Patienten sprechen Sie Laiensprache.",
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patient: „Ich habe Bluthochdruck und Vorhofflimmern. Operiert wurde ich nur einmal, vor zehn Jahren am rechten Knie, am Meniskus. An der Leiste hatte ich noch nie eine Operation.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Tabletten?",
+        "Sie nehmen doch sicher einen Blutverdünner, oder?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Wann war die letzte Einnahme? Auch Mittel ohne Rezept?",
+        "Welche Pharmaka applizieren Sie, und nehmen Sie auch Antikoagulanzien oder Thrombozytenaggregationshemmer ein, und wann war die letzte Applikation?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu ungenau: Dosis und Zeitpunkt fehlen.",
+        "Suggestivfrage. Fragen Sie offen.",
+        "Richtig: Name, Dosierung, letzte Einnahme und frei verkäufliche Mittel. Bei Blutverdünnern ist der Zeitpunkt vor einer Operation wichtig.",
+        "Fachsprache („Pharmaka“, „applizieren“, „Antikoagulanzien“)."
+      ],
+      "reply": "Patient: „Bisoprolol 5 mg morgens, Ramipril 5 mg morgens und Apixaban 5 mg morgens und abends. Die letzte Apixaban habe ich heute um 7 Uhr genommen. Gegen die Schmerzen habe ich nichts genommen.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Allergie?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
+        "Sind Sie hypersensibel?",
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Zu eng: Allergien gegen andere Medikamente oder Stoffe übersehen Sie.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl.",
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion."
+      ],
+      "reply": "Patient: „Gegen das Kontrastmittel bei einer CT vor drei Jahren. Da bekam ich Ausschlag und Juckreiz am ganzen Körper.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucher oder Alkoholiker?",
+        "Rauchen Sie? Wie viel, und seit wann? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
+        "Wie hoch ist Ihr Nikotinabusus in Packungsjahren, und wie viele Standarddrinks konsumieren Sie pro Woche?",
+        "Sie trinken ja bestimmt nicht zu viel, oder?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Alkoholiker“ ist wertend und verletzend.",
+        "Richtig: neutral, konkret, mit Menge und Dauer (für die Packungsjahre).",
+        "„Abusus“ und „Standarddrinks“ sind Fachsprache und klingen nach Vorwurf.",
+        "Suggestiv und wertend."
+      ],
+      "reply": "Patient: „Ich rauche seit 30 Jahren eine Schachtel am Tag, also 20 Zigaretten. Alkohol trinke ich am Wochenende ein bis zwei Bier. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Herzinfarkt, Schlaganfall, Krebs oder Operationen am Bauch?",
+        "Hat Ihre Familie dieselbe Krankheit?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Zu eng: Geschwister und Kinder fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Richtig: offen, mit passenden Beispielen.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
+      ],
+      "reply": "Patient: „Mein Vater wurde an einem Leistenbruch operiert. Meine Mutter hatte mit 78 einen Schlaganfall.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Was ist Ihr sozialer Status?",
+        "Arbeiten Sie überhaupt noch, oder leben Sie von Rente oder Sozialleistungen?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Belastung, Entlassung und Versorgung.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Unklar und unangenehm formuliert.",
+        "Wertend und unhöflich."
+      ],
+      "reply": "Patient: „Ich bin Lagerarbeiter und muss oft schwer heben. Ich wohne mit meiner Frau in einer Wohnung im zweiten Stock, ohne Aufzug. Wir haben einen Sohn.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben eine inkarzerierte Leistenhernie rechts, möglicherweise mit beginnender Strangulation und Ileus. Das ist ein chirurgischer Notfall.",
+        "Das ist wahrscheinlich nur eine Zerrung vom Heben. Nehmen Sie Ibuprofen und ruhen Sie sich aus.",
+        "Sie haben sicher einen Darmverschluss mit abgestorbenem Darm, da hilft nichts mehr.",
+        "Ich vermute, dass ein Stück Darm in einer Lücke der Bauchwand in der Leiste eingeklemmt ist, ein sogenannter eingeklemmter Leistenbruch. Dadurch wird der Darm schlechter durchblutet, deshalb ist das ein Notfall."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachsprache; der Patient versteht die Diagnose nicht.",
+        "Verharmlosend und gefährlich: ein eingeklemmter Bruch ist ein Notfall, und Ibuprofen ist unter Apixaban ungünstig.",
+        "Falsch und beängstigend: Die Diagnose ist nicht gesichert, und die Prognose ist bei rascher Operation gut.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung und Dringlichkeit."
+      ],
+      "reply": "Patient: „Eingeklemmt? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Muss ich operiert werden?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Nein, eine Operation brauchen Sie nicht. Ich drücke den Bruch jetzt kräftig zurück, und wenn er wieder drin ist, können Sie heute Abend nach Hause gehen und sich ein paar Tage schonen.",
+        "Zuerst nehmen wir Blut ab und machen einen Ultraschall der Leiste. Sie bekommen Schmerzmittel und eine Infusion und bleiben nüchtern. Ein eingeklemmter Bruch geht nicht von selbst zurück, deshalb wird meist noch heute operiert. Das besprechen wir mit den Chirurgen.",
+        "Das entscheidet der Chef, ich weiß es nicht.",
+        "Ja, in einer Stunde sind Sie im OP, bitte unterschreiben Sie schon einmal die Einwilligung."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Gefährlich: Ein kräftiger Repositionsversuch kann geschädigten Darm zurückschieben, und eine Operation ist meist nötig.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, Nüchternheit, laienverständlich.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Zu früh und ohne Aufklärung: Diagnose und Zeitpunkt sind noch nicht gesichert."
+      ],
+      "reply": "Patient: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Brandt ist 67 und hat eine dicke Leiste.",
+        "Herr Klaus Brandt, ein 76-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit dem Morgen bestehenden Schmerzen und einer nicht reponiblen Schwellung in der linken Leiste vor.",
+        "Herr Klaus Brandt, ein 67-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit dem Morgen bestehenden Schmerzen und einer nicht reponiblen Schwellung in der rechten Leiste vor.",
+        "Herr Klaus Brandt, ein 67-jähriger Patient, stellte sich heute in unsere Notaufnahme mit seit dem Morgen bestehenden Schmerzen und einer nicht reponiblen Schwellung in der rechten Leiste vor."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Inhaltlich falsch: Der Patient ist 67 Jahre alt, und die Schwellung ist rechts.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptom.",
+        "Grammatik: „in unserer Notaufnahme“ (Dativ, wo?), nicht „in unsere“."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Schwellung besteht seit etwa einem halben Jahr intermittierend und war bis dato im Liegen reponibel. Heute gegen 8 Uhr kam es beim Heben eines Getränkekastens zur Größenzunahme mit Irreponibilität, seitdem progrediente, stechende Schmerzen (NRS 7/10).",
+        "Die Beule ist schon lange da und heute beim Tragen größer geworden, jetzt tut sie sehr weh.",
+        "Die Schwellung sei seit einem halben Jahr bekannt und heute beim Heben irreponibel geworden, seitdem progrediente stechende Schmerzen, NRS 7.",
+        "Die Schwellung besteht seit etwa einem Jahr intermittierend und war bis dato im Liegen reponibel. Heute gegen 8 Uhr kam es beim Heben eines Getränkekastens zur Größenabnahme mit Reponibilität, seitdem regrediente, dumpfe Schmerzen (NRS 2/10)."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachsprache und alle Merkmale (Dauer, Auslöser, Verlauf, Charakter, Intensität).",
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Konjunktiv-I-Mischung und unvollständig: Uhrzeit und „/10“ fehlen.",
+        "Inhaltlich falsch: Die Schwellung besteht seit einem halben Jahr, ist irreponibel geworden, und die Schmerzen sind progredient (NRS 7/10)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Er hatte Übelkeit und hat zweimal gekotzt, und Stuhlgang ging auch nicht mehr.",
+        "Begleitend berichtete der Patient über Nausea und zweimalige Emesis. Der Stuhlgang war regelrecht, Winde gingen ab. Fieber bis 38,4 °C. Hämatochezie wurde bejaht. Ausgeprägte Inappetenz.",
+        "Der Patient klagte über Dysurie, Pollakisurie und einen Gewichtsverlust von 10 kg innerhalb von drei Monaten. Erbrechen, Fieber und Stuhlverhalt wurden verneint, Nachtschweiß wurde bejaht.",
+        "Begleitend berichtete der Patient über Übelkeit und zweimaliges Erbrechen sowie einen Stuhl- und Windverhalt seit dem Vorabend. Hämatochezie wurde verneint. Fieber lag nicht vor (37,4 °C), das Gewicht war stabil und die Miktion unauffällig. Inappetenz."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Vulgär („gekotzt“) und ungenau.",
+        "Inhaltlich falsch: Es bestand ein Stuhl- und Windverhalt, kein Fieber (37,4 °C), und kein Blut im Stuhl.",
+        "Inhaltlich falsch: Erbrechen und Stuhlverhalt bestanden, Gewichtsverlust und Dysurie nicht.",
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "An Vorerkrankungen sind eine arterielle Hypertonie und eine KHK bekannt. Z. n. Meniskusoperation am rechten Knie vor zehn Jahren. Medikation: Bisoprolol 5 mg 1-0-0, Ramipril 5 mg 1-0-0, Apixaban 5 mg 1-0-0 (letzte Einnahme gestern Abend).",
+        "An Vorerkrankungen sind eine arterielle Hypertonie und ein Vorhofflimmern bekannt. Z. n. Meniskusoperation am rechten Knie vor zehn Jahren, keine Voroperation im Bereich der Leiste. Medikation: Bisoprolol 5 mg 1-0-0, Ramipril 5 mg 1-0-0, Apixaban 5 mg 1-0-1 (letzte Einnahme heute um 7 Uhr).",
+        "Vorerkrankungen: Bluthochdruck, Herzrhythmusstörung. Medikamente: Bisoprolol, Ramipril, Blutverdünner.",
+        "An Vorerkrankungen sind eine arterielle Hypertonie und ein Vorhofflimmern bekannt. Medikation: Bisoprolol 5 mg 0-0-1, Ramipril 5 mg 1-1-1, Apixaban 5 mg 1-0-1."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich falsch: Vorhofflimmern (keine KHK), Apixaban 1-0-1, letzte Einnahme heute um 7 Uhr.",
+        "Richtig: Fachbegriffe, Z. n., Dosierschema und Zeitpunkt der letzten Antikoagulation.",
+        "Laiensprache und ohne Dosierung.",
+        "Dosierschema falsch: Bisoprolol und Ramipril morgens (1-0-0). Außerdem fehlen die Voroperation und die letzte Einnahme."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: keine. Noxen: Nikotinabusus.",
+        "Kontrastmittelallergie (Exanthem und Pruritus). Nikotinkonsum ca. 15 py, täglicher Alkoholkonsum. Familienanamnese: Vater Myokardinfarkt, Mutter Leistenhernie. Der Patient ist Büroangestellter, ledig und lebt allein im Erdgeschoss.",
+        "Kontrastmittelallergie (Exanthem und Pruritus). Nikotinkonsum ca. 30 py, Alkoholkonsum am Wochenende. Familienanamnese: Vater Leistenhernie, Mutter Apoplex mit 78 J. Der Patient ist Lagerarbeiter, verheiratet und lebt mit seiner Ehefrau im zweiten Stock ohne Aufzug.",
+        "Er verträgt das Kontrastmittel nicht, raucht viel und arbeitet im Lager."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: die Kontrastmittelallergie fehlt, der Rest ist unvollständig.",
+        "Inhaltlich falsch: 30 py, Alkohol nur am Wochenende, Vater Leistenhernie, Lagerarbeiter, verheiratet.",
+        "Richtig: 20 Zigaretten am Tag über 30 Jahre sind 30 pack years (py = Packungsjahre).",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Anamnestisch besteht der Verdacht auf eine inkarzerierte Leistenhernie rechts. Differenzialdiagnostisch kommen eine inkarzerierte Femoralhernie, eine Hodentorsion und eine Lymphadenitis inguinalis in Betracht.",
+        "Diagnose: Leistenbruch.",
+        "Es besteht eine gesicherte Darmnekrose bei strangulierter Leistenhernie mit beginnender Peritonitis. Eine weitere Differenzialdiagnostik oder Bildgebung ist nicht erforderlich.",
+        "Anamnestisch besteht der Verdacht auf eine Nierenkolik rechts bei Urolithiasis. Differenzialdiagnostisch kommen eine Appendizitis, eine Divertikulitis und ein Psoasabszess in Betracht."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen.",
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Ohne Operationsbefund ist eine Nekrose nicht gesichert.",
+        "Medizinisch unpassend: Eine nicht reponible Schwellung in der Leiste spricht nicht für eine Kolik."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir machen Blut und Ultraschall und schauen morgen weiter.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und eine Sonographie der Leiste. Wir empfehlen Analgesie mit Ibuprofen 600 mg sowie einen wiederholten kräftigen Repositionsversuch, anschließend Entlassung bei erfolgreicher Reposition.",
+        "Zur weiteren Abklärung empfehlen wir ein CT des Abdomens mit Kontrastmittel. Eine Sonographie ist nicht nötig, und die Operation kann elektiv in einigen Wochen erfolgen.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (u. a. Blutbild, CRP, Laktat, Elektrolyte, Kreatinin, Gerinnung) und eine Sonographie der Leiste. Wir empfehlen Nüchternheit, Analgesie und eine Infusionstherapie. Bei Bestätigung ist wegen der Inkarzeration die zeitnahe operative Versorgung indiziert, unter Beachtung der Antikoagulation."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu umgangssprachlich und unvollständig; bei Inkarzeration darf man nicht abwarten.",
+        "Gefährlich: ein kräftiger Repositionsversuch bei Verdacht auf Inkarzeration, NSAR unter Apixaban.",
+        "Gefährlich: Der Patient hat eine Kontrastmittelallergie, und eine Inkarzeration muss zeitnah operiert werden.",
+        "Richtig: Diagnostik und Therapie in vollständigen Sätzen, Notfalloperation bei Inkarzeration."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Der Patient hat was in der Leiste, er heißt Brandt.",
+        "Ich möchte Ihnen Herrn Klaus Brandt vorstellen, einen 67-jährigen Patienten, der sich heute mit seit dem Morgen bestehenden Schmerzen und einer nicht reponiblen Schwellung in der rechten Leiste vorgestellt hat.",
+        "Also, der Mann hat heute Morgen einen Getränkekasten getragen und dann plötzlich Schmerzen bekommen und ...",
+        "Herr Brandt hat eine inkarzerierte Hernie."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz.",
+        "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Die Schwellung ist heute erstmals aufgetreten und weiterhin im Liegen reponibel. Begleitend bestehen Übelkeit und zweimaliges Erbrechen, der Stuhlgang ist regelrecht. Fieber bis 38,4 °C wurde berichtet.",
+        "Er hat Schmerzen und Erbrechen.",
+        "Die Schwellung bestand seit etwa einem halben Jahr intermittierend und ist heute beim Heben irreponibel geworden. Begleitend bestehen Übelkeit, zweimaliges Erbrechen sowie ein Stuhl- und Windverhalt seit gestern Abend. Fieber und Hämatochezie wurden verneint.",
+        "Die Schmerzen sind plötzlich in der linken Flanke aufgetreten. Begleitend bestehen Durchfall und Fieber bis 39 °C. Erbrechen wurde verneint."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Die Schwellung besteht seit einem halben Jahr, ist irreponibel, es besteht ein Stuhlverhalt, und es gab kein Fieber.",
+        "Unvollständig: Verlauf, Stuhlverhalt und Negativbefunde fehlen.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
+        "Inhaltlich falsch: Die Schwellung sitzt rechts in der Leiste, es gab keinen Durchfall und kein Fieber, aber Erbrechen."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist gesund und nimmt keine Medikamente.",
+        "Bekannt sind eine arterielle Hypertonie und ein Vorhofflimmern unter Apixaban 5 mg 1-0-1, letzte Einnahme gestern Abend. Wichtig: Penicillinallergie mit Anaphylaxie. Die Mutter wurde an einer Leistenhernie operiert. Der Patient raucht, ca. 15 py.",
+        "Er hat Bluthochdruck und nimmt Tabletten, mehr weiß ich nicht.",
+        "Bekannt sind eine arterielle Hypertonie und ein Vorhofflimmern unter Apixaban 5 mg 1-0-1, letzte Einnahme heute um 7 Uhr. Wichtig: Kontrastmittelallergie mit Exanthem. Der Vater wurde an einer Leistenhernie operiert. Der Patient raucht, ca. 30 py."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch: es gibt relevante Vorerkrankungen und eine Antikoagulation.",
+        "Inhaltlich falsch: letzte Einnahme heute um 7 Uhr, Kontrastmittelallergie (Exanthem), Vater, 30 py.",
+        "Unvollständig und zu unpräzise.",
+        "Richtig: relevante Vorgeschichte, Zeitpunkt der letzten Antikoagulation und die Allergie, die für die Bildgebung wichtig ist."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich vermute eine inkarzerierte Leistenhernie rechts. Differenzialdiagnostisch denke ich an eine inkarzerierte Femoralhernie, eine Hodentorsion und eine Lymphadenitis inguinalis.",
+        "Ich denke an einen Bruch.",
+        "Es handelt sich sicher um eine Nierenkolik, weil die Schmerzen in der Flanke begannen. Differenzialdiagnostisch denke ich höchstens noch an eine Appendizitis und eine Divertikulitis.",
+        "Ich weiß es nicht genau."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
+        "Zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "Zu sicher, und die Nierenkolik passt nicht zu einer nicht reponiblen Schwellung in der Leiste.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde ihn nach Hause schicken und morgen beim Hausarzt vorstellen.",
+        "Ich würde Blut abnehmen, inklusive Entzündungswerten, Laktat, Elektrolyten, Nierenwerten und Gerinnung, und die Leiste sonographieren. Therapeutisch Nüchternheit, Analgesie und Flüssigkeit, bei bestätigter Inkarzeration eine zeitnahe Notfalloperation. Wegen Apixaban würde ich den Anästhesisten informieren und kein Kontrastmittel geben.",
+        "Ich würde zuerst ein CT mit Kontrastmittel machen, ihm Ibuprofen 600 mg geben und die Operation elektiv in einigen Wochen planen.",
+        "Ich würde die Hernie sofort mit Kraft zurückdrücken und ihn danach entlassen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Gefährlich: Eine Inkarzeration ist ein Notfall.",
+        "Richtig: Diagnostik, Therapie und Operation, mit Blick auf Antikoagulation und Allergie.",
+        "Gefährlich: Kontrastmittelallergie, NSAR unter Apixaban, und eine Inkarzeration muss zeitnah operiert werden.",
+        "Gefährlich: Ein kräftiger Repositionsversuch kann geschädigten Darm zurückschieben, und die Operation bleibt nötig."
+      ],
+      "reply": "Oberarzt: „Gut. Was erwarten Sie im Ultraschall?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich erwarte eine echoarme, gut durchblutete Raumforderung mit sichtbarer Peristaltik, die sich vollständig wegdrücken lässt, als Zeichen einer reponiblen Hernie ohne Zeichen einer Einklemmung und ohne freie Flüssigkeit.",
+        "Ich erwarte gar nichts.",
+        "Ich erwarte eine erweiterte Bauchaorta mit einem Aneurysma und eine verdickte Gallenblasenwand.",
+        "Ich erwarte eine nicht komprimierbare Raumforderung in der Leiste mit Darmschlingen im Bruchsack, fehlender Peristaltik und eventuell freier Flüssigkeit; im Farbduplex kann die Durchblutung der Darmwand vermindert sein."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Passt nicht: Bei Inkarzeration lässt sich die Schwellung nicht zurückdrücken.",
+        "In der Prüfung erwartet man eine begründete Antwort.",
+        "Nicht typisch für diesen Verdacht; beides spricht nicht für eine Hernie.",
+        "Richtig: typische Sonographiezeichen einer inkarzerierten Hernie."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Inkarzeration“?",
+      "options": [
+        "Entzündung der Leistenlymphknoten",
+        "Vorwölbung des Bauchfells durch eine Lücke",
+        "Einklemmung von Gewebe in einer Bruchpforte",
+        "Zurückgleiten in die Bauchhöhle"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Lymphadenitis.",
+        "Das ist die Hernie.",
+        "Richtig.",
+        "Das ist die Reposition."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „reponibel“?",
+      "options": [
+        "zurückschiebbar",
+        "eingeklemmt",
+        "schmerzlos",
+        "tastbar"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist inkarzeriert.",
+        "Das ist indolent.",
+        "Das ist palpabel."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Bruchpforte“?",
+      "options": [
+        "Öffnung des Magens zum Dünndarm",
+        "Bauchfell",
+        "Hülle, die den Bruchinhalt umgibt",
+        "Lücke in der Bauchwand, durch die ein Bruch austritt"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist der Pylorus.",
+        "Das ist das Peritoneum.",
+        "Das ist der Bruchsack.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Ileus“?",
+      "options": [
+        "Darmentzündung",
+        "Darmverschluss",
+        "Verstopfung",
+        "Darmblutung"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Enteritis bzw. Kolitis.",
+        "Richtig.",
+        "Das ist die Obstipation.",
+        "Das ist die gastrointestinale Blutung (Hämatochezie bzw. Meläna)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Meteorismus“?",
+      "options": [
+        "Blähungen mit aufgetriebenem Bauch",
+        "Durchfall",
+        "Erbrechen",
+        "Blut im Stuhl"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Diarrhö.",
+        "Das ist die Emesis.",
+        "Das ist die Hämatochezie."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

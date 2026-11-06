@@ -136,6 +136,23 @@ def load_errors():
     return out, errors
 
 
+def load_fsp_cases():
+    """FSP case simulations (ADR-0014): every case of tools/data/fsp_cases.tsv must exist and pass check_fsp_cases.py;
+    they are written in the list's order, which is ordered by area of medicine (FS-2)."""
+    sys.path.insert(0, str(ROOT / "tools"))
+    import check_fsp_cases as fsp
+    listed = fsp.case_list()
+    files = [fsp.CASE_DIR / f"{cid}.json" for cid in listed]
+    errors = [f"fsp case missing: {f.name}" for f in files if not f.exists()]
+    for f in (x for x in files if x.exists()):
+        errors += fsp.check_case(f, listed)
+    extra = sorted({f.stem for f in fsp.CASE_DIR.glob("*.json")} - set(listed))
+    errors += [f"fsp case file not in tools/data/fsp_cases.tsv: {x}.json" for x in extra]
+    if errors:
+        return [], errors
+    return [json.loads(f.read_text(encoding="utf-8")) for f in files], []
+
+
 def _api_get(url):
     """GET JSON, sleeping for Retry-After on HTTP 429 (Wikimedia rate limit)."""
     req = urllib.request.Request(url, headers={"User-Agent": "QuizAppVocabVerifier/1.0 (personal project)"})
@@ -196,7 +213,8 @@ def main():
     preps, e2 = load_prepositions()
     verbs, e3 = load_verbs()
     sentences, e4 = load_errors()
-    errors = e1 + e2 + e3 + e4
+    cases, e5 = load_fsp_cases()
+    errors = e1 + e2 + e3 + e4 + e5
     if errors:
         print("\n".join(errors)); sys.exit(1)
 
@@ -205,9 +223,10 @@ def main():
     (OUT / "prepositions.json").write_text(json.dumps(preps, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "verbs.json").write_text(json.dumps(verbs, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "errors.json").write_text(json.dumps(sentences, ensure_ascii=False, indent=1), encoding="utf-8")
+    (OUT / "fsp_cases.json").write_text(json.dumps(cases, ensure_ascii=False, indent=1), encoding="utf-8")
     kinds = {k: sum(p["kind"] == k for p in preps) for k in sorted(KINDS)}
     subprocess.run([sys.executable, str(ROOT / "tools/content_manifest.py")], check=True)  # new version if anything changed
-    print(f"nouns: {len(nouns)} | preposition items: {len(preps)} {kinds} | verbs: {len(verbs)} | error sentences: {len(sentences)} -> {OUT}")
+    print(f"nouns: {len(nouns)} | preposition items: {len(preps)} {kinds} | verbs: {len(verbs)} | error sentences: {len(sentences)} | fsp cases: {len(cases)} -> {OUT}")
 
     if a.verify_nouns:
         problems, unchecked = verify_nouns(nouns)

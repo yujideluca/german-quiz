@@ -23,6 +23,7 @@ import dev.yuji.quiz.domain.BackupProblem
 import dev.yuji.quiz.domain.ProgressBackup
 import dev.yuji.quiz.domain.decodeBackup
 import dev.yuji.quiz.domain.encodeBackup
+import dev.yuji.quiz.content.FspCaseRun
 import dev.yuji.quiz.domain.CardStatus
 import dev.yuji.quiz.domain.GameMode
 import dev.yuji.quiz.domain.StudySession
@@ -43,6 +44,8 @@ class StudyViewModel @JvmOverloads constructor(
     controllerFactory: ((Application, StudyLog) -> StudyController)? = null,
 ) : AndroidViewModel(app) {
     private var advanceJob: Job? = null
+    /** The FSP case on screen; reset whenever the current card changes. */
+    private var caseRun: FspCaseRun? = null
     private var searchQuery = ""
     private var calendarMonth: java.time.YearMonth? = null
 
@@ -70,6 +73,7 @@ class StudyViewModel @JvmOverloads constructor(
         clock = SystemClock,
         log = log,
         training = SharedPreferencesTrainingStore(app),
+        cases = active.cases,
     )
 
     private var controller: StudyController? = runCatching {
@@ -92,6 +96,23 @@ class StudyViewModel @JvmOverloads constructor(
         val updated = c.answer(studying.session, choice)
         render(c, updated)
         if (updated.isAwaitingAdvance && updated.mode.autoAdvances) scheduleAdvance()
+    }
+
+    // ---- FSP cases (ADR-0014) -----------------------------------------------------------------
+
+    /** Picks an answer of the current case step ([option] indexes the case file's options). */
+    fun pickCaseOption(option: Int) = withController { c ->
+        val studying = _state.value as? UiState.Studying ?: return@withController
+        caseRun = studying.caseRun?.pick(option) ?: return@withController
+        render(c, studying.session)
+    }
+
+    /** Leaves a solved step; after the last one the case is graded and its result screen shown (FS-4). */
+    fun nextCaseStep() = withController { c ->
+        val studying = _state.value as? UiState.Studying ?: return@withController
+        val run = studying.caseRun?.next() ?: return@withController
+        caseRun = run
+        render(c, if (run.isFinished) c.finishCase(studying.session, run) else studying.session)
     }
 
     /** Suspend for a week / month or remove permanently; the card leaves the running session. */
@@ -125,6 +146,7 @@ class StudyViewModel @JvmOverloads constructor(
 
     fun backToModes() = withController { c0 ->
         advanceJob?.cancel()
+        caseRun = null
         val c = pool.takePending()?.let { applyContent(it) } ?: c0
         calendarMonth = null                                        // home always opens on the current month
         _state.update { modeSelectState(c) }
@@ -267,7 +289,17 @@ class StudyViewModel @JvmOverloads constructor(
     // ---- plumbing ---------------------------------------------------------------------------
 
     private fun render(c: StudyController, session: StudySession) = _state.update {
-        if (session.isFinished) UiState.Finished(session) else UiState.Studying(session, c.choices(session), c.dailyProgress())
+        if (session.isFinished) {
+            caseRun = null
+            UiState.Finished(session)
+        } else {
+            val cardId = session.currentCard?.id
+            if (cardId == null || !cardId.startsWith("fsp:")) caseRun = null
+            // A new card, or a finished run whose answer is no longer on screen (left on the result screen), starts afresh.
+            else if (caseRun?.case?.id != cardId.removePrefix("fsp:") || (caseRun?.isFinished == true && session.lastAnswer == null))
+                caseRun = c.startCase(session)
+            UiState.Studying(session, c.choices(session), c.dailyProgress(), caseRun)
+        }
     }
 
     private inline fun withController(block: (StudyController) -> Unit) {

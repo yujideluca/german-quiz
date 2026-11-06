@@ -113,6 +113,7 @@ class MainActivity : ComponentActivity() {
                         is UiState.Studying -> StudyScreen(
                             s.session, s.choices, s.daily, vm.debugFlags.showCardOverlay,
                             vm::answer, vm::suspendCurrentCard, vm::backToModes, vm::next,
+                            s.caseRun, vm::pickCaseOption, vm::nextCaseStep,
                         )
                         is UiState.Finished -> FinishedScreen(s.session, vm::backToModes)
                         is UiState.Settings -> SettingsScreen(

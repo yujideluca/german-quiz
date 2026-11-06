@@ -5,6 +5,8 @@ import dev.yuji.quiz.content.CONTENT_FILES
 import dev.yuji.quiz.content.CONTENT_MANIFEST_FILE
 import dev.yuji.quiz.content.ContentFiles
 import dev.yuji.quiz.content.ContentManifest
+import dev.yuji.quiz.content.FspCase
+import dev.yuji.quiz.content.fspCasesFrom
 import dev.yuji.quiz.content.buildDeckFrom
 import dev.yuji.quiz.content.parseContentManifest
 import dev.yuji.quiz.content.prefersDownloaded
@@ -58,6 +60,8 @@ data class ActiveContent(
     val version: Int,
     val downloaded: Boolean,
     val deck: Map<GameMode, List<Card>>,
+    /** The FSP cases of this pack by id, played step by step behind their cards (ADR-0014). */
+    val cases: Map<String, FspCase> = emptyMap(),
 )
 
 /**
@@ -68,13 +72,16 @@ fun resolveContent(builtIn: ContentFiles, store: ContentStore, log: StudyLog): A
     val bundled = parseContentManifest(builtIn.read(CONTENT_MANIFEST_FILE)) ?: error("assets/content.json is malformed")
     val downloaded = store.installedManifest()
     if (downloaded != null && prefersDownloaded(bundled, downloaded)) {
-        val deck = runCatching { buildDeckFrom(store.files) }
-        deck.onSuccess { return ActiveContent(store.files, downloaded.contentVersion, downloaded = true, deck = it) }
+        val deck = runCatching { buildDeckFrom(store.files) to fspCasesFrom(store.files) }
+        deck.onSuccess { (d, cases) ->
+            return ActiveContent(store.files, downloaded.contentVersion, downloaded = true, deck = d, cases = cases.associateBy { it.id })
+        }
         log.debug(LogChannel.CONTENT) { "downloaded pool ${downloaded.contentVersion} unreadable, using built-in: ${deck.exceptionOrNull()}" }
     }
     if (downloaded != null) {
         log.debug(LogChannel.CONTENT) { "dropping downloaded pool ${downloaded.contentVersion} (built-in is ${bundled.contentVersion})" }
         store.clear()
     }
-    return ActiveContent(builtIn, bundled.contentVersion, downloaded = false, deck = buildDeckFrom(builtIn))
+    return ActiveContent(builtIn, bundled.contentVersion, downloaded = false, deck = buildDeckFrom(builtIn),
+        cases = fspCasesFrom(builtIn).associateBy { it.id })
 }

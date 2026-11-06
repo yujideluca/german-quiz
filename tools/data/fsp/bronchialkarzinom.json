@@ -1,0 +1,691 @@
+{
+  "id": "bronchialkarzinom",
+  "area": "Hämatologie/Onkologie",
+  "title": "Husten mit Blut und Gewichtsverlust",
+  "diagnosis": "Bronchialkarzinom",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Werner Hoffmann, 64 Jahre, stellt sich am Vormittag in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Hoffmann sitzt auf der Liege, hustet und hält sich ein Taschentuch vor den Mund.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Morgen, Herr Hoffmann. Setzen Sie sich bitte und zeigen Sie mir zuerst Ihre Versichertenkarte, damit die Anmeldung fertig wird.",
+        "Hallo, Sie husten ja ganz schön. Erzählen Sie mal.",
+        "Guten Morgen, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Hoffmann?",
+        "Guten Morgen. Ich werde jetzt Ihre Lunge abhören, bitte machen Sie den Oberkörper frei."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Die körperliche Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen."
+      ],
+      "reply": "Patient: „Ja, Hoffmann. Guten Morgen, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Sie sind doch bestimmt schon über sechzig, oder?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert? Das brauchen wir für die Akte.",
+        "Wie hoch ist Ihr Body-Mass-Index?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst."
+      ],
+      "reply": "Patient: „Ich bin 64, 1,78 Meter groß und wiege jetzt 74 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Haben Sie Husten?",
+        "Welche Symptomatik besteht bei Ihnen?",
+        "Warum kommen Sie erst jetzt, wenn die Beschwerden schon länger bestehen? Das hätten Sie früher abklären lassen sollen."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen.",
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll und wertend. Das stört das Vertrauen gleich zu Beginn."
+      ],
+      "reply": "Patient: „Ich huste seit Monaten, und seit ein paar Wochen ist Blut dabei. Das macht mir Angst.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten Genaueres über das Bluthusten wissen. Was sagen Sie?",
+      "options": [
+        "Wie viele Milliliter Blut produzieren Sie pro Tag, und ist die Hämoptyse hellrot-schaumig oder dunkel-koaguliert, eventuell mit Beimengung von Sputum?",
+        "Sie husten doch sicher sehr viel Blut?",
+        "Haben Sie Blut im Auswurf?",
+        "Wie sieht das Blut aus, und wie viel ist es ungefähr, zum Beispiel ein Teelöffel oder eine Tasse?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachsprache („Hämoptyse“, „koaguliert“, „Sputum“); der Patient versteht die Frage nicht.",
+        "Suggestivfrage. Fragen Sie offen nach Aussehen und Menge.",
+        "Das hat der Patient schon gesagt. Fragen Sie nach Aussehen und Menge.",
+        "Richtig: laienverständlich, mit Beispielen für die Menge, ohne die Antwort vorzugeben."
+      ],
+      "reply": "Patient: „Der Auswurf ist hellrot und mit Schleim vermischt, ungefähr ein Teelöffel, drei- bis viermal in der Woche.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Wann hat der Husten angefangen?",
+        "Seit wann husten Sie, und ist der Husten seitdem besser, schlechter oder gleich geblieben?",
+        "Wie war der zeitliche Verlauf seit der Erstmanifestation: akut, subakut oder chronisch progredient?",
+        "Hatten Sie das schon einmal? Und wenn ja, wann war das das letzte Mal, und was hat Ihr Hausarzt damals dazu gesagt?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fragt nur nach dem Beginn, nicht nach dem Verlauf.",
+        "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „progredient“ versteht der Patient nicht.",
+        "Fragt nach früheren Episoden, nicht nach Beginn und Verlauf der jetzigen Beschwerden."
+      ],
+      "reply": "Patient: „Vor etwa vier Monaten fing es an. Zuerst trocken, jetzt mit Auswurf, und es wird immer schlimmer. Das Blut sehe ich seit drei Wochen.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Stärke der Beschwerden und Belastbarkeit. Welche Formulierung passt?",
+      "options": [
+        "Wie weit können Sie gehen oder wie viele Stockwerke steigen, bevor Sie Luft holen müssen? Und haben Sie Schmerzen beim Atmen, auf einer Skala von 0 bis 10?",
+        "Wie ist Ihre Dyspnoe nach NYHA eingestuft, und haben Sie eine pleuritische Schmerzsymptomatik?",
+        "Sind Sie noch fit?",
+        "Wie stark ist der Husten auf einer Skala von 1 bis 100, und wie oft müssen Sie nachts deswegen aufstehen?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Belastbarkeit alltagsnah erfragt und die übliche Schmerzskala von 0 bis 10.",
+        "Fachsprache („Dyspnoe“, „NYHA“, „pleuritisch“); NYHA gilt außerdem für Herzinsuffizienz.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10, und die Atemnot bleibt ungefragt."
+      ],
+      "reply": "Patient: „Ab dem ersten Stock muss ich stehen bleiben. Rechts beim tiefen Einatmen habe ich einen dumpfen Schmerz, so 3 von 10.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Haben Sie außer dem Husten noch etwas bemerkt, zum Beispiel Luftnot, Schmerzen in der Brust, Heiserkeit oder Schluckbeschwerden?",
+        "Haben Sie Dyspnoe, Thoraxschmerzen, Dysphonie oder Dysphagie, und ist Ihnen eine Halsvenenstauung oder eine Schwellung des Gesichts aufgefallen?",
+        "Sie haben bestimmt auch Atemnot, nicht wahr?",
+        "Haben Sie sonst noch was?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: konkrete Begleitsymptome in Laiensprache, auch Heiserkeit als möglicher Hinweis auf eine Stimmbandbeteiligung.",
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Luftnot“, „Heiserkeit“, „Schluckbeschwerden“.",
+        "Suggestiv: Sie unterstellen das Symptom.",
+        "Zu umgangssprachlich und unkonkret."
+      ],
+      "reply": "Patient: „Heiser bin ich seit zwei Wochen. Kopfschmerzen oder Schluckbeschwerden habe ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie ist die Vegetativa?",
+        "Haben Sie Fieber, Nachtschweiß, eine B-Symptomatik, Inappetenz, Obstipation oder Dysurie, und wie war die Gewichtsentwicklung?",
+        "Ist sonst alles normal bei Ihnen?",
+        "Haben Sie Fieber gemessen? Schwitzen Sie nachts? Haben Sie abgenommen? Wie sind Appetit, Stuhlgang und Wasserlassen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (B-Symptomatik, Inappetenz, Obstipation, Dysurie).",
+        "Zu allgemein; der Patient sagt einfach „ja“.",
+        "Richtig: Fieber, Nachtschweiß, Gewicht, Appetit, Stuhlgang und Wasserlassen in Laiensprache, mit gezieltem Blick auf die B-Symptome."
+      ],
+      "reply": "Patient: „Fieber hatte ich nicht, aber nachts schwitze ich stark. Ich habe 8 Kilo in drei Monaten verloren, von 82 auf 74. Der Appetit ist schlecht, Stuhlgang und Wasserlassen sind normal.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie eine COPD, eine Tbc oder eine arterielle Hypertonie, und gab es Thoraxoperationen, Bronchoskopien oder stationäre Aufenthalte?",
+        "Haben Sie Lungenerkrankungen, zum Beispiel Asthma oder Tuberkulose, oder Bluthochdruck? Wurden Sie schon operiert?",
+        "Sind Sie gesund?",
+        "Wann waren Sie das letzte Mal beim Arzt?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („Tbc“, „arterielle Hypertonie“). Mit Patienten sprechen Sie Laiensprache.",
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Das ist keine Frage nach Vorerkrankungen und Operationen."
+      ],
+      "reply": "Patient: „COPD habe ich seit fünf Jahren, dazu Bluthochdruck. Tuberkulose hatte ich nie. Operiert wurde ich vor zehn Jahren an einem Leistenbruch rechts.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Tabletten?",
+        "Welche Pharmaka applizieren Sie, und nehmen Sie Antikoagulanzien oder Thrombozytenaggregationshemmer ein?",
+        "Welche Medikamente nehmen oder inhalieren Sie regelmäßig, und in welcher Dosierung? Auch Blutverdünner wie Aspirin oder Mittel ohne Rezept?",
+        "Sie nehmen doch sicher ein Cortison-Spray, oder?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu ungenau: Dosis und andere Darreichungsformen wie Sprays fehlen.",
+        "Fachsprache („Pharmaka“, „applizieren“, „Antikoagulanzien“).",
+        "Richtig: Name, Dosierung, Inhalativa, und Sie fragen gezielt nach Blutverdünnern (wichtig bei Blutung).",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Tiotropium zum Inhalieren, 18 Mikrogramm morgens, und Amlodipin 5 mg morgens. Bei Atemnot Salbutamol-Spray. Blutverdünner nehme ich nicht, auch kein Aspirin.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Pflaster oder Lebensmittel? Wie äußert sich das?",
+        "Sind Sie gegen Kontrastmittel allergisch? Das ist wichtig, weil wir vielleicht gleich eine Computertomographie machen möchten, und die machen wir meistens mit Kontrastmittel.",
+        "Allergie?",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Zu eng: Allergien gegen Medikamente, Pflaster oder Lebensmittel übersehen Sie.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patient: „Gegen Pflaster, da bekomme ich einen juckenden Ausschlag. Sonst nichts.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sie rauchen bestimmt, oder?",
+        "Wie ist Ihr Nikotinabusus in Packungsjahren?",
+        "Sie sind ja ein starker Raucher, nicht wahr? Wie viele Jahre haben Sie sich damit schon geschadet, und warum hören Sie nicht endlich auf?",
+        "Rauchen Sie? Seit wann und wie viele Zigaretten am Tag? Wie viel Alkohol trinken Sie ungefähr? Nehmen Sie Drogen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Suggestivfrage ohne Mengenangabe.",
+        "„Abusus“ und „Packungsjahre“ sind Fachsprache und klingen nach Vorwurf.",
+        "Wertend und vorwurfsvoll. Fragen Sie neutral.",
+        "Richtig: neutral, konkret, mit Menge und Dauer."
+      ],
+      "reply": "Patient: „Ich rauche seit 40 Jahren etwa 20 Zigaretten am Tag. Abends ein bis zwei Bier. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Gibt es in Ihrer Familie Krankheiten, die öfter vorkommen, zum Beispiel Krebs-, Lungen- oder Herzerkrankungen?",
+        "Wie ist die Familienanamnese?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Hat Ihre Familie auch Lungenkrebs?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit passenden Beispielen.",
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Zu eng: Geschwister und Kinder fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Suggestiv und setzt eine Diagnose voraus, die noch nicht gestellt ist."
+      ],
+      "reply": "Patient: „Mein Vater ist mit 66 an Lungenkrebs gestorben, er war auch Raucher. Mein Bruder hatte mit 58 einen Herzinfarkt.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was ist Ihr sozialer Status?",
+        "Was machen Sie beruflich, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse, und wer ist Ihre Kontaktperson?",
+        "Was machen Sie beruflich, und hatten Sie bei der Arbeit mit Staub oder Chemikalien zu tun? Wie wohnen Sie, allein oder mit jemandem zusammen?",
+        "Haben Sie Geld?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unklar und unangenehm formuliert.",
+        "Teilweise Verwaltung: Adresse und Kontaktperson gehören nicht in die Sozialanamnese, und die Schadstoffexposition fehlt.",
+        "Richtig: Beruf mit Schadstoffexposition und Wohnsituation, beides wichtig für Diagnose und Versorgung.",
+        "Unangemessen."
+      ],
+      "reply": "Patient: „Ich bin Maurer. Früher habe ich bei Dachsanierungen viel mit Asbestplatten gearbeitet. Ich wohne mit meiner Frau zusammen, wir haben zwei erwachsene Kinder.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Ich vermute, dass in Ihrer Lunge etwas wächst, das dort nicht hingehört, zum Beispiel ein Tumor. Sicher ist das noch nicht; das müssen wir mit Bildern und einer Gewebeprobe klären.",
+        "Sie haben ein Bronchialkarzinom, wahrscheinlich schon im fortgeschrittenen Stadium.",
+        "Das ist wahrscheinlich nur eine Bronchitis vom Rauchen, da müssen Sie sich keine Sorgen machen.",
+        "Sie haben eine COPD-Exazerbation. Wir geben Ihnen Antibiotika und Cortison, dann ist das Blut bald weg und Sie können wieder nach Hause."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, ehrlich und mit klarem nächsten Schritt.",
+        "Fachsprache und eine ungesicherte Diagnose, die zudem beängstigend vorweggenommen wird.",
+        "Verharmlosend: Bluthusten mit Gewichtsverlust ist ein Alarmzeichen.",
+        "Falsche Diagnose und falsches Versprechen: Die Hämoptysen sind damit nicht erklärt."
+      ],
+      "reply": "Patient: „Krebs? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Muss ich hierbleiben?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Nein, Sie können nach Hause gehen. Ihr Hausarzt macht nächste Woche ein Röntgenbild, und wenn das Blut stärker wird, kommen Sie wieder.",
+        "Das entscheidet der Oberarzt, ich weiß es nicht.",
+        "Ja, morgen früh wird der Tumor operativ entfernt.",
+        "Ich möchte Sie wegen des Bluthustens zur Beobachtung hierbehalten. Wir nehmen Blut ab und machen Röntgen- und Schnittbilder der Lunge. Danach schauen wir mit einem Schlauch in die Atemwege und entnehmen eine Gewebeprobe. Das Ergebnis besprechen wir in Ruhe mit Ihnen."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Gefährlich: Bei Hämoptysen und Verdacht auf einen Tumor ist ein ambulantes Abwarten nicht richtig.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Zu früh: Die Diagnose ist nicht gesichert, und ohne Histologie und Staging wird nicht operiert.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich („Schlauch in die Atemwege“)."
+      ],
+      "reply": "Patient: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Hoffmann ist 64 und hustet Blut.",
+        "Herr Werner Hoffmann, ein 64-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit vier Monaten bestehendem Husten und seit drei Wochen bestehender Hämoptyse vor.",
+        "Herr Werner Hoffmann, ein 64-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit vier Monate bestehenden Husten und seit drei Wochen bestehender Hämoptyse sowie zunehmender Belastungsdyspnoe vor.",
+        "Der Patient Herr Hoffmann stellt sich heute vor wegen Husten seit vier Monaten und Blut, 64-jährig."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptome.",
+        "Grammatik: „seit vier Monaten“ (Dativ Plural) und „bestehendem Husten“ (Dativ).",
+        "Satzbau falsch: Die Altersangabe hängt am Ende, der Ort fehlt, und das Leitsymptom ist ungenau."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Der Husten ist seit Monaten schlimmer geworden, und er spuckt manchmal Blut. Er kriegt schlecht Luft beim Treppensteigen.",
+        "Seit ca. vier Monaten besteht ein zunehmender, initial trockener, aktuell produktiver Husten. Seit drei Wochen rezidivierende Hämoptysen (ca. 1 Teelöffel hellrotes Blut, 3–4-mal pro Woche). Belastungsdyspnoe ab dem zweiten Stockwerk, atemabhängiger Schmerz rechts thorakal (NRS 3/10).",
+        "Seit ca. vier Monaten besteht ein zunehmender, initial trockener, aktuell produktiver Husten. Seit drei Wochen rezidivierende Hämoptysen (ca. 1 Teelöffel hellrotes Blut, 3–4-mal pro Woche). Belastungsdyspnoe ab dem ersten Stockwerk, atemabhängiger Schmerz rechts thorakal (NRS 3/10).",
+        "Seit ca. vier Monaten besteht ein progredienter, initial trockener Husten. Seit drei Wochen einmalige Hämoptyse. Belastungsdyspnoe ab dem ersten Stockwerk, Thoraxschmerzen links (NRS 3/10)."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Inhaltlich falsch: Die Belastungsdyspnoe beginnt schon ab dem ersten Stockwerk.",
+        "Richtig: Fachsprache und alle Merkmale (Verlauf, Hämoptysen, Dyspnoe, Schmerzort, Intensität).",
+        "Inhaltlich falsch: Die Hämoptysen sind rezidivierend (3–4-mal pro Woche), und der Schmerz liegt rechts."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete der Patient über Heiserkeit seit zwei Wochen. Ein Gewichtsverlust von 8 kg in drei Monaten (82 kg auf 74 kg) und Nachtschweiß wurden bejaht. Fieber wurde verneint. Inappetenz. Stuhlgang und Miktion unauffällig.",
+        "Begleitend berichtete der Patient über Dysphonie seit zwei Wochen sowie über Fieber bis 38,5 °C und Schüttelfrost. Ein Gewichtsverlust wurde bejaht, Nachtschweiß verneint. Inappetenz, Obstipation und Dysurie wurden verneint.",
+        "Er ist heiser, schwitzt nachts und hat abgenommen.",
+        "Begleitend berichtete der Patient über Heiserkeit seit zwei Wochen. Ein Gewichtsverlust von 18 kg in drei Wochen und Nachtschweiß wurden bejaht. Fieber wurde verneint."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: vollständig, Fachsprache, Negativbefund (Fieber) dokumentiert.",
+        "Inhaltlich falsch: Der Patient hatte kein Fieber, aber Nachtschweiß, und der Gewichtsverlust beträgt 8 kg.",
+        "Umgangssprache und ohne Angaben zu Menge und Zeit.",
+        "Inhaltlich falsch: Der Gewichtsverlust betrug 8 kg in drei Monaten (82 kg auf 74 kg)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "An Vorerkrankungen sind eine COPD und eine arterielle Hypertonie bekannt. Z. n. Hernioplastik rechts vor zehn Jahren. Medikation: Tiotropium 18 µg 1-0-0, Amlodipin 5 mg 1-0-0, Salbutamol-Spray bei Bedarf. Keine Antikoagulation.",
+        "Vorerkrankungen: Lungenkrankheit, Bluthochdruck. Medikamente: Spiriva, Amlodipin, Spray bei Bedarf.",
+        "An Vorerkrankungen sind ein Asthma bronchiale und eine arterielle Hypertonie bekannt. Z. n. Hernioplastik rechts vor zehn Jahren. Medikation: Tiotropium 18 µg 1-0-0, Amlodipin 5 mg 1-0-0, Salbutamol-Spray bei Bedarf.",
+        "An Vorerkrankungen sind eine COPD und eine arterielle Hypertonie bekannt. Z. n. Hernioplastik rechts vor zehn Jahren. Medikation: Tiotropium 18 µg 1-0-1, Amlodipin 5 mg 1-0-1, Salbutamol-Spray bei Bedarf, Phenprocoumon nach INR."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach), Dosierschema im Format morgens-mittags-abends und die wichtige Angabe zur Antikoagulation.",
+        "Laiensprache und ohne Dosierung.",
+        "Inhaltlich falsch: Der Patient hat eine COPD, kein Asthma.",
+        "Falsch: Beide Medikamente nimmt er nur morgens (1-0-0), und er nimmt keine Antikoagulation."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Penicillinallergie (Anaphylaxie). Nikotinkonsum ca. 40 py. Familienanamnese: Vater Myokardinfarkt. Der Patient ist Bauarbeiter, geschieden, lebt allein.",
+        "Keine Allergien. Er raucht und trinkt gelegentlich ein Bier.",
+        "Kontaktallergie auf Pflaster (Exanthem mit Juckreiz). Nikotinkonsum ca. 40 py, regelmäßiger Alkoholkonsum (1–2 Bier abends). Familienanamnese: Vater Bronchialkarzinom mit 66 J., Bruder Myokardinfarkt mit 58 J. Der Patient ist Maurer mit früherer Asbestexposition, verheiratet, lebt mit seiner Ehefrau.",
+        "Pflasterallergie (Exanthem). Nikotinkonsum ca. 20 py, regelmäßiger Alkoholkonsum (1–2 Bier abends). Familienanamnese: Vater Bronchialkarzinom mit 66 J., Bruder Myokardinfarkt mit 58 J. Der Patient ist Maurer mit früherer Asbestexposition, verheiratet, lebt mit seiner Ehefrau."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: Die Allergie betrifft Pflaster, der Vater starb am Bronchialkarzinom, und der Patient ist verheiratet.",
+        "Laiensprache, unvollständig, und die Pflasterallergie fehlt.",
+        "Richtig: 20 Zigaretten am Tag über 40 Jahre sind 40 pack years (py = Packungsjahre); Allergie, Familie und Beruf stimmen.",
+        "Falsch gerechnet: 20 Zigaretten am Tag über 40 Jahre sind 40 py, nicht 20 py."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Anamnestisch besteht der Verdacht auf ein Bronchialkarzinom bei langjährigem Nikotinkonsum (ca. 40 py) und Asbestexposition. Differenzialdiagnostisch kommen eine Lungentuberkulose, eine poststenotische Pneumonie und Lungenmetastasen eines extrapulmonalen Tumors in Betracht.",
+        "Anamnestisch besteht der Verdacht auf eine Lungenembolie bei Z. n. Hernioplastik. Differenzialdiagnostisch kommen ein Pneumothorax, ein Myokardinfarkt und eine Aortendissektion in Betracht.",
+        "Es besteht ein gesichertes Bronchialkarzinom im Stadium IV.",
+        "Diagnose: Raucherhusten."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht statt Gewissheit, Risikofaktoren genannt, sinnvolle Differenzialdiagnosen.",
+        "Medizinisch unpassend: Vier Monate Husten mit Gewichtsverlust und Nachtschweiß sprechen nicht für diese akuten Diagnosen.",
+        "Ohne Bildgebung und Histologie ist die Diagnose nicht gesichert, und ein Stadium ist noch nicht bestimmt.",
+        "Laiensprache, verharmlosend, keine Differenzialdiagnosen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und eine Röntgenaufnahme des Thorax. Wegen der Hämoptysen ist eine therapeutische Antikoagulation mit Heparin sowie ASS 100 mg indiziert.",
+        "Wir machen ein Röntgenbild und schicken ihn mit Antibiotika nach Hause.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme, eine Röntgenaufnahme des Thorax sowie eine Koloskopie und eine Gastroskopie zur Suche nach einem Primärtumor.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (u. a. Blutbild, CRP, Nieren- und Leberwerte, Gerinnung), eine Röntgenaufnahme des Thorax sowie eine Computertomographie von Thorax und Oberbauch mit Kontrastmittel. Bei Raumforderung ist eine Bronchoskopie mit Biopsie zur histologischen Sicherung indiziert. Wegen der Hämoptysen empfehlen wir die stationäre Aufnahme."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Gefährlich: Bei Hämoptysen sind Antikoagulation und Thrombozytenaggregationshemmer kontraindiziert.",
+        "Zu umgangssprachlich, unvollständig, und ein ambulantes Vorgehen ist bei Hämoptysen nicht angemessen.",
+        "Nicht die passenden Untersuchungen: Bei Verdacht auf ein Bronchialkarzinom folgen CT und Bronchoskopie mit Biopsie.",
+        "Richtig: Diagnostik nach S3-Leitlinie (CT mit Kontrastmittel, Histologie) und stationäre Überwachung, in vollständigen Sätzen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Der Patient hat Lungenkrebs, er heißt Hoffmann.",
+        "Ich möchte Ihnen Herrn Hoffmann vorstellen, einen Maurer, der seit vierzig Jahren raucht, früher mit Asbest gearbeitet hat und dessen Vater an Lungenkrebs gestorben ist.",
+        "Herr Hoffmann hat ein Bronchialkarzinom und hustet Blut.",
+        "Ich möchte Ihnen Herrn Werner Hoffmann vorstellen, einen 64-jährigen Patienten, der sich heute mit seit vier Monaten bestehendem Husten und seit drei Wochen rezidivierender Hämoptyse vorgestellt hat."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Unstrukturiert und mit einer ungesicherten Diagnose statt dem Leitsymptom.",
+        "Kein strukturierter Einstieg: Zuerst Patient und Leitsymptom, Risikofaktoren folgen später.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Der Husten besteht seit vier Monaten, zunächst trocken, jetzt produktiv. Seit drei Wochen hustet er rezidivierend hellrotes Blut, etwa einen Teelöffel. Begleitend bestehen Heiserkeit seit zwei Wochen, Belastungsdyspnoe ab dem ersten Stockwerk, rechtsseitig atemabhängige Thoraxschmerzen, Nachtschweiß und ein Gewichtsverlust von 8 kg in drei Monaten. Fieber wurde verneint.",
+        "Er hustet und ist müde.",
+        "Der Husten besteht seit vier Monaten, zunächst trocken, jetzt produktiv. Seit drei Wochen hustet er rezidivierend hellrotes Blut, etwa einen Teelöffel. Begleitend bestehen Fieber bis 38,5 °C, Belastungsdyspnoe ab dem ersten Stockwerk und ein Gewichtsverlust von 8 kg in drei Wochen. Nachtschweiß wurde verneint.",
+        "Er hat Fieber, Durchfall und Gelbsucht."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: knapp, strukturiert, mit relevantem Negativbefund.",
+        "Keine verwertbare Information.",
+        "Inhaltlich falsch: Fieber wurde verneint, Nachtschweiß bejaht, und der Gewichtsverlust erfolgte in drei Monaten.",
+        "Inhaltlich falsch: Diese Symptome gab der Patient nicht an."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist gesund bis auf den Husten.",
+        "Bekannt sind ein Asthma bronchiale und eine arterielle Hypertonie. Der Patient raucht ca. 20 py, es besteht keine Allergie, der Vater hatte einen Herzinfarkt.",
+        "Bekannt sind eine COPD und eine arterielle Hypertonie, aktuell ohne Antikoagulation. Er raucht seit 40 Jahren 20 Zigaretten täglich (ca. 40 py) und war früher gegenüber Asbest exponiert. Der Vater starb mit 66 Jahren an einem Bronchialkarzinom. Allergie: Pflaster (Exanthem).",
+        "Er nimmt Tiotropium und Amlodipin, sonst nichts."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: Es gibt relevante Vorerkrankungen und Risikofaktoren.",
+        "Inhaltlich falsch (COPD statt Asthma, 40 py, Pflasterallergie, Vater mit Bronchialkarzinom).",
+        "Richtig: relevante Risikofaktoren, Familienanamnese, fehlende Antikoagulation und Allergie.",
+        "Unvollständig: Diagnosen, Risikofaktoren und Allergie fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich vermute ein Bronchialkarzinom bei hoher Risikokonstellation: ca. 40 py und Asbestexposition. Die Heiserkeit könnte auf eine Rekurrensparese durch Lymphknotenbefall hinweisen. Differenzialdiagnostisch denke ich an eine Lungentuberkulose, eine poststenotische Pneumonie und Lungenmetastasen.",
+        "Ich denke an eine Bronchitis.",
+        "Es handelt sich sicher um eine Lungenembolie, weil er Luftnot hat und Blut hustet. Differenzialdiagnostisch denke ich höchstens noch an eine Pneumonie und einen Pneumothorax.",
+        "Ich weiß es nicht genau."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdachtsdiagnose mit Begründung und Differenzialdiagnosen in Fachsprache.",
+        "Zu unpräzise und verharmlosend für Hämoptysen mit Gewichtsverlust.",
+        "Zu sicher („sicher“); vier Monate Verlauf mit Gewichtsverlust und Nachtschweiß passen nicht zur Embolie.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde Heparin in therapeutischer Dosis geben und eine CT-Angiographie machen, wegen Verdachts auf eine Lungenembolie.",
+        "Ich würde sofort eine Operation planen und die Histologie danach aus dem Resektat gewinnen, damit wir keine Zeit verlieren.",
+        "Ich würde Blut abnehmen, inklusive Blutbild, Entzündungs-, Nieren-, Leberwerten und Gerinnung, und ein Röntgen-Thorax sowie eine CT von Thorax und Oberbauch mit Kontrastmittel veranlassen. Danach würde ich eine Bronchoskopie mit Biopsie zur Histologie planen. Wegen der Hämoptysen würde ich ihn stationär überwachen und nach Sicherung den Fall im interdisziplinären Tumorboard vorstellen.",
+        "Ich würde ihn mit Hustensaft nach Hause schicken."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gefährlich: Bei Hämoptysen ist therapeutische Antikoagulation kontraindiziert, und der Verdacht passt nicht.",
+        "Falsch: Vor einer Therapie sind Histologie und Staging nötig (S3-Leitlinie).",
+        "Richtig: Diagnostik nach S3-Leitlinie, histologische Sicherung, Überwachung und Tumorboard.",
+        "Gefährlich: Hämoptysen mit Verdacht auf einen Tumor müssen abgeklärt werden."
+      ],
+      "reply": "Oberarzt: „Gut. Was erwarten Sie im CT?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich erwarte eine diffuse beidseitige Verschattung mit Kerley-B-Linien und Pleuraergüssen als Zeichen einer Lungenstauung bei Herzinsuffizienz, dazu ein vergrößertes Herz.",
+        "Ich erwarte eine unscharf begrenzte, teils spikulierte Raumforderung in der Lunge, gegebenenfalls mit vergrößerten mediastinalen Lymphknoten, einem Pleuraerguss und Metastasen in Leber, Nebenniere oder Knochen.",
+        "Nur eine Überblähung bei COPD, sonst nichts.",
+        "Ich erwarte gar nichts."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Nicht typisch für diesen Verdacht; das sind Zeichen der Herzinsuffizienz.",
+        "Richtig: typische CT-Zeichen eines Bronchialkarzinoms mit möglichem Staging-Befund.",
+        "Die Überblähung erklärt weder Hämoptysen noch Gewichtsverlust.",
+        "In der Prüfung erwartet man eine begründete Antwort."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Hämoptyse“?",
+      "options": [
+        "Bluterbrechen",
+        "Nasenbluten",
+        "Blut im Urin",
+        "Bluthusten"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Hämatemesis.",
+        "Das ist die Epistaxis.",
+        "Das ist die Hämaturie.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Dyspnoe“?",
+      "options": [
+        "Atemnot",
+        "Husten",
+        "Herzklopfen",
+        "Atemstillstand"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Tussis.",
+        "Das sind Palpitationen.",
+        "Das ist die Apnoe."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Sputum“?",
+      "options": [
+        "Speichel",
+        "Auswurf",
+        "Schweiß",
+        "Nasensekret"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist Saliva.",
+        "Richtig.",
+        "Das ist Sudor; verstärktes Schwitzen heißt Hyperhidrose.",
+        "Das ist Rhinorrhö."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Bronchoskopie“?",
+      "options": [
+        "Magenspiegelung",
+        "Darmspiegelung",
+        "Spiegelung der Atemwege",
+        "Lungenfunktionstest"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Gastroskopie.",
+        "Das ist die Koloskopie.",
+        "Richtig.",
+        "Das ist die Spirometrie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Pleuraerguss“?",
+      "options": [
+        "Flüssigkeit im Spalt zwischen Lungen- und Rippenfell",
+        "Luft im Spalt zwischen Lungen- und Rippenfell",
+        "Wasser in der Lunge",
+        "Flüssigkeit im Herzbeutel"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist der Pneumothorax.",
+        "Das ist das Lungenödem.",
+        "Das ist der Perikarderguss."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

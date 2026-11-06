@@ -1,0 +1,691 @@
+{
+  "id": "vorhofflimmern",
+  "area": "Kardiologie",
+  "title": "Herzrasen und unregelmäßiger Herzschlag",
+  "diagnosis": "Tachykardes Vorhofflimmern",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Klaus Brandt, 67 Jahre, stellt sich am Vormittag in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Brandt sitzt auf der Liege und tastet mit der Hand an seinem Handgelenk den Puls.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Morgen, Herr Brandt. Bitte setzen Sie sich gerade hin, ich schließe sofort ein EKG an und messe Ihren Blutdruck, dann reden wir.",
+        "Hallo, Herr Brandt, was ist denn bei Ihnen los?",
+        "Guten Morgen, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Brandt?",
+        "Guten Morgen. Bevor wir beginnen: Haben Sie Ihre Versichertenkarte, Ihren Personalausweis und Ihre Einweisung dabei? Die brauche ich zuerst für die Anmeldung."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Die körperliche Untersuchung und das EKG kommen nach der Anamnese. Erst begrüßen und sich vorstellen.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor."
+      ],
+      "reply": "Patient: „Ja, Brandt. Guten Morgen, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Ausweis, und welche Telefonnummer hat Ihre Frau für Notfälle?",
+        "Wie hoch ist Ihr Body-Mass-Index?",
+        "Sie sind doch bestimmt schon über sechzig, oder?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Geburtsdatum und Telefonnummern sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Ich bin 67, 1,78 Meter groß und wiege 91 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Herzrasen?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Welche kardiale Symptomatik führt Sie zu uns, und seit wann besteht sie?",
+        "Warum kommen Sie erst jetzt in die Notaufnahme und nicht schon gestern zum Hausarzt?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen.",
+        "„Kardiale Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
+      ],
+      "reply": "Patient: „Seit gestern Abend rast mein Herz, und es schlägt ganz unregelmäßig. Das macht mir Angst.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten wissen, wo der Patient das Herzrasen spürt und in welcher Situation. Was sagen Sie?",
+      "options": [
+        "Spüren Sie eine Tachykardie in Ruhe oder unter Belastung, und ist sie eher thorakal oder zervikal lokalisiert?",
+        "Das Herzrasen kommt bestimmt immer bei Aufregung, richtig?",
+        "Wo genau ist das?",
+        "Wo spüren Sie das Herzrasen, und kommt es in Ruhe oder bei Anstrengung?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Voller Fachwörter („Tachykardie“, „thorakal“, „zervikal“); der Patient versteht sie nicht.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
+        "Richtig: laienverständlich, nach Ort und Situation gefragt, ohne die Antwort vorzugeben."
+      ],
+      "reply": "Patient: „In der Brust und bis in den Hals, auch jetzt in Ruhe. Es fing gestern nach einer Geburtstagsfeier an, als ich auf dem Sofa saß.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Wie war der zeitliche Verlauf seit der Erstmanifestation: paroxysmal, persistierend oder permanent?",
+        "Seit wann haben Sie das Herzrasen?",
+        "Wann genau hat es angefangen, und ist es seitdem durchgehend da, oder kommt und geht es? Hatten Sie so etwas schon einmal?",
+        "Hat es plötzlich angefangen?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache: „Erstmanifestation“, „paroxysmal“ und „persistierend“ versteht der Patient nicht.",
+        "Das hat der Patient schon gesagt (seit gestern Abend). Fragen Sie nach dem Verlauf.",
+        "Richtig: Beginn, Verlauf und frühere Episoden in einer klaren, laienverständlichen Frage.",
+        "Geschlossene Frage; sie erfasst den Verlauf nicht."
+      ],
+      "reply": "Patient: „Gestern gegen 22 Uhr, ganz plötzlich, seitdem ist es durchgehend da. Vor drei Monaten hatte ich es schon einmal etwa 20 Minuten lang, da ging es von allein weg.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Rhythmus, Frequenz und Belastbarkeit. Welche Formulierung passt?",
+      "options": [
+        "Ist Ihr Puls arrhythmisch und tachykard, und wie ausgeprägt ist die Belastungsdyspnoe nach NYHA?",
+        "Schlägt Ihr Herz gleichmäßig oder unregelmäßig? Wie schnell, wenn Sie den Puls gemessen haben? Wie viele Stockwerke schaffen Sie ohne Luftnot?",
+        "Wie stark ist das Herzrasen von 1 bis 100?",
+        "Ist es schlimm?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache („arrhythmisch“, „NYHA“); der Patient versteht sie nicht.",
+        "Richtig: Rhythmus, Frequenz und Belastbarkeit in Laiensprache, mit einem konkreten Beispiel.",
+        "Unübliche Skala, und sie erfasst weder Rhythmus noch Belastbarkeit.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe."
+      ],
+      "reply": "Patient: „Es schlägt ganz unregelmäßig, wie Stolpern. Mein Pulsmesser zeigt etwa 130. Ein Stockwerk Treppe schaffe ich gerade noch, dann bekomme ich keine Luft mehr.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Hatten Sie Dyspnoe, Synkopen, Thoraxschmerzen oder eine Präkordialgie, und ist Ihnen Schwindel oder eine Diaphorese aufgefallen?",
+        "Sie hatten sicher auch Brustschmerzen, oder?",
+        "Haben Sie sonst noch was?",
+        "Ist Ihnen schwindelig, hatten Sie Schmerzen in der Brust, oder sind Sie ohnmächtig geworden? Haben Sie Luftnot?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Luftnot“, „Brustschmerzen“, „ohnmächtig“.",
+        "Suggestiv: Sie unterstellen das Symptom.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Richtig: konkrete Begleitsymptome (Schwindel, Brustschmerz, Synkope, Dyspnoe) in Laiensprache."
+      ],
+      "reply": "Patient: „Leicht schwindelig ist mir, und ich bin schnell außer Atem. Schmerzen in der Brust habe ich nicht, ohnmächtig war ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Hatten Sie Fieber? Wie sind Appetit, Gewicht, Stuhlgang und Schlaf? Schwitzen Sie auffällig?",
+        "Haben Sie Schüttelfrost, Nachtschweiß, Gewichtsverlust, Dysurie, Obstipation, Diarrhö, Polyurie und eine Insomnie?",
+        "Wie ist die Vegetativa?",
+        "Ist sonst alles normal bei Ihnen?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fieber, Appetit, Gewicht, Stuhlgang und Schlaf in Laiensprache, mit Blick auf vermehrtes Schwitzen (Hyperthyreose).",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Obstipation, Polyurie, Insomnie).",
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Zu allgemein; der Patient sagt einfach „ja“."
+      ],
+      "reply": "Patient: „Kein Fieber. Der Appetit ist gut, das Gewicht ist gleich geblieben, der Stuhlgang normal. Geschlafen habe ich heute Nacht gar nicht. Schwitzen tue ich nicht auffällig.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, eine KHK oder eine Herzinsuffizienz, und gab es Voroperationen?",
+        "Sind Sie gesund?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel am Herzen, Bluthochdruck, Zucker oder an der Schilddrüse? Und wurden Sie schon einmal operiert?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „KHK“). Mit Patienten sprechen Sie Laiensprache.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Richtig: mit Beispielen (auch Schilddrüse), laienverständlich, und die Operationen sind mitgefragt.",
+        "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patient: „Bluthochdruck seit zehn Jahren und erhöhte Cholesterinwerte. Zucker oder Schilddrüse nicht. Operiert wurde ich nur an einem Leistenbruch rechts vor zehn Jahren.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Welche Pharmaka nehmen Sie regelmäßig ein, und wie applizieren Sie diese? Auch Mittel ohne Rezept oder pflanzliche Präparate?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept?",
+        "Nehmen Sie Tabletten?",
+        "Sie nehmen doch sicher einen Betablocker?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache („Pharmaka“, „applizieren“, „Präparate“).",
+        "Richtig: Name, Dosierung und auch frei verkäufliche Mittel.",
+        "Zu ungenau: Dosis und andere Darreichungsformen fehlen.",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Ramipril 5 mg morgens und Simvastatin 20 mg abends. Sonst nichts, auch nichts ohne Rezept.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht gleich ein Antibiotikum geben möchten.",
+        "Allergie?",
+        "Sind Sie hypersensibel?",
+        "Haben Sie Allergien, zum Beispiel gegen Medikamente oder Pflaster? Wie äußert sich das?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu eng: Allergien gegen andere Medikamente, Pflaster oder Kontrastmittel übersehen Sie.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl.",
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion."
+      ],
+      "reply": "Patient: „Gegen Cotrimoxazol, ein Antibiotikum. Da bekam ich einen Ausschlag am ganzen Körper.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
+        "Sind Sie Raucher oder trinken Sie regelmäßig zu viel Alkohol? Das müssen wir für die Aufnahme genau wissen, es ist wichtig.",
+        "Wie ist Ihr Nikotin- und Alkoholabusus?",
+        "Trinken Sie zu viel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: neutral, konkret, mit Menge.",
+        "Wertend („zu viel“) und mit Druck formuliert; das stört das Vertrauen.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Wertend und ungenau."
+      ],
+      "reply": "Patient: „Ich rauche seit 30 Jahren 20 Zigaretten am Tag. Abends ein bis zwei Bier, gestern auf der Feier waren es vier. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel am Herzen, Schlaganfälle oder Herzrhythmusstörungen?",
+        "Wie ist die Familienanamnese?",
+        "Hat Ihre Familie dieselbe Krankheit?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu eng: Geschwister fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Richtig: offen, mit passenden Beispielen.",
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
+      ],
+      "reply": "Patient: „Mein Vater hatte mit 72 einen Schlaganfall. Meine Mutter hat Bluthochdruck. Mein Bruder ist gesund.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Was ist Ihr sozialer Status?",
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
+        "Haben Sie Geld?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Unklar und unangenehm formuliert.",
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Fahrtauglichkeit, Entlassung und Versorgung.",
+        "Unangemessen."
+      ],
+      "reply": "Patient: „Ich bin Busfahrer und wohne mit meiner Frau in einer Wohnung im zweiten Stock. Wir haben zwei erwachsene Kinder.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Ich vermute eine Herzrhythmusstörung: Die Vorhöfe schlagen unregelmäßig und zu schnell. Das prüfen wir mit einem EKG.",
+        "Sie haben eine tachykarde absolute Arrhythmie bei Vorhofflimmern und ein erhöhtes Risiko für eine Thromboembolie und einen Apoplex.",
+        "Das ist wahrscheinlich nur Stress und der Alkohol von gestern, das geht von allein wieder weg.",
+        "Sie haben sicher einen Herzinfarkt, wir müssen Sie sofort ins Herzkatheterlabor bringen."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, nächster Schritt genannt.",
+        "Fachsprache; der Patient versteht die Diagnose nicht, und die Aufklärung über Risiken ist so nicht verständlich.",
+        "Verharmlosend und medizinisch falsch; eine Rhythmusstörung muss abgeklärt werden.",
+        "Falsch und beängstigend: Es gibt keine Brustschmerzen, und die Diagnose ist noch nicht gesichert."
+      ],
+      "reply": "Patient: „Rhythmusstörung? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Kann ich heute wieder nach Hause?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, Sie können gleich wieder nach Hause, nehmen Sie einfach eine Beruhigungstablette und schlafen Sie sich aus.",
+        "Das entscheidet der Chef, ich weiß es nicht.",
+        "Nein, Sie bleiben auf jeden Fall eine Woche hier, und wir geben Ihnen sofort einen Elektroschock.",
+        "Zuerst schreiben wir ein EKG, nehmen Blut ab und machen einen Ultraschall vom Herzen. Sie bekommen einen Monitor und Medikamente, die den Herzschlag bremsen. Wahrscheinlich brauchen Sie auch ein Medikament zur Blutverdünnung, um einem Schlaganfall vorzubeugen. Ob Sie stationär bleiben, besprechen wir danach mit dem Oberarzt."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Gefährlich: Die Rhythmusstörung ist noch nicht abgeklärt, und ein Schlaganfallrisiko besteht.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Übertrieben und beängstigend; die Dauer und die Therapie stehen noch nicht fest.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich („Blutverdünnung“)."
+      ],
+      "reply": "Patient: „Gut, danke, dass Sie mir das so erklärt haben.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Brandt ist 67 und hat Herzrasen.",
+        "Herr Klaus Brandt, ein 67-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit gestern Abend bestehenden Palpitationen vor.",
+        "Herr Klaus Brandt (67 J.) stellte sich heute in unserer Notaufnahme mit seit gestern Abend bestehende Palpitationen und einer unregelmäßigen Herzaktion vor.",
+        "Der Patient Herr Brandt stellt sich heute vor wegen Herzrasen seit gestern, 67-jährig."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptom.",
+        "Grammatik: Nach „mit“ steht der Dativ Plural: „mit … bestehenden Palpitationen“, nicht „bestehende“.",
+        "Satzbau falsch: die Altersangabe hängt am Ende, und der Ort fehlt."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Das Herz hat gestern Abend plötzlich angefangen zu rasen und schlägt seitdem unregelmäßig.",
+        "Die Beschwerden sind gestern gegen 22 Uhr paroxysmal aufgetreten, seitdem regredient, mit regelmäßigem Puls um 130/min und ohne Belastungsdyspnoe. Eine ähnliche Episode war bisher nie aufgetreten.",
+        "Die Beschwerden begannen gestern gegen 22 Uhr plötzlich in Ruhe nach einer Feier mit erhöhtem Alkoholkonsum. Seitdem besteht ein anhaltender, unregelmäßiger Herzschlag (selbstgemessen ca. 130/min) mit Belastungsdyspnoe bei einem Stockwerk. Eine ähnliche Episode trat vor drei Monaten auf (Dauer ca. 20 min).",
+        "Die Beschwerden begannen gestern gegen 22 Uhr plötzlich in Ruhe nach einer Feier mit erhöhtem Alkoholkonsum. Seitdem besteht ein anhaltender, unregelmäßiger Herzschlag mit Belastungsdyspnoe, selbstgemessen ca. 130/min. Eine ähnliche Episode trat vor drei Wochen auf und dauerte zwei Stunden."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Inhaltlich falsch: Der Herzschlag ist unregelmäßig und anhaltend, es besteht Belastungsdyspnoe, und es gab eine frühere Episode.",
+        "Richtig: Fachsprache und alle Merkmale (Beginn, Auslöser, Verlauf, Rhythmus, Frequenz, Dyspnoe, frühere Episode).",
+        "Inhaltlich falsch: Die frühere Episode war vor drei Monaten und dauerte etwa 20 Minuten."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete der Patient über leichten Schwindel und Belastungsdyspnoe. Synkopen und Thoraxschmerzen wurden verneint. Fieber, Gewichtsverlust und vermehrtes Schwitzen wurden verneint. Schlaflosigkeit in der letzten Nacht.",
+        "Er hat Schwindel und ist schnell aus der Puste.",
+        "Begleitend berichtete der Patient über eine Synkope und retrosternale Thoraxschmerzen mit Ausstrahlung in den linken Arm. Fieber, Gewichtsverlust und vermehrtes Schwitzen wurden verneint. Der Appetit ist gut.",
+        "Begleitend berichtete der Patient über Schwindel und Belastungsdyspnoe. Thoraxschmerzen wurden verneint. Es bestanden außerdem Fieber bis 38,0 °C und eine Gewichtsabnahme von 5 kg in den letzten Monaten."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Umgangssprache („aus der Puste“) und unvollständig.",
+        "Inhaltlich falsch: Der Patient war nicht ohnmächtig und hatte keine Brustschmerzen.",
+        "Inhaltlich falsch: Fieber und Gewichtsverlust wurden verneint."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Bluthochdruck, Cholesterin. Medikamente: Ramipril, Simvastatin.",
+        "An Vorerkrankungen sind eine arterielle Hypotonie und ein Diabetes mellitus Typ 2 bekannt. Z. n. Leistenhernien-Operation links vor zehn Jahren. Medikation: Ramipril 5 mg 1-0-0, Simvastatin 20 mg 0-0-1.",
+        "An Vorerkrankungen sind eine arterielle Hypertonie und eine Hypercholesterinämie bekannt. Z. n. Leistenhernien-Operation rechts vor zehn Jahren. Medikation: Ramipril 5 mg 0-0-1, Simvastatin 20 mg 1-0-0.",
+        "An Vorerkrankungen sind eine arterielle Hypertonie und eine Hypercholesterinämie bekannt. Z. n. Leistenhernien-Operation rechts vor zehn Jahren. Medikation: Ramipril 5 mg 1-0-0, Simvastatin 20 mg 0-0-1."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Inhaltlich falsch: Hypertonie (nicht Hypotonie), kein Diabetes, und die Operation war rechts.",
+        "Dosierschema falsch: Ramipril morgens (1-0-0), Simvastatin abends (0-0-1).",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierschema im Format morgens-mittags-abends."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: keine. Noxen: Nikotin, Alkohol.",
+        "Allergie gegen Cotrimoxazol (Exanthem). Nikotinkonsum ca. 30 py, Alkoholkonsum abends 1–2 Bier, Drogenkonsum wurde verneint. Familienanamnese: Vater Apoplex mit 72 J., Mutter arterielle Hypertonie. Der Patient ist Busfahrer, verheiratet und lebt mit seiner Ehefrau.",
+        "Cotrimoxazol-Allergie (Anaphylaxie). Nikotinkonsum ca. 15 py, Alkoholkonsum abends 1–2 Bier. Familienanamnese: Vater Apoplex mit 72 J., Mutter arterielle Hypertonie. Der Patient ist Busfahrer, verheiratet und lebt mit seiner Ehefrau.",
+        "Er verträgt ein Antibiotikum nicht, raucht und trinkt Bier."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: die Cotrimoxazol-Allergie fehlt, und es fehlen Menge und Familienanamnese.",
+        "Richtig: 20 Zigaretten am Tag über 30 Jahre sind 30 py (pack years = Packungsjahre).",
+        "Falsch: Die Reaktion war ein Exanthem, und 20 Zigaretten über 30 Jahre sind 30 py.",
+        "Laiensprache und unvollständig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Diagnose: Herzrasen bei Rhythmusstörung.",
+        "Es besteht ein gesichertes Vorhofflimmern.",
+        "Anamnestisch besteht der Verdacht auf ein tachykardes Vorhofflimmern bei arterieller Hypertonie. Differenzialdiagnostisch kommen ein Vorhofflattern, eine supraventrikuläre Tachykardie und eine Hyperthyreose in Betracht.",
+        "Anamnestisch besteht der Verdacht auf ein Kammerflimmern bei Z. n. Myokardinfarkt. Differenzialdiagnostisch kommen ein Vorhofflattern, eine Lungenembolie und eine Hyperthyreose in Betracht."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Ohne EKG ist die Diagnose noch nicht gesichert.",
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen.",
+        "Medizinisch unmöglich: Bei Kammerflimmern wäre der Patient bewusstlos, und ein Myokardinfarkt ist nicht bekannt."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Zur weiteren Abklärung empfehlen wir ein 12-Kanal-EKG, ein kontinuierliches Monitoring, eine Blutentnahme (u. a. Blutbild, Elektrolyte, Kreatinin, TSH, Troponin) sowie eine transthorakale Echokardiographie. Therapeutisch Frequenzkontrolle mit einem Betablocker und eine orale Antikoagulation nach Risikoscore.",
+        "Wir machen ein EKG und Blut.",
+        "Zur weiteren Abklärung empfehlen wir ein 12-Kanal-EKG und eine Echokardiographie. Bei Vorhofflimmern ist eine sofortige elektrische Kardioversion ohne vorherige Antikoagulation indiziert, danach ASS 100 mg zur Schlaganfallprophylaxe.",
+        "Zur weiteren Abklärung empfehlen wir ein 12-Kanal-EKG, eine Blutentnahme sowie ein Röntgen-Thorax. Therapeutisch Frequenzkontrolle mit Verapamil und Metoprolol i. v. gleichzeitig."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Diagnostik und Therapie in vollständigen Sätzen, Antikoagulation nach Risikoscore.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Gefährlich: Kardioversion ohne Antikoagulation birgt ein Schlaganfallrisiko, und ASS ersetzt keine orale Antikoagulation.",
+        "Gefährlich: Verapamil und ein Betablocker zusammen können einen AV-Block oder eine Bradykardie auslösen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Der Patient hat Herzrasen, er heißt Brandt.",
+        "Also, der Mann hat gestern ordentlich gefeiert und viel Bier getrunken, und jetzt hat er Herzrasen und so ein komisches Gefühl in der Brust, und er macht sich ziemlich Sorgen.",
+        "Herr Brandt hat Vorhofflimmern.",
+        "Ich möchte Ihnen Herrn Klaus Brandt vorstellen, einen 67-jährigen Patienten, der sich heute mit seit gestern Abend bestehendem, unregelmäßigem Herzrasen vorgestellt hat."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Umgangssprachlich und wertend; kein strukturierter Einstieg.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Das Herzrasen begann gestern gegen 22 Uhr plötzlich in Ruhe, der Herzschlag ist unregelmäßig mit selbstgemessen ca. 130/min. Begleitend bestehen leichter Schwindel und Belastungsdyspnoe bei einem Stockwerk. Synkope und Thoraxschmerzen wurden verneint.",
+        "Das Herzrasen begann gestern gegen 22 Uhr schleichend bei Belastung, der Herzschlag ist regelmäßig mit ca. 130/min. Begleitend bestehen Schwindel und Belastungsdyspnoe. Synkope und Thoraxschmerzen wurden verneint.",
+        "Er hat alles Mögliche.",
+        "Er hatte Synkopen und starke Thoraxschmerzen mit Ausstrahlung in den linken Arm, außerdem Fieber und Husten mit Auswurf."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
+        "Inhaltlich falsch: Der Beginn war plötzlich in Ruhe, und der Herzschlag ist unregelmäßig.",
+        "Keine Information.",
+        "Inhaltlich falsch: Synkope, Thoraxschmerzen und Fieber wurden verneint."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Er ist gesund.",
+        "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 2. Es gab keine ähnliche Episode. Keine Allergien. Der Vater hatte einen Herzinfarkt.",
+        "Bekannt sind eine arterielle Hypertonie und eine Hypercholesterinämie. Vor drei Monaten trat bereits eine ähnliche Episode von etwa 20 Minuten auf. Allergie gegen Cotrimoxazol mit Exanthem. Er raucht ca. 30 py, trinkt abends 1–2 Bier und ist Busfahrer. Der Vater hatte mit 72 Jahren einen Apoplex.",
+        "Er nimmt Ramipril und Simvastatin, sonst nichts."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsch: es gibt relevante Vorerkrankungen.",
+        "Inhaltlich falsch (kein Diabetes, frühere Episode, Cotrimoxazol-Allergie, Vater mit Apoplex).",
+        "Richtig: relevante Vorgeschichte, frühere Episode, Allergie, Risikofaktoren und Beruf.",
+        "Unvollständig: Diagnosen, Allergie und Risikofaktoren fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an Herzrasen.",
+        "Ich vermute ein tachykardes Vorhofflimmern, möglicherweise getriggert durch den Alkoholkonsum bei arterieller Hypertonie. Differenzialdiagnostisch denke ich an ein Vorhofflattern, eine supraventrikuläre Tachykardie und eine Hyperthyreose.",
+        "Es handelt sich sicher um eine Sinustachykardie, weil der Patient aufgeregt ist. Differenzialdiagnostisch denke ich höchstens noch an eine Angststörung.",
+        "Ich weiß es nicht genau."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "Richtig: Verdachtsdiagnose mit Auslöser und Differenzialdiagnosen in Fachsprache.",
+        "Zu sicher („sicher“), und eine Sinustachykardie ist bei unregelmäßigem Puls nicht wahrscheinlich.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde ihn nach Hause schicken.",
+        "Ich würde sofort elektrisch kardiovertieren, ohne Antikoagulation, und danach nur ASS 100 mg geben, damit er schnell wieder nach Hause kann.",
+        "Ich würde Verapamil und einen Betablocker gleichzeitig intravenös geben, damit die Frequenz schnell sinkt.",
+        "Ich würde ein 12-Kanal-EKG schreiben, ihn am Monitor überwachen und Blut abnehmen, inklusive TSH, Elektrolyten, Kreatinin und Troponin, sowie eine Echokardiographie veranlassen. Zur Frequenzkontrolle Metoprolol oder Bisoprolol, und die Antikoagulation nach dem CHA2DS2-VASc-Score, z. B. mit Apixaban 5 mg 1-0-1. Die Rhythmuskontrolle besprechen wir mit der Kardiologie."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Gefährlich: Die Rhythmusstörung muss abgeklärt und das Schlaganfallrisiko behandelt werden.",
+        "Gefährlich: Kardioversion ohne Antikoagulation birgt ein Schlaganfallrisiko, und ASS ersetzt keine orale Antikoagulation.",
+        "Gefährlich: Verapamil plus Betablocker kann einen AV-Block oder eine Bradykardie auslösen.",
+        "Richtig: Diagnostik, Frequenzkontrolle, Antikoagulation mit realistischer Dosis und Rhythmuskontrolle mit Kardiologie."
+      ],
+      "reply": "Oberarzt: „Gut. Und wie hoch ist sein Schlaganfallrisiko?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Das Risiko ist gering, der CHA2DS2-VASc-Score beträgt 0, deshalb braucht er keine Antikoagulation.",
+        "Der CHA2DS2-VASc-Score beträgt 2 (Alter 65 bis 74 Jahre und arterielle Hypertonie). Damit ist bei einem Mann eine orale Antikoagulation empfohlen.",
+        "Der CHA2DS2-VASc-Score beträgt 6 wegen Alkoholkonsum, Rauchen und Hypercholesterinämie, deshalb ist eine duale Plättchenhemmung nötig.",
+        "Ich erwarte gar nichts."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: Alter 65 bis 74 Jahre und Hypertonie ergeben 2 Punkte.",
+        "Richtig: Alter (1 Punkt) und Hypertonie (1 Punkt); ab 2 Punkten bei Männern ist eine orale Antikoagulation empfohlen.",
+        "Falsch: Alkohol, Rauchen und Cholesterin zählen im Score nicht, und eine Plättchenhemmung ersetzt keine Antikoagulation.",
+        "In der Prüfung erwartet man eine begründete Antwort."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Palpitationen“?",
+      "options": [
+        "Ohrensausen",
+        "Herzklopfen",
+        "Wassereinlagerungen",
+        "Schwindel"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist Tinnitus.",
+        "Richtig.",
+        "Das sind Ödeme.",
+        "Das ist Vertigo."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Synkope“?",
+      "options": [
+        "kurzer Krampfanfall",
+        "Schwindel",
+        "Ohnmacht",
+        "Herzstillstand"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist ein epileptischer Anfall.",
+        "Das ist Vertigo.",
+        "Richtig.",
+        "Das ist die Asystolie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Dyspnoe“?",
+      "options": [
+        "Luftnot",
+        "Husten",
+        "Auswurf",
+        "Blaufärbung der Haut"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist Tussis.",
+        "Das ist Sputum.",
+        "Das ist Zyanose."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Antikoagulation“?",
+      "options": [
+        "Blutstillung",
+        "Blutverdünnung (Hemmung der Blutgerinnung)",
+        "Blutdrucksenkung",
+        "Blutwäsche"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Hämostase.",
+        "Richtig.",
+        "Das ist eine antihypertensive Therapie.",
+        "Das ist die Dialyse."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Arrhythmie“?",
+      "options": [
+        "zu langsamer Herzschlag",
+        "zu schneller Herzschlag",
+        "Herzrhythmusstörung",
+        "Herzmuskelentzündung"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Bradykardie.",
+        "Das ist die Tachykardie.",
+        "Richtig.",
+        "Das ist die Myokarditis."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

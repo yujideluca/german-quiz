@@ -1,0 +1,691 @@
+{
+  "id": "pavk",
+  "area": "Angiologie",
+  "title": "Wadenschmerzen beim Gehen",
+  "diagnosis": "Periphere arterielle Verschlusskrankheit (pAVK), Stadium Fontaine IIb",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Werner Hoffmann, 64 Jahre, stellt sich am Vormittag in der Ambulanz vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Hoffmann sitzt auf der Liege und reibt sich die rechte Wade.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Tag, Herr Hoffmann. Bevor ich Sie untersuche, brauche ich Ihre Versichertenkarte und Ihren Überweisungsschein für die Anmeldung.",
+        "Guten Tag, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Hoffmann?",
+        "Hallo, setzen Sie sich, was haben Sie denn?",
+        "Guten Tag. Bitte ziehen Sie die Hose aus, ich schaue mir sofort Ihr Bein an."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
+        "Die körperliche Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen."
+      ],
+      "reply": "Patient: „Ja, Hoffmann. Guten Tag, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie ist Ihr Body-Mass-Index?",
+        "Sie sind doch bestimmt schon über sechzig, oder?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihre genaue Adresse, und wer ist Ihr Hausarzt?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Adresse und Hausarzt sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
+      ],
+      "reply": "Patient: „Ich bin 64, 1,78 Meter groß und wiege etwa 85 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Haben Sie Schmerzen im Bein?",
+        "Welche Symptomatik besteht bei Ihnen aktuell, und seit wann liegt sie vor?",
+        "Warum kommen Sie damit erst jetzt zu uns und nicht schon früher zu Ihrem Hausarzt?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen.",
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "„Symptomatik“ und „liegt vor“ sind Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
+      ],
+      "reply": "Patient: „Ich habe seit einiger Zeit Schmerzen in der rechten Wade, wenn ich laufe. Es wird immer schlimmer.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten wissen, wo genau und in welchen Situationen die Schmerzen auftreten. Was sagen Sie?",
+      "options": [
+        "Handelt es sich um eine typische Claudicatio, bei der die Schmerzsymptomatik an der unteren Extremität nur unter Belastung auftritt?",
+        "Die Schmerzen kommen sicher vom Rücken, richtig?",
+        "Tut Ihnen das Bein weh?",
+        "Wo genau tut es weh, und wann merken Sie es: beim Gehen, beim Treppensteigen, im Sitzen oder nachts? Ist nur ein Bein betroffen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Claudicatio“, „Symptomatik“ und „Extremität“ sind Fachwörter; der Patient versteht sie nicht.",
+        "Suggestivfrage und vorschnelle Annahme. Der Patient könnte nur zustimmen.",
+        "Das hat der Patient schon gesagt. Fragen Sie nach Ort und Auslösern.",
+        "Richtig: laienverständlich, mit Beispielen für Auslöser, ohne die Antwort vorzugeben."
+      ],
+      "reply": "Patient: „Nur in der rechten Wade, links ganz selten ein bisschen. Es kommt beim Gehen, vor allem bergauf. Im Sitzen und nachts ist nichts.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Hat es plötzlich angefangen?",
+        "Seit wann haben Sie das, und wie hat es sich entwickelt? Wie weit können Sie gehen, bevor es anfängt, und hat sich das verändert?",
+        "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch progredient, und wie ist die Gehstrecke?",
+        "Sie sagten, es wird immer schlimmer. Wollen Sie damit sagen, dass Sie bald gar nicht mehr laufen können?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Geschlossene Frage; sie erfasst den Verlauf und die Gehstrecke nicht.",
+        "Richtig: Beginn, Verlauf und Gehstrecke in einer klaren, laienverständlichen Frage.",
+        "Fachsprache: „Erstmanifestation“, „subakut“ und „progredient“ versteht der Patient nicht.",
+        "Das macht dem Patienten unnötig Angst und fragt nicht nach Beginn und Gehstrecke."
+      ],
+      "reply": "Patient: „Vor etwa sechs Monaten fing es an. Früher konnte ich 500 Meter laufen, jetzt muss ich nach ungefähr 150 Metern stehen bleiben.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "options": [
+        "Wie stark ist der Schmerz auf einer Skala von 1 bis 100, und ist er eher pulsierend, lanzinierend oder dysästhetisch? Tritt er bei Belastung oder auch in Ruhe auf, und besteht eine Claudicatio?",
+        "Ist das ein typischer Claudicatio-Schmerz?",
+        "Wie fühlt sich der Schmerz an, eher krampfartig, stechend oder brennend? Wie stark ist er beim Gehen auf einer Skala von 0 bis 10? Was passiert, wenn Sie stehen bleiben?",
+        "Ist es ein sehr schlimmer Schmerz?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unübliche Skala (in Deutschland 0 bis 10, NRS) und „lanzinierend“ ist Fachsprache.",
+        "Fachsprache und Suggestivfrage. Der Patient kann damit nichts anfangen.",
+        "Richtig: Beispiele für die Schmerzqualität, die übliche Skala 0 bis 10 und die Frage nach der Pause.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe."
+      ],
+      "reply": "Patient: „Es ist ein ziehender Krampf, beim Gehen etwa 6 von 10. Wenn ich zwei, drei Minuten stehe, ist es weg.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen am Bein?",
+      "options": [
+        "Haben Sie Parästhesien, Ulzera, Zyanose oder ein Kältegefühl der Akren, und bestehen Ruheschmerzen mit nächtlichem Herunterhängen des Beins?",
+        "Ist Ihnen sonst noch etwas aufgefallen?",
+        "Sie haben bestimmt auch offene Stellen an den Füßen, nicht wahr?",
+        "Ist Ihnen am Bein oder Fuß noch etwas aufgefallen, zum Beispiel Kälte, Blässe, Kribbeln, Taubheit oder Wunden, die nicht heilen? Haben Sie Schmerzen im Liegen oder nachts?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Kribbeln“, „Wunden“, „blaue Verfärbung“.",
+        "Zu unkonkret; der Patient sagt einfach „nein“.",
+        "Suggestivfrage: Sie unterstellen das Symptom.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive Ruheschmerz und Wunden."
+      ],
+      "reply": "Patient: „Der rechte Fuß ist oft kalt, und die Haut ist blass. Kribbeln oder Wunden habe ich nicht. Im Liegen oder nachts habe ich keine Schmerzen.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Haben Sie Fieber gehabt? Wie sind Appetit, Gewicht, Stuhlgang und Wasserlassen, und wie schlafen Sie?",
+        "Wie ist die Vegetativa?",
+        "Haben Sie Schüttelfrost, Nachtschweiß, eine B-Symptomatik, Dysurie, Obstipation oder Diarrhö?",
+        "Ist sonst alles in Ordnung bei Ihnen, oder gibt es noch etwas, das Sie mir sagen möchten, bevor wir weitermachen?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fieber, Appetit, Gewicht, Stuhlgang, Wasserlassen und Schlaf in Laiensprache.",
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (B-Symptomatik, Dysurie, Obstipation, Diarrhö).",
+        "Zu allgemein; der Patient sagt einfach „ja“."
+      ],
+      "reply": "Patient: „Kein Fieber. Appetit gut, das Gewicht ist gleich geblieben. Stuhlgang und Wasserlassen normal, schlafen kann ich gut.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie eine arterielle Hypertonie, einen Diabetes mellitus oder eine Hyperlipidämie, und gab es Voroperationen oder stationäre Aufenthalte, und waren Sie schon einmal im Krankenhaus?",
+        "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck oder Zucker? Hatten Sie schon einmal einen Herzinfarkt oder Schlaganfall? Wurden Sie operiert?",
+        "Sind Sie gesund?",
+        "Sie haben bestimmt Zucker, oder?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Vollständig, aber in Fachsprache („Hypertonie“, „Hyperlipidämie“). Mit Patienten sprechen Sie Laiensprache.",
+        "Richtig: mit Beispielen, laienverständlich, mit Herzinfarkt und Schlaganfall und der Frage nach Operationen.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Bluthochdruck, und Zucker Typ 2 seit acht Jahren. Die Cholesterinwerte sind auch zu hoch. Einen Herzinfarkt oder Schlaganfall hatte ich nicht. Operiert wurde ich vor zehn Jahren an einem Leistenbruch rechts.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Tabletten?",
+        "Welche Pharmaka applizieren Sie täglich, in welcher Dosierung und Applikationsform, und welche Substanzklassen sind darunter, zum Beispiel Antihypertensiva oder Antidiabetika?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept, zum Beispiel gegen Schmerzen?",
+        "Sie nehmen doch sicher Aspirin, wie jeder in Ihrem Alter?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu ungenau: Name und Dosis fehlen.",
+        "Fachsprache („Pharmaka“, „applizieren“, „Applikationsform“).",
+        "Richtig: Name, Dosierung und auch frei verkäufliche Mittel.",
+        "Suggestivfrage und falsche Annahme. Fragen Sie offen."
+      ],
+      "reply": "Patient: „Ramipril 5 mg morgens, Metformin 1000 mg morgens und abends und Simvastatin 40 mg abends. Aspirin nehme ich nicht. Gegen die Schmerzen nehme ich nichts.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Kontrastmittel, Pflaster oder Lebensmittel? Wie äußert sich das?",
+        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht gleich ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
+        "Allergie?",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit Beispielen (auch Kontrastmittel vor einer Gefäßdarstellung), und Sie fragen nach der Reaktion.",
+        "Zu eng: Allergien gegen andere Stoffe übersehen Sie, und ein Antibiotikum ist hier nicht geplant.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patient: „Ja, gegen das Kontrastmittel bei einer Röntgenuntersuchung vor ein paar Jahren. Da bekam ich Hautausschlag und Juckreiz. Sonst nichts.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie starker Raucher oder sogar Alkoholiker?",
+        "Rauchen Sie? Wie viele Zigaretten am Tag und seit wann? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
+        "Wie hoch ist Ihr Nikotinabusus in Packungsjahren, wie lange bestand er, und wie ist Ihr Alkoholkonsum in Gramm pro Tag? Gibt es einen Substanzabusus?",
+        "Sie rauchen doch bestimmt zu viel, das ist bei Ihrer Erkrankung ja kein Wunder."
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Alkoholiker“ ist wertend und verletzend.",
+        "Richtig: neutral, konkret, mit Menge und Dauer.",
+        "„Abusus“ und „Packungsjahre“ sind Fachsprache und klingen nach Vorwurf.",
+        "Wertend, und Sie nennen schon eine Ursache, bevor die Diagnose feststeht."
+      ],
+      "reply": "Patient: „Ich rauche seit 40 Jahren etwa 20 Zigaretten am Tag. Abends trinke ich ein Bier, ungefähr 0,5 Liter. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese bezüglich vaskulärer und kardiovaskulärer Erkrankungen, und gibt es eine positive Familienanamnese für Atherosklerose?",
+        "Hat Ihre Familie dieselbe Krankheit?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Herzinfarkt, Schlaganfall, Durchblutungsstörungen oder Diabetes?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "„Familienanamnese“ und „vaskulär“ sind Fachwörter.",
+        "Sie kennen die Diagnose noch nicht; die Frage ist unklar.",
+        "Zu eng: Geschwister fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Richtig: offen, mit passenden Beispielen, laienverständlich."
+      ],
+      "reply": "Patient: „Mein Vater hatte mit 70 einen Schlaganfall. Mein Bruder hatte mit 58 einen Herzinfarkt.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen, und gibt es bei Ihnen zu Hause Treppen?",
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Haben Sie Geld?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beruf und Wohnsituation (Treppen!), beides wichtig für Belastbarkeit und Gehtraining.",
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Unangemessen."
+      ],
+      "reply": "Patient: „Ich bin Berufskraftfahrer, ich sitze viel am Steuer. Ich wohne mit meiner Frau im zweiten Stock, ohne Aufzug. Wir haben eine erwachsene Tochter.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben eine periphere arterielle Verschlusskrankheit im Stadium Fontaine IIb mit hämodynamisch relevanter Stenose der Arteria femoralis superficialis, die wir mit einer Angioplastie behandeln müssen.",
+        "Das ist nur ein Muskelkater, das geht von allein wieder weg.",
+        "Ich vermute, dass die Arterien in Ihrem rechten Bein verengt sind, wahrscheinlich durch Gefäßverkalkung. Dann kommt bei Belastung zu wenig Blut in der Wade an, und das tut weh.",
+        "Sie bekommen sicher bald einen Herzinfarkt oder Schlaganfall, wenn Sie so weitermachen. Hätten Sie früher mit dem Rauchen aufgehört, hätten Sie das nicht."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache; der Patient versteht die Diagnose nicht.",
+        "Verharmlosend und medizinisch falsch.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung des Mechanismus.",
+        "Vorwurfsvoll und beängstigend."
+      ],
+      "reply": "Patient: „Verengte Arterien? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Der Patient fragt: „Kann man das behandeln?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, gleich morgen machen wir eine Operation am Bein, dann ist alles wieder gut, und Sie können weiter rauchen.",
+        "Ja. Zuerst tasten wir die Pulse und messen den Blutdruck an Armen und Beinen. Dann machen wir einen Ultraschall der Beingefäße. Wichtig sind außerdem: mit dem Rauchen aufhören, regelmäßig Gehtraining und Medikamente, die die Gefäße schützen. Eine Operation ist nur selten nötig.",
+        "Das müssen Sie mit Ihrem Hausarzt besprechen, ich kann Ihnen dazu leider nichts sagen.",
+        "Nein, die Verkalkung geht nicht mehr weg, Sie müssen mit den Schmerzen leben."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu früh und falsch: Die Diagnose ist nicht gesichert, und der Rauchstopp ist die wichtigste Maßnahme.",
+        "Richtig: nächste Schritte, ehrliche Aussicht, laienverständlich.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Falsch und entmutigend: Gehtraining und Medikamente bessern die Gehstrecke."
+      ],
+      "reply": "Patient: „Gut, danke für die ehrliche Erklärung.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Werner Hoffmann, ein 64-jähriger Patient, stellte sich heute in unsere Ambulanz mit seit sechs Monaten bestehenden, belastungsabhängigen Schmerzen in der rechten Wade vor.",
+        "Herr Hoffmann ist 64 und hat Beinschmerzen beim Laufen.",
+        "Der Patient Herr Hoffmann stellt sich heute vor wegen Wadenschmerzen rechts seit sechs Monate, 64-jährig.",
+        "Herr Werner Hoffmann, ein 64-jähriger Patient, stellte sich heute in unserer Ambulanz mit seit sechs Monaten bestehenden, belastungsabhängigen Schmerzen in der rechten Wade vor."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Grammatik: „in unserer Ambulanz“ (Dativ, wo?), nicht „in unsere“.",
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Satzbau und Grammatik falsch: „seit sechs Monate“ statt „Monaten“, die Altersangabe hängt am Ende.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptom."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Beschwerden bestehen seit ca. sechs Monaten, belastungsabhängig und zunehmend. Die schmerzfreie Gehstrecke hat sich von ca. 500 m auf ca. 150 m verkürzt. Der Schmerz ist krampfartig (NRS 6/10) und bessert sich nach zwei bis drei Minuten Pause im Stehen.",
+        "Die Schmerzen laufen seit sechs Monaten und gehen weg, wenn er stehen bleibt. Er kann nicht mehr weit laufen.",
+        "Die Beschwerden bestehen seit ca. sechs Monaten, belastungsabhängig und zunehmend. Die schmerzfreie Gehstrecke hat sich von ca. 150 m auf ca. 500 m verkürzt. Der Schmerz ist krampfartig (NRS 6/10) und bessert sich nach zwei bis drei Minuten Pause im Stehen.",
+        "Die Beschwerden bestehen seit ca. sechs Monaten, belastungsunabhängig und zunehmend. Der Schmerz ist krampfartig (NRS 6/10) und tritt vor allem nachts im Liegen auf, bessert sich beim Herunterhängen des Beins."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachsprache und alle Merkmale (Beginn, Auslöser, Gehstrecke, Charakter, Intensität, Besserung).",
+        "Laiensprache und unvollständig; im Bericht erwartet man Fachbegriffe.",
+        "Inhaltlich falsch: Die Gehstrecke hat sich von 500 m auf 150 m verkürzt, nicht umgekehrt.",
+        "Inhaltlich falsch: Die Schmerzen sind belastungsabhängig, und Ruheschmerzen wurden verneint."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Begleitend berichtete der Patient über ein Kältegefühl und eine Blässe des rechten Fußes sowie über ein Ulkus an der Ferse. Ruheschmerzen wurden bejaht. Fieber, Nachtschweiß und Gewichtsverlust wurden verneint. Stuhlgang und Miktion unauffällig.",
+        "Er hat einen kalten Fuß, und sonst ist alles normal.",
+        "Begleitend berichtete der Patient über ein Kältegefühl und eine Blässe des rechten Fußes. Parästhesien, Ulzera und Ruheschmerzen wurden verneint. Kein Fieber, kein Gewichtsverlust; Appetit, Stuhlgang und Miktion unauffällig.",
+        "Begleitend berichtete der Patient über ein Kältegefühl und eine Blässe des linken Fußes. Parästhesien, Ulzera und Ruheschmerzen wurden verneint. Appetit, Stuhlgang und Miktion sind unauffällig."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich falsch: Ulkus und Ruheschmerzen wurden verneint.",
+        "Laiensprache und unvollständig, Negativbefunde fehlen.",
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert.",
+        "Inhaltlich falsch: Betroffen ist der rechte Fuß, nicht der linke."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: arterielle Hypertonie, Diabetes mellitus Typ 1, Hypercholesterinämie. Z. n. Leistenhernien-Operation rechts vor zehn Jahren. Medikation: Ramipril 5 mg 1-0-0, Metformin 1000 mg 1-0-1, Simvastatin 40 mg 0-0-1, ASS 100 mg 1-0-0.",
+        "An Vorerkrankungen sind eine arterielle Hypertonie, ein Diabetes mellitus Typ 2 (ED vor acht Jahren) und eine Hypercholesterinämie bekannt. Ein Myokardinfarkt oder Apoplex wurde verneint. Z. n. Hernioplastik rechts vor zehn Jahren. Medikation: Ramipril 5 mg 1-0-0, Metformin 1000 mg 1-0-1, Simvastatin 40 mg 0-0-1.",
+        "Vorerkrankungen: Bluthochdruck, Zucker und Cholesterin. Medikamente: Ramipril, Metformin, Simvastatin.",
+        "Medikation: Ramipril 5 mg 0-0-1, Metformin 1000 mg 1-1-1, Simvastatin 40 mg 1-0-0."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich falsch: Typ 2 (nicht Typ 1), und ASS nimmt der Patient nicht.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach), Negativbefund und Dosierschema im Format morgens-mittags-abends.",
+        "Laiensprache und ohne Dosierung.",
+        "Dosierschema falsch: Ramipril morgens (1-0-0), Metformin zweimal (1-0-1), Simvastatin abends (0-0-1)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: keine bekannt. Nikotinkonsum ca. 40 py, gelegentlich Alkohol. Familienanamnese leer. Der Patient ist Berufskraftfahrer, verheiratet, lebt mit seiner Ehefrau.",
+        "Kontrastmittelallergie (Anaphylaxie). Nikotinkonsum ca. 20 py, täglich ein Bier. Familienanamnese: Vater Myokardinfarkt mit 70 J., Bruder Apoplex mit 58 J. Der Patient ist Berufskraftfahrer und wohnt im Erdgeschoss.",
+        "Er verträgt kein Kontrastmittel und raucht viel.",
+        "Kontrastmittelunverträglichkeit (Exanthem, Pruritus). Nikotinkonsum ca. 40 py, täglich ca. 0,5 l Bier. Familienanamnese: Vater Apoplex mit 70 J., Bruder Myokardinfarkt mit 58 J. Berufskraftfahrer, verheiratet, wohnt mit seiner Ehefrau im 2. OG ohne Aufzug; eine erwachsene Tochter."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch: Die Kontrastmittelunverträglichkeit fehlt, Alkohol täglich, Familienanamnese nicht leer.",
+        "Falsch: Reaktion war ein Exanthem, 20 Zigaretten über 40 Jahre sind 40 py, und die Familienerkrankungen sind vertauscht.",
+        "Laiensprache und unvollständig.",
+        "Richtig: 20 Zigaretten am Tag über 40 Jahre sind 40 py (Packungsjahre); Allergie, Familie und Wohnsituation stimmen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Anamnestisch besteht der Verdacht auf eine periphere arterielle Verschlusskrankheit (pAVK) des rechten Beins im Stadium Fontaine IIb. Differenzialdiagnostisch kommen eine lumbale Spinalkanalstenose, eine venöse Claudicatio und eine diabetische Polyneuropathie in Betracht.",
+        "Es besteht eine gesicherte pAVK im Stadium Fontaine IV.",
+        "Anamnestisch besteht der Verdacht auf eine akute tiefe Beinvenenthrombose rechts. Differenzialdiagnostisch kommen eine pAVK, ein Erysipel und eine Muskelzerrung in Betracht.",
+        "Diagnose: Schaufensterkrankheit."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht statt Gewissheit, Stadium passend zur Gehstrecke, sinnvolle Differenzialdiagnosen.",
+        "Ohne Untersuchung nicht gesichert, und Stadium IV (Nekrose, Ulkus) passt nicht zu den Befunden.",
+        "Passt nicht: Die Beschwerden bestehen seit sechs Monaten und sind belastungsabhängig; eine akute Thrombose ist unwahrscheinlich.",
+        "Umgangssprache, kein Verdacht, keine Differenzialdiagnosen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Zur weiteren Abklärung empfehlen wir eine CT-Angiographie der Beinarterien mit jodhaltigem Kontrastmittel sowie eine Koronarangiographie. Therapeutisch Beginn einer Statintherapie und Planung einer Bypass-Operation.",
+        "Wir machen Ultraschall und Blut.",
+        "Zur weiteren Abklärung empfehlen wir Pulsstatus, Knöchel-Arm-Index (ABI), farbkodierte Duplexsonographie der Beinarterien und Labor (u. a. Blutbild, Nierenwerte, HbA1c, Lipide). Bei Bedarf MR-Angiographie ohne jodhaltiges Kontrastmittel. Therapeutisch Nikotinkarenz, strukturiertes Gehtraining, ASS 100 mg 1-0-0 und Intensivierung der Statintherapie.",
+        "Zur weiteren Abklärung empfehlen wir einen Pulsstatus und die Duplexsonographie der Beinarterien. Da die Beschwerden belastungsabhängig sind, ist keine Therapie nötig; der Patient soll das Bein schonen und möglichst wenig laufen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gefährlich: Der Patient hat eine Kontrastmittelunverträglichkeit, und eine Operation ist im Stadium IIb nicht der erste Schritt.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Richtig: Diagnostik und leitliniengerechte Therapie in vollständigen Sätzen, mit Blick auf die Allergie.",
+        "Falsch: Gehtraining, Thrombozytenaggregationshemmer und Statin sind Therapie der ersten Wahl; Schonung verschlechtert die Gehstrecke."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Der Patient heißt Hoffmann und hat Probleme beim Laufen, er ist schon etwas älter.",
+        "Ich möchte Ihnen Herrn Werner Hoffmann vorstellen, einen 64-jährigen Patienten, der sich heute mit seit sechs Monaten bestehenden, belastungsabhängigen Schmerzen in der rechten Wade vorgestellt hat.",
+        "Herr Hoffmann hat eine pAVK im Stadium Fontaine IIb.",
+        "Also, der Mann ist Lastwagenfahrer und raucht, und jetzt tut ihm halt das Bein weh ..."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Die Schmerzen treten in Ruhe und nachts im Liegen auf und bessern sich beim Herunterhängen des Beins. Der rechte Fuß ist kalt und blass, an der Ferse besteht ein Ulkus. Die schmerzfreie Gehstrecke beträgt ca. 150 m.",
+        "Er hat Schmerzen und einen kalten Fuß.",
+        "Die schmerzfreie Gehstrecke hat sich von ca. 150 m auf ca. 500 m verbessert. Der rechte Fuß ist kalt und blass. Ruheschmerzen und Ulzera bestehen nicht.",
+        "Die schmerzfreie Gehstrecke hat sich von ca. 500 m auf ca. 150 m verkürzt; der Schmerz ist krampfartig (NRS 6/10) und bessert sich im Stehen nach zwei bis drei Minuten. Der rechte Fuß ist kalt und blass. Ruheschmerzen, Parästhesien und Ulzera wurden verneint."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich falsch: Ruheschmerzen und Ulkus wurden verneint.",
+        "Zu unvollständig, Gehstrecke und Negativbefunde fehlen.",
+        "Inhaltlich falsch: Die Gehstrecke hat sich verkürzt, nicht verbessert.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Bekannt sind eine arterielle Hypertonie, ein Diabetes mellitus Typ 2 und eine Hypercholesterinämie. Weiterer Risikofaktor ist ein Nikotinkonsum von ca. 40 py. Wichtig: Kontrastmittelunverträglichkeit mit Exanthem. Der Vater hatte einen Apoplex, der Bruder einen Myokardinfarkt.",
+        "Er ist gesund und raucht nur gelegentlich.",
+        "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 2. Nikotinkonsum ca. 20 py. Keine Allergien. Familienanamnese leer.",
+        "Er nimmt Ramipril, Metformin und Simvastatin, sonst nichts."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Risikofaktoren, Allergie (wichtig für die Bildgebung) und Familie.",
+        "Falsch: Es gibt relevante Vorerkrankungen, und er raucht stark.",
+        "Inhaltlich falsch: 40 py, Kontrastmittelunverträglichkeit, Familienanamnese nicht leer.",
+        "Unvollständig: Diagnosen, Risikofaktoren und Allergie fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an eine Muskelzerrung.",
+        "Es handelt sich sicher um eine akute Arterienembolie, weil der Fuß kalt und blass ist. Differenzialdiagnostisch denke ich höchstens noch an eine Beinvenenthrombose und eine Muskelzerrung. Ich würde deshalb sofort eine Lyse einleiten.",
+        "Ich vermute eine pAVK des rechten Beins im Stadium Fontaine IIb. Differenzialdiagnostisch denke ich an eine lumbale Spinalkanalstenose, eine venöse Claudicatio und eine diabetische Polyneuropathie.",
+        "Ich weiß es nicht genau."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu unpräzise und passt nicht zur Anamnese.",
+        "Zu sicher, und die Embolie beginnt plötzlich, nicht über sechs Monate.",
+        "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde den Patienten nach Hause schicken, weil die Beschwerden nur bei Belastung auftreten.",
+        "Ich würde den Pulsstatus erheben und den Knöchel-Arm-Index bestimmen, dazu eine Duplexsonographie der Beinarterien und Labor mit Nierenwerten, HbA1c und Lipiden. Therapeutisch Nikotinkarenz, Gehtraining, ASS 100 mg und ein hochdosiertes Statin; bei Bedarf eine MR-Angiographie wegen der Kontrastmittelunverträglichkeit.",
+        "Ich würde sofort eine CT-Angiographie mit jodhaltigem Kontrastmittel durchführen und ohne weitere Diagnostik einen Bypass planen, weil der Patient schon sechs Monate Beschwerden hat.",
+        "Ich würde eine Vollheparinisierung beginnen, weil der Fuß kalt ist, und ihn sofort in den OP bringen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Gefährlich: Die Gefäßrisiken müssen behandelt werden, und der Patient braucht Diagnostik.",
+        "Richtig: Diagnostik, Therapie und Beachtung der Kontrastmittelunverträglichkeit.",
+        "Gefährlich und falsch: Kontrastmittelunverträglichkeit, und vor einer Revaskularisation steht erst die konservative Therapie.",
+        "Falsch: Die Beschwerden sind chronisch; ein akuter Verschluss liegt nicht vor."
+      ],
+      "reply": "Oberarzt: „Gut. Bei welchem Knöchel-Arm-Index sprechen wir von einer pAVK?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Bei einem ABI über 1,4. Je höher der Wert ist, desto stärker sind die Arterien verengt, und ab 1,4 muss man sofort operieren. Bei Diabetes ist der Wert ohnehin nie verwertbar, daher braucht man immer eine Angiographie.",
+        "Bei einem ABI unter 1,3; ein Wert von 1,0 bis 1,2 ist bereits krankhaft.",
+        "Dafür gibt es keinen Grenzwert, die Diagnose stellt man nur mit einer Angiographie.",
+        "Ein ABI von 0,9 oder niedriger spricht für eine pAVK. Werte von 0,91 bis 1,3 sind normal; bei einem Wert über 1,3 liegt der Verdacht auf eine Mediasklerose vor, wie sie bei Diabetes vorkommt, und der Index ist dann nicht verwertbar."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch: Hohe Werte über 1,3 sprechen für eine Mediasklerose, nicht für eine Stenose, und eine sofortige Operation ist nicht nötig.",
+        "Falsch: Werte von 1,0 bis 1,2 sind normal; die Grenze ist 0,9.",
+        "Falsch: Der ABI ist die einfache Basisuntersuchung mit klarem Grenzwert.",
+        "Richtig: Grenzwert 0,9, Normbereich und die Mediasklerose bei Diabetes als Fehlerquelle."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Claudicatio intermittens“?",
+      "options": [
+        "Kribbeln in den Füßen",
+        "Schmerzen in den Beinen beim Gehen, die in Ruhe wieder abklingen",
+        "Wadenkrampf in der Nacht",
+        "Hinken nach einem Knochenbruch"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das sind Parästhesien.",
+        "Richtig.",
+        "Das ist ein nächtlicher Wadenkrampf (Crampus).",
+        "Das ist ein Schonhinken."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Stenose“?",
+      "options": [
+        "Ausbuchtung der Gefäßwand",
+        "Entzündung eines Gefäßes",
+        "Blutgerinnsel im Gefäß",
+        "Verengung eines Gefäßes"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist ein Aneurysma.",
+        "Das ist eine Vaskulitis.",
+        "Das ist eine Thrombose.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Ischämie“?",
+      "options": [
+        "Minderdurchblutung eines Gewebes",
+        "Blutung ins Gewebe",
+        "Schwellung durch Wasser im Gewebe",
+        "Absterben von Gewebe"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist eine Hämorrhagie.",
+        "Das ist ein Ödem.",
+        "Das ist eine Nekrose."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Pulsstatus“?",
+      "options": [
+        "Messung des Blutdrucks am Oberarm",
+        "Aufzeichnung der Herzströme",
+        "Tasten der Pulse an Armen und Beinen",
+        "Ultraschall des Herzens"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Blutdruckmessung.",
+        "Das ist das EKG.",
+        "Richtig.",
+        "Das ist die Echokardiographie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Thrombozytenaggregationshemmer“?",
+      "options": [
+        "Medikament gegen Bluthochdruck",
+        "Medikament, das das Verklumpen der Blutplättchen hemmt",
+        "Medikament, das das Cholesterin senkt",
+        "Medikament, das den Blutzucker senkt"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist ein Antihypertensivum.",
+        "Richtig.",
+        "Das ist ein Statin (Lipidsenker).",
+        "Das ist ein Antidiabetikum."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

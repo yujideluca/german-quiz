@@ -1,0 +1,691 @@
+{
+  "id": "akuter-arterienverschluss",
+  "area": "Angiologie",
+  "title": "Plötzlich kaltes, schmerzhaftes Bein",
+  "diagnosis": "Akuter embolischer Extremitätenarterienverschluss",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Herr Werner Hoffmann, 71 Jahre, stellt sich am Vormittag in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Herr Hoffmann sitzt blass im Rollstuhl und hält sich das linke Bein.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Guten Tag, Herr Hoffmann. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte und Ihre Überweisung vom Hausarzt dabei? Die brauchen wir zuerst für die Aufnahme.",
+        "Hallo, na, was haben Sie denn mit dem Bein angestellt?",
+        "Guten Tag, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Hoffmann?",
+        "Guten Tag. Bitte ziehen Sie sofort die Hose aus, ich schaue mir Ihr Bein jetzt an."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Verwaltungsfragen gehören nicht an den Anfang, und Sie stellen sich nicht vor.",
+        "Zu umgangssprachlich, ohne Vorstellung, und die Frage klingt wie ein Vorwurf.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
+        "Die Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen."
+      ],
+      "reply": "Patient: „Ja, Hoffmann. Guten Tag, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Sie sind doch schon im Rentenalter, oder?",
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Wie ist Ihr Body-Mass-Index?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
+      ],
+      "reply": "Patient: „Ich bin 71, 1,78 Meter groß und wiege etwa 85 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Warum kommen Sie damit erst jetzt und rufen nicht gleich den Notarzt?",
+        "Welche Symptomatik führt Sie zu uns?",
+        "Haben Sie Schmerzen im Bein?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "Richtig: eine offene Frage lässt den Patienten selbst erzählen."
+      ],
+      "reply": "Patient: „Seit heute Morgen habe ich ganz furchtbare Schmerzen im linken Bein, und es ist eiskalt.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten das Leitsymptom genauer erfassen. Was sagen Sie?",
+      "options": [
+        "Wo genau spüren Sie die Schmerzen und die Kälte, und wie weit nach oben reicht es? Fühlt sich das ganze Bein gleich an?",
+        "Das linke Bein ist bestimmt komplett kalt, richtig?",
+        "Ist die Extremität distal des Knies betroffen, und besteht eine Ausbreitung nach proximal oder eine Mitbeteiligung der kontralateralen Seite?",
+        "Tut das Bein weh?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: laienverständlich, offen, mit Seite, Ort und Ausdehnung.",
+        "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
+        "„Extremität“, „distal“ und „proximal“ sind Fachwörter; der Patient versteht sie nicht.",
+        "Geschlossene Frage; der Patient hat die Schmerzen schon genannt, die Ausdehnung fehlt."
+      ],
+      "reply": "Patient: „Das linke Bein, ab dem Knie abwärts. Der Unterschenkel und der Fuß sind eiskalt und ganz weiß.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Seit wann haben Sie die Schmerzen?",
+        "Wie war der zeitliche Verlauf seit der Erstmanifestation: perakut, akut oder chronisch progredient, und gab es Prodromi oder frühere Rezidive?",
+        "Wann genau hat es angefangen, und was haben Sie da gerade gemacht? Ist es seitdem besser, schlechter oder gleich geblieben?",
+        "Hat es langsam angefangen?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das hat der Patient schon gesagt (seit heute Morgen). Fragen Sie nach der genauen Uhrzeit, der Situation und dem Verlauf.",
+        "Fachsprache: „Erstmanifestation“, „perakut“ und „progredient“ versteht der Patient nicht.",
+        "Richtig: Beginn, Situation und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Geschlossene und suggestive Frage; sie erfasst den Verlauf nicht."
+      ],
+      "reply": "Patient: „Heute früh um sieben, beim Aufstehen aus dem Bett, von einer Sekunde auf die andere. Seitdem hört es nicht mehr auf, und das Bein ist immer kälter geworden.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "options": [
+        "Sind die Schmerzen eher ischämisch, neuropathisch oder myogen bedingt, und wie ordnen Sie die Intensität auf der visuellen Analogskala ein?",
+        "Wie stark sind die Schmerzen von 1 bis 100?",
+        "Wie würden Sie die Schmerzen beschreiben, eher stechend, drückend oder schneidend? Und wie stark sind sie auf einer Skala von 0 bis 10?",
+        "Tut es sehr weh?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "„Ischämisch“ ist Fachsprache. Beschreiben Sie die Qualität mit Wörtern wie „stechend“ oder „schneidend“.",
+        "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
+        "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe."
+      ],
+      "reply": "Patient: „Es ist ein schneidender Dauerschmerz, 9 von 10. Mit nichts besser, auch im Liegen nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Haben Sie Parästhesien, Paresen oder eine Dyspnoe, oder ist Ihnen ein Thoraxschmerz oder Palpitationen aufgefallen?",
+        "Haben Sie sonst noch was?",
+        "Fühlt sich das Bein taub an, oder kribbelt es? Können Sie Fuß und Zehen noch bewegen? Hatten Sie Brustschmerzen, Luftnot oder Herzstolpern?",
+        "Sie haben bestimmt auch ein taubes Gefühl im Fuß."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „Kribbeln“, „Lähmung“, „Luftnot“, „Herzstolpern“.",
+        "Zu umgangssprachlich und unkonkret.",
+        "Richtig: konkrete Begleitsymptome in Laiensprache, mit Gefühl, Beweglichkeit und möglicher Herzbeteiligung.",
+        "Suggestiv: Sie unterstellen das Symptom."
+      ],
+      "reply": "Patient: „Der Fuß ist pelzig und kribbelt, die Zehen kann ich kaum noch bewegen. Brustschmerzen oder Luftnot hatte ich nicht, aber in den letzten Tagen mehrmals Herzstolpern.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Haben Sie Fieber, Nachtschweiß, Gewichtsverlust, Inappetenz, Dysurie, Obstipation und Diarrhö?",
+        "Wie ist die Vegetativa?",
+        "Ist sonst alles normal bei Ihnen?",
+        "Hatten Sie Fieber? Wie sind Appetit und Gewicht, Stuhlgang und Wasserlassen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Obstipation, Diarrhö).",
+        "Fachjargon, den ein Patient nicht versteht.",
+        "Zu allgemein; der Patient sagt einfach „ja“.",
+        "Richtig: Fieber, Appetit, Gewicht, Stuhlgang und Wasserlassen in Laiensprache."
+      ],
+      "reply": "Patient: „Fieber hatte ich nicht. Appetit und Gewicht sind gleich, Stuhlgang und Wasserlassen auch normal.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie chronische Erkrankungen, zum Beispiel am Herzen, Bluthochdruck oder erhöhte Blutfette? Und wurden Sie schon einmal operiert?",
+        "Sind Sie gesund?",
+        "Haben Sie Vorerkrankungen wie ein Vorhofflimmern, eine arterielle Hypertonie oder eine Hypercholesterinämie, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Vollständig, aber in Fachsprache („Vorhofflimmern“, „Hypercholesterinämie“). Mit Patienten sprechen Sie Laiensprache.",
+        "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patient: „Ich habe Vorhofflimmern seit drei Jahren, Bluthochdruck und zu hohe Cholesterinwerte. Operiert wurde ich nur einmal, am Leistenbruch rechts, vor zehn Jahren.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Nehmen Sie Tabletten?",
+        "Welche Pharmaka applizieren Sie?",
+        "Sie nehmen doch sicher einen Blutverdünner wie Marcumar oder ein neues Mittel, damit Ihr Herz geschützt ist, oder nicht?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu ungenau: Dosis und andere Darreichungsformen fehlen.",
+        "Fachsprache („Pharmaka“, „applizieren“).",
+        "Suggestivfrage. Fragen Sie offen.",
+        "Richtig: Name, Dosierung und auch frei verkäufliche Mittel."
+      ],
+      "reply": "Patient: „Bisoprolol 5 mg morgens, Ramipril 5 mg morgens und Simvastatin 20 mg abends. Heute früh eine Paracetamol 500, das hat nichts gebracht. Einen Blutverdünner nehme ich nicht, den wollte ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Sind Sie gegen Kontrastmittel allergisch? Das ist wichtig, weil wir Ihnen vielleicht gleich eine Untersuchung mit Kontrastmittel machen möchten, und das brauchen wir bei Gefäßen am häufigsten.",
+        "Allergie?",
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
+        "Sind Sie hypersensibel?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu eng: Allergien gegen Medikamente, Lebensmittel oder Pflaster übersehen Sie.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
+      ],
+      "reply": "Patient: „Gegen Pflaster, da bekomme ich rote, juckende Haut.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr? Nehmen Sie Drogen?",
+        "Sind Sie Raucher oder Trinker, oder beides, und wie oft sind Sie betrunken?",
+        "Wie ist Ihr Nikotin- und Alkoholabusus?",
+        "Rauchen Sie zu viel?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: neutral, konkret, mit Menge.",
+        "„Trinker“ ist wertend und verletzend.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Wertend und ungenau."
+      ],
+      "reply": "Patient: „Ich rauche seit 40 Jahren etwa 15 Zigaretten am Tag. Abends ein Bier. Drogen nie.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Wie ist die Familienanamnese?",
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel am Herzen, an den Gefäßen oder Schlaganfälle?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Hat Ihre Familie auch kalte Beine?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Richtig: offen, mit passenden Beispielen.",
+        "Zu eng: Geschwister und Kinder fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Unklar und unpassend; Sie kennen die Ursache noch nicht."
+      ],
+      "reply": "Patient: „Mein Vater hatte mit 68 einen Schlaganfall, mein Bruder mit 58 einen Herzinfarkt.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Was ist Ihr sozialer Status?",
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Haben Sie genug Geld zum Leben?",
+        "Was machen Sie beruflich oder haben Sie früher gemacht? Wie wohnen Sie, allein oder mit jemandem zusammen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Unklar und unangenehm formuliert.",
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Unangemessen.",
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Entlassung und Versorgung."
+      ],
+      "reply": "Patient: „Ich bin Rentner, früher war ich Schreiner. Ich wohne mit meiner Frau in einem Haus, wir haben zwei Töchter.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Ich vermute, dass ein Blutgerinnsel eine Schlagader in Ihrem Bein verstopft hat, wahrscheinlich wegen Ihrer Herzrhythmusstörung. Dadurch kommt zu wenig Blut ins Bein.",
+        "Sie haben einen embolischen Verschluss der Arteria femoralis communis bei absoluter Arrhythmie und fehlender Antikoagulation, also einen akuten Extremitätenischämie-Notfall.",
+        "Das ist wahrscheinlich nur ein Krampf, das geht von allein wieder weg.",
+        "Sie haben sicher Krebs in der Leiste, das müssen wir sofort operieren."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung des Mechanismus.",
+        "Fachsprache; der Patient versteht die Diagnose nicht.",
+        "Verharmlosend und medizinisch falsch: Es ist ein Notfall.",
+        "Falsch und beängstigend."
+      ],
+      "reply": "Patient: „Ein Gerinnsel? Ist das gefährlich? Verliere ich das Bein?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Nein, Ihr Bein verlieren Sie bestimmt nicht, machen Sie sich keine Sorgen.",
+        "Das entscheiden die Gefäßchirurgen, ich weiß es nicht.",
+        "Das ist ein Notfall, deshalb handeln wir jetzt schnell: Wir nehmen Blut ab, machen ein EKG und einen Ultraschall der Gefäße. Sie bekommen Schmerzmittel und über die Vene ein Medikament, das das Blut verdünnt. Wahrscheinlich muss das Gerinnsel zeitnah in einem Eingriff entfernt werden. Ich hole dafür die Gefäßchirurgen.",
+        "Zuerst legen wir Ihnen eine Wärmflasche auf das Bein und warten ab, ob es besser wird."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Falsches Versprechen: Der Ausgang hängt davon ab, wie schnell das Bein wieder durchblutet wird.",
+        "Unprofessionell und lässt den Patienten allein.",
+        "Richtig: ehrlich als Notfall benannt, nächste Schritte laienverständlich, Gefäßchirurgie wird hinzugezogen.",
+        "Gefährlich: Wärme und Abwarten verschlechtern die Ischämie, die Zeit läuft."
+      ],
+      "reply": "Patient: „Gut, danke, dass Sie mir das so erklärt haben. Bitte beeilen Sie sich.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Herr Hoffmann ist 71 und hat ein kaltes Bein.",
+        "Der Patient Herr Hoffmann stellt sich heute vor wegen Schmerzen im Bein seit sieben Uhr, 71-jährig.",
+        "Herr Werner Hoffmann, ein 71-jähriger Patient, stellte sich heute Vormittag in unserer Notaufnahme mit seit ca. 7 Uhr bestehenden akuten Schmerzen im linken Bein vor.",
+        "Herr Werner Hoffmann (71 J.) hat sich heute in unsere Notaufnahme vorgestellt wegen Schmerzen."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Satzbau falsch: die Altersangabe hängt am Ende, und das Präsens passt nicht zum Bericht.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort, Zeit und Leitsymptom.",
+        "Grammatik: „in unserer Notaufnahme“ (Dativ, wo?), außerdem ist das Leitsymptom zu ungenau."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Die Beschwerden sind akut aus völligem Wohlbefinden heute gegen 7 Uhr beim Aufstehen aufgetreten, seitdem persistierend und zunehmend, mit kaltem, blassem linkem Unterschenkel und Fuß, Schmerzcharakter schneidend (NRS 9/10).",
+        "Die Schmerzen haben heute früh beim Aufstehen angefangen und sind schlimmer geworden.",
+        "Die Beschwerden sind seit mehreren Wochen belastungsabhängig aufgetreten, heute gegen 7 Uhr erstmals in Ruhe, mit kaltem, blassem rechtem Unterschenkel (NRS 9/10).",
+        "Die Beschwerden seien akut gegen 7 Uhr aufgetreten, seitdem zunehmend, mit kaltem Unterschenkel und Fuß links, schneidend, NRS 9, ohne Ausstrahlung."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachsprache und alle Merkmale (Beginn, Verlauf, Lokalisation, Charakter, Intensität).",
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
+        "Inhaltlich falsch: Der Beginn war plötzlich aus völligem Wohlbefinden, und betroffen ist das linke Bein.",
+        "Konjunktiv-I-Mischung und unvollständig; außerdem fehlt „/10“."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Er hatte ein taubes Gefühl im Fuß und Herzrasen.",
+        "Begleitend berichtete der Patient über Parästhesien und ein Taubheitsgefühl des linken Fußes sowie eine eingeschränkte Beweglichkeit der Zehen. Thoraxschmerz, Dyspnoe und Fieber wurden verneint. Intermittierend Palpitationen in den letzten Tagen. Appetit, Gewicht, Miktion und Stuhlgang unauffällig.",
+        "Begleitend berichtete der Patient über Parästhesien und ein Taubheitsgefühl des linken Fußes sowie eine eingeschränkte Beweglichkeit der Zehen. Ein Thoraxschmerz und eine Dyspnoe wurden bejaht, Fieber verneint. Appetit, Gewicht, Miktion und Stuhlgang unauffällig.",
+        "Begleitend berichtete der Patient über Fieber bis 38,5 °C, Parästhesien und Palpitationen. Thoraxschmerz und Dyspnoe wurden verneint. Gewichtsverlust von 5 kg."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Laiensprache, unvollständig und ohne Negativbefunde.",
+        "Richtig: vollständig, Fachsprache, Negativbefunde und Palpitationen dokumentiert.",
+        "Inhaltlich falsch: Thoraxschmerz und Dyspnoe wurden verneint.",
+        "Inhaltlich falsch: Fieber und Gewichtsverlust wurden verneint."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Herzrhythmusstörung, Blutdruck, Cholesterin. Medikamente: Bisoprolol, Ramipril, Simvastatin.",
+        "An Vorerkrankungen sind ein Vorhofflimmern, eine arterielle Hypertonie und eine Hypercholesterinämie bekannt. Z. n. Leistenhernien-Operation rechts vor 10 Jahren. Eine orale Antikoagulation wird vom Patienten abgelehnt. Medikation: Bisoprolol 5 mg 1-0-0, Ramipril 5 mg 1-0-0, Simvastatin 20 mg 0-0-1, Paracetamol 500 mg einmalig heute.",
+        "An Vorerkrankungen sind ein Vorhofflimmern, eine arterielle Hypertonie und eine Hypercholesterinämie bekannt. Z. n. Leistenhernien-Operation rechts vor 10 Jahren. Der Patient nimmt eine orale Antikoagulation ein. Medikation: Bisoprolol 5 mg 1-0-0, Ramipril 5 mg 1-0-0, Simvastatin 20 mg 0-0-1.",
+        "Medikation: Bisoprolol 5 mg 0-0-1, Ramipril 5 mg 1-1-1, Simvastatin 20 mg 1-0-0."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach), Dosierschema 1-0-1 und die fehlende Antikoagulation als Risikofaktor.",
+        "Inhaltlich falsch: Der Patient nimmt keine Antikoagulation ein, das ist der entscheidende Risikofaktor für die Embolie.",
+        "Dosierschema falsch: Bisoprolol und Ramipril morgens (1-0-0), Simvastatin abends (0-0-1)."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Allergie: keine. Noxen: Nikotinabusus.",
+        "Pflasterallergie (Kontaktekzem). Nikotinkonsum ca. 30 py, abends ein Bier. Familienanamnese: Vater Apoplex mit 68 J., Bruder Myokardinfarkt mit 58 J. Der Patient ist Rentner (zuvor Schreiner), verheiratet, lebt mit seiner Ehefrau im Haus.",
+        "Er verträgt keine Pflaster und raucht.",
+        "Kontrastmittelallergie (Anaphylaxie). Nikotinkonsum ca. 60 py, kein Alkohol. Familienanamnese: Vater Myokardinfarkt mit 58 J., Bruder Apoplex mit 68 J. Der Patient ist Schreiner, ledig, lebt allein."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Falsch: die Pflasterallergie fehlt, und die Angabe zum Rauchen ist unvollständig.",
+        "Richtig: 15 Zigaretten am Tag über 40 Jahre sind 30 py (pack years = Packungsjahre).",
+        "Laiensprache und unvollständig.",
+        "Inhaltlich falsch: Allergie ist eine Pflasterallergie, die Packungsjahre betragen 30, und Vater und Bruder sind vertauscht."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Anamnestisch besteht der Verdacht auf eine tiefe Beinvenenthrombose links. Differenzialdiagnostisch kommen ein Erysipel, eine Baker-Zyste und eine Muskelzerrung in Betracht.",
+        "Es besteht ein gesicherter embolischer Verschluss der Arteria femoralis.",
+        "Diagnose: Durchblutungsstörung im Bein.",
+        "Anamnestisch besteht der Verdacht auf einen akuten embolischen Extremitätenarterienverschluss links bei Vorhofflimmern ohne Antikoagulation. Differenzialdiagnostisch kommen eine akute arterielle Thrombose bei pAVK, eine Aortendissektion und eine Phlegmasia coerulea dolens in Betracht."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Medizinisch unpassend: Ein kaltes, blasses Bein spricht für ein arterielles, nicht für ein venöses Problem.",
+        "Ohne Bildgebung ist die Diagnose noch nicht gesichert.",
+        "Laiensprache, zu unspezifisch, keine Differenzialdiagnosen.",
+        "Richtig: Verdacht statt Gewissheit, Ätiologie genannt, sinnvolle Differenzialdiagnosen."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Wir machen Blut und Ultraschall und schauen morgen früh noch einmal.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (u. a. Blutbild, Gerinnung, CK, Laktat, Kreatinin, Troponin), ein EKG und eine duplexsonographische Untersuchung der Beinarterien. Therapeutisch unverzüglich Heparin 5.000 IE i. v. als Bolus, Analgesie und tiefe Lagerung des Beines. Bei Bestätigung ist die notfallmäßige Revaskularisation (Embolektomie) durch die Gefäßchirurgie indiziert.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme, eine Hochlagerung und Wärmeapplikation des Beines sowie Heparin 5.000 IE i. m. Eine Revaskularisation kann elektiv in der nächsten Woche erfolgen.",
+        "Zur weiteren Abklärung empfehlen wir eine Koloskopie."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Gefährlich und unvollständig: Das Zeitfenster der Ischämie beträgt wenige Stunden.",
+        "Richtig: Diagnostik, Heparin i. v., Analgesie und notfallmäßige Revaskularisation in vollständigen Sätzen.",
+        "Gefährlich: Wärme und Hochlagerung verschlechtern die Ischämie, Heparin gibt man i. v. und nicht i. m., und die Revaskularisation ist ein Notfall.",
+        "Nicht die passende Untersuchung für diesen Verdacht."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Also, der Mann hat kalte Füße gehabt ...",
+        "Herr Hoffmann hat einen Gefäßverschluss.",
+        "Ich möchte Ihnen Herrn Werner Hoffmann vorstellen, einen 71-jährigen Patienten, der sich heute mit seit ca. 7 Uhr bestehenden, akut aufgetretenen Schmerzen im linken Bein vorgestellt hat.",
+        "Der Patient hat Schmerzen, er heißt Hoffmann."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz.",
+        "Unstrukturiert und umgangssprachlich."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Die Beschwerden begannen schleichend vor zwei Wochen und sind belastungsabhängig. Es bestehen Fieber bis 38,5 °C und ein Thoraxschmerz. Parästhesien wurden verneint.",
+        "Er hat alles Mögliche.",
+        "Er hat ein kaltes Bein und Kribbeln.",
+        "Der Schmerz trat plötzlich auf, schneidend, NRS 9/10. Der linke Unterschenkel und Fuß sind kalt und blass, begleitend bestehen Parästhesien, eine eingeschränkte Zehenbeweglichkeit und mehrfach Palpitationen. Thoraxschmerz, Dyspnoe und Fieber wurden verneint."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich falsch: Der Beginn war plötzlich, und Fieber und Thoraxschmerz wurden verneint.",
+        "Keine Information.",
+        "Zu knapp: Beginn, Schmerzstärke und Negativbefunde fehlen.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Bekannt sind ein Vorhofflimmern seit drei Jahren, eine arterielle Hypertonie und eine Hypercholesterinämie. Der Patient lehnt eine orale Antikoagulation ab. Er raucht seit 40 Jahren 15 Zigaretten am Tag (ca. 30 py). Der Vater hatte einen Apoplex, der Bruder einen Myokardinfarkt.",
+        "Er ist gesund.",
+        "Bekannt sind ein Vorhofflimmern seit drei Jahren und eine arterielle Hypertonie. Er nimmt eine orale Antikoagulation ein. Nichtraucher. Familienanamnese leer.",
+        "Er nimmt Bisoprolol und Ramipril, sonst nichts."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: relevante Vorgeschichte, fehlende Antikoagulation als Embolieursache und Gefäßrisikofaktoren.",
+        "Falsch: es gibt relevante Vorerkrankungen.",
+        "Inhaltlich falsch: keine Antikoagulation, Raucher mit 30 py, und die Familie ist belastet.",
+        "Unvollständig: Diagnosen und Risikofaktoren fehlen."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Es handelt sich sicher um eine tiefe Beinvenenthrombose, weil das Bein kalt ist. Differenzialdiagnostisch denke ich höchstens noch an eine Muskelzerrung.",
+        "Ich denke an Durchblutungsprobleme.",
+        "Ich weiß es nicht genau.",
+        "Ich vermute einen akuten embolischen Extremitätenarterienverschluss links bei Vorhofflimmern ohne Antikoagulation. Differenzialdiagnostisch denke ich an eine akute Thrombose bei pAVK, eine Aortendissektion und eine Phlegmasia coerulea dolens."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu sicher („sicher“), und die Venenthrombose passt nicht zum kalten, blassen Bein.",
+        "Zu unpräzise für das Arzt-Arzt-Gespräch.",
+        "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
+        "Richtig: Verdachtsdiagnose mit Ätiologie und Differenzialdiagnosen in Fachsprache."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde ihn nach Hause schicken und morgen den Hausarzt aufsuchen lassen.",
+        "Ich würde unverzüglich Heparin 5.000 IE i. v. als Bolus geben, Analgesie, das Bein tief lagern und weich polstern. Dazu Labor mit Kreatinin, CK, Laktat und Gerinnung, EKG und Duplexsonographie. Ich würde sofort die Gefäßchirurgie für eine Embolektomie hinzuziehen.",
+        "Ich würde zuerst eine Lysetherapie über zwei Tage machen, bevor wir irgendetwas anderes tun, und das Bein warm einpacken.",
+        "Ich würde eine Gastroskopie machen."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Gefährlich: Ein akuter Arterienverschluss ist ein Notfall, es drohen Gangrän und Amputation.",
+        "Richtig: Heparin i. v., Analgesie, Lagerung, Diagnostik und sofortiges Gefäßchirurgie-Konsil.",
+        "Gefährlich: Nach Beginn der Ischämie zählen Stunden, ein verzögerter Beginn und Wärme schaden.",
+        "Nicht die passende Untersuchung für diesen Verdacht."
+      ],
+      "reply": "Oberarzt: „Gut. Was erwarten Sie bei der Untersuchung des Beins?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich erwarte ein warmes, rotes, geschwollenes Bein mit gut tastbaren Fußpulsen und gestauten Venen, dazu einen positiven Homans-Test.",
+        "Ich erwarte ein kühles, blasses linkes Bein mit fehlenden Fußpulsen, verzögerter Kapillarfüllung sowie Sensibilitätsstörung und gegebenenfalls Bewegungseinschränkung der Zehen, also die 6 P nach Pratt.",
+        "Ich erwarte gar nichts, denn die Diagnose ist ja bereits klar und eine Untersuchung des Beines ist nicht mehr nötig, bevor wir operieren.",
+        "Eine vergrößerte Milz."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Nicht typisch: Das beschreibt eher eine tiefe Beinvenenthrombose.",
+        "Richtig: typische klinische Zeichen der akuten Ischämie (Pain, Paleness, Pulselessness, Paresthesia, Paralysis, Prostration).",
+        "In der Prüfung erwartet man eine begründete Antwort.",
+        "Nicht typisch für diesen Verdacht."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Embolie“?",
+      "options": [
+        "Entzündung der Gefäßwand",
+        "Verschleppung eines Blutgerinnsels, das ein Gefäß verstopft",
+        "Krampfader",
+        "Aussackung einer Schlagader"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Vaskulitis.",
+        "Richtig.",
+        "Das ist eine Varize.",
+        "Das ist ein Aneurysma."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Ischämie“?",
+      "options": [
+        "Blutung ins Gewebe",
+        "Schwellung durch Wasser im Gewebe",
+        "Gewebetod",
+        "Minderdurchblutung des Gewebes"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist eine Hämorrhagie.",
+        "Das ist ein Ödem.",
+        "Das ist die Nekrose.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Parästhesie“?",
+      "options": [
+        "Gefühllosigkeit",
+        "Missempfindung, zum Beispiel Kribbeln",
+        "Lähmung",
+        "Schmerzüberempfindlichkeit"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Hypästhesie beziehungsweise Anästhesie.",
+        "Richtig.",
+        "Das ist die Parese beziehungsweise Plegie.",
+        "Das ist die Hyperalgesie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Pallor“?",
+      "options": [
+        "Blaufärbung",
+        "Rötung",
+        "Blässe",
+        "Gelbfärbung"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Zyanose.",
+        "Das ist ein Erythem.",
+        "Richtig.",
+        "Das ist der Ikterus."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Claudicatio intermittens“?",
+      "options": [
+        "belastungsabhängige Beinschmerzen, die zum Stehenbleiben zwingen",
+        "Schmerz im Ruhezustand im Liegen",
+        "nächtlicher Wadenkrampf",
+        "Hinken wegen Gelenkverschleiß"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist der Ruheschmerz bei fortgeschrittener pAVK.",
+        "Das ist ein nächtlicher Wadenkrampf (Crampus).",
+        "Das ist die Koxarthrose beziehungsweise Gonarthrose."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

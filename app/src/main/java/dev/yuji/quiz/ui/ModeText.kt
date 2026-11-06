@@ -11,6 +11,7 @@ fun GameMode.titleRes(): Int = when (this) {
     GameMode.PLURAL -> R.string.mode_plural_title
     GameMode.PRETERITE -> R.string.mode_preterite_title
     GameMode.ERROR_SPOT -> R.string.mode_errors_title
+    GameMode.FSP_CASE -> R.string.mode_fsp_title
 }
 
 @StringRes
@@ -20,4 +21,5 @@ fun GameMode.instructionRes(): Int = when (this) {
     GameMode.PLURAL -> R.string.mode_plural_instruction
     GameMode.PRETERITE -> R.string.mode_preterite_instruction
     GameMode.ERROR_SPOT -> R.string.mode_errors_instruction
+    GameMode.FSP_CASE -> R.string.mode_fsp_instruction
 }

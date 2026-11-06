@@ -1,0 +1,691 @@
+{
+  "id": "multiple-sklerose",
+  "area": "Neurologie",
+  "title": "Sehstörung auf dem linken Auge",
+  "diagnosis": "Optikusneuritis als Erstmanifestation einer Multiplen Sklerose",
+  "source": "common_FSP",
+  "bwReports": 0,
+  "patient": "Frau Lena Hoffmann, 27 Jahre, stellt sich am Vormittag in der Notaufnahme vor.",
+  "steps": [
+    {
+      "part": 1,
+      "section": "Begrüßung",
+      "situation": "Frau Hoffmann sitzt im Untersuchungsraum und hält sich die Hand vor das linke Auge.",
+      "question": "Wie beginnen Sie das Gespräch?",
+      "options": [
+        "Hallo, Frau Hoffmann, setzen Sie sich, ich schaue mir gleich Ihr Auge an.",
+        "Guten Tag, Frau Hoffmann. Bevor wir beginnen, brauche ich bitte Ihre Versichertenkarte und Ihren Überweisungsschein, damit die Anmeldung vollständig ist.",
+        "Guten Tag, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Frau Hoffmann?",
+        "Na, Sie haben es wohl am Auge?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Ohne Vorstellung und zu umgangssprachlich; untersucht wird erst nach der Anamnese.",
+        "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor.",
+        "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität der Patientin.",
+        "Respektlos und suggestiv, außerdem ohne Vorstellung."
+      ],
+      "reply": "Patientin: „Ja, Hoffmann. Guten Tag, Herr Doktor.“"
+    },
+    {
+      "part": 1,
+      "section": "Personalien",
+      "situation": null,
+      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "options": [
+        "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
+        "Sie sind doch noch sehr jung, höchstens dreißig, oder?",
+        "Wie hoch ist Ihr Body-Mass-Index?",
+        "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum, und bei welcher Krankenkasse sind Sie versichert?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
+        "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
+        "Den BMI kennt kaum jemand. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
+        "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
+      ],
+      "reply": "Patientin: „Ich bin 27, 1,70 Meter groß und wiege 62 Kilo.“"
+    },
+    {
+      "part": 1,
+      "section": "Hauptbeschwerde",
+      "situation": null,
+      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "options": [
+        "Haben Sie Probleme mit dem Auge?",
+        "Was führt Sie heute zu uns? Erzählen Sie bitte.",
+        "Welche Symptomatik besteht bei Ihnen?",
+        "Warum gehen Sie nicht zum Augenarzt, sondern kommen direkt ins Krankenhaus?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "Richtig: eine offene Frage lässt die Patientin selbst erzählen.",
+        "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
+        "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
+      ],
+      "reply": "Patientin: „Seit drei Tagen sehe ich auf dem linken Auge ganz verschwommen, wie durch einen Grauschleier.“"
+    },
+    {
+      "part": 1,
+      "section": "Leitsymptom genauer",
+      "situation": null,
+      "question": "Sie möchten die Sehstörung genauer eingrenzen. Was fragen Sie?",
+      "options": [
+        "Haben Sie eine Visusminderung mit Skotom oder Gesichtsfeldeinschränkung, und liegt eine Dyschromatopsie vor?",
+        "Sehen Sie auf dem linken Auge doppelt?",
+        "Es ist bestimmt der Mittelpunkt, den Sie nicht mehr sehen, richtig?",
+        "Welches Auge ist betroffen, und was sehen Sie nicht mehr richtig: die Mitte, den Rand, oder sind zum Beispiel die Farben anders?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich gut, aber nur Fachbegriffe („Visusminderung“, „Skotom“, „Dyschromatopsie“). Sagen Sie es in Laiensprache.",
+        "Geschlossene Frage zu einem anderen Symptom; sie grenzt die Sehstörung nicht ein.",
+        "Suggestivfrage. Die Patientin könnte Ihnen nur zustimmen.",
+        "Richtig: Seite, Ort des Ausfalls und Farbsehen, laienverständlich und ohne die Antwort vorzugeben."
+      ],
+      "reply": "Patientin: „Nur links. In der Mitte ist ein Schleier, und Rot sieht auf diesem Auge ganz blass aus.“"
+    },
+    {
+      "part": 1,
+      "section": "Beginn und Verlauf",
+      "situation": null,
+      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "options": [
+        "Wann genau hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben?",
+        "Wie war der zeitliche Verlauf seit dem Beginn der Symptomatik: akut, subakut oder chronisch progredient, mit oder ohne Remission?",
+        "Seit wann haben Sie das?",
+        "Kam es ganz plötzlich, von einer Sekunde auf die andere?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage.",
+        "Fachsprache: „subakut“, „progredient“ und „Remission“ versteht die Patientin nicht.",
+        "Das hat die Patientin schon gesagt (seit drei Tagen). Fragen Sie nach dem Verlauf.",
+        "Geschlossene und suggestive Frage; sie erfasst den Verlauf nicht."
+      ],
+      "reply": "Patientin: „Vor drei Tagen habe ich es morgens bemerkt, anfangs nur leicht. Zwei Tage lang wurde es schlechter, seit gestern ist es ungefähr gleich.“"
+    },
+    {
+      "part": 1,
+      "section": "Charakter und Stärke",
+      "situation": null,
+      "question": "Sie fragen nach Art und Stärke der Beschwerden. Welche Formulierung passt?",
+      "options": [
+        "Ist der Schmerz eher stechend oder dumpf, und wie stark ist er auf einer Skala von 0 bis 10?",
+        "Wie viel sehen Sie links noch im Vergleich zu rechts? Haben Sie Schmerzen, etwa beim Bewegen des Auges? Wie stark von 0 bis 10?",
+        "Tut es weh?",
+        "Wie viel Prozent Visus haben Sie noch links, und wie stark ist der Bulbusbewegungsschmerz auf einer Skala von 1 bis 100?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Es fehlt die Frage nach dem Sehen selbst; Sie erfahren nicht, wie stark die Sehstörung ist.",
+        "Richtig: Stärke der Sehstörung im Vergleich, Schmerz beim Augenbewegen und die übliche Skala von 0 bis 10.",
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
+        "Fachsprache („Visus“, „Bulbusbewegungsschmerz“) und eine unübliche Skala. In Deutschland fragt man 0 bis 10."
+      ],
+      "reply": "Patientin: „Mit dem linken Auge erkenne ich nur noch etwa ein Drittel, wie durch Milchglas. Hinter dem Auge zieht es beim Bewegen, so 4 von 10.“"
+    },
+    {
+      "part": 1,
+      "section": "Begleitsymptome",
+      "situation": null,
+      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "options": [
+        "Haben Sie eine Diplopie, Paresen, Parästhesien oder Gangunsicherheit, und bestehen Vertigo, Kopfschmerzen, eine Dysarthrie oder Schluckstörungen?",
+        "Sie haben sicher auch Kopfschmerzen und Schwindel, oder?",
+        "Sehen Sie manchmal doppelt? Haben Sie Kopfschmerzen oder Schwindel? Gab es Lähmungen oder Gefühlsstörungen, zum Beispiel Kribbeln oder Taubheit?",
+        "Gibt es noch etwas?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „doppelt sehen“, „Lähmung“, „Kribbeln“, „Schwindel“.",
+        "Suggestiv: Sie unterstellen die Symptome.",
+        "Richtig: konkrete neurologische Begleitsymptome in Laiensprache, mit Beispielen.",
+        "Zu unkonkret; die Patientin sagt einfach „nein“."
+      ],
+      "reply": "Patientin: „Doppelbilder habe ich nicht. Kopfschmerzen und Schwindel auch nicht. Lähmungen oder Taubheit habe ich im Moment nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Vegetative Anamnese",
+      "situation": null,
+      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "options": [
+        "Wie ist die Vegetativa, Frau Hoffmann?",
+        "Haben Sie Fieber, Nachtschweiß, Gewichtsverlust, Dysurie, Obstipation, Diarrhö, Harninkontinenz oder Fatigue?",
+        "Ist sonst alles in Ordnung bei Ihnen?",
+        "Hatten Sie Fieber? Wie sind Appetit und Gewicht, Stuhlgang und Wasserlassen? Gibt es Probleme mit der Blase, oder sind Sie ungewöhnlich müde?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fachjargon, den eine Patientin nicht versteht.",
+        "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Obstipation, Diarrhö, Fatigue).",
+        "Zu allgemein; die Patientin sagt einfach „ja“.",
+        "Richtig: Fieber, Appetit, Gewicht, Stuhlgang, Wasserlassen und gezielt Blase und Müdigkeit (MS-typisch), in Laiensprache."
+      ],
+      "reply": "Patientin: „Fieber hatte ich nicht. Appetit und Gewicht sind gleich geblieben, Stuhlgang und Wasserlassen normal. Müde bin ich seit einigen Monaten oft, auch nach dem Schlafen.“"
+    },
+    {
+      "part": 1,
+      "section": "Vorerkrankungen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "options": [
+        "Haben Sie chronische Erkrankungen, zum Beispiel Schilddrüse, Zucker oder Bluthochdruck? Wurden Sie schon einmal operiert? Gab es früher schon einmal andere ungewöhnliche Beschwerden?",
+        "Bestehen Vorerkrankungen wie eine Autoimmunthyreopathie, ein Diabetes mellitus oder eine arterielle Hypertonie, und gab es Voroperationen oder stationäre Aufenthalte?",
+        "Sind Sie sonst gesund?",
+        "Welche Diagnosen stehen in Ihrer Akte?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: mit Beispielen, laienverständlich; Operationen und frühere Beschwerden sind mitgefragt.",
+        "Vollständig, aber in Fachsprache („Autoimmunthyreopathie“, „arterielle Hypertonie“). Mit Patienten sprechen Sie Laiensprache.",
+        "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
+        "Die Patientin kennt ihre Akte nicht. Fragen Sie direkt."
+      ],
+      "reply": "Patientin: „Ich habe Hashimoto, also eine Schilddrüsenunterfunktion. Mit acht Jahren wurden mir die Mandeln entfernt. Vor zwei Jahren hatte ich vier Wochen lang ein Kribbeln im rechten Bein, der Hausarzt meinte, das käme vom Rücken. Es ging von allein weg.“"
+    },
+    {
+      "part": 1,
+      "section": "Medikamente",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Medikation?",
+      "options": [
+        "Welche Medikamente nehmen Sie ein, und welche Pharmaka applizieren Sie zusätzlich selbst, zum Beispiel Nahrungsergänzungsmittel?",
+        "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept und die Pille?",
+        "Nehmen Sie Tabletten?",
+        "Sie nehmen doch sicher L-Thyroxin?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Fachsprache („Pharmaka“, „applizieren“) und unklar formuliert.",
+        "Richtig: Name, Dosierung, frei verkäufliche Mittel und die Pille.",
+        "Zu ungenau: Dosis und andere Darreichungsformen fehlen.",
+        "Suggestivfrage. Fragen Sie offen."
+      ],
+      "reply": "Patientin: „L-Thyroxin 75 Mikrogramm morgens und die Pille, laut Packung Ethinylestradiol 0,03 Milligramm mit Dienogest 2 Milligramm, jeden Morgen eine. Gestern habe ich eine Ibuprofen 400 gegen die Augenschmerzen genommen.“"
+    },
+    {
+      "part": 1,
+      "section": "Allergien",
+      "situation": null,
+      "question": "Wie fragen Sie nach Allergien?",
+      "options": [
+        "Sind Sie gegen Kontrastmittel oder gegen Antibiotika allergisch? Das ist wichtig für die MRT-Untersuchung und die Therapie, die wir gleich planen.",
+        "Allergien?",
+        "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Pollen, Lebensmittel oder Pflaster? Wie äußert sich das?",
+        "Sind Sie hypersensibel oder atopisch veranlagt?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Zu eng: Allergien gegen Pollen, Lebensmittel oder Pflaster übersehen Sie.",
+        "Kein vollständiger Satz; in der Prüfung unhöflich.",
+        "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
+        "Fachsprache und missverständlich („hypersensibel“, „atopisch“)."
+      ],
+      "reply": "Patientin: „Gegen Birkenpollen, im Frühjahr habe ich dann Niesen und tränende Augen. Medikamente vertrage ich alle.“"
+    },
+    {
+      "part": 1,
+      "section": "Noxen",
+      "situation": null,
+      "question": "Wie fragen Sie nach Genussmitteln?",
+      "options": [
+        "Sind Sie Raucherin oder trinken Sie regelmäßig zu viel Alkohol?",
+        "Wie hoch ist Ihr Nikotin- und Alkoholabusus, und konsumieren Sie Substanzen?",
+        "Sie rauchen und trinken bestimmt nicht, oder?",
+        "Rauchen Sie? Wenn ja, seit wann und wie viel? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Wertend und ungenau: „zu viel“ unterstellt ein Problem, und Menge und Dauer fehlen.",
+        "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
+        "Suggestivfrage; die Patientin wird eher verneinen.",
+        "Richtig: neutral, konkret, mit Dauer und Menge."
+      ],
+      "reply": "Patientin: „Ich rauche seit zehn Jahren etwa zehn Zigaretten am Tag. Alkohol trinke ich am Wochenende ein bis zwei Gläser Wein. Drogen nehme ich nicht.“"
+    },
+    {
+      "part": 1,
+      "section": "Familienanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der Familie?",
+      "options": [
+        "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Nerven-, Schilddrüsen- oder Herzerkrankungen?",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Wie ist die Familienanamnese?",
+        "Hat in Ihrer Familie jemand Multiple Sklerose?"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: offen, mit passenden Beispielen.",
+        "Zu eng: Geschwister und weitere Verwandte fehlen, und häufige Erkrankungen erfahren Sie so nicht.",
+        "„Familienanamnese“ ist ein Fachwort.",
+        "Suggestive Frage, die die Diagnose vorwegnimmt und die Patientin beunruhigt."
+      ],
+      "reply": "Patientin: „Meine Mutter hat auch Hashimoto. Eine Schwester meiner Mutter hat Multiple Sklerose. Mein Vater hat Bluthochdruck.“"
+    },
+    {
+      "part": 1,
+      "section": "Sozialanamnese",
+      "situation": null,
+      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "options": [
+        "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
+        "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
+        "Was ist Ihr sozialer Status?",
+        "Verdienen Sie genug Geld?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
+        "Richtig: Beruf und Wohnsituation, beides wichtig für Entlassung und Versorgung.",
+        "Unklar und unangenehm formuliert.",
+        "Unangemessen und indiskret."
+      ],
+      "reply": "Patientin: „Ich bin Grundschullehrerin und wohne mit meinem Freund zusammen, im dritten Stock ohne Aufzug. Kinder haben wir keine.“"
+    },
+    {
+      "part": 1,
+      "section": "Verdachtsdiagnose erklären",
+      "situation": null,
+      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "options": [
+        "Sie haben eine Retrobulbärneuritis, vermutlich im Rahmen einer Erstmanifestation einer Multiplen Sklerose.",
+        "Ich vermute einen Schlaganfall im Auge. Dagegen müssen wir sofort etwas tun, sonst erblinden Sie endgültig.",
+        "Ich vermute, dass der Sehnerv an Ihrem linken Auge entzündet ist. Das kann verschiedene Ursachen haben, auch eine Erkrankung des Nervensystems. Genaueres wissen wir erst nach weiteren Untersuchungen.",
+        "Das ist wahrscheinlich nur Überanstrengung durch die Arbeit am Bildschirm, das geht von allein wieder weg."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Fachsprache und eine Gewissheit, die Sie noch nicht haben; die Patientin versteht die Diagnose nicht.",
+        "Falsch und beängstigend: ein Schlaganfall im Auge ist hier nicht der Verdacht.",
+        "Richtig: Verdacht (nicht Gewissheit), Laiensprache, ehrlich und ohne zu erschrecken.",
+        "Verharmlosend und medizinisch falsch."
+      ],
+      "reply": "Patientin: „Eine Entzündung des Sehnervs? Und was passiert jetzt mit mir?“"
+    },
+    {
+      "part": 1,
+      "section": "Weiteres Vorgehen",
+      "situation": "Die Patientin fragt: „Ist das Multiple Sklerose, wie bei meiner Tante?“",
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ja, das ist ganz sicher Multiple Sklerose, und Sie werden wahrscheinlich bald im Rollstuhl sitzen.",
+        "Nein, das ist garantiert keine Multiple Sklerose, Sie müssen sich keine Sorgen machen.",
+        "Das kann ich Ihnen jetzt nicht sagen, das entscheidet der Oberarzt.",
+        "Das ist möglich, aber noch nicht sicher. Wir untersuchen Sie neurologisch, ein Augenarzt schaut nach, und wir machen eine Kernspintomografie vom Kopf sowie Blutuntersuchungen. Eventuell brauchen wir auch Nervenwasser aus dem Rücken. Bei einer Entzündung geben wir Cortison über die Vene."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Zu früh, falsch und beängstigend: die Diagnose ist noch nicht gesichert.",
+        "Falsch: Sie können die Diagnose nicht ausschließen, und die Beruhigung ist unehrlich.",
+        "Unprofessionell und lässt die Patientin allein.",
+        "Richtig: ehrliche Aussicht, nächste Schritte und Therapie, laienverständlich („Kernspintomografie“, „Nervenwasser“)."
+      ],
+      "reply": "Patientin: „Danke, dass Sie so ehrlich mit mir sprechen.“"
+    },
+    {
+      "part": 2,
+      "section": "Einleitung",
+      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
+      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "options": [
+        "Frau Lena Hoffmann ist 27 und sieht schlecht auf dem linken Auge.",
+        "Frau Lena Hoffmann, eine 27-jährige Patientin, stellte sich heute in unserer Notaufnahme mit seit drei Tagen bestehender Visusminderung des rechten Auges vor.",
+        "Die Patientin Frau Hoffmann stellt sich heute vor wegen Visusminderung links seit drei Tagen, 27-jährig, in die Notaufnahme.",
+        "Frau Lena Hoffmann, eine 27-jährige Patientin, stellte sich heute in unserer Notaufnahme mit seit drei Tagen bestehender Visusminderung des linken Auges vor."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Umgangssprache gehört nicht in den Arztbrief.",
+        "Inhaltlich falsch: betroffen ist das linke Auge, nicht das rechte.",
+        "Satzbau falsch: Altersangabe und „in die Notaufnahme“ (Dativ, wo?) stehen unglücklich am Ende.",
+        "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort, Leitsymptom und Seite."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Aktuelle Anamnese",
+      "situation": null,
+      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "options": [
+        "Seit drei Tagen besteht eine zunächst progrediente, seit gestern stationäre Visusminderung links im Sinne eines zentralen Schleiers (Visus subjektiv auf etwa ein Drittel reduziert) mit Rotentsättigung und Bulbusbewegungsschmerz (NRS 4/10).",
+        "Seit drei Tagen besteht eine zunächst progrediente, seit gestern stationäre Visusminderung rechts im Sinne eines zentralen Schleiers (Visus subjektiv auf etwa ein Drittel reduziert) mit Rotentsättigung und Bulbusbewegungsschmerz (NRS 4/10).",
+        "Seit drei Tagen besteht eine akute, vollständige Amaurose links mit Photopsien und einem Gesichtsfeldausfall von oben, ohne Schmerzen (NRS 0/10).",
+        "Ihr linkes Auge sieht seit drei Tagen schlecht, das Rot ist blass, und es tut beim Bewegen weh."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Fachsprache und alle Merkmale (Dauer, Verlauf, Seite, Ausfall, Farbsehen, Schmerz, Intensität).",
+        "Inhaltlich falsch: Betroffen ist das linke Auge.",
+        "Inhaltlich falsch: Es besteht keine vollständige Erblindung, und die Patientin hat Schmerzen beim Bewegen des Auges.",
+        "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Begleitsymptome und vegetative Anamnese",
+      "situation": null,
+      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "options": [
+        "Die Patientin berichtete über Doppelbilder, Kopfschmerzen und Schwindel. Fieber wurde verneint. Sie fühle sich seit Monaten müde.",
+        "Doppelbilder, Kopfschmerzen, Schwindel sowie Paresen und Sensibilitätsstörungen wurden verneint. Kein Fieber, Appetit und Gewicht unverändert, Miktion und Defäkation unauffällig. Seit mehreren Monaten besteht eine ausgeprägte Fatigue.",
+        "Keine Beschwerden. Sie ist müde.",
+        "Doppelbilder, Kopfschmerzen, Schwindel sowie Paresen und Sensibilitätsstörungen wurden verneint. Fieber bis 38,5 °C, Appetit und Gewicht unverändert, Miktion und Defäkation unauffällig. Seit mehreren Monaten besteht eine ausgeprägte Fatigue."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inhaltlich falsch: Doppelbilder, Kopfschmerzen und Schwindel wurden verneint; außerdem Konjunktiv-Mischung.",
+        "Richtig: vollständig, Fachsprache, Negativbefunde dokumentiert, Fatigue erwähnt.",
+        "Unvollständig und umgangssprachlich; die Negativbefunde fehlen.",
+        "Inhaltlich falsch: Die Patientin hatte kein Fieber."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Vorerkrankungen und Medikation",
+      "situation": null,
+      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "options": [
+        "Vorerkrankungen: Schilddrüse, Rücken. Medikamente: L-Thyroxin, Pille, Ibuprofen.",
+        "Bekannt ist eine Hashimoto-Thyreoiditis mit Hyperthyreose. Z. n. Appendektomie im Kindesalter. Z. n. Parästhesien des linken Beins vor zwei Jahren, spontan regredient. Medikation: L-Thyroxin 75 µg 1-0-0, Ethinylestradiol/Dienogest 0,03/2 mg 1-0-0, Ibuprofen 400 mg einmalig gestern.",
+        "Bekannt ist eine Hashimoto-Thyreoiditis mit Hypothyreose. Z. n. Tonsillektomie im Kindesalter. Z. n. Parästhesien des rechten Beins vor zwei Jahren (Dauer ca. vier Wochen), spontan regredient. Medikation: L-Thyroxin 75 µg 1-0-0, Ethinylestradiol/Dienogest 0,03/2 mg 1-0-0, Ibuprofen 400 mg einmalig gestern.",
+        "Medikation: L-Thyroxin 75 µg 0-0-1, Ethinylestradiol/Dienogest 0,03/2 mg 1-1-0, Ibuprofen 400 mg 1-1-1."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Laiensprache und ohne Dosierung.",
+        "Inhaltlich falsch: Hypothyreose (nicht Hyperthyreose), Tonsillektomie (nicht Appendektomie), rechtes Bein.",
+        "Richtig: Fachbegriffe, Z. n. (Zustand nach) und Dosierschema im Format morgens-mittags-abends.",
+        "Dosierschema falsch: L-Thyroxin und die Pille morgens (1-0-0), Ibuprofen nur einmalig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Allergien, Noxen und Sozialanamnese",
+      "situation": null,
+      "question": "Welcher Abschnitt ist korrekt?",
+      "options": [
+        "Keine Allergien. Nikotinabusus. Sie ist Lehrerin.",
+        "Pollinose (Birkenpollen: Rhinokonjunktivitis), keine Medikamentenallergien. Nikotinkonsum ca. 10 py, gelegentlicher Alkoholkonsum. Familienanamnese: Mutter Hashimoto-Thyreoiditis, Tante mütterlicherseits Multiple Sklerose, Vater arterielle Hypertonie. Die Patientin ist Grundschullehrerin und lebt mit ihrem Lebensgefährten.",
+        "Medikamentenallergie gegen Penicillin (Exanthem). Nikotinkonsum ca. 5 py, gelegentlicher Alkoholkonsum. Familienanamnese unauffällig. Die Patientin ist Grundschullehrerin und lebt mit ihrem Lebensgefährten.",
+        "Pollinose (Birkenpollen: Rhinokonjunktivitis), keine Medikamentenallergien. Nikotinkonsum ca. 5 py, gelegentlicher Alkoholkonsum. Familienanamnese: Mutter Hashimoto-Thyreoiditis, Tante mütterlicherseits Multiple Sklerose, Vater arterielle Hypertonie. Die Patientin ist Grundschullehrerin und lebt mit ihrem Lebensgefährten."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Falsch: Die Pollinose fehlt, „Nikotinabusus“ ist ungenau und der Rest unvollständig.",
+        "Falsch: 10 Zigaretten am Tag über 10 Jahre sind etwa 5 py (Packungsjahre), nicht 10.",
+        "Falsch: Die Patientin hat keine Penicillinallergie, und die Familienanamnese ist nicht unauffällig (Tante mit Multipler Sklerose).",
+        "Richtig: Pollinose, 5 py (10 Zigaretten über 10 Jahre), relevante Familienanamnese und Sozialanamnese."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Verdachtsdiagnose und Differenzialdiagnosen",
+      "situation": null,
+      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "options": [
+        "Anamnestisch besteht der Verdacht auf eine Optikusneuritis im Rahmen einer Erstmanifestation einer Multiplen Sklerose. Differenzialdiagnostisch kommen eine Neuromyelitis-optica-Spektrum-Erkrankung, eine MOG-Antikörper-assoziierte Erkrankung und eine Sarkoidose in Betracht.",
+        "Anamnestisch besteht der Verdacht auf ein akutes Winkelblockglaukom. Differenzialdiagnostisch kommen eine Optikusneuritis, eine Migräne mit Aura und eine Netzhautablösung in Betracht.",
+        "Diagnose: Sehnervenentzündung bei Multipler Sklerose.",
+        "Es besteht eine gesicherte Multiple Sklerose. Differenzialdiagnosen sind nicht erforderlich."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: Verdacht statt Gewissheit, sinnvolle Differenzialdiagnosen.",
+        "Unpassend: Ein Glaukomanfall macht ein rotes, hartes, schmerzhaftes Auge, nicht den Bulbusbewegungsschmerz mit Farbentsättigung.",
+        "Laiensprache, kein Verdacht, keine Differenzialdiagnosen.",
+        "Ohne MRT und Liquor ist die Diagnose nicht gesichert, und Differenzialdiagnosen gehören immer dazu."
+      ],
+      "reply": null
+    },
+    {
+      "part": 2,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "options": [
+        "Zur weiteren Abklärung empfehlen wir ein CT des Schädels ohne Kontrastmittel und eine orale Therapie mit Prednisolon 10 mg täglich über drei Wochen. Eine weitere Diagnostik ist zunächst nicht notwendig.",
+        "Zur weiteren Abklärung empfehlen wir eine neurologische und augenärztliche Untersuchung, eine Blutentnahme (u. a. Blutbild, CRP, Vitamin B12, AQP4- und MOG-Antikörper), ein MRT von Schädel und Myelon mit Kontrastmittel, eine Lumbalpunktion und VEP. Therapeutisch ist eine Stoßtherapie mit Methylprednisolon 1000 mg i. v. über drei bis fünf Tage indiziert.",
+        "Wir machen Blut und MRT und geben Cortison.",
+        "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und ein MRT des Schädels mit Kontrastmittel. Therapeutisch beginnen wir sofort eine Dauertherapie mit Interferon beta und verzichten auf eine Lumbalpunktion."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Leitlinienwidrig: Das CT ist nicht ausreichend, und eine niedrig dosierte orale Therapie erhöht das Rezidivrisiko.",
+        "Richtig: vollständige Diagnostik und leitliniengerechte Stoßtherapie in vollständigen Sätzen.",
+        "Zu umgangssprachlich und unvollständig.",
+        "Verfrüht: Eine Dauertherapie beginnt erst nach gesicherter Diagnose, und Liquor und Antikörper sind für die Differenzialdiagnose wichtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Übergabe beginnen",
+      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
+      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "options": [
+        "Die Patientin hat ein Problem mit dem Auge, sie heißt Hoffmann.",
+        "Frau Hoffmann hat eine Multiple Sklerose.",
+        "Ich möchte Ihnen Frau Lena Hoffmann vorstellen, eine 27-jährige Patientin, die sich heute mit seit drei Tagen bestehender Visusminderung links und Bulbusbewegungsschmerz vorgestellt hat.",
+        "Also, die junge Frau ist Lehrerin und hat eine Tante mit Multipler Sklerose, und jetzt sieht sie links seit ein paar Tagen komisch ..."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Unstrukturiert und umgangssprachlich.",
+        "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
+        "Richtig: Name, Alter, Leitsymptom, Dauer in einem Satz.",
+        "Kein strukturierter Einstieg und umgangssprachlich; zuerst Patientin und Leitsymptom."
+      ],
+      "reply": "Oberarzt: „Mhm. Und weiter?“"
+    },
+    {
+      "part": 3,
+      "section": "Befunde",
+      "situation": null,
+      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "options": [
+        "Die Beschwerden begannen plötzlich vor einer Stunde mit Blitzen und einem Vorhang von oben am rechten Auge. Kopfschmerzen und Doppelbilder bestehen.",
+        "Sie hat alles Mögliche.",
+        "Die Patientin hat Schmerzen und sieht schlecht.",
+        "Die Visusminderung links entwickelte sich über zwei Tage und ist seit gestern stabil. Begleitend bestehen eine Rotentsättigung und ein Bulbusbewegungsschmerz (NRS 4/10). Doppelbilder, Paresen, Sensibilitätsstörungen und Fieber wurden verneint."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Inhaltlich falsch: Der Beginn war schleichend über zwei Tage, das linke Auge ist betroffen, Doppelbilder und Kopfschmerzen wurden verneint.",
+        "Keine Information.",
+        "Zu unspezifisch für ein Arzt-Arzt-Gespräch.",
+        "Richtig: knapp, strukturiert, mit relevanten Negativbefunden."
+      ],
+      "reply": "Oberarzt: „Vorgeschichte?“"
+    },
+    {
+      "part": 3,
+      "section": "Vorgeschichte",
+      "situation": null,
+      "question": "Was berichten Sie zur Vorgeschichte?",
+      "options": [
+        "Bekannt sind eine Hashimoto-Thyreoiditis unter L-Thyroxin und die Einnahme eines oralen Kontrazeptivums. Vor zwei Jahren traten vier Wochen lang Parästhesien im rechten Bein auf, die hausärztlich dem Rücken zugeordnet wurden. Eine Tante mütterlicherseits hat Multiple Sklerose. Keine Medikamentenallergien.",
+        "Bekannt sind eine Hashimoto-Thyreoiditis und eine Penicillinallergie. Die Familienanamnese ist unauffällig, und es gab nie zuvor neurologische Beschwerden. Sie raucht nicht und trinkt keinen Alkohol.",
+        "Sie ist gesund.",
+        "Bekannt ist ein Diabetes mellitus Typ 1 unter Insulin. Vor zwei Jahren hatte sie einen Schlaganfall. Keine Allergien."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig: relevante Vorgeschichte mit der früheren Episode, positiver Familienanamnese und fehlender Medikamentenallergie.",
+        "Inhaltlich falsch: keine Penicillinallergie, die frühere Episode und die Tante mit MS fehlen, und die Patientin raucht.",
+        "Falsch: es gibt relevante Vorerkrankungen.",
+        "Inhaltlich falsch: kein Diabetes, kein Schlaganfall."
+      ],
+      "reply": "Oberarzt: „Woran denken Sie?“"
+    },
+    {
+      "part": 3,
+      "section": "Verdachtsdiagnose",
+      "situation": null,
+      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "options": [
+        "Ich denke an eine Augenentzündung. Differenzialdiagnostisch denke ich an nichts anderes, weil die Beschwerden nur das Auge betreffen.",
+        "Ich vermute eine Optikusneuritis, möglicherweise als Erstmanifestation einer Multiplen Sklerose, auch wegen der früheren Parästhesien und der Familienanamnese. Differenzialdiagnostisch denke ich an eine NMOSD, eine MOG-Antikörper-assoziierte Erkrankung und eine Sarkoidose.",
+        "Ich denke an Multiple Sklerose.",
+        "Es handelt sich sicher um eine ischämische Optikusneuropathie, weil die Patientin Raucherin ist. Differenzialdiagnostisch denke ich höchstens an einen Zentralarterienverschluss und ein Glaukom."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Zu unpräzise, und ohne Differenzialdiagnosen: auch andere Erkrankungen des Nervensystems kommen infrage.",
+        "Richtig: Verdachtsdiagnose mit Begründung und Differenzialdiagnosen in Fachsprache.",
+        "Zu unpräzise: keine Begründung und keine Differenzialdiagnosen.",
+        "Zu sicher („sicher“), und bei einer 27-Jährigen mit Bulbusbewegungsschmerz ist die Optikusneuritis viel wahrscheinlicher."
+      ],
+      "reply": "Oberarzt: „Was wollen Sie machen?“"
+    },
+    {
+      "part": 3,
+      "section": "Procedere",
+      "situation": null,
+      "question": "Welches Procedere schlagen Sie vor?",
+      "options": [
+        "Ich würde die Patientin nach Hause schicken und eine Kontrolle beim Augenarzt in drei Monaten vereinbaren.",
+        "Ich würde eine Lumbalpunktion machen und sofort mit Interferon beta beginnen, ein MRT brauchen wir dann nicht mehr.",
+        "Ich würde ein MRT von Schädel und Myelon mit Kontrastmittel veranlassen, Blut inklusive AQP4- und MOG-Antikörper abnehmen und eine Lumbalpunktion auf oligoklonale Banden durchführen. Therapeutisch würde ich Methylprednisolon 1000 mg i. v. über drei bis fünf Tage geben und die Patientin stationär aufnehmen.",
+        "Ich würde Methylprednisolon 1000 mg i. v. über drei Wochen geben, ohne vorher eine Bildgebung oder Lumbalpunktion zu machen, weil die Diagnose klar ist."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gefährlich: Eine akute Optikusneuritis muss zügig abgeklärt und behandelt werden.",
+        "Falsch: Ohne MRT ist die Diagnose nicht gestützt, und eine Dauertherapie beginnt nicht vor der Diagnosesicherung.",
+        "Richtig: Diagnostik nach Leitlinie, Stoßtherapie in der richtigen Dosis und Dauer, stationäre Aufnahme.",
+        "Leitlinienwidrig: Die Stoßtherapie dauert drei bis fünf Tage, und vorher braucht man Diagnostik."
+      ],
+      "reply": "Oberarzt: „Gut. Was erwarten Sie im MRT?“"
+    },
+    {
+      "part": 3,
+      "section": "Rückfrage",
+      "situation": null,
+      "question": "Wie antworten Sie?",
+      "options": [
+        "Ich erwarte eine einzelne große Raumforderung mit Ringenhancement und Perifokalödem im Marklager, am ehesten ein Glioblastom, dazu eine Diffusionsstörung im Mediastromgebiet.",
+        "Ein unauffälliges MRT.",
+        "Ich erwarte Zeichen einer Blutung.",
+        "Ich erwarte multiple T2-hyperintense Läsionen periventrikulär, juxtakortikal und infratentoriell, ovoid und senkrecht zum Ventrikel (Dawson-Finger), teils mit Kontrastmittelaufnahme, und im linken Sehnerv eine Signalanhebung."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Nicht typisch für eine Multiple Sklerose; ein Glioblastom und ein Infarkt passen nicht zu einer 27-Jährigen mit Optikusneuritis.",
+        "Möglich, aber bei Verdacht auf MS unwahrscheinlich; in der Prüfung erwartet man typische Befunde.",
+        "Nicht typisch für diesen Verdacht.",
+        "Richtig: typische MRT-Zeichen einer Multiplen Sklerose und der Optikusneuritis."
+      ],
+      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
+      "question": "Was bedeutet „Visus“?",
+      "options": [
+        "Sehschärfe",
+        "Augeninnendruck",
+        "Gesichtsfeld",
+        "Austrittsstelle des Sehnervs"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Tensio (Augeninnendruck).",
+        "Das ist das Gesichtsfeld (Perimetrie).",
+        "Das ist die Papille."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Parästhesie“?",
+      "options": [
+        "Lähmung",
+        "Muskelkrampf",
+        "Kribbeln oder Missempfindung",
+        "Schmerzen bei Berührung"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Das ist die Parese.",
+        "Das ist ein Spasmus.",
+        "Richtig.",
+        "Das ist die Allodynie."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Skotom“?",
+      "options": [
+        "Doppelbild",
+        "Gesichtsfeldausfall, ein Fleck im Gesichtsfeld",
+        "Blendempfindlichkeit",
+        "Augenzittern"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Das ist die Diplopie.",
+        "Richtig.",
+        "Das ist die Photophobie.",
+        "Das ist der Nystagmus."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Dyschromatopsie“?",
+      "options": [
+        "vollständige Farbenblindheit, Sehen nur in Grautönen",
+        "Lichtblitze",
+        "Nachtblindheit",
+        "Störung des Farbsehens"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Das ist die Achromatopsie.",
+        "Das sind Photopsien.",
+        "Das ist die Hemeralopie.",
+        "Richtig."
+      ],
+      "reply": null
+    },
+    {
+      "part": 3,
+      "section": "Fachbegriffe",
+      "situation": null,
+      "question": "Was bedeutet „Fatigue“?",
+      "options": [
+        "bleierne Erschöpfung",
+        "Schlaflosigkeit",
+        "Muskelschwäche",
+        "Koordinationsstörung beim Gehen"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Richtig.",
+        "Das ist die Insomnie.",
+        "Das ist die Parese.",
+        "Das ist die Ataxie."
+      ],
+      "reply": "Oberarzt: „Danke, das war's.“"
+    }
+  ]
+}

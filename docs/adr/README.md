@@ -23,3 +23,4 @@ and commit history; their alternatives are the ones recorded then, nothing more.
 | [0010](0010-progress-backup.md) | Progress backup as one JSON file, import replaces | accepted (reconstructed) |
 | [0011](0011-promote-after-updated-tests.md) | Promote once the updated automated tests pass; then Giovanni decides | accepted |
 | [0012](0012-downloadable-question-pool.md) | The question pool is a versioned pack the app can download from the update feed | accepted |
+| [0014](0014-fsp-case-simulations.md) | FSP case simulations as a sixth mode, one card per case, built from one fixed template | accepted |
