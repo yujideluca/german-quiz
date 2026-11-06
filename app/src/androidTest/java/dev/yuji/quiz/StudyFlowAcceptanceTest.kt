@@ -3,8 +3,9 @@ package dev.yuji.quiz
 // REQ CT-1 SP-1 SP-2 SE-3
 
 import androidx.test.platform.app.InstrumentationRegistry
-import dev.yuji.quiz.content.CardFactory
-import dev.yuji.quiz.data.AssetVocabularySource
+import dev.yuji.quiz.content.buildDeckFrom
+import dev.yuji.quiz.content.fspCasesFrom
+import dev.yuji.quiz.data.AssetContentFiles
 import dev.yuji.quiz.data.InMemoryProgressStore
 import dev.yuji.quiz.debug.NoopStudyLog
 import dev.yuji.quiz.domain.Clock
@@ -24,10 +25,12 @@ import org.junit.Test
 class StudyFlowAcceptanceTest {
     private var now = 5_000 * DAY_MILLIS
     private val ctx = InstrumentationRegistry.getInstrumentation().targetContext
-    private val source = AssetVocabularySource(ctx)
-    private val deck = CardFactory.buildDeck(source.nouns(), source.prepositions(), source.verbs(), source.errorSentences())
+    /** The built-in pack exactly as the app loads it, so every mode (FSP cases included) is covered. */
+    private val files = AssetContentFiles(ctx)
+    private val deck = buildDeckFrom(files)
+    private val cases = fspCasesFrom(files).associateBy { it.id }
 
-    private fun controller() = StudyController(deck, InMemoryProgressStore(), Clock { now }, NoopStudyLog)
+    private fun controller() = StudyController(deck, InMemoryProgressStore(), Clock { now }, NoopStudyLog, cases = cases)
 
     @Test fun everyModeLoadsFromTheRealAssetsAndStartsWithOnlyNewCards() {
         val c = controller()

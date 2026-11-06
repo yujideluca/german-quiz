@@ -67,7 +67,7 @@ fun ModeSelectScreen(
     ScaledScreen { scale ->
     Column(
         Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(scale.dp(16.dp)),
-        verticalArrangement = Arrangement.spacedBy(scale.dp(8.dp)),
+        verticalArrangement = Arrangement.spacedBy(scale.dp(if (compact) 6.dp else 8.dp)),
     ) {
         ActivityCalendarCard(calendar, onPreviousMonth, onNextMonth, onSettings, compact)
         DailyGoalCard(daily)
@@ -75,7 +75,9 @@ fun ModeSelectScreen(
             val due = m.stats.learningDue + m.stats.reviewsDue + m.stats.newAvailable
             Card(Modifier.fillMaxWidth()) {
                 Row(
-                    Modifier.padding(start = scale.dp(16.dp), top = scale.dp(8.dp), end = scale.dp(8.dp), bottom = scale.dp(8.dp)),
+                    // Short screens tighten the six mode cards so the whole home screen still fits (UI-1); text sizes stay.
+                    Modifier.padding(start = scale.dp(16.dp), top = scale.dp(if (compact) 3.dp else 8.dp), end = scale.dp(8.dp),
+                        bottom = scale.dp(if (compact) 3.dp else 8.dp)),
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.spacedBy(scale.dp(8.dp)),
                 ) {
