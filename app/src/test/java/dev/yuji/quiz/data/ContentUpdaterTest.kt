@@ -15,6 +15,7 @@ import java.nio.file.Files
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
+import org.junit.After
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
@@ -23,8 +24,13 @@ class ContentUpdaterTest {
     private val assets = File("src/main/assets")
     private val builtIn = DirContentFiles(assets)
     private val builtInVersion = parseContentManifest(File(assets, "content.json").readText())!!.contentVersion
-    private val root = Files.createTempDirectory("content").toFile()
+    private val root = Files.createTempDirectory("content").toFile() // scratch-ok: removed in @After
     private val store = ContentStore(root)
+
+    /** Each test gets its own folder; without this every run left one per test in /tmp (RAM). */
+    @After fun removeRoot() {
+        root.deleteRecursively()
+    }
 
     /** The built-in pack plus one noun (two cards: article and plural), published as [version]. */
     private fun grownPack(version: Int = builtInVersion + 1, schema: Int = CONTENT_SCHEMA): Pair<String, Map<String, ByteArray>> {

@@ -4,7 +4,6 @@ package dev.yuji.quiz.data
 
 import com.sun.net.httpserver.HttpServer
 import dev.yuji.quiz.domain.UpdateManifest
-import java.io.File
 import java.net.InetSocketAddress
 import java.security.MessageDigest
 import org.junit.After
@@ -13,9 +12,12 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Assert.fail
 import org.junit.Before
+import org.junit.Rule
 import org.junit.Test
+import org.junit.rules.TemporaryFolder
 
 class UpdateClientTest {
+    @get:Rule val tmp = TemporaryFolder()
     private val apkBytes = ByteArray(100_000) { (it % 251).toByte() }
     private val sha = MessageDigest.getInstance("SHA-256").digest(apkBytes).joinToString("") { "%02x".format(it) }
     private lateinit var server: HttpServer
@@ -67,9 +69,8 @@ class UpdateClientTest {
 
     @Test fun `follows the configured feed branch for the manifest and the apk`() {
         val beta = UpdateClient("http://127.0.0.1:${server.address.port}", ref = "bleeding-edge")
-        val target = File.createTempFile("update", ".apk")
+        val target = tmp.newFile("update.apk")
         beta.downloadApk(beta.fetchManifest(), target)
-        target.delete()
         assertEquals(listOf("ref=bleeding-edge", "ref=bleeding-edge"), queries)
     }
 
@@ -79,14 +80,13 @@ class UpdateClientTest {
     }
 
     @Test fun `downloads the apk and keeps it when the checksum matches`() {
-        val target = File.createTempFile("update", ".apk")
+        val target = tmp.newFile("update.apk")
         client.downloadApk(client.fetchManifest(), target)
         assertTrue(target.readBytes().contentEquals(apkBytes))
-        target.delete()
     }
 
     @Test fun `a checksum mismatch deletes the download and fails`() {
-        val target = File.createTempFile("update", ".apk")
+        val target = tmp.newFile("update.apk")
         val wrong = UpdateManifest(8, "1.7", "german-quiz.apk", "00".repeat(32))
         try { client.downloadApk(wrong, target); fail("expected a failure") }
         catch (e: IllegalStateException) { assertTrue("checksum" in e.message!!) }

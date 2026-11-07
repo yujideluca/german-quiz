@@ -11,6 +11,11 @@ MAX_GATE_SECONDS=1200   # fitness function: a gate that gets slow gets skipped; 
 SECONDS=0
 step() { printf '\n== %s\n' "$1"; }
 
+# A test folder made by hand and never removed stays in /tmp (RAM on Giovanni's laptop, cleared only
+# after 10 days): use JUnit TemporaryFolder, or remove it and say `scratch-ok:` and how on that line.
+# The same rule holds in status-quo and pipeline-check.
+stray=$(grep -rnE 'createTemp(Directory|File|Dir)\(' --include='*.kt' app/src/test core/src/test | grep -v 'scratch-ok:' || true)
+[ -z "$stray" ] || { printf 'hand-made temp folder (use TemporaryFolder):\n%s\n' "$stray"; exit 1; }
 step "1/7 core and app unit, property, conformance and integration tests + coverage"
 ./gradlew :core:test testStableDebugUnitTest createStableDebugUnitTestCoverageReport -q
 
