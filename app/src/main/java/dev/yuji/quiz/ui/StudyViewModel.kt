@@ -103,7 +103,7 @@ class StudyViewModel @JvmOverloads constructor(
     /** Picks an answer of the current case step ([option] indexes the case file's options). */
     fun pickCaseOption(option: Int) = withController { c ->
         val studying = _state.value as? UiState.Studying ?: return@withController
-        caseRun = studying.caseRun?.pick(option) ?: return@withController
+        caseRun = c.pickInCase(studying.caseRun ?: return@withController, option)
         render(c, studying.session)
     }
 

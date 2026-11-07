@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Berger sitzt blass und schwitzend auf der Liege und hält sich die Brust.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Ein Mann sitzt blass und schwitzend auf der Liege, hält sich die Brust und sieht Sie an.",
       "options": [
         "Hallo, was haben Sie denn?",
         "Guten Abend, Herr Berger. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte und Ihren Personalausweis dabei? Ohne die Unterlagen kann ich Sie leider nicht aufnehmen.",
@@ -25,13 +24,12 @@
         "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
         "Die körperliche Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen."
       ],
-      "reply": "Patient: „Ja, Berger. Guten Abend, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Berger. Guten Abend, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
         "Wie ist Ihr Body-Mass-Index?",
@@ -45,13 +43,12 @@
         "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
         "Adresse, Telefonnummer und Hausarzt sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
       ],
-      "reply": "Patient: „Ich bin 58, 1,80 Meter groß und wiege 95 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 58, 1,80 Meter groß und wiege 95 Kilo.“ Er presst die Hand auf die Brust und sieht Sie erwartungsvoll an. Den Grund seines Kommens kennen Sie noch nicht.",
       "options": [
         "Haben Sie Herzschmerzen?",
         "Was führt Sie heute zu uns? Erzählen Sie bitte.",
@@ -65,13 +62,12 @@
         "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
         "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
       ],
-      "reply": "Patient: „Seit etwa zwei Stunden habe ich einen starken Druck in der Brust, hinter dem Brustbein.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten wissen, ob der Schmerz ausstrahlt. Was sagen Sie?",
+      "situation": "Patient: „Seit etwa zwei Stunden habe ich einen starken Druck in der Brust, hinter dem Brustbein.“ Seine Hand wandert von der Brust zur linken Schulter und bleibt dort liegen.",
       "options": [
         "Strahlt der Schmerz aus?",
         "Strahlt der Schmerz in den linken Arm aus, wie es bei einem Herzinfarkt typisch ist?",
@@ -85,13 +81,12 @@
         "„Lokalisiert“, „diffus“ und „Ausstrahlung“ sind Fachwörter; der Patient versteht sie nicht.",
         "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben."
       ],
-      "reply": "Patient: „Ja, es zieht in den linken Arm und in den Unterkiefer.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patient: „Ja, es zieht in den linken Arm und in den Unterkiefer.“ Er stöhnt leise: „Es wird einfach nicht besser.“",
       "options": [
         "Wann genau hat es angefangen, was haben Sie dabei gemacht, und ist es seitdem besser, schlechter oder gleich geblieben?",
         "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch progredient, belastungs- oder ruheabhängig?",
@@ -105,13 +100,12 @@
         "Das hat der Patient schon gesagt (seit etwa zwei Stunden). Fragen Sie nach Auslöser und Verlauf.",
         "Geschlossene Frage und Suggestion; sie erfasst den Verlauf nicht."
       ],
-      "reply": "Patient: „Es fing um sechs Uhr an, als ich die Treppe hochgegangen bin. Ich habe mich dann hingesetzt, aber es ist nicht weggegangen, eher schlimmer geworden.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "situation": "Patient: „Es fing um sechs Uhr an, als ich die Treppe hochgegangen bin. Ich habe mich dann hingesetzt, aber es ist nicht weggegangen, eher schlimmer geworden.“ Er atmet flach und schüttelt den Kopf: „So einen Schmerz kenne ich gar nicht.“",
       "options": [
         "Ist der Schmerz retrosternal und eher vernichtend oder stechend, und wie stark ist er auf der visuellen Analogskala?",
         "Ist es ein Druckgefühl, wie ein Elefant auf der Brust?",
@@ -125,13 +119,12 @@
         "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10.",
         "Zu ungenau; Sie bekommen keine verwertbare Angabe."
       ],
-      "reply": "Patient: „Es ist ein starker Druck wie ein Band um die Brust, 8 von 10. Beim Atmen wird es nicht schlimmer.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Es ist ein starker Druck wie ein Band um die Brust, 8 von 10. Beim Atmen wird es nicht schlimmer.“ Er wischt sich den Schweiß von der Stirn und schluckt schwer.",
       "options": [
         "Haben Sie Dyspnoe, Hyperhidrose, Nausea, Palpitationen, eine Synkope oder eine Orthopnoe bemerkt, und bestehen diese Symptome auch in Ruhe?",
         "Ist Ihnen übel, schwitzen Sie, oder haben Sie Luftnot? Hatten Sie Herzrasen, oder ist Ihnen schwindelig oder schwarz vor Augen geworden?",
@@ -145,13 +138,12 @@
         "Suggestiv: Sie unterstellen die Symptome und die Angst.",
         "Zu umgangssprachlich und unkonkret."
       ],
-      "reply": "Patient: „Ich schwitze stark, mir ist übel und ich bekomme schlecht Luft. Erbrochen habe ich nicht, Herzrasen und Schwindel auch nicht, ohnmächtig war ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Ich schwitze stark, mir ist übel und ich bekomme schlecht Luft. Erbrochen habe ich nicht, Herzrasen und Schwindel auch nicht, ohnmächtig war ich nicht.“ Auf dem Aufnahmebogen ist das Feld für die allgemeinen Körperfunktionen noch leer.",
       "options": [
         "Wie ist die Vegetativa?",
         "Haben Sie Pyrexie, Nachtschweiß, Dysurie, Obstipation oder Diarrhö bemerkt?",
@@ -165,13 +157,12 @@
         "Zu allgemein; der Patient sagt einfach „ja“ und Sie erfahren nichts Konkretes.",
         "Richtig: Fieber, Husten, Appetit, Stuhlgang, Wasserlassen und Gewicht in Laiensprache."
       ],
-      "reply": "Patient: „Fieber hatte ich nicht, auch keinen Husten. Appetit ist normal, Stuhlgang und Wasserlassen auch. Das Gewicht ist gleich geblieben.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patient: „Fieber hatte ich nicht, auch keinen Husten. Appetit ist normal, Stuhlgang und Wasserlassen auch. Das Gewicht ist gleich geblieben.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles; über seine Vorgeschichte noch nichts.",
       "options": [
         "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, einen Diabetes mellitus, eine Hyperlipidämie oder eine KHK, und gab es Voroperationen oder stationäre Aufenthalte?",
         "Sind Sie gesund?",
@@ -185,13 +176,12 @@
         "Richtig: mit Beispielen, laienverständlich, mit Frage nach früheren Herzbeschwerden und Operationen.",
         "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
       ],
-      "reply": "Patient: „Ich habe Bluthochdruck und zu hohes Cholesterin. Vor etwa drei Monaten hatte ich beim Bergaufgehen schon einmal kurz Druck in der Brust, das ging nach ein paar Minuten weg. Operiert wurde ich vor zehn Jahren am Leistenbruch rechts.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Ich habe Bluthochdruck und zu hohes Cholesterin. Vor etwa drei Monaten hatte ich beim Bergaufgehen schon einmal kurz Druck in der Brust, das ging nach ein paar Minuten weg. Operiert wurde ich vor zehn Jahren am Leistenbruch rechts.“ Er kramt in seiner Jackentasche nach einem Zettel, findet ihn aber nicht. Auf dem Bogen ist das Feld für die Medikation leer.",
       "options": [
         "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept, zum Beispiel Schmerz- oder Blutverdünnungsmittel?",
         "Nehmen Sie Tabletten?",
@@ -205,33 +195,31 @@
         "Fachsprache („Pharmaka“, „applizieren“, „Compliance“).",
         "Suggestivfrage, und Aspirin ist kein Blutdruckmittel. Fragen Sie offen."
       ],
-      "reply": "Patient: „Ramipril 5 mg morgens und Simvastatin 20 mg abends. Aspirin nehme ich nicht. Heute habe ich noch nichts genommen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Ramipril 5 mg morgens und Simvastatin 20 mg abends. Aspirin nehme ich nicht. Heute habe ich noch nichts genommen.“ Die Pflegekraft ruft von der Tür, sie wolle gleich Medikamente für ihn vorbereiten.",
       "options": [
         "Allergie?",
-        "Sind Sie gegen Aspirin allergisch? Das ist wichtig, weil wir Ihnen gleich ein Medikament zur Blutverdünnung geben möchten, und das ist meistens Aspirin.",
+        "Sind Sie gegen Aspirin allergisch? Mehr muss ich nicht wissen, andere Allergien spielen jetzt sicher keine Rolle.",
         "Sind Sie hypersensibel?",
         "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Kontrastmittel, Pflaster oder Lebensmittel? Wie äußert sich das?"
       ],
       "answer": 3,
       "feedback": [
         "Kein vollständiger Satz; in der Prüfung unhöflich.",
-        "Zu eng: Allergien gegen andere Medikamente, Kontrastmittel oder Pflaster übersehen Sie.",
+        "Voreilig und unvollständig: Sie fragen nur nach einem Medikament und lassen andere Allergien (zum Beispiel gegen Kontrastmittel) bewusst aus.",
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl.",
         "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion."
       ],
-      "reply": "Patient: „Gegen Röntgenkontrastmittel. Ich bekam vor fünf Jahren beim CT Juckreiz und Hautausschlag.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Röntgenkontrastmittel. Ich bekam vor fünf Jahren beim CT Juckreiz und Hautausschlag.“ Seine Jacke riecht nach Zigarettenrauch.",
       "options": [
         "Sind Sie Kettenraucher, und trinken Sie regelmäßig zu viel Alkohol?",
         "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
@@ -245,13 +233,12 @@
         "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
         "Wertend und suggestiv."
       ],
-      "reply": "Patient: „Ich rauche seit 25 Jahren etwa 20 Zigaretten am Tag. Am Wochenende trinke ich zwei Bier. Drogen nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche seit 25 Jahren etwa 20 Zigaretten am Tag. Am Wochenende trinke ich zwei Bier. Drogen nie.“ Dann murmelt er: „Mit dem Herzen war bei uns in der Familie schon öfter etwas.“",
       "options": [
         "Wie ist die Familienanamnese?",
         "Hatte Ihr Vater auch einen Herzinfarkt?",
@@ -265,13 +252,12 @@
         "Richtig: offen, mit passenden Beispielen und Frage nach dem Alter.",
         "Zu eng: Geschwister und häufige Erkrankungen in der Familie erfahren Sie so nicht."
       ],
-      "reply": "Patient: „Mein Vater hatte mit 55 einen Herzinfarkt. Meine Mutter hat Bluthochdruck.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Mein Vater hatte mit 55 einen Herzinfarkt. Meine Mutter hat Bluthochdruck.“ Er trägt eine Jacke mit dem Logo eines Verkehrsbetriebs und sagt leise: „Meine Frau weiß noch gar nicht, dass ich hier bin.“",
       "options": [
         "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
         "Was ist Ihr sozialer Status?",
@@ -285,13 +271,12 @@
         "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
         "Unangemessen."
       ],
-      "reply": "Patient: „Ich bin Busfahrer und wohne mit meiner Frau zusammen. Unsere zwei Kinder sind schon aus dem Haus.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich bin Busfahrer und wohne mit meiner Frau zusammen. Unsere zwei Kinder sind schon aus dem Haus.“ Er sieht Sie besorgt an: „Und, Herr Doktor, was habe ich denn?“",
       "options": [
         "Sie haben ein akutes Koronarsyndrom mit Verdacht auf einen NSTEMI.",
         "Das ist wahrscheinlich nur eine Verspannung der Brustmuskulatur oder ein Magenproblem, das ist nicht gefährlich.",
@@ -305,13 +290,12 @@
         "Falsch und beängstigend; die Diagnose ist noch nicht gesichert.",
         "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung ohne Panik."
       ],
-      "reply": "Patient: „Herzinfarkt? Oh Gott. Was passiert jetzt mit mir?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Brauche ich eine Herzkatheter-Untersuchung?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Herzinfarkt? Oh Gott. Was passiert jetzt mit mir? Brauche ich eine Herzkatheter-Untersuchung?“",
       "options": [
         "Ja, Sie bekommen sofort einen Herzkatheter, vorher brauchen wir keine weiteren Untersuchungen oder Medikamente.",
         "Zuerst schreiben wir sofort ein EKG und nehmen Blut ab, um zu sehen, ob der Herzmuskel Schaden genommen hat. Sie bekommen Medikamente gegen die Schmerzen und gegen Blutgerinnsel. Wahrscheinlich ist ein Herzkatheter nötig, das besprechen wir gleich mit den Kardiologen.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Berger ist 58 und hat Herzschmerzen.",
         "Herr Thomas Berger, ein 58-jähriger Patient, stellte sich heute Abend in unserer Notaufnahme mit seit zwei Stunden bestehenden retrosternalen Schmerzen vor.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Die Schmerzen haben beim Treppensteigen angefangen und sind in Ruhe nicht weggegangen.",
         "Die Beschwerden seien beim Treppensteigen aufgetreten und strahlen in den linken Arm, NRS 8.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend berichtete der Patient über Übelkeit, Hyperhidrose und Dyspnoe. Erbrechen, Synkope und Palpitationen wurden verneint. Fieber, Husten, Inappetenz und Gewichtsverlust bestanden nicht; Stuhlgang und Miktion unauffällig.",
         "Er hat geschwitzt und gekotzt, und Luft hatte er auch kaum.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "Vorerkrankungen: Bluthochdruck, Cholesterin. Medikamente: Ramipril, Simvastatin.",
         "An Vorerkrankungen sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 2 bekannt. Z. n. Appendektomie vor zehn Jahren. Medikation: Ramipril 5 mg 1-0-0, Simvastatin 20 mg 1-0-0, ASS 100 mg 1-0-0.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: keine. Noxen: Nikotinabusus.",
         "Kontrastmittelallergie (Exanthem und Pruritus). Nikotinkonsum ca. 25 py, gelegentlicher Alkoholkonsum (zwei Bier am Wochenende). Familienanamnese: Vater Myokardinfarkt mit 55 J., Mutter arterielle Hypertonie. Der Patient ist Busfahrer und lebt mit seiner Frau; zwei erwachsene Kinder.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Anamnestisch besteht der Verdacht auf ein akutes Koronarsyndrom (NSTEMI/STEMI). Differenzialdiagnostisch kommen eine Lungenembolie, eine Aortendissektion und eine Perikarditis in Betracht.",
         "Diagnose: Herzinfarkt.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Wir machen EKG und Blut.",
         "Zur weiteren Abklärung empfehlen wir eine Gastroskopie und eine Therapie mit einem Protonenpumpenhemmer.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Der Patient hat Herzschmerzen, er heißt Berger.",
         "Ich möchte Ihnen Herrn Thomas Berger vorstellen, einen 58-jährigen Patienten, der sich heute Abend mit seit zwei Stunden bestehenden, drückenden retrosternalen Schmerzen vorgestellt hat.",
@@ -485,13 +461,12 @@
         "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
         "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“",
       "options": [
         "Er hat alles Mögliche.",
         "Die Schmerzen traten nachts in Ruhe auf, sind atemabhängig und strahlen in den Rücken aus. Begleitend bestehen Fieber und Husten. Übelkeit wurde verneint.",
@@ -505,13 +480,12 @@
         "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
         "Inhaltlich falsch: Fieber, Husten und Durchfall bestehen nicht."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Er ist gesund.",
         "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 1. Er ist Nichtraucher. Keine Allergien. Familiär keine Herzerkrankungen.",
@@ -525,13 +499,12 @@
         "Unvollständig: Diagnosen, Risikofaktoren und Allergie fehlen.",
         "Richtig: Risikofaktoren, frühere Episode und die Allergie, die für die Koronarangiographie wichtig ist."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich vermute ein akutes Koronarsyndrom; ob NSTEMI oder STEMI, zeigt das EKG. Differenzialdiagnostisch denke ich an eine Lungenembolie, eine Aortendissektion und eine Perikarditis.",
         "Ich denke an etwas mit dem Herzen.",
@@ -545,13 +518,12 @@
         "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
         "Zu sicher, und ein akutes Koronarsyndrom ist hier deutlich wahrscheinlicher; die lebensbedrohlichen Differenzialdiagnosen fehlen."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde ihn nach Hause schicken.",
         "Ich würde ein EKG schreiben und Troponin abnehmen. Dann würde ich bei jedem Patienten Sauerstoff mit 10 Litern pro Minute und eine Lyse mit Alteplase geben, ohne die Kardiologie zu informieren.",
@@ -565,13 +537,12 @@
         "Richtig: Diagnostik, Therapie und Konsil nach Leitlinie, mit Blick auf die Allergie.",
         "Gefährlich: Ein Belastungs-EKG ist im akuten Schmerz kontraindiziert."
       ],
-      "reply": "Oberarzt: „Gut. Was erwarten Sie im EKG?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Was erwarten Sie im EKG?“",
       "options": [
         "Ich erwarte diffuse, konkave ST-Streckenhebungen in allen Ableitungen mit PQ-Senkungen, wie bei einer Perikarditis, und sonst einen unauffälligen Sinusrhythmus.",
         "Beim NSTEMI erwarte ich ST-Streckensenkungen oder T-Negativierungen, beim STEMI ST-Streckenhebungen in mindestens zwei benachbarten Ableitungen.",
@@ -585,13 +556,12 @@
         "Falsch: Ein initial normales EKG schließt ein ACS nicht aus, EKG und Troponin werden wiederholt.",
         "In der Prüfung erwartet man eine begründete Antwort."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Angina pectoris“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt auf das Wort „Angina pectoris“ und sieht Sie fragend an.",
       "options": [
         "Beengungsgefühl in der Brust",
         "Herzklopfen",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Dyspnoe“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Dyspnoe“.",
       "options": [
         "Husten",
         "Herzrasen",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Hyperhidrose“?",
+      "situation": "Er tippt auf „Hyperhidrose“.",
       "options": [
         "Hautrötung",
         "übermäßiges Schwitzen",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Ischämie“?",
+      "situation": "Dann auf „Ischämie“.",
       "options": [
         "Blutung",
         "Gewebetod",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Troponin“?",
+      "situation": "Zuletzt zeigt er auf „Troponin“.",
       "options": [
         "Eiweiß, das Blut gerinnen lässt",
         "Hormon der Bauchspeicheldrüse",

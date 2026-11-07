@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Weber krümmt sich leicht auf der Liege und hält sich die rechte Bauchseite.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Ein junger Mann liegt auf der Liege, krümmt sich leicht und hält sich die rechte Bauchseite.",
       "options": [
         "Hallo, na, was haben Sie denn angestellt?",
         "Guten Tag, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Weber?",
@@ -25,13 +24,12 @@
         "Die körperliche Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen.",
         "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor."
       ],
-      "reply": "Patient: „Ja, Weber. Guten Tag, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Weber. Guten Tag, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?",
         "Wie hoch ist Ihr Body-Mass-Index?",
@@ -45,13 +43,12 @@
         "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
         "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht."
       ],
-      "reply": "Patient: „Ich bin 24, 1,82 Meter groß und wiege etwa 76 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 24, 1,82 Meter groß und wiege etwa 76 Kilo.“ Er sieht Sie an und wartet. Warum er heute in die Notaufnahme gekommen ist, wissen Sie noch nicht.",
       "options": [
         "Warum kommen Sie erst jetzt in die Notaufnahme und nicht schon gestern Abend zum Hausarzt?",
         "Haben Sie Bauchschmerzen?",
@@ -65,13 +62,12 @@
         "Richtig: eine offene Frage lässt den Patienten selbst erzählen.",
         "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache."
       ],
-      "reply": "Patient: „Seit gestern Abend habe ich Schmerzen im Bauch. Heute früh sind sie nach unten rechts gewandert und viel stärker geworden.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten wissen, wo genau der Schmerz sitzt und wann er schlimmer wird. Was sagen Sie?",
+      "situation": "Patient: „Seit gestern Abend habe ich Schmerzen im Bauch. Heute früh sind sie nach unten rechts gewandert und viel stärker geworden.“ Er legt die Finger auf den rechten Unterbauch und zuckt zusammen, als er sich bewegt.",
       "options": [
         "Ist der Schmerz am McBurney-Punkt lokalisiert, und besteht ein Loslassschmerz bei Palpation, eventuell mit Ausstrahlung in die Leiste oder in den Hoden?",
         "Der Schmerz sitzt bestimmt rechts unten, und beim Husten wird er schlimmer, nicht wahr?",
@@ -83,15 +79,14 @@
         "Fachwörter („McBurney-Punkt“, „Palpation“); der Patient versteht sie nicht.",
         "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
         "Richtig: laienverständlich, mit Beispielen für Auslöser, ohne die Antwort vorzugeben.",
-        "Zu knapp: Sie erfahren nichts über Auslöser und Verstärkung des Schmerzes."
+        "Zu knapp, und der Patient hat die Stelle schon gezeigt: Sie erfahren nichts über Auslöser und Verstärkung des Schmerzes."
       ],
-      "reply": "Patient: „Genau hier, unten rechts. Beim Gehen und beim Husten wird es viel schlimmer. Über die Schlaglöcher im Taxi habe ich fast geschrien.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patient: „Genau hier, unten rechts. Beim Gehen und beim Husten wird es viel schlimmer. Über die Schlaglöcher im Taxi habe ich fast geschrien. Wie das alles der Reihe nach war, weiß ich gar nicht mehr.“",
       "options": [
         "Wie war der zeitliche Verlauf seit der Erstmanifestation: akut, subakut oder chronisch progredient?",
         "Wann genau hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben?",
@@ -105,13 +100,12 @@
         "Das hat der Patient schon gesagt (seit gestern Abend). Fragen Sie nach dem Verlauf.",
         "Geschlossene Frage; sie erfasst den Verlauf nicht."
       ],
-      "reply": "Patient: „Gestern gegen 20 Uhr fing es um den Nabel herum an, wie ein Druck. Heute früh um 6 Uhr ist es nach unten rechts gewandert, und seitdem wird es immer schlimmer.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "situation": "Patient: „Gestern gegen 20 Uhr fing es um den Nabel herum an, wie ein Druck. Heute früh um 6 Uhr ist es nach unten rechts gewandert, und seitdem wird es immer schlimmer. Wie ich den Schmerz beschreiben soll, weiß ich nicht.“",
       "options": [
         "Sind die Schmerzen viszeral oder parietal, kolikartig oder konstant, und wie hoch ist die Intensität auf der Numerischen Rating-Skala von 0 bis 10?",
         "Wie stark sind die Schmerzen, wenn 1 gar nichts und 100 die schlimmsten Schmerzen sind?",
@@ -125,13 +119,12 @@
         "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
         "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10."
       ],
-      "reply": "Patient: „Jetzt ist es stechend und dauernd da, so 7 von 10. Gestern am Nabel war es eher dumpf, vielleicht 4.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Jetzt ist es stechend und dauernd da, so 7 von 10. Gestern am Nabel war es eher dumpf, vielleicht 4.“ Er schluckt schwer und hält sich kurz die Hand vor den Mund.",
       "options": [
         "Sie haben bestimmt auch erbrochen und Durchfall.",
         "Hatten Sie Nausea, Emesis, Dysurie, Hämaturie oder eine Skrotalschwellung, und besteht eine Diarrhö oder Obstipation?",
@@ -145,13 +138,12 @@
         "Zu umgangssprachlich und unkonkret.",
         "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive Urin- und Hodenbeschwerden als Differenzialdiagnosen."
       ],
-      "reply": "Patient: „Mir ist seit heute früh übel, und ich habe einmal erbrochen. Beim Wasserlassen brennt nichts, und die Hoden tun nicht weh.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Mir ist seit heute früh übel, und ich habe einmal erbrochen. Beim Wasserlassen brennt nichts, und die Hoden tun nicht weh.“ Er wischt sich den Schweiß von der Stirn: „Heiß ist mir auch.“",
       "options": [
         "Haben Sie Schüttelfrost, Nachtschweiß, Gewichtsverlust, Dysurie, Obstipation und Diarrhö, und wie ist Ihre Nykturie und Libido?",
         "Wie ist die Vegetativa?",
@@ -165,13 +157,12 @@
         "Richtig: Fieber, Appetit, Stuhlgang und Wasserlassen in Laiensprache.",
         "Zu allgemein; der Patient sagt einfach „ja“."
       ],
-      "reply": "Patient: „Ich hatte 37,9 Grad. Appetit habe ich seit gestern Abend überhaupt keinen. Stuhlgang war gestern normal, Durchfall habe ich nicht. Beim Wasserlassen ist alles normal.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patient: „Ich hatte 37,9 Grad. Appetit habe ich seit gestern Abend überhaupt keinen. Stuhlgang war gestern normal, Durchfall habe ich nicht. Beim Wasserlassen ist alles normal.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles; über seine Vorgeschichte noch nichts.",
       "options": [
         "Welche Diagnosen stehen in Ihrer Akte?",
         "Haben Sie Vorerkrankungen wie ein Asthma bronchiale, eine arterielle Hypertonie oder einen Diabetes mellitus, und gab es Voroperationen oder stationäre Aufenthalte?",
@@ -185,13 +176,12 @@
         "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
         "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt."
       ],
-      "reply": "Patient: „Nein, ich bin sonst gesund. Mit acht Jahren wurden mir die Mandeln entfernt, sonst nichts.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Nein, ich bin sonst gesund. Mit acht Jahren wurden mir die Mandeln entfernt, sonst nichts.“ Er zieht eine halb leere Tablettenschachtel aus der Jackentasche und legt sie neben sich.",
       "options": [
         "Nehmen Sie Tabletten?",
         "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept?",
@@ -205,13 +195,12 @@
         "Fachsprache („Pharmaka“, „applizieren“).",
         "Suggestivfrage. Fragen Sie offen."
       ],
-      "reply": "Patient: „Regelmäßig nehme ich nichts. Heute früh habe ich einmal eine Paracetamol 500 genommen, aber das hat nichts gebracht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Regelmäßig nehme ich nichts. Heute früh habe ich einmal eine Paracetamol 500 genommen, aber das hat nichts gebracht.“ Die Pflegekraft ruft von der Tür, ob sie schon ein Antibiotikum vorbereiten soll.",
       "options": [
         "Allergie?",
         "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht ein Antibiotikum geben, und Penicillin nehmen wir am häufigsten.",
@@ -225,13 +214,12 @@
         "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
       ],
-      "reply": "Patient: „Gegen Birkenpollen, im Frühling habe ich dann Niesen und tränende Augen. Gegen Medikamente bin ich nicht allergisch.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Birkenpollen, im Frühling habe ich dann Niesen und tränende Augen. Gegen Medikamente bin ich nicht allergisch.“ Aus der Jacke auf dem Stuhl ragt eine Zigarettenschachtel.",
       "options": [
         "Sind Sie Raucher oder Alkoholiker?",
         "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
@@ -245,13 +233,12 @@
         "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
         "Wertend und suggestiv."
       ],
-      "reply": "Patient: „Ich rauche seit vier Jahren etwa 5 Zigaretten am Tag. Alkohol am Wochenende, so zwei Bier. Drogen nehme ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche seit vier Jahren etwa 5 Zigaretten am Tag. Alkohol am Wochenende, so zwei Bier. Drogen nehme ich nicht.“ Dann sagt er: „Bauchprobleme gab es bei uns in der Familie auch schon.“",
       "options": [
         "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders, weil es für die Diagnose entscheidend ist.",
         "Wie ist die Familienanamnese?",
@@ -265,13 +252,12 @@
         "Richtig: offen, mit passenden Beispielen, auch nach Operationen am Bauch.",
         "Sie nehmen die Diagnose vorweg; die Frage ist suggestiv."
       ],
-      "reply": "Patient: „Mein Vater hat Bluthochdruck, meine Mutter eine Schilddrüsenerkrankung. Mein Bruder wurde mit 15 am Blinddarm operiert.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Mein Vater hat Bluthochdruck, meine Mutter eine Schilddrüsenerkrankung. Mein Bruder wurde mit 15 am Blinddarm operiert.“ Er schaut auf sein Handy: „Ich müsste gleich meinen Mitbewohnern schreiben, dass ich hier bin.“",
       "options": [
         "Haben Sie genug Geld zum Leben?",
         "Was ist Ihr sozialer Status?",
@@ -285,13 +271,12 @@
         "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
         "Richtig: Beruf und Wohnsituation, beides wichtig für Entlassung und Versorgung."
       ],
-      "reply": "Patient: „Ich studiere Informatik und wohne in einer WG mit zwei Mitbewohnern.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich studiere Informatik und wohne in einer WG mit zwei Mitbewohnern.“ Er sieht Sie angespannt an: „Und, Herr Doktor, was habe ich denn?“",
       "options": [
         "Sie haben eine akute Appendizitis mit Peritonismus.",
         "Ich vermute, dass Ihr Blinddarm entzündet ist, genauer gesagt der kleine Wurmfortsatz am Anfang des Dickdarms. Sicher sagen können wir es erst nach der Untersuchung, dem Blutbild und dem Ultraschall.",
@@ -305,13 +290,12 @@
         "Verharmlosend und medizinisch falsch.",
         "Falsch und beängstigend."
       ],
-      "reply": "Patient: „Blinddarm? Muss ich dann operiert werden?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Muss ich operiert werden?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Blinddarm? Und was passiert jetzt mit mir? Muss ich operiert werden?“",
       "options": [
         "Ja, heute Nacht wird Ihr Blinddarm entfernt, das steht schon fest.",
         "Das entscheidet der Chef, ich weiß es nicht.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Weber ist 24 und hat Bauchweh unten rechts.",
         "Herr Markus Weber, ein 24-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit gestern Abend bestehenden Schmerzen im rechten Unterbauch vor.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Die Schmerzen haben gestern am Nabel angefangen, sind nach rechts unten gewandert und beim Husten schlimmer.",
         "Die Beschwerden seien gestern periumbilikal aufgetreten und wandern in den rechten Unterbauch, seitdem progredient und stechend, bewegungsabhängig, NRS 7.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Er hatte Übelkeit und hat einmal gekotzt.",
         "Begleitend berichtete der Patient über Übelkeit und einmaliges Erbrechen sowie subfebrile Temperaturen bis 37,9 °C. Dysurie, Hodenschmerzen, Diarrhö und Obstipation wurden verneint. Ausgeprägte Inappetenz seit gestern Abend.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "Vorerkrankungen: keine. Medikamente: ein Schmerzmittel.",
         "Bekannt ist ein Asthma bronchiale. Z. n. Appendektomie im Alter von 8 Jahren. Dauermedikation: Salbutamol bei Bedarf. Einmalig Ibuprofen 400 mg 1-1-1.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Penicillinallergie (Exanthem). Nikotinkonsum ca. 10 py, regelmäßiger Alkoholkonsum. Familienanamnese: Vater Appendektomie mit 15 J. Der Patient ist Informatikstudent und lebt allein.",
         "Allergie: keine. Noxen: Nikotinabusus.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Diagnose: Blinddarmentzündung.",
         "Es besteht eine gesicherte akute Appendizitis.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Zur weiteren Abklärung empfehlen wir eine körperliche Untersuchung, eine Blutentnahme (u. a. Blutbild, CRP, Lipase), einen Urinstatus und eine Abdomensonographie. Der Patient soll nüchtern bleiben und erhält eine Analgesie, z. B. Metamizol 1 g i. v. Bei Bestätigung ist eine laparoskopische Appendektomie mit perioperativer Antibiose indiziert.",
         "Wir machen Blut und Ultraschall.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Der Patient hat Bauchweh, er heißt Weber.",
         "Ich möchte Ihnen Herrn Markus Weber vorstellen, einen 24-jährigen Patienten, der sich heute mit seit gestern Abend bestehenden, progredienten Schmerzen im rechten Unterbauch vorgestellt hat.",
@@ -485,13 +461,12 @@
         "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
         "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Der Oberarzt nickt: „Mhm. Und weiter?“",
       "options": [
         "Die Schmerzen begannen periumbilikal und wanderten in den rechten Unterbauch. Sie sind bewegungs- und hustenabhängig, NRS 7/10. Begleitend bestehen Übelkeit, einmaliges Erbrechen, Inappetenz und subfebrile Temperaturen bis 37,9 °C. Dysurie und Diarrhö wurden verneint.",
         "Er hat alles Mögliche.",
@@ -505,13 +480,12 @@
         "Inhaltlich falsch: Der Schmerz wanderte vom Nabel nach rechts unten, es gibt keinen Durchfall, die Temperatur war 37,9 °C, und Dysurie wurde verneint.",
         "Inhaltlich falsch: Durchfall und Hodenschmerzen wurden verneint, und die Temperatur lag nur bei 37,9 °C."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Der Oberarzt: „Vorgeschichte?“",
       "options": [
         "Er ist gesund.",
         "Bekannt sind ein Asthma bronchiale und ein Diabetes mellitus Typ 1. Penicillinallergie. Der Vater wurde appendektomiert.",
@@ -525,13 +499,12 @@
         "Richtig: relevante Vorgeschichte, positive Familienanamnese und Allergiestatus für die Antibiose.",
         "Unvollständig: Operation, Allergie und Familienanamnese fehlen."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Der Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich vermute eine akute Appendizitis. Differenzialdiagnostisch denke ich an eine Gastroenteritis, eine Ureterolithiasis rechts und eine Ileitis terminalis bei Morbus Crohn.",
         "Ich denke an den Blinddarm.",
@@ -545,13 +518,12 @@
         "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
         "Zu sicher („sicher“), und die Cholezystitis passt nicht zum Schmerz im rechten Unterbauch."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Der Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde ihn nach Hause schicken und morgen wiederbestellen.",
         "Ich würde ihm ein Abführmittel geben, damit der Darm sich entleert, und ihn essen lassen, damit er bei Kräften bleibt.",
@@ -565,13 +537,12 @@
         "Nicht die erste Untersuchung; sie ist bei akuter Entzündung riskant.",
         "Richtig: Diagnostik, Nüchternheit, Analgesie und Konsil entsprechend der Leitlinie."
       ],
-      "reply": "Oberarzt: „Gut. Was erwarten Sie im Ultraschall?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Der Oberarzt: „Gut. Was erwarten Sie im Ultraschall?“",
       "options": [
         "Ich erwarte eine nicht komprimierbare Appendix mit einem Durchmesser über 6 mm, eine verdickte Wand und eventuell echoreiches Fettgewebe oder freie Flüssigkeit um die Appendix.",
         "Eine verkleinerte Niere.",
@@ -585,13 +556,12 @@
         "In der Prüfung erwartet man eine begründete Antwort.",
         "Nicht typisch für eine Appendizitis: Das sind Zeichen einer Cholezystitis."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Appendektomie“?",
+      "situation": "Der Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Appendektomie“ und sieht Sie an.",
       "options": [
         "Entfernung des Blinddarms",
         "Entfernung der Mandeln",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Peritonitis“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Peritonitis“.",
       "options": [
         "Bauchspeicheldrüsenentzündung",
         "Bauchfellentzündung",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Leukozytose“?",
+      "situation": "Er tippt auf „Leukozytose“.",
       "options": [
         "Mangel an roten Blutkörperchen",
         "Mangel an Blutplättchen",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Abwehrspannung“?",
+      "situation": "Dann auf „Abwehrspannung“.",
       "options": [
         "reflexartige Anspannung der Bauchmuskeln",
         "aufgeblähter Bauch",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „subfebril“?",
+      "situation": "Zuletzt zeigt er auf „subfebril“.",
       "options": [
         "Temperatur über 39 °C",
         "zu niedrige Körpertemperatur",

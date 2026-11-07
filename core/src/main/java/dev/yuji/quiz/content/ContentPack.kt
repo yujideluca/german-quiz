@@ -13,7 +13,7 @@ import kotlinx.serialization.json.Json
  */
 
 /** The pack format this app reads. A pack with another schema needs a different app version and is ignored. */
-const val CONTENT_SCHEMA = 2
+const val CONTENT_SCHEMA = 3
 
 /** Every file a pack must contain, as paths relative to the pack's root. */
 val CONTENT_FILES = listOf(

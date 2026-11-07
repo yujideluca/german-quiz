@@ -29,7 +29,10 @@ TEMPLATE = [
     (3, "Rückfrage"),
 ] + [(3, "Fachbegriffe")] * 5
 KEYS = ["id", "area", "title", "diagnosis", "source", "bwReports", "patient", "steps"]
-STEP_KEYS = ["part", "section", "situation", "question", "options", "answer", "feedback", "reply"]
+STEP_KEYS = ["part", "section", "situation", "options", "answer", "feedback", "reply"]
+# Steps (1-based) that close a part: only these may carry a reply.
+PART_ENDS = {i + 1 for i, (p, _) in enumerate(TEMPLATE) if i + 1 == len(TEMPLATE) or TEMPLATE[i + 1][0] != p}
+SPEECH = re.compile(r"„[^“]*“")
 SOURCES = {"reported_BW", "common_FSP"}
 MAX_OPTION = 420
 
@@ -91,11 +94,17 @@ def check_case(path, listed):
             errs.append(f"{w}: keys must be exactly {STEP_KEYS} in this order"); continue
         if step["part"] != part or step["section"] != section:
             errs.append(f"{w}: must be part {part}, section '{section}', got {step['part']}/'{step['section']}'")
-        for k in ("situation", "reply"):
-            if step[k] is not None and (not isinstance(step[k], str) or not step[k].strip()):
-                errs.append(f"{w}: {k} must be null or a non-empty string")
-        if not isinstance(step["question"], str) or not step["question"].strip():
-            errs.append(f"{w}: empty question")
+        sit, reply = step["situation"], step["reply"]
+        if not isinstance(sit, str) or not sit.strip():
+            errs.append(f"{w}: situation must be a non-empty string"); continue
+        narration = SPEECH.sub("", sit)
+        if "?" in narration or "„" in narration or "“" in narration:
+            errs.append(f"{w}: the situation narrates and never asks the player: a '?' may only stand inside „…“ speech")
+        if i in PART_ENDS:
+            if reply is not None and (not isinstance(reply, str) or not reply.strip()):
+                errs.append(f"{w}: reply must be null or a non-empty string")
+        elif reply is not None:
+            errs.append(f"{w}: reply must be null: the answer to this step is the next step's situation")
         opts, fb, ans = step["options"], step["feedback"], step["answer"]
         if not (isinstance(opts, list) and len(opts) == 4 and all(isinstance(o, str) and o.strip() for o in opts)):
             errs.append(f"{w}: needs 4 non-empty options"); continue
@@ -113,8 +122,8 @@ def check_case(path, listed):
             if j != ans and x.startswith("Richtig"):
                 errs.append(f"{w}: feedback {j} starts with 'Richtig' but is not the answer")
         if section == "Fachbegriffe":
-            if not re.fullmatch(r"Was bedeutet „[^“”]+“\?", step["question"]):
-                errs.append(f"{w}: Fachbegriffe question must read: Was bedeutet „<Begriff>“?")
+            if not SPEECH.search(sit):
+                errs.append(f"{w}: the Fachbegriffe situation must show the term in „…“")
         elif max(range(4), key=lambda j: len(opts[j])) == ans:
             longest_right += 1
     scored = len(TEMPLATE) - 5

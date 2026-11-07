@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Becker liegt auf der Liege, seine Frau sitzt neben ihm.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Ein älterer Mann liegt auf der Liege, neben ihm sitzt seine Frau. Er sieht Sie müde an.",
       "options": [
         "Guten Tag, Herr Becker. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte und Ihren Personalausweis dabei? Die brauchen wir zuerst für die Anmeldung.",
         "Hallo, setzen Sie sich, was ist passiert?",
@@ -25,13 +24,12 @@
         "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
         "Die Untersuchung kommt nach der Begrüßung und der Anamnese. Erst begrüßen und sich vorstellen."
       ],
-      "reply": "Patient: „Ja, Becker. Guten Tag, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Becker. Guten Tag, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
         "Sie sind doch bestimmt schon über siebzig, nicht wahr, und Sie wiegen sicher nicht zu viel?",
@@ -45,13 +43,12 @@
         "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
         "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
       ],
-      "reply": "Patient: „Ich bin 74, 1,76 Meter groß und wiege 84 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 74, 1,76 Meter groß und wiege 84 Kilo.“ Er fasst sich an den Hinterkopf und wartet.",
       "options": [
         "Sind Sie umgekippt?",
         "Welche Symptomatik hat zur Aufnahme in unsere Klinik geführt?",
@@ -65,13 +62,12 @@
         "Vorwurfsvoll und mit einer Unterstellung. Das stört das Vertrauen gleich zu Beginn.",
         "Richtig: eine offene Frage lässt den Patienten selbst erzählen."
       ],
-      "reply": "Patient: „Ich bin heute Vormittag plötzlich umgefallen und war kurz bewusstlos.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten wissen, was vor dem Sturz geschah. Was sagen Sie?",
+      "situation": "Patient: „Ich bin heute Vormittag plötzlich umgefallen und war kurz bewusstlos.“ Er sieht Sie ratlos an: „Ich weiß selbst nicht, wie das passieren konnte.“",
       "options": [
         "Hatten Sie vor dem Sturz Prodromi, zum Beispiel Vertigo, Diaphorese oder Palpitationen, und gab es einen erkennbaren Trigger?",
         "Was haben Sie gerade getan, als es passiert ist? Hat sich vorher etwas angekündigt, zum Beispiel Schwindel, Schwarzwerden vor den Augen oder Herzklopfen?",
@@ -83,15 +79,14 @@
         "Inhaltlich gut, aber nur Fachwörter (Prodromi, Vertigo, Diaphorese, Palpitationen, Trigger), die der Patient nicht versteht.",
         "Richtig: Situation und Warnzeichen, laienverständlich, mit Beispielen und ohne die Antwort vorzugeben.",
         "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
-        "Geschlossene Frage; sie erfasst die Situation und andere Warnzeichen nicht."
+        "Geschlossene Frage; sie erfasst nur ein Warnzeichen und nicht die Situation vor dem Sturz."
       ],
-      "reply": "Patient: „Ich bin im Garten gegangen und war plötzlich weg, ohne jede Vorwarnung. Meine Frau sagt, ich lag etwa eine halbe Minute am Boden.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patient: „Ich bin im Garten gegangen und war plötzlich weg, ohne jede Vorwarnung. Meine Frau sagt, ich lag etwa eine halbe Minute am Boden.“ Seine Frau schaut zur Uhr an der Wand und zuckt mit den Schultern.",
       "options": [
         "Seit wann bestehen die Beschwerden, und ist die Symptomatik progredient oder rezidivierend aufgetreten?",
         "Das war heute um zehn Uhr, richtig? Und seitdem geht es Ihnen bestimmt wieder besser?",
@@ -103,15 +98,14 @@
         "Fachsprache: „progredient“ und „rezidivierend“ versteht der Patient nicht.",
         "Suggestivfrage: Sie legen Uhrzeit und Verlauf schon fest.",
         "Richtig: Zeitpunkt, Zustand danach und frühere Episoden in einer klaren, laienverständlichen Frage.",
-        "Geschlossene Frage; Zeitpunkt und Zustand danach erfahren Sie so nicht."
+        "Zu knapp: Zeitpunkt und Zustand danach fehlen, obwohl der Sturz heute der Anlass ist."
       ],
-      "reply": "Patient: „Heute gegen zehn Uhr. Nach ein paar Minuten war ich wieder klar, aber ich bin mit dem Hinterkopf aufgeschlagen. Vor drei Wochen wurde mir zweimal kurz schwarz vor Augen, aber ich bin nicht gestürzt.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Herzschlag und Belastbarkeit. Welche Formulierung passt?",
+      "situation": "Patient: „Heute gegen zehn Uhr. Nach ein paar Minuten war ich wieder klar, aber ich bin mit dem Hinterkopf aufgeschlagen. Vor drei Wochen wurde mir zweimal kurz schwarz vor Augen, aber ich bin nicht gestürzt.“ Er tippt auf die Smartwatch an seinem Handgelenk und schüttelt den Kopf.",
       "options": [
         "Haben Sie in letzter Zeit Ihren Puls gemessen oder gespürt, ob er langsam, schnell oder unregelmäßig ist? Wie weit können Sie gehen oder wie viele Treppen steigen, bevor Sie Luft holen müssen?",
         "In welche NYHA-Klasse würden Sie sich einordnen, und haben Sie eine Arrhythmie oder eine Bradykardie bemerkt?",
@@ -125,13 +119,12 @@
         "Zu allgemein; der Patient antwortet einfach „ja“.",
         "Suggestiv („sicher noch wie früher“) und der Herzschlag fehlt."
       ],
-      "reply": "Patient: „Meine Uhr zeigte zuletzt oft nur 38 bis 40 Schläge, regelmäßig, aber sehr langsam. Treppen schaffe ich nur noch bis zum ersten Stock, dann brauche ich eine Pause.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Meine Uhr zeigte zuletzt oft nur 38 bis 40 Schläge, regelmäßig, aber sehr langsam. Treppen schaffe ich nur noch bis zum ersten Stock, dann brauche ich eine Pause.“ Er greift sich kurz an den Hinterkopf, seine Frau streicht ihm über den Arm.",
       "options": [
         "Hatten Sie Thoraxschmerzen, Dyspnoe, Palpitationen, einen Zungenbiss oder Einnässen, und sind Paresen oder Aphasie aufgetreten?",
         "Sie hatten bestimmt auch Schmerzen in der Brust und starkes Herzrasen, nicht wahr?",
@@ -145,13 +138,12 @@
         "Zu umgangssprachlich und unkonkret.",
         "Richtig: konkrete Begleitsymptome der kardialen und der neurologischen Abklärung in Laiensprache."
       ],
-      "reply": "Patient: „Keine Brustschmerzen, kein Herzrasen. Luftnot habe ich bei Belastung seit ein paar Wochen, und ich bin sehr müde. Auf die Zunge gebissen habe ich mich nicht, eingenässt auch nicht. Lähmungen oder Sprachprobleme gab es nicht, aber mein Hinterkopf tut etwas weh.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Keine Brustschmerzen, kein Herzrasen. Luftnot habe ich bei Belastung seit ein paar Wochen, und ich bin sehr müde. Auf die Zunge gebissen habe ich mich nicht, eingenässt auch nicht. Lähmungen oder Sprachprobleme gab es nicht, aber mein Hinterkopf tut etwas weh.“ Auf Ihrem Anamnesebogen ist der Abschnitt zu Fieber, Appetit, Gewicht, Stuhlgang, Wasserlassen und Schlaf noch leer.",
       "options": [
         "Wie ist die Vegetativa, gibt es Febris, Inappetenz, eine Gewichtsabnahme oder Miktionsbeschwerden?",
         "Haben Sie Fieber gehabt? Wie sind Appetit, Gewicht, Stuhlgang, Wasserlassen und Schlaf? Wie viel trinken Sie am Tag?",
@@ -165,13 +157,12 @@
         "Zu allgemein; der Patient sagt einfach „ja“.",
         "Suggestiv und herablassend; außerdem erfahren Sie die anderen Punkte nicht."
       ],
-      "reply": "Patient: „Fieber hatte ich nicht. Appetit, Stuhlgang und Wasserlassen sind normal, das Gewicht ist gleich geblieben. Ich schlafe gut. Ich trinke etwa eineinhalb Liter am Tag.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patient: „Fieber hatte ich nicht. Appetit, Stuhlgang und Wasserlassen sind normal, das Gewicht ist gleich geblieben. Ich schlafe gut. Ich trinke etwa eineinhalb Liter am Tag.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles; über seine Vorgeschichte noch nichts.",
       "options": [
         "Haben Sie eine KHK, eine arterielle Hypertonie oder eine Herzinsuffizienz, und gab es Voroperationen oder eine PCI?",
         "Sie haben bestimmt etwas am Herzen, oder?",
@@ -185,13 +176,12 @@
         "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
         "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen."
       ],
-      "reply": "Patient: „Ich habe Bluthochdruck, und vor sechs Jahren hatte ich einen Herzinfarkt, damals bekam ich einen Stent. Zucker habe ich nicht. Operiert wurde ich einmal wegen eines Leistenbruchs rechts, vor zehn Jahren.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Ich habe Bluthochdruck, und vor sechs Jahren hatte ich einen Herzinfarkt, damals bekam ich einen Stent. Zucker habe ich nicht. Operiert wurde ich einmal wegen eines Leistenbruchs rechts, vor zehn Jahren.“ Seine Frau zieht einen zerknitterten Zettel mit Tabletten aus der Handtasche.",
       "options": [
         "Welche Pharmaka applizieren Sie täglich, und in welcher Dosierung?",
         "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept?",
@@ -205,13 +195,12 @@
         "Zu eng: Medikamente für andere Erkrankungen und die Dosis fehlen.",
         "Suggestivfrage und teils Fachsprache. Fragen Sie offen."
       ],
-      "reply": "Patient: „Metoprolol 95 mg morgens, ASS 100 morgens, Ramipril 5 mg morgens und Atorvastatin 40 mg abends. Ohne Rezept nehme ich nichts.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Metoprolol 95 mg morgens, ASS 100 morgens, Ramipril 5 mg morgens und Atorvastatin 40 mg abends. Ohne Rezept nehme ich nichts.“ Die Pflegekraft ruft von der Tür, ob sie schon Medikamente für die Aufnahme vorbereiten soll.",
       "options": [
         "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht gleich ein Antibiotikum geben möchten.",
         "Allergien?",
@@ -225,13 +214,12 @@
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl.",
         "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion."
       ],
-      "reply": "Patient: „Gegen jodhaltiges Kontrastmittel, da bekam ich Quaddeln und Juckreiz.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen jodhaltiges Kontrastmittel, da bekam ich Quaddeln und Juckreiz.“ Auf dem Bogen fehlen noch die Angaben zu Rauchen, Alkohol und Drogen.",
       "options": [
         "Rauchen Sie oder haben Sie früher geraucht? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
         "Wie ist Ihr Nikotin- und Alkoholabusus, und konsumieren Sie Drogen intravenös?",
@@ -245,13 +233,12 @@
         "Wertend und ungenau, ohne Mengen.",
         "Wertend und suggestiv. Das stört das Vertrauen."
       ],
-      "reply": "Patient: „Ich habe 25 Jahre lang eine Schachtel am Tag geraucht, vor 15 Jahren habe ich aufgehört. Abends trinke ich ein Bier. Drogen nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich habe 25 Jahre lang eine Schachtel am Tag geraucht, vor 15 Jahren habe ich aufgehört. Abends trinke ich ein Bier. Drogen nie.“ Auf dem Bogen ist das Feld für Erkrankungen in der Familie noch leer.",
       "options": [
         "Wie ist die Familienanamnese bezüglich kardialer Erkrankungen und eines plötzlichen Herztodes?",
         "Gibt es in Ihrer Familie Erkrankungen am Herzen, zum Beispiel Herzinfarkt, Herzrhythmusstörungen oder plötzliche Todesfälle?",
@@ -265,13 +252,12 @@
         "Zu eng: Geschwister und Erkrankungen ohne Todesfall erfahren Sie so nicht.",
         "Geschlossene und taktlose Frage; Erkrankungen ohne Todesfall erfahren Sie so nicht."
       ],
-      "reply": "Patient: „Mein Vater ist mit 58 plötzlich an einem Herzstillstand gestorben. Mein Bruder hat mit 70 einen Herzschrittmacher bekommen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Mein Vater ist mit 58 plötzlich an einem Herzstillstand gestorben. Mein Bruder hat mit 70 einen Herzschrittmacher bekommen.“ Beruf und Wohnsituation stehen noch nicht auf Ihrem Bogen.",
       "options": [
         "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
         "Was ist Ihr sozialer Status?",
@@ -285,13 +271,12 @@
         "Unangemessen und zu persönlich; der Beruf und das Wohnumfeld fehlen.",
         "Richtig: Beruf, Wohnsituation und Autofahren, wichtig für Sicherheit und Entlassung."
       ],
-      "reply": "Patient: „Ich war Schreiner, jetzt bin ich Rentner. Ich wohne mit meiner Frau in einem Haus mit Treppe. Ja, ich fahre noch jeden Tag Auto.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich war Schreiner, jetzt bin ich Rentner. Ich wohne mit meiner Frau in einem Haus mit Treppe. Ja, ich fahre noch jeden Tag Auto.“ Er sieht Sie gespannt an: „Und, Herr Doktor, was ist mit mir los?“",
       "options": [
         "Sie haben einen AV-Block dritten Grades mit Bradykardie, und Sie brauchen einen Schrittmacher.",
         "Das ist bestimmt nur ein Kreislaufproblem, Ihr Blutdruck war einfach zu niedrig, und das kommt in Ihrem Alter öfter vor. Das ist nicht schlimm, Sie müssen nur mehr trinken, und Sie können bald wieder nach Hause. Weitere Untersuchungen brauchen wir dafür wahrscheinlich gar nicht.",
@@ -305,13 +290,12 @@
         "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung des Mechanismus.",
         "Falsch und beängstigend: Es gab keine Lähmung und keine Sprachstörung."
       ],
-      "reply": "Patient: „Das klingt ernst. Was passiert jetzt mit mir?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Muss ich im Krankenhaus bleiben?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Das klingt ernst. Was passiert jetzt mit mir?“ Er schluckt: „Muss ich im Krankenhaus bleiben?“",
       "options": [
         "Wir schreiben jetzt ein EKG und überwachen Ihren Herzschlag am Monitor. Außerdem nehmen wir Blut ab. Sie sollten zur Überwachung im Krankenhaus bleiben. Wenn Ihr Herz wirklich zu langsam schlägt, kann ein kleiner Herzschrittmacher helfen. Das besprechen wir mit den Kardiologen. Autofahren sollten Sie vorerst nicht.",
         "Nein, Sie können heute Abend nach Hause gehen, ein Langzeit-EKG machen wir ambulant in der nächsten Woche, und danach sehen wir weiter.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Becker ist 74 und ist heute umgekippt, deshalb ist er hier.",
         "Herr Walter Becker, ein 74-jähriger Patient, wurde heute vom Rettungsdienst in unserer Notaufnahme gebracht, nachdem er einen kurzzeitigen Bewusstseinsverlust mit Sturz erlitten hatte.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Der Patient erlitt heute gegen 10 Uhr beim Gehen im Garten ohne Prodromi eine Synkope von etwa 30 Sekunden Dauer mit Sturz auf den Hinterkopf. Zungenbiss und Einnässen wurden verneint. Vor drei Wochen traten zweimalig Präsynkopen auf. Seit einigen Wochen bestehen eine Belastungsdyspnoe (Treppensteigen bis zum 1. Stock) und Müdigkeit; die selbst gemessene Herzfrequenz lag bei 38–40/min.",
         "Der Patient erlitt heute gegen 10 Uhr beim raschen Aufstehen mit vorherigem Schwarzwerden vor den Augen eine Synkope von etwa 30 Sekunden Dauer mit Sturz auf den Hinterkopf. Zungenbiss und Einnässen wurden bejaht. Seit einigen Wochen bestehen eine Belastungsdyspnoe und Müdigkeit; die selbst gemessene Herzfrequenz lag bei 120/min.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend gab der Patient Thoraxschmerzen und Palpitationen an. Eine Belastungsdyspnoe, Paresen und Sprachstörungen wurden verneint. Appetit, Stuhlgang und Miktion unauffällig, Gewicht konstant, Trinkmenge ca. 1,5 l/Tag.",
         "Er hat Luftnot und Kopfweh, sonst ist alles normal.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "Vorerkrankungen: Bluthochdruck, Herzinfarkt. Medikamente: Metoprolol, ASS, Ramipril, Atorvastatin.",
         "Vorerkrankungen: arterielle Hypertonie; KHK mit Z. n. Myokardinfarkt und Stentimplantation vor sechs Jahren. Z. n. Leistenhernien-Operation rechts vor zehn Jahren. Kein Diabetes mellitus. Medikation: Metoprolol 95 mg 1-0-0, ASS 100 mg 1-0-0, Ramipril 5 mg 1-0-0, Atorvastatin 40 mg 0-0-1.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: keine. Noxen: Nikotinabusus. Familienanamnese unauffällig.",
         "Penicillinallergie (Anaphylaxie). Ex-Nikotinkonsum ca. 25 py, Alkohol: ein Bier am Abend. Familienanamnese: Vater Myokardinfarkt mit 58 J., Bruder Schrittmacherimplantation mit 70 J. Der Patient ist Rentner, lebt allein und fährt kein Auto mehr.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Diagnose: Herzschwäche mit Ohnmacht, wahrscheinlich vom Kreislauf.",
         "Es besteht eine gesicherte Synkope bei AV-Block III°. Differenzialdiagnostisch kommen keine weiteren Erkrankungen in Betracht.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Wir empfehlen ein 12-Kanal-EKG und bei unauffälligem Befund die Entlassung mit ambulantem Langzeit-EKG in der kommenden Woche. Metoprolol kann unverändert weitergegeben werden.",
         "Wir empfehlen die stationäre Aufnahme mit Monitorüberwachung, ein 12-Kanal-EKG, eine Blutentnahme (u. a. Blutbild, Elektrolyte, Troponin, Nierenwerte, TSH) und eine Echokardiographie sowie zur Frequenzsteigerung eine Dosiserhöhung von Metoprolol auf 190 mg. Eine kardiologische Mitbeurteilung ist nicht erforderlich.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Ich möchte Ihnen Herrn Walter Becker vorstellen, einen 74-jährigen Patienten, der heute vom Rettungsdienst nach einer Synkope mit Sturz zu uns gebracht wurde.",
         "Herr Becker hat einen AV-Block dritten Grades und braucht einen Schrittmacher.",
@@ -485,13 +461,12 @@
         "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
         "Inhaltlich falsch: Brustschmerzen und Herzrasen wurden verneint."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“",
       "options": [
         "Die Synkope trat beim raschen Aufstehen nach vorherigem Schwindel auf, mit Zungenbiss und Einnässen. Seit Wochen bestehen Belastungsdyspnoe und Müdigkeit; die Herzfrequenz lag bei 120/min.",
         "Die Synkope trat heute gegen 10 Uhr beim Gehen ohne Prodromi auf, Dauer etwa 30 Sekunden, mit Sturz auf den Hinterkopf. Zungenbiss und Einnässen wurden verneint. Seit Wochen bestehen Belastungsdyspnoe, Müdigkeit und eine selbst gemessene Herzfrequenz von 38–40/min; vor drei Wochen traten zweimal Präsynkopen auf.",
@@ -505,13 +480,12 @@
         "Umgangssprachlich und ohne konkrete Angaben.",
         "Inhaltlich falsch: Zungenbiss und Einnässen wurden verneint; die früheren Präsynkopen fehlen."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Er ist herzgesund, nimmt aber ein paar Tabletten.",
         "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 2. Keine Allergien. Der Vater starb mit 58 Jahren an einem Schlaganfall, der Bruder ist gesund.",
@@ -525,13 +499,12 @@
         "Falsch: Metoprolol wird morgens einmal genommen, und die Kontrastmittelallergie fehlt.",
         "Richtig: relevante Vorgeschichte, die Betablocker-Medikation, die Allergie und die auffällige Familienanamnese."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich denke an eine Kreislaufschwäche.",
         "Es handelt sich sicher um eine vasovagale Synkope, weil der Patient im Garten war. Differenzialdiagnostisch denke ich höchstens noch an eine orthostatische Hypotonie und einen epileptischen Anfall, weitere Untersuchungen halte ich daher zunächst nicht für notwendig, und der Patient kann bald nach Hause.",
@@ -545,13 +518,12 @@
         "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
         "In der Prüfung sollen Sie eine begründete Vermutung äußern; ein MRT ist nicht der erste Schritt."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde ein EKG schreiben und den Patienten bei unauffälligem Befund nach Hause entlassen, mit ambulantem Langzeit-EKG und unveränderter Medikation.",
         "Ich würde ein 12-Kanal-EKG schreiben und den Patienten am Monitor überwachen. Dazu Blutentnahme mit Troponin, Elektrolyten, Nierenwerten und TSH sowie eine Echokardiographie. Metoprolol würde ich pausieren. Bei hämodynamischer Instabilität gebe ich Atropin 0,5 mg i. v. und halte einen transkutanen Schrittmacher bereit. Bei höhergradigem AV-Block bitte ich die Kardiologie um die Schrittmacherimplantation.",
@@ -565,13 +537,12 @@
         "Gefährlich: Ein Adrenalinbolus von 1 mg gehört zur Reanimation, und ein höher dosierter Betablocker senkt die Frequenz weiter.",
         "Nicht indiziert und riskant: Es besteht eine Kontrastmittelallergie, und ein Infarkt ist nicht der Verdacht."
       ],
-      "reply": "Oberarzt: „Gut. Was erwarten Sie im EKG?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Was erwarten Sie im EKG?“",
       "options": [
         "Ich erwarte beim AV-Block III° eine Dissoziation von P-Wellen und QRS-Komplexen: Die Vorhöfe schlagen regelmäßig, die Kammern folgen unabhängig mit einem Ersatzrhythmus von etwa 30 bis 40/min.",
         "Ich erwarte ST-Streckenhebungen in mehreren Ableitungen mit Q-Zacken als Zeichen eines Vorderwandinfarkts, dazu eine Herzfrequenz von etwa 120/min und eine regelmäßige Überleitung jeder P-Welle.",
@@ -585,13 +556,12 @@
         "In der Prüfung erwartet man eine begründete Antwort; bei einer Bradykardie ist das EKG pathologisch.",
         "Nicht typisch: Vorhofflimmern mit schneller Überleitung passt nicht zu einem Puls von 38–40/min."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Synkope“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Synkope“ und sieht Sie fragend an.",
       "options": [
         "Herzstillstand",
         "kurzer Bewusstseinsverlust durch Minderdurchblutung des Gehirns",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Bradykardie“?",
+      "situation": "Der Oberarzt nickt und zeigt auf den nächsten Begriff: „Bradykardie“.",
       "options": [
         "Herzrasen",
         "Herzstolpern",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „AV-Block“?",
+      "situation": "Er tippt auf „AV-Block“.",
       "options": [
         "gestörte Erregungsleitung zwischen Vorhof und Herzkammer",
         "Verschluss eines Herzkranzgefäßes",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Dyspnoe“?",
+      "situation": "Dann auf „Dyspnoe“.",
       "options": [
         "Husten",
         "Brustschmerz",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Prodromi“?",
+      "situation": "Zuletzt zeigt er auf „Prodromi“.",
       "options": [
         "Spätfolgen einer Erkrankung",
         "Vorboten, Warnzeichen vor einem Ereignis",

@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Becker sitzt blass auf der Liege, neben ihm steht ein Eimer.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Ein junger Mann sitzt blass auf der Liege, neben ihm steht ein Eimer.",
       "options": [
         "Guten Morgen, Herr Becker. Zeigen Sie mir bitte zuerst Ihre Versichertenkarte, dann können wir mit der Anmeldung anfangen.",
         "Hey, was ist los bei Ihnen?",
@@ -25,13 +24,12 @@
         "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
         "Unhöflich und ohne Vorstellung. Erst begrüßen, dann untersuchen."
       ],
-      "reply": "Patient: „Ja, Becker. Guten Morgen, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Becker. Guten Morgen, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
         "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum, und wo genau wohnen Sie?",
@@ -45,13 +43,12 @@
         "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
         "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen."
       ],
-      "reply": "Patient: „Ich bin 29, 1,82 Meter groß und wiege 76 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 29, 1,82 Meter groß und wiege 76 Kilo.“ Er krümmt sich leicht und wartet. Warum er gekommen ist, haben Sie noch nicht gehört.",
       "options": [
         "Haben Sie Durchfall?",
         "Welche Symptomatik führt Sie zu uns?",
@@ -65,33 +62,31 @@
         "Vorwurfsvoll und herabsetzend. Das stört das Vertrauen gleich zu Beginn.",
         "Richtig: eine offene Frage lässt den Patienten selbst erzählen."
       ],
-      "reply": "Patient: „Seit gestern Abend habe ich ständig Durchfall und muss mich übergeben. Ich bin total schwach.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten den Durchfall genauer erfassen. Was sagen Sie?",
+      "situation": "Patient: „Seit gestern Abend habe ich ständig Durchfall und muss mich übergeben. Ich bin total schwach.“ Er hält sich den Bauch. Wie oft er auf die Toilette musste und wie der Stuhl aussieht, hat er nicht gesagt.",
       "options": [
         "Wie ist die Konsistenz Ihres Stuhls, und sind Ihnen Blut- oder Schleimbeimengungen im Sinne einer Hämatochezie aufgefallen?",
         "Wie oft müssen Sie auf die Toilette, und wie sieht der Stuhl aus: eher wässrig oder fest, mit Blut oder Schleim?",
         "Der Stuhl ist bestimmt wässrig und blutig, nicht wahr?",
-        "Wie oft haben Sie Stuhlgang?"
+        "Wie oft Stuhlgang?"
       ],
       "answer": 1,
       "feedback": [
         "„Konsistenz“, „Beimengungen“ und „Hämatochezie“ sind Fachwörter; der Patient versteht sie nicht.",
         "Richtig: Häufigkeit und Aussehen des Stuhls, laienverständlich, mit Beispielen und ohne die Antwort vorzugeben.",
         "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
-        "Zu knapp: Aussehen, Blut und Schleim fehlen."
+        "Kein vollständiger Satz, und nach dem Aussehen des Stuhls (wässrig, Blut, Schleim) fragen Sie damit nicht."
       ],
-      "reply": "Patient: „Seit gestern Abend ungefähr zehnmal. Der Stuhl ist ganz wässrig, Blut oder Schleim habe ich nicht gesehen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und möglichem Auslöser?",
+      "situation": "Patient: „Seit gestern Abend ungefähr zehnmal. Der Stuhl ist ganz wässrig, Blut oder Schleim habe ich nicht gesehen.“ Woher die Beschwerden kommen könnten, weiß er offenbar nicht.",
       "options": [
         "Wann haben die Beschwerden angefangen, und was haben Sie in den Tagen davor gegessen oder unternommen?",
         "Seit wann haben Sie das?",
@@ -101,17 +96,16 @@
       "answer": 0,
       "feedback": [
         "Richtig: Beginn und mögliche Auslöser (Essen, Reisen) in einer offenen, laienverständlichen Frage.",
-        "Zu knapp; Auslöser und Verlauf fehlen.",
+        "Das hat der Patient schon gesagt (seit gestern Abend). Fragen Sie nach dem Auslöser.",
         "Fachsprache: „Erstmanifestation“, „subakut“ und „rezidivierend“ versteht der Patient nicht.",
         "Geschlossene und suggestive Frage; sie nimmt die Antwort vorweg."
       ],
-      "reply": "Patient: „Vorgestern war ein Grillfest bei Freunden, das Hähnchen war innen noch etwas rosa. Gestern Abend ging es los, und seitdem wird es nicht besser.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Art und Stärke der Bauchschmerzen. Welche Formulierung passt?",
+      "situation": "Patient: „Vorgestern war ein Grillfest bei Freunden, das Hähnchen war innen noch etwas rosa. Gestern Abend ging es los, und seitdem wird es nicht besser.“ Er presst die Hand auf den Bauch und verzieht das Gesicht.",
       "options": [
         "Handelt es sich um kolikartige Schmerzen mit Tenesmen, und wie würden Sie die Intensität auf der numerischen Rating-Skala angeben?",
         "Wie stark sind die Schmerzen von 1 bis 100?",
@@ -125,13 +119,12 @@
         "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10.",
         "Zu ungenau; Sie bekommen keine verwertbare Angabe."
       ],
-      "reply": "Patient: „Es krampft in Wellen im ganzen Bauch, vor allem vor dem Stuhlgang. So 6 von 10.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Es krampft in Wellen im ganzen Bauch, vor allem vor dem Stuhlgang. So 6 von 10.“ Er wischt sich den Schweiß von der Stirn und schluckt schwer.",
       "options": [
         "Haben Sie sonst noch was?",
         "Ist Ihnen übel, mussten Sie sich übergeben, und haben Sie Fieber oder Kopf- und Gliederschmerzen? War im Erbrochenen Blut?",
@@ -145,13 +138,12 @@
         "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „übel“, „übergeben“, „Kopfschmerzen“, „schwarzer Stuhl“.",
         "Suggestiv: Sie unterstellen das Symptom."
       ],
-      "reply": "Patient: „Mir ist übel, ich habe viermal erbrochen, ohne Blut. Fieber hatte ich 38,5 Grad, und Kopf und Glieder tun weh.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese und der Flüssigkeitshaushalt. Was fragen Sie?",
+      "situation": "Patient: „Mir ist übel, ich habe viermal erbrochen, ohne Blut. Fieber hatte ich 38,5 Grad, und Kopf und Glieder tun weh.“ Seine Lippen sind trocken, und er greift nach einem leeren Wasserbecher.",
       "options": [
         "Wie ist die Vegetativa?",
         "Haben Sie Schüttelfrost, Nachtschweiß, Gewichtsverlust, Dysurie, Oligurie oder Polyurie, Inappetenz sowie Schwindel?",
@@ -165,13 +157,12 @@
         "Zu allgemein; der Patient sagt einfach „ja“.",
         "Richtig: Appetit, Trinken, Wasserlassen und Schwindel in Laiensprache, gezielt auf Austrocknung."
       ],
-      "reply": "Patient: „Essen mag ich gar nichts, und trinken kann ich kaum, weil ich es gleich wieder erbreche. Heute habe ich nur zweimal Wasser gelassen, der Urin war dunkel. Beim Aufstehen wird mir schwindelig.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patient: „Essen mag ich gar nichts, und trinken kann ich kaum, weil ich es gleich wieder erbreche. Heute habe ich nur zweimal Wasser gelassen, der Urin war dunkel. Beim Aufstehen wird mir schwindelig.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles; über seine Vorgeschichte noch nichts.",
       "options": [
         "Sind Sie gesund?",
         "Haben Sie dauerhafte Erkrankungen, zum Beispiel an Lunge, Herz oder Magen-Darm? Wurden Sie schon einmal operiert?",
@@ -185,13 +176,12 @@
         "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „chronisch-entzündliche Darmerkrankung“).",
         "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
       ],
-      "reply": "Patient: „Ich habe seit der Kindheit Asthma. Vor drei Jahren wurde mir am rechten Knie das Kreuzband operiert. Sonst bin ich gesund.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Ich habe seit der Kindheit Asthma. Vor drei Jahren wurde mir am rechten Knie das Kreuzband operiert. Sonst bin ich gesund.“ Er zieht ein Asthmaspray aus der Jackentasche und legt es auf die Liege.",
       "options": [
         "Nehmen Sie Tabletten?",
         "Welche Pharmaka applizieren Sie regelmäßig, und in welcher Dosis?",
@@ -205,16 +195,15 @@
         "Richtig: Name, Dosierung, Bedarfsmedikation und auch frei verkäufliche Mittel der letzten Tage.",
         "Suggestivfrage. Fragen Sie offen."
       ],
-      "reply": "Patient: „Ich nehme ein Spray mit Budesonid und Formoterol, 160/4,5 Mikrogramm, morgens und abends einen Hub. Bei Bedarf Salbutamol. Gestern Abend eine Ibuprofen 400 gegen die Kopfschmerzen, und heute Morgen eine Loperamid 2 mg gegen den Durchfall.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Ich nehme ein Spray mit Budesonid und Formoterol, 160/4,5 Mikrogramm, morgens und abends einen Hub. Bei Bedarf Salbutamol. Gestern Abend eine Ibuprofen 400 gegen die Kopfschmerzen, und heute Morgen eine Loperamid 2 mg gegen den Durchfall.“ Auf dem Aufnahmebogen ist das Feld „Allergien“ noch leer.",
       "options": [
         "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pollen? Wie äußert sich das?",
-        "Sind Sie gegen Antibiotika allergisch? Das ist wichtig, weil wir Ihnen vielleicht gleich eines geben möchten, und das nehmen wir bei Durchfall am häufigsten.",
+        "Sind Sie gegen Antibiotika allergisch? Das ist wichtig, falls wir Ihnen eines geben müssen.",
         "Allergie?",
         "Sind Sie hypersensibel?"
       ],
@@ -225,13 +214,12 @@
         "Kein vollständiger Satz; in der Prüfung unhöflich.",
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
       ],
-      "reply": "Patient: „Gegen Birkenpollen, im Frühjahr habe ich Heuschnupfen mit Niesen und tränenden Augen. Gegen Medikamente oder Essen bin ich nicht allergisch.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Birkenpollen, im Frühjahr habe ich Heuschnupfen mit Niesen und tränenden Augen. Gegen Medikamente oder Essen bin ich nicht allergisch.“ Aus seiner Jackentasche schaut eine Zigarettenschachtel.",
       "options": [
         "Sind Sie Raucher oder Alkoholiker?",
         "Wie ist Ihr Nikotin- und Alkoholabusus?",
@@ -245,13 +233,12 @@
         "Suggestiv und wertend: Sie unterstellen übermäßigen Konsum und fragen nach Menge und Drogen nicht.",
         "Richtig: neutral, konkret, mit Menge."
       ],
-      "reply": "Patient: „Ich rauche seit 5 Jahren etwa 10 Zigaretten am Tag. Am Wochenende trinke ich zwei Bier. Drogen nehme ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche seit 5 Jahren etwa 10 Zigaretten am Tag. Am Wochenende trinke ich zwei Bier. Drogen nehme ich nicht.“ Über seine Familie wissen Sie noch nichts.",
       "options": [
         "Wie ist die Familienanamnese?",
         "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Zucker-, Herz- oder Darmerkrankungen?",
@@ -265,13 +252,12 @@
         "Zu eng: Geschwister fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
         "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
       ],
-      "reply": "Patient: „Mein Vater hat Zucker, Typ 2. Darmerkrankungen gibt es bei uns nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation und dem Umfeld?",
+      "situation": "Patient: „Mein Vater hat Zucker, Typ 2. Darmerkrankungen gibt es bei uns nicht.“ Er schaut auf sein Handy und tippt eine kurze Nachricht an seine Freundin. Über sein Umfeld wissen Sie noch nichts.",
       "options": [
         "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen? Gibt es Menschen in Ihrem Umfeld mit ähnlichen Beschwerden?",
         "Was ist Ihr sozialer Status?",
@@ -285,13 +271,12 @@
         "Zu eng und teilweise Verwaltung: der Beruf und Erkrankte im Umfeld fehlen, Einkommen und Adresse gehören nicht in die Sozialanamnese.",
         "Unangemessen."
       ],
-      "reply": "Patient: „Ich bin Koch in einer Kantine und wohne mit meiner Freundin zusammen. Sie hat seit heute Morgen auch Durchfall, sie hat auch vom Hähnchen gegessen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich bin Koch in einer Kantine und wohne mit meiner Freundin zusammen. Sie hat seit heute Morgen auch Durchfall, sie hat auch vom Hähnchen gegessen.“ Er sieht Sie besorgt an: „Und, Herr Doktor, was habe ich denn?“",
       "options": [
         "Sie haben eine akute infektiöse Gastroenteritis, wahrscheinlich durch Salmonellen oder Campylobacter, mit Exsikkose und Elektrolytentgleisung; dafür brauchen Sie eine Rehydratation.",
         "Ich vermute eine Magen-Darm-Infektion, wahrscheinlich durch Bakterien aus dem nicht durchgegarten Hähnchen. Dabei entzündet sich die Darmschleimhaut, und Ihr Körper verliert viel Flüssigkeit.",
@@ -305,13 +290,12 @@
         "Verharmlosend; Sie lassen die Austrocknung außer Acht.",
         "Falsch und beängstigend."
       ],
-      "reply": "Patient: „Eine Infektion? Und was passiert jetzt mit mir?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Bekomme ich ein Antibiotikum? Und wann kann ich wieder arbeiten?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Eine Infektion? Und was passiert jetzt mit mir? Bekomme ich ein Antibiotikum? Und wann kann ich wieder arbeiten?“",
       "options": [
         "Ja, natürlich bekommen Sie sofort ein Antibiotikum, dann sind Sie morgen wieder gesund und können arbeiten.",
         "Nein, das ist nur ein Magen-Darm-Infekt, Sie können morgen wieder in die Kantine gehen.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Becker ist 29 und hat Durchfall.",
         "Herr Lukas Becker, ein 29-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit gestern Abend bestehendem Durchfall und Erbrechen vor.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Der Durchfall hat nach dem Essen von rosa Hähnchen angefangen und ist immer schlimmer geworden.",
         "Die Beschwerden begannen gestern Abend, etwa einen Tag nach dem Verzehr von unzureichend durchgegartem Grillhähnchen. Seitdem bestehen ca. zehn wässrige Stühle mit Blutbeimengung sowie kolikartige abdominelle Schmerzen (NRS 6/10).",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend berichtete der Patient über Übelkeit und viermaliges Erbrechen ohne Hämatemesis sowie Fieber bis 38,5 °C, Kopf- und Gliederschmerzen. Zudem Inappetenz, reduzierte Trinkmenge, Oligurie (zweimalige Miktion heute, dunkler Urin) und orthostatischer Schwindel.",
         "Er hatte Fieber und hat mehrmals gekotzt.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "Vorerkrankungen: Asthma. Medikamente: Spray, Ibuprofen, Loperamid.",
         "An Vorerkrankungen ist ein Asthma bronchiale bekannt. Z. n. Kreuzbandplastik rechts vor drei Jahren. Medikation: Budesonid/Formoterol 160/4,5 µg 1-1-1, Salbutamol-Spray bei Bedarf, Ibuprofen 400 mg einmalig gestern, Loperamid 2 mg einmalig heute.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: keine. Noxen: Nikotin.",
         "Pollenallergie (Birke), keine Medikamentenallergie. Nikotinkonsum ca. 2,5 py, am Wochenende ca. zwei Bier. Familienanamnese: Vater Diabetes mellitus Typ 2. Der Patient ist Koch in einer Kantine und lebt mit seiner Freundin, die ebenfalls an Diarrhö leidet.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Diagnose: Magen-Darm-Grippe.",
         "Es besteht eine gesicherte Salmonellose.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Wir machen Blut und Stuhl und geben Ciprofloxacin.",
         "Zur Abklärung empfehlen wir eine Blutentnahme (u. a. Blutbild, CRP, Elektrolyte, Kreatinin) und eine Stuhluntersuchung auf Salmonellen, Campylobacter und Noroviren. Therapeutisch erfolgen eine i. v. Flüssigkeitssubstitution und eine antiemetische Therapie; eine Antibiose ist zunächst nicht indiziert. Meldung an das Gesundheitsamt; als Koch besteht ein Tätigkeitsverbot.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Der Patient hat Durchfall, er heißt Becker.",
         "Also, der Mann war vorgestern auf einem Grillfest bei Freunden und hat dort Hähnchen gegessen, und dann ging es bei ihm mit dem Durchfall los, und seine Freundin hat jetzt auch Durchfall, glaube ich.",
@@ -485,13 +461,12 @@
         "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
         "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“",
       "options": [
         "Es bestehen seit gestern Abend etwa zehn wässrige Stühle ohne Blutbeimengung, krampfartige Bauchschmerzen (NRS 6/10), viermaliges Erbrechen und Fieber bis 38,5 °C. Er ist exsikkiert: Oligurie und orthostatischer Schwindel.",
         "Es bestehen seit drei Wochen blutig-schleimige Stühle, Gewichtsverlust und Nachtschweiß, aber kein Fieber. Er ist exsikkiert, mit Oligurie und orthostatischem Schwindel, sonst unauffällig.",
@@ -505,13 +480,12 @@
         "Keine Information.",
         "Inhaltlich falsch: Der Patient hat keine Verstopfung und kein Blut im Stuhl, sondern wässrigen Durchfall."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Er ist gesund.",
         "Bekannt sind ein Asthma bronchiale und ein Diabetes mellitus Typ 1. Er nimmt regelmäßig Budesonid/Formoterol 1-0-1, gestern nahm er Ibuprofen ein. Keine Allergien.",
@@ -525,13 +499,12 @@
         "Richtig: relevante Vorgeschichte, NSAR- und Loperamid-Einnahme, Beruf und Kontaktfall.",
         "Unvollständig: Dauertherapie, Beruf und Kontaktfall fehlen."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich denke an Magen-Darm-Grippe.",
         "Ich vermute eine akute infektiöse Gastroenteritis, am ehesten bakteriell durch Salmonellen oder Campylobacter. Differenzialdiagnostisch denke ich an eine Norovirus-Infektion und eine Lebensmittelintoxikation.",
@@ -545,13 +518,12 @@
         "Zu sicher („sicher“), und bei einem akuten Beginn nach einem Grillfest ist eine chronisch-entzündliche Darmerkrankung nicht wahrscheinlich.",
         "In der Prüfung sollen Sie eine begründete Vermutung äußern."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde ihn nach Hause schicken und Loperamid empfehlen.",
         "Ich würde sofort Ciprofloxacin geben und eine Koloskopie machen.",
@@ -565,13 +537,12 @@
         "Richtig: Diagnostik, Rehydratation, Antiemese, keine Antibiose, Meldung und Tätigkeitsverbot.",
         "Gefährlich: keine Indikation für Ciprofloxacin, Ibuprofen belastet bei Exsikkose die Nieren, Loperamid bei Fieber ist ungünstig, und ein Koch darf nicht früh wieder arbeiten."
       ],
-      "reply": "Oberarzt: „Gut. Wann würden Sie bei einer Salmonellen-Enteritis doch ein Antibiotikum geben?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Wann würden Sie bei einer Salmonellen-Enteritis doch ein Antibiotikum geben?“",
       "options": [
         "Bei jedem Patienten sofort, auch bei leichtem Verlauf, um die Dauer der Erregerausscheidung zu verkürzen und andere zu schützen.",
         "Nie, auch nicht bei einer Sepsis, weil Antibiotika bei Darminfektionen grundsätzlich die Ausscheidung verlängern.",
@@ -585,13 +556,12 @@
         "Falsch: Fieber allein ist keine Indikation, und viele Gastroenteritiden mit Fieber sind viral.",
         "Richtig: typische Risikokonstellationen nach der AWMF-Leitlinie."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Exsikkose“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Exsikkose“ und sieht Sie fragend an.",
       "options": [
         "Überwässerung des Körpers",
         "Blutarmut",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Tenesmen“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Tenesmen“.",
       "options": [
         "schmerzhafter Stuhldrang",
         "Verstopfung",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Oligurie“?",
+      "situation": "Er tippt auf „Oligurie“.",
       "options": [
         "vermehrte Urinmenge",
         "Blut im Urin",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Antiemetikum“?",
+      "situation": "Dann auf „Antiemetikum“.",
       "options": [
         "Mittel gegen Durchfall",
         "Mittel gegen Übelkeit und Erbrechen",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Hämatochezie“?",
+      "situation": "Zuletzt zeigt er auf „Hämatochezie“.",
       "options": [
         "schwarzer Teerstuhl",
         "fettiger Stuhl",

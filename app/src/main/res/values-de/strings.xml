@@ -123,6 +123,7 @@
     <string name="fsp_part_2">Teil 2 · Dokumentation</string>
     <string name="fsp_part_3">Teil 3 · Arzt-Arzt-Gespräch</string>
     <string name="fsp_step">Schritt %1$d von %2$d</string>
+    <string name="fsp_you_said">Sie: „%1$s“</string>
     <string name="fsp_try_again">Nicht ganz. Lies die Begründung und wähle noch einmal.</string>
     <string name="fsp_continue">Weiter</string>
     <string name="fsp_result_title">Fall beendet</string>

@@ -82,7 +82,17 @@ class StudyController(
 
     fun choices(session: StudySession) = StudyEngine.choicesFor(session)
 
-    fun answer(session: StudySession, choice: String): StudySession = record(session, choice, gradeOverride = null)
+    fun answer(session: StudySession, choice: String): StudySession = record(session, choice, gradeOverride = null, countsAnswer = true)
+
+    /**
+     * Picks [option] in the case being played. FS-7: the pick that solves a step counts as one answered question for
+     * the daily goal and the streak calendar, while the scheduler sees the whole case as one card ([finishCase]).
+     */
+    fun pickInCase(run: FspCaseRun, option: Int): FspCaseRun {
+        val after = run.pick(option)
+        if (after.solved && !run.solved) training.history = training.history.plusAnswer(today())
+        return after
+    }
 
     /** The case behind the current card, ready to play; null when the card is not an FSP case. */
     fun startCase(session: StudySession): FspCaseRun? {
@@ -98,17 +108,20 @@ class StudyController(
         val phase = (progressById[card.id] ?: SpacedRepetitionScheduler.freshProgress(card.id, schedulerConfig)).phase
         val passed = FspGrading.passed(run.score)
         log.debug(LogChannel.SESSION) { "case ${card.id}: score=${"%.2f".format(run.score)} passed=$passed" }
-        return record(session, if (passed) FSP_PASSED else FSP_FAILED, FspGrading.grade(run.score, phase))
+        // Its steps were already counted one by one (FS-7), so the case itself adds no answer to the day.
+        return record(session, if (passed) FSP_PASSED else FSP_FAILED, FspGrading.grade(run.score, phase), countsAnswer = false)
     }
 
-    private fun record(session: StudySession, choice: String, gradeOverride: dev.yuji.quiz.domain.ReviewGrade?): StudySession {
+    private fun record(
+        session: StudySession, choice: String, gradeOverride: dev.yuji.quiz.domain.ReviewGrade?, countsAnswer: Boolean,
+    ): StudySession {
         val updated = StudyEngine.answer(session, choice, clock.nowMillis(), schedulerConfig, graderConfig, log, gradeOverride)
         val card = session.currentCard
         if (card != null && updated !== session) {
             val progress = updated.progressById.getValue(card.id)
             store.save(progress)
             progressById = progressById + (card.id to progress)
-            training.history = training.history.plusAnswer(today())
+            if (countsAnswer) training.history = training.history.plusAnswer(today())
         }
         return updated
     }

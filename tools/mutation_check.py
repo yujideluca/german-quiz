@@ -47,6 +47,8 @@ APP = [
  (D+"domain/DailyGoal.kt", "(this[epochDay] ?: 0) + 1)", "(this[epochDay] ?: 0) + 2)", "an answer counts twice"),
  (D+"domain/DailyGoal.kt", "fun AnswerHistory.answeredOn(epochDay: Long): Int = this[epochDay] ?: 0", "fun AnswerHistory.answeredOn(epochDay: Long): Int = this[epochDay - 1] ?: 0", "bar shows yesterday's count"),
  (A+"StudyController.kt", "if (card != null && updated !== session) {", "if (card != null) {", "rejected answers still counted"),
+ (A+"StudyController.kt", "if (after.solved && !run.solved) training", "if (after.solved) training", "picks after solving a case step counted again"),
+ (A+"StudyController.kt", "FspGrading.grade(run.score, phase), countsAnswer = false)", "FspGrading.grade(run.score, phase), countsAnswer = true)", "a graded case counted on top of its steps"),
  (A+"data/TrainingStore.kt", "val c = count.toIntOrNull()?.takeIf { it > 0 } ?: return@mapNotNull null", "val c = count.toIntOrNull() ?: return@mapNotNull null", "damaged day counts accepted"),
  (D+"content/ContentPack.kt", "remote.schema == supportedSchema && remote.contentVersion > activeVersion", "remote.schema == supportedSchema && remote.contentVersion >= activeVersion", "same question pool downloaded again"),
  (D+"content/ContentPack.kt", "downloaded.schema == supportedSchema && downloaded.contentVersion > bundled.contentVersion", "downloaded.schema == supportedSchema", "outdated downloaded pool beats the built-in one"),

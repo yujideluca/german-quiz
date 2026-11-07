@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Becker sitzt auf der Liege und hat das linke Bein hochgelegt.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Ein junger Mann sitzt auf der Liege, das linke Bein hochgelegt, und sieht Sie erwartungsvoll an.",
       "options": [
         "Hallo, was haben Sie denn mit dem Fuß gemacht?",
         "Guten Abend, Herr Becker. Bitte legen Sie sich hin, ich untersuche jetzt sofort Ihren Fuß, und das Röntgen machen wir danach auch gleich.",
@@ -25,13 +24,12 @@
         "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
         "Verwaltungsfragen gehören nicht an den Anfang des Arzt-Patienten-Gesprächs, und Sie stellen sich nicht vor."
       ],
-      "reply": "Patient: „Ja, Becker. Guten Abend, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Becker. Guten Abend, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie ist Ihr Body-Mass-Index?",
         "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
@@ -45,13 +43,12 @@
         "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
         "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen."
       ],
-      "reply": "Patient: „Ich bin 24, 1,82 Meter groß und wiege etwa 78 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 24, 1,82 Meter groß und wiege etwa 78 Kilo.“ Er blickt auf seinen Fuß und wartet darauf, dass Sie das Gespräch eröffnen. Den Grund seines Kommens kennen Sie noch nicht.",
       "options": [
         "Haben Sie Schmerzen im Fuß?",
         "Welche Symptomatik liegt bei Ihnen vor?",
@@ -65,13 +62,12 @@
         "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
         "Richtig: eine offene Frage lässt den Patienten selbst erzählen."
       ],
-      "reply": "Patient: „Ich bin heute Nachmittag beim Fußball umgeknickt. Seitdem tut mein linker Knöchel weh und ist ganz dick geworden.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten wissen, wo genau es wehtut und wie der Fuß verdreht wurde. Was sagen Sie?",
+      "situation": "Patient: „Ich bin heute Nachmittag beim Fußball umgeknickt. Seitdem tut mein linker Knöchel weh und ist ganz dick geworden.“ Er deutet vage auf den Fuß. Wo genau es wehtut und wie das Umknicken ablief, wissen Sie noch nicht.",
       "options": [
         "Zeigen Sie mir bitte, wo es am meisten wehtut. Wie ist Ihr Fuß beim Umknicken verdreht worden, eher nach innen oder nach außen?",
         "Handelt es sich um ein Supinationstrauma?",
@@ -85,13 +81,12 @@
         "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
         "Voller Fachbegriffe („Trauma“, „lateral“, „Syndesmose“); außerdem kann der Patient die betroffene Struktur nicht beurteilen."
       ],
-      "reply": "Patient: „Hier außen, unterhalb vom Knöchel, am meisten vorne. Der Fuß ist nach innen weggeknickt, als ich nach einem Kopfball gelandet bin. Dabei hat es geknackt.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patient: „Hier außen, unterhalb vom Knöchel, am meisten vorne. Der Fuß ist nach innen weggeknickt, als ich nach einem Kopfball gelandet bin. Dabei hat es geknackt.“ Zu Zeitpunkt und Verlauf haben Sie noch keine Angaben.",
       "options": [
         "Wie war der zeitliche Verlauf seit dem Trauma: akut, subakut oder chronisch progredient, und war eine Belastung des Gelenks möglich?",
         "Wann genau ist das passiert, und wie hat es sich seitdem entwickelt? Konnten Sie danach noch auftreten und gehen?",
@@ -105,13 +100,12 @@
         "Das hat der Patient schon gesagt (heute Nachmittag). Fragen Sie nach dem Verlauf und der Gehfähigkeit.",
         "Das hat der Patient schon gesagt (beim Fußball) und die Frage ist geschlossen."
       ],
-      "reply": "Patient: „Gegen 16 Uhr. Direkt danach konnte ich keine vier Schritte gehen, ein Mitspieler musste mich stützen. In der ersten Stunde ist der Knöchel dann richtig dick geworden.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "situation": "Patient: „Gegen 16 Uhr. Direkt danach konnte ich keine vier Schritte gehen, ein Mitspieler musste mich stützen. In der ersten Stunde ist der Knöchel dann richtig dick geworden.“ Er verzieht das Gesicht, als er den Fuß ein wenig bewegt.",
       "options": [
         "Würden Sie den Schmerz eher als nozizeptiv oder als neuropathisch einstufen, und wie hoch ist die Schmerzintensität auf der visuellen Analogskala?",
         "Wie stark sind die Schmerzen von 1 bis 100?",
@@ -125,13 +119,12 @@
         "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
         "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10, in Ruhe und unter Belastung."
       ],
-      "reply": "Patient: „Beim Auftreten ist es stechend, da eine 7 von 10. In Ruhe pocht es eher, so 3 von 10.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Beim Auftreten ist es stechend, da eine 7 von 10. In Ruhe pocht es eher, so 3 von 10.“ Er zieht vorsichtig den Socken über den geschwollenen Fuß. Ob außer den Schmerzen noch etwas aufgefallen ist, haben Sie noch nicht erfragt.",
       "options": [
         "Ist der Knöchel blau geworden? Haben Sie Kribbeln oder ein Taubheitsgefühl im Fuß, und können Sie die Zehen bewegen? Tut Ihnen sonst noch etwas weh, zum Beispiel am Knie?",
         "Haben Sie eine Parästhesie oder eine Hypästhesie am Fuß, und ist die Motorik der Zehen eingeschränkt oder ein Hämatom aufgefallen?",
@@ -145,13 +138,12 @@
         "Das kann der Patient nicht wissen; dafür sind Sie als Arzt zuständig.",
         "Suggestiv: Sie unterstellen das Symptom."
       ],
-      "reply": "Patient: „Außen ist alles blau geworden. Kribbeln habe ich nicht, und die Zehen kann ich bewegen. Am Knie oder sonst wo tut nichts weh.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Außen ist alles blau geworden. Kribbeln habe ich nicht, und die Zehen kann ich bewegen. Am Knie oder sonst wo tut nichts weh.“ Auf dem Aufnahmebogen ist das Feld für die allgemeinen Angaben noch leer.",
       "options": [
         "Wie ist die Vegetativa?",
         "Haben Sie Schüttelfrost, Nachtschweiß, Gewichtsverlust, Dysurie, Obstipation, Diarrhö und Pollakisurie?",
@@ -165,13 +157,12 @@
         "Richtig: Fieber, Appetit, Schlaf, Stuhlgang und Wasserlassen in Laiensprache.",
         "Zu allgemein; der Patient sagt einfach „ja“."
       ],
-      "reply": "Patient: „Kein Fieber, Appetit normal, ich schlafe gut. Stuhlgang und Wasserlassen sind unauffällig.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen, Operationen und früheren Verletzungen?",
+      "situation": "Patient: „Kein Fieber, Appetit normal, ich schlafe gut. Stuhlgang und Wasserlassen sind unauffällig.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles; über seine Vorgeschichte noch nichts.",
       "options": [
         "Haben Sie Vorerkrankungen wie eine Bronchialobstruktion, ein atopisches Ekzem oder eine arterielle Hypertonie, und gab es Voroperationen oder Gelenkverletzungen?",
         "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck oder Zucker? Wurden Sie schon einmal operiert, und hatten Sie diesen Knöchel schon einmal verletzt?",
@@ -185,13 +176,12 @@
         "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
         "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
       ],
-      "reply": "Patient: „Ich habe leichtes Asthma seit der Kindheit. Operiert wurde ich nur an den Weisheitszähnen vor zwei Jahren. Den linken Knöchel bin ich vor drei Jahren schon einmal umgeknickt. Damals war ich nicht beim Arzt, nach zwei Wochen war er wieder gut.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Ich habe leichtes Asthma seit der Kindheit. Operiert wurde ich nur an den Weisheitszähnen vor zwei Jahren. Den linken Knöchel bin ich vor drei Jahren schon einmal umgeknickt. Damals war ich nicht beim Arzt, nach zwei Wochen war er wieder gut.“ Er kramt in seiner Sporttasche nach einer Packung und einem Spray.",
       "options": [
         "Nehmen Sie Tabletten?",
         "Sie nehmen doch sicher regelmäßig ein Schmerzmittel wie Ibuprofen?",
@@ -205,13 +195,12 @@
         "Fachsprache („Pharmaka“, „applizieren“, „Applikationsform“).",
         "Richtig: Name, Dosierung, auch Sprays und frei verkäufliche Mittel."
       ],
-      "reply": "Patient: „Bei Bedarf ein Salbutamol-Spray, ein bis zwei Hübe zu 100 Mikrogramm, etwa einmal pro Woche. Heute Nachmittag habe ich eine Tablette Ibuprofen 400 genommen. Sonst nichts.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Bei Bedarf ein Salbutamol-Spray, ein bis zwei Hübe zu 100 Mikrogramm, etwa einmal pro Woche. Heute Nachmittag habe ich eine Tablette Ibuprofen 400 genommen. Sonst nichts.“ Die Pflegekraft ruft von der Tür, ob sie schon ein Schmerzmittel und einen Kältepack vorbereiten soll.",
       "options": [
         "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
         "Sind Sie gegen Schmerzmittel allergisch? Das ist wichtig, weil wir Ihnen gleich etwas gegen die Schmerzen geben möchten, und Ibuprofen nehmen wir am häufigsten.",
@@ -225,13 +214,12 @@
         "Kein vollständiger Satz; in der Prüfung unhöflich.",
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
       ],
-      "reply": "Patient: „Gegen Pflaster. Von Heftpflaster bekomme ich einen juckenden Hautausschlag.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Pflaster. Von Heftpflaster bekomme ich einen juckenden Hautausschlag.“ Auf dem Aufnahmebogen fehlen noch die Angaben zu Genussmitteln.",
       "options": [
         "Sind Sie Raucher oder Trinker?",
         "Wie ist Ihr Nikotin- und Alkoholabusus?",
@@ -245,13 +233,12 @@
         "Richtig: neutral, konkret, mit Menge.",
         "Suggestivfrage und wertend: Sie legen die Antwort schon nahe."
       ],
-      "reply": "Patient: „Ich rauche nicht. Am Wochenende trinke ich zwei Bier. Drogen nehme ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche nicht. Am Wochenende trinke ich zwei Bier. Drogen nehme ich nicht.“ Dann fügt er hinzu: „Meine Eltern haben beide irgendetwas, glaube ich.“",
       "options": [
         "Wie ist die Familienanamnese?",
         "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
@@ -265,13 +252,12 @@
         "Zu speziell und unklar; „Bänder“ ist hier nicht der Schwerpunkt der Familienfrage.",
         "Richtig: offen, mit passenden Beispielen, auch Thrombosen im Hinblick auf die Therapie."
       ],
-      "reply": "Patient: „Mein Vater hat Bluthochdruck, meine Mutter eine Schilddrüsenunterfunktion. Thrombosen gab es bei uns nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Mein Vater hat Bluthochdruck, meine Mutter eine Schilddrüsenunterfunktion. Thrombosen gab es bei uns nicht.“ Er schaut auf sein Handy: „Ich muss meinen Mitbewohnern gleich Bescheid sagen, wann ich zurück bin.“",
       "options": [
         "Was ist Ihr sozialer Status?",
         "Was machen Sie beruflich? Wie wohnen Sie, und treiben Sie regelmäßig Sport?",
@@ -285,13 +271,12 @@
         "Zu eng und teilweise Verwaltung: Beruf und Sport fehlen, die Adresse gehört nicht in die Sozialanamnese.",
         "Verwaltungsfrage, keine Sozialanamnese."
       ],
-      "reply": "Patient: „Ich studiere Maschinenbau und wohne in einer WG im dritten Stock, ohne Aufzug. Zweimal pro Woche spiele ich im Verein Fußball.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich studiere Maschinenbau und wohne in einer WG im dritten Stock, ohne Aufzug. Zweimal pro Woche spiele ich im Verein Fußball.“ Er sieht Sie gespannt an: „Und, Herr Doktor, was ist mit meinem Knöchel los?“",
       "options": [
         "Sie haben ein Supinationstrauma mit Verdacht auf eine Ruptur des Ligamentum fibulotalare anterius.",
         "Das ist nur eine harmlose Prellung, Sie können gleich wieder Fußball spielen.",
@@ -305,13 +290,12 @@
         "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung der Bänder.",
         "Falsch und beängstigend: Die Diagnose ist nicht gesichert, und Sie dürfen keine Angst machen."
       ],
-      "reply": "Patient: „Gerissen? Und was passiert jetzt mit mir?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Muss ich operiert werden?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Gerissen? Und was passiert jetzt mit mir? Muss ich operiert werden?“",
       "options": [
         "Zuerst untersuche ich den Fuß gründlich, dann machen wir ein Röntgenbild, um einen Bruch auszuschließen. Bis dahin kühlen und lagern wir den Fuß hoch, und Sie bekommen ein Schmerzmittel. Bei einem Bänderriss braucht man meist keine Operation, sondern eine stabilisierende Schiene für einige Wochen. Das besprechen wir mit dem Oberarzt.",
         "Ja, morgen früh wird das Band am Knöchel genäht.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen den Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Becker ist 24 und hat den Fuß verdreht.",
         "Herr Lukas Becker (24 J.) hat sich heute in unserer Notaufnahme mit Schmerzen am Fuß vorgestellt, der rechts nach einem Fußballspiel geschwollen ist.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Der Patient knickte beim Fußball um, seitdem tut der Knöchel weh und ist dick geworden.",
         "Die Beschwerden seien nach einem Supinationstrauma beim Fußballspielen aufgetreten, der Patient könne nicht belasten, Schmerz NRS 7.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend bestehen ein laterales Hämatom bei erhaltener Sensibilität und Motorik der Zehen. Parästhesien und Begleitverletzungen am Knie wurden verneint. Fieber sowie Miktions- und Stuhlgangsbeschwerden wurden verneint. Appetit und Schlaf unauffällig.",
         "Er hat einen blauen Knöchel und kein Kribbeln.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "Vorerkrankungen: Asthma. Medikamente: Spray und Ibuprofen.",
         "An Vorerkrankungen ist ein leichtes Asthma bronchiale bekannt. Z. n. Weisheitszahnentfernung vor zwei Jahren. Z. n. Supinationstrauma des linken Sprunggelenks vor drei Jahren ohne ärztliche Vorstellung. Medikation: Salbutamol 100 µg 1-2 Hübe bei Bedarf, Ibuprofen 400 mg einmalig heute.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: Penicillin. Nikotinkonsum ca. 5 py, Alkohol regelmäßig.",
         "Pflasterallergie (Anaphylaxie). Nichtraucher. Gelegentlicher Alkoholkonsum (zwei Bier am Wochenende). Familienanamnese: Vater arterielle Hypertonie, Mutter Hypothyreose. Der Patient ist Student, wohnt in einer WG im dritten Stock und spielt zweimal wöchentlich Fußball.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Anamnestisch besteht der Verdacht auf eine Außenbandruptur des linken oberen Sprunggelenks nach Supinationstrauma. Differenzialdiagnostisch kommen eine Außenknöchelfraktur, eine Syndesmosenverletzung und eine Fraktur der Basis des Os metatarsale V in Betracht.",
         "Diagnose: verstauchter Knöchel.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Wir machen ein Röntgen und eine Schiene.",
         "Zur weiteren Abklärung empfehlen wir eine Röntgenaufnahme des oberen Sprunggelenks in zwei Ebenen sowie die Anlage eines Gipsverbands über sechs Wochen mit Entlastung. Bei fortbestehenden Beschwerden ist eine operative Bandnaht primär indiziert.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Der Patient hat den Fuß verdreht, er heißt Becker.",
         "Ich möchte Ihnen Herrn Lukas Becker vorstellen, einen 24-jährigen Patienten, der sich heute mit seit 16 Uhr bestehenden Schmerzen und einer Schwellung am linken Sprunggelenk nach einem Umknicktrauma beim Fußball vorgestellt hat.",
@@ -485,13 +461,12 @@
         "Inhaltlich falsch: Der Patient ist 24, die Beschwerden bestehen seit 16 Uhr am linken Sprunggelenk nach einem Trauma.",
         "Kein strukturierter Einstieg; zuerst Patient, Alter und Leitsymptom."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“",
       "options": [
         "Er hat einen dicken Fuß und kann nicht laufen.",
         "Der Patient knickte nach einer Landung im Sinne einer Supination um, es kam zu einem Knacken. Er konnte danach normal weiterspielen. Es bestehen ein mediales Hämatom, Parästhesien im Vorfuß und eine Zehenschwäche.",
@@ -505,13 +480,12 @@
         "Inhaltlich falsch: Der Patient hatte kein Fieber, und nächtliche Schmerzen oder Gewichtsverlust passen nicht zu einem akuten Trauma.",
         "Richtig: knapp, strukturiert, mit den für die Röntgenindikation wichtigen Befunden und Negativbefunden."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Bekannt sind ein leichtes Asthma bronchiale und ein Z. n. Supinationstrauma links vor drei Jahren ohne ärztliche Behandlung. Wichtig: Kontaktallergie auf Heftpflaster. Die Medikation besteht aus Salbutamol bei Bedarf, heute einmalig Ibuprofen 400 mg.",
         "Er ist gesund.",
@@ -525,13 +499,12 @@
         "Inhaltlich falsch: Es besteht kein Diabetes, es gibt eine Pflasterallergie, und Salbutamol nimmt der Patient nur bei Bedarf.",
         "Unvollständig: Asthma, frühere Verletzung und Allergie fehlen."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich denke an einen verstauchten Knöchel.",
         "Ich weiß es nicht genau.",
@@ -545,13 +518,12 @@
         "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
         "Zu sicher („sicher“), und eine Syndesmosenruptur entsteht eher durch Außenrotation; beim Supinationstrauma ist das Außenband am wahrscheinlichsten."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde ihn nach Hause schicken, er soll abwarten.",
         "Ich würde zunächst kühlen, hochlagern und analgesieren. Bei erfüllten Ottawa-Kriterien würde ich das obere Sprunggelenk in zwei Ebenen röntgen. Bei Frakturausschluss würde ich eine funktionelle Therapie mit semirigider Orthese für sechs Wochen einleiten, ohne Klebetape wegen der Pflasterallergie, und ihn im Verlauf klinisch kontrollieren.",
@@ -565,13 +537,12 @@
         "Nicht leitliniengerecht: Eine frische Außenbandruptur wird in der Regel funktionell behandelt, und ohne Röntgen ist ein Bruch nicht ausgeschlossen.",
         "Nicht die passende Untersuchung für diesen Verdacht."
       ],
-      "reply": "Oberarzt: „Gut. Wann röntgen Sie bei einem Sprunggelenk überhaupt?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Wann röntgen Sie bei einem Sprunggelenk überhaupt?“",
       "options": [
         "Wir röntgen grundsätzlich jeden Patienten, der mit einem geschwollenen Gelenk kommt.",
         "Nach den Ottawa-Regeln röntgen wir, wenn der Patient mehr als vier Schritte gehen kann und kein Druckschmerz am Knöchel besteht. Bei Schmerzen im Mittelfuß röntgen wir ausschließlich das Os cuboideum.",
@@ -585,13 +556,12 @@
         "Fieber ist kein Kriterium für ein Röntgenbild nach einem Trauma.",
         "Richtig: Ottawa Ankle Rules mit Knöchel- und Mittelfußkriterien."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Distorsion“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt auf das Wort „Distorsion“ auf seinem Zettel und sieht Sie fragend an.",
       "options": [
         "Knochenbruch",
         "Ausrenkung des Gelenks",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Supination“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Supination“.",
       "options": [
         "Drehung der Fußsohle nach innen",
         "Drehung der Fußsohle nach außen",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Malleolus“?",
+      "situation": "Er tippt auf „Malleolus“.",
       "options": [
         "Fersenbein",
         "Knöchel",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Hämatom“?",
+      "situation": "Dann auf „Hämatom“.",
       "options": [
         "Schwellung durch Wasseransammlung",
         "Hautausschlag",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Ödem“?",
+      "situation": "Zuletzt zeigt er auf „Ödem“.",
       "options": [
         "Bluterguss",
         "Wasseransammlung im Gewebe, Schwellung",

@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Frau Hoffmann sitzt blass auf dem Stuhl und schaut immer wieder zur Toilettentür.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Eine junge Frau sitzt blass auf dem Stuhl und schaut immer wieder zur Toilettentür.",
       "options": [
         "Guten Tag, ich bin der Arzt hier. Bitte setzen Sie sich und zeigen Sie mir gleich Ihre Versichertenkarte, damit die Anmeldung fertig wird.",
         "Guten Tag, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Frau Hoffmann?",
@@ -25,13 +24,12 @@
         "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
         "Die körperliche Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen."
       ],
-      "reply": "Patientin: „Ja, Lena Hoffmann. Guten Tag, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patientin: „Ja, Lena Hoffmann. Guten Tag, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie ist Ihr Body-Mass-Index?",
         "Sie sind doch noch recht jung, oder?",
@@ -45,13 +43,12 @@
         "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
         "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht."
       ],
-      "reply": "Patientin: „Ich bin 28, 1,70 Meter groß und wiege jetzt 61 Kilo. Vor sechs Wochen waren es noch 66.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patientin: „Ich bin 28, 1,70 Meter groß und wiege jetzt 61 Kilo. Vor sechs Wochen waren es noch 66.“ Sie sieht Sie erwartungsvoll an. Warum sie heute gekommen ist, hat sie noch nicht gesagt.",
       "options": [
         "Welche Symptomatik führt Sie zu uns?",
         "Haben Sie Durchfall?",
@@ -65,33 +62,31 @@
         "Richtig: eine offene Frage lässt die Patientin selbst erzählen.",
         "Vorwurfsvoll und belehrend. Das stört das Vertrauen gleich zu Beginn."
       ],
-      "reply": "Patientin: „Ich habe seit ein paar Wochen Durchfall, und seit einer Woche ist Blut im Stuhl. Ich muss ständig zur Toilette.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten den Stuhlgang genauer erfragen. Was sagen Sie?",
+      "situation": "Patientin: „Ich habe seit ein paar Wochen Durchfall, und seit einer Woche ist Blut im Stuhl. Ich muss ständig zur Toilette.“ Sie rutscht unruhig auf dem Stuhl.",
       "options": [
         "Wie oft müssen Sie am Tag zur Toilette, auch nachts? Und wie sieht der Stuhl aus, zum Beispiel wässrig, mit Blut oder mit Schleim?",
         "Haben Sie eine Hämatochezie oder eher eine Meläna, und wie viele Stuhlentleerungen pro Tag und pro Nacht zählen Sie?",
-        "Ist das Blut im Stuhl hellrot?",
+        "Haben Sie Blut im Stuhl?",
         "Das Blut kommt bestimmt vom Darmausgang, von Hämorrhoiden, nicht wahr?"
       ],
       "answer": 0,
       "feedback": [
         "Richtig: Häufigkeit tags und nachts, Aussehen des Stuhls mit Beispielen, laienverständlich.",
         "Fachbegriffe („Hämatochezie“, „Meläna“, „Stuhlentleerungen“); die Patientin versteht sie nicht.",
-        "Geschlossene Frage; Häufigkeit und Beimengungen fehlen.",
+        "Das hat die Patientin schon gesagt. Fragen Sie nach Häufigkeit und Aussehen des Stuhls.",
         "Suggestivfrage und voreilige Deutung. Die Patientin könnte Ihnen nur zustimmen."
       ],
-      "reply": "Patientin: „Acht- bis zehnmal am Tag, nachts zwei- bis dreimal. Der Stuhl ist dünn, mit hellrotem Blut und Schleim.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patientin: „Acht- bis zehnmal am Tag, nachts zwei- bis dreimal. Der Stuhl ist dünn, mit hellrotem Blut und Schleim.“ Sie überlegt, wann das alles angefangen hat.",
       "options": [
         "Seit wann haben Sie den Durchfall?",
         "Wann genau hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben?",
@@ -105,13 +100,12 @@
         "Fachsprache: „Erstmanifestation“, „subakut“ und „rezidivierend“ versteht die Patientin nicht.",
         "Geschlossene Frage; sie erfasst den Verlauf nicht."
       ],
-      "reply": "Patientin: „Vor etwa sechs Wochen fing es mit weichem Stuhl an. Es wurde langsam schlimmer, das Blut kam vor einer Woche dazu.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Art und Stärke der Bauchschmerzen. Welche Formulierung passt?",
+      "situation": "Patientin: „Vor etwa sechs Wochen fing es mit weichem Stuhl an. Es wurde langsam schlimmer, das Blut kam vor einer Woche dazu.“ Sie krümmt sich leicht und drückt die Hand auf den linken Unterbauch.",
       "options": [
         "Sind die Schmerzen kolikartig und tenesmusartig?",
         "Tut es sehr weh?",
@@ -125,13 +119,12 @@
         "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10.",
         "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS)."
       ],
-      "reply": "Patientin: „Es krampft im linken Unterbauch, so 5 von 10. Vor dem Stuhlgang ist es schlimmer, danach besser. Und ich habe ständig Stuhldrang, auch wenn nichts kommt.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patientin: „Es krampft im linken Unterbauch, so 5 von 10. Vor dem Stuhlgang ist es schlimmer, danach besser. Und ich habe ständig Stuhldrang, auch wenn nichts kommt.“ Sie reibt sich das rechte Knie und lehnt sich erschöpft zurück.",
       "options": [
         "Haben Sie Fatigue, Arthralgien, Aphthen oder ein Erythema nodosum bemerkt, und ist Ihnen ein Ikterus oder eine Uveitis aufgefallen, und leiden Sie unter einer Fatigue oder unter Alopezie?",
         "Haben Sie sonst noch was?",
@@ -145,13 +138,12 @@
         "Suggestiv: Sie unterstellen die Symptome.",
         "Richtig: konkrete extraintestinale Begleitsymptome in Laiensprache."
       ],
-      "reply": "Patientin: „Müde bin ich sehr. Mein rechtes Knie tut manchmal weh, und im Mund hatte ich kleine wunde Stellen. Augen und Haut sind in Ordnung.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patientin: „Müde bin ich sehr. Mein rechtes Knie tut manchmal weh, und im Mund hatte ich kleine wunde Stellen. Augen und Haut sind in Ordnung.“ Ihr Pullover hängt locker an den Schultern, die Stirn ist leicht feucht.",
       "options": [
         "Wie ist die Vegetativa?",
         "Haben Sie Fieber gemessen? Wie sind Appetit und Wasserlassen? Haben Sie Gewicht verloren oder nachts geschwitzt?",
@@ -165,13 +157,12 @@
         "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Inappetenz, Polyurie).",
         "Zu allgemein; die Patientin sagt einfach „ja“."
       ],
-      "reply": "Patientin: „Richtiges Fieber hatte ich nicht, höchstens 37,8 Grad. Appetit habe ich wenig, ich habe fünf Kilo abgenommen. Nachts schwitze ich nicht, das Wasserlassen ist normal.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen, Operationen und möglichen Auslösern?",
+      "situation": "Patientin: „Richtiges Fieber hatte ich nicht, höchstens 37,8 Grad. Appetit habe ich wenig, ich habe fünf Kilo abgenommen. Nachts schwitze ich nicht, das Wasserlassen ist normal.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles; über ihre frühere Krankengeschichte noch nichts.",
       "options": [
         "Haben Sie chronische Erkrankungen, zum Beispiel Asthma oder Schilddrüsenprobleme? Wurden Sie schon einmal operiert? Waren Sie zuletzt im Ausland oder haben Antibiotika genommen?",
         "Haben Sie Vorerkrankungen wie eine Hashimoto-Thyreoiditis, eine Divertikulose oder einen Morbus Crohn, und gab es Voroperationen oder stationäre Aufenthalte?",
@@ -185,13 +176,12 @@
         "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
         "Die Patientin kennt ihre Akte nicht. Fragen Sie direkt."
       ],
-      "reply": "Patientin: „Chronisch krank bin ich nicht. Operiert wurde ich nur mit 22 an den Weisheitszähnen. Im Ausland war ich nicht, und Antibiotika habe ich seit Jahren nicht genommen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patientin: „Chronisch krank bin ich nicht. Operiert wurde ich nur mit 22 an den Weisheitszähnen. Im Ausland war ich nicht, und Antibiotika habe ich seit Jahren nicht genommen.“ Sie greift in ihre Handtasche und holt eine Blisterpackung heraus.",
       "options": [
         "Sie nehmen doch sicher Schmerzmittel gegen die Bauchschmerzen?",
         "Nehmen Sie Tabletten?",
@@ -205,13 +195,12 @@
         "Richtig: Name, Dosierung und auch frei verkäufliche Mittel.",
         "Fachsprache („Pharmaka“, „applizieren“, „Antidiarrhoika“)."
       ],
-      "reply": "Patientin: „Die Pille mit Ethinylestradiol 0,03 Milligramm und Dienogest 2 Milligramm, eine Tablette morgens. Wegen der Regelschmerzen nehme ich manchmal Ibuprofen 400, in den letzten zwei Wochen fünfmal.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patientin: „Die Pille mit Ethinylestradiol 0,03 Milligramm und Dienogest 2 Milligramm, eine Tablette morgens. Wegen der Regelschmerzen nehme ich manchmal Ibuprofen 400, in den letzten zwei Wochen fünfmal.“ Auf dem Aufnahmebogen ist das Feld für Allergien noch leer.",
       "options": [
         "Allergie?",
         "Sind Sie gegen Sulfonamide allergisch? Das ist wichtig, weil wir Ihnen vielleicht gleich ein Medikament geben möchten, und das enthält oft Sulfonamid.",
@@ -225,13 +214,12 @@
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl.",
         "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion."
       ],
-      "reply": "Patientin: „Gegen Haselnüsse: Dann juckt der Mund und die Lippen schwellen an. Heuschnupfen habe ich im Frühling auch. Medikamente vertrage ich alle.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patientin: „Gegen Haselnüsse: Dann juckt der Mund und die Lippen schwellen an. Heuschnupfen habe ich im Frühling auch. Medikamente vertrage ich alle.“ Auf dem Aufnahmebogen fehlen noch Angaben zu Genussmitteln.",
       "options": [
         "Rauchen Sie, oder haben Sie früher geraucht? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
         "Sind Sie Raucherin oder Alkoholikerin?",
@@ -245,13 +233,12 @@
         "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
         "Wertend und verallgemeinernd; es fehlt die konkrete Menge."
       ],
-      "reply": "Patientin: „Ich habe mit 21 angefangen, fünf Jahre lang etwa 10 Zigaretten am Tag, und vor zwei Jahren aufgehört. Alkohol nur am Wochenende ein Glas Wein. Drogen nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patientin: „Ich habe mit 21 angefangen, fünf Jahre lang etwa 10 Zigaretten am Tag, und vor zwei Jahren aufgehört. Alkohol nur am Wochenende ein Glas Wein. Drogen nie.“ Auf dem Aufnahmebogen ist das Feld für Erkrankungen in der Familie noch leer.",
       "options": [
         "Wie ist die Familienanamnese?",
         "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders, weil das bei vielen Krankheiten wichtig ist.",
@@ -265,13 +252,12 @@
         "Richtig: offen, mit passenden Beispielen.",
         "Suggestivfrage; Sie kennen die Diagnose noch nicht."
       ],
-      "reply": "Patientin: „Mein Onkel väterlicherseits hat Morbus Crohn. Meine Mutter hat eine Schilddrüsenunterfunktion. Darmkrebs gab es meines Wissens nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patientin: „Mein Onkel väterlicherseits hat Morbus Crohn. Meine Mutter hat eine Schilddrüsenunterfunktion. Darmkrebs gab es meines Wissens nicht.“ Sie schaut auf ihr Handy; eine Nachricht aus der Schule ist eingegangen.",
       "options": [
         "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse? Und wie lange wohnen Sie schon dort?",
         "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen? Gibt es im Moment viel Stress im Beruf oder privat?",
@@ -285,13 +271,12 @@
         "Unklar und unangenehm formuliert.",
         "Unangemessen."
       ],
-      "reply": "Patientin: „Ich bin Grundschullehrerin und wohne mit meinem Freund zusammen. Im Moment fehle ich viel in der Schule, das stresst mich.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patientin: „Ich bin Grundschullehrerin und wohne mit meinem Freund zusammen. Im Moment fehle ich viel in der Schule, das stresst mich.“ Sie sieht Sie besorgt an: „Und was ist mit mir los, Herr Doktor?“",
       "options": [
         "Ich vermute, dass die Schleimhaut in Ihrem Dickdarm entzündet ist. Das ist eine chronische Erkrankung, die in Schüben verläuft, aber meist gut behandelbar ist. Sicher wissen wir es erst nach einer Darmspiegelung.",
         "Sie haben eine Colitis ulcerosa oder einen Morbus Crohn.",
@@ -305,13 +290,12 @@
         "Verharmlosend und medizinisch falsch: sechs Wochen Durchfall mit Blut und Gewichtsverlust sind keine Grippe.",
         "Falsch und beängstigend."
       ],
-      "reply": "Patientin: „Eine chronische Erkrankung? Und was passiert jetzt mit mir?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Frau Hoffmann fragt: „Brauche ich Medikamente, und muss ich in der Klinik bleiben?“",
-      "question": "Die Patientin fragt, ob sie Medikamente braucht und in der Klinik bleiben muss. Wie antworten Sie?",
+      "situation": "Patientin: „Eine chronische Erkrankung? Und was passiert jetzt mit mir?“",
       "options": [
         "Ja, Sie bekommen sofort Kortison, und morgen früh wird Ihr Dickdarm entfernt, damit Sie keine Beschwerden mehr haben.",
         "Nein, Sie können nach Hause gehen und etwas gegen den Durchfall einnehmen.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Frau Hoffmann ist 28 und hat Durchfall mit Blut.",
         "Die Patientin Frau Hoffmann stellt sich heute vor wegen Durchfällen seit sechs Wochen, 28-jährig.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Die Durchfälle haben vor sechs Wochen angefangen und sind langsam schlimmer geworden, jetzt ist auch Blut dabei.",
         "Die Beschwerden seien seit sechs Wochen progredient, mit Hämatochezie, NRS 5.",
@@ -362,7 +344,7 @@
       "feedback": [
         "Inhaltlich richtig, aber Laiensprache; im Bericht erwartet man Fachbegriffe.",
         "Konjunktiv-I-Mischung und unvollständig; es fehlt „/10“ und die Stuhlfrequenz.",
-        "Inhaltlich falsch: Die Schmerzen bessern sich nach dem Stuhlgang, und es bestand Stuhldrang.",
+        "Inhaltlich falsch: Die Schmerzen bessern sich nach dem Stuhlgang, es bestand Stuhldrang, und Hämaturie und Dysurie wurden nicht berichtet.",
         "Richtig: Fachsprache und alle Merkmale (Verlauf, Frequenz, Blutbeimengung, Schmerzcharakter, Tenesmen)."
       ],
       "reply": null
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend berichtete die Patientin über Müdigkeit, Gelenkschmerzen im rechten Knie und wunde Stellen im Mund. Fieber bis 39,5 °C, Inappetenz und Gewichtsverlust von 5 kg in sechs Wochen. Nachtschweiß wurde verneint.",
         "Begleitend berichtete die Patientin über Fatigue, Gonalgie rechts und orale Aphthen. Subfebrile Temperaturen bis 37,8 °C, Inappetenz und ein Gewichtsverlust von 5 kg in sechs Wochen. Nachtschweiß wurde verneint.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "Keine chronischen Vorerkrankungen bekannt. Z. n. Weisheitszahnentfernung mit 22 Jahren. Medikation: Ethinylestradiol 0,03 mg/Dienogest 2 mg 1-0-0, Ibuprofen 400 mg bei Bedarf (fünfmal in den letzten zwei Wochen). Keine Antibiotikaeinnahme, keine Auslandsreise.",
         "Keine chronischen Vorerkrankungen bekannt. Z. n. Appendektomie mit 22 Jahren. Medikation: Ethinylestradiol 0,03 mg/Dienogest 2 mg 1-0-0, Ibuprofen 400 mg bei Bedarf (fünfmal in den letzten zwei Wochen). Keine Antibiotikaeinnahme, keine Auslandsreise.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: keine. Noxen: Nikotinabusus. Sozial: Lehrerin.",
         "Haselnussallergie (Anaphylaxie). Ex-Nikotinkonsum ca. 5 py, gelegentlicher Alkoholkonsum. Familienanamnese: Mutter Hashimoto-Thyreoiditis, Vater Morbus Crohn. Die Patientin ist Grundschullehrerin, verheiratet und lebt mit ihrem Ehemann.",
@@ -421,7 +400,7 @@
       "answer": 2,
       "feedback": [
         "Falsch: die Haselnussallergie fehlt, und die Patientin ist Ex-Raucherin.",
-        "Falsch: Reaktion war Juckreiz und Lippenschwellung, 10 Zigaretten über fünf Jahre sind 2,5 py, und der Onkel (nicht der Vater) hat Morbus Crohn.",
+        "Falsch: Reaktion war Juckreiz und Lippenschwellung, 10 Zigaretten über fünf Jahre sind 2,5 py, die Patientin ist nicht verheiratet, und der Onkel (nicht der Vater) hat Morbus Crohn.",
         "Richtig: 10 Zigaretten am Tag über fünf Jahre sind 2,5 py (Packungsjahre); Allergie, Familie und Sozialanamnese stimmen.",
         "Laiensprache und unvollständig."
       ],
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Es besteht eine gesicherte Colitis ulcerosa.",
         "Anamnestisch besteht der Verdacht auf eine chronisch-entzündliche Darmerkrankung, am ehesten eine Colitis ulcerosa. Differenzialdiagnostisch kommen ein Morbus Crohn, eine infektiöse Kolitis (u. a. Clostridioides difficile, Campylobacter) und eine NSAR-assoziierte Kolitis in Betracht.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und eine Gastroskopie sowie eine Therapie mit Loperamid gegen die Durchfälle.",
         "Wir machen Blut und Darmspiegelung.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Ich möchte Ihnen Frau Lena Hoffmann vorstellen, eine 28-jährige Patientin, die sich heute mit seit sechs Wochen bestehenden Durchfällen und seit einer Woche bestehender Blutbeimengung vorgestellt hat.",
         "Die Patientin hat Durchfall und Blut im Stuhl, sie heißt Hoffmann.",
@@ -485,13 +461,12 @@
         "Kein strukturierter Einstieg; zuerst Patientin, Alter und Leitsymptom.",
         "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“",
       "options": [
         "Sie hat alles Mögliche.",
         "Die Durchfälle bestehen seit sechs Wochen mit 3-4 Stuhlgängen pro Tag, ohne nächtliche Entleerungen. Es besteht ein Gewichtsverlust von 5 kg, Fieber bis 39 °C und krampfartige Schmerzen im rechten Oberbauch.",
@@ -505,13 +480,12 @@
         "Richtig: knapp, strukturiert, mit Frequenz, Alarmsymptomen und extraintestinalen Zeichen.",
         "Inhaltlich falsch: Ikterus und Erbrechen wurden nicht berichtet."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Sie ist gesund.",
         "Keine relevanten Vorerkrankungen. Sie nimmt ein orales Kontrazeptivum und gelegentlich Ibuprofen, zuletzt fünfmal in zwei Wochen. Ex-Raucherin mit ca. 2,5 py. Haselnussallergie. Der Onkel väterlicherseits hat einen Morbus Crohn.",
@@ -525,13 +499,12 @@
         "Inhaltlich falsch: keine Vorerkrankungen, Ex-Raucherin, Haselnussallergie, Morbus Crohn beim Onkel.",
         "Unvollständig: Ibuprofen, Allergie und Familienanamnese fehlen."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich vermute eine Colitis ulcerosa. Differenzialdiagnostisch denke ich an einen Morbus Crohn, eine infektiöse Kolitis und eine NSAR-assoziierte Kolitis.",
         "Ich denke an Hämorrhoiden.",
@@ -545,13 +518,12 @@
         "Zu sicher („sicher“), und Blut im Stuhl mit Gewichtsverlust spricht gegen ein Reizdarmsyndrom.",
         "In der Prüfung sollen Sie eine begründete Vermutung äußern."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde Loperamid verordnen und sie nach Hause schicken, weil Durchfall meist von allein heilt.",
         "Ich würde Blut und Stuhl untersuchen, einschließlich C.-difficile-Toxin, Stuhlkultur und Calprotectin, und eine Abdomensonographie durchführen. Danach eine Ileokoloskopie mit Stufenbiopsien. Ibuprofen würde ich absetzen. Bei bestätigter Colitis ulcerosa richtet sich die Therapie nach der Schwere des Schubs: bei mittelschwerem Schub Mesalazin oral und rektal, bei schwerem Schub stationär Prednisolon i. v.",
@@ -565,13 +537,12 @@
         "Falsch: Erst Infektion ausschließen, und Ibuprofen kann einen Schub auslösen.",
         "Nicht die erste Untersuchung bei diesem Verdacht."
       ],
-      "reply": "Oberarzt: „Gut. Welche Befunde erwarten Sie in der Koloskopie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Welche Befunde erwarten Sie in der Koloskopie bei Ihrer Verdachtsdiagnose?“",
       "options": [
         "Ich erwarte einzelne, scharf begrenzte, längliche Ulzera im terminalen Ileum mit gesunder Schleimhaut dazwischen (Pflastersteinrelief) und perianale Fisteln.",
         "Eine vergrößerte Milz.",
@@ -585,13 +556,12 @@
         "In der Prüfung erwartet man eine begründete Antwort.",
         "Richtig: typische Befunde der Colitis ulcerosa."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Tenesmen“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Tenesmen“.",
       "options": [
         "Verstopfung",
         "Blut im Stuhl",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Hämatochezie“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Hämatochezie“.",
       "options": [
         "Teerstuhl",
         "Fettstuhl",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Aphthen“?",
+      "situation": "Er tippt auf „Aphthen“.",
       "options": [
         "kleine, schmerzhafte Geschwüre der Mundschleimhaut",
         "weißer Pilzbelag im Mund",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Stenose“?",
+      "situation": "Dann auf „Stenose“.",
       "options": [
         "Verbindungsgang zwischen zwei Organen",
         "Verengung",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Remission“?",
+      "situation": "Zuletzt zeigt er auf „Remission“.",
       "options": [
         "Wiederauftreten der Krankheit",
         "Fortschreiten der Krankheit",

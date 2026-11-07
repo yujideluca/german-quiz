@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Becker sitzt blass und müde auf der Liege, atmet auffällig tief und schnell, und im Raum riecht es leicht fruchtig.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Herr Becker sitzt blass und müde auf der Liege, atmet auffällig tief und schnell, und im Raum riecht es leicht fruchtig.",
       "options": [
         "Hallo, was haben Sie denn?",
         "Guten Abend. Bitte legen Sie sich sofort hin, ich höre jetzt gleich Ihre Lunge ab und taste Ihren Bauch ab.",
@@ -25,13 +24,12 @@
         "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
         "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor."
       ],
-      "reply": "Patient: „Ja ... Becker. Guten Abend, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja ... Becker. Guten Abend, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
         "Wie ist Ihr Body-Mass-Index?",
@@ -45,13 +43,12 @@
         "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
         "Anschrift und Notfallkontakt sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
       ],
-      "reply": "Patient: „Ich bin 19, 1,82 Meter groß und wiege jetzt nur noch 64 Kilo. Vor ein paar Wochen waren es noch 70.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 19, 1,82 Meter groß und wiege jetzt nur noch 64 Kilo. Vor ein paar Wochen waren es noch 70.“ Er lehnt sich erschöpft zurück und wartet darauf, dass Sie weitermachen.",
       "options": [
         "Haben Sie großen Durst?",
         "Was führt Sie heute zu uns? Erzählen Sie bitte.",
@@ -65,33 +62,31 @@
         "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
         "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
       ],
-      "reply": "Patient: „Ich habe seit ein paar Wochen ständig Durst und muss dauernd aufs Klo. Und seit gestern ist mir schlecht, und ich bin total schlapp.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten Durst und Wasserlassen genauer erfassen. Was sagen Sie?",
+      "situation": "Patient: „Ich habe seit ein paar Wochen ständig Durst und muss dauernd aufs Klo. Und seit gestern ist mir schlecht, und ich bin total schlapp.“ Er greift nach der Wasserflasche neben der Liege und trinkt hastig.",
       "options": [
         "Haben Sie eine Polydipsie und eine Polyurie, und wie ausgeprägt ist bei Ihnen die Nykturie im Vergleich zu früher?",
         "Sie trinken sicher sehr viel, oder?",
-        "Wie viel trinken Sie?",
+        "Haben Sie Durst und müssen Sie oft zur Toilette?",
         "Wie viel trinken Sie pro Tag, und wie oft müssen Sie zur Toilette, auch nachts?"
       ],
       "answer": 3,
       "feedback": [
         "„Polydipsie“, „Polyurie“ und „Nykturie“ sind Fachwörter; der Patient versteht sie nicht.",
         "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
-        "Zu ungenau: Das Wasserlassen und die Uhrzeit fehlen.",
+        "Das hat der Patient schon gesagt. Fragen Sie nach Menge und Häufigkeit, auch nachts.",
         "Richtig: laienverständlich, konkret nach Trinkmenge und Toilettengängen, auch nachts, ohne die Antwort vorzugeben."
       ],
-      "reply": "Patient: „Ich trinke fünf bis sechs Liter am Tag, Wasser und Cola. Zur Toilette muss ich auch nachts drei- bis viermal.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patient: „Ich trinke fünf bis sechs Liter am Tag, Wasser und Cola. Zur Toilette muss ich auch nachts drei- bis viermal.“ Wann das alles angefangen hat und wie es sich entwickelt hat, wissen Sie noch nicht.",
       "options": [
         "Hat es plötzlich angefangen?",
         "Wann genau haben die Beschwerden angefangen, und wie haben sie sich seitdem entwickelt?",
@@ -105,13 +100,12 @@
         "Das hat der Patient schon gesagt (seit gestern). Fragen Sie nach dem Verlauf.",
         "Fachsprache: „Erstmanifestation“, „subakut“, „progredient“ und „Exazerbation“ versteht der Patient nicht."
       ],
-      "reply": "Patient: „Der Durst fing vor etwa drei Wochen an und wurde immer schlimmer. Gestern Abend kamen Übelkeit und Bauchschmerzen dazu, und heute atme ich so schnell.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Bauchschmerzen und Schwäche. Welche Formulierung passt?",
+      "situation": "Patient: „Der Durst fing vor etwa drei Wochen an und wurde immer schlimmer. Gestern Abend kamen Übelkeit und Bauchschmerzen dazu, und heute atme ich so schnell.“ Er legt die Hand auf den Bauch und atmet tief und schnell.",
       "options": [
         "Wie fühlen sich die Bauchschmerzen an, eher krampfartig, stechend oder dumpf? Und wie stark sind Schmerzen und Schwäche auf einer Skala von 0 bis 10?",
         "Sind Ihre Bauchschmerzen eher kolikartig oder diffus, und besteht neben der Asthenie auch eine Dyspnoe in Ruhe?",
@@ -125,13 +119,12 @@
         "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
         "Zu ungenau; Sie bekommen keine verwertbare Angabe."
       ],
-      "reply": "Patient: „Die Bauchschmerzen sind dumpf, so 5 von 10. Die Schwäche ist 8 von 10, ich komme kaum noch die Treppe hoch.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Die Bauchschmerzen sind dumpf, so 5 von 10. Die Schwäche ist 8 von 10, ich komme kaum noch die Treppe hoch.“ Er schluckt schwer und reibt sich die Augen.",
       "options": [
         "Hatten Sie Nausea, Emesis, Visusminderung oder eine Kussmaul-Atmung, und bestand zwischendurch eine Vigilanzminderung, eine Somnolenz oder eine Dyspnoe in Ruhe, und seit wann besteht die Pruritus-Symptomatik?",
         "Sie haben bestimmt auch erbrochen und schlecht gesehen.",
@@ -145,13 +138,12 @@
         "Zu unkonkret; der Patient sagt einfach „nein“.",
         "Richtig: konkrete Begleitsymptome in Laiensprache, mit Blick auf Sehen, Atmung und Kreislauf."
       ],
-      "reply": "Patient: „Ich habe dreimal erbrochen. Verschwommen sehe ich seit ein paar Tagen, und schwindelig ist mir auch. Luft bekomme ich schon, aber ich atme so tief.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Ich habe dreimal erbrochen. Verschwommen sehe ich seit ein paar Tagen, und schwindelig ist mir auch. Luft bekomme ich schon, aber ich atme so tief.“ Zu Fieber, Appetit, Gewicht und Stuhlgang wissen Sie noch nichts.",
       "options": [
         "Wie ist die Vegetativa?",
         "Haben Sie Pyrexie, Nachtschweiß, einen unbeabsichtigten Gewichtsverlust, eine Obstipation, eine Diarrhö oder eine Dysurie?",
@@ -165,13 +157,12 @@
         "Richtig: Fieber, Appetit, Gewicht, Stuhlgang und Infekt in Laiensprache; der Infekt ist ein möglicher Auslöser.",
         "Zu allgemein; der Patient sagt einfach „ja“."
       ],
-      "reply": "Patient: „Fieber hatte ich nicht, aber vor zehn Tagen eine Erkältung mit Halsschmerzen. Hunger hatte ich lange viel, seit gestern gar nicht mehr. Sechs Kilo habe ich abgenommen. Stuhlgang normal, Nachtschweiß nein.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patient: „Fieber hatte ich nicht, aber vor zehn Tagen eine Erkältung mit Halsschmerzen. Hunger hatte ich lange viel, seit gestern gar nicht mehr. Sechs Kilo habe ich abgenommen. Stuhlgang normal, Nachtschweiß nein.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles; über seine Vorgeschichte noch nichts.",
       "options": [
         "Welche Diagnosen und Voroperationen stehen in Ihrer Akte, und welche Fachärzte behandeln Sie derzeit wegen dieser Erkrankungen?",
         "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck oder Asthma? Wurden Sie schon einmal operiert oder lagen Sie im Krankenhaus?",
@@ -185,13 +176,12 @@
         "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
         "Vollständig, aber in Fachsprache („arterielle Hypertonie“, „Autoimmunerkrankung“). Mit Patienten sprechen Sie Laiensprache."
       ],
-      "reply": "Patient: „Eigentlich nichts. Operiert wurde ich noch nie. Als Kind hatte ich einmal einen Unterarmbruch mit Gips.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Eigentlich nichts. Operiert wurde ich noch nie. Als Kind hatte ich einmal einen Unterarmbruch mit Gips.“ Er zuckt mit den Schultern. Auf dem Bogen ist das Feld für die Medikamente noch leer.",
       "options": [
         "Nehmen Sie regelmäßig Medikamente ein, auch Mittel ohne Rezept oder Vitamine? Welche, und in welcher Dosierung?",
         "Nehmen Sie Tabletten?",
@@ -205,13 +195,12 @@
         "Fachsprache („Pharmaka“, „applizieren“, „Kortikoide“) und „Antidiabetika“ verrät schon eine Diagnose.",
         "Unterstellend und unhöflich. Fragen Sie neutral."
       ],
-      "reply": "Patient: „Regelmäßig nur Vitamin D, 1000 I. E. morgens. Gegen die Erkältung habe ich vor drei Tagen zweimal Paracetamol 500 mg genommen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Regelmäßig nur Vitamin D, 1000 I. E. morgens. Gegen die Erkältung habe ich vor drei Tagen zweimal Paracetamol 500 mg genommen.“ Die Pflegekraft ruft von der Tür, sie wolle gleich die Infusion vorbereiten; auf dem Bogen ist das Feld für Allergien noch leer.",
       "options": [
         "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel, Pollen oder Pflaster? Wie äußert sich das?",
         "Allergie?",
@@ -225,17 +214,16 @@
         "Zu eng: Allergien gegen andere Medikamente, Lebensmittel oder Pollen übersehen Sie.",
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
       ],
-      "reply": "Patient: „Gegen Birkenpollen, im Frühjahr habe ich dann Niesen und tränende Augen. Gegen Medikamente habe ich nichts.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Birkenpollen, im Frühjahr habe ich dann Niesen und tränende Augen. Gegen Medikamente habe ich nichts.“ Bei Rauchen, Alkohol und Drogen ist der Bogen noch leer.",
       "options": [
         "Rauchen Sie, und sind Sie Alkoholiker, oder nehmen Sie irgendwelche Drogen, die wir kennen sollten?",
         "Wie ist Ihr Nikotin-, Alkohol- und Drogenabusus in den letzten Jahren?",
-        "Sie trinken bestimmt viel Alkohol, wie alle Studenten, oder?",
+        "Sie trinken bestimmt viel Alkohol, in Ihrem Alter tun das ja alle, oder?",
         "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?"
       ],
       "answer": 3,
@@ -245,13 +233,12 @@
         "Suggestiv und wertend.",
         "Richtig: neutral, konkret, mit Menge."
       ],
-      "reply": "Patient: „Ich habe nie geraucht. Alkohol am Wochenende zwei Bier. Drogen nehme ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich habe nie geraucht. Alkohol am Wochenende zwei Bier. Drogen nehme ich nicht.“ Auf dem Bogen fehlt noch die Familienvorgeschichte.",
       "options": [
         "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Zuckerkrankheit, Schilddrüsen- oder Herzerkrankungen?",
         "Wie ist die Familienanamnese?",
@@ -265,13 +252,12 @@
         "Sie kennen die Diagnose noch nicht, und Eltern und Geschwister sind nicht die ganze Familie.",
         "Unklar und unpassend; es geht um Erkrankungen in der Familie."
       ],
-      "reply": "Patient: „Meine Großmutter hat Diabetes, Typ 2 glaube ich. Meine Mutter hat Hashimoto und nimmt Tabletten für die Schilddrüse. Mein Vater ist gesund.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Meine Großmutter hat Diabetes, Typ 2 glaube ich. Meine Mutter hat Hashimoto und nimmt Tabletten für die Schilddrüse. Mein Vater ist gesund.“ Er schaut kurz zur Tür, wo sein Mitbewohner wartet.",
       "options": [
         "Was ist Ihr sozialer Status?",
         "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
@@ -285,13 +271,12 @@
         "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
         "Unangemessen."
       ],
-      "reply": "Patient: „Ich studiere Informatik und wohne in einer WG mit zwei Mitbewohnern. Einer hat mich hergebracht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich studiere Informatik und wohne in einer WG mit zwei Mitbewohnern. Einer hat mich hergebracht.“ Er sieht Sie besorgt an: „Und, Herr Doktor, was habe ich denn?“",
       "options": [
         "Sie haben eine diabetische Ketoazidose bei Erstmanifestation eines Diabetes mellitus Typ 1.",
         "Das ist wahrscheinlich nur ein Magen-Darm-Infekt. Trinken Sie mehr, dann geht es vorbei.",
@@ -305,13 +290,12 @@
         "Vorwurfsvoll und medizinisch falsch: Bei diesem Verdacht fehlt Insulin, nicht Disziplin.",
         "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung mit Bezug zu den Beschwerden."
       ],
-      "reply": "Patient: „Zucker? Das ist ja heftig. Muss ich im Krankenhaus bleiben, und muss ich mir jetzt immer Insulin spritzen?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Muss ich im Krankenhaus bleiben, und muss ich mir jetzt immer Insulin spritzen?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Zucker? Das ist ja heftig. Muss ich im Krankenhaus bleiben, und muss ich mir jetzt immer Insulin spritzen?“",
       "options": [
         "Nein, Sie bekommen heute eine Infusion und können morgen früh wieder nach Hause. Tabletten reichen dann.",
         "Das weiß ich nicht, das entscheidet der Oberarzt.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Jonas Becker, ein 19-jähriger Patient, stellte sich heute in unsere Notaufnahme mit seit drei Wochen bestehender Polyurie und Polydipsie sowie seit gestern bestehender Übelkeit vor.",
         "Herr Jonas Becker, ein 19-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit drei Wochen bestehender Polyurie und Polydipsie sowie seit gestern bestehender Übelkeit vor.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Seit drei Wochen bestehen eine Polydipsie mit einer Trinkmenge von ca. 2 l/Tag und eine Polyurie mit Nykturie 1- bis 2-mal. Zudem berichtete der Patient über einen Gewichtsverlust von 6 kg (70 auf 64 kg). Seit gestern Abend treten dumpfe Abdominalschmerzen (NRS 5/10) sowie eine ausgeprägte Schwäche (NRS 8/10) auf.",
         "Seit drei Wochen bestehen eine Polydipsie und eine Polyurie, begleitet von einer Gewichtszunahme von 6 kg. Seit gestern Abend treten krampfartige Abdominalschmerzen (NRS 5/10) und eine Schwäche (NRS 8/10) auf.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend traten dreimaliges Erbrechen, Schwindel, Sehstörungen und eine vertiefte Atmung auf. Fieber und Nachtschweiß wurden verneint. Vor zehn Tagen bestand ein Infekt der oberen Atemwege. Stuhlgang unauffällig.",
         "Begleitend traten dreimaliges Erbrechen, Schwindel und Sehstörungen auf. Fieber bis 38,5 °C wurde angegeben, Nachtschweiß verneint. Vor zehn Tagen bestand ein Infekt der oberen Atemwege. Stuhlgang unauffällig.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "Vorerkrankungen: ein Asthma bronchiale. Z. n. Appendektomie im Kindesalter. Medikation: Paracetamol 500 mg 1-0-1 regelmäßig, Vitamin D 1000 I. E. 1-0-0.",
         "Keine Vorerkrankungen, kein Zucker, Medikamente nur gegen Erkältung.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Penicillinallergie (Exanthem). Nikotinkonsum ca. 2 py, gelegentlicher Alkoholkonsum. Familienanamnese: unauffällig. Der Patient ist Informatikstudent und lebt in einer Wohngemeinschaft.",
         "Pollinose (Birkenpollen: Rhinokonjunktivitis), keine Medikamentenallergie. Nikotinkonsum wurde verneint (0 py), gelegentlicher Alkoholkonsum (ca. zwei Bier am Wochenende), kein Drogenkonsum. Familienanamnese: Großmutter Diabetes mellitus Typ 2, Mutter Hashimoto-Thyreoiditis. Der Patient ist Informatikstudent und lebt in einer Wohngemeinschaft.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Anamnestisch besteht der Verdacht auf eine diabetische Ketoazidose bei Erstmanifestation eines Diabetes mellitus Typ 1. Differenzialdiagnostisch kommen eine Alkoholketoazidose, ein hyperosmolares hyperglykämisches Syndrom und eine akute Gastroenteritis in Betracht.",
         "Diagnose: Zuckerkrankheit.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Zur weiteren Abklärung empfehlen wir eine Blutentnahme. Therapeutisch erfolgt eine Therapie mit Metformin 500 mg 1-0-1 und die Entlassung mit ambulanter Kontrolle beim Hausarzt.",
         "Wir geben sofort 10 IE Insulin als Bolus subkutan, ohne zuvor Kalium und Blutgasanalyse zu bestimmen, und verlegen den Patienten dann auf die Normalstation.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Sie speichern den Brief. Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Der Patient hat Durst und kommt mit seinem Mitbewohner.",
         "Herr Becker hat eine Ketoazidose.",
@@ -485,13 +461,12 @@
         "Richtig: Name, Alter, Leitsymptome, zeitlicher Verlauf in einem Satz.",
         "Kein strukturierter Einstieg; zuerst Patient und Leitsymptome."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Der Oberarzt nickt und lehnt sich zurück: „Mhm. Und weiter?“",
       "options": [
         "Er hat Fieber, Husten und Durchfall.",
         "Es bestehen eine Polydipsie mit ca. 5–6 l pro Tag, eine Polyurie mit Nykturie und ein Gewichtsverlust von 6 kg in drei Wochen. Seit einigen Tagen bestehen Sehstörungen, seit gestern kommen dreimaliges Erbrechen, Abdominalschmerzen, ausgeprägte Schwäche und eine vertiefte Atmung hinzu. Fieber wurde verneint.",
@@ -505,13 +480,12 @@
         "Inhaltlich falsch: Der Patient trinkt 5–6 l, hat nachts Harndrang, 6 kg abgenommen und kein Fieber.",
         "Keine Information."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Er ist völlig gesund, hat keine Allergien, nimmt keinerlei Medikamente ein und hat auch familiär keine Vorerkrankungen, weshalb ich keine Besonderheiten sehe.",
         "Bekannt ist ein Diabetes mellitus Typ 2 unter Metformin. Die Großmutter hat Asthma.",
@@ -525,13 +499,12 @@
         "Unvollständig und falsch: Pollinose, Vitamin D und die Familienanamnese fehlen.",
         "Richtig: relevante Vorgeschichte; die Autoimmunerkrankung der Mutter stützt den Verdacht auf einen Typ-1-Diabetes."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich vermute eine diabetische Ketoazidose bei Erstmanifestation eines Diabetes mellitus Typ 1. Differenzialdiagnostisch denke ich an ein hyperosmolares hyperglykämisches Syndrom, eine Alkoholketoazidose und eine akute Gastroenteritis.",
         "Ich denke an einen Magen-Darm-Infekt.",
@@ -545,13 +518,12 @@
         "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
         "Zu sicher („sicher“), und ein Typ-2-Diabetes mit HHS ist bei einem schlanken 19-Jährigen nicht die wahrscheinlichste Diagnose."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde sofort 20 IE Insulin als Bolus spritzen und zusätzlich 40 mmol Kalium als Bolus intravenös geben, damit der Zucker schnell sinkt.",
         "Ich würde Blutzucker, Blutgasanalyse, Elektrolyte mit Kalium, Ketonkörper und ein EKG veranlassen. Zuerst erfolgt eine Volumentherapie, z. B. 1000 ml balancierte Vollelektrolytlösung in der ersten Stunde. Bei Kalium ≥ 3,3 mmol/l beginne ich Insulin 0,1 IE/kg/h über Perfusor (bei 64 kg etwa 6 IE/h) und substituiere Kalium nach Laborwert. Aufnahme auf die Intensivstation.",
@@ -565,13 +537,12 @@
         "Fachlich falsch: Orale Antidiabetika und Trinken reichen bei Ketoazidose nicht.",
         "Gefährlich: Insulin erst nach Kaliumkontrolle, und Bikarbonat ist nur bei sehr schwerer Azidose (pH unter 6,9) eine Option."
       ],
-      "reply": "Oberarzt: „Gut. Welche Laborwerte erwarten Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Welche Laborwerte erwarten Sie?“",
       "options": [
         "Ich erwarte einen Blutzucker unter 60 mg/dl, einen pH-Wert über 7,45 und negative Ketonkörper.",
         "Ich erwarte gar nichts.",
@@ -585,13 +556,12 @@
         "Richtig: typische Laborkonstellation einer diabetischen Ketoazidose.",
         "Das ist das Bild des hyperosmolaren hyperglykämischen Syndroms, nicht der Ketoazidose."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Polyurie“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Polyurie“ und sieht Sie an.",
       "options": [
         "gesteigerter Durst",
         "vermehrtes Wasserlassen",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Polydipsie“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Polydipsie“.",
       "options": [
         "gesteigerter Appetit",
         "Appetitlosigkeit",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Exsikkose“?",
+      "situation": "Er tippt auf „Exsikkose“.",
       "options": [
         "Austrocknung des Körpers",
         "Wassereinlagerung im Gewebe",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Kussmaul-Atmung“?",
+      "situation": "Dann auf „Kussmaul-Atmung“.",
       "options": [
         "Atemstillstand im Schlaf",
         "wechselnd tiefe Atmung mit Atempausen",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Azidose“?",
+      "situation": "Zuletzt zeigt er auf „Azidose“.",
       "options": [
         "Anstieg des pH-Werts im Blut",
         "Übersäuerung des Blutes",

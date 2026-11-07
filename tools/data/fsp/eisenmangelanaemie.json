@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Frau Hoffmann sitzt blass auf der Liege und wirkt erschöpft.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer in der Notaufnahme. Eine Frau sitzt blass auf der Liege, wirkt erschöpft und sieht Sie an.",
       "options": [
         "Guten Morgen, Frau Hoffmann. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte und Ihre Überweisung dabei? Die brauchen wir zuerst für die Anmeldung.",
         "Hallo, was fehlt Ihnen denn?",
@@ -25,13 +24,12 @@
         "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität der Patientin.",
         "Die körperliche Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen."
       ],
-      "reply": "Patientin: „Ja, Hoffmann. Guten Morgen, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patientin: „Ja, Hoffmann. Guten Morgen, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
         "Wie hoch ist Ihr Body-Mass-Index?",
@@ -45,13 +43,12 @@
         "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
         "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
       ],
-      "reply": "Patientin: „Ich bin 38, 1,68 Meter groß und wiege 63 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patientin: „Ich bin 38, 1,68 Meter groß und wiege 63 Kilo.“ Sie sieht Sie abwartend an. Den Grund ihres Besuchs hat sie noch nicht genannt.",
       "options": [
         "Haben Sie Müdigkeit?",
         "Welche Symptomatik führt Sie zu uns?",
@@ -65,13 +62,12 @@
         "Vorwurfsvoll und mit Annahme, dass die Beschwerden schon lange bestehen. Das stört das Vertrauen gleich zu Beginn.",
         "Richtig: eine offene Frage lässt die Patientin selbst erzählen."
       ],
-      "reply": "Patientin: „Ich bin seit Monaten so müde und schlapp. Wenn ich Treppen steige, bekomme ich kaum noch Luft. Meine Kollegin sagt, ich sei ganz blass.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten die Luftnot genauer erfragen. Was sagen Sie?",
+      "situation": "Patientin: „Ich bin seit Monaten so müde und schlapp. Wenn ich Treppen steige, bekomme ich kaum noch Luft. Meine Kollegin sagt, ich sei ganz blass.“ Beim Sprechen atmet sie hörbar schneller.",
       "options": [
         "Haben Sie eine Dyspnoe unter Belastung oder auch in Ruhe, und liegt eine Orthopnoe oder eine nächtliche Atemnot vor?",
         "Wann genau bekommen Sie schlecht Luft, zum Beispiel beim Gehen, beim Treppensteigen, in Ruhe oder nachts?",
@@ -82,16 +78,15 @@
       "feedback": [
         "Fachsprache („Dyspnoe“, „Orthopnoe“); die Patientin versteht die Frage nicht.",
         "Richtig: laienverständlich, mit Beispielen für Auslöser, ohne die Antwort vorzugeben.",
-        "Geschlossene Frage; Ruhe und Nacht bleiben offen.",
+        "Geschlossene Frage, und die Belastung hat die Patientin schon genannt. Ruhe und Nacht bleiben offen.",
         "Suggestivfrage und vorschnelle Annahme. Die Patientin könnte Ihnen nur zustimmen."
       ],
-      "reply": "Patientin: „Vor allem beim Treppensteigen und wenn ich schnell gehe. In Ruhe und nachts ist alles gut. Husten habe ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patientin: „Vor allem beim Treppensteigen und wenn ich schnell gehe. In Ruhe und nachts ist alles gut. Husten habe ich nicht.“ Sie nickt nachdenklich.",
       "options": [
         "Seit wann sind Sie so müde und schlapp?",
         "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch progredient?",
@@ -105,13 +100,12 @@
         "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage.",
         "Geschlossene Frage; sie erfasst den Verlauf nicht."
       ],
-      "reply": "Patientin: „Vor etwa drei Monaten hat es langsam angefangen, und es wird immer schlimmer.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach der Belastbarkeit. Welche Formulierung passt?",
+      "situation": "Patientin: „Vor etwa drei Monaten hat es langsam angefangen, und es wird immer schlimmer.“ Wie viel sie im Alltag noch schaffe, könne sie schlecht beschreiben, sagt sie.",
       "options": [
         "Wie weit können Sie noch gehen oder wie viele Stockwerke steigen, bis Sie stehen bleiben müssen? Und wie war das früher?",
         "Welcher NYHA-Klasse entsprechen Sie?",
@@ -125,13 +119,12 @@
         "Unübliche Skala und Prozentangabe, die niemand schätzen kann. Fragen Sie nach konkreten Alltagsleistungen.",
         "Zu ungenau; Sie bekommen keine verwertbare Angabe zur Belastbarkeit."
       ],
-      "reply": "Patientin: „Nach zwei Stockwerken muss ich stehen bleiben und durchatmen. Früher bin ich zweimal pro Woche gejoggt, das geht gar nicht mehr.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patientin: „Nach zwei Stockwerken muss ich stehen bleiben und durchatmen. Früher bin ich zweimal pro Woche gejoggt, das geht gar nicht mehr.“ Sie fasst sich kurz an die Stirn.",
       "options": [
         "Haben Sie Schwindel, Palpitationen, Synkopen, Cephalgie oder Tinnitus, und ist Ihnen eine Alopezie oder eine Nagelbrüchigkeit aufgefallen?",
         "Haben Sie sonst noch was?",
@@ -145,13 +138,12 @@
         "Suggestiv: Sie unterstellen die Symptome.",
         "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive Warnzeichen wie Brustschmerz und Ohnmacht."
       ],
-      "reply": "Patientin: „Schwindelig ist mir oft, und mein Herz klopft beim Treppensteigen schnell. Die Haare fallen mir aus, und die Nägel brechen leicht. Ohnmächtig war ich nie, Brustschmerzen habe ich auch keine.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patientin: „Schwindelig ist mir oft, und mein Herz klopft beim Treppensteigen schnell. Die Haare fallen mir aus, und die Nägel brechen leicht. Ohnmächtig war ich nie, Brustschmerzen habe ich auch keine.“ Zu Fieber, Appetit und Verdauung hat sie noch nichts gesagt.",
       "options": [
         "Wie ist die Vegetativa, und ist die Menstruation regelrecht?",
         "Haben Sie Fieber, Nachtschweiß oder Gewicht verloren? Wie sind Appetit, Stuhlgang und Wasserlassen, und haben Sie Blut im Stuhl bemerkt? Wie verläuft Ihre Regelblutung?",
@@ -165,13 +157,12 @@
         "Inhaltlich vollständig, aber voller Fachbegriffe (Pyrexie, Meläna, Hypermenorrhö).",
         "Zu allgemein; die Patientin sagt einfach „ja“."
       ],
-      "reply": "Patientin: „Fieber und Nachtschweiß habe ich nicht, mein Gewicht ist gleich geblieben. Appetit, Stuhlgang und Wasserlassen sind normal, Blut habe ich nie gesehen. Meine Periode ist schon lange sehr stark: Sie dauert sieben Tage, und an den ersten drei Tagen brauche ich alle zwei Stunden eine neue Binde, manchmal mit Blutklumpen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patientin: „Fieber und Nachtschweiß habe ich nicht, mein Gewicht ist gleich geblieben. Appetit, Stuhlgang und Wasserlassen sind normal, Blut habe ich nie gesehen. Meine Periode ist schon lange sehr stark: Sie dauert sieben Tage, und an den ersten drei Tagen brauche ich alle zwei Stunden eine neue Binde, manchmal mit Blutklumpen.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles; über ihre Vorgeschichte noch nichts.",
       "options": [
         "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, einen Diabetes mellitus oder eine gastrointestinale Erkrankung, und gab es Voroperationen oder stationäre Aufenthalte?",
         "Sind Sie gesund?",
@@ -185,33 +176,31 @@
         "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
         "Die Patientin kennt ihre Akte nicht. Fragen Sie direkt."
       ],
-      "reply": "Patientin: „Ich habe Hashimoto, also eine Schilddrüsenentzündung. Die Schilddrüse arbeitet zu langsam. Vor fünf Jahren hatte ich einen Kaiserschnitt. Sonst war ich nie krank.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patientin: „Ich habe Hashimoto, also eine Schilddrüsenentzündung. Die Schilddrüse arbeitet zu langsam. Vor fünf Jahren hatte ich einen Kaiserschnitt. Sonst war ich nie krank.“ Sie kramt in ihrer Handtasche nach einer Tablettenschachtel.",
       "options": [
         "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept, zum Beispiel Schmerzmittel oder Nahrungsergänzung?",
-        "Nehmen Sie regelmäßig Tabletten, oder haben Sie sich vielleicht etwas in der Apotheke geholt, das Sie mir gerne einmal zeigen können?",
+        "Nehmen Sie regelmäßig Tabletten?",
         "Welche Pharmaka applizieren Sie?",
         "Sie nehmen doch sicher Eisentabletten?"
       ],
       "answer": 0,
       "feedback": [
         "Richtig: Name, Dosierung und auch frei verkäufliche Mittel.",
-        "Zu ungenau: Dosis und Bedarfsmedikation fehlen, und die Frage ist umständlich.",
+        "Geschlossene Frage: Dosierung, Bedarfsmedikation und frei verkäufliche Mittel bleiben offen.",
         "Fachsprache („Pharmaka“, „applizieren“).",
         "Suggestivfrage. Fragen Sie offen."
       ],
-      "reply": "Patientin: „L-Thyroxin 75 Mikrogramm morgens. Wegen der Regelschmerzen nehme ich in der Periode zwei- bis dreimal am Tag Ibuprofen 400. Eisen oder Vitamine nehme ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patientin: „L-Thyroxin 75 Mikrogramm morgens. Wegen der Regelschmerzen nehme ich in der Periode zwei- bis dreimal am Tag Ibuprofen 400. Eisen oder Vitamine nehme ich nicht.“ Die Pflegekraft ruft von der Tür, ob sie für die Blutentnahme Pflaster bereitlegen soll und ob es etwas zu beachten gibt.",
       "options": [
         "Allergie?",
         "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir bei Bedarf vielleicht ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
@@ -225,13 +214,12 @@
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl.",
         "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion."
       ],
-      "reply": "Patientin: „Ich habe Heuschnupfen auf Birkenpollen, dann niese ich und die Augen jucken. Gegen Medikamente oder Lebensmittel habe ich nichts.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patientin: „Ich habe Heuschnupfen auf Birkenpollen, dann niese ich und die Augen jucken. Gegen Medikamente oder Lebensmittel habe ich nichts.“ Auf dem Aufnahmebogen sind die Felder zu Rauchen und Alkohol noch leer.",
       "options": [
         "Sind Sie Raucherin oder Alkoholikerin, oder nehmen Sie vielleicht sogar irgendwelche Drogen, wie so viele in Ihrem Alter?",
         "Rauchen Sie, oder haben Sie früher geraucht? Wie viel? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
@@ -245,13 +233,12 @@
         "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
         "Wertend und ungenau."
       ],
-      "reply": "Patientin: „Von meinem 19. bis zum 35. Lebensjahr habe ich etwa 10 Zigaretten am Tag geraucht, seit drei Jahren nicht mehr. Alkohol nur am Wochenende ein Glas Wein. Drogen nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patientin: „Von meinem 19. bis zum 35. Lebensjahr habe ich etwa 10 Zigaretten am Tag geraucht, seit drei Jahren nicht mehr. Alkohol nur am Wochenende ein Glas Wein. Drogen nie.“ Dann fügt sie hinzu: „Bei uns in der Familie gibt es einiges an Krankheiten.“",
       "options": [
         "Wie ist die Familienanamnese?",
         "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
@@ -261,17 +248,16 @@
       "answer": 2,
       "feedback": [
         "„Familienanamnese“ ist ein Fachwort.",
-        "Zu eng: Geschwister fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Zu eng und unsensibel: Sie fragen nur nach den Eltern und nach Todesfällen; Geschwister und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
         "Richtig: offen, mit passenden Beispielen.",
         "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
       ],
-      "reply": "Patientin: „Meine Mutter hatte Myome in der Gebärmutter und wurde mit 45 operiert, die Gebärmutter wurde entfernt. Mein Vater hat Bluthochdruck. Meine Schwester ist gesund.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patientin: „Meine Mutter hatte Myome in der Gebärmutter und wurde mit 45 operiert, die Gebärmutter wurde entfernt. Mein Vater hat Bluthochdruck. Meine Schwester ist gesund.“ Sie schaut auf die Uhr: „Eigentlich müsste ich längst wieder zu Hause sein.“",
       "options": [
         "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen? Wie ernähren Sie sich?",
         "Was ist Ihr sozialer Status?",
@@ -285,13 +271,12 @@
         "Zu eng und teilweise Verwaltung: der Beruf und die Ernährung fehlen, die Adresse gehört nicht in die Sozialanamnese.",
         "Unangemessen."
       ],
-      "reply": "Patientin: „Ich bin Grundschullehrerin und wohne mit meinem Mann und unseren zwei Kindern, 8 und 5 Jahre alt. Seit fünf Jahren esse ich kein Fleisch mehr, nur selten Fisch.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patientin: „Ich bin Grundschullehrerin und wohne mit meinem Mann und unseren zwei Kindern, 8 und 5 Jahre alt. Seit fünf Jahren esse ich kein Fleisch mehr, nur selten Fisch.“ Sie sieht Sie besorgt an: „Und, Herr Doktor, was habe ich denn?“",
       "options": [
         "Sie haben eine Eisenmangelanämie bei Hypermenorrhö, also eine mikrozytäre, hypochrome Anämie.",
         "Ich vermute, dass Ihnen Eisen fehlt, wahrscheinlich wegen der starken Regelblutungen. Eisen braucht der Körper für den roten Blutfarbstoff, der den Sauerstoff im Körper verteilt. Deshalb sind Sie müde, blass und kurzatmig.",
@@ -305,13 +290,12 @@
         "Verharmlosend und medizinisch falsch; die Beschwerden haben eine körperliche Ursache.",
         "Falsch und beängstigend."
       ],
-      "reply": "Patientin: „Ach so, Eisenmangel. Und was passiert jetzt mit mir?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Die Patientin fragt: „Brauche ich jetzt eine Bluttransfusion?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patientin: „Ach so, Eisenmangel. Und was passiert jetzt mit mir? Brauche ich eine Bluttransfusion?“",
       "options": [
         "Ja, wir geben Ihnen heute noch zwei Blutkonserven, dann sind Sie wieder fit.",
         "Nein, Sie müssen nur mehr Spinat essen, dann ist das in ein paar Tagen vorbei, und wir müssen nichts weiter untersuchen.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Frau Hoffmann ist 38 und ist müde und blass.",
         "Die Patientin Frau Hoffmann stellt sich heute vor wegen Müdigkeit und Luftnot seit drei Monaten, 38-jährig.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Die Beschwerden bestehen seit ca. drei Monaten mit schleichendem Beginn und zunehmender Progredienz. Es besteht eine Belastungsdyspnoe nach zwei Stockwerken, in Ruhe keine Dyspnoe. Zudem Schwindel, Palpitationen bei Belastung, Haarausfall und Nagelbrüchigkeit. Thoraxschmerzen und Synkopen wurden verneint.",
         "Die Beschwerden bestehen seit ca. einem Jahr mit akutem Beginn und regredienter Tendenz. Es besteht eine Ruhedyspnoe, zudem Schwindel, Palpitationen, Haarausfall und Nagelbrüchigkeit. Thoraxschmerzen und Synkopen wurden bejaht.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese. Sie tippen:",
       "options": [
         "Die Patientin berichtete über Fieber bis 38 °C, Nachtschweiß und einen Gewichtsverlust von 5 kg. Ein Meläna wurde verneint. Die Menstruation dauere drei Tage bei normaler Stärke.",
         "Sie hat immer total viel Periode.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "Vorerkrankungen: Schilddrüse, Kaiserschnitt. Medikamente: Thyroxin, Ibuprofen.",
         "Bekannt sind eine Hashimoto-Thyreoiditis mit Hypothyreose. Z. n. Sectio caesarea vor fünf Jahren. Medikation: L-Thyroxin 75 µg 1-0-0, Ibuprofen 400 mg bei Bedarf bis zu 2-3-mal täglich während der Menstruation. Keine Eisensubstitution.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: keine. Noxen: Nikotinabusus.",
         "Birkenpollenallergie (Rhinokonjunktivitis). Aktuell Nikotinkonsum ca. 16 py, gelegentlicher Alkoholkonsum. Familienanamnese: Mutter Uterusmyome, Vater arterielle Hypertonie. Die Patientin ist Grundschullehrerin, lebt mit ihrem Mann und zwei Kindern.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Anamnestisch besteht der Verdacht auf eine Eisenmangelanämie, am ehesten bei menstruellem Blutverlust durch Hypermenorrhö. Differenzialdiagnostisch kommen eine Malabsorption (z. B. Zöliakie bei Hashimoto-Thyreoiditis), ein okkulter gastrointestinaler Blutverlust und ein Vitamin-B12-Mangel in Betracht.",
         "Diagnose: Blutarmut.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Wir machen Blut und schauen, ob ein Eisenmangel besteht.",
         "Zur weiteren Abklärung empfehlen wir eine Koloskopie sowie die sofortige Transfusion von zwei Erythrozytenkonzentraten.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Die Patientin hat sich schlapp, sie heißt Hoffmann.",
         "Also, die Frau ist ganz blass und sagt, sie sei müde ...",
@@ -485,13 +461,12 @@
         "Richtig: Name, Alter, Leitsymptome, zeitlicher Verlauf in einem Satz.",
         "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“",
       "options": [
         "Sie ist müde.",
         "Die Dyspnoe tritt nach zwei Stockwerken auf, in Ruhe besteht keine Dyspnoe. Begleitend bestehen Schwindel, Palpitationen bei Belastung, Haarausfall und Nagelbrüchigkeit. Fieber, Nachtschweiß, Gewichtsverlust und Blut im Stuhl wurden verneint. Seit Jahren besteht eine Hypermenorrhö.",
@@ -505,13 +480,12 @@
         "Inhaltlich falsch: In Ruhe besteht keine Dyspnoe, Thoraxschmerzen und Synkopen wurden verneint, und die Hypermenorrhö besteht seit Jahren.",
         "Keine Information."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Sie ist gesund.",
         "Bekannt sind eine Hashimoto-Thyreoiditis mit Hyperthyreose und ein Z. n. Appendektomie. Keine Dauermedikation, Allergie gegen Penicillin. Aktuell Raucherin mit ca. 16 py, gelegentlich Alkoholkonsum, Mutter mit Gallensteinen.",
@@ -525,13 +499,12 @@
         "Unvollständig: Diagnosen, Dosierung und Ernährung fehlen.",
         "Richtig: relevante Vorgeschichte, Medikation, Ernährung und familiäre Belastung."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich vermute eine Eisenmangelanämie, am ehesten durch menstruellen Blutverlust bei Hypermenorrhö. Differenzialdiagnostisch denke ich an eine Malabsorption, zum Beispiel eine Zöliakie bei Hashimoto-Thyreoiditis, an einen okkulten gastrointestinalen Blutverlust und an einen Vitamin-B12-Mangel.",
         "Ich denke an eine Blutarmut.",
@@ -545,13 +518,12 @@
         "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
         "Zu sicher („sicher“), und eine Leukämie ist hier nicht die wahrscheinlichste Diagnose: kein Fieber, kein Gewichtsverlust, Hypermenorrhö."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde sie ohne weitere Diagnostik nach Hause schicken.",
         "Ich würde zwei Erythrozytenkonzentrate geben, weil sie blass ist.",
@@ -565,13 +537,12 @@
         "Richtig: Labordiagnostik, Therapie nach Leitlinie, Verlaufskontrolle und Ursachenklärung.",
         "Nicht leitliniengerecht: Erst Labor, dann gezielte Diagnostik, und Eisen wird in der Regel zunächst oral gegeben."
       ],
-      "reply": "Oberarzt: „Gut. Was erwarten Sie im Blutbild?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Was erwarten Sie im Blutbild?“",
       "options": [
         "Ich erwarte ein makrozytäres, hyperchromes Blutbild mit erhöhtem MCV und erhöhtem MCH, dazu ein erhöhtes Ferritin, eine erhöhte Transferrinsättigung und ein erniedrigtes Transferrin; das Hämoglobin ist normal.",
         "Ich erwarte ein erniedrigtes Hämoglobin mit mikrozytären, hypochromen Erythrozyten (MCV und MCH erniedrigt), ein erniedrigtes Ferritin und eine erniedrigte Transferrinsättigung; das Transferrin ist erhöht.",
@@ -585,13 +556,12 @@
         "In der Prüfung erwartet man eine begründete Antwort.",
         "Nicht typisch für diesen Verdacht."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Anämie“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Anämie“ und sieht Sie fragend an.",
       "options": [
         "zu viele rote Blutkörperchen",
         "Blutvergiftung",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Dyspnoe“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Dyspnoe“.",
       "options": [
         "Atemnot",
         "Husten",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Hypermenorrhö“?",
+      "situation": "Er tippt auf „Hypermenorrhö“.",
       "options": [
         "ausbleibende Regelblutung",
         "zu starke Regelblutung",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Ferritin“?",
+      "situation": "Dann auf „Ferritin“.",
       "options": [
         "Eiweiß, das Eisen im Blut transportiert",
         "roter Blutfarbstoff",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Tachykardie“?",
+      "situation": "Zuletzt zeigt er auf „Tachykardie“.",
       "options": [
         "zu langsamer Herzschlag",
         "zu schneller Herzschlag",

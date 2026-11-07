@@ -1,6 +1,6 @@
 package dev.yuji.quiz.content
 
-// REQ FS-1 FS-2 FS-3 FS-4 FS-5
+// REQ FS-1 FS-2 FS-3 FS-4 FS-5 FS-6
 
 import dev.yuji.quiz.domain.CardPhase
 import dev.yuji.quiz.domain.GameMode
@@ -41,6 +41,15 @@ class FspCaseTest {
             assertEquals("${c.id} step $i", 4, s.options.toSet().size)
             assertTrue("${c.id} step $i", s.feedback[s.answer].startsWith("Richtig"))
             assertEquals("${c.id} step $i", 1, s.feedback.count { it.startsWith("Richtig") })
+        }
+    }
+
+    @Test fun aCaseReadsLikeAScriptAndNeverAsksThePlayer() = cases.forEach { c ->
+        c.steps.forEachIndexed { i, s ->
+            val narration = s.situation.replace(Regex("„[^“]*“"), "")
+            assertFalse("${c.id} step ${i + 1} asks the player: ${s.situation}", '?' in narration)
+            val closesPart = i == c.steps.lastIndex || c.steps[i + 1].part != s.part
+            if (!closesPart) assertNull("${c.id} step ${i + 1}: the reply is the next scene", s.reply)
         }
     }
 
@@ -130,10 +139,11 @@ class FspCaseTest {
 
     @Test fun aMalformedStepIsRefused() {
         val ok = listOf("a", "b", "c", "d")
-        assertThrows(IllegalArgumentException::class.java) { FspStep(1, "S", null, "Q?", ok.take(3), 0, ok, null) }
-        assertThrows(IllegalArgumentException::class.java) { FspStep(1, "S", null, "Q?", ok, 0, ok.take(3), null) }
-        assertThrows(IllegalArgumentException::class.java) { FspStep(1, "S", null, "Q?", ok, 4, ok, null) }
-        assertThrows(IllegalArgumentException::class.java) { FspStep(1, "S", null, "Q?", ok, -1, ok, null) }
+        assertThrows(IllegalArgumentException::class.java) { FspStep(1, "S", "Szene", ok.take(3), 0, ok, null) }
+        assertThrows(IllegalArgumentException::class.java) { FspStep(1, "S", "Szene", ok, 0, ok.take(3), null) }
+        assertThrows(IllegalArgumentException::class.java) { FspStep(1, "S", "Szene", ok, 4, ok, null) }
+        assertThrows(IllegalArgumentException::class.java) { FspStep(1, "S", "Szene", ok, -1, ok, null) }
+        assertThrows(IllegalArgumentException::class.java) { FspStep(1, "S", " ", ok, 0, ok, null) }
     }
 
     @Test fun aFinishedRunIgnoresEveryMove() {
@@ -152,10 +162,10 @@ class FspCaseTest {
 
     @Test fun unknownFieldsInTheFileAreIgnored() {
         val text = """[{"id":"x","area":"A","title":"T","diagnosis":"D","source":"common_FSP","bwReports":0,"patient":"P","extra":1,
-            "steps":[{"part":1,"section":"S","question":"Q?","options":["a","b","c","d"],"answer":2,"feedback":["1","2","Richtig","4"],"note":"n"}]}]"""
+            "steps":[{"part":1,"section":"S","situation":"Szene","question":"Q?","options":["a","b","c","d"],"answer":2,"feedback":["1","2","Richtig","4"],"note":"n"}]}]"""
         val parsed = parseFspCases(text).single()
         assertEquals("x", parsed.id)
-        assertNull(parsed.steps.single().situation)
+        assertEquals("Szene", parsed.steps.single().situation)
         assertNull(parsed.steps.single().reply)
     }
 }

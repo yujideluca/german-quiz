@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Brandt sitzt auf der Liege, seine Unterschenkel sind sichtbar geschwollen.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Ein älterer Mann sitzt müde auf der Liege, seine Unterschenkel sind sichtbar geschwollen. Er sieht Sie an und wartet.",
       "options": [
         "Morgen, Herr Brandt, setzen Sie sich, was fehlt Ihnen denn?",
         "Guten Morgen. Bitte legen Sie sich hin, ich möchte sofort Ihre Beine und Ihren Bauch untersuchen.",
@@ -25,13 +24,12 @@
         "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
         "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor."
       ],
-      "reply": "Patient: „Ja, Brandt. Guten Morgen, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Brandt. Guten Morgen, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie ist Ihr Body-Mass-Index, und wie hoch ist Ihre Körperoberfläche in Quadratmetern?",
         "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
@@ -45,13 +43,12 @@
         "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
         "Adresse und Hausarzt sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
       ],
-      "reply": "Patient: „Ich bin 72, 1,78 Meter groß und wiege jetzt 91 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 72, 1,78 Meter groß und wiege jetzt 91 Kilo.“ Im Aufnahmebogen ist das Feld für den Vorstellungsgrund noch leer. Der Mann sieht Sie erwartungsvoll an.",
       "options": [
         "Was führt Sie heute zu uns? Erzählen Sie bitte.",
         "Haben Sie Probleme mit den Nieren?",
@@ -65,13 +62,12 @@
         "„Symptomatik“ und „liegt vor“ sind Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
         "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
       ],
-      "reply": "Patient: „Ich muss kaum noch Wasser lassen, seit zwei Tagen. Und meine Beine sind so dick geworden. Mir ist auch dauernd übel.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten die veränderte Urinmenge genauer erfragen. Was sagen Sie?",
+      "situation": "Patient: „Ich muss kaum noch Wasser lassen, seit zwei Tagen. Und meine Beine sind so dick geworden. Mir ist auch dauernd übel.“ Er zeigt auf seine Beine. Wie viel Urin noch kommt, ist unklar.",
       "options": [
         "Liegt bei Ihnen eher eine Oligurie oder sogar eine komplette Anurie vor, und seit wann besteht diese Störung der Diurese genau, oder handelt es sich um eine Polyurie?",
         "Sie haben bestimmt gar keinen Urin mehr, stimmt das?",
@@ -85,13 +81,12 @@
         "Der Patient misst seine Urinmenge nicht, und „Diurese“ ist Fachsprache.",
         "Richtig: laienverständlich, konkret nach Häufigkeit, Menge und Farbe, ohne die Antwort vorzugeben."
       ],
-      "reply": "Patient: „Gestern war ich nur zweimal, und es kam nur ein kleiner Schluck, ganz dunkel. Vor drei Tagen war es noch normal.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patient: „Gestern war ich nur zweimal, und es kam nur ein kleiner Schluck, ganz dunkel. Vor drei Tagen war es noch normal.“ Er schüttelt den Kopf: „Ich verstehe gar nicht, wie das so plötzlich kommen kann.“",
       "options": [
         "Seit wann haben Sie die Beschwerden?",
         "Wann genau hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben? Gab es davor etwas Besonderes?",
@@ -105,13 +100,12 @@
         "Fachsprache: „Erstmanifestation“, „subakut“ und „progredient“ versteht der Patient nicht.",
         "Suggestivfrage und vorschnelle Diagnose."
       ],
-      "reply": "Patient: „Vor vier Tagen hatte ich Durchfall und musste mich übergeben. Vor zwei Tagen wurde der Urin weniger, und seit gestern sind die Beine dick. Es wird eher schlimmer.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen, wie stark die Beschwerden den Patienten einschränken. Welche Formulierung passt?",
+      "situation": "Patient: „Vor vier Tagen hatte ich Durchfall und musste mich übergeben. Vor zwei Tagen wurde der Urin weniger, und seit gestern sind die Beine dick. Es wird eher schlimmer.“ Beim Sprechen atmet er hörbar schwer und stützt sich mit den Händen auf der Liege ab.",
       "options": [
         "Welcher NYHA-Klasse würden Sie Ihre Belastbarkeit zuordnen, und wie hoch ist Ihre Gewichtszunahme in Prozent des Ausgangsgewichts seit Beginn der Dekompensation?",
         "Können Sie noch normal leben?",
@@ -125,13 +119,12 @@
         "Richtig: Belastbarkeit und Gewichtsverlauf (Flüssigkeitseinlagerung) laienverständlich erfragt.",
         "Suggestivfrage. Fragen Sie offen nach der Belastbarkeit."
       ],
-      "reply": "Patient: „Nach einem Stockwerk muss ich stehen bleiben, das war sonst nicht so. Mein Gewicht ist ungefähr gleich geblieben. Im Liegen habe ich keine Luftnot, ich schlafe wie immer mit einem Kissen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Nach einem Stockwerk muss ich stehen bleiben, das war sonst nicht so. Mein Gewicht ist ungefähr gleich geblieben. Im Liegen habe ich keine Luftnot, ich schlafe wie immer mit einem Kissen.“ Er schluckt und hält sich kurz die Hand vor den Mund.",
       "options": [
         "Ist Ihnen übel, mussten Sie sich übergeben, oder ist Ihnen schwindelig? Haben Sie Juckreiz, Schmerzen beim Wasserlassen oder Blut im Urin bemerkt?",
         "Hatten Sie Nausea, Emesis, Vertigo, Pruritus, Dysurie oder eine Makrohämaturie?",
@@ -145,13 +138,12 @@
         "Zu umgangssprachlich und unkonkret.",
         "Suggestiv: Sie unterstellen das Symptom."
       ],
-      "reply": "Patient: „Mir ist übel, heute früh habe ich einmal erbrochen. Beim Aufstehen wird mir schwindelig. Juckreiz, Schmerzen beim Wasserlassen und Blut habe ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Mir ist übel, heute früh habe ich einmal erbrochen. Beim Aufstehen wird mir schwindelig. Juckreiz, Schmerzen beim Wasserlassen und Blut habe ich nicht.“ Er fährt sich über die trockenen Lippen.",
       "options": [
         "Wie ist die Vegetativa?",
         "Haben Sie Fieber, Nachtschweiß und Gewichtsverlust, außerdem Diarrhö, Obstipation, Polydipsie, Nykturie, Schlafstörungen und Leistungsknick?",
@@ -165,13 +157,12 @@
         "Richtig: Fieber, Appetit, Stuhlgang und vor allem die Trinkmenge in Laiensprache.",
         "Vorwurfsvoll und suggestiv. Fragen Sie neutral nach der Trinkmenge."
       ],
-      "reply": "Patient: „Gestern hatte ich 37,8 Grad. Appetit habe ich keinen. Der Durchfall war vier Tage lang, fünf- bis sechsmal am Tag wässrig, jetzt ist er besser. Ich habe kaum getrunken, es kam ja gleich wieder raus. Nachtschweiß habe ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patient: „Gestern hatte ich 37,8 Grad. Appetit habe ich keinen. Der Durchfall war vier Tage lang, fünf- bis sechsmal am Tag wässrig, jetzt ist er besser. Ich habe kaum getrunken, es kam ja gleich wieder raus. Nachtschweiß habe ich nicht.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles; über seine Vorgeschichte noch nichts.",
       "options": [
         "Haben Sie eine arterielle Hypertonie, einen Diabetes mellitus oder eine Niereninsuffizienz, und gab es Voroperationen, eine Nephrektomie oder eine Urolithiasis?",
         "Sind Sie gesund?",
@@ -185,13 +176,12 @@
         "Der Patient kennt seine Akte nicht. Fragen Sie direkt.",
         "Richtig: mit Beispielen, laienverständlich, mit Blick auf Niere und Prostata, und die Operationen sind mitgefragt."
       ],
-      "reply": "Patient: „Bluthochdruck und Zucker, Typ 2, seit zehn Jahren. Die Prostata ist vergrößert. Am Knie habe ich Arthrose. Nierenprobleme hatte ich nie. Operiert wurde ich an einem Leistenbruch, vor zehn Jahren.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Bluthochdruck und Zucker, Typ 2, seit zehn Jahren. Die Prostata ist vergrößert. Am Knie habe ich Arthrose. Nierenprobleme hatte ich nie. Operiert wurde ich an einem Leistenbruch, vor zehn Jahren.“ Er zieht einen zerknitterten Zettel mit Tablettennamen aus der Jackentasche.",
       "options": [
         "Nehmen Sie Tabletten?",
         "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Schmerzmittel oder Mittel ohne Rezept?",
@@ -205,13 +195,12 @@
         "Suggestivfrage. Fragen Sie offen.",
         "Fachsprache („Pharmaka“, „applizieren“, „Galenik“)."
       ],
-      "reply": "Patient: „Ramipril 5 mg und Hydrochlorothiazid 25 mg morgens, Metformin 1000 mg morgens und abends, Tamsulosin 0,4 mg abends für die Prostata. Und gegen die Knieschmerzen seit einer Woche dreimal täglich Ibuprofen 400.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Ramipril 5 mg und Hydrochlorothiazid 25 mg morgens, Metformin 1000 mg morgens und abends, Tamsulosin 0,4 mg abends für die Prostata. Und gegen die Knieschmerzen seit einer Woche dreimal täglich Ibuprofen 400.“ Die Pflegekraft sagt von der Tür, für die Infusion und die Dokumentation brauche sie noch die Angaben zu Allergien.",
       "options": [
         "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Kontrastmittel oder Pflaster? Wie äußert sich das?",
         "Allergie?",
@@ -225,13 +214,12 @@
         "Zu eng: Allergien gegen andere Medikamente, Kontrastmittel oder Pflaster übersehen Sie.",
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
       ],
-      "reply": "Patient: „Gegen Penicillin, da bekomme ich Ausschlag am ganzen Körper.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Penicillin, da bekomme ich Ausschlag am ganzen Körper.“ Seine Jacke riecht nach Zigarettenrauch.",
       "options": [
         "Sind Sie Raucher oder schon Alkoholiker?",
         "Wie hoch ist Ihr Nikotin- und Alkoholabusus, am besten in Packungsjahren und Gramm pro Tag?",
@@ -245,13 +233,12 @@
         "Wertend und suggestiv.",
         "Richtig: neutral, konkret, mit Menge."
       ],
-      "reply": "Patient: „Ich rauche seit 40 Jahren eine Schachtel am Tag, 20 Zigaretten. Abends ein Bier. Drogen nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche seit 40 Jahren eine Schachtel am Tag, 20 Zigaretten. Abends ein Bier. Drogen nie.“ Dann sagt er nachdenklich: „Bei uns in der Familie waren einige krank, wissen Sie.“",
       "options": [
         "Wie ist die Familienanamnese?",
         "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
@@ -265,13 +252,12 @@
         "Richtig: offen, mit passenden Beispielen.",
         "Sie kennen die Diagnose noch nicht; die Frage ist suggestiv und eng."
       ],
-      "reply": "Patient: „Mein Vater hatte Zucker und musste später zur Dialyse. Meine Mutter hatte mit 80 einen Schlaganfall.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Mein Vater hatte Zucker und musste später zur Dialyse. Meine Mutter hatte mit 80 einen Schlaganfall.“ Er seufzt: „Meine Frau wartet draußen und macht sich Sorgen.“",
       "options": [
         "Was haben Sie beruflich gemacht, oder sind Sie schon in Rente? Wie wohnen Sie, allein oder mit jemandem zusammen?",
         "Was ist Ihr sozialer Status?",
@@ -285,13 +271,12 @@
         "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
         "Unangemessen und für die Versorgung unwichtig."
       ],
-      "reply": "Patient: „Ich bin Rentner, früher war ich Schlosser. Ich wohne mit meiner Frau im zweiten Stock, ohne Aufzug.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich bin Rentner, früher war ich Schlosser. Ich wohne mit meiner Frau im zweiten Stock, ohne Aufzug.“ Er sieht Sie besorgt an: „Und, Herr Doktor, was habe ich denn jetzt eigentlich?“",
       "options": [
         "Sie haben ein akutes Nierenversagen bei prärenaler Genese.",
         "Ich vermute, dass Ihre Nieren im Moment nicht genug arbeiten, wahrscheinlich weil Ihr Körper durch den Durchfall viel Flüssigkeit verloren hat und einige Medikamente die Nieren zusätzlich belasten. Die Nieren filtern das Blut und scheiden Wasser aus.",
@@ -305,13 +290,12 @@
         "Falsch und beängstigend: ein akutes Nierenversagen ist oft rückgängig.",
         "Verharmlosend und medizinisch falsch."
       ],
-      "reply": "Patient: „Die Nieren? Und was passiert jetzt mit mir? Muss ich an die Dialyse?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Muss ich hierbleiben, und brauche ich eine Dialyse?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Die Nieren?“ Er schluckt. „Und was passiert jetzt mit mir? Muss ich hierbleiben, und brauche ich eine Dialyse?“",
       "options": [
         "Ja, Sie brauchen morgen die Dialyse.",
         "Das entscheidet der Chef, ich weiß es nicht.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Brandt ist 72 und pinkelt kaum noch.",
         "Herr Klaus Brandt, ein 72-jähriger Patient, stellte sich heute in unserer Notaufnahme mit einer seit zwei Tagen bestehenden Oligurie und Beinödemen vor.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Er hatte Durchfall und muss kaum noch Wasser lassen, die Beine sind dick geworden.",
         "Vor vier Tagen kam es zu einer Gastroenteritis mit wässrigen Diarrhöen (5-6/Tag) und Emesis. Seit zwei Tagen besteht eine Polyurie, seit gestern beidseitige Unterschenkelödeme mit einer Gewichtsabnahme von 3 kg sowie eine Ruhedyspnoe mit Orthopnoe.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend berichtete der Patient über Übelkeit, einmaliges Erbrechen und einen orthostatischen Schwindel. Fieber bis 37,8 °C, Inappetenz. Dysurie und Makrohämaturie wurden verneint.",
         "Ihm ist schlecht, er hat gekotzt, und Fieber hatte er auch.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "An Vorerkrankungen sind eine arterielle Hypertonie, ein Diabetes mellitus Typ 2, eine benigne Prostatahyperplasie und eine Gonarthrose bekannt. Z. n. Leistenhernien-Operation vor zehn Jahren. Medikation: Ramipril 5 mg 1-0-0, Hydrochlorothiazid 25 mg 1-0-0, Metformin 1000 mg 1-0-1, Tamsulosin 0,4 mg 0-0-1, Ibuprofen 400 mg 1-1-1 seit einer Woche.",
         "Vorerkrankungen: Bluthochdruck, Zucker, Prostata. Medikamente: Ramipril, Metformin, Ibuprofen.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: keine. Noxen: Nikotinabusus.",
         "Penicillinallergie (Exanthem). Nikotinkonsum ca. 40 py, Alkohol: ein Bier abends, kein Drogenkonsum. Familienanamnese: Vater Diabetes mellitus mit Dialysepflicht, Mutter Schlaganfall mit 80 J. Der Patient ist Rentner (zuvor Schlosser), verheiratet und lebt mit seiner Ehefrau im zweiten Stock ohne Aufzug.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Diagnose: Nierenschwäche.",
         "Es besteht eine gesicherte terminale Niereninsuffizienz mit Dialysepflicht.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (u. a. Kreatinin, Harnstoff, Elektrolyte, Blutgasanalyse, Blutbild, CRP), einen Urinstatus mit Sediment, eine Sonographie von Nieren und Harnblase sowie ein EKG. Therapeutisch erfolgt eine vorsichtige Volumengabe mit balancierter Vollelektrolytlösung unter Bilanzierung; Ramipril, Hydrochlorothiazid, Metformin und Ibuprofen werden pausiert.",
         "Wir machen Blut und Ultraschall und geben Infusionen.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und sieht Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Der Patient hat was mit den Nieren, er heißt Brandt.",
         "Ich möchte Ihnen Herrn Klaus Brandt vorstellen, einen 72-jährigen Patienten, der sich heute mit seit zwei Tagen bestehender Oligurie und beidseitigen Unterschenkelödemen vorgestellt hat.",
@@ -485,13 +461,12 @@
         "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
         "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“",
       "options": [
         "Vor vier Tagen traten Diarrhöen und Erbrechen auf, seit zwei Tagen besteht eine Oligurie, seit gestern bestehen Unterschenkelödeme bei unverändertem Gewicht, dazu Belastungsdyspnoe. Fieber bis 37,8 °C; Dysurie und Hämaturie wurden verneint.",
         "Seit zwei Wochen besteht eine Oligurie mit einseitigem Beinödem und Gewichtsabnahme, dazu Fieber bis 39 °C, und eine Dysurie wurde bejaht. Diarrhöen und Erbrechen traten nicht auf, auch eine Belastungsdyspnoe bestand nicht, und die Trinkmenge war normal.",
@@ -505,13 +480,12 @@
         "Keine Information.",
         "Inhaltlich falsch: Hämaturie und Schmerzen wurden nicht berichtet, und das Fieber war nur leicht."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Er ist gesund.",
         "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 1. Ibuprofen nimmt er nicht. Keine Allergien, und in der Familie gibt es keine Nierenerkrankungen. Der Patient ist verheiratet und wohnt in einer Wohnung im Erdgeschoss.",
@@ -525,13 +499,12 @@
         "Richtig: relevante Vorgeschichte, nephrotoxische Medikation und die Allergie.",
         "Unvollständig: Diagnosen, Hydrochlorothiazid, Ibuprofen und Allergie fehlen."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich denke an die Nieren.",
         "Es handelt sich sicher um eine chronische Niereninsuffizienz im Stadium 5, weil der Vater dialysepflichtig war. Differenzialdiagnostisch denke ich höchstens noch an eine Lungenembolie, an eine Gicht und an eine Gastritis.",
@@ -545,13 +518,12 @@
         "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
         "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde ihn nach Hause schicken und viel trinken lassen, die Medikamente weiter einnehmen und in einer Woche den Hausarzt aufsuchen lassen.",
         "Ich würde Blut abnehmen (Kreatinin, Harnstoff, Kalium, Blutgasanalyse), einen Urinstatus veranlassen, Nieren und Blase sonographieren und ein EKG schreiben. Therapeutisch würde ich vorsichtig Volumen mit balancierter Kristalloidlösung geben, Ramipril, Hydrochlorothiazid, Metformin und Ibuprofen pausieren und bilanzieren. Bei Hyperkaliämie oder Azidose würde ich die Nephrologie hinzuziehen.",
@@ -565,13 +537,12 @@
         "Gefährlich: Bei Volumenmangel ist ein Diuretikum ohne Volumen falsch, und die nephrotoxische Medikation muss pausiert werden.",
         "Kontrastmittel und Metformin sind bei akutem Nierenversagen riskant (Nephrotoxizität, Laktatazidose); die erste Wahl ist die Sonographie."
       ],
-      "reply": "Oberarzt: „Gut. Was erwarten Sie im Labor?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Was erwarten Sie im Labor?“",
       "options": [
         "Ich erwarte erhöhte Retentionsparameter, also Kreatinin und Harnstoff, möglicherweise ein erhöhtes Kalium und eine metabolische Azidose. Bei prärenaler Ursache ist die Natriumausscheidung im Urin niedrig, unter Hydrochlorothiazid aber nur eingeschränkt verwertbar.",
         "Ich erwarte ein erniedrigtes Kreatinin und ein erniedrigtes Kalium sowie eine respiratorische Alkalose; das Natrium im Urin ist bei prärenaler Ursache stark erhöht, außerdem erwarte ich eine ausgeprägte Leukozytose.",
@@ -585,13 +556,12 @@
         "In der Prüfung erwartet man eine begründete Antwort.",
         "Nicht typisch für diesen Verdacht; die Lipase deutet auf die Bauchspeicheldrüse."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Oligurie“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Oligurie“ und sieht Sie fragend an.",
       "options": [
         "Blut im Urin",
         "stark verminderte Urinmenge",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Hyperkaliämie“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Hyperkaliämie“.",
       "options": [
         "zu wenig Kalium im Blut",
         "zu viel Natrium im Blut",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Diurese“?",
+      "situation": "Er tippt auf „Diurese“.",
       "options": [
         "Harnausscheidung",
         "Durchfall",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Ödem“?",
+      "situation": "Dann auf „Ödem“.",
       "options": [
         "Wasser im Bauchraum",
         "Austrocknung",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Exsikkose“?",
+      "situation": "Zuletzt zeigt er auf „Exsikkose“.",
       "options": [
         "Überwässerung des Körpers",
         "Austrocknung durch Flüssigkeitsmangel",

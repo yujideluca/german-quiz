@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Hoffmann liegt auf der Trage, seine Frau steht daneben. Er spricht langsam und sucht nach Wörtern.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten den Schockraum. Herr Hoffmann liegt auf der Trage, seine Frau steht daneben und hält seine Hand. Er sieht Sie an, sein rechter Mundwinkel hängt, und der rechte Arm liegt schlaff auf der Decke.",
       "options": [
         "Guten Morgen, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Hoffmann? Wir haben Zeit, Sie können in Ruhe antworten.",
         "Hallo, wer sind Sie denn, und was ist mit Ihrem Arm los?",
@@ -25,13 +24,12 @@
         "Sie stellen sich nicht vor und beginnen mit Formalitäten. Erst begrüßen, dann die Anamnese.",
         "Verwaltungsfragen gehören nicht an den Anfang, und Sie stellen sich nicht vor."
       ],
-      "reply": "Patient: „Ja... Hoffmann. Guten... Morgen, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja... Hoffmann. Guten... Morgen, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie ist Ihr Body-Mass-Index? Und wie hoch ist Ihr Taillenumfang in Zentimetern?",
         "Sie sind doch bestimmt schon über siebzig, oder?",
@@ -45,13 +43,12 @@
         "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
         "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht."
       ],
-      "reply": "Patient: „Ich bin 71. Einsachtundsiebzig groß... und 88 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 71. Einsachtundsiebzig groß... und 88 Kilo.“ Er sucht mühsam nach Worten und sieht Sie abwartend an. Seine Frau nickt Ihnen zu.",
       "options": [
         "Haben Sie eine Lähmung?",
         "Was führt Sie heute zu uns? Erzählen Sie bitte in Ruhe.",
@@ -65,33 +62,31 @@
         "„Neurologische Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
         "Vorwurfsvoll und unbegründet. Das stört das Vertrauen gleich zu Beginn."
       ],
-      "reply": "Patient: „Mein rechter Arm... der geht nicht mehr. Und das Sprechen... ist ganz schwer.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten wissen, wo genau die Schwäche besteht. Was sagen Sie?",
+      "situation": "Patient: „Mein rechter Arm... der geht nicht mehr. Und das Sprechen... ist ganz schwer.“ Er zeigt unsicher auf seine rechte Seite, kann aber nicht sagen, was genau nicht stimmt.",
       "options": [
         "Die rechte Seite ist gelähmt und das Gesicht hängt auch, nicht wahr?",
         "Ist die Parese vollständig oder partiell, und liegt eine Sensibilitätsstörung in den betroffenen Dermatomen vor? Gab es dabei auch eine Aphasie oder eine Dysarthrie, und wie würden Sie das Ausmaß einordnen?",
         "Wo genau spüren Sie die Schwäche, im Arm, im Bein oder im Gesicht, und auf welcher Seite? Fühlt sich die Haut anders an, zum Beispiel taub oder kribbelig?",
-        "Sind Sie Rechtshänder oder Linkshänder? Hatten Sie früher schon einmal Probleme mit der Hand oder mit dem Arm?"
+        "Das klingt nach einem eingeklemmten Nerv. Haben Sie sich den Arm in letzter Zeit überanstrengt oder gestoßen?"
       ],
       "answer": 2,
       "feedback": [
         "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
         "Fachsprache („Parese“, „Sensibilitätsstörung“, „Dermatome“); der Patient versteht sie nicht.",
         "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben.",
-        "Die Händigkeit ist nützlich, aber die Frage klärt weder Ort noch Ausmaß der jetzigen Schwäche."
+        "Voreilige Deutung: Plötzliche Schwäche mit Sprachproblemen spricht nicht für einen eingeklemmten Nerv. Fragen Sie zuerst nach Ort und Art der Beschwerden."
       ],
-      "reply": "Patient: „Rechts. Arm und Bein. Und der Mund... hängt, sagt meine Frau. Die Hand ist wie taub.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patient: „Rechts. Arm und Bein. Und der Mund... hängt, sagt meine Frau. Die Hand ist wie taub.“ Seine Frau blickt besorgt auf die Uhr an der Wand.",
       "options": [
         "Wann genau hat es angefangen, und wann waren Sie zuletzt ganz beschwerdefrei? Ist es seitdem besser, schlechter oder gleich geblieben?",
         "Hat es langsam angefangen, über mehrere Tage? Das ist bei dieser Art von Beschwerden ja meistens so. Haben Sie in den letzten Tagen schon etwas bemerkt, oder hat Ihre Frau Ihnen etwas gesagt?",
@@ -105,33 +100,31 @@
         "Fachsprache: „Erstmanifestation“, „subakut“ und „fluktuierend“ versteht der Patient nicht.",
         "Geschlossene Frage; der letzte beschwerdefreie Zeitpunkt und der Verlauf fehlen."
       ],
-      "reply": "Patient: „Heute um halb acht, beim Frühstück. Um Viertel nach sieben war noch alles gut, da bin ich aufgestanden. Dann ließ ich die Tasse fallen. Seitdem ist es gleich schlecht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Art und Stärke der Beschwerden. Welche Formulierung passt?",
+      "situation": "Patient: „Heute um halb acht, beim Frühstück. Um Viertel nach sieben war noch alles gut, da bin ich aufgestanden. Dann ließ ich die Tasse fallen. Seitdem ist es gleich schlecht.“ Er versucht, die rechte Hand zur Faust zu ballen, und schafft es kaum.",
       "options": [
-        "Wie stark sind die Schmerzen auf einer Skala von 0 bis 10?",
+        "Wie stark sind die Schmerzen in Arm und Bein auf einer Skala von 0 bis 10?",
         "Ist die Kraft stark vermindert?",
         "Wie würden Sie die Parese beschreiben, eher spastisch oder schlaff, und wie schwer fällt Ihnen das Heben auf einer Skala von 0 bis 5? Und wie stark sind die Kopfschmerzen auf der Skala von 0 bis 10?",
         "Haben Sie Schmerzen, zum Beispiel Kopfschmerzen? Und wie stark ist die Kraft in Arm und Bein: Können Sie beides noch anheben und halten?"
       ],
       "answer": 3,
       "feedback": [
-        "Setzt Schmerzen voraus. Beim Schlaganfall ist die Kraft entscheidend; fragen Sie auch danach.",
+        "Setzt Schmerzen voraus, die der Patient nicht genannt hat. Beim Schlaganfall ist die Kraft entscheidend; fragen Sie auch danach.",
         "Zu ungenau und suggestiv; Sie bekommen keine verwertbare Angabe.",
         "Fachsprache („Parese“, „spastisch“, „schlaff“) und eine Kraftskala, die nur Ärzte nutzen.",
         "Richtig: Schmerzen werden abgefragt, und die Kraft wird in Alltagssprache erfasst."
       ],
-      "reply": "Patient: „Keine Schmerzen. Der Arm hängt nur herunter. Das Bein kann ich ein bisschen heben, aber ich knicke ein.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Keine Schmerzen. Der Arm hängt nur herunter. Das Bein kann ich ein bisschen heben, aber ich knicke ein.“ Er greift sich kurz an die Stirn und schluckt.",
       "options": [
         "Hatten Sie auch Kopfschmerzen?",
         "Hatten Sie Cephalgie, Vertigo, Diplopie, Nausea, eine Synkope oder einen generalisierten Krampfanfall, ein Skotom, eine Amaurosis fugax oder eine Bewusstseinstrübung?",
@@ -140,18 +133,17 @@
       ],
       "answer": 2,
       "feedback": [
-        "Geschlossene Frage; sie erfasst nur ein Symptom.",
+        "Geschlossene Frage; sie erfasst nur ein Symptom, und Schmerzen hat der Patient gerade verneint.",
         "Inhaltlich gut, aber nur Fachbegriffe. Sagen Sie „Kopfschmerzen“, „Schwindel“, „Doppelbilder“.",
         "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive Bewusstlosigkeit und Krampfanfall.",
         "Suggestiv: Sie unterstellen die Symptome."
       ],
-      "reply": "Patient: „Kein Kopfschmerz, kein Schwindel. Sehen ist normal. Etwas übel war mir, erbrochen habe ich nicht. Bewusstlos war ich nicht, auch kein Krampf.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Kein Kopfschmerz, kein Schwindel. Sehen ist normal. Etwas übel war mir, erbrochen habe ich nicht. Bewusstlos war ich nicht, auch kein Krampf.“ Zu den Begleitsymptomen wissen Sie jetzt alles; die allgemeinen Körperfunktionen sind noch offen.",
       "options": [
         "Haben Sie Nachtschweiß, Gewichtsverlust, Dysurie, Obstipation, Dysphagie und Insomnie? Wie waren Miktion, Defäkation und Körpergewicht in den letzten Monaten?",
         "Haben Sie Fieber gehabt? Wie sind Appetit, Gewicht, Stuhlgang und Wasserlassen, und wie schlafen Sie? Können Sie normal schlucken?",
@@ -165,13 +157,12 @@
         "Fachjargon, den ein Patient nicht versteht.",
         "Zu allgemein; der Patient sagt einfach „ja“."
       ],
-      "reply": "Patient: „Kein Fieber. Appetit gut, Gewicht gleich. Stuhlgang und Wasserlassen normal. Schlaf gut. Schlucken... geht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patient: „Kein Fieber. Appetit gut, Gewicht gleich. Stuhlgang und Wasserlassen normal. Schlaf gut. Schlucken... geht.“ Über seine Vorgeschichte wissen Sie noch nichts.",
       "options": [
         "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck, Zucker oder hohe Cholesterinwerte? Hatten Sie schon einmal einen Schlaganfall oder eine Blutung im Kopf? Wurden Sie schon einmal operiert?",
         "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, einen Diabetes mellitus, eine Hyperlipidämie oder ein Vorhofflimmern, und gab es Voroperationen oder stationäre Aufenthalte? Sind Komplikationen bei Narkosen aufgetreten, und wie war die Compliance bei der Einnahme?",
@@ -185,13 +176,12 @@
         "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
         "Suggestivfrage; Operationen und frühere Schlaganfälle fehlen."
       ],
-      "reply": "Patient: „Bluthochdruck, Zucker Typ 2, und das Cholesterin ist zu hoch. Hüftprothese rechts vor fünf Jahren. Schlaganfall nie, Blutung im Kopf nie. Zuletzt keine Operation.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Bluthochdruck, Zucker Typ 2, und das Cholesterin ist zu hoch. Hüftprothese rechts vor fünf Jahren. Schlaganfall nie, Blutung im Kopf nie. Zuletzt keine Operation.“ Seine Frau reicht Ihnen einen zerknitterten Medikamentenplan, auf dem die Dosierungen kaum zu lesen sind.",
       "options": [
         "Nehmen Sie Tabletten?",
         "Welche Antikoagulanzien und Thrombozytenaggregationshemmer applizieren Sie, und in welcher Dosis, und wann haben Sie diese Substanzen zuletzt in welcher Darreichungsform eingenommen?",
@@ -205,13 +195,12 @@
         "Richtig: Name, Dosierung, Blutverdünner (wichtig für die Lyse) und die Einnahme von heute.",
         "Suggestivfrage und medizinisch unpassend. Fragen Sie offen."
       ],
-      "reply": "Patient: „Ramipril 10 Milligramm morgens, Amlodipin 5 Milligramm morgens, Metformin 1000 Milligramm morgens und abends, Simvastatin 40 Milligramm abends. Blutverdünner nehme ich nicht. Die Morgentabletten habe ich schon genommen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Ramipril 10 Milligramm morgens, Amlodipin 5 Milligramm morgens, Metformin 1000 Milligramm morgens und abends, Simvastatin 40 Milligramm abends. Blutverdünner nehme ich nicht. Die Morgentabletten habe ich schon genommen.“ Die Pflegekraft ruft von der Tür, ob sie schon das Kontrastmittel für das CT vorbereiten soll.",
       "options": [
         "Sind Sie gegen Penicillin allergisch? Das ist die häufigste Allergie bei uns Menschen. Haben Sie sonst Probleme mit Medikamenten gehabt, zum Beispiel mit Sulfonamiden oder Makroliden?",
         "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Kontrastmittel, Pflaster oder Lebensmittel? Wie äußert sich das?",
@@ -225,13 +214,12 @@
         "Kein vollständiger Satz; in der Prüfung unhöflich.",
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
       ],
-      "reply": "Patient: „Gegen Pflaster. Da wird die Haut rot und juckt. Medikamente vertrage ich alle.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Pflaster. Da wird die Haut rot und juckt. Medikamente vertrage ich alle.“ Aus der Jackentasche neben der Trage ragt eine Zigarettenschachtel.",
       "options": [
         "Sie rauchen bestimmt viel, und das ist ja der Grund für Ihren Schlaganfall, oder?",
         "Sind Sie Raucher oder sogar Alkoholiker? Trinken Sie nicht auch zu viel, wie so viele Männer in Ihrem Alter?",
@@ -245,13 +233,12 @@
         "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
         "Richtig: neutral, konkret, mit Menge und Dauer (für die Packungsjahre)."
       ],
-      "reply": "Patient: „Ich rauche 20 Zigaretten am Tag, seit 35 Jahren. Abends ein Bier. Drogen nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche 20 Zigaretten am Tag, seit 35 Jahren. Abends ein Bier. Drogen nie.“ Seine Frau ergänzt leise: „In seiner Familie gab es auch schon einiges.“",
       "options": [
         "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Schlaganfall, Herzinfarkt, Bluthochdruck oder Zucker?",
         "Wie ist die Familienanamnese?",
@@ -265,13 +252,12 @@
         "Zu eng: Geschwister fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
         "Suggestivfrage und geschlossen."
       ],
-      "reply": "Patient: „Mein Vater hatte einen Schlaganfall mit 68. Mein Bruder einen Herzinfarkt mit 58. Meine Mutter hatte Bluthochdruck.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Mein Vater hatte einen Schlaganfall mit 68. Mein Bruder einen Herzinfarkt mit 58. Meine Mutter hatte Bluthochdruck.“ Seine Frau seufzt: „Wie das zu Hause werden soll, wenn er entlassen wird, weiß ich nicht.“",
       "options": [
         "Was ist Ihr sozialer Status?",
         "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
@@ -285,13 +271,12 @@
         "Richtig: Beruf und Wohnsituation, wichtig für Rehabilitation und Entlassung.",
         "Unangemessen."
       ],
-      "reply": "Patient: „Ich war Busfahrer, jetzt Rentner. Ich wohne mit meiner Frau im Reihenhaus. Das Schlafzimmer ist oben. Wir haben zwei erwachsene Töchter.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich war Busfahrer, jetzt Rentner. Ich wohne mit meiner Frau im Reihenhaus. Das Schlafzimmer ist oben. Wir haben zwei erwachsene Töchter.“ Dann sieht er Sie angstvoll an: „Herr Doktor, was ist mit mir los?“",
       "options": [
         "Sie haben einen ischämischen Insult im Stromgebiet der Arteria cerebri media links.",
         "Ich vermute, dass ein Blutgefäß in Ihrem Gehirn verstopft ist, also ein Schlaganfall. Ein Teil des Gehirns bekommt dann zu wenig Blut, deshalb sind Arm, Bein und Sprache betroffen. Das ist ein Notfall, wir handeln jetzt schnell.",
@@ -305,13 +290,12 @@
         "Verharmlosend und medizinisch falsch: ein Schlaganfall ist ein Notfall.",
         "Falsch und beängstigend."
       ],
-      "reply": "Patient: „Ein Schlaganfall? Mein Gott. Was passiert jetzt mit mir?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Herr Hoffmann fragt: „Kann man das noch behandeln?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Ein Schlaganfall? Mein Gott. Kann man das noch behandeln?“ Seine Frau greift fest nach seiner Hand und sieht Sie an.",
       "options": [
         "Nein, das lässt sich nicht mehr behandeln. Wir können nur abwarten und Ihnen später Krankengymnastik anbieten, damit Sie sich daran gewöhnen.",
         "Wir warten zuerst ab, ob es von allein besser wird. Sie bekommen etwas zu trinken, und ich schaue in zwei Stunden wieder nach Ihnen.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen den Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Hoffmann ist 71 und kann seinen rechten Arm nicht bewegen und nicht richtig reden.",
         "Herr Werner Hoffmann, ein 71-jähriger Patient, stellte sich heute per Rettungsdienst in unserer Notaufnahme mit akut aufgetretener Schwäche der linken Körperhälfte und starken Kopfschmerzen vor. Eine Sprachstörung wurde nicht beobachtet.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Die Symptomatik trat plötzlich gegen 7:30 Uhr beim Frühstück auf, zuletzt beschwerdefrei gesehen wurde der Patient um 7:15 Uhr. Es bestehen eine Hemiparese rechts, eine Fazialisparese rechts, eine Dysarthrie mit Wortfindungsstörung sowie eine Hypästhesie der rechten Hand, seitdem unverändert. Kopfschmerzen bestehen nicht.",
         "Die Symptomatik wurde beim Erwachen bemerkt, der Beginn ist unbekannt. Es bestehen eine Hemiparese rechts und eine Aphasie, seitdem progredient.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend bestand leichte Übelkeit ohne Erbrechen. Eine Synkope mit anschließendem Krampfanfall wurde bejaht, Kopfschmerzen und Schwindel wurden verneint.",
         "Ihm war kurz schlecht, gekotzt hat er aber nicht, der Kopf tut auch nicht weh.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "Vorerkrankungen: Bluthochdruck, Zucker, Cholesterin. Medikamente: Ramipril, Amlodipin, Metformin, Simvastatin.",
         "Vorerkrankungen: arterielle Hypertonie, Diabetes mellitus Typ 2, Hypercholesterinämie. Z. n. Hüft-TEP rechts vor fünf Jahren; kein Z. n. Apoplex, keine intrakranielle Blutung. Medikation: Ramipril 10 mg 1-0-0, Amlodipin 5 mg 1-0-0, Metformin 1000 mg 1-0-1, Simvastatin 40 mg 0-0-1; keine orale Antikoagulation.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: Pflasterallergie (Kontaktekzem). Nikotinkonsum ca. 17 py, täglich ein Bier. Vater Apoplex mit 68 J., Bruder Myokardinfarkt mit 58 J. Der Patient ist Rentner (zuvor Busfahrer) und lebt mit seiner Ehefrau.",
         "Kontrastmittelallergie (Anaphylaxie). Nikotinkonsum ca. 35 py. Vater Apoplex mit 68 J. Der Patient ist Rentner und lebt allein.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Es besteht der Verdacht auf einen akuten ischämischen Schlaganfall im Stromgebiet der linken A. cerebri media. Differenzialdiagnostisch kommen eine intrazerebrale Blutung, eine Hypoglykämie und eine postiktale Parese (Todd-Parese) in Betracht.",
         "Es besteht ein gesicherter ischämischer Schlaganfall, die Lyse ist bereits indiziert.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Wir empfehlen zunächst die Gabe von ASS 300 mg und Heparin i. v. sowie eine Bildgebung am Folgetag, damit der Patient sich vorher beruhigen kann.",
         "Wir empfehlen eine sofortige Blutdrucksenkung auf unter 120/70 mmHg mit Urapidil, bevor die Bildgebung erfolgt, sowie eine Lumbalpunktion zum Ausschluss einer Entzündung.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Sie drucken den Brief aus. Der Oberarzt kommt herein, setzt sich zu Ihnen und sieht Sie an. Oberarzt: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Der Mann hat einen Schlaganfall, er heißt Hoffmann.",
         "Ich möchte Ihnen Herrn Werner Hoffmann vorstellen, einen 71-jährigen Patienten, der sich heute mit seit 7:30 Uhr bestehender Halbseitenschwäche rechts und einer Sprachstörung vorgestellt hat.",
@@ -485,13 +461,12 @@
         "Kein strukturierter Einstieg; zuerst Patient und Leitsymptome.",
         "Sie beginnen mit einer ungesicherten Diagnose und fordern eine Therapie, bevor eine Blutung ausgeschlossen ist."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“ Er lehnt sich zurück und hört zu.",
       "options": [
         "Er hat eine Lähmung und kann nicht gut sprechen.",
         "Der Beginn ist unbekannt, der Patient wurde beim Erwachen so gefunden. Es besteht eine Hemiparese links, Kopfschmerzen und ein Krampfanfall wurden bejaht.",
@@ -505,13 +480,12 @@
         "Richtig: knapp, strukturiert, mit Zeitpunkt und relevanten Negativbefunden.",
         "Inhaltlich falsch: Der Beginn war plötzlich gegen 7:30 Uhr; Kopfschmerzen und Erbrechen bestanden nicht."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“ Er blättert in Ihrem Brief.",
       "options": [
         "Bekannt sind eine arterielle Hypertonie, ein Diabetes mellitus Typ 2 und eine Hypercholesterinämie. Kein früherer Apoplex, keine intrakranielle Blutung, keine orale Antikoagulation. Nikotin ca. 35 py. Der Vater hatte einen Apoplex mit 68 Jahren. Pflasterallergie.",
         "Er ist gesund und nimmt nur ein paar Tabletten.",
@@ -525,13 +499,12 @@
         "Inhaltlich falsch: Typ 2, kein Vorhofflimmern, keine Antikoagulation, kein früherer Apoplex; Pflasterallergie.",
         "Inhaltlich falsch: 35 py, er lebt mit seiner Frau, und der Vater hatte einen Apoplex."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“ Er legt den Stift ab und sieht Sie an.",
       "options": [
         "Ich denke an einen Schlaganfall.",
         "Ich weiß es nicht genau.",
@@ -545,13 +518,12 @@
         "Zu sicher, und die wichtigste Differenzialdiagnose, die Blutung, fehlt.",
         "Richtig: Verdachtsdiagnose mit Gefäßterritorium und Differenzialdiagnosen in Fachsprache."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“ Er verschränkt die Arme.",
       "options": [
         "Ich würde Alteplase sofort geben, ohne vorher ein Bild zu machen, weil die Zeit drängt.",
         "Ich würde sofort ein natives cCT mit CT-Angiographie, ein EKG, den Blutzucker und Labor mit Gerinnung veranlassen. Bei Ausschluss einer Blutung würde ich im Zeitfenster eine i. v. Thrombolyse mit Alteplase 0,9 mg/kg KG geben, bei 88 kg etwa 79 mg, davon 10 % als Bolus. Bei Gefäßverschluss zusätzlich Thrombektomie. Blutdruck vorher unter 185/110 mmHg. Danach Stroke Unit.",
@@ -565,13 +537,12 @@
         "Gefährlich und leitlinienwidrig: Keine Blutverdünner vor Ausschluss einer Blutung, und die Therapie darf nicht bis morgen warten.",
         "Falsch: Zu starke Blutdrucksenkung schadet; die Lumbalpunktion ist hier nicht indiziert."
       ],
-      "reply": "Oberarzt: „Gut. Was muss die Bildgebung vor der Lyse unbedingt ausschließen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Was muss die Bildgebung vor der Lyse unbedingt ausschließen?“",
       "options": [
         "Einen Hirntumor. Nur dann ist eine Lyse unmöglich; eine Blutung spielt keine Rolle, solange der Blutdruck stimmt.",
         "Eine Hypoglykämie; die erkenne ich im CT an doppelseitigen hypodensen Arealen.",
@@ -585,13 +556,12 @@
         "Richtig: Blutungsausschluss ist die zentrale Voraussetzung für die Lyse; dazu typische Frühzeichen.",
         "Gefährlich: Ohne Bildgebung ist eine Blutung nicht ausgeschlossen."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Hemiparese“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das erste Wort: „Hemiparese“.",
       "options": [
         "Lähmung beider Beine",
         "Teillähmung einer Körperhälfte",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Aphasie“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Aphasie“.",
       "options": [
         "Störung der Sprache durch eine Hirnschädigung",
         "Gedächtnisverlust",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Dysarthrie“?",
+      "situation": "Er tippt auf „Dysarthrie“.",
       "options": [
         "Heiserkeit",
         "Schluckstörung",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Fazialisparese“?",
+      "situation": "Dann auf „Fazialisparese“.",
       "options": [
         "Gesichtsschmerz",
         "Doppelbilder",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Thrombolyse“?",
+      "situation": "Zuletzt zeigt er auf „Thrombolyse“.",
       "options": [
         "mechanisches Entfernen eines Gerinnsels mit dem Katheter",
         "medikamentöse Auflösung eines Blutgerinnsels",

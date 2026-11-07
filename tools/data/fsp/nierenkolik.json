@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Weber läuft unruhig im Untersuchungsraum auf und ab und hält sich die linke Seite.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Ein Mann läuft unruhig auf und ab und hält sich die linke Seite. Als er Sie sieht, bleibt er stehen und sieht Sie an.",
       "options": [
         "Guten Abend, Herr Weber. Bitte legen Sie sich sofort hin, ich muss jetzt gleich Ihren Bauch und Ihren Rücken untersuchen.",
         "Hallo, was haben Sie denn?",
@@ -25,13 +24,12 @@
         "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
         "Verwaltungsfragen gehören nicht an den Anfang des Arzt-Patienten-Gesprächs, und Sie stellen sich nicht vor."
       ],
-      "reply": "Patient: „Ja, Weber. Guten Abend, Herr Doktor. Entschuldigung, ich kann nicht sitzen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Weber. Guten Abend, Herr Doktor. Entschuldigung, ich kann nicht sitzen.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?",
         "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
@@ -45,13 +43,12 @@
         "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst.",
         "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen."
       ],
-      "reply": "Patient: „Ich bin 41, 1,80 Meter groß und wiege etwa 88 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 41, 1,80 Meter groß und wiege etwa 88 Kilo.“ Er presst die Hand in die linke Flanke und wartet darauf, dass Sie das eigentliche Gespräch eröffnen.",
       "options": [
         "Haben Sie Schmerzen in der Seite?",
         "Welche Symptomatik liegt bei Ihnen vor?",
@@ -65,93 +62,88 @@
         "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
         "Richtig: eine offene Frage lässt den Patienten selbst erzählen."
       ],
-      "reply": "Patient: „Seit etwa zwei Stunden habe ich furchtbare Schmerzen hier links in der Seite, unter den Rippen. Es ist kaum auszuhalten.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten wissen, wo genau der Schmerz sitzt und ob er woandershin zieht. Was sagen Sie?",
+      "situation": "Patient: „Seit etwa zwei Stunden habe ich furchtbare Schmerzen hier links in der Seite, unter den Rippen. Es ist kaum auszuhalten.“ Er zeigt unter die linke Rippe und streicht dann zögernd mit der Hand nach unten, als wüsste er nicht, wohin der Schmerz noch reicht.",
       "options": [
         "Wo genau tut es weh? Zieht der Schmerz irgendwohin, zum Beispiel in den Rücken, nach vorne oder nach unten?",
         "Der Schmerz geht bestimmt in die Leiste und in den Hoden, richtig?",
         "Würden Sie den Schmerz eher als lokalisiert oder als diffus beschreiben, und gibt es eine Ausstrahlung in das äußere Genitale?",
-        "Tut es im Rücken weh?"
+        "Tut es im Rücken weh? Ich nehme an, dass es der Rücken ist."
       ],
       "answer": 0,
       "feedback": [
         "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben.",
         "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
         "„Lokalisiert“, „diffus“, „Ausstrahlung“ und „Genitale“ sind Fachwörter; der Patient versteht sie nicht.",
-        "Geschlossene Frage; sie erfasst die Lokalisation nur zum Teil und fragt nicht nach der Ausstrahlung."
+        "Geschlossene und suggestive Frage; sie erfasst die Lokalisation nur zum Teil und fragt nicht nach der Ausstrahlung."
       ],
-      "reply": "Patient: „Es sitzt links in der Flanke, und es zieht bis in die linke Leiste und in den Hoden.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patient: „Es sitzt links in der Flanke, und es zieht bis in die linke Leiste und in den Hoden.“ Er stöhnt und schüttelt den Kopf: „Ich weiß gar nicht, was das ausgelöst hat.“",
       "options": [
         "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch rezidivierend?",
         "Wann genau hat es angefangen, und was haben Sie in dem Moment getan? Ist es seitdem besser, schlechter oder gleich geblieben?",
         "Seit wann haben Sie die Schmerzen?",
-        "Hat es plötzlich angefangen?"
+        "Hat es plötzlich angefangen? Das ist doch sicher so, oder?"
       ],
       "answer": 1,
       "feedback": [
         "Fachsprache: „Erstmanifestation“, „subakut“ und „rezidivierend“ versteht der Patient nicht.",
         "Richtig: Beginn, Auslöser und Verlauf in einer klaren, laienverständlichen Frage.",
         "Das hat der Patient schon gesagt (seit etwa zwei Stunden). Fragen Sie nach Auslöser und Verlauf.",
-        "Geschlossene Frage; sie erfasst den Verlauf und den Auslöser nicht."
+        "Geschlossene, suggestive Frage; nach dem Auslöser und dem Verlauf fragt sie nicht."
       ],
-      "reply": "Patient: „Gegen 17 Uhr, ganz plötzlich, als ich im Garten Holz gestapelt habe. Seitdem kommt es in Wellen und wird nicht besser.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "situation": "Patient: „Gegen 17 Uhr, ganz plötzlich, als ich im Garten Holz gestapelt habe. Seitdem kommt es in Wellen und wird nicht besser.“ Er krümmt sich kurz zusammen. Wie die Schmerzen sich anfühlen und wie stark sie sind, hat er noch nicht gesagt.",
       "options": [
         "Haben Sie eine Kolik mit wellenförmigem Charakter, und wie hoch ist Ihre Schmerzintensität auf der visuellen Analogskala?",
         "Wie stark sind die Schmerzen von 1 bis 100?",
         "Wie würden Sie die Schmerzen beschreiben, eher stechend, dumpf oder krampfartig? Und wie stark sind sie auf einer Skala von 0 bis 10?",
-        "Tut es sehr weh?"
+        "Tut es sehr weh, oder geht es noch?"
       ],
       "answer": 2,
       "feedback": [
         "„Kolik“ und „visuelle Analogskala“ sind Fachsprache. Beschreiben Sie es mit Wörtern wie „krampfartig“.",
         "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
         "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10.",
-        "Zu ungenau; Sie bekommen keine verwertbare Angabe."
+        "Zu ungenau; Sie bekommen keine verwertbare Angabe zu Art und Stärke."
       ],
-      "reply": "Patient: „Es krampft in Wellen, so 9 von 10. Ich kann nicht still liegen, ich muss ständig herumlaufen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Es krampft in Wellen, so 9 von 10. Ich kann nicht still liegen, ich muss ständig herumlaufen.“ Er schluckt, wischt sich den Schweiß von der Stirn und hält sich kurz die Hand vor den Mund.",
       "options": [
         "Hatten Sie Nausea, Emesis oder eine Makrohämaturie, und ist Ihnen eine Dysurie oder eine Pollakisurie aufgefallen, vielleicht auch Fieber?",
-        "Ist Ihnen schlecht?",
+        "Ist Ihnen schlecht? Dann gehen Sie bitte raus, hier soll nichts auf den Boden kommen.",
         "Sie haben bestimmt auch Blut im Urin.",
         "Ist Ihnen übel, mussten Sie sich übergeben, oder ist Ihnen beim Wasserlassen etwas aufgefallen, zum Beispiel eine andere Farbe oder Brennen?"
       ],
       "answer": 3,
       "feedback": [
         "Inhaltlich gut gedacht, aber nur Fachbegriffe. Sagen Sie „übel“, „erbrechen“, „Blut im Urin“, „Brennen“.",
-        "Zu unkonkret; Sie erfahren nichts über Erbrechen und Urin.",
+        "Unfreundlich gegenüber einem Patienten in Not, und nach Urin und weiteren Begleitsymptomen fragen Sie nicht.",
         "Suggestiv: Sie unterstellen das Symptom.",
         "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive Urinfarbe und Brennen."
       ],
-      "reply": "Patient: „Mir ist übel, und ich habe einmal erbrochen. Der Urin war vorhin rötlich. Brennen habe ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Mir ist übel, und ich habe einmal erbrochen. Der Urin war vorhin rötlich. Brennen habe ich nicht.“ Er bleibt an der Liege stehen und stützt sich ab. Zu Fieber, Appetit, Stuhlgang und Trinkmenge haben Sie noch nichts gehört.",
       "options": [
         "Haben Sie Fieber oder Schüttelfrost gehabt? Wie sind Appetit, Stuhlgang und Wasserlassen? Und wie viel trinken Sie normalerweise am Tag?",
         "Wie ist die Vegetativa?",
@@ -165,13 +157,12 @@
         "Inhaltlich vollständig, aber voller Fachbegriffe (Pollakisurie, Oligurie, Obstipation, Diarrhö).",
         "Zu allgemein; der Patient sagt einfach „ja“."
       ],
-      "reply": "Patient: „Fieber hatte ich nicht, heute 36,9. Appetit ist weg, Stuhlgang normal. Ich muss ständig auf die Toilette, aber es kommt nur wenig. Ich trinke ehrlich gesagt wenig, etwa einen Liter am Tag.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patient: „Fieber hatte ich nicht, heute 36,9. Appetit ist weg, Stuhlgang normal. Ich muss ständig auf die Toilette, aber es kommt nur wenig. Ich trinke ehrlich gesagt wenig, etwa einen Liter am Tag.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles; über seine Vorgeschichte noch nichts.",
       "options": [
         "Haben Sie Vorerkrankungen wie eine Hyperurikämie, eine Urolithiasis oder eine arterielle Hypertonie, und gab es Voroperationen oder stationäre Aufenthalte?",
         "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck, Zucker oder Probleme mit den Nieren? Und wurden Sie schon einmal operiert?",
@@ -185,13 +176,12 @@
         "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
         "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
       ],
-      "reply": "Patient: „Ich habe Gicht, seit drei Jahren. Vor fünf Jahren hatte ich schon mal einen Nierenstein, rechts, der ist von allein abgegangen. Operiert wurde ich nur an den Weisheitszähnen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Ich habe Gicht, seit drei Jahren. Vor fünf Jahren hatte ich schon mal einen Nierenstein, rechts, der ist von allein abgegangen. Operiert wurde ich nur an den Weisheitszähnen.“ Er holt eine angebrochene Tablettenpackung aus der Jackentasche.",
       "options": [
         "Nehmen Sie Tabletten?",
         "Welche Pharmaka applizieren Sie regelmäßig, und in welcher Dosierung und Frequenz, auch parenteral oder als Suppositorium oder topisch?",
@@ -205,13 +195,12 @@
         "Richtig: Name, Dosierung und auch frei verkäufliche Mittel.",
         "Suggestivfrage. Fragen Sie offen."
       ],
-      "reply": "Patient: „Allopurinol 300 mg morgens. Heute Nachmittag habe ich eine Ibuprofen 400 genommen, die hat nichts gebracht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Allopurinol 300 mg morgens. Heute Nachmittag habe ich eine Tablette Ibuprofen 400 genommen, die hat nichts gebracht.“ Die Pflegekraft ruft von der Tür, ob sie schon ein Schmerzmittel aufziehen soll.",
       "options": [
         "Allergie?",
         "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
@@ -221,17 +210,16 @@
       "answer": 2,
       "feedback": [
         "Kein vollständiger Satz; in der Prüfung unhöflich.",
-        "Zu eng: Allergien gegen Schmerzmittel und andere Stoffe übersehen Sie, und hier ist das Schmerzmittel entscheidend.",
+        "Zu eng und am Thema vorbei: Die Pflegekraft wartet auf ein Schmerzmittel, und Allergien gegen Schmerzmittel und andere Stoffe übersehen Sie.",
         "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
       ],
-      "reply": "Patient: „Gegen Metamizol, Novalgin. Da bekam ich Quaddeln am ganzen Körper und eine geschwollene Lippe.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Metamizol, Novalgin. Da bekam ich Quaddeln am ganzen Körper und eine geschwollene Lippe.“ Die Pflegekraft nickt und notiert es. Aus der Jackentasche des Patienten ragt eine Zigarettenschachtel.",
       "options": [
         "Sind Sie Raucher oder Alkoholiker?",
         "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
@@ -245,13 +233,12 @@
         "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
         "Wertend und ungenau."
       ],
-      "reply": "Patient: „Ich rauche seit 20 Jahren etwa 10 Zigaretten am Tag. Alkohol am Wochenende, zwei, drei Bier. Drogen nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche seit 20 Jahren etwa 10 Zigaretten am Tag. Alkohol am Wochenende, zwei, drei Bier. Drogen nie.“ Dann murmelt er: „Bei uns in der Familie gab es auch so einiges.“",
       "options": [
         "Wie ist die Familienanamnese?",
         "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
@@ -265,13 +252,12 @@
         "Sie kennen die Diagnose noch nicht; die Frage ist unklar.",
         "Richtig: offen, mit passenden Beispielen."
       ],
-      "reply": "Patient: „Mein Vater hatte öfter Nierensteine. Meine Mutter hat Diabetes.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Mein Vater hatte öfter Nierensteine. Meine Mutter hat Diabetes.“ Er schaut auf sein Handy: „Meine Frau wartet auf eine Nachricht, und morgen früh muss ich eigentlich arbeiten.“",
       "options": [
         "Was ist Ihr sozialer Status?",
         "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
@@ -285,13 +271,12 @@
         "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
         "Unangemessen."
       ],
-      "reply": "Patient: „Ich bin Lieferfahrer und wohne mit meiner Frau und unseren zwei Kindern, 8 und 11 Jahre alt.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich bin Lieferfahrer und wohne mit meiner Frau und unseren zwei Kindern, 8 und 11 Jahre alt.“ Er sieht Sie angespannt an: „Und, Herr Doktor, was habe ich denn?“",
       "options": [
         "Ich vermute, dass ein Stein aus der Niere in den Harnleiter gewandert ist und dort den Urin aufstaut. Der Harnleiter ist der dünne Schlauch zwischen Niere und Blase. Das würde die Wellen und das Blut im Urin erklären.",
         "Sie haben eine Nephrolithiasis mit Harnleiterkolik links.",
@@ -305,13 +290,12 @@
         "Verharmlosend und medizinisch falsch: Ein Hexenschuss erklärt weder die Wellen noch das Blut im Urin.",
         "Falsch und beängstigend."
       ],
-      "reply": "Patient: „Ein Nierenstein? Und was passiert jetzt mit mir?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Muss ich operiert werden?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Ein Nierenstein? Und was passiert jetzt mit mir? Muss ich operiert werden?“",
       "options": [
         "Ja, morgen früh wird der Stein operativ entfernt.",
         "Zuerst nehmen wir Blut und Urin ab und machen einen Ultraschall der Nieren. Sie bekommen ein Schmerzmittel, das zu Ihrer Allergie passt, und eine Infusion. Viele Steine gehen von allein ab; wenn nicht, hilft Ihnen der Urologe.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen den Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Weber ist 41 und hat Rückenweh.",
         "Der Patient Herr Weber stellt sich heute vor wegen Flankenschmerzen links seit 17 Uhr, 41-jährig.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Die Beschwerden sind akut gegen 17 Uhr bei körperlicher Belastung aufgetreten, seitdem wellenförmig, kolikartig, mit Ausstrahlung in die linke Leiste und den linken Hoden (NRS 9/10).",
         "Die Schmerzen haben beim Holzstapeln angefangen und kommen in Wellen.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Er hatte Übelkeit und hat einmal gekotzt.",
         "Begleitend berichtete der Patient über Nausea und einmalige Emesis. Fieber, Schüttelfrost, Dysurie und eine Hämaturie wurden verneint. Ausgeprägte Inappetenz.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "An Vorerkrankungen sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 2 bekannt. Z. n. Appendektomie im Kindesalter. Medikation: Allopurinol 300 mg 1-0-0, Ibuprofen 400 mg einmalig heute.",
         "An Vorerkrankungen sind eine Gicht und ein Z. n. Nephrolithiasis rechts (vor 5 Jahren, spontaner Steinabgang) bekannt. Voroperationen: Weisheitszahnentfernung. Medikation: Allopurinol 300 mg 1-0-0, Ibuprofen 400 mg einmalig heute.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Keine Allergien bekannt. Nikotinabusus.",
         "Metamizolallergie (Urtikaria mit Lippenschwellung). Nikotinkonsum ca. 20 py, gelegentlicher Alkoholkonsum. Familienanamnese: Vater Nephrolithiasis, Mutter Diabetes mellitus. Der Patient ist Lieferfahrer, verheiratet, lebt mit Frau und zwei Kindern und trinkt ausreichend.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Diagnose: Nierensteine.",
         "Es besteht eine gesicherte Nephrolithiasis.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und eine Urinuntersuchung sowie eine Computertomographie mit Kontrastmittel. Analgesie mit Metamizol 1 g i. v.",
         "Wir machen Blut, Urin und Ultraschall.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Ich möchte Ihnen Herrn Markus Weber vorstellen, einen 41-jährigen Patienten, der sich heute mit seit 17 Uhr bestehenden, kolikartigen Schmerzen in der linken Flanke vorgestellt hat.",
         "Der Patient hat Nierenschmerzen, er heißt Weber.",
@@ -485,13 +461,12 @@
         "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
         "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“",
       "options": [
         "Die Schmerzen traten nach dem Essen auf und strahlen in den Rücken aus. Begleitend bestehen Fieber bis 38,5 °C und Durchfall. Eine Hämaturie wurde verneint.",
         "Er hat alles Mögliche.",
@@ -505,13 +480,12 @@
         "Inhaltlich falsch: Der Patient hat kein Fieber, und die Angabe ist unvollständig.",
         "Richtig: knapp, strukturiert, mit relevantem Negativbefund (kein Fieber)."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Bekannt sind eine Gicht und ein Diabetes mellitus Typ 2. Keine Allergien. Die Mutter hatte Nierensteine, der Vater einen Herzinfarkt. Es gab keine früheren Beschwerden dieser Art.",
         "Er ist gesund.",
@@ -525,13 +499,12 @@
         "Richtig: relevante Vorgeschichte, frühere Steinepisode und die Allergie, die für die Analgesie wichtig ist.",
         "Unvollständig: Diagnosen und Allergie fehlen."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich denke an Nierensteine.",
         "Ich vermute eine Harnleiterkolik links bei Nephrolithiasis. Differenzialdiagnostisch denke ich an eine Pyelonephritis, eine Divertikulitis und eine Hodentorsion.",
@@ -545,13 +518,12 @@
         "Zu sicher („sicher“), und ein Aortenaneurysma ist bei einem 41-Jährigen mit Kolik, Hämaturie und Steinanamnese nicht die wahrscheinlichste Diagnose.",
         "In der Prüfung sollen Sie eine begründete Vermutung äußern."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde Blut und Urin untersuchen, inklusive Entzündungswerten, Kreatinin und Urinstatus, und eine Sonographie der Nieren durchführen. Therapeutisch Paracetamol i. v., bei unzureichender Wirkung ein Opioid, bei Bedarf Butylscopolamin, unter Beachtung der Metamizolallergie, dazu Flüssigkeit. Bei Harnstau oder Infekt würde ich die Urologie hinzuziehen.",
         "Ich würde ihn nach Hause schicken.",
@@ -565,13 +537,12 @@
         "Gefährlich: Der Patient hat eine Metamizolallergie. Außerdem ist die Sonographie der erste Schritt.",
         "Nicht die erste Untersuchung bei diesem Verdacht."
       ],
-      "reply": "Oberarzt: „Gut. Was erwarten Sie im Ultraschall?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Was erwarten Sie im Ultraschall?“",
       "options": [
         "Ich erwarte eine vergrößerte Leber mit freier Flüssigkeit im Morison-Pouch.",
         "Ich erwarte gar nichts.",
@@ -585,13 +556,12 @@
         "Richtig: typische Sonographiezeichen eines Harnleitersteins mit Harnstau.",
         "Nicht typisch für eine Harnleiterkolik; eine Luftsichel sucht man eher im Röntgen, sie spricht für die Perforation eines Hohlorgans."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Nephrolithiasis“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Nephrolithiasis“ und sieht Sie fragend an.",
       "options": [
         "Nierenbeckenentzündung",
         "Nierensteinleiden",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Hämaturie“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Hämaturie“.",
       "options": [
         "Eiweiß im Urin",
         "Zucker im Urin",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Hydronephrose“?",
+      "situation": "Er tippt auf „Hydronephrose“.",
       "options": [
         "Harnstau mit erweitertem Nierenbecken",
         "Schrumpfung der Niere",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Kolik“?",
+      "situation": "Dann auf „Kolik“.",
       "options": [
         "dumpfer Dauerschmerz",
         "Schmerz nur bei Berührung",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Dysurie“?",
+      "situation": "Zuletzt zeigt er auf „Dysurie“.",
       "options": [
         "häufiges Wasserlassen",
         "Schmerzen beim Wasserlassen",

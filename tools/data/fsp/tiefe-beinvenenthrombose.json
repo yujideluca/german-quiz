@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Brandt sitzt auf der Liege und hält sich das linke Bein.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Ein Mann sitzt auf der Liege, hält sich das linke Bein und sieht Sie an.",
       "options": [
         "Guten Tag, ich bin Dr. Silva. Bitte setzen Sie sich, dann untersuche ich zuerst Ihr Bein, und danach reden wir.",
         "Hallo, was ist mit Ihrem Bein los?",
@@ -25,13 +24,12 @@
         "Verwaltungsfragen gehören nicht an den Anfang, und Sie stellen sich nicht vor.",
         "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität."
       ],
-      "reply": "Patient: „Ja, Brandt. Guten Tag, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Brandt. Guten Tag, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie ist Ihr Body-Mass-Index?",
         "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
@@ -45,13 +43,12 @@
         "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
         "Suggestivfrage: Sie unterstellen eine Antwort."
       ],
-      "reply": "Patient: „Ich bin 58, 1,80 Meter groß und wiege etwa 98 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 58, 1,80 Meter groß und wiege etwa 98 Kilo.“ Er verzieht das Gesicht, als er das Bein bewegt, und wartet.",
       "options": [
         "Haben Sie Schmerzen im Bein?",
         "Welche Symptomatik führt Sie zu uns?",
@@ -65,13 +62,12 @@
         "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn, und Sie wissen die Dauer noch nicht.",
         "Richtig: eine offene Frage lässt den Patienten selbst erzählen."
       ],
-      "reply": "Patient: „Seit drei Tagen ist mein linkes Bein dick geworden und tut weh.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten wissen, wo genau die Beschwerden sind und ob beide Beine betroffen sind. Was sagen Sie?",
+      "situation": "Patient: „Seit drei Tagen ist mein linkes Bein dick geworden und tut weh.“ Er zeigt auf den Unterschenkel.",
       "options": [
         "Wo genau tut es weh, und ist nur ein Bein betroffen oder sind es beide? Hat sich auch die Haut verändert?",
         "Ist das Bein ödematös und erythematös, und besteht eine Seitendifferenz des Umfangs?",
@@ -85,13 +81,12 @@
         "Suggestivfrage. Der Patient könnte nur zustimmen.",
         "Geschlossene Frage; die Seite wissen Sie schon, und Sie erfahren nichts über Ort und Haut."
       ],
-      "reply": "Patient: „Nur links, in der Wade. Der Unterschenkel ist dicker als rechts, und die Haut ist warm und ein bisschen rötlich.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patient: „Nur links, in der Wade. Der Unterschenkel ist dicker als rechts, und die Haut ist warm und ein bisschen rötlich.“ Er seufzt: „Ich weiß gar nicht, woher das so plötzlich kam.“",
       "options": [
         "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch progredient?",
         "Seit wann haben Sie die Schwellung?",
@@ -105,13 +100,12 @@
         "Richtig: Beginn, möglicher Auslöser und Verlauf in einer klaren Frage.",
         "Geschlossene Frage; sie erfasst Auslöser und Verlauf nicht."
       ],
-      "reply": "Patient: „Vor drei Tagen bin ich acht Stunden Auto gefahren, abends war die Wade schon gespannt. Seitdem wird es langsam schlimmer.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "situation": "Patient: „Vor drei Tagen bin ich acht Stunden Auto gefahren, abends war die Wade schon gespannt. Seitdem wird es langsam schlimmer.“ Er massiert die Wade vorsichtig und sagt: „Der Schmerz ist schwer zu beschreiben.“",
       "options": [
         "Sind die Schmerzen claudicatio-artig?",
         "Wie stark sind die Schmerzen von 1 bis 100?",
@@ -125,13 +119,12 @@
         "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
         "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10."
       ],
-      "reply": "Patient: „Ein ziehender, gespannter Schmerz, so 5 von 10. Beim Gehen und im Stehen wird es schlimmer, Hochlegen hilft ein bisschen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Sie wollen eine Lungenembolie nicht übersehen. Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Ein ziehender, gespannter Schmerz, so 5 von 10. Beim Gehen und im Stehen wird es schlimmer, Hochlegen hilft ein bisschen.“ Er fügt hinzu: „Ich habe im Internet gelesen, dass so etwas auch auf die Lunge gehen kann.“",
       "options": [
         "Haben Sie auch Dyspnoe, Thoraxschmerzen, Husten oder Hämoptysen bemerkt, vielleicht sogar eine Synkope oder eine Palpitation beim Treppensteigen?",
         "Haben Sie Luftnot, Schmerzen in der Brust oder Husten? Ist Ihnen schwindelig oder war Ihnen schon mal schwarz vor Augen?",
@@ -145,13 +138,12 @@
         "Suggestiv: Sie legen die Antwort nahe.",
         "Zu umgangssprachlich und unkonkret."
       ],
-      "reply": "Patient: „Luftnot habe ich nicht, auch keinen Husten und keine Brustschmerzen. Schwindelig ist mir auch nicht, und ohnmächtig war ich nie. Nur die Wade ist so schwer.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Luftnot habe ich nicht, auch keinen Husten und keine Brustschmerzen. Schwindelig ist mir auch nicht, und ohnmächtig war ich nie. Nur die Wade ist so schwer.“ Auf dem Anamnesebogen sind die Felder zu Fieber, Appetit, Stuhlgang und Gewicht noch leer.",
       "options": [
         "Haben Sie Fieber gemessen? Wie sind Appetit, Stuhlgang und Wasserlassen? Hat sich Ihr Gewicht verändert?",
         "Wie ist die Vegetativa?",
@@ -165,13 +157,12 @@
         "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Obstipation, Diarrhö).",
         "Zu allgemein; der Patient sagt einfach „ja“."
       ],
-      "reply": "Patient: „Fieber hatte ich nicht, gestern 36,9 Grad. Appetit gut, Stuhlgang und Wasserlassen sind normal. Das Gewicht ist gleich geblieben.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen, Operationen und früheren Thrombosen?",
+      "situation": "Patient: „Fieber hatte ich nicht, gestern 36,9 Grad. Appetit gut, Stuhlgang und Wasserlassen sind normal. Das Gewicht ist gleich geblieben.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles; über seine Vorgeschichte noch nichts.",
       "options": [
         "Sind Sie gesund?",
         "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, einen Diabetes mellitus oder eine KHK, und gab es Voroperationen oder stationäre Aufenthalte?",
@@ -185,13 +176,12 @@
         "Der Patient kennt seine Akte nicht. Fragen Sie direkt.",
         "Richtig: mit Beispielen, laienverständlich; kürzliche Operation und frühere Thrombose sind mitgefragt."
       ],
-      "reply": "Patient: „Ich habe Bluthochdruck. Vor fünf Wochen wurde ich am linken Knie arthroskopisch am Meniskus operiert, seitdem gehe ich wenig. Eine Thrombose hatte ich noch nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Ich habe Bluthochdruck. Vor fünf Wochen wurde ich am linken Knie arthroskopisch am Meniskus operiert, seitdem gehe ich wenig. Eine Thrombose hatte ich noch nie.“ Er kramt in seiner Jackentasche nach einer Tablettenschachtel.",
       "options": [
         "Nehmen Sie Tabletten?",
         "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept?",
@@ -205,13 +195,12 @@
         "Fachsprache („Pharmaka“, „applizieren“).",
         "Suggestivfrage. Fragen Sie offen."
       ],
-      "reply": "Patient: „Amlodipin 5 mg morgens. Seit der Knie-Operation nehme ich bei Bedarf Paracetamol 500 mg, etwa zwei am Tag.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Amlodipin 5 mg morgens. Seit der Knie-Operation nehme ich bei Bedarf Paracetamol 500 mg, etwa zwei am Tag.“ Die Pflegekraft steckt den Kopf zur Tür herein: „Ich bereite schon Medikamente und eine Untersuchung vor. Sagen Sie mir Bescheid, was er verträgt.“",
       "options": [
         "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Kontrastmittel, Pflaster oder Lebensmittel? Wie äußert sich das?",
         "Allergie?",
@@ -225,13 +214,12 @@
         "Zu eng: Allergien gegen andere Stoffe, etwa Kontrastmittel, übersehen Sie.",
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
       ],
-      "reply": "Patient: „Gegen Kontrastmittel. Bei einer Computertomographie bekam ich Juckreiz und Quaddeln.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Kontrastmittel. Bei einer Computertomographie bekam ich Juckreiz und Quaddeln.“ Seine Jacke riecht nach Zigarettenrauch.",
       "options": [
         "Sind Sie ein starker Raucher oder vielleicht sogar Alkoholiker, und wie viel trinken Sie denn so am Tag?",
         "Wie ist Ihr Nikotin- und Alkoholabusus?",
@@ -245,13 +233,12 @@
         "Richtig: neutral, konkret, mit Menge.",
         "Wertend und ungenau."
       ],
-      "reply": "Patient: „Ich rauche seit 25 Jahren 20 Zigaretten am Tag. Alkohol nur am Wochenende, zwei Flaschen Bier. Drogen nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche seit 25 Jahren 20 Zigaretten am Tag. Alkohol nur am Wochenende, zwei Flaschen Bier. Drogen nie.“ Dann fügt er hinzu: „Bei uns in der Familie hatten einige Probleme mit dem Kreislauf.“",
       "options": [
         "Wie ist die Familienanamnese?",
         "Hat Ihre Familie dieselbe Krankheit?",
@@ -265,13 +252,12 @@
         "Richtig: offen, mit passenden Beispielen und Altersangabe.",
         "Zu eng: Geschwister und Kinder fehlen, und Sie fragen nicht gezielt nach Thrombosen."
       ],
-      "reply": "Patient: „Meine Mutter hatte mit 62 eine Lungenembolie. Mein Vater hatte mit 70 einen Schlaganfall.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Meine Mutter hatte mit 62 eine Lungenembolie. Mein Vater hatte mit 70 einen Schlaganfall.“ Er schaut auf sein Handy: „Ich muss gleich meiner Frau Bescheid sagen, eigentlich sollte ich heute arbeiten.“",
       "options": [
         "Was ist Ihr sozialer Status?",
         "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
@@ -285,13 +271,12 @@
         "Unangemessen.",
         "Richtig: Beruf (viel Sitzen?) und Wohnsituation, beides wichtig für Therapie und Versorgung."
       ],
-      "reply": "Patient: „Ich bin Vertriebsleiter und viel im Auto unterwegs. Ich wohne mit meiner Frau in einem Haus, unsere Tochter studiert.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich bin Vertriebsleiter und viel im Auto unterwegs. Ich wohne mit meiner Frau in einem Haus, unsere Tochter studiert.“ Er sieht Sie besorgt an: „Und, Herr Doktor, was habe ich denn?“",
       "options": [
         "Sie haben eine tiefe Beinvenenthrombose links, möglicherweise mit Lungenembolierisiko, behandelt wird mit Antikoagulation und Kompressionstherapie.",
         "Es ist wahrscheinlich nichts Schlimmes, nur ein Muskelkater von der Autofahrt.",
@@ -305,18 +290,17 @@
         "Falsch und beängstigend.",
         "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung."
       ],
-      "reply": "Patient: „Ein Blutgerinnsel? Ist das gefährlich?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Ist das gefährlich?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Ein Blutgerinnsel? Ist das gefährlich? Und was passiert jetzt mit mir?“",
       "options": [
         "Nein, das ist nicht gefährlich, nehmen Sie zu Hause eine Schmerztablette.",
         "Das entscheidet der Chef, ich weiß es nicht.",
         "Das kann gefährlich werden, wenn das Gerinnsel in die Lunge wandert. Deshalb machen wir sofort einen Ultraschall der Beinvenen und nehmen Blut ab. Bestätigt sich der Verdacht, bekommen Sie ein Medikament, das das Blut verdünnt, und einen Kompressionsverband. Das besprechen wir mit dem Oberarzt.",
-        "Ja, Sie müssen sofort operiert werden."
+        "Ja, das ist sehr gefährlich, Sie müssen noch heute am Bein operiert werden, damit das Gerinnsel entfernt wird."
       ],
       "answer": 2,
       "feedback": [
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": null,
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Brandt ist 58 und hat ein dickes Bein.",
         "Herr Thomas Brandt (58 J.) hat sich heute in unsere Notaufnahme vorgestellt wegen Schmerzen im Bein, die er schon seit längerer Zeit hat.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Die Beschwerden begannen nach acht Stunden Autofahrt vor drei Tagen, seitdem progredient, mit gespanntem Schmerz in der linken Wade (NRS 5/10), belastungsabhängig zunehmend, bei Hochlagerung leicht gebessert. Zudem Überwärmung und Rötung des linken Unterschenkels.",
         "Das Bein ist nach der langen Autofahrt dick geworden und tut weh.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Er hatte kein Fieber und keine Luftnot.",
         "Begleitend berichtete der Patient über Dyspnoe und Thoraxschmerzen. Fieber bis 38,5 °C. Appetit reduziert, Gewichtsverlust von 5 kg.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "An Vorerkrankungen sind eine arterielle Hypotonie und ein Diabetes mellitus Typ 2 bekannt. Z. n. Appendektomie. Medikation: Amlodipin 5 mg 0-0-1, Paracetamol 500 mg 1-1-1.",
         "Vorerkrankungen: Bluthochdruck. Medikamente: Amlodipin, Paracetamol.",
@@ -410,19 +390,18 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: keine. Noxen: Nikotinabusus.",
         "Kontrastmittelallergie (Urtikaria, Pruritus). Nikotinkonsum ca. 25 py, gelegentlicher Alkoholkonsum (2 Flaschen Bier am Wochenende). Familienanamnese: Mutter Lungenembolie mit 62 J., Vater Apoplex mit 70 J. Der Patient ist Vertriebsleiter, verheiratet, lebt mit seiner Ehefrau und ist beruflich viel im Auto unterwegs.",
-        "Kontrastmittelallergie (Urtikaria). Nikotinkonsum ca. 50 py. Mutter Lungenembolie mit 62 J.",
+        "Kontrastmittelallergie (Urtikaria). Nikotinkonsum ca. 50 py. Mutter Lungenembolie mit 62 J. Der Patient ist Vertriebsleiter und verheiratet, Alkoholkonsum wird verneint.",
         "Er verträgt kein Kontrastmittel und raucht."
       ],
       "answer": 1,
       "feedback": [
         "Falsch: die Kontrastmittelallergie fehlt.",
         "Richtig: 20 Zigaretten am Tag über 25 Jahre sind 25 py (Packungsjahre).",
-        "Falsch: 20 Zigaretten über 25 Jahre sind 25 py, nicht 50, und Vater und Sozialanamnese fehlen.",
+        "Falsch: 20 Zigaretten über 25 Jahre sind 25 py, nicht 50; außerdem fehlen der Vater, und der Patient trinkt am Wochenende Bier.",
         "Laiensprache und unvollständig."
       ],
       "reply": null
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Anamnestisch besteht der Verdacht auf eine akute Beckenvenenthrombose rechts bei Z. n. Appendektomie. Differenzialdiagnostisch kommen eine Herzinsuffizienz und eine Niereninsuffizienz in Betracht.",
         "Diagnose: Bein ist dick wegen Gerinnsel.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Wir machen Blut und Ultraschall.",
         "Zur weiteren Abklärung empfehlen wir eine Phlebographie mit jodhaltigem Kontrastmittel sowie eine Antikoagulation mit Rivaroxaban 15 mg 1-0-1.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Sie speichern den Brief. Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Der Patient hat ein dickes Bein, er heißt Brandt und ist irgendwie schon älter, er war vorher beim Autofahren.",
         "Herr Brandt hat eine Thrombose.",
@@ -485,13 +461,12 @@
         "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
         "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“",
       "options": [
         "Er hat alles Mögliche.",
         "Die Beschwerden begannen nach einer achtstündigen Autofahrt, mit gespanntem Schmerz (NRS 5/10) und Überwärmung und Rötung des linken Unterschenkels. Dyspnoe, Thoraxschmerz und Husten wurden verneint, ebenso Fieber.",
@@ -505,13 +480,12 @@
         "Inhaltlich falsch: kein Sturz, linker Unterschenkel, NRS 5/10, Dyspnoe und Thoraxschmerz wurden verneint.",
         "Inhaltlich falsch: Fieber, Luftnot und Husten wurden verneint."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Er ist gesund.",
         "Bekannt ist eine arterielle Hypertonie unter Amlodipin 5 mg 1-0-0. Vor fünf Wochen wurde er am linken Knie arthroskopisch operiert und ist seitdem wenig mobil. Eine frühere Thrombose besteht nicht. Wichtig: Kontrastmittelallergie mit Urtikaria. Die Mutter hatte mit 62 Jahren eine Lungenembolie, er raucht ca. 25 py.",
@@ -525,13 +499,12 @@
         "Inhaltlich falsch (arterielle Hypertonie, Kontrastmittelallergie, Knie-OP).",
         "Unvollständig: Diagnosen, Allergie und Risikofaktoren fehlen."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich denke an eine Venenentzündung.",
         "Es handelt sich sicher um ein Erysipel, weil die Haut gerötet und warm ist, deshalb brauchen wir keine weitere Bildgebung. Differenzialdiagnostisch denke ich höchstens noch an eine Muskelzerrung und eine Lungenembolie.",
@@ -545,17 +518,16 @@
         "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
         "Richtig: Verdachtsdiagnose mit Risikofaktoren und Differenzialdiagnosen in Fachsprache."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde Bettruhe anordnen und die Wade massieren.",
         "Ich würde ein CT mit Kontrastmittel machen.",
-        "Ich würde ihn nach Hause schicken, er soll sich beim Hausarzt melden.",
+        "Ich würde ihn nach Hause schicken, er soll sich beim Hausarzt melden, falls das Bein in den nächsten Tagen noch dicker wird oder die Schmerzen zunehmen.",
         "Ich würde Blut abnehmen (Blutbild, Kreatinin, Gerinnung) und direkt eine Kompressionssonographie der Beinvenen durchführen. Bei Bestätigung würde ich eine Antikoagulation mit Rivaroxaban 15 mg 1-0-1 für 21 Tage, danach 20 mg 1-0-0 beginnen, dazu Kompressionstherapie und Mobilisation, unter Beachtung der Nierenfunktion."
       ],
       "answer": 3,
@@ -565,13 +537,12 @@
         "Gefährlich: eine Thrombose braucht sofortige Diagnostik und Therapie.",
         "Richtig: Diagnostik, leitliniengerechte Antikoagulation und Kompression, mit Blick auf die Niere."
       ],
-      "reply": "Oberarzt: „Gut. Was erwarten Sie im Ultraschall?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Was erwarten Sie im Ultraschall?“",
       "options": [
         "Eine vergrößerte Milz.",
         "Ich erwarte eine komprimierbare Vene mit freiem Blutfluss und eine flüssigkeitsgefüllte Zyste in der Kniekehle, ohne Thrombus.",
@@ -585,13 +556,12 @@
         "Richtig: typische Sonographiezeichen einer tiefen Beinvenenthrombose.",
         "In der Prüfung erwartet man eine begründete Antwort."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Thrombose“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Thrombose“ und sieht Sie fragend an.",
       "options": [
         "Ablagerung von Fett in der Arterienwand",
         "Verschluss eines Gefäßes durch ein Blutgerinnsel",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Ödem“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Ödem“.",
       "options": [
         "Bluterguss",
         "Eiteransammlung",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Dyspnoe“?",
+      "situation": "Er tippt auf „Dyspnoe“.",
       "options": [
         "Husten",
         "Luftnot",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Antikoagulation“?",
+      "situation": "Dann auf „Antikoagulation“.",
       "options": [
         "Auflösung eines Blutgerinnsels",
         "Hemmung der Blutplättchen",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Embolie“?",
+      "situation": "Zuletzt zeigt er auf „Embolie“.",
       "options": [
         "Verengung eines Gefäßes",
         "Aussackung der Gefäßwand",

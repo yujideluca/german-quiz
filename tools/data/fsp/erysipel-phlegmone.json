@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Weber sitzt auf der Liege und hält sein linkes Bein hoch. Er wirkt blass und fröstelt.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Ein Mann sitzt auf der Liege und hält sein linkes Bein hoch. Er wirkt blass, fröstelt und sieht Sie an.",
       "options": [
         "Guten Morgen, Herr Weber. Bevor ich Sie untersuche: Haben Sie Ihre Versichertenkarte und die Überweisung Ihres Hausarztes dabei? Die brauchen wir zuerst für die Anmeldung.",
         "Hallo, na, was ist mit dem Bein los?",
@@ -25,13 +24,12 @@
         "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
         "Die Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen."
       ],
-      "reply": "Patient: „Ja, Weber. Guten Morgen, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Weber. Guten Morgen, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie hoch ist Ihr Body-Mass-Index?",
         "Sie sind doch bestimmt über sechzig, oder?",
@@ -45,13 +43,12 @@
         "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
         "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht."
       ],
-      "reply": "Patient: „Ich bin 61, 1,78 Meter groß und wiege etwa 96 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 61, 1,78 Meter groß und wiege etwa 96 Kilo.“ Er hält das Bein weiter hoch und wartet, dass Sie das Gespräch beginnen.",
       "options": [
         "Was führt Sie heute zu uns? Erzählen Sie bitte.",
         "Haben Sie eine Rötung am Bein?",
@@ -65,13 +62,12 @@
         "„Symptomatik“ ist Fachsprache, und die Frage ist überladen. Mit Patienten sprechen Sie Laiensprache.",
         "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
       ],
-      "reply": "Patient: „Seit gestern Abend ist mein linkes Bein rot und tut weh. Heute früh kam Schüttelfrost dazu, und ich habe Fieber.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten wissen, wo genau die Rötung ist und ob sie sich ausbreitet. Was sagen Sie?",
+      "situation": "Patient: „Seit gestern Abend ist mein linkes Bein rot und tut weh. Heute früh kam Schüttelfrost dazu, und ich habe Fieber.“ Er zeigt auf den Unterschenkel, sagt aber nicht, wie weit die Rötung reicht.",
       "options": [
         "Ist die Rötung eher lokalisiert oder disseminiert, und besteht eine Progredienz in der Ausdehnung seit gestern?",
         "Wo genau ist die Haut rot, und ist die Rötung seit gestern größer geworden?",
@@ -85,13 +81,12 @@
         "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
         "Das hat der Patient schon gesagt, und die Frage klärt weder Ort noch Ausbreitung der Rötung."
       ],
-      "reply": "Patient: „Am linken Unterschenkel, vom Knöchel fast bis zum Knie. Die Haut ist heiß und glänzt, und die Rötung ist über Nacht größer geworden.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Auslöser und dem Verlauf?",
+      "situation": "Patient: „Am linken Unterschenkel, vom Knöchel fast bis zum Knie. Die Haut ist heiß und glänzt, und die Rötung ist über Nacht größer geworden.“ Er schüttelt den Kopf: Er weiß nicht, woher das so plötzlich kommt.",
       "options": [
         "Haben Sie sich am Bein verletzt?",
         "Seit wann ist das Bein rot, und seit wann haben Sie Schüttelfrost und Fieber? Bitte nennen Sie mir die genaue Uhrzeit.",
@@ -105,13 +100,12 @@
         "Richtig: offene Frage mit Beispielen für die Eintrittspforte, dazu der Verlauf.",
         "Suggestivfrage. Sie unterstellen eine Antwort."
       ],
-      "reply": "Patient: „Verletzt habe ich mich nicht. Aber zwischen den Zehen habe ich seit Wochen eine wunde, juckende Stelle, wohl Fußpilz. Gestern Abend wurde das Bein rot, dann ging es schnell.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "situation": "Patient: „Verletzt habe ich mich nicht. Aber zwischen den Zehen habe ich seit Wochen eine wunde, juckende Stelle, wohl Fußpilz. Gestern Abend wurde das Bein rot, dann ging es schnell.“ Als Sie sich dem Bein nähern, verzieht er das Gesicht und zieht es zurück.",
       "options": [
         "Sind die Schmerzen neuralgiform, und wie ist die Intensität auf der visuellen Analogskala?",
         "Tut es sehr weh?",
@@ -125,13 +119,12 @@
         "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
         "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10."
       ],
-      "reply": "Patient: „Es brennt und spannt, besonders bei Berührung. So 6 von 10.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Es brennt und spannt, besonders bei Berührung. So 6 von 10.“ Er reibt sich die Arme und zieht die Decke über die Schultern.",
       "options": [
         "Haben Sie Schüttelfrost, Abgeschlagenheit, eine Lymphadenopathie in der Leiste, Dyspnoe oder Thoraxschmerzen?",
         "Ist Ihnen sonst etwas aufgefallen, zum Beispiel Schüttelfrost, Schwäche, geschwollene Stellen in der Leiste oder Luftnot?",
@@ -145,13 +138,12 @@
         "Vorschnelle Diagnose: Sie erklären dem Patienten ohne Untersuchung eine Thrombose und fragen nicht offen.",
         "Zu umgangssprachlich und unkonkret."
       ],
-      "reply": "Patient: „Schüttelfrost hatte ich heute früh, und ich fühle mich sehr schlapp. In der linken Leiste ist ein druckempfindlicher Knoten. Luftnot oder Brustschmerzen habe ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Schüttelfrost hatte ich heute früh, und ich fühle mich sehr schlapp. In der linken Leiste ist ein druckempfindlicher Knoten. Luftnot oder Brustschmerzen habe ich nicht.“ Er wischt sich mit der Hand über die feuchte Stirn.",
       "options": [
         "Wie ist die Vegetativa?",
         "Haben Sie Fieber, Nachtschweiß, Inappetenz, Dysurie, Obstipation oder Diarrhö, und ist ein Gewichtsverlust aufgetreten?",
@@ -165,13 +157,12 @@
         "Zu allgemein; der Patient sagt einfach „ja“.",
         "Richtig: Fieber, Appetit, Stuhlgang, Wasserlassen und Gewicht in Laiensprache."
       ],
-      "reply": "Patient: „Heute früh hatte ich 39,1 Grad. Appetit habe ich kaum. Stuhlgang und Wasserlassen sind normal, das Gewicht ist gleich.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patient: „Heute früh hatte ich 39,1 Grad. Appetit habe ich kaum. Stuhlgang und Wasserlassen sind normal, das Gewicht ist gleich.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles; über seine Vorgeschichte noch nichts.",
       "options": [
         "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck oder Zucker? Hatten Sie so etwas am Bein schon einmal, und wurden Sie schon einmal operiert?",
         "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, einen Diabetes mellitus oder eine chronisch-venöse Insuffizienz, und gab es Voroperationen?",
@@ -185,13 +176,12 @@
         "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
         "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
       ],
-      "reply": "Patient: „Ich habe Zucker, Typ 2, seit acht Jahren, und Bluthochdruck. Krampfadern habe ich am linken Bein. Vor zwei Jahren hatte ich schon einmal so eine Rötung am gleichen Bein, damals mit Antibiotika. Operiert wurde ich nur am Leistenbruch rechts. Eine Thrombose hatte ich nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Ich habe Zucker, Typ 2, seit acht Jahren, und Bluthochdruck. Krampfadern habe ich am linken Bein. Vor zwei Jahren hatte ich schon einmal so eine Rötung am gleichen Bein, damals mit Antibiotika. Operiert wurde ich nur am Leistenbruch rechts. Eine Thrombose hatte ich nie.“ Er greift nach seiner Jacke, in der ein Medikamentenplan steckt.",
       "options": [
         "Nehmen Sie Tabletten?",
         "Welche Pharmaka applizieren Sie, und in welcher Galenik?",
@@ -205,13 +195,12 @@
         "Richtig: Name, Dosierung und auch frei verkäufliche Mittel.",
         "Suggestivfrage. Fragen Sie offen."
       ],
-      "reply": "Patient: „Metformin 1000 mg morgens und abends, Ramipril 5 mg morgens. Heute früh habe ich eine Tablette Paracetamol 500 genommen, wegen des Fiebers.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Metformin 1000 mg morgens und abends, Ramipril 5 mg morgens. Heute früh habe ich eine Tablette Paracetamol 500 genommen, wegen des Fiebers.“ Die Pflegekraft ruft von der Tür, ob sie schon ein Antibiotikum vorbereiten soll.",
       "options": [
         "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen gleich ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
         "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Pflaster oder Lebensmittel? Wie äußert sich das?",
@@ -225,13 +214,12 @@
         "Kein vollständiger Satz; in der Prüfung unhöflich.",
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
       ],
-      "reply": "Patient: „Gegen Medikamente nicht. Aber von Pflastern bekomme ich einen juckenden Ausschlag.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Medikamente nicht. Aber von Pflastern bekomme ich einen juckenden Ausschlag.“ Aus seiner Jackentasche schaut eine Zigarettenschachtel.",
       "options": [
         "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
         "Sind Sie Raucher oder gar Alkoholiker?",
@@ -245,13 +233,12 @@
         "„Abusus“ und „Packungsjahre“ sind Fachsprache und klingen nach Vorwurf.",
         "Wertend und ungenau; die Frage enthält eine Unterstellung."
       ],
-      "reply": "Patient: „Ich rauche seit 25 Jahren eine Schachtel, also 20 Zigaretten, am Tag. Alkohol trinke ich nur zwei Bier pro Woche. Drogen nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche seit 25 Jahren eine Schachtel, also 20 Zigaretten, am Tag. Alkohol trinke ich nur zwei Bier pro Woche. Drogen nie.“ Dann fügt er hinzu: „Bei uns in der Familie gibt es einiges.“",
       "options": [
         "Wie ist die Familienanamnese?",
         "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
@@ -265,13 +252,12 @@
         "Richtig: offen, mit passenden Beispielen.",
         "Zu eng und suggestiv; die Frage führt nur auf ein einziges Symptom."
       ],
-      "reply": "Patient: „Mein Vater hatte Zucker und einen Schlaganfall mit 72. Meine Mutter hat Bluthochdruck und Krampfadern. Mein Bruder ist gesund.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Mein Vater hatte Zucker und einen Schlaganfall mit 72. Meine Mutter hat Bluthochdruck und Krampfadern. Mein Bruder ist gesund.“ Er sieht auf die Uhr: „Eigentlich müsste ich heute arbeiten.“",
       "options": [
         "Was ist Ihr sozialer Status?",
         "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
@@ -285,13 +271,12 @@
         "Unangemessen und verletzend.",
         "Richtig: Beruf und Wohnsituation, beides wichtig für Entlassung und Versorgung."
       ],
-      "reply": "Patient: „Ich bin Busfahrer und sitze viel. Ich wohne mit meiner Frau im Reihenhaus. Unsere zwei Töchter sind schon ausgezogen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich bin Busfahrer und sitze viel. Ich wohne mit meiner Frau im Reihenhaus. Unsere zwei Töchter sind schon ausgezogen.“ Er sieht Sie besorgt an: „Und, Herr Doktor, was habe ich denn?“",
       "options": [
         "Sie haben ein Erysipel am linken Unterschenkel bei Tinea pedis.",
         "Ich vermute eine bakterielle Infektion der Haut, eine sogenannte Wundrose. Die Bakterien sind wahrscheinlich durch die kleine wunde Stelle zwischen den Zehen eingedrungen.",
@@ -305,13 +290,12 @@
         "Verharmlosend und medizinisch falsch: Bei Fieber und Schüttelfrost ist eine Behandlung nötig.",
         "Falsch und beängstigend; eine Operation ist nicht geplant."
       ],
-      "reply": "Patient: „Wundrose? Muss ich dafür im Krankenhaus bleiben?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Muss ich im Krankenhaus bleiben?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Wundrose? Muss ich dafür im Krankenhaus bleiben?“",
       "options": [
         "Ich empfehle, dass Sie bleiben. Wir nehmen Blut ab und geben Ihnen ein Antibiotikum über die Vene. Das Bein lagern Sie hoch und kühlen es. Wegen Ihres Zuckers und des Fiebers möchte ich Sie genau beobachten. Auch den Fußpilz behandeln wir.",
         "Nein, das ist harmlos. Sie bekommen eine Salbe mit Kortison, und morgen fahren Sie wieder Bus.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Weber ist 61 und hat ein rotes Bein mit Fieber.",
         "Herr Klaus Weber, ein 61-jähriger Patient, stellte sich heute in unserer Notaufnahme wegen seit gestern Abend bestehende Rötung und Schmerzen am linken Unterschenkel vor.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Die Rötung und Überwärmung am linken Unterschenkel traten gestern Abend auf, bei vorbestehender Interdigitalmykose, und breiteten sich über Nacht progredient bis zum Knie aus. Der Schmerz ist brennend und spannend, bei Berührung verstärkt (NRS 6/10).",
         "Die Rötung und Überwärmung am linken Unterschenkel sind gestern Abend aufgetreten und breitet sich seitdem progredient aus, der Schmerz sind brennend (NRS 6/10).",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Als Nächstes folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend berichtete der Patient über Schüttelfrost und Abgeschlagenheit. Fieber, Lymphknotenschwellung und Luftnot wurden verneint. Appetit unauffällig.",
         "Er hat Schüttelfrost und fühlt sich schlapp, und Fieber hat er auch.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "An Vorerkrankungen sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 1 bekannt. Zudem besteht eine Varikosis links. Z. n. Erysipel vor zwei Jahren und Z. n. Leistenhernien-Operation rechts. Medikation: Metformin 1000 mg 1-0-1, Ramipril 5 mg 1-0-0, Paracetamol 500 mg einmalig heute.",
         "An Vorerkrankungen sind ein Diabetes mellitus Typ 2, eine arterielle Hypertonie und eine Varikosis links bekannt. Z. n. Erysipel am linken Bein vor zwei Jahren, Z. n. Leistenhernien-Operation rechts. Keine Thrombose in der Vorgeschichte. Medikation: Metformin 1000 mg 1-0-1, Ramipril 5 mg 1-0-0, Paracetamol 500 mg einmalig heute.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Penicillinallergie (Exanthem). Nikotinkonsum ca. 25 py, gelegentlicher Alkoholkonsum. Familienanamnese: Vater Diabetes mellitus und Apoplex mit 72 J. Der Patient ist Busfahrer, verheiratet, lebt mit seiner Ehefrau im Reihenhaus.",
         "Er verträgt Pflaster nicht, raucht und trinkt Bier.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Anamnestisch besteht der Verdacht auf einen akuten Verschluss einer Beinarterie bei pAVK. Differenzialdiagnostisch kommen ein Erysipel, eine Phlegmone und eine Stauungsdermatitis in Betracht.",
         "Diagnose: Wundrose am Bein.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (u. a. Blutbild, CRP, Blutzucker, Kreatinin, Blutkulturen), eine Duplexsonographie der Beinvenen zum Ausschluss einer Thrombose sowie eine stationäre Aufnahme. Therapeutisch empfehlen wir eine intravenöse Antibiose mit Penicillin G, Hochlagerung, Kühlung und Thromboseprophylaxe sowie die antimykotische Behandlung der Interdigitalmykose.",
         "Zur weiteren Abklärung empfehlen wir eine Blutentnahme und eine Duplexsonographie. Therapeutisch empfehlen wir eine lokale Behandlung mit einer Kortisonsalbe, Wärmeanwendungen und eine Wiedervorstellung in einer Woche.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Der Patient hat ein rotes Bein, er heißt Weber.",
         "Ich möchte Ihnen Herrn Klaus Weber vorstellen, einen 61-jährigen Patienten, der sich heute mit seit gestern Abend bestehender, zunehmender Rötung und Schmerzen am linken Unterschenkel sowie Fieber vorgestellt hat.",
@@ -485,13 +461,12 @@
         "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
         "Sie beginnen mit einer ungesicherten Diagnose und dem Therapiewunsch statt mit dem Leitsymptom."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“ Er nickt und macht sich Notizen.",
       "options": [
         "Die Rötung trat nach einer Verletzung am Fuß auf und ist seit Stunden rückläufig. Begleitend bestehen Schüttelfrost und Fieber bis 39,1 °C sowie Luftnot. Eine Lymphknotenschwellung in der Leiste wurde verneint, der Appetit ist unauffällig.",
         "Er hat alles Mögliche.",
@@ -505,13 +480,12 @@
         "Inhaltlich falsch: Luftnot und Brustschmerzen wurden verneint.",
         "Richtig: knapp, strukturiert, mit relevantem Negativbefund."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Er ist gesund.",
         "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 1. Ein Erysipel hatte er bisher nicht. Wichtig: Penicillinallergie mit Exanthem. Der Vater hatte einen Schlaganfall.",
@@ -525,13 +499,12 @@
         "Richtig: relevante Vorgeschichte, früheres Erysipel (Rezidiv), Eintrittspforte und Allergiestatus.",
         "Unvollständig: Diagnosen, früheres Erysipel und Allergiestatus fehlen."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich vermute ein Erysipel des linken Unterschenkels mit Interdigitalmykose als Eintrittspforte. Differenzialdiagnostisch denke ich an eine Phlegmone, eine tiefe Beinvenenthrombose und eine Stauungsdermatitis.",
         "Ich denke an eine Zerrung.",
@@ -545,13 +518,12 @@
         "In der Prüfung sollen Sie eine begründete Vermutung äußern.",
         "Zu sicher („sicher“), und ein arterieller Verschluss passt nicht zu einem heißen, roten Bein mit Fieber."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde ihn mit Paracetamol nach Hause schicken.",
         "Ich würde Blut abnehmen, inklusive Blutbild, CRP, Blutzucker, Kreatinin und Blutkulturen, und eine Duplexsonographie der Beinvenen zum Thromboseausschluss durchführen. Therapeutisch intravenös Penicillin G, Hochlagerung, Kühlung, Thromboseprophylaxe und die Behandlung des Fußpilzes. Wegen Diabetes und Fieber würde ich ihn stationär aufnehmen.",
@@ -565,13 +537,12 @@
         "Nicht sinnvoll: Ein MRT ist nicht die erste Untersuchung, Wärme schadet, und der Patient hat einen Diabetes.",
         "Falsch: Eine Antibiose fehlt, und hoch dosierte NSAR sind keine Therapie des Erysipels."
       ],
-      "reply": "Oberarzt: „Gut. Welches Antibiotikum ist hier die erste Wahl, und warum?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Welches Antibiotikum ist hier die erste Wahl, und warum?“",
       "options": [
         "Ciprofloxacin, weil es gegen Streptokokken am besten wirkt und nur einmal täglich gegeben werden muss. Es ist bei Diabetikern besonders sicher und braucht keine Blutkulturen.",
         "Gentamicin, weil es gegen alle Hautbakterien wirkt und die Nieren schont.",
@@ -585,13 +556,12 @@
         "Fachlich falsch: Erreger sind meist Streptokokken, nicht Anaerobier.",
         "Richtig: Penicillin ist die erste Wahl, weil es gegen Streptokokken der Gruppe A wirkt."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Erysipel“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das erste Wort: „Erysipel“.",
       "options": [
         "Gürtelrose",
         "Hautpilz",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Phlegmone“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Phlegmone“.",
       "options": [
         "abgekapselte Eiteransammlung",
         "sich flächig ausbreitende eitrige Entzündung des Bindegewebes",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Tinea pedis“?",
+      "situation": "Er tippt auf „Tinea pedis“.",
       "options": [
         "Fußpilz",
         "Fußschweiß",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Lymphadenopathie“?",
+      "situation": "Dann auf „Lymphadenopathie“.",
       "options": [
         "Lymphknotenkrebs",
         "Flüssigkeitsstau im Gewebe",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Ödem“?",
+      "situation": "Zuletzt zeigt er auf „Ödem“.",
       "options": [
         "Bluterguss",
         "Hautrötung",

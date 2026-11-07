@@ -15,8 +15,8 @@ android {
         applicationId = "dev.yuji.quiz"
         minSdk = 26
         targetSdk = 36
-        versionCode = 20
-        versionName = "2.8.0"
+        versionCode = 21
+        versionName = "2.9.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         // `-PfeedUrl=http://127.0.0.1:8099` points a build at a local copy of the feed (with `adb reverse`), so a
         // question-pool or APK release can be tried end to end without publishing it. Debug builds allow plain HTTP

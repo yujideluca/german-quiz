@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Berger sitzt auf der Liege und reibt sich die Brust.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Ein Mann sitzt auf der Liege, reibt sich die Brust und sieht Sie an.",
       "options": [
         "Guten Morgen, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Berger?",
         "Hallo, was haben Sie denn?",
@@ -25,13 +24,12 @@
         "Die körperliche Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen.",
         "Verwaltungsfragen gehören nicht an den Anfang des Arzt-Patienten-Gesprächs, und Sie stellen sich nicht vor."
       ],
-      "reply": "Patient: „Ja, Berger. Guten Morgen, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Berger. Guten Morgen, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie ist Ihr Body-Mass-Index?",
         "Sie sind doch bestimmt noch keine fünfzig, oder?",
@@ -45,73 +43,69 @@
         "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
         "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
       ],
-      "reply": "Patient: „Ich bin 48, 1,80 Meter groß und wiege 94 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 48, 1,80 Meter groß und wiege 94 Kilo.“ Er reibt sich weiter die Brust und sieht Sie abwartend an.",
       "options": [
-        "Haben Sie Schmerzen in der Brust?",
+        "Sie haben bestimmt Herzprobleme, oder?",
         "Was führt Sie heute zu uns? Erzählen Sie bitte.",
         "Welche Symptomatik liegt bei Ihnen vor?",
         "Warum kommen Sie damit erst jetzt zum Arzt und nicht schon vor Monaten?"
       ],
       "answer": 1,
       "feedback": [
-        "Geschlossene Frage am Anfang: Sie geben die Antwort schon vor. Beginnen Sie offen.",
+        "Suggestivfrage, die zudem Angst macht. Beginnen Sie offen.",
         "Richtig: eine offene Frage lässt den Patienten selbst erzählen.",
         "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
         "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
       ],
-      "reply": "Patient: „Ich habe seit Monaten ein Brennen hinter dem Brustbein. Letzte Nacht war es so schlimm, dass ich nicht schlafen konnte. Ich hatte Angst vor einem Herzinfarkt.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten wissen, wo das Brennen genau sitzt und was es auslöst. Was sagen Sie?",
+      "situation": "Patient: „Ich habe seit Monaten ein Brennen hinter dem Brustbein. Letzte Nacht war es so schlimm, dass ich nicht schlafen konnte. Ich hatte Angst vor einem Herzinfarkt.“ Er legt die Hand mitten aufs Brustbein.",
       "options": [
         "Wo genau ist die Lokalisation des Schmerzes, und gibt es Trigger oder andere Provokationsfaktoren, die eine Exazerbation auslösen?",
         "Das Brennen kommt doch bestimmt vom Essen, richtig?",
-        "Wo sitzt das Brennen?",
+        "Wo sitzt das Brennen genau?",
         "Wo genau spüren Sie das Brennen, und wann tritt es besonders auf, zum Beispiel beim Essen, im Liegen oder bei Anstrengung?"
       ],
       "answer": 3,
       "feedback": [
         "Fachsprache („Lokalisation“, „Trigger“, „Provokationsfaktoren“, „Exazerbation“); der Patient versteht sie nicht.",
         "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
-        "Zu knapp: Sie erfahren nichts über Auslöser und Ausstrahlung.",
+        "Die Stelle zeigt der Patient Ihnen gerade; nach den Auslösern fragen Sie so nicht.",
         "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben."
       ],
-      "reply": "Patient: „Es sitzt hinter dem Brustbein und steigt manchmal bis in den Hals. Es wird schlimmer nach dem Essen, im Liegen und nach Rotwein oder fettigem Essen. Bei Anstrengung ist es nicht schlimmer.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patient: „Es sitzt hinter dem Brustbein und steigt manchmal bis in den Hals. Es wird schlimmer nach dem Essen, im Liegen und nach Rotwein oder fettigem Essen. Bei Anstrengung ist es nicht schlimmer.“ Er zuckt mit den Schultern: „Seit Monaten, aber wie es angefangen hat, weiß ich nicht mehr genau.“",
       "options": [
         "Wann hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben?",
         "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch rezidivierend?",
         "Haben Sie das erst seit heute Nacht?",
-        "Hat es plötzlich angefangen?"
+        "Hat es plötzlich angefangen, so wie bei einem Herzinfarkt?"
       ],
       "answer": 0,
       "feedback": [
         "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage.",
         "Fachsprache: „Erstmanifestation“, „subakut“ und „rezidivierend“ versteht der Patient nicht.",
         "Suggestivfrage; der Patient hat „seit Monaten“ schon gesagt.",
-        "Geschlossene Frage; sie erfasst den Verlauf nicht."
+        "Suggestiv und beängstigend; den Verlauf erfassen Sie so nicht."
       ],
-      "reply": "Patient: „Angefangen hat es vor etwa sechs Monaten, anfangs nur ab und zu. Seit zwei Wochen habe ich es fast jeden Tag, und es wird langsam schlimmer.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Art und Stärke der Beschwerden. Welche Formulierung passt?",
+      "situation": "Patient: „Angefangen hat es vor etwa sechs Monaten, anfangs nur ab und zu. Seit zwei Wochen habe ich es fast jeden Tag, und es wird langsam schlimmer.“ Er verzieht das Gesicht und sucht nach Worten: „Wie soll ich das beschreiben ...“",
       "options": [
         "Ist es ein typischer Angina-pectoris-Schmerz?",
         "Wie stark ist es von 1 bis 100?",
@@ -125,13 +119,12 @@
         "Richtig: Beispiele für die Beschwerdeart und die übliche Skala von 0 bis 10.",
         "Fachsprache („Qualität“, „Intensität“, „numerische Rating-Skala“); „vernichtend“ passt außerdem nicht zu einem Brennen."
       ],
-      "reply": "Patient: „Es brennt wie Feuer hinter dem Brustbein. Meistens so 4 von 10, letzte Nacht 7 von 10.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Es brennt wie Feuer hinter dem Brustbein. Meistens so 4 von 10, letzte Nacht 7 von 10.“ Er räuspert sich mehrmals, seine Stimme klingt rau.",
       "options": [
         "Hatten Sie Pyrosis, Regurgitation, Dysphagie oder Odynophagie, und ist Ihnen eine Dysphonie, ein Pruritus, ein Husten oder eine Dyspnoe mit Thoraxschmerz und Ausstrahlung in Arm oder Unterkiefer aufgefallen?",
         "Kommt manchmal saure Flüssigkeit in den Mund hoch? Haben Sie Probleme beim Schlucken, Heiserkeit oder Husten? Gibt es Atemnot oder Schmerzen, die in den Arm oder Kiefer ziehen?",
@@ -145,13 +138,12 @@
         "Zu umgangssprachlich und unkonkret.",
         "Suggestiv: Sie unterstellen das Symptom."
       ],
-      "reply": "Patient: „Ja, es kommt oft sauer hoch bis in den Mund, besonders nachts. Morgens bin ich heiser und habe trockenen Husten. Schlucken geht normal. Atemnot habe ich nicht, und in Arm oder Kiefer zieht nichts.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Ja, es kommt oft sauer hoch bis in den Mund, besonders nachts. Morgens bin ich heiser und habe trockenen Husten. Schlucken geht normal. Atemnot habe ich nicht, und in Arm oder Kiefer zieht nichts.“ Auf Ihrem Anamnesebogen ist das Feld für Fieber, Appetit, Stuhlgang und Gewicht noch leer.",
       "options": [
         "Wie ist die Vegetativa?",
         "Haben Sie Schüttelfrost, Nachtschweiß, einen ungewollten Gewichtsverlust, Hämatemesis, Meläna, Obstipation und Diarrhö, und wie sind Ihre Miktion und Ihr Appetit?",
@@ -165,13 +157,12 @@
         "Zu allgemein; der Patient sagt einfach „ja“.",
         "Richtig: Fieber, Appetit, Stuhlgang, Gewicht in Laiensprache, mit gezieltem Blick auf Alarmzeichen (Blut, schwarzer Stuhl)."
       ],
-      "reply": "Patient: „Fieber hatte ich nicht. Appetit ist normal, Stuhlgang auch, und Blut oder schwarzen Stuhl hatte ich nie. Ich habe in einem Jahr vier Kilo zugenommen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patient: „Fieber hatte ich nicht. Appetit ist normal, Stuhlgang auch, und Blut oder schwarzen Stuhl hatte ich nie. Ich habe in einem Jahr vier Kilo zugenommen.“ Auf dem Bogen sind die Felder für Vorerkrankungen und Operationen noch leer.",
       "options": [
         "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck oder Zucker? Und wurden Sie schon einmal operiert?",
         "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, einen Diabetes mellitus oder eine KHK, und gab es Voroperationen oder stationäre Aufenthalte?",
@@ -185,13 +176,12 @@
         "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
         "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
       ],
-      "reply": "Patient: „Ich habe Bluthochdruck. Zucker habe ich nicht. Vor zehn Jahren wurde ich wegen eines Leistenbruchs rechts operiert. Sonst nichts.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Ich habe Bluthochdruck. Zucker habe ich nicht. Vor zehn Jahren wurde ich wegen eines Leistenbruchs rechts operiert. Sonst nichts.“ Er zieht eine zerknitterte Tablettenschachtel aus der Jackentasche.",
       "options": [
         "Nehmen Sie Tabletten?",
         "Welche Pharmaka applizieren Sie?",
@@ -205,17 +195,16 @@
         "Richtig: Name, Dosierung und auch frei verkäufliche Mittel.",
         "Suggestivfrage, und Sie fragen nur nach einem einzigen Medikament."
       ],
-      "reply": "Patient: „Amlodipin 5 mg morgens gegen den Bluthochdruck. Wegen Rückenschmerzen nehme ich etwa dreimal pro Woche Ibuprofen 400. Und gegen das Brennen kaue ich bei Bedarf Rennie, ungefähr jeden zweiten Tag.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Amlodipin 5 mg morgens gegen den Bluthochdruck. Wegen Rückenschmerzen nehme ich etwa dreimal pro Woche Ibuprofen 400. Und gegen das Brennen kaue ich bei Bedarf Rennie, ungefähr jeden zweiten Tag.“ Die Pflegekraft ruft von der Tür, dass sie gleich ein Medikament vorbereitet und vorher mögliche Unverträglichkeiten wissen muss.",
       "options": [
         "Allergie?",
         "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
-        "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
+        "Sind Sie gegen Penicillin allergisch? Das frage ich zur Sicherheit, weil Penicillin das Antibiotikum ist, das wir am häufigsten verwenden.",
         "Sind Sie hypersensibel?"
       ],
       "answer": 1,
@@ -225,13 +214,12 @@
         "Zu eng: Allergien gegen andere Medikamente, Lebensmittel oder Pflaster übersehen Sie.",
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
       ],
-      "reply": "Patient: „Gegen Penicillin, da bekam ich als Kind einen Ausschlag am ganzen Körper.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Penicillin, da bekam ich als Kind einen Ausschlag am ganzen Körper.“ Aus seiner Jackentasche ragt eine Zigarettenschachtel.",
       "options": [
         "Sind Sie Raucher oder Alkoholiker?",
         "Wie ist Ihr Nikotinabusus, und wie hoch ist Ihr täglicher Alkoholabusus in Gramm Reinalkohol?",
@@ -245,33 +233,31 @@
         "Wertend und ungenau.",
         "Richtig: neutral, konkret, mit Menge."
       ],
-      "reply": "Patient: „Ich rauche seit 25 Jahren etwa 20 Zigaretten am Tag. Abends trinke ich meistens zwei Gläser Rotwein. Drogen nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche seit 25 Jahren etwa 20 Zigaretten am Tag. Abends trinke ich meistens zwei Gläser Rotwein. Drogen nie.“ Dann sagt er nachdenklich: „In unserer Familie gab es einiges.“",
       "options": [
         "Wie ist die Familienanamnese?",
         "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Herz-, Magen- oder Krebserkrankungen?",
-        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Ihr Vater war also krank? Woran ist er gestorben? Das interessiert mich besonders.",
         "Hat Ihre Familie dieselbe Krankheit?"
       ],
       "answer": 1,
       "feedback": [
         "„Familienanamnese“ ist ein Fachwort.",
         "Richtig: offen, mit passenden Beispielen.",
-        "Zu eng: Geschwister und Kinder fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Sie unterstellen, dass der Vater gestorben ist, und fragen nur nach ihm; andere Verwandte und Erkrankungen fehlen.",
         "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
       ],
-      "reply": "Patient: „Mein Vater hatte mit 62 einen Herzinfarkt. Meine Mutter hat Bluthochdruck. Magen- oder Speiseröhrenkrebs gab es bei uns nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Mein Vater hatte mit 62 einen Herzinfarkt. Meine Mutter hat Bluthochdruck. Magen- oder Speiseröhrenkrebs gab es bei uns nicht.“ Er trägt eine Jacke mit dem Logo eines Verkehrsbetriebs und gähnt.",
       "options": [
         "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
         "Was ist Ihr sozialer Status?",
@@ -285,13 +271,12 @@
         "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
         "Unangemessen."
       ],
-      "reply": "Patient: „Ich bin Busfahrer im Schichtdienst, oft esse ich spät abends. Ich wohne mit meiner Frau und unseren zwei Kindern zusammen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich bin Busfahrer im Schichtdienst, oft esse ich spät abends. Ich wohne mit meiner Frau und unseren zwei Kindern zusammen.“ Er sieht Sie besorgt an: „Und, Herr Doktor, was habe ich denn?“",
       "options": [
         "Sie haben eine gastroösophageale Refluxkrankheit mit Pyrosis und Regurgitation bei insuffizientem unterem Ösophagussphinkter, vermutlich mit Hiatushernie.",
         "Es ist sicher nichts Schlimmes, das ist nur der Stress.",
@@ -305,13 +290,12 @@
         "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung und Herzabklärung.",
         "Falsch und beängstigend."
       ],
-      "reply": "Patient: „Magensäure? Und was passiert jetzt mit mir?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Brauche ich jetzt eine Magenspiegelung, und was kann ich selbst tun?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Magensäure? Und was passiert jetzt mit mir? Brauche ich jetzt eine Magenspiegelung, und was kann ich selbst tun?“",
       "options": [
         "Ja, morgen früh bekommen Sie eine Magenspiegelung, danach bleiben Sie zur Überwachung stationär, und bis dahin dürfen Sie nichts mehr essen.",
         "Das entscheidet der Chef, ich weiß es nicht.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Berger ist 48 und hat Sodbrennen.",
         "Herr Thomas Berger, ein 48-jähriger Patient, stellte sich heute in unserer Notaufnahme mit seit sechs Monaten bestehendem, zuletzt zunehmendem retrosternalem Brennen vor.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Das Brennen kommt nach dem Essen und nachts, wenn der Patient liegt, und es ist über die Zeit immer schlimmer geworden.",
         "Die Beschwerden seien postprandial und nachts aufgetreten und strahlen in den linken Arm aus, NRS 7.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend berichtete der Patient über saures Aufstoßen, morgendliche Heiserkeit und trockenen Reizhusten. Dysphagie, Hämatemesis, Meläna und Fieber wurden verneint. Gewichtszunahme von 4 kg innerhalb eines Jahres bei unauffälligem Appetit und Stuhlgang.",
         "Er hatte saures Aufstoßen und ist morgens heiser.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "Vorerkrankungen: Bluthochdruck. Medikamente: Amlodipin, Ibuprofen, Rennie.",
         "An Vorerkrankungen sind eine arterielle Hypotonie und ein Diabetes mellitus Typ 2 bekannt. Z. n. Appendektomie im Kindesalter. Medikation: Amlodipin 5 mg 0-0-1, Metformin 1000 mg 1-0-1, Ibuprofen 400 mg dreimal wöchentlich, Antazida bei Bedarf.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: keine. Noxen: Nikotinabusus.",
         "Penicillinallergie (Exanthem). Nikotinkonsum ca. 25 py, regelmäßiger Alkoholkonsum (meist zwei Gläser Rotwein am Abend). Familienanamnese: Vater Myokardinfarkt mit 62 J., Mutter arterielle Hypertonie. Der Patient ist Busfahrer im Schichtdienst, verheiratet, lebt mit Ehefrau und zwei Kindern.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Diagnose: Sodbrennen.",
         "Es besteht eine gesicherte Refluxösophagitis.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Zur Abklärung empfehlen wir EKG, Troponin und Basislabor zum Ausschluss eines akuten Koronarsyndroms. Therapeutisch empfehlen wir eine Probetherapie mit Pantoprazol 40 mg 1-0-0 über vier bis acht Wochen, eine NSAR-Pause sowie Allgemeinmaßnahmen (Gewichtsreduktion, Nikotin- und Alkoholkarenz). Bei Persistenz oder Alarmsymptomen ist eine Ösophagogastroduodenoskopie indiziert.",
         "Wir machen ein EKG, nehmen etwas Blut ab und geben dem Patienten ein paar Tabletten gegen die Schmerzen, und dann sehen wir weiter.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Der Patient hat Sodbrennen, er heißt Berger.",
         "Also, der Mann trinkt jeden Abend Wein und raucht ziemlich viel ...",
@@ -485,13 +461,12 @@
         "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz.",
         "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“",
       "options": [
         "Das Brennen tritt postprandial und nachts im Liegen auf, mit saurem Aufstoßen bis in den Mund sowie morgendlicher Heiserkeit und Reizhusten. Es ist belastungsunabhängig, die Intensität beträgt nachts bis 7/10. Dysphagie, Hämatemesis und Meläna wurden verneint.",
         "Er hat alles Mögliche.",
@@ -505,13 +480,12 @@
         "Inhaltlich falsch: Das Brennen ist belastungsunabhängig, und Ausstrahlung in den Arm, Atemnot, Schweißausbruch und Fieber wurden verneint.",
         "Inhaltlich falsch: Fieber, Bluterbrechen und Schluckstörungen wurden verneint."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Er ist gesund.",
         "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 2. Keine Allergien. Er raucht nicht und trinkt keinen Alkohol.",
@@ -525,13 +499,12 @@
         "Unvollständig: Dosis, Rauchen, Alkohol, Allergie und Familienanamnese fehlen.",
         "Richtig: relevante Vorgeschichte, Risikofaktoren für Reflux (NSAR, Nikotin, Alkohol, Übergewicht) und die Allergie."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich denke an Magenprobleme.",
         "Ich vermute eine gastroösophageale Refluxkrankheit. Differenzialdiagnostisch denke ich an ein akutes Koronarsyndrom, eine NSAR-induzierte Gastritis oder ein Ulcus ventriculi und eine eosinophile Ösophagitis.",
@@ -545,13 +518,12 @@
         "Zu sicher („sicher“): Das Brennen ist belastungsunabhängig und nach Mahlzeiten betont, ein Infarkt ist nicht die wahrscheinlichste Diagnose, aber auszuschließen.",
         "In der Prüfung sollen Sie eine begründete Vermutung äußern."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde ihn nach Hause schicken.",
         "Ich würde sofort eine Koloskopie machen und zusätzlich eine Stuhlprobe abgeben lassen, weil ich eine Darmerkrankung vermute.",
@@ -565,13 +537,12 @@
         "Richtig: Herz zuerst ausschließen, dann PPI-Probetherapie, NSAR-Pause, Allgemeinmaßnahmen und Endoskopie bei Alarmzeichen oder Therapieversagen.",
         "Fachlich falsch: Ibuprofen bindet keine Säure, sondern kann die Schleimhaut schädigen und Reflux verschlechtern."
       ],
-      "reply": "Oberarzt: „Gut. Was erwarten Sie in der Gastroskopie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Was erwarten Sie in der Gastroskopie?“",
       "options": [
         "Ich erwarte gegebenenfalls Rötungen und Erosionen in der distalen Speiseröhre im Sinne einer Refluxösophagitis, eventuell mit Hiatushernie. Bei normaler Schleimhaut wäre eine nichterosive Refluxkrankheit dennoch möglich.",
         "Ich erwarte ein blutendes Ulcus an der Magenhinterwand mit Forrest-Klassifikation Ib und dazu eine Hämatemesis.",
@@ -585,13 +556,12 @@
         "Falsch: Viele Patienten haben eine nichterosive Refluxkrankheit (NERD) mit normaler Schleimhaut.",
         "Das ist ein Befund der Achalasie (Breischluck) und passt nicht, denn der Patient hat keine Schluckstörung."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Pyrosis“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Pyrosis“ und sieht Sie fragend an.",
       "options": [
         "Sodbrennen",
         "Erbrechen",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Regurgitation“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Regurgitation“.",
       "options": [
         "Erbrechen mit Würgen",
         "Zurückfließen von Mageninhalt in Speiseröhre oder Mund, ohne Würgen",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Dysphagie“?",
+      "situation": "Er tippt auf „Dysphagie“.",
       "options": [
         "Atemnot",
         "Heiserkeit",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Hiatushernie“?",
+      "situation": "Dann auf „Hiatushernie“.",
       "options": [
         "Leistenbruch",
         "Verlagerung eines Teils des Magens durch das Zwerchfell in den Brustraum",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Barrett-Ösophagus“?",
+      "situation": "Zuletzt zeigt er auf „Barrett-Ösophagus“.",
       "options": [
         "Verengung der Speiseröhre",
         "Ausstülpung der Speiseröhrenwand",

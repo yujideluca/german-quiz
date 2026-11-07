@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Becker sitzt angespannt auf dem Stuhl, neben ihm seine Schwester. Er schaut immer wieder zur Tür.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer der psychiatrischen Notaufnahme. Ein junger Mann sitzt angespannt auf dem Stuhl, neben ihm seine Schwester. Er schaut immer wieder zur Tür.",
       "options": [
         "Guten Abend, Herr Becker. Setzen Sie sich bitte, ich habe leider nicht viel Zeit. Erzählen Sie mir bitte gleich, was es mit diesen Stimmen auf sich hat.",
         "Hallo, ich bin der Doktor. Sie sind der Patient mit der Psychose, oder?",
@@ -25,13 +24,12 @@
         "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
         "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor."
       ],
-      "reply": "Patient: „Ja, Becker. Guten Abend. Meine Schwester hat mich hergebracht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Becker. Guten Abend. Meine Schwester hat mich hergebracht.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
         "Wie ist Ihr Body-Mass-Index?",
@@ -45,13 +43,12 @@
         "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
         "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
       ],
-      "reply": "Patient: „Ich bin 24, 1,80 Meter groß und wiege etwa 68 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 24, 1,80 Meter groß und wiege etwa 68 Kilo.“ Er sieht Sie abwartend an. Warum er heute hier ist, wissen Sie noch nicht.",
       "options": [
         "Haben Sie Stimmen gehört?",
         "Was führt Sie heute zu uns? Erzählen Sie bitte in Ihren eigenen Worten.",
@@ -65,13 +62,12 @@
         "Fachsprache und eine vorweggenommene Diagnose („Psychose“). Mit Patienten sprechen Sie Laiensprache.",
         "Abwertend und vorwurfsvoll. Das zerstört das Vertrauen, besonders bei einem misstrauischen Patienten."
       ],
-      "reply": "Patient: „Seit ein paar Wochen höre ich Stimmen, und ich glaube, dass mich jemand verfolgt. Die Nachbarn überwachen mich.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten die Stimmen genauer erfassen. Was sagen Sie?",
+      "situation": "Patient: „Seit ein paar Wochen höre ich Stimmen, und ich glaube, dass mich jemand verfolgt. Die Nachbarn überwachen mich.“ Er senkt die Stimme und blickt zur Wand.",
       "options": [
         "Können Sie mir beschreiben, was Sie genau hören? Wie viele Stimmen sind es, kommen sie von außen oder aus dem Kopf, und was sagen sie?",
         "Sind die Stimmen real oder halluzinatorisch? Handelt es sich um imperative, kommentierende oder dialogisierende Stimmen, und besteht eine Ich-Störung?",
@@ -85,13 +81,12 @@
         "Suggestivfrage, die den Patienten zusätzlich ängstigt.",
         "Das hat der Patient schon gesagt. Fragen Sie nach Zahl, Herkunft und Inhalt."
       ],
-      "reply": "Patient: „Es sind zwei Männerstimmen, von draußen, wie aus der Wand. Sie reden über mich und sagen, was ich gerade tue. Meistens abends und nachts.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patient: „Es sind zwei Männerstimmen, von draußen, wie aus der Wand. Sie reden über mich und sagen, was ich gerade tue. Meistens abends und nachts.“ Seine Schwester wirft ein, er habe sich schon länger verändert.",
       "options": [
         "Wie war der zeitliche Verlauf seit der Erstmanifestation: akut, subakut oder schleichend, mit oder ohne Prodromalphase, und gab es eine Residualsymptomatik?",
         "Seit wann hören Sie die Stimmen?",
@@ -101,17 +96,16 @@
       "answer": 2,
       "feedback": [
         "Fachsprache: „Erstmanifestation“, „subakut“ und „Prodromalphase“ versteht der Patient nicht.",
-        "Fragt nur nach dem Beginn der Stimmen; die Vorphase und der Verlauf fehlen.",
+        "Das hat der Patient schon gesagt (seit ein paar Wochen). Fragen Sie nach Vorphase und Verlauf.",
         "Richtig: Beginn, Vorphase und Verlauf in einer klaren, laienverständlichen Frage.",
         "Geschlossene Frage; sie erfasst Vorphase und Verlauf nicht."
       ],
-      "reply": "Patient: „Die Stimmen sind seit drei Wochen da, in der letzten Woche wurde es schlimmer. Schon seit etwa einem halben Jahr schlafe ich schlecht, und ich habe mich zurückgezogen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Stimmung und Gefährdung. Welche Formulierung passt?",
+      "situation": "Patient: „Die Stimmen sind seit drei Wochen da, in der letzten Woche wurde es schlimmer. Schon seit etwa einem halben Jahr schlafe ich schlecht, und ich habe mich zurückgezogen.“ Er spricht immer leiser und wirkt erschöpft und niedergeschlagen.",
       "options": [
         "Sind Sie suizidal?",
         "Sie wollen sich bestimmt nichts antun, oder?",
@@ -125,13 +119,12 @@
         "Richtig: übliche Skala 0 bis 10, und die Frage nach Suizidgedanken wird offen und direkt gestellt.",
         "Unübliche Skala, und das Suizidscreening darf bei einer Psychose nie aufgeschoben werden."
       ],
-      "reply": "Patient: „Ungefähr 3 von 10. Mir ist alles zu viel. Ich will mir nichts antun, und ich will auch niemandem etwas tun. Die Stimmen befehlen mir nichts.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Ungefähr 3 von 10. Mir ist alles zu viel. Ich will mir nichts antun, und ich will auch niemandem etwas tun. Die Stimmen befehlen mir nichts.“ Er reibt sich die Augen und zuckt bei jedem Geräusch auf dem Flur zusammen.",
       "options": [
         "Haben Sie Wahn, Ich-Störungen, Konzentrationsstörungen oder Angst und Unruhe, und fühlen Sie sich affektiv verflacht?",
         "Haben Sie Schlafprobleme oder Angst? Fällt es Ihnen schwer, sich zu konzentrieren? Haben Sie das Gefühl, dass Ihre Gedanken von außen beeinflusst werden?",
@@ -145,13 +138,12 @@
         "Zu umgangssprachlich und unkonkret.",
         "Suggestiv: Sie unterstellen das Symptom und bestätigen den Verfolgungsgedanken."
       ],
-      "reply": "Patient: „Ich schlafe nur drei Stunden pro Nacht. Ich habe Angst, und ich kann mich nicht konzentrieren. Manchmal habe ich das Gefühl, dass mir jemand Gedanken in den Kopf setzt.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Ich schlafe nur drei Stunden pro Nacht. Ich habe Angst, und ich kann mich nicht konzentrieren. Manchmal habe ich das Gefühl, dass mir jemand Gedanken in den Kopf setzt.“ Er wirkt schmal und blass, die Hose rutscht ihm fast von den Hüften.",
       "options": [
         "Wie ist die Vegetativa?",
         "Haben Sie Fieber, Kopfschmerzen, Krampfanfälle, Dysurie, Obstipation oder Diarrhö, Nachtschweiß und Gewichtsverlust?",
@@ -165,13 +157,12 @@
         "Zu allgemein; der Patient sagt einfach „ja“.",
         "Richtig: Laiensprache, und mit Fieber, Kopfschmerzen und Krampfanfall suchen Sie gezielt nach einer körperlichen Ursache."
       ],
-      "reply": "Patient: „Appetit habe ich kaum, ich habe etwa 5 Kilo abgenommen. Stuhlgang und Wasserlassen sind normal. Fieber, Kopfschmerzen oder Krampfanfälle hatte ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patient: „Appetit habe ich kaum, ich habe etwa 5 Kilo abgenommen. Stuhlgang und Wasserlassen sind normal. Fieber, Kopfschmerzen oder Krampfanfälle hatte ich nicht.“ Zu den aktuellen Beschwerden wissen Sie jetzt vieles. Über frühere Erkrankungen wissen Sie noch nichts.",
       "options": [
         "Haben Sie psychiatrische oder neurologische Vorerkrankungen wie eine Epilepsie, gab es stationäre Aufenthalte, Voroperationen oder ein Schädel-Hirn-Trauma?",
         "Hatten Sie früher schon einmal körperliche oder seelische Erkrankungen? Waren Sie schon einmal in Behandlung? Wurden Sie schon einmal operiert, oder hatten Sie eine schwere Kopfverletzung?",
@@ -185,13 +176,12 @@
         "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
         "Zu eng und stigmatisierend: körperliche Erkrankungen und Operationen fehlen."
       ],
-      "reply": "Patient: „Vor zwei Jahren war ich wegen Prüfungsangst bei einem Psychologen, sonst nichts. Operiert wurde ich nie, eine Kopfverletzung hatte ich auch nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Vor zwei Jahren war ich wegen Prüfungsangst bei einem Psychologen, sonst nichts. Operiert wurde ich nie, eine Kopfverletzung hatte ich auch nicht.“ Er greift in seine Jackentasche und holt ein kleines Fläschchen heraus.",
       "options": [
         "Welche Pharmaka applizieren Sie?",
         "Nehmen Sie Tabletten?",
@@ -205,13 +195,12 @@
         "Richtig: Name, Dosierung und auch frei verkäufliche und pflanzliche Mittel.",
         "Suggestivfrage. Fragen Sie offen."
       ],
-      "reply": "Patient: „Nichts vom Arzt. Nur abends 20 Tropfen Baldrian, damit ich besser schlafe.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Nichts vom Arzt. Nur abends 20 Tropfen Baldrian, damit ich besser schlafe.“ Im Aufnahmebogen ist das Feld für Allergien noch leer.",
       "options": [
         "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
         "Allergie?",
@@ -225,13 +214,12 @@
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl.",
         "Zu eng: Allergien gegen andere Medikamente, Lebensmittel oder Pflaster übersehen Sie."
       ],
-      "reply": "Patient: „Gegen Haselnüsse. Dann schwellen mir die Lippen an.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln und Drogen?",
+      "situation": "Patient: „Gegen Haselnüsse. Dann schwellen mir die Lippen an.“ Seine Finger sind gelblich verfärbt, und seine Jacke riecht nach Rauch.",
       "options": [
         "Sind Sie Kiffer oder Trinker?",
         "Wie ist Ihr Nikotin-, Alkohol- und Cannabisabusus?",
@@ -245,13 +233,12 @@
         "Suggestiv und vorwurfsvoll; der Patient fühlt sich beschuldigt.",
         "Richtig: neutral, konkret, mit Menge, Häufigkeit und Beispielen für Substanzen."
       ],
-      "reply": "Patient: „Ich rauche seit 6 Jahren etwa 10 Zigaretten am Tag. Am Wochenende trinke ich zwei Bier. Cannabis rauche ich seit meinem 17. Lebensjahr, in den letzten Monaten fast jeden Abend einen Joint. Andere Drogen nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche seit 6 Jahren etwa 10 Zigaretten am Tag. Am Wochenende trinke ich zwei Bier. Cannabis rauche ich seit meinem 17. Lebensjahr, in den letzten Monaten fast jeden Abend einen Joint. Andere Drogen nie.“ Seine Schwester sieht zu Boden und murmelt: „Bei uns in der Familie gab es so etwas schon einmal.“",
       "options": [
         "Wie ist die Familienanamnese bei psychiatrischen Erkrankungen?",
         "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel psychische Erkrankungen, Suchterkrankungen, Herz- oder Krebserkrankungen?",
@@ -265,13 +252,12 @@
         "Abwertendes Wort „verrückt“; verletzend und stigmatisierend.",
         "Zu eng: Geschwister und psychische Erkrankungen in der Familie erfahren Sie so nicht."
       ],
-      "reply": "Patient: „Der Bruder meines Vaters hatte Schizophrenie, er lebt in einem Heim. Meine Mutter hat Bluthochdruck.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Der Bruder meines Vaters hatte Schizophrenie, er lebt in einem Heim. Meine Mutter hat Bluthochdruck.“ Seine Schwester nickt und sagt: „Er hat sich in letzter Zeit ganz in seine Wohnung zurückgezogen.“",
       "options": [
         "Was ist Ihr sozialer Status?",
         "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
@@ -285,13 +271,12 @@
         "Richtig: Beruf, Wohnsituation und Unterstützung, wichtig für die Behandlungsplanung.",
         "Unangemessen."
       ],
-      "reply": "Patient: „Ich studiere Informatik, 6. Semester, und bin ledig. Ich wohne allein in einer Einzimmerwohnung. Meine Schwester und meine Eltern wohnen in der Nähe, meine Schwester kommt oft vorbei.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich studiere Informatik, 6. Semester, und bin ledig. Ich wohne allein in einer Einzimmerwohnung. Meine Schwester und meine Eltern wohnen in der Nähe, meine Schwester kommt oft vorbei.“ Er sieht Sie misstrauisch an: „Und, Herr Doktor, was ist denn mit mir los?“",
       "options": [
         "Sie haben eine paranoid-halluzinatorische Schizophrenie mit akustischen Halluzinationen und Verfolgungswahn.",
         "Es ist wahrscheinlich nur Stress durch das Studium. Die Stimmen sind nicht echt, das bilden Sie sich nur ein. Gehen Sie nach Hause, schlafen Sie sich aus, und in ein paar Tagen ist alles wieder gut, das verspreche ich Ihnen.",
@@ -305,13 +290,12 @@
         "Falsch und beängstigend: Eine Psychose ist behandelbar.",
         "Richtig: Verdacht (nicht Gewissheit), Laiensprache, entlastend und mit Hoffnung."
       ],
-      "reply": "Patient: „Eine Krankheit? Und was passiert jetzt mit mir?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Muss ich hier bleiben?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Eine Krankheit? Und was passiert jetzt mit mir? Muss ich hier bleiben?“",
       "options": [
         "Ich empfehle Ihnen, einige Tage bei uns auf der Station zu bleiben. Zuerst nehmen wir Blut und Urin ab und untersuchen den Kopf, um andere Ursachen auszuschließen. Dann besprechen wir mit Ihnen Tabletten, die die Stimmen und die Angst vermindern. Die Aufnahme ist freiwillig.",
         "Das entscheiden wir allein. Wenn Sie sich weigern, sperren wir Sie auf der geschlossenen Station ein, und Sie bekommen die Tabletten, ob Sie wollen oder nicht. Außerdem bekommen Sie sofort eine Spritze, und Ihre Eltern und Ihre Schwester dürfen Sie in den ersten Wochen nicht besuchen.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Becker ist 24 und hört Stimmen.",
         "Herr Jan Becker, ein 24-jähriger Patient, stellte sich heute in Begleitung seiner Schwester in unserer psychiatrischen Notaufnahme mit seit drei Wochen bestehendem Stimmenhören und Verfolgungsgedanken vor.",
@@ -343,15 +326,14 @@
         "Umgangssprache und zu knapp; im Arztbrief fehlen Ort und Dauer.",
         "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort, Dauer und Leitsymptom.",
         "Inhaltlich falsch: Die Beschwerden bestehen seit drei Wochen, nicht seit drei Tagen.",
-        "Grammatik: „in unserer Notaufnahme“ (Dativ, wo?), und die Verfolgungsgedanken fehlen."
+        "Unvollständig: Die Verfolgungsgedanken und die Begleitung durch die Schwester fehlen."
       ],
       "reply": null
     },
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Der Patient hört Stimmen, fühlt sich verfolgt und schläft schlecht.",
         "Seit drei Wochen bestehen akustische Halluzinationen in Form von zwei männlichen, imperativen Stimmen, die den Patienten zur Selbstverletzung auffordern, sowie ein Verfolgungswahn. Eine akute Suizidalität wurde bejaht.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend berichtete der Patient über Ein- und Durchschlafstörungen (ca. 3 h pro Nacht), Ängste und Konzentrationsstörungen. Appetitminderung mit Gewichtsverlust von ca. 5 kg. Fieber, Kopfschmerzen und Krampfanfälle wurden verneint.",
         "Er schläft schlecht, isst wenig und hat Schiss.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "Vorerkrankungen: ein Schädel-Hirn-Trauma vor zwei Jahren und eine Epilepsie. Medikation: Risperidon 2 mg 1-0-1, Baldriantropfen 20 Tropfen 1-1-1.",
         "Er war mal beim Psychologen und nimmt Baldrian.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: keine. Noxen: Nikotinabusus. Er raucht Gras und ist Student.",
         "Haselnussallergie (Lippenschwellung). Nikotinkonsum ca. 3 py, Alkohol nur am Wochenende (2 Bier), regelmäßiger Cannabiskonsum seit dem 17. Lebensjahr, zuletzt fast täglich. Familienanamnese: Onkel väterlicherseits mit Schizophrenie, Mutter mit arterieller Hypertonie. Der Patient ist Informatikstudent, ledig und lebt allein.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Diagnose: Der Patient ist verrückt geworden.",
         "Es besteht eine gesicherte Schizophrenie. Weitere Differenzialdiagnosen sind nicht nötig, da die Familienanamnese eindeutig ist.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Wir veranlassen sofort die Unterbringung auf der geschlossenen Station gegen den Willen des Patienten und eine Fixierung. Haloperidol 20 mg 1-1-1 ohne vorherige Diagnostik.",
         "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (u. a. Blutbild, CRP, Elektrolyte, Leber- und Nierenwerte, TSH, Glukose), ein Urin-Drogenscreening, ein EKG, ein cMRT sowie ein EEG. Wir empfehlen die freiwillige stationäre Aufnahme und nach der Diagnostik die Einleitung einer antipsychotischen Therapie.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Ich möchte Ihnen Herrn Jan Becker vorstellen, einen 24-jährigen Patienten, der sich heute in Begleitung seiner Schwester mit seit drei Wochen bestehendem Stimmenhören und Verfolgungsgedanken vorgestellt hat.",
         "Der Patient hört Stimmen, er heißt Becker.",
@@ -485,13 +461,12 @@
         "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
         "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“",
       "options": [
         "Er hört zwei weibliche, imperative Stimmen, die ihn zur Selbstverletzung auffordern, und eine akute Suizidalität wurde bejaht. Begleitend bestehen Schlafstörungen, Ängste und Fieber bis 39 °C.",
         "Er hat Stimmen und Angst.",
@@ -505,13 +480,12 @@
         "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
         "Inhaltlich falsch: Krampfanfälle wurden verneint."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Er ist völlig gesund, nimmt keine Drogen, und in der Familie gibt es keine Erkrankungen.",
         "Somatisch ist er gesund. Vor zwei Jahren war er wegen Prüfungsangst in psychologischer Behandlung. Wichtig: regelmäßiger Cannabiskonsum, zuletzt fast täglich, und Nikotin mit etwa 3 py. Der Onkel väterlicherseits hat eine Schizophrenie. Allergie gegen Haselnüsse mit Lippenschwellung.",
@@ -525,13 +499,12 @@
         "Inhaltlich falsch: Es gab keine Medikation und keine stationären Aufenthalte.",
         "Unvollständig: Cannabis, Familienanamnese und Allergie fehlen."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich vermute eine dissoziative Identitätsstörung. Differenzialdiagnostisch denke ich an ein Delirium tremens und eine Alzheimer-Demenz.",
         "Ich denke an Stimmen.",
@@ -545,13 +518,12 @@
         "Zu sicher („sicher“), und eine organische Ursache und eine Schizophrenie dürfen nicht übersehen werden.",
         "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde ihn mit einem Termin beim Hausarzt entlassen und ihm sagen, er soll mit dem Kiffen aufhören.",
         "Ich würde Blut und Urin untersuchen, inklusive Drogenscreening, ein EKG schreiben und ein cMRT sowie ein EEG veranlassen. Ich würde dem Patienten die freiwillige stationäre Aufnahme anbieten und nach der Diagnostik ein Antipsychotikum der zweiten Generation in niedriger Dosis beginnen, zum Beispiel Risperidon 1 bis 2 mg pro Tag, nach Aufklärung und gemeinsamer Entscheidung. Außerdem empfehle ich Cannabisabstinenz.",
@@ -565,13 +537,12 @@
         "Gefährlich und leitlinienwidrig: Es besteht keine akute Gefährdung, und die Dosis ist viel zu hoch.",
         "Fachlich falsch: Benzodiazepine behandeln die Psychose nicht und machen abhängig; das Mittel der Wahl ist ein Antipsychotikum."
       ],
-      "reply": "Oberarzt: „Gut. Wie lange soll die Rezidivprophylaxe nach der ersten Episode mindestens dauern?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Wie lange soll die Rezidivprophylaxe nach der ersten Episode mindestens dauern?“",
       "options": [
         "Vier Wochen reichen. Sobald die Stimmen weg sind, kann das Medikament abgesetzt werden.",
         "Lebenslang, bei jedem Patienten schon nach der ersten Episode, ohne je einen Absetzversuch zu planen.",
@@ -585,13 +556,12 @@
         "Richtig: leitlinienkonform und mit gemeinsamer Entscheidung.",
         "Falsch: Nach drei Monaten ist das Rückfallrisiko noch hoch."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Halluzination“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Halluzination“ und sieht Sie fragend an.",
       "options": [
         "unerschütterliche Fehlüberzeugung",
         "Sinneswahrnehmung ohne äußeren Reiz, zum Beispiel Stimmenhören",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Wahn“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Wahn“.",
       "options": [
         "Sinnestäuschung ohne äußeren Reiz",
         "starke Angst ohne Auslöser",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Affektverflachung“?",
+      "situation": "Er tippt auf „Affektverflachung“.",
       "options": [
         "übertrieben gehobene Stimmung",
         "starke Gefühlsschwankungen",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Suizidalität“?",
+      "situation": "Dann auf „Suizidalität“.",
       "options": [
         "Gedanken oder Handlungen, sich das Leben zu nehmen",
         "Absicht, anderen Menschen zu schaden",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Prodromalphase“?",
+      "situation": "Zuletzt zeigt er auf „Prodromalphase“.",
       "options": [
         "Zeit der Besserung nach der Erkrankung",
         "Vorphase mit unspezifischen Frühsymptomen vor dem Ausbruch",

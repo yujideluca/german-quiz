@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Becker liegt blass und schwitzend auf der Trage und presst die Hände auf den Bauch.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten die Notaufnahme. Herr Becker liegt blass und schwitzend auf der Trage und presst die Hände auf den Bauch. Der Rettungssanitäter übergibt Ihnen das Protokoll und tritt zur Seite.",
       "options": [
         "Guten Tag, Herr Becker. Machen Sie bitte sofort die Hose auf, ich muss Ihren Bauch untersuchen und in der Leiste den Puls tasten, bevor wir reden.",
         "Guten Tag, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Becker?",
@@ -25,13 +24,12 @@
         "Zu umgangssprachlich und ohne Vorstellung. Eine Bemerkung zum Aussehen ist unhöflich und beunruhigt den Patienten.",
         "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor."
       ],
-      "reply": "Patient: „Ja, Becker. Guten Tag, Herr Doktor. Bitte helfen Sie mir.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Becker. Guten Tag, Herr Doktor. Bitte helfen Sie mir.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert? Das brauche ich für die Akte.",
         "Sie sind doch bestimmt schon über siebzig, oder?",
@@ -45,13 +43,12 @@
         "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
         "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst."
       ],
-      "reply": "Patient: „Ich bin 71, 1,78 Meter groß und wiege etwa 88 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 71, 1,78 Meter groß und wiege etwa 88 Kilo.“ Er stöhnt und sieht Sie an. Den Grund seines Kommens kennen Sie noch nicht.",
       "options": [
         "Was führt Sie heute zu uns? Erzählen Sie bitte.",
         "Haben Sie starke Bauchschmerzen und Rückenschmerzen?",
@@ -65,13 +62,12 @@
         "Vorwurfsvoll und wertend. Das stört das Vertrauen gleich zu Beginn.",
         "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache."
       ],
-      "reply": "Patient: „Vor etwa 45 Minuten habe ich plötzlich furchtbare Schmerzen im Bauch und im Rücken bekommen. Meine Frau hat den Rettungswagen gerufen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten wissen, wo genau der Schmerz sitzt und ob er wandert. Was sagen Sie?",
+      "situation": "Patient: „Vor etwa 45 Minuten habe ich plötzlich furchtbare Schmerzen im Bauch und im Rücken bekommen. Meine Frau hat den Rettungswagen gerufen.“ Er legt eine Hand auf die Bauchmitte und deutet mit der anderen vage nach hinten.",
       "options": [
         "Der Schmerz sitzt doch bestimmt links im Unterbauch und zieht in den Hoden, richtig?",
         "Würden Sie den Schmerz eher als epigastrisch oder periumbilikal lokalisieren, und gibt es eine Ausstrahlung nach dorsal, inguinal oder in die unteren Extremitäten, vielleicht mit Parästhesien?",
@@ -85,33 +81,31 @@
         "Zu ungenau, und Sie erfahren nichts über eine Ausstrahlung.",
         "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben."
       ],
-      "reply": "Patient: „Mitten im Bauch, ein bisschen links. Es geht durch bis in den Rücken und in die linke Leiste.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patient: „Mitten im Bauch, ein bisschen links. Es geht durch bis in den Rücken und in die linke Leiste.“ Er krümmt sich, als eine neue Schmerzwelle kommt. Wie es angefangen hat, wissen Sie noch nicht.",
       "options": [
         "Wie war der zeitliche Verlauf seit der Erstmanifestation: perakut, akut oder chronisch rezidivierend, und gab es ein auslösendes Ereignis?",
         "Wie hat es angefangen, und war gerade etwas Besonderes los? Ist es seitdem besser, schlechter oder gleich geblieben?",
         "Seit wann haben Sie die Schmerzen?",
-        "Kam der Schmerz plötzlich?"
+        "Das kam doch bestimmt, als Sie etwas Schweres gehoben haben, nicht wahr?"
       ],
       "answer": 1,
       "feedback": [
         "Fachsprache: „Erstmanifestation“, „perakut“ und „rezidivierend“ versteht der Patient nicht.",
         "Richtig: Beginn, Auslöser und Verlauf in einer klaren, laienverständlichen Frage.",
         "Das hat der Patient schon gesagt (vor etwa 45 Minuten). Fragen Sie nach Auslöser und Verlauf.",
-        "Geschlossene Frage; sie erfasst weder Auslöser noch Verlauf."
+        "Suggestivfrage: Sie legen den Auslöser nahe und fragen nicht nach dem Verlauf."
       ],
-      "reply": "Patient: „Ich habe im Garten schwere Blumenkästen getragen, da hat es plötzlich gerissen. Seitdem ist der Schmerz gleich stark geblieben, er geht nicht mehr weg.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "situation": "Patient: „Ich habe im Garten schwere Blumenkästen getragen, da hat es plötzlich gerissen. Seitdem ist der Schmerz gleich stark geblieben, er geht nicht mehr weg.“ Er presst die Lippen zusammen und umklammert das Gitter der Trage.",
       "options": [
         "Ist der Schmerz stechend oder kolikartig, und wie hoch ist die Intensität auf der visuellen Analogskala?",
         "Tut es sehr weh?",
@@ -125,13 +119,12 @@
         "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10.",
         "Unübliche Skala (üblich ist 0 bis 10) und eine Suggestivfrage, die Angst macht."
       ],
-      "reply": "Patient: „Es ist ein reißender, vernichtender Schmerz, 10 von 10. So etwas hatte ich noch nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Es ist ein reißender, vernichtender Schmerz, 10 von 10. So etwas hatte ich noch nie.“ Er schluckt, wird noch blasser, und Schweiß steht auf seiner Stirn.",
       "options": [
         "Hatten Sie Nausea, Emesis, Palpitationen oder Dyspnoe, und ist Ihnen eine Synkope, ein Kaltschweiß oder ein Pallor der Haut aufgefallen, auch eine Oligurie?",
         "Ist Ihnen schwindelig geworden? Das ist doch bestimmt so, bei den Schmerzen.",
@@ -145,13 +138,12 @@
         "Zu umgangssprachlich und unkonkret.",
         "Richtig: konkrete Begleitsymptome in Laiensprache, auch Bewusstlosigkeit und Schwitzen als Schockzeichen."
       ],
-      "reply": "Patient: „Mir ist schlecht, ich habe einmal erbrochen. Mir war schwindelig, und im Garten bin ich für wenige Sekunden bewusstlos geworden, sagt meine Frau. Ich habe stark geschwitzt.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Mir ist schlecht, ich habe einmal erbrochen. Mir war schwindelig, und im Garten bin ich für wenige Sekunden bewusstlos geworden, sagt meine Frau. Ich habe stark geschwitzt.“ Er zittert und zieht die Decke hoch. Auf Ihrem Bogen sind die Felder für Fieber, Appetit, Stuhlgang und Wasserlassen noch leer.",
       "options": [
         "Haben Sie Fieber gemessen? Wie sind Appetit, Stuhlgang und Wasserlassen? War Blut im Stuhl oder im Urin?",
         "Haben Sie Schüttelfrost, Nachtschweiß, Gewichtsverlust, Obstipation, Diarrhö, Hämatochezie, Meläna oder Hämaturie?",
@@ -165,13 +157,12 @@
         "Fachjargon, den ein Patient nicht versteht.",
         "Zu allgemein; der Patient sagt einfach „ja“."
       ],
-      "reply": "Patient: „Fieber habe ich nicht, mir ist nur kalt. Appetit hatte ich heute normal. Stuhlgang und Wasserlassen waren normal, ohne Blut.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patient: „Fieber habe ich nicht, mir ist nur kalt. Appetit hatte ich heute normal. Stuhlgang und Wasserlassen waren normal, ohne Blut.“ Auf dem Bogen fehlt noch der Abschnitt zu früheren Erkrankungen und Operationen.",
       "options": [
         "Haben Sie eine arterielle Hypertonie, eine Hypercholesterinämie, eine KHK oder eine pAVK, und gab es Voroperationen oder stationäre Aufenthalte?",
         "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck, hohe Cholesterinwerte oder Herzprobleme? Wurden Sie schon einmal operiert, oder hat man bei einer Untersuchung schon einmal etwas Auffälliges gefunden?",
@@ -185,13 +176,12 @@
         "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
         "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
       ],
-      "reply": "Patient: „Ich habe Bluthochdruck und erhöhte Cholesterinwerte. Vor zwei Jahren hat der Hausarzt per Ultraschall zufällig eine Erweiterung der Bauchschlagader von 4,6 Zentimetern gefunden. Zur Kontrolle bin ich nie gegangen. Operiert wurde ich vor zehn Jahren an einem Leistenbruch rechts.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Ich habe Bluthochdruck und erhöhte Cholesterinwerte. Vor zwei Jahren hat der Hausarzt per Ultraschall zufällig eine Erweiterung der Bauchschlagader von 4,6 Zentimetern gefunden. Zur Kontrolle bin ich nie gegangen. Operiert wurde ich vor zehn Jahren an einem Leistenbruch rechts.“ Der Sanitäter reicht Ihnen eine Tüte mit Tablettenschachteln, die die Ehefrau mitgegeben hat.",
       "options": [
         "Welche Pharmaka applizieren Sie regelmäßig, und in welchen Dosen?",
         "Nehmen Sie Tabletten?",
@@ -205,13 +195,12 @@
         "Richtig: Name, Dosierung und auch frei verkäufliche Mittel.",
         "Suggestivfrage. Fragen Sie offen und nach der Dosis."
       ],
-      "reply": "Patient: „Ramipril 10 mg morgens, Amlodipin 5 mg morgens, Atorvastatin 40 mg abends und ASS 100 mg morgens. Sonst nichts.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Ramipril 10 mg morgens, Amlodipin 5 mg morgens, Atorvastatin 40 mg abends und ASS 100 mg morgens. Sonst nichts.“ Die Pflegekraft ruft von der Tür, ob sie schon Kontrastmittel für das CT vorbereiten soll.",
       "options": [
         "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Kontrastmittel, Pflaster oder Lebensmittel? Wie äußert sich das?",
         "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
@@ -225,13 +214,12 @@
         "Kein vollständiger Satz; in der Prüfung unhöflich.",
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
       ],
-      "reply": "Patient: „Gegen Pflaster, da bekomme ich einen juckenden Ausschlag. Sonst ist nichts bekannt.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Pflaster, da bekomme ich einen juckenden Ausschlag. Sonst ist nichts bekannt.“ Aus der Jacke auf dem Stuhl ragt eine Zigarettenschachtel, und der Patient riecht nach Rauch.",
       "options": [
         "Sind Sie Raucher oder eher Alkoholiker?",
         "Rauchen Sie? Wie viele Zigaretten am Tag und seit wie vielen Jahren? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
@@ -245,33 +233,31 @@
         "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
         "Wertend und suggestiv; so antwortet der Patient nicht ehrlich."
       ],
-      "reply": "Patient: „Ich rauche seit 45 Jahren 20 Zigaretten am Tag. Abends ein bis zwei Bier. Drogen nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche seit 45 Jahren 20 Zigaretten am Tag. Abends ein bis zwei Bier. Drogen nie.“ Dann fügt er leise hinzu: „Mit den Gefäßen und dem Herzen war bei uns in der Familie nicht alles in Ordnung.“",
       "options": [
         "Wie ist die Familienanamnese bezüglich Gefäß- und Herzerkrankungen?",
-        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran sind sie gestorben? Mich interessiert nur Ihr Vater.",
         "Hat Ihre Familie dieselbe Krankheit?",
         "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel am Herzen, an den Gefäßen oder Krebserkrankungen?"
       ],
       "answer": 3,
       "feedback": [
         "„Familienanamnese“ ist ein Fachwort.",
-        "Zu eng: Geschwister und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Zu eng: Mutter, Geschwister und andere Erkrankungen in der Familie erfahren Sie so nicht.",
         "Sie kennen die Diagnose noch nicht; die Frage ist unklar.",
         "Richtig: offen, mit passenden Beispielen, laienverständlich."
       ],
-      "reply": "Patient: „Mein Vater ist mit 66 gestorben, an einer geplatzten Bauchschlagader. Mein Bruder hatte mit 58 einen Herzinfarkt.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Mein Vater ist mit 66 gestorben, an einer geplatzten Bauchschlagader. Mein Bruder hatte mit 58 einen Herzinfarkt.“ Er schaut zur Tür: „Meine Frau wartet draußen.“ Über Beruf und Wohnsituation steht auf Ihrem Bogen noch nichts.",
       "options": [
         "Was machen Sie beruflich, oder was haben Sie früher gemacht? Wie wohnen Sie, allein oder mit jemandem zusammen?",
         "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lauten Ihre genaue Adresse und Ihre Telefonnummer?",
@@ -285,13 +271,12 @@
         "Unklar und unangenehm formuliert.",
         "Unangemessen und indiskret."
       ],
-      "reply": "Patient: „Ich bin Rentner, früher war ich Schreiner. Ich wohne mit meiner Frau in einem Einfamilienhaus. Wir haben zwei erwachsene Kinder.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": "Der Patient fragt: „Was habe ich denn?“",
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich bin Rentner, früher war ich Schreiner. Ich wohne mit meiner Frau in einem Einfamilienhaus. Wir haben zwei erwachsene Kinder.“ Er sieht Sie mit schweißnasser Stirn an: „Herr Doktor, was habe ich denn?“",
       "options": [
         "Sie haben ein rupturiertes infrarenales Bauchaortenaneurysma mit retroperitonealem Hämatom und beginnendem hypovolämischem Schock.",
         "Ich vermute, dass die große Schlagader im Bauch an der Stelle, die schon erweitert war, eingerissen ist. Dadurch blutet es im Körper. Das ist ein lebensbedrohlicher Notfall, den wir sofort behandeln müssen.",
@@ -305,13 +290,12 @@
         "Verharmlosend und medizinisch falsch.",
         "Falsch und beängstigend; eine Gewissheit gibt es nicht."
       ],
-      "reply": "Patient: „Oh Gott, wie bei meinem Vater. Was passiert jetzt mit mir?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Muss ich sofort operiert werden?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Oh Gott, wie bei meinem Vater. Was passiert jetzt mit mir? Muss ich sofort operiert werden?“",
       "options": [
         "Nein, wir geben Ihnen Schmerztabletten und beobachten Sie erst einmal auf der Station bis morgen früh.",
         "Ja, wir bringen Sie in zwei Minuten in den Operationssaal, ohne weitere Untersuchung und ohne Aufklärung.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet, der Patient wird für die Diagnostik vorbereitet. Sie setzen sich an den Computer und öffnen den Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Becker ist 71 und hat Bauchweh und Rückenweh.",
         "Herr Heinrich Becker, ein 71-jähriger Patient, stellte sich heute mit seit 45 Minuten bestehende Schmerzen im Bauch und Rücken in unserer Notaufnahme vor.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Die Schmerzen sind akut beim Tragen schwerer Blumenkästen aufgetreten, seitdem unverändert, reißend-vernichtend (NRS 10/10) mit Ausstrahlung in den Rücken und die linke Leiste.",
         "Die Schmerzen sind akut beim Tragen schwerer Blumenkästen aufgetreten, seitdem regredient, dumpf-drückend (NRS 4/10) mit Ausstrahlung in die rechte Schulter.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend berichtete der Patient über Fieber bis 38,5 °C, Nausea und Diarrhö. Eine Synkope, Kaltschweißigkeit und Emesis wurden verneint.",
         "Er hatte Übelkeit, hat einmal gekotzt und war kurz weg.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "Vorerkrankungen: Bluthochdruck, Cholesterin. Medikamente: Ramipril, Amlodipin, Atorvastatin, ASS.",
         "An Vorerkrankungen sind eine arterielle Hypertonie, eine Hypercholesterinämie und ein vor zwei Jahren sonographisch diagnostiziertes Bauchaortenaneurysma (4,6 cm) ohne Verlaufskontrollen bekannt. Z. n. Leistenhernien-Operation rechts vor zehn Jahren. Medikation: Ramipril 10 mg 1-0-0, Amlodipin 5 mg 1-0-0, Atorvastatin 40 mg 0-0-1, ASS 100 mg 1-0-0.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: keine bekannt. Noxen: Nikotinabusus.",
         "Pflasterallergie (juckendes Exanthem). Nikotinkonsum ca. 90 py, Alkoholkonsum 1–2 Bier abends. Familienanamnese: Vater Tod an Aortenruptur mit 66 J., Bruder Myokardinfarkt mit 58 J. Der Patient ist Rentner (früher Schreiner) und lebt mit seiner Ehefrau im Einfamilienhaus.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Anamnestisch besteht der Verdacht auf eine akute Nierenkolik bei Urolithiasis. Differenzialdiagnostisch kommen eine Divertikulitis, eine Appendizitis, ein Ulcus ventriculi und eine akute Cholezystitis in Betracht.",
         "Anamnestisch besteht der Verdacht auf ein rupturiertes Bauchaortenaneurysma. Differenzialdiagnostisch kommen eine akute Aortendissektion, ein Mesenterialinfarkt und eine akute Pankreatitis in Betracht.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Zur weiteren Abklärung empfehlen wir eine Koloskopie und eine Gastroskopie sowie eine orale Antikoagulation mit Rivaroxaban und eine zügige Mobilisation.",
         "Wir geben Schmerzmittel und lassen ihn nach Hause gehen, wenn es besser wird.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Sie drucken den Brief aus. Der Oberarzt kommt herein, setzt sich zu Ihnen und sieht Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Der Mann hat Bauchschmerzen, er heißt Becker.",
         "Herr Becker hat ein geplatztes Aneurysma.",
@@ -485,13 +461,12 @@
         "Richtig: Name, Alter, Leitsymptom, zeitlicher Verlauf in einem Satz.",
         "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“ Er lehnt sich zurück und hört zu.",
       "options": [
         "Die Schmerzen traten schleichend nach einer Mahlzeit auf und strahlen in die rechte Schulter aus. Begleitend bestehen Fieber bis 38,5 °C und Durchfall. Eine Synkope wurde verneint.",
         "Die Schmerzen traten akut beim Tragen schwerer Blumenkästen auf, sind reißend (NRS 10/10) und strahlen in den Rücken und die linke Leiste aus. Begleitend bestehen Übelkeit, einmaliges Erbrechen, Schwindel, Kaltschweißigkeit und eine kurze Synkope. Fieber wurde verneint.",
@@ -505,13 +480,12 @@
         "Keine strukturierte Information, wichtige Befunde fehlen.",
         "Inhaltlich falsch: Der Beginn war plötzlich, mit Ausstrahlung und Begleitsymptomen."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Er hat Bluthochdruck, sonst ist er gesund.",
         "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 2. Ein Aneurysma ist nicht bekannt, aber der Vater hatte einen Herzinfarkt. Er raucht nicht und hat keine Allergien.",
@@ -525,13 +499,12 @@
         "Inhaltlich falsch: Das Aneurysma wurde vor zwei Jahren mit 4,6 cm diagnostiziert, und er raucht 20 Zigaretten täglich.",
         "Richtig: relevante Vorgeschichte, das bekannte Aneurysma, Thrombozytenaggregationshemmung und Risikofaktoren."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich vermute ein rupturiertes Bauchaortenaneurysma mit hämorrhagischem Schock. Differenzialdiagnostisch denke ich an eine akute Aortendissektion, einen Mesenterialinfarkt und eine akute Pankreatitis.",
         "Es handelt sich sicher um eine Nierenkolik, weil der Schmerz in die Leiste zieht. Differenzialdiagnostisch denke ich höchstens noch an eine Divertikulitis und eine Appendizitis.",
@@ -545,13 +518,12 @@
         "Zu unpräzise für das Arzt-Arzt-Gespräch.",
         "In der Prüfung sollen Sie eine begründete Vermutung äußern."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde ihn zunächst auf die Normalstation legen, Schmerzmittel geben und morgen früh einen Ultraschall und ein CT machen.",
         "Ich würde schnell mehrere Liter Infusion geben, bis der Blutdruck normal ist, Heparin spritzen und ihn danach zur Beobachtung auf die Station verlegen.",
@@ -565,13 +537,12 @@
         "Richtig: Diagnostik, Therapie und Konsil nach aktuellen Leitlinien (Gefäßchirurgie, EVAR wenn möglich).",
         "Nicht die erste Untersuchung bei diesem Verdacht."
       ],
-      "reply": "Oberarzt: „Gut. Wie hoch soll der systolische Blutdruck bis zur Blutstillung ungefähr sein?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Wie hoch soll der systolische Blutdruck bis zur Blutstillung ungefähr sein?“",
       "options": [
         "Er sollte über 140 mmHg liegen, damit die Organe gut durchblutet bleiben, notfalls mit Noradrenalin hochtitriert, bis der Patient wieder normoton ist.",
         "Ich strebe bei wachem Patienten einen systolischen Blutdruck um 70 bis 90 mmHg an (permissive Hypotonie), damit die Blutung nicht durch einen höheren Druck zunimmt.",
@@ -585,13 +556,12 @@
         "In der Prüfung erwartet man eine begründete Antwort.",
         "Gefährlich: Ein solcher Druck lässt das Aneurysma weiter bluten."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Aneurysma“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Aneurysma“.",
       "options": [
         "Verengung eines Gefäßes",
         "krankhafte Erweiterung oder Aussackung eines Gefäßes",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Ruptur“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Ruptur“.",
       "options": [
         "Verengung",
         "Entzündung",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „retroperitoneal“?",
+      "situation": "Dann tippt er auf „retroperitoneal“.",
       "options": [
         "in der Bauchhöhle zwischen den Darmschlingen",
         "unter der Haut",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Synkope“?",
+      "situation": "Er blättert weiter und zeigt auf „Synkope“.",
       "options": [
         "Schwindel",
         "kurze Bewusstlosigkeit durch zu wenig Durchblutung des Gehirns",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Hypovolämie“?",
+      "situation": "Zuletzt deutet er auf „Hypovolämie“.",
       "options": [
         "zu hoher Blutdruck",
         "zu wenig Blutvolumen im Kreislauf",

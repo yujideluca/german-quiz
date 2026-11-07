@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Frau Schneider sitzt auf der Liege und hält sich den Bauch.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Eine Frau sitzt auf der Liege, hält sich den rechten Oberbauch und sieht Sie an.",
       "options": [
         "Guten Abend, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Frau Schneider?",
         "Hallo, was ist los mit Ihnen?",
@@ -25,13 +24,12 @@
         "Die körperliche Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen.",
         "Verwaltungsfragen gehören nicht an den Anfang des Arzt-Patienten-Gesprächs, und Sie stellen sich nicht vor."
       ],
-      "reply": "Patientin: „Ja, Schneider. Guten Abend, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patientin: „Ja, Schneider. Guten Abend, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
         "Wie ist Ihr Body-Mass-Index?",
@@ -45,13 +43,12 @@
         "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
         "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
       ],
-      "reply": "Patientin: „Ich bin 52, 1,65 Meter groß und wiege etwa 82 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patientin: „Ich bin 52, 1,65 Meter groß und wiege etwa 82 Kilo.“ Sie verzieht vor Schmerz das Gesicht und wartet.",
       "options": [
         "Haben Sie Bauchschmerzen?",
         "Was führt Sie heute zu uns? Erzählen Sie bitte.",
@@ -65,13 +62,12 @@
         "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
         "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
       ],
-      "reply": "Patientin: „Seit heute Mittag habe ich ganz starke Schmerzen hier oben rechts im Bauch.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten wissen, ob der Schmerz ausstrahlt. Was sagen Sie?",
+      "situation": "Patientin: „Seit heute Mittag habe ich ganz starke Schmerzen hier oben rechts im Bauch.“ Sie zeigt auf den rechten Oberbauch und fährt mit der Hand Richtung Schulter.",
       "options": [
         "Strahlt der Schmerz irgendwohin aus?",
         "Würden Sie den Schmerz eher als lokalisiert oder als diffus beschreiben, und gibt es eine Ausstrahlung?",
@@ -85,13 +81,12 @@
         "Richtig: laienverständlich, mit Beispielen, ohne die Antwort vorzugeben.",
         "Suggestivfrage. Die Patientin könnte Ihnen nur zustimmen."
       ],
-      "reply": "Patientin: „Ja, manchmal zieht es bis in die rechte Schulter.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patientin: „Ja, manchmal zieht es bis in die rechte Schulter.“ Sie stöhnt leise: „Es wird einfach nicht besser.“",
       "options": [
         "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch progredient?",
         "Wann genau hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben?",
@@ -105,13 +100,12 @@
         "Das hat die Patientin schon gesagt (seit heute Mittag). Fragen Sie nach dem Verlauf.",
         "Geschlossene Frage; sie erfasst den Verlauf nicht."
       ],
-      "reply": "Patientin: „Nach dem Mittagessen ging es los, es war ein fettiger Schweinebraten. Seitdem wird es immer schlimmer.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "situation": "Patientin: „Nach dem Mittagessen ging es los, es war ein fettiger Schweinebraten. Seitdem wird es immer schlimmer.“ Sie atmet flach und bewegt sich kaum.",
       "options": [
         "Wie würden Sie die Schmerzen beschreiben, eher stechend, drückend oder krampfartig? Und wie stark sind sie auf einer Skala von 0 bis 10?",
         "Sind die Schmerzen kolikartig?",
@@ -125,13 +119,12 @@
         "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
         "Zu ungenau; Sie bekommen keine verwertbare Angabe."
       ],
-      "reply": "Patientin: „Es ist ein dumpfer, dauernder Schmerz, so 8 von 10. Am Anfang kam er in Wellen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patientin: „Es ist ein dumpfer, dauernder Schmerz, so 8 von 10. Am Anfang kam er in Wellen.“ Sie schluckt und hält sich eine Hand vor den Mund.",
       "options": [
         "Hatten Sie Nausea, Emesis, Hämatemesis oder Meläna, und ist Ihnen ein Ikterus der Skleren oder der Haut aufgefallen, vielleicht auch ein Pruritus am ganzen Körper?",
         "Ist Ihnen übel, mussten Sie sich übergeben, oder ist Ihnen etwas anderes aufgefallen, zum Beispiel eine Gelbfärbung der Haut oder der Augen?",
@@ -145,13 +138,12 @@
         "Zu umgangssprachlich und unkonkret.",
         "Suggestiv: Sie unterstellen das Symptom."
       ],
-      "reply": "Patientin: „Mir ist schlecht, und ich habe zweimal erbrochen. Gelb bin ich nicht, glaube ich.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patientin: „Mir ist schlecht, und ich habe zweimal erbrochen. Gelb bin ich nicht, glaube ich.“ Ihre Wangen sind gerötet, die Stirn glänzt.",
       "options": [
         "Wie ist die Vegetativa?",
         "Haben Sie Fieber gemessen? Wie sind Appetit, Stuhlgang und Wasserlassen? Ist der Stuhl hell oder der Urin dunkel?",
@@ -165,13 +157,12 @@
         "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Obstipation, Diarrhö).",
         "Zu allgemein; die Patientin sagt einfach „ja“."
       ],
-      "reply": "Patientin: „Ich hatte 38,4 Grad. Appetit habe ich keinen. Stuhlgang und Wasserlassen sind normal, die Farbe auch.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patientin: „Ich hatte 38,4 Grad. Appetit habe ich keinen. Stuhlgang und Wasserlassen sind normal, die Farbe auch.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles; über ihre Vorgeschichte noch nichts.",
       "options": [
         "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, einen Diabetes mellitus oder eine KHK, und gab es Voroperationen oder stationäre Aufenthalte?",
         "Sind Sie gesund?",
@@ -185,13 +176,12 @@
         "Richtig: mit Beispielen, laienverständlich, und die Operationen sind mitgefragt.",
         "Die Patientin kennt ihre Akte nicht. Fragen Sie direkt."
       ],
-      "reply": "Patientin: „Ich habe Bluthochdruck und Zucker, Typ 2. Operiert wurde ich nur am Blinddarm, als Kind. Und vor einem Jahr hatte ich schon mal so ähnliche Schmerzen, aber kürzer.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patientin: „Ich habe Bluthochdruck und Zucker, Typ 2. Operiert wurde ich nur am Blinddarm, als Kind. Und vor einem Jahr hatte ich schon mal so ähnliche Schmerzen, aber kürzer.“ Sie kramt in ihrer Handtasche nach einer Tablettenschachtel.",
       "options": [
         "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept?",
         "Nehmen Sie Tabletten?",
@@ -205,13 +195,12 @@
         "Fachsprache („Pharmaka“, „applizieren“).",
         "Suggestivfrage. Fragen Sie offen."
       ],
-      "reply": "Patientin: „Ramipril 5 mg morgens und Metformin 1000 mg zweimal am Tag. Gegen die Schmerzen habe ich heute eine Ibuprofen 400 genommen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patientin: „Ramipril 5 mg morgens und Metformin 1000 mg zweimal am Tag. Gegen die Schmerzen habe ich heute eine Ibuprofen 400 genommen.“ Die Pflegekraft ruft von der Tür, ob sie schon ein Antibiotikum vorbereiten soll.",
       "options": [
         "Allergie?",
         "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht gleich ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
@@ -225,13 +214,12 @@
         "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
       ],
-      "reply": "Patientin: „Gegen Penicillin, da bekomme ich Ausschlag am ganzen Körper.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patientin: „Gegen Penicillin, da bekomme ich Ausschlag am ganzen Körper.“ Ihre Kleidung riecht nach Zigarettenrauch.",
       "options": [
         "Sind Sie Raucherin oder Alkoholikerin?",
         "Wie ist Ihr Nikotin- und Alkoholabusus?",
@@ -245,13 +233,12 @@
         "Wertend und ungenau.",
         "Richtig: neutral, konkret, mit Menge."
       ],
-      "reply": "Patientin: „Ich rauche seit 30 Jahren etwa 10 Zigaretten am Tag. Alkohol nur am Wochenende ein Glas Wein. Drogen nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patientin: „Ich rauche seit 30 Jahren etwa 10 Zigaretten am Tag. Alkohol nur am Wochenende ein Glas Wein. Drogen nie.“ Dann fügt sie hinzu: „Bauchprobleme liegen bei uns irgendwie in der Familie.“",
       "options": [
         "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Gallensteine, Herz- oder Krebserkrankungen?",
         "Wie ist die Familienanamnese?",
@@ -265,13 +252,12 @@
         "Zu eng: Geschwister und Kinder fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
         "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
       ],
-      "reply": "Patientin: „Meine Mutter hatte Gallensteine, sie wurde operiert. Mein Vater hatte einen Herzinfarkt mit 60.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patientin: „Meine Mutter hatte Gallensteine, sie wurde operiert. Mein Vater hatte einen Herzinfarkt mit 60.“ Sie schaut auf die Uhr: „Mein Mann weiß noch gar nicht, dass ich hier bin.“",
       "options": [
         "Was ist Ihr sozialer Status?",
         "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
@@ -285,13 +271,12 @@
         "Zu eng und teilweise Verwaltung: der Beruf fehlt, die Adresse gehört nicht in die Sozialanamnese.",
         "Unangemessen."
       ],
-      "reply": "Patientin: „Ich bin Verkäuferin und wohne mit meinem Mann zusammen. Wir haben zwei erwachsene Kinder.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patientin: „Ich bin Verkäuferin und wohne mit meinem Mann zusammen. Wir haben zwei erwachsene Kinder.“ Sie sieht Sie besorgt an: „Und, Herr Doktor, was habe ich denn?“",
       "options": [
         "Sie haben eine akute Cholezystitis bei Cholezystolithiasis.",
         "Es ist wahrscheinlich nichts Schlimmes, nur eine Magenverstimmung.",
@@ -305,13 +290,12 @@
         "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung des Organs.",
         "Falsch und beängstigend."
       ],
-      "reply": "Patientin: „Gallensteine? Und was passiert jetzt mit mir?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Die Patientin fragt: „Muss ich operiert werden?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patientin: „Gallensteine? Und was passiert jetzt mit mir? Muss ich operiert werden?“",
       "options": [
         "Ja, morgen früh wird Ihre Gallenblase entfernt.",
         "Das entscheidet der Chef, ich weiß es nicht.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Frau Schneider ist 52 und hat Bauchweh.",
         "Frau Petra Schneider, eine 52-jährige Patientin, stellte sich heute in unserer Notaufnahme mit seit dem Mittag bestehenden Schmerzen im rechten Oberbauch vor.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Die Schmerzen haben nach dem Essen von fettigem Braten angefangen und sind stärker geworden.",
         "Die Beschwerden sind postprandial nach fettreicher Mahlzeit aufgetreten, seitdem progredient, initial kolikartig, aktuell dumpf mit Ausstrahlung in die rechte Schulter (NRS 8/10).",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend berichtete die Patientin über Übelkeit und zweimaliges Erbrechen sowie Fieber bis 38,4 °C. Ikterus, Acholie und Bierbraunfärbung des Urins wurden verneint. Inappetenz.",
         "Sie hatte Übelkeit und hat zweimal gekotzt.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "Vorerkrankungen: Bluthochdruck, Zucker. Medikamente: Ramipril, Metformin.",
         "An Vorerkrankungen sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 2 bekannt. Z. n. Appendektomie im Kindesalter. Medikation: Ramipril 5 mg 1-0-0, Metformin 1000 mg 1-0-1, Ibuprofen 400 mg einmalig heute.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: keine. Noxen: Nikotinabusus.",
         "Penicillinallergie (Exanthem). Nikotinkonsum ca. 15 py, gelegentlicher Alkoholkonsum. Familienanamnese: Mutter Cholezystolithiasis, Vater Myokardinfarkt mit 60 J. Die Patientin ist Verkäuferin, verheiratet, lebt mit ihrem Ehemann.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Diagnose: Gallenblasenentzündung.",
         "Anamnestisch besteht der Verdacht auf eine akute Cholezystitis bei Cholezystolithiasis. Differenzialdiagnostisch kommen eine Choledocholithiasis, eine akute Pankreatitis und ein Ulcus duodeni in Betracht.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (u. a. Blutbild, CRP, Leberwerte, Cholestaseparameter, Lipase), eine Abdomensonographie sowie eine analgetische Therapie und eine Antibiose. Bei Bestätigung ist eine frühelektive laparoskopische Cholezystektomie indiziert.",
         "Wir machen Blut und Ultraschall.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Die Patientin hat Bauchweh, sie heißt Schneider.",
         "Ich möchte Ihnen Frau Petra Schneider vorstellen, eine 52-jährige Patientin, die sich heute mit seit dem Mittag bestehenden, progredienten Schmerzen im rechten Oberbauch vorgestellt hat.",
@@ -485,13 +461,12 @@
         "Kein strukturierter Einstieg; zuerst Patientin und Leitsymptom.",
         "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“",
       "options": [
         "Die Schmerzen traten postprandial nach einer fettreichen Mahlzeit auf und strahlen in die rechte Schulter aus. Begleitend bestehen Übelkeit, zweimaliges Erbrechen und Fieber bis 38,4 °C. Ein Ikterus wurde verneint.",
         "Sie hat alles Mögliche.",
@@ -505,13 +480,12 @@
         "Inhaltlich falsch: Die Schmerzen begannen nach dem Mittagessen und strahlen in die rechte Schulter aus.",
         "Inhaltlich falsch: Ikterus und Durchfall wurden verneint."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Sie ist gesund.",
         "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 2. Vor einem Jahr hatte sie bereits ähnliche, kürzere Beschwerden. Wichtig: Penicillinallergie mit Exanthem. Die Mutter hatte Gallensteine.",
@@ -525,13 +499,12 @@
         "Inhaltlich falsch (Typ 2, Penicillinallergie).",
         "Unvollständig: Diagnosen und Allergie fehlen."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich denke an Gallensteine.",
         "Ich weiß es nicht genau.",
@@ -545,13 +518,12 @@
         "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
         "Zu sicher („sicher“), und eine Pankreatitis ist hier nicht die wahrscheinlichste Diagnose."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde sie nach Hause schicken.",
         "Ich würde eine Gastroskopie machen.",
@@ -565,13 +537,12 @@
         "Fachlich falsch: Ceftriaxon ist ein Cephalosporin, kein Penicillin.",
         "Richtig: Diagnostik, Therapie und Konsil, mit Blick auf die Allergie."
       ],
-      "reply": "Oberarzt: „Gut. Was erwarten Sie im Ultraschall?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Was erwarten Sie im Ultraschall?“",
       "options": [
         "Ich erwarte eine verdickte, dreischichtige Gallenblasenwand, Gallensteine und eventuell freie Flüssigkeit um die Gallenblase; dazu ein positives sonographisches Murphy-Zeichen.",
         "Eine vergrößerte Milz.",
@@ -585,13 +556,12 @@
         "In der Prüfung erwartet man eine begründete Antwort.",
         "Nicht typisch für eine Cholezystitis; eine Luftsichel sucht man eher im Röntgen, sie spricht für die Perforation eines Hohlorgans."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Cholezystolithiasis“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Cholezystolithiasis“ und sieht Sie fragend an.",
       "options": [
         "Gallenblasenentzündung",
         "Gallensteine in der Gallenblase",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Ikterus“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Ikterus“.",
       "options": [
         "Juckreiz",
         "Gelbsucht",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „postprandial“?",
+      "situation": "Er tippt auf „postprandial“.",
       "options": [
         "vor dem Essen",
         "nach dem Essen",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Emesis“?",
+      "situation": "Dann auf „Emesis“.",
       "options": [
         "Übelkeit",
         "Durchfall",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Acholie“?",
+      "situation": "Zuletzt zeigt er auf „Acholie“.",
       "options": [
         "dunkler Urin",
         "fehlende Gallenfarbstoffe im Stuhl, heller Stuhl",

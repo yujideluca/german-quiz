@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Hoffmann sitzt im Untersuchungszimmer und wirkt blass und müde.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Ein Mann sitzt auf der Liege, wirkt blass und müde und sieht Sie erwartungsvoll an.",
       "options": [
         "Guten Tag, mein Name ist Dr. Silva, ich bin hier als Assistenzarzt tätig. Bevor wir beginnen: Haben Sie Ihre Versichertenkarte und Ihren Überweisungsschein mitgebracht?",
         "Hallo, Sie sind der Hoffmann, oder? Setzen Sie sich.",
@@ -25,13 +24,12 @@
         "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
         "Die körperliche Untersuchung kommt nach der Anamnese, und Sie haben sich nicht vorgestellt."
       ],
-      "reply": "Patient: „Ja, Hoffmann. Guten Tag, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Hoffmann. Guten Tag, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Sie sind doch bestimmt schon über sechzig, nicht wahr?",
         "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
@@ -45,13 +43,12 @@
         "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
         "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst."
       ],
-      "reply": "Patient: „Ich bin 64, 1,78 Meter groß und wiege jetzt nur noch 78 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 64, 1,78 Meter groß und wiege jetzt nur noch 78 Kilo.“ Er sieht Sie an und wartet darauf, dass Sie das Gespräch beginnen.",
       "options": [
         "Haben Sie Blut im Stuhl bemerkt?",
         "Welche Symptomatik führt Sie zu uns, und seit wann besteht sie?",
@@ -65,13 +62,12 @@
         "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
         "Richtig: eine offene Frage lässt den Patienten selbst erzählen."
       ],
-      "reply": "Patient: „Seit etwa drei Monaten habe ich Blut im Stuhl, der Stuhlgang ist anders geworden, und ich habe abgenommen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": "Sie möchten das Blut im Stuhl genauer beschreiben lassen.",
-      "question": "Was fragen Sie?",
+      "situation": "Patient: „Seit etwa drei Monaten habe ich Blut im Stuhl, der Stuhlgang ist anders geworden, und ich habe abgenommen.“ Er senkt den Blick: „Das Blut macht mir die größten Sorgen.“",
       "options": [
         "Wie sieht das Blut aus, hellrot oder dunkel? Ist es auf dem Stuhl oder im Stuhl?",
         "Das Blut ist bestimmt hellrot, nicht wahr?",
@@ -85,13 +81,12 @@
         "Fachsprache („Hämatochezie“, „Meläna“, „aufgelagert“); der Patient versteht die Frage nicht.",
         "Zu knapp und kein vollständiger Satz; Farbe und Lage des Blutes fehlen."
       ],
-      "reply": "Patient: „Es ist dunkelrot und mit dem Stuhl vermischt, manchmal ist auch Schleim dabei. Inzwischen fast jeden Tag.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Stuhlveränderung und dem Verlauf?",
+      "situation": "Patient: „Es ist dunkelrot und mit dem Stuhl vermischt, manchmal ist auch Schleim dabei. Inzwischen fast jeden Tag.“ Er rutscht auf der Liege hin und her und sagt leise: „Auch sonst ist der Stuhl nicht mehr so wie früher.“",
       "options": [
         "Seit wann haben Sie das Blut im Stuhl?",
         "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch progredient, und gibt es Schwankungen?",
@@ -105,13 +100,12 @@
         "Richtig: offen gefragt und verständlich, Veränderung und Verlauf in einer Frage.",
         "Suggestivfrage. Der Patient könnte nur zustimmen."
       ],
-      "reply": "Patient: „Der Stuhl wechselt: Mal habe ich Verstopfung, dann wieder Durchfall. Oft ist er ganz dünn, wie ein Bleistift. Es wird seit drei Monaten schlimmer.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Bauchschmerzen. Welche Formulierung passt?",
+      "situation": "Patient: „Der Stuhl wechselt: Mal habe ich Verstopfung, dann wieder Durchfall. Oft ist er ganz dünn, wie ein Bleistift. Es wird seit drei Monaten schlimmer.“ Er legt die Hand auf den linken Unterbauch und verzieht kurz das Gesicht.",
       "options": [
         "Haben Sie Schmerzen im Abdomen, die als kolikartig oder dumpf imponieren, und wie ist die Schmerzintensität auf der visuellen Analogskala von 0 bis 10 einzuordnen?",
         "Haben Sie Schmerzen? Sind sie eher krampfartig, stechend oder dumpf, und wie stark auf einer Skala von 0 bis 10?",
@@ -125,13 +119,12 @@
         "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
         "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS)."
       ],
-      "reply": "Patient: „Krampfartig, im linken Unterbauch, vor allem vor dem Stuhlgang. So 4 von 10.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Krampfartig, im linken Unterbauch, vor allem vor dem Stuhlgang. So 4 von 10.“ Er lehnt sich zurück und reibt sich müde über die Augen.",
       "options": [
         "Haben Sie Nausea, Emesis oder Dyspnoe, und ist Ihnen eine Abgeschlagenheit oder Leistungsminderung aufgefallen?",
         "Sie fühlen sich bestimmt auch müde, oder?",
@@ -145,13 +138,12 @@
         "Zu umgangssprachlich und unkonkret.",
         "Richtig: konkrete Begleitsymptome (auch Zeichen einer Blutarmut) in Laiensprache."
       ],
-      "reply": "Patient: „Übel ist mir nicht, erbrochen habe ich auch nicht. Ich bin aber ständig müde und schlapp und beim Treppensteigen schnell außer Atem. Nach dem Stuhlgang habe ich das Gefühl, nicht ganz fertig zu sein, und der Bauch ist oft gebläht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Übel ist mir nicht, erbrochen habe ich auch nicht. Ich bin aber ständig müde und schlapp und beim Treppensteigen schnell außer Atem. Nach dem Stuhlgang habe ich das Gefühl, nicht ganz fertig zu sein, und der Bauch ist oft gebläht.“ Auf dem Anamnesebogen ist das Feld für Fieber, Nachtschweiß, Appetit, Gewicht und Wasserlassen noch leer.",
       "options": [
         "Haben Sie Fieber oder Nachtschweiß? Wie sind Appetit und Gewicht, und wie ist das Wasserlassen?",
         "Haben Sie Pyrexie, Nachtschweiß, Inappetenz, Gewichtsabnahme, Dysurie und eine Veränderung der Defäkation?",
@@ -163,15 +155,14 @@
         "Richtig: Fieber, Nachtschweiß, Appetit, Gewicht und Wasserlassen in Laiensprache (B-Symptomatik, Gewichtsverlust).",
         "Inhaltlich vollständig, aber voller Fachbegriffe (Pyrexie, Inappetenz, Dysurie, Defäkation).",
         "Fachjargon, den ein Patient nicht versteht.",
-        "Geschlossene Frage; Fieber, Nachtschweiß, Appetit und Wasserlassen fehlen."
+        "Das hat der Patient schon gesagt (Gewichtsabnahme). Fieber, Nachtschweiß, Appetit und Wasserlassen fehlen noch."
       ],
-      "reply": "Patient: „Fieber hatte ich nicht, aber nachts schwitze ich manchmal. Der Appetit ist schlecht. Ich habe ungewollt 7 Kilo abgenommen, von 85 auf 78 in drei Monaten. Das Wasserlassen ist normal.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patient: „Fieber hatte ich nicht, aber nachts schwitze ich manchmal. Der Appetit ist schlecht. Ich habe ungewollt 7 Kilo abgenommen, von 85 auf 78 in drei Monaten. Das Wasserlassen ist normal.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles, über seine Vorgeschichte noch nichts.",
       "options": [
         "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, eine Hyperlipidämie oder eine KHK, und gab es Voroperationen oder Koloskopien?",
         "Sind Sie sonst gesund?",
@@ -185,13 +176,12 @@
         "Richtig: mit Beispielen, laienverständlich, und Operationen und frühere Darmuntersuchungen sind mitgefragt.",
         "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
       ],
-      "reply": "Patient: „Ich habe Bluthochdruck und erhöhte Cholesterinwerte. Vor zehn Jahren wurde ich am Leistenbruch rechts operiert. Eine Darmspiegelung hatte ich noch nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Ich habe Bluthochdruck und erhöhte Cholesterinwerte. Vor zehn Jahren wurde ich am Leistenbruch rechts operiert. Eine Darmspiegelung hatte ich noch nie.“ Er zieht eine zerknitterte Tablettenschachtel aus der Jackentasche.",
       "options": [
         "Nehmen Sie Tabletten?",
         "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept, zum Beispiel Schmerzmittel oder Blutverdünner?",
@@ -205,13 +195,12 @@
         "Fachsprache („Pharmaka“, „applizieren“).",
         "Suggestivfrage, und Aspirin ist kein Mittel gegen Bluthochdruck."
       ],
-      "reply": "Patient: „Ramipril 5 mg morgens und Simvastatin 20 mg abends. Blutverdünner nehme ich nicht. Bei Kopfschmerzen manchmal Paracetamol 500.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Ramipril 5 mg morgens und Simvastatin 20 mg abends. Blutverdünner nehme ich nicht. Bei Kopfschmerzen manchmal Paracetamol 500.“ Die Pflegekraft ruft von der Tür, sie brauche für den Bogen noch die Allergieangaben.",
       "options": [
         "Allergie?",
         "Sind Sie hypersensibel?",
@@ -225,13 +214,12 @@
         "Zu eng: Allergien gegen andere Medikamente, Pflaster oder Lebensmittel übersehen Sie.",
         "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion."
       ],
-      "reply": "Patient: „Gegen Penicillin, davon bekomme ich einen Hautausschlag.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Penicillin, davon bekomme ich einen Hautausschlag.“ Seine Finger sind gelblich verfärbt, und seine Jacke riecht nach Zigarettenrauch.",
       "options": [
         "Rauchen Sie? Wie viele Zigaretten pro Tag, und seit wann? Wie viel Alkohol trinken Sie ungefähr, und nehmen Sie Drogen?",
         "Sind Sie Raucher oder Alkoholiker?",
@@ -245,33 +233,31 @@
         "Fachsprache („Abusus“, „Packungsjahre“) und klingt nach Vorwurf.",
         "Wertend und suggestiv."
       ],
-      "reply": "Patient: „Ich rauche seit 35 Jahren etwa 20 Zigaretten am Tag. Abends trinke ich meistens zwei Bier. Drogen nehme ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche seit 35 Jahren etwa 20 Zigaretten am Tag. Abends trinke ich meistens zwei Bier. Drogen nehme ich nicht.“ Dann sagt er leise: „In meiner Familie gab es auch Probleme mit dem Darm.“",
       "options": [
-        "Gibt es in Ihrer Familie Krebserkrankungen? Sind Ihre Eltern und Geschwister noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Sind Ihre Eltern und Geschwister noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben?",
         "Wie ist die Familienanamnese?",
         "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Krebs-, Herz- oder Darmerkrankungen?",
         "Hatte Ihr Vater auch Darmkrebs?"
       ],
       "answer": 2,
       "feedback": [
-        "Zu eng und zu belastend: andere Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Zu eng: Sie fragen nur nach Todesfällen und gehen nicht auf den Hinweis zum Darm ein; häufige Erkrankungen in der Familie erfahren Sie so nicht.",
         "„Familienanamnese“ ist ein Fachwort.",
         "Richtig: offen, mit passenden Beispielen.",
         "Suggestivfrage, und Sie kennen die Diagnose noch nicht."
       ],
-      "reply": "Patient: „Mein Vater hatte Darmkrebs, mit 58 festgestellt, er ist mit 62 gestorben. Meine Mutter hat Zucker. Mein Bruder hatte Polypen im Darm.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Mein Vater hatte Darmkrebs, mit 58 festgestellt, er ist mit 62 gestorben. Meine Mutter hat Zucker. Mein Bruder hatte Polypen im Darm.“ Er sieht auf die Uhr: „Morgen muss ich eigentlich wieder auf die Baustelle.“ Auf dem Bogen sind Beruf und Wohnsituation noch nicht ausgefüllt.",
       "options": [
         "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie hoch ist Ihr Einkommen?",
         "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
@@ -285,13 +271,12 @@
         "Unklar und unangenehm formuliert.",
         "Suggestivfrage und taktlos."
       ],
-      "reply": "Patient: „Ich bin Elektriker und wohne mit meiner Frau in einem Haus mit Treppen. Wir haben zwei erwachsene Kinder.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich bin Elektriker und wohne mit meiner Frau in einem Haus mit Treppen. Wir haben zwei erwachsene Kinder.“ Dann sieht er Sie ernst an: „Und, Herr Doktor, was habe ich denn? Sagen Sie mir bitte die Wahrheit.“",
       "options": [
         "Sie haben ein kolorektales Karzinom, wahrscheinlich im Sigma.",
         "Das sind bestimmt nur Hämorrhoiden, Sie müssen sich keine Sorgen machen.",
@@ -305,13 +290,12 @@
         "Zu sicher, nicht belegt und beängstigend.",
         "Richtig: Verdacht (nicht Gewissheit), Laiensprache, ehrlich und mit dem nächsten Schritt."
       ],
-      "reply": "Patient: „Ein Tumor? Meinen Sie Krebs? Mein Vater ist daran gestorben. Was passiert jetzt, und muss ich operiert werden?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Was passiert jetzt, und muss ich operiert werden?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Ein Tumor? Meinen Sie Krebs? Mein Vater ist daran gestorben. Was passiert jetzt, und muss ich operiert werden?“",
       "options": [
         "Ja, Sie werden morgen früh am Darm operiert und bekommen einen künstlichen Darmausgang.",
         "Zuerst nehmen wir Blut ab und untersuchen Ihren Enddarm mit dem Finger. Dann planen wir eine Darmspiegelung mit Gewebeproben. Wenn sich der Verdacht bestätigt, besprechen wir das weitere Vorgehen, auch eine mögliche Operation, gemeinsam mit den Spezialisten.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Hoffmann ist 64 und hat Blut im Stuhl.",
         "Herr Klaus Hoffmann (64 J.) hat sich heute in unserer Ambulanz vorgestellt wegen Blutbeimengungen im Stuhl seit drei Monaten, Stuhlunregelmäßigkeiten und eines Gewichtsverlusts von 3 kg.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Seit ca. drei Monaten bestehen dunkelrote Blutbeimengungen im Stuhl mit zunehmender Frequenz bis zu täglich, teils mit Schleim. Zudem alternierende Obstipation und Diarrhö, zeitweise bleistiftdünner Stuhl. Krampfartige Schmerzen im linken Unterbauch vor der Defäkation (NRS 4/10), Gefühl der inkompletten Entleerung und Meteorismus.",
         "Er hat seit drei Monaten Blut im Stuhl und mal Verstopfung, mal Durchfall und Bauchweh links unten.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend berichtete der Patient über Nausea und Emesis sowie Fieber bis 38,5 °C. Nachtschweiß und Leistungsminderung wurden verneint. Gewichtsverlust von 2 kg in drei Monaten.",
         "Er ist müde, schwitzt nachts und hat 7 kg abgenommen.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "An Vorerkrankungen sind eine arterielle Hypotonie und eine Hypothyreose bekannt. Z. n. Appendektomie vor zehn Jahren. Medikation: Ramipril 5 mg 0-0-1, Simvastatin 20 mg 1-0-0, Paracetamol 500 mg regelmäßig.",
         "An Vorerkrankungen sind eine arterielle Hypertonie und eine Hypercholesterinämie bekannt. Z. n. Leistenhernien-Operation rechts vor zehn Jahren, bisher keine Koloskopie. Medikation: Ramipril 5 mg 1-0-0, Simvastatin 20 mg 0-0-1, Paracetamol 500 mg bei Bedarf. Keine Antikoagulation.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: keine. Nikotinkonsum ca. 20 py. Alkohol: keiner. Familienanamnese unauffällig. Der Patient ist Elektriker und lebt allein.",
         "Penicillinallergie (Anaphylaxie). Nikotinkonsum ca. 35 py, regelmäßiger Alkoholkonsum (meist zwei Bier abends). Familienanamnese: Vater kolorektales Karzinom (ED mit 58 J.). Der Patient ist Elektriker, verheiratet, zwei Kinder.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Diagnose: Darmkrebs.",
         "Es besteht ein gesichertes Sigmakarzinom mit Lebermetastasen.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz des Briefes schreiben Sie das Procedere:",
       "options": [
         "Zur weiteren Abklärung empfehlen wir eine Blutentnahme (Blutbild, CRP, Ferritin, Kreatinin, Gerinnung, CEA) und eine Abdomensonographie. Bei unauffälligem Befund kann die Koloskopie in einem Jahr im Rahmen der Vorsorge erfolgen.",
         "Zur weiteren Abklärung empfehlen wir eine rektal-digitale Untersuchung, eine Blutentnahme (u. a. Blutbild, Ferritin, Gerinnung, Kreatinin, CRP, CEA) sowie zeitnah eine komplette Koloskopie mit Biopsien. Bei histologischer Sicherung folgt das Staging mit CT von Thorax, Abdomen und Becken, anschließend die Vorstellung in der Tumorkonferenz.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Sie drucken den Brief aus. Der Oberarzt kommt herein, setzt sich zu Ihnen und sieht Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Ich möchte Ihnen Herrn Klaus Hoffmann vorstellen, einen 64-jährigen Patienten, der sich heute mit seit etwa drei Monaten bestehenden Blutbeimengungen im Stuhl, wechselnden Stuhlgewohnheiten und einem ungewollten Gewichtsverlust von 7 kg vorgestellt hat.",
         "Also, der Mann hat seit Monaten Blut im Stuhl, und sein Vater ist an Darmkrebs gestorben ...",
@@ -485,13 +461,12 @@
         "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
         "Inhaltlich falsch: Die Beschwerden bestehen seit drei Monaten, das Blut ist dunkelrot und beigemischt, und der Patient hat 7 kg abgenommen."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“ Er lehnt sich zurück und hört zu.",
       "options": [
         "Es bestehen krampfartige Schmerzen im rechten Unterbauch (NRS 8/10), Fieber bis 39 °C und Erbrechen. Ein Gewichtsverlust wurde verneint.",
         "Er hat Blut im Stuhl und Bauchweh.",
@@ -505,13 +480,12 @@
         "Richtig: knapp, strukturiert, mit den Alarmsymptomen.",
         "Inhaltlich falsch: Es bestehen mehrere Alarmsymptome."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Er ist gesund, nur Bluthochdruck.",
         "Bekannt sind eine arterielle Hypertonie und eine Hypercholesterinämie. Es bestehen keine Allergien. Der Vater verstarb an einem Magenkarzinom, der Patient raucht nicht.",
@@ -525,13 +499,12 @@
         "Unvollständig: Diagnosen, Familie und Allergie fehlen.",
         "Richtig: relevante Vorgeschichte, familiäre Belastung und Allergie, die für die Perioperativprophylaxe wichtig ist."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich denke an Hämorrhoiden.",
         "Ich vermute ein kolorektales Karzinom, am ehesten im Sigma. Differenzialdiagnostisch denke ich an eine Divertikelblutung, eine chronisch-entzündliche Darmerkrankung und Hämorrhoiden.",
@@ -545,13 +518,12 @@
         "Zu sicher, und Blutbeimengung, Gewichtsverlust und Stuhlveränderung passen nicht zu einer Divertikulitis oder Appendizitis.",
         "In der Prüfung sollen Sie eine begründete Vermutung äußern."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde Blut abnehmen, mit Blutbild, Ferritin, Gerinnung, Kreatinin und CEA als Ausgangswert, rektal-digital untersuchen und zeitnah eine komplette Koloskopie mit Biopsien veranlassen. Bei Bestätigung folgt das Staging mit CT von Thorax, Abdomen und Becken und die Vorstellung in der Tumorkonferenz.",
         "Ich würde ein Hämorrhoidenmittel verschreiben und ihn nach Hause schicken.",
@@ -565,13 +537,12 @@
         "Falsch: Ohne histologische Sicherung und Staging gibt es keine Operationsplanung oder Chemotherapie.",
         "Nicht leitliniengerecht: Es braucht die komplette Koloskopie, um synchrone Tumoren nicht zu übersehen."
       ],
-      "reply": "Oberarzt: „Gut. Welchen Tumormarker bestimmen Sie, und wofür?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Welchen Tumormarker bestimmen Sie, und wofür?“",
       "options": [
         "Ich bestimme das PSA, weil es Darmkrebs im Frühstadium zuverlässig erkennt und uns bei einem erhöhten Wert sofort sagt, dass wir operieren müssen, ohne vorher eine Koloskopie zu machen.",
         "CA 19-9, um die Diagnose Darmkrebs zu sichern.",
@@ -585,13 +556,12 @@
         "Richtig: CEA ist Verlaufsparameter, kein Screening- oder Diagnosetest.",
         "In der Prüfung erwartet man eine begründete Antwort."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Hämatochezie“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Hämatochezie“.",
       "options": [
         "schwarzer, klebriger Stuhl",
         "frisches rotes Blut im Stuhl",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Tenesmen“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Tenesmen“.",
       "options": [
         "Verstopfung",
         "Blähungen",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Stoma“?",
+      "situation": "Dann zeigt er auf „Stoma“.",
       "options": [
         "künstlicher Darmausgang",
         "Darmverschluss",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Adenom“?",
+      "situation": "Er blättert um und tippt auf „Adenom“.",
       "options": [
         "bösartiger Tumor der Darmschleimhaut",
         "Ausstülpung der Darmwand",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Anämie“?",
+      "situation": "Zuletzt zeigt er auf „Anämie“.",
       "options": [
         "Blutvergiftung",
         "Blutarmut",

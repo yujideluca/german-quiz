@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Brandt sitzt zusammengesunken auf der Liege und hält sich den Kopf.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer der Notaufnahme. Ein junger Mann liegt zusammengekauert auf der Liege, hält sich den Kopf und blinzelt Sie gegen das Deckenlicht an.",
       "options": [
         "Guten Morgen, Herr Brandt. Sie sehen sehr krank aus. Legen Sie sich bitte sofort hin, ich spritze Ihnen gleich etwas.",
         "Hallo, na, wo drückt denn der Schuh?",
@@ -25,13 +24,12 @@
         "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
         "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor."
       ],
-      "reply": "Patient: „Ja, Brandt. Guten Morgen, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Brandt. Guten Morgen, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie ist Ihr Body-Mass-Index?",
         "Sie sind doch noch ziemlich jung, oder?",
@@ -45,13 +43,12 @@
         "Anschrift und Hausarzt sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
         "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht."
       ],
-      "reply": "Patient: „Ich bin 24, 1,82 Meter groß und wiege 75 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 24, 1,82 Meter groß und wiege 75 Kilo.“ Er stützt den Kopf in die Hand und wartet darauf, dass Sie beginnen. Den Grund seines Kommens kennen Sie noch nicht.",
       "options": [
         "Haben Sie Kopfschmerzen und Fieber?",
         "Was führt Sie heute zu uns? Erzählen Sie bitte.",
@@ -65,13 +62,12 @@
         "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
         "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
       ],
-      "reply": "Patient: „Ich habe seit gestern Abend furchtbare Kopfschmerzen und Fieber. Mein Nacken tut weh und ist ganz steif.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten wissen, wo die Kopfschmerzen sitzen und was sie verändert. Was sagen Sie?",
+      "situation": "Patient: „Ich habe seit gestern Abend furchtbare Kopfschmerzen und Fieber. Mein Nacken tut weh und ist ganz steif.“ Er fährt sich mit der Hand über Stirn und Nacken.",
       "options": [
         "Wo genau tut der Kopf weh? Wird es besser oder schlechter, wenn Sie den Kopf bewegen, sich hinlegen oder im Hellen sind?",
         "Haben Sie eine Photophobie und einen Meningismus bemerkt, und ist der Kopfschmerz holozephal oder frontal betont, mit Zunahme bei Kopfbeugung?",
@@ -85,13 +81,12 @@
         "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
         "Das hat der Patient schon gesagt. Fragen Sie nach Ort und Auslösern."
       ],
-      "reply": "Patient: „Im ganzen Kopf, am schlimmsten hinter der Stirn und im Nacken. Wenn ich den Kopf nach vorne beuge, wird es noch schlimmer. Helles Licht kann ich gerade gar nicht ertragen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patient: „Im ganzen Kopf, am schlimmsten hinter der Stirn und im Nacken. Wenn ich den Kopf nach vorne beuge, wird es noch schlimmer. Helles Licht kann ich gerade gar nicht ertragen.“ Er kneift die Augen zusammen: „Es wird einfach nicht besser.“",
       "options": [
         "Seit wann haben Sie die Beschwerden?",
         "Wie war der zeitliche Verlauf seit der Erstmanifestation: perakut, akut oder subakut, und ist die Symptomatik progredient oder rezidivierend?",
@@ -105,13 +100,12 @@
         "Geschlossene Frage; sie erfasst den Verlauf und einen vorausgegangenen Infekt nicht.",
         "Richtig: Beginn, Verlauf und möglicher vorausgegangener Infekt in einer klaren, laienverständlichen Frage."
       ],
-      "reply": "Patient: „Vor drei Tagen hatte ich Halsschmerzen und Schnupfen. Gestern Abend kamen die Kopfschmerzen, in der Nacht wurde es immer schlimmer, und dann kam das Fieber.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "situation": "Patient: „Vor drei Tagen hatte ich Halsschmerzen und Schnupfen. Gestern Abend kamen die Kopfschmerzen, in der Nacht wurde es immer schlimmer, und dann kam das Fieber.“ Er presst die Hand gegen die Stirn und stöhnt.",
       "options": [
         "Sind die Schmerzen eher stechend, drückend oder pochend, und wie stark sind sie auf einer Skala von 1 bis 100? Das ist bei uns die übliche Einteilung.",
         "Wie würden Sie die Schmerzen beschreiben, eher stechend, drückend oder pochend? Und wie stark sind sie auf einer Skala von 0 bis 10?",
@@ -125,13 +119,12 @@
         "„Zephalgisch“ und „VAS“ sind Fachsprache. Beschreiben Sie es mit Wörtern wie „drückend“ oder „pochend“.",
         "Zu ungenau; Sie bekommen keine verwertbare Angabe."
       ],
-      "reply": "Patient: „Ein dumpfer, drückender Dauerschmerz, 9 von 10. So schlimm hatte ich noch nie Kopfschmerzen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Ein dumpfer, drückender Dauerschmerz, 9 von 10. So schlimm hatte ich noch nie Kopfschmerzen.“ Er schluckt schwer und hält sich die Hand vor den Mund.",
       "options": [
         "Hatten Sie Nausea, Emesis oder Phonophobie, und sind Ihnen ein Exanthem, Petechien oder eine Vigilanzminderung aufgefallen?",
         "Sie haben bestimmt auch erbrochen und einen Ausschlag.",
@@ -145,13 +138,12 @@
         "Richtig: konkrete Begleitsymptome in Laiensprache, inklusive Hautveränderungen, Verwirrtheit und Krampfanfall.",
         "Zu umgangssprachlich und unkonkret."
       ],
-      "reply": "Patient: „Mir ist übel, und ich habe heute Nacht einmal erbrochen. Einen Ausschlag habe ich nicht gesehen. Verwirrt war ich nicht, aber ich bin sehr müde. Krampfanfälle hatte ich noch nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Mir ist übel, und ich habe heute Nacht einmal erbrochen. Einen Ausschlag habe ich nicht gesehen. Verwirrt war ich nicht, aber ich bin sehr müde. Krampfanfälle hatte ich noch nie.“ Seine Stirn glänzt, und er zittert unter der Decke.",
       "options": [
         "Haben Sie Fieber gemessen oder Schüttelfrost gehabt? Wie sind Appetit, Gewicht, Stuhlgang und Wasserlassen?",
         "Wie ist die Vegetativa?",
@@ -165,13 +157,12 @@
         "Inhaltlich vollständig, aber voller Fachbegriffe (Inappetenz, Obstipation, Diarrhö, Dysurie).",
         "Zu allgemein; der Patient sagt einfach „ja“."
       ],
-      "reply": "Patient: „Ich habe 39,2 Grad gemessen und hatte Schüttelfrost. Appetit habe ich keinen, mein Gewicht ist gleich. Stuhlgang und Wasserlassen sind normal.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen, Operationen und Impfungen?",
+      "situation": "Patient: „Ich habe 39,2 Grad gemessen und hatte Schüttelfrost. Appetit habe ich keinen, mein Gewicht ist gleich. Stuhlgang und Wasserlassen sind normal.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles, über seine Vorgeschichte noch nichts.",
       "options": [
         "Haben Sie Vorerkrankungen wie eine Immundefizienz, einen Diabetes mellitus oder eine Splenektomie, und gab es Voroperationen oder Hospitalisierungen?",
         "Sind Sie gesund?",
@@ -185,13 +176,12 @@
         "Der Patient kennt seine Akte nicht. Fragen Sie direkt.",
         "Richtig: mit Beispielen, laienverständlich, und Operationen sowie Impfungen sind mitgefragt."
       ],
-      "reply": "Patient: „Chronisch krank bin ich nicht. Mit zwölf wurden mir die Mandeln entfernt. Geimpft bin ich gegen Tetanus, aber gegen Meningokokken nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Chronisch krank bin ich nicht. Mit zwölf wurden mir die Mandeln entfernt. Geimpft bin ich gegen Tetanus, aber gegen Meningokokken nicht.“ Er zieht eine zerdrückte Ibuprofen-Packung aus der Jackentasche.",
       "options": [
         "Welche Pharmaka applizieren Sie regelmäßig, und in welcher Dosierung, Applikationsform und Frequenz nehmen Sie diese ein?",
         "Welche Medikamente nehmen Sie ein, und in welcher Dosierung? Auch Mittel ohne Rezept oder gegen die Schmerzen?",
@@ -205,13 +195,12 @@
         "Zu ungenau: Name und Dosis fehlen.",
         "Suggestivfrage. Fragen Sie offen."
       ],
-      "reply": "Patient: „Regelmäßig nehme ich nichts. Gegen die Kopfschmerzen habe ich gestern Abend und heute Nacht je eine Ibuprofen 400 genommen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Regelmäßig nehme ich nichts. Gegen die Kopfschmerzen habe ich gestern Abend und heute Nacht je eine Ibuprofen 400 genommen.“ Die Pflegekraft ruft von der Tür, ob sie schon ein Antibiotikum vorbereiten soll.",
       "options": [
         "Allergie?",
         "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen gleich ein Antibiotikum geben möchten und Penicillin das häufigste ist.",
@@ -225,16 +214,15 @@
         "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
       ],
-      "reply": "Patient: „Gegen Birkenpollen, dann niese ich und die Augen jucken. Medikamente und Essen vertrage ich alles.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Birkenpollen, dann niese ich, und die Augen jucken. Medikamente und Essen vertrage ich alles.“ Aus seiner Jackentasche schaut eine Zigarettenschachtel.",
       "options": [
         "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
-        "Sind Sie Raucher, oder trinken Sie vielleicht zu viel Alkohol, wie so viele Studenten? Das sollten Sie ehrlich sagen.",
+        "Sind Sie Raucher, oder trinken Sie vielleicht zu viel Alkohol, wie so viele junge Leute? Das sollten Sie ehrlich sagen.",
         "Wie ist Ihr Nikotin- und Alkoholabusus?",
         "Sie trinken sicher viel Bier, oder?"
       ],
@@ -245,13 +233,12 @@
         "„Abusus“ ist Fachsprache und klingt nach Vorwurf.",
         "Suggestivfrage und wertend."
       ],
-      "reply": "Patient: „Ich rauche seit vier Jahren etwa 5 Zigaretten am Tag. Am Wochenende trinke ich vier bis fünf Bier. Drogen nehme ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche seit vier Jahren etwa 5 Zigaretten am Tag. Am Wochenende trinke ich vier bis fünf Bier. Drogen nehme ich nicht.“ Dann fügt er hinzu: „In unserer Familie gab es ein paar Krankheiten.“",
       "options": [
         "Wie ist die Familienanamnese?",
         "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
@@ -265,13 +252,12 @@
         "Sie kennen die Diagnose noch nicht und geben sie dem Patienten vor.",
         "Richtig: offen, mit passenden Beispielen."
       ],
-      "reply": "Patient: „Mein Vater hat Bluthochdruck, mein Großvater hatte mit 75 einen Schlaganfall. Sonst ist niemand krank.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Mein Vater hat Bluthochdruck, mein Großvater hatte mit 75 einen Schlaganfall. Sonst ist niemand krank.“ Auf dem Aufnahmebogen fehlen noch Beruf und Wohnsituation, und er murmelt: „Ich weiß gar nicht, wo ich mir das geholt haben soll.“",
       "options": [
         "Was ist Ihr sozialer Status?",
         "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse, und wer ist Ihr Arbeitgeber?",
@@ -285,13 +271,12 @@
         "Richtig: Beruf, Wohnsituation, Reisen und Kontakt zu Kranken, alles wichtig für Ansteckung und Prophylaxe.",
         "Unangemessen."
       ],
-      "reply": "Patient: „Ich studiere Informatik und wohne in einer WG mit drei Mitbewohnern. Am Wochenende war ich auf einer Party mit vielen Leuten. Eine Mitbewohnerin hatte letzte Woche eine Erkältung. Verreist bin ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich studiere Informatik und wohne in einer WG mit drei Mitbewohnern. Am Wochenende war ich auf einer Party mit vielen Leuten. Eine Mitbewohnerin hatte letzte Woche eine Erkältung. Verreist bin ich nicht.“ Er sieht Sie unruhig an: „Und, Herr Doktor, was habe ich denn?“",
       "options": [
         "Sie haben eine bakterielle Meningitis, wahrscheinlich durch Meningokokken.",
         "Ich vermute, dass Ihre Hirnhäute entzündet sind, wahrscheinlich durch Bakterien. Das ist ein Notfall, den wir sofort behandeln müssen. Wir klären es jetzt genau ab.",
@@ -305,13 +290,12 @@
         "Verharmlosend und medizinisch falsch.",
         "Verharmlosend und falsch: Eine bakterielle Hirnhautentzündung ist lebensbedrohlich."
       ],
-      "reply": "Patient: „Hirnhautentzündung? Das klingt schlimm. Was passiert jetzt mit mir?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Was machen Sie jetzt mit mir?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Hirnhautentzündung? Das klingt schlimm. Was passiert jetzt mit mir?“",
       "options": [
         "Wir nehmen Ihnen jetzt Blut ab und machen eine Nervenwasserpunktion im Rücken, in örtlicher Betäubung. Gleich danach bekommen Sie über die Vene Antibiotika und Kortison. Sie bleiben im Krankenhaus, zunächst in einem Einzelzimmer, damit sich niemand ansteckt.",
         "Wir machen zuerst ein CT und ein MRT vom Kopf. Antibiotika bekommen Sie erst, wenn das Ergebnis da ist.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Brandt ist 24 und hat Kopfweh und Fieber.",
         "Herr Markus Brandt, ein 24-jähriger Patient, stellte sich heute früh in unsere Notaufnahme mit seit gestern Abend bestehenden, starken Kopfschmerzen, hohem Fieber und Nackensteifigkeit vor.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Die Kopfschmerzen sind seit gestern Abend aufgetreten und danach schlimmer geworden, und er hat Fieber.",
         "Nach einem Infekt der oberen Atemwege vor drei Tagen traten seit gestern Abend progrediente, holokranielle Kopfschmerzen (NRS 9/10) mit Nackenschmerzen, Fieber bis 39,2 °C, Schüttelfrost und Photophobie auf.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend berichtete der Patient über Übelkeit und einmaliges Erbrechen sowie Müdigkeit. Exanthem, Verwirrtheit und Krampfanfälle wurden verneint. Inappetenz; Stuhlgang und Miktion unauffällig, Gewicht konstant.",
         "Begleitend berichtete der Patient über Nausea und einmalige Emesis sowie Müdigkeit. Ein Exanthem, Verwirrtheit und Krampfanfälle wurden bejaht. Ausgeprägte Inappetenz und ein Gewichtsverlust von 5 kg; Stuhlgang und Miktion unauffällig.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen, Medikamenten und Impfungen und schreiben:",
       "options": [
         "Vorerkrankungen: keine. Medikamente: Ibuprofen.",
         "Es sind keine chronischen Vorerkrankungen bekannt. Z. n. Appendektomie im Alter von 12 Jahren. Dauermedikation keine, Ibuprofen 400 mg bei Bedarf, zuletzt zweimal eingenommen. Tetanusimpfung vorhanden, keine Meningokokken-Impfung.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: keine. Noxen: Nikotinabusus.",
         "Birkenpollenallergie (Rhinokonjunktivitis). Nikotinkonsum ca. 10 py, Alkoholkonsum am Wochenende (4–5 Bier). Familienanamnese: Vater arterielle Hypertonie, Großvater Apoplex mit 75 J. Student, lebt in einer Wohngemeinschaft, Kontakt zu einer Mitbewohnerin mit Infekt.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Diagnose: Hirnhautentzündung.",
         "Anamnestisch besteht der Verdacht auf eine bakterielle Meningitis, am ehesten durch Meningokokken oder Pneumokokken. Differenzialdiagnostisch kommen eine virale Meningitis, eine Enzephalitis und eine Subarachnoidalblutung in Betracht.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Wir machen Blut und eine Röhre vom Kopf.",
         "Zur weiteren Abklärung empfehlen wir zunächst eine zerebrale Bildgebung (cCT und cMRT). Die Lumbalpunktion und der Beginn der Antibiose erfolgen erst nach Vorliegen der Befunde.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Der Mann hat Kopfweh, er heißt Brandt.",
         "Ich möchte Ihnen Herrn Markus Brandt vorstellen, einen 24-jährigen Patienten, der sich heute früh mit seit gestern Abend bestehenden, zunehmenden Kopfschmerzen, Fieber und Nackensteifigkeit vorgestellt hat.",
@@ -485,13 +461,12 @@
         "Kein strukturierter Einstieg; zuerst Patient und Leitsymptome.",
         "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“ Er blättert in Ihrem Brief zu den Befunden.",
       "options": [
         "Er hat alles Mögliche.",
         "Die Beschwerden begannen nach einem Infekt vor drei Tagen mit Kopfschmerzen (NRS 4/10) und Fieber bis 37,5 °C. Begleitend bestehen Übelkeit, zweimaliges Erbrechen und ein Hautausschlag. Eine Photophobie wurde verneint.",
@@ -505,13 +480,12 @@
         "Inhaltlich falsch: Durchfall und Dysurie wurden verneint.",
         "Richtig: knapp, strukturiert, mit relevanten Negativbefunden."
       ],
-      "reply": "Oberarzt: „Vorgeschichte und Risikofaktoren?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte und Risikofaktoren?“",
       "options": [
         "Keine chronischen Vorerkrankungen, Z. n. Tonsillektomie mit 12 Jahren, keine Dauermedikation. Wichtig: keine Meningokokken-Impfung, lebt in einer WG mit Kontakt zu einer Mitbewohnerin mit Infekt, Party mit vielen Personen am Wochenende. Birkenpollenallergie, keine Medikamentenallergie.",
         "Er ist gesund.",
@@ -525,13 +499,12 @@
         "Inhaltlich falsch: Es gibt keinen Diabetes, keine Splenektomie und keine Penicillinallergie, und die Impfung fehlt.",
         "Unvollständig: Impfstatus, Allergie und Kontakte fehlen."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich denke an eine Migräne.",
         "Ich weiß es nicht genau.",
@@ -545,13 +518,12 @@
         "Richtig: Verdachtsdiagnose und Differenzialdiagnosen in Fachsprache.",
         "Zu sicher („sicher“), und gefährlich: Eine bakterielle Meningitis darf nicht ausgeschlossen werden, bevor der Liquor vorliegt."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde ihn mit Paracetamol nach Hause schicken.",
         "Ich würde zuerst ein cCT und ein cMRT machen und erst bei Vorliegen der Befunde das Antibiotikum geben, damit wir den Erreger kennen.",
@@ -565,13 +537,12 @@
         "Falsch: Zuerst muss die bakterielle Meningitis behandelt werden. Aciclovir wäre nur bei Verdacht auf Enzephalitis ergänzend.",
         "Richtig: Diagnostik, Antibiose und Dexamethason nach Leitlinie, Isolation und Umgebungsprophylaxe."
       ],
-      "reply": "Oberarzt: „Gut. Was erwarten Sie im Liquor?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Was erwarten Sie im Liquor?“",
       "options": [
         "Ich erwarte eine granulozytäre Pleozytose, ein deutlich erhöhtes Eiweiß, ein erhöhtes Laktat und eine erniedrigte Glukose im Verhältnis zum Serum.",
         "Ich erwarte eine leichte lymphozytäre Pleozytose mit normalem Eiweiß, normaler Glukose und normalem Laktat, wie bei einer Virusmeningitis, und einen klaren, farblosen Liquor.",
@@ -585,13 +556,12 @@
         "In der Prüfung erwartet man eine begründete Antwort.",
         "Das wäre typisch für eine Subarachnoidalblutung, nicht für diesen Verdacht."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Meningismus“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Meningismus“ und sieht Sie fragend an.",
       "options": [
         "Lichtscheu",
         "Schwindel",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Photophobie“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Photophobie“.",
       "options": [
         "Angst vor Höhen",
         "Lichtscheu",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Petechien“?",
+      "situation": "Er tippt auf „Petechien“.",
       "options": [
         "punktförmige Hautblutungen",
         "Hautausschlag mit Quaddeln",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Liquor“?",
+      "situation": "Dann auf „Liquor“.",
       "options": [
         "Blutflüssigkeit ohne Zellen",
         "Gelenkflüssigkeit",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Pleozytose“?",
+      "situation": "Zuletzt zeigt er auf „Pleozytose“.",
       "options": [
         "Vermehrung der roten Blutkörperchen",
         "Eiweiß im Urin",

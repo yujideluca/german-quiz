@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Hartmann sitzt blass auf der Liege und hält sich den Oberbauch.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Ein blasser Mann sitzt auf der Liege, hält sich den Oberbauch und sieht Sie an.",
       "options": [
         "Guten Morgen, Herr Hartmann. Bevor wir anfangen: Haben Sie Ihre Versichertenkarte und Ihren Personalausweis dabei? Die brauche ich zuerst für die Anmeldung.",
         "Guten Morgen, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Hartmann?",
@@ -25,13 +24,12 @@
         "Zu umgangssprachlich und ohne Vorstellung. In der Prüfung zählt eine höfliche, vollständige Begrüßung.",
         "Die körperliche Untersuchung kommt nach der Anamnese. Erst begrüßen und sich vorstellen."
       ],
-      "reply": "Patient: „Ja, Hartmann. Guten Morgen, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Hartmann. Guten Morgen, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie ist Ihr Body-Mass-Index?",
         "Sie sind doch über sechzig, oder?",
@@ -45,13 +43,12 @@
         "Geburtsdatum und Krankenkasse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht.",
         "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht."
       ],
-      "reply": "Patient: „Ich bin 61, 1,78 Meter groß und wiege etwa 88 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 61, 1,78 Meter groß und wiege etwa 88 Kilo.“ Er verzieht das Gesicht und wartet darauf, dass Sie weitermachen.",
       "options": [
         "Was führt Sie heute zu uns? Erzählen Sie bitte.",
         "Haben Sie Bauchschmerzen?",
@@ -65,33 +62,31 @@
         "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
         "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache."
       ],
-      "reply": "Patient: „Seit etwa vier Tagen brennt es mir oben im Bauch, und seit gestern ist mein Stuhl ganz schwarz.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten wissen, wo der Schmerz sitzt und wann er auftritt. Was sagen Sie?",
+      "situation": "Patient: „Seit etwa vier Tagen brennt es mir oben im Bauch, und seit gestern ist mein Stuhl ganz schwarz.“ Er presst die Hand auf den Bauch, ohne genau zu zeigen, wo es wehtut.",
       "options": [
         "Ist der Schmerz epigastrisch lokalisiert, und tritt er eher postprandial oder nüchtern auf?",
         "Wo genau tut es weh? Der Schmerz sitzt doch bestimmt direkt unter dem Brustbein, und nach dem Essen wird es schlimmer, oder?",
         "Zeigen Sie mir bitte, wo es genau wehtut. Ist der Schmerz eher nach dem Essen da oder eher, wenn der Magen leer ist?",
-        "Wo tut es weh?"
+        "Und der schwarze Stuhl: Warum sind Sie damit nicht sofort zum Hausarzt gegangen?"
       ],
       "answer": 2,
       "feedback": [
         "Fachsprache („epigastrisch“, „postprandial“); der Patient versteht die Frage nicht.",
         "Suggestivfrage: Sie geben Ort und Zeitpunkt schon vor, der Patient könnte nur zustimmen.",
         "Richtig: laienverständlich, mit Zeigen und mit beiden Möglichkeiten, ohne die Antwort vorzugeben.",
-        "Zu knapp: der Zusammenhang mit dem Essen bleibt offen."
+        "Vorwurfsvoll, und Sie springen vom Thema: erst Ort und Zeitpunkt des Schmerzes erfragen."
       ],
-      "reply": "Patient: „Hier, in der Mitte oben, unter dem Brustbein. Es ist schlimmer, wenn der Magen leer ist, nachts wache ich davon auf. Nach einer Scheibe Brot wird es besser.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patient: „Hier, in der Mitte oben, unter dem Brustbein. Es ist schlimmer, wenn der Magen leer ist, nachts wache ich davon auf. Nach einer Scheibe Brot wird es besser.“ Sie wissen noch nicht, wie der Schmerz sich entwickelt hat.",
       "options": [
         "Hat es plötzlich angefangen?",
         "Wann genau hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben?",
@@ -105,13 +100,12 @@
         "Das hat der Patient schon gesagt (seit etwa vier Tagen). Fragen Sie nach dem Verlauf.",
         "Fachsprache: „Erstmanifestation“, „subakut“ und „progredient“ versteht der Patient nicht."
       ],
-      "reply": "Patient: „Vor vier Tagen fing es langsam an und ist seitdem schlimmer geworden. Seit gestern bin ich dazu schwach und schwindelig.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "situation": "Patient: „Vor vier Tagen fing es langsam an und ist seitdem schlimmer geworden. Seit gestern bin ich dazu schwach und schwindelig.“ Sie wissen noch nicht, wie sich der Schmerz anfühlt und wie stark er ist.",
       "options": [
         "Tut es sehr weh?",
         "Sind die Schmerzen eher brennend, nagend oder kolikartig im Sinne einer viszeralen Schmerzcharakteristik, und wie hoch ist der VAS-Wert?",
@@ -125,13 +119,12 @@
         "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS).",
         "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10."
       ],
-      "reply": "Patient: „Es brennt und nagt. Ungefähr 6 von 10.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Es brennt und nagt. Ungefähr 6 von 10.“ Er schluckt, wird noch blasser und hält sich kurz die Hand vor den Mund.",
       "options": [
         "Hatten Sie Nausea, Emesis, Hämatemesis oder Meläna, und sind Ihnen Synkopen oder Palpitationen oder eine Dyspnoe aufgefallen?",
         "Ist Ihnen übel, mussten Sie sich übergeben? Haben Sie Blut gesehen, im Erbrochenen oder im Stuhl? Wird Ihnen schwindelig oder schwarz vor Augen?",
@@ -145,13 +138,12 @@
         "Zu umgangssprachlich und unkonkret.",
         "Suggestiv: Sie unterstellen das Symptom."
       ],
-      "reply": "Patient: „Einmal habe ich etwas Dunkelbraunes erbrochen, das sah aus wie Kaffeesatz. Der Stuhl war gestern zweimal schwarz und klebrig, und er roch furchtbar. Beim Aufstehen wird mir schwarz vor Augen, ohnmächtig war ich aber nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Einmal habe ich etwas Dunkelbraunes erbrochen, das sah aus wie Kaffeesatz. Der Stuhl war gestern zweimal schwarz und klebrig, und er roch furchtbar. Beim Aufstehen wird mir schwarz vor Augen, ohnmächtig war ich aber nicht.“ Die Begleitsymptome sind damit geklärt. Er wischt sich den Schweiß von der Stirn.",
       "options": [
         "Wie ist die Vegetativa?",
         "Haben Sie Schüttelfrost, Nachtschweiß, Gewichtsverlust, Dysphagie, Odynophagie, Pruritus und Diarrhö?",
@@ -165,13 +157,12 @@
         "Richtig: Fieber, Appetit, Gewicht und Wasserlassen in Laiensprache; Gewichtsverlust ist bei Magenkarzinom wichtig.",
         "Zu allgemein; der Patient sagt einfach „ja“."
       ],
-      "reply": "Patient: „Fieber habe ich nicht. Mein Appetit ist schlecht, seit drei Tagen esse ich kaum etwas, aber mein Gewicht ist gleich geblieben. Wasserlassen ist normal.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patient: „Fieber habe ich nicht. Mein Appetit ist schlecht, seit drei Tagen esse ich kaum etwas, aber mein Gewicht ist gleich geblieben. Wasserlassen ist normal.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles; über seine Vorgeschichte noch nichts.",
       "options": [
         "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck, Zucker oder Magenprobleme? Und wurden Sie schon einmal operiert?",
         "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, einen Diabetes mellitus oder eine Gastritis, und gab es Voroperationen oder stationäre Aufenthalte?",
@@ -185,13 +176,12 @@
         "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
         "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
       ],
-      "reply": "Patient: „Ich habe Bluthochdruck und Arthrose in beiden Knien. Mit dem Magen hatte ich nie etwas. Operiert wurde ich vor zehn Jahren an einem Leistenbruch rechts.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Ich habe Bluthochdruck und Arthrose in beiden Knien. Mit dem Magen hatte ich nie etwas. Operiert wurde ich vor zehn Jahren an einem Leistenbruch rechts.“ Er reibt sich das Knie und kramt in der Jackentasche nach einem Tablettenblister.",
       "options": [
         "Nehmen Sie Tabletten?",
         "Welche Pharmaka applizieren Sie, und in welcher Dosierung nehmen Sie Antiphlogistika oder Antikoagulanzien ein?",
@@ -205,13 +195,12 @@
         "Suggestivfrage. Fragen Sie offen.",
         "Richtig: Name, Dosierung und auch Schmerzmittel und frei verkäufliche Mittel."
       ],
-      "reply": "Patient: „Ramipril 5 mg morgens. Gegen die Knie nehme ich seit drei Wochen Diclofenac 75 mg, morgens und abends. Magenschutz nehme ich keinen, und Aspirin auch nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Ramipril 5 mg morgens. Gegen die Knie nehme ich seit drei Wochen Diclofenac 75 mg, morgens und abends. Magenschutz nehme ich keinen, und Aspirin auch nicht.“ Die Pflegekraft ruft von der Tür, ob sie schon ein Schmerzmittel für den Patienten aufziehen soll.",
       "options": [
         "Allergie?",
         "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
@@ -225,13 +214,12 @@
         "Zu eng: Allergien gegen andere Medikamente, zum Beispiel Schmerzmittel, übersehen Sie.",
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
       ],
-      "reply": "Patient: „Gegen Metamizol, das Schmerzmittel. Da bekam ich Nesselausschlag und Atemnot.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Metamizol, das Schmerzmittel. Da bekam ich Nesselausschlag und Atemnot.“ Auf dem Stuhl liegt seine Jacke, aus der Tasche schaut eine Zigarettenschachtel.",
       "options": [
         "Sind Sie Raucher oder sogar Alkoholiker, und wie viele Zigaretten und Flaschen sind es am Tag?",
         "Wie ist Ihr Nikotin- und Alkoholabusus?",
@@ -245,13 +233,12 @@
         "Richtig: neutral, konkret, mit Menge.",
         "Wertend und ungenau."
       ],
-      "reply": "Patient: „Ich rauche seit 25 Jahren etwa 20 Zigaretten am Tag. Alkohol ungefähr sechs Bier pro Woche. Drogen nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche seit 25 Jahren etwa 20 Zigaretten am Tag. Alkohol ungefähr sechs Bier pro Woche. Drogen nie.“ Dann fügt er hinzu: „Mit dem Magen ist bei uns in der Familie schon einiges passiert.“",
       "options": [
         "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Magen- oder Darmkrebs, Geschwüre oder Herzerkrankungen?",
         "Wie ist die Familienanamnese?",
@@ -265,13 +252,12 @@
         "Zu eng: Geschwister und Kinder fehlen, und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
         "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
       ],
-      "reply": "Patient: „Mein Vater ist mit 72 an Magenkrebs gestorben. Meine Mutter hat Diabetes.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Mein Vater ist mit 72 an Magenkrebs gestorben. Meine Mutter hat Diabetes.“ Er schaut aufs Handy: „Meine Frau weiß noch gar nicht, dass ich hier bin.“",
       "options": [
         "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
         "Was machen Sie beruflich? Wie wohnen Sie, allein oder mit jemandem zusammen?",
@@ -285,13 +271,12 @@
         "Unklar und unangenehm formuliert.",
         "Unangemessen."
       ],
-      "reply": "Patient: „Ich bin Lkw-Fahrer und wohne mit meiner Frau zusammen. Wir haben einen erwachsenen Sohn.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich bin Lkw-Fahrer und wohne mit meiner Frau zusammen. Wir haben einen erwachsenen Sohn.“ Er sieht Sie besorgt an: „Und, Herr Doktor, was habe ich denn?“",
       "options": [
         "Sie haben eine obere gastrointestinale Blutung bei Ulcus ventriculi, wahrscheinlich NSAR-induziert.",
         "Es ist wahrscheinlich nichts Schlimmes, nur eine Magenverstimmung von den Tabletten.",
@@ -305,13 +290,12 @@
         "Richtig: Verdacht (nicht Gewissheit), Laiensprache, Zusammenhang mit den Tabletten kurz erklärt.",
         "Falsch und beängstigend."
       ],
-      "reply": "Patient: „Ein blutendes Geschwür? Und was passiert jetzt mit mir?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Muss ich operiert werden?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Ein blutendes Geschwür? Und was passiert jetzt mit mir? Muss ich operiert werden?“",
       "options": [
         "Ja, noch heute wird Ihr Magen teilweise entfernt.",
         "Das entscheidet der Chef, ich weiß es nicht.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Hartmann ist 61 und hat Bauchweh und schwarzen Stuhl.",
         "Der Patient Herr Hartmann stellt sich heute vor wegen Oberbauchschmerzen seit vier Tagen und schwarzem Stuhl, 61-jährig.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Die Oberbauchschmerzen sind seit vier Tagen progredient, brennend-nagend, nüchtern und nachts betont, mit Besserung nach Nahrungsaufnahme (NRS 6/10). Seit gestern besteht Teerstuhl.",
         "Die Oberbauchschmerzen sind seit vier Tagen regredient, kolikartig, postprandial betont, mit Verschlechterung nach Nahrungsaufnahme (NRS 6/10). Seit gestern besteht Teerstuhl, zusätzlich mit Ausstrahlung in den Rücken.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend berichtete der Patient über Nausea und einmalige Emesis, orthostatischen Schwindel sowie Fieber bis 38,5 °C. Eine Synkope und ein Gewichtsverlust wurden verneint. Inappetenz seit drei Tagen, Miktion unauffällig, kein Teerstuhl.",
         "Er hat einmal gekotzt und ihm ist schwindelig.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "Vorerkrankungen: Bluthochdruck, Kniearthrose. Medikamente: Ramipril, Diclofenac.",
         "An Vorerkrankungen sind eine arterielle Hypertonie und eine beidseitige Gonarthrose bekannt. Z. n. Hernioplastik rechts vor zehn Jahren. Medikation: Ramipril 5 mg 1-0-0, Diclofenac 75 mg 1-0-1 seit drei Wochen, kein Magenschutz.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: keine. Noxen: Nikotin- und Alkoholabusus.",
         "Metamizolallergie (Anaphylaxie). Nikotinkonsum ca. 50 py, täglicher Alkoholkonsum von etwa einer Flasche Wein. Familienanamnese: Vater Kolonkarzinom, Mutter Diabetes mellitus. Der Patient ist Berufskraftfahrer, ledig, lebt allein und hat keine Kinder.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Anamnestisch besteht der Verdacht auf eine obere gastrointestinale Blutung bei Ulcus ventriculi oder duodeni, am ehesten NSAR-induziert. Differenzialdiagnostisch kommen eine erosive Gastritis, eine Mallory-Weiss-Läsion und ein Magenkarzinom in Betracht.",
         "Anamnestisch besteht der Verdacht auf eine untere gastrointestinale Blutung bei Divertikulose. Differenzialdiagnostisch kommen eine Kolitis, eine hämorrhoidale Blutung und ein Kolonkarzinom in Betracht. Die Oberbauchschmerzen sind dabei ein Zufallsbefund.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Zur weiteren Abklärung empfehlen wir eine Koloskopie sowie eine analgetische Therapie mit Metamizol und die Fortführung von Diclofenac.",
         "Wir machen Blut und Magenspiegelung.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Der Patient hat Bauchweh und schwarzen Stuhl, er heißt Hartmann.",
         "Also, der Mann nimmt seit drei Wochen Schmerztabletten fürs Knie und hat jetzt schwarzen Stuhl und Bauchweh, glaube ich, und schwindelig ist ihm auch noch.",
@@ -485,13 +461,12 @@
         "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
         "Richtig: Name, Alter, Leitsymptome und zeitlicher Verlauf in einem Satz."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“",
       "options": [
         "Die Schmerzen sind brennend, epigastrisch, nüchtern und nachts betont und bessern sich nach Nahrungsaufnahme (NRS 6/10). Begleitend bestehen eine einmalige kaffeesatzartige Hämatemesis, zweimaliger Teerstuhl und orthostatischer Schwindel. Fieber wurde verneint.",
         "Die Schmerzen traten postprandial auf und strahlen gürtelförmig in den Rücken aus. Begleitend bestehen Übelkeit, Fieber bis 38,5 °C und frisches Blut im Stuhl, aber keine Hämatemesis. Ein Schwindel wurde verneint.",
@@ -505,13 +480,12 @@
         "Keine Information.",
         "Inhaltlich falsch: Fieber und Durchfall wurden verneint bzw. nicht berichtet."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Er ist gesund.",
         "Bekannt sind eine arterielle Hypertonie und ein Diabetes mellitus Typ 2. Keine Allergien. Er nimmt Aspirin 100 mg und Pantoprazol 40 mg regelmäßig, der Vater lebt noch und ist gesund.",
@@ -525,13 +499,12 @@
         "Richtig: relevante Vorgeschichte, die NSAR-Einnahme ohne Magenschutz, die Allergie und die Familienanamnese.",
         "Unvollständig: Diclofenac, Allergie und Familie fehlen."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich denke an Magenprobleme.",
         "Ich vermute eine obere gastrointestinale Blutung bei NSAR-induziertem Ulcus ventriculi oder duodeni. Differenzialdiagnostisch denke ich an eine erosive Gastritis, eine Mallory-Weiss-Läsion und ein blutendes Magenkarzinom.",
@@ -545,13 +518,12 @@
         "Zu sicher („sicher“), und Teerstuhl mit Hämatemesis spricht für eine obere, nicht untere Blutung.",
         "In der Prüfung sollen Sie eine begründete Vermutung äußern."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde den Patienten stationär aufnehmen und monitorisieren, zwei großlumige Zugänge legen und Blut abnehmen, inklusive Blutbild, Gerinnung, Kreuzblut und Nierenwerten. Therapeutisch Volumen und Pantoprazol 80 mg i. v. als Bolus, Diclofenac absetzen, kein Metamizol wegen der Allergie. Dann eine Gastroskopie innerhalb von 24 Stunden mit Biopsien für Helicobacter pylori.",
         "Ich würde ihn nach Hause schicken und morgen ambulant eine Gastroskopie planen.",
@@ -565,18 +537,17 @@
         "Gefährlich: Metamizol ist kontraindiziert (Allergie), Diclofenac ist die wahrscheinliche Ursache, und eine Koloskopie ist nicht die erste Untersuchung.",
         "Übertrieben: Zuerst kommt die Endoskopie; eine Operation ist nur bei Versagen der endoskopischen Therapie nötig."
       ],
-      "reply": "Oberarzt: „Gut. Die Gastroskopie zeigt ein Ulkus mit spritzender Blutung. Wie klassifizieren Sie das, und was tun Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Die Gastroskopie zeigt ein Ulkus mit spritzender Blutung. Wie klassifizieren Sie das, und was tun Sie?“",
       "options": [
         "Das ist Forrest III, ein Ulkus mit Fibrinbelag; ich würde nur Pantoprazol oral geben und die Blutung nicht behandeln.",
         "Ich klassifiziere nach Child-Pugh als Stadium B und würde einen TIPS anlegen.",
         "Das ist Forrest Ia (spritzende Blutung). Ich würde sofort endoskopisch die Blutung stillen, zum Beispiel mit einer Adrenalin-Injektion kombiniert mit einem Clip, danach Pantoprazol hochdosiert i. v. für 72 Stunden.",
-        "Das ist Forrest Ia; ich würde allein Pantoprazol oral geben und abwarten, weil Blutungen im Ulkus meistens von selbst aufhören und eine Therapie nicht nötig ist."
+        "Das ist Forrest Ia; ich würde allein Pantoprazol oral geben und abwarten, weil Blutungen im Ulkus meistens von selbst aufhören und eine endoskopische Therapie nicht nötig ist, und den Patienten danach auf die Normalstation verlegen."
       ],
       "answer": 2,
       "feedback": [
@@ -585,13 +556,12 @@
         "Richtig: Forrest Ia, sofortige endoskopische Blutstillung (Injektion plus mechanisch) und hochdosierte Säurehemmung.",
         "Gefährlich: eine spritzende Blutung (Forrest Ia) braucht sofort eine endoskopische Therapie."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Meläna“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Meläna“ und sieht Sie fragend an.",
       "options": [
         "Blut im Urin",
         "Teerstuhl, schwarzer Stuhl durch verdautes Blut",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Hämatemesis“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Hämatemesis“.",
       "options": [
         "Blut im Stuhl",
         "Blutarmut",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Epigastrium“?",
+      "situation": "Er tippt auf „Epigastrium“.",
       "options": [
         "Oberbauchmitte",
         "Unterbauch",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Ösophagogastroduodenoskopie“?",
+      "situation": "Dann auf „Ösophagogastroduodenoskopie“.",
       "options": [
         "Darmspiegelung",
         "Röntgen mit Kontrastbrei",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Anämie“?",
+      "situation": "Zuletzt zeigt er auf „Anämie“.",
       "options": [
         "Blutvergiftung",
         "Blutgerinnsel",

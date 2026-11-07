@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Berger sitzt aufrecht auf der Liege und atmet etwas schnell.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Ein sehr großer, schlanker junger Mann sitzt aufrecht auf der Liege, atmet etwas schnell und sieht Sie an.",
       "options": [
         "Guten Tag, ich bin Dr. Silva. Legen Sie sich bitte sofort hin, ich höre zuerst Ihre Lunge ab, danach unterhalten wir uns in Ruhe.",
         "Hi, was haben Sie denn?",
@@ -25,13 +24,12 @@
         "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
         "Verwaltungsfragen gehören nicht an den Anfang des Arzt-Patienten-Gesprächs, und Sie stellen sich nicht vor."
       ],
-      "reply": "Patient: „Ja, Berger. Guten Tag, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Berger. Guten Tag, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und bei welcher Krankenkasse sind Sie versichert?",
         "Wie alt sind Sie, und wie groß und wie schwer sind Sie ungefähr?",
@@ -45,13 +43,12 @@
         "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
         "Den BMI kennt kaum ein Patient. Fragen Sie nach Größe und Gewicht und rechnen Sie selbst."
       ],
-      "reply": "Patient: „Ich bin 24, 1,92 Meter groß und wiege ungefähr 68 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 24, 1,92 Meter groß und wiege ungefähr 68 Kilo.“ Er atmet flach und sieht Sie abwartend an. Warum er gekommen ist, steht noch nicht auf dem Bogen.",
       "options": [
         "Haben Sie Schmerzen in der Brust?",
         "Welche Symptomatik führt Sie zu uns, und seit wann besteht sie?",
@@ -65,13 +62,12 @@
         "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn.",
         "Richtig: eine offene Frage lässt den Patienten selbst erzählen."
       ],
-      "reply": "Patient: „Ich habe seit heute Vormittag einen stechenden Schmerz in der Brust und bekomme schlecht Luft.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten wissen, wo der Schmerz sitzt und wann er schlimmer wird. Was sagen Sie?",
+      "situation": "Patient: „Ich habe seit heute Vormittag einen stechenden Schmerz in der Brust und bekomme schlecht Luft.“ Er legt die Hand flach auf den Brustkorb und verzieht beim Einatmen das Gesicht.",
       "options": [
         "Wo genau tut es weh, auf der rechten oder linken Seite? Wird der Schmerz beim Atmen oder bei Bewegung stärker oder schwächer?",
         "Ist der Schmerz thorakal lokalisiert, und besteht eine Atemabhängigkeit oder eine Lageabhängigkeit der Beschwerden im Sinne einer Pleuritis?",
@@ -85,13 +81,12 @@
         "Suggestivfrage, und ein Schmerz links hinter dem Brustbein würde eher an das Herz denken lassen.",
         "Das hat der Patient schon gesagt. Fragen Sie nach Seite und Auslösern."
       ],
-      "reply": "Patient: „Rechts seitlich oben in der Brust. Beim tiefen Einatmen wird es schlimmer. Ich saß nur am Schreibtisch, angestrengt habe ich mich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patient: „Rechts seitlich oben in der Brust. Beim tiefen Einatmen wird es schlimmer. Ich saß nur am Schreibtisch, angestrengt habe ich mich nicht.“ Er reibt sich die Seite. Wie es genau angefangen hat und wie es sich seither entwickelt hat, ist noch offen.",
       "options": [
         "Seit wann haben Sie die Beschwerden?",
         "Wie war der zeitliche Verlauf seit der Erstmanifestation: perakut, subakut oder chronisch progredient?",
@@ -105,13 +100,12 @@
         "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage.",
         "Geschlossene Frage; sie erfasst den Verlauf nicht."
       ],
-      "reply": "Patient: „Heute um 10 Uhr, ganz plötzlich. Seitdem ist der Schmerz etwas besser geworden, aber die Luftnot ist geblieben.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Art und Stärke des Schmerzes und nach der Luftnot. Welche Formulierung passt?",
+      "situation": "Patient: „Heute um 10 Uhr, ganz plötzlich. Seitdem ist der Schmerz etwas besser geworden, aber die Luftnot ist geblieben.“ Er atmet flach und kann nicht recht einschätzen, wie schlimm der Schmerz und die Luftnot wirklich sind.",
       "options": [
         "Ist der Schmerz pleuritisch, und liegt eine Dyspnoe der Klasse NYHA II oder III vor?",
         "Tut es sehr weh, und bekommen Sie sehr schlecht Luft?",
@@ -125,13 +119,12 @@
         "Unübliche Skala. In Deutschland fragt man 0 bis 10 (NRS), und die Treppenstufen sind kein guter Maßstab.",
         "Richtig: Beispiele für die Schmerzart, die übliche Skala von 0 bis 10 und die Belastbarkeit."
       ],
-      "reply": "Patient: „Es ist ein stechender Schmerz, so 6 von 10. Schon nach einem Stockwerk Treppe bekomme ich Luftnot, sonst schaffe ich locker fünf.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Es ist ein stechender Schmerz, so 6 von 10. Schon nach einem Stockwerk Treppe bekomme ich Luftnot, sonst schaffe ich locker fünf.“ Er hustet kurz trocken und räuspert sich. Weitere Beschwerden hat er bisher nicht erwähnt.",
       "options": [
         "Müssen Sie husten, haben Sie Blut gehustet, haben Sie Herzklopfen, oder sind Ihre Beine geschwollen oder schmerzhaft? Gab es einen Unfall oder einen Schlag auf die Brust?",
         "Haben Sie Husten, Hämoptysen, Palpitationen, Beinödeme, eine Synkope oder ein Thoraxtrauma in der Anamnese, und bestehen Fieber, Auswurf oder Nachtschweiß?",
@@ -145,13 +138,12 @@
         "Zu umgangssprachlich und unkonkret.",
         "Suggestiv: Sie unterstellen das Symptom."
       ],
-      "reply": "Patient: „Ich habe einen trockenen Reizhusten, aber kein Blut gehustet. Mein Herz schlägt etwas schneller. Die Beine sind in Ordnung, und einen Unfall hatte ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Ich habe einen trockenen Reizhusten, aber kein Blut gehustet. Mein Herz schlägt etwas schneller. Die Beine sind in Ordnung, und einen Unfall hatte ich nicht.“ Auf dem Anamnesebogen sind die Felder für Fieber, Appetit, Stuhlgang, Wasserlassen und Gewicht noch leer.",
       "options": [
         "Haben Sie Schüttelfrost, Nachtschweiß, Gewichtsverlust, Dysurie, Obstipation und Diarrhö, und wie ist Ihr Appetit, Herr Berger?",
         "Wie ist die Vegetativa?",
@@ -165,13 +157,12 @@
         "Zu allgemein; der Patient sagt einfach „ja“.",
         "Richtig: Fieber, Appetit, Stuhlgang, Wasserlassen und Gewicht in Laiensprache."
       ],
-      "reply": "Patient: „Fieber hatte ich nicht, gestern Abend 36,8 Grad. Appetit, Stuhlgang und Wasserlassen sind normal. Mein Gewicht ist seit Jahren gleich.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patient: „Fieber hatte ich nicht, gestern Abend 36,8 Grad. Appetit, Stuhlgang und Wasserlassen sind normal. Mein Gewicht ist seit Jahren gleich.“ Auf dem Bogen ist das Feld für Vorerkrankungen und Operationen noch leer.",
       "options": [
         "Sind Sie gesund?",
         "Haben Sie Vorerkrankungen der Lunge, zum Beispiel Asthma, oder andere chronische Erkrankungen? Hatten Sie so etwas schon einmal? Wurden Sie schon einmal operiert?",
@@ -185,13 +176,12 @@
         "Vollständig gedacht, aber in Fachsprache („obstruktiv“, „Kollagenose“, „Marfan-Syndrom“).",
         "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
       ],
-      "reply": "Patient: „Außer Heuschnupfen bin ich gesund. Asthma habe ich nicht, und so etwas hatte ich noch nie. Operiert wurde ich noch nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Außer Heuschnupfen bin ich gesund. Asthma habe ich nicht, und so etwas hatte ich noch nie. Operiert wurde ich noch nie.“ Auf dem Bogen ist das Feld für Medikamente noch leer.",
       "options": [
         "Nehmen Sie regelmäßig irgendwelche Tabletten oder Tropfen, die Ihnen ein Arzt irgendwann einmal verschrieben hat?",
         "Sie nehmen doch sicher etwas gegen Ihren Heuschnupfen?",
@@ -205,13 +195,12 @@
         "Richtig: Name, Dosierung, Bedarfsmedikation und auch frei verkäufliche Mittel.",
         "Fachsprache („Pharmaka“, „applizieren“)."
       ],
-      "reply": "Patient: „Im Frühjahr nehme ich bei Bedarf abends Cetirizin 10 mg. Gegen die Schmerzen habe ich heute noch nichts genommen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Im Frühjahr nehme ich bei Bedarf abends Cetirizin 10 mg. Gegen die Schmerzen habe ich heute noch nichts genommen.“ Die Pflegekraft ruft von der Tür, ob sie schon ein Schmerzmittel vorbereiten soll.",
       "options": [
         "Sind Sie gegen Penicillin allergisch? Das ist wichtig, weil wir Ihnen vielleicht gleich ein Antibiotikum geben möchten, und Penicillin nehmen wir am häufigsten.",
         "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
@@ -220,18 +209,17 @@
       ],
       "answer": 1,
       "feedback": [
-        "Zu eng: Allergien gegen Schmerzmittel, Lebensmittel oder Pflaster übersehen Sie.",
+        "Zu eng und am Thema vorbei: Die Pflegekraft wartet auf das Schmerzmittel, ein Antibiotikum ist hier gar nicht geplant. Allergien gegen Schmerzmittel, Lebensmittel oder Pflaster übersehen Sie.",
         "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
         "Fachwort, das Patienten nicht kennen, und die Frage erfasst die Art der Reaktion nicht.",
         "Kein vollständiger Satz; in der Prüfung unhöflich."
       ],
-      "reply": "Patient: „Gegen Metamizol, also Novalgin. Da bekam ich Nesselsucht am ganzen Körper.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Metamizol, also Novalgin. Da bekam ich Nesselsucht am ganzen Körper.“ Aus der Jacke auf der Liege schaut eine Zigarettenschachtel.",
       "options": [
         "Sind Sie Raucher oder sogar Alkoholiker, und wie viele Jahre trinken und rauchen Sie schon, wenn man das so fragen darf?",
         "Wie ist Ihr Nikotin-, Alkohol- und Drogenabusus, und seit wie vielen Jahren besteht dieser Abusus bereits ungefähr?",
@@ -245,33 +233,31 @@
         "Richtig: neutral, konkret, mit Menge und Dauer.",
         "Wertend und ungenau."
       ],
-      "reply": "Patient: „Ich rauche seit 8 Jahren etwa 10 Zigaretten am Tag. Alkohol nur am Wochenende, zwei Bier. Ab und zu, etwa einmal im Monat, rauche ich auf Partys einen Joint. Sonst keine Drogen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche seit 8 Jahren etwa 10 Zigaretten am Tag. Alkohol nur am Wochenende, zwei Bier. Ab und zu, etwa einmal im Monat, rauche ich auf Partys einen Joint. Sonst keine Drogen.“ Er zuckt mit den Schultern: „Meine Eltern wissen noch gar nicht, dass ich hier bin.“",
       "options": [
         "Wie ist die Familienanamnese?",
-        "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
+        "Dann rufe ich jetzt Ihre Eltern an und frage sie selbst, welche Krankheiten in Ihrer Familie vorkommen.",
         "Hat Ihre Familie dieselbe Krankheit?",
         "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Lungen-, Herz- oder Krebserkrankungen?"
       ],
       "answer": 3,
       "feedback": [
         "„Familienanamnese“ ist ein Fachwort.",
-        "Zu eng: Geschwister und häufige Erkrankungen in der Familie erfahren Sie so nicht.",
+        "Ohne Ihre Einwilligung rufen Sie niemanden an, und Sie fragen den Patienten selbst.",
         "Sie kennen die Diagnose noch nicht; die Frage ist unklar.",
         "Richtig: offen, mit passenden Beispielen."
       ],
-      "reply": "Patient: „Mein Vater hat Bluthochdruck. Lungenerkrankungen gibt es in der Familie nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Mein Vater hat Bluthochdruck. Lungenerkrankungen gibt es in der Familie nicht.“ Er schaut auf sein Handy und seufzt: „Eigentlich hatte ich heute viel vor.“",
       "options": [
         "Sind Sie ledig, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
         "Was ist Ihr sozialer Status?",
@@ -285,13 +271,12 @@
         "Unangemessen.",
         "Richtig: Beruf und Wohnsituation, beides wichtig für Entlassung und Versorgung."
       ],
-      "reply": "Patient: „Ich studiere Informatik und wohne in einer WG mit zwei Mitbewohnern.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich studiere Informatik und wohne in einer WG mit zwei Mitbewohnern.“ Er sieht Sie besorgt an: „Und, Herr Doktor, was habe ich denn?“",
       "options": [
         "Es ist wahrscheinlich nichts Schlimmes, nur eine Muskelzerrung vom langen Sitzen am Schreibtisch, das vergeht in ein paar Tagen von allein.",
         "Sie haben einen primären Spontanpneumothorax rechts, das ist ganz eindeutig, und wir behandeln ihn nach dem üblichen Schema.",
@@ -305,13 +290,12 @@
         "Falsch und beängstigend: Sie nennen eine ungesicherte Diagnose als sicher.",
         "Richtig: Verdacht (nicht Gewissheit), Laiensprache, kurze Erklärung des Mechanismus."
       ],
-      "reply": "Patient: „Die Lunge ist zusammengefallen? Und was passiert jetzt mit mir?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Muss ich einen Schlauch in die Brust bekommen?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Die Lunge ist zusammengefallen? Und was passiert jetzt mit mir? Muss ich einen Schlauch in die Brust bekommen?“",
       "options": [
         "Ja, bei Ihnen wird gleich ein dicker Schlauch in die Brust gelegt, und zwar sofort, ohne dass wir vorher ein Röntgenbild machen oder Sie weiter untersuchen.",
         "Das kann ich Ihnen jetzt leider nicht sagen, das entscheidet allein der Chef, und der hat gerade keine Zeit; fragen Sie ihn später selbst.",
@@ -330,18 +314,17 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Berger ist 24 und hat Probleme mit der Lunge.",
-        "Herr Lukas Berger, ein 24-jähriger Patient, hat sich heute in unserer Notaufnahme mit seit dem Vormittag bestehenden Schmerzen im Brustkorb vorgestellt, die er als sehr unangenehm beschrieb.",
+        "Herr Lukas Berger, ein 24-jähriger Patient, hat sich heute in unsere Notaufnahme mit seit dem Vormittag bestehenden Schmerzen im Brustkorb vorgestellt.",
         "Herr Lukas Berger (24 J.) stellte sich heute in unserer Notaufnahme mit seit 10 Uhr bestehenden, plötzlich aufgetretenen Schmerzen im rechten Brustkorb und Luftnot vor.",
         "Der Patient Herr Berger stellt sich heute vor wegen Brustschmerzen rechts seit 10 Uhr, 24-jährig."
       ],
       "answer": 2,
       "feedback": [
         "Umgangssprache gehört nicht in den Arztbrief.",
-        "Grammatisch richtig, aber das Leitsymptom ist zu ungenau: Seite und Luftnot fehlen.",
+        "Grammatik: „in unserer Notaufnahme“ (Dativ, wo?). Außerdem ist das Leitsymptom zu ungenau: Seite und Luftnot fehlen.",
         "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort, Beginn, Seite und Leitsymptome.",
         "Satzbau falsch: Die Altersangabe hängt am Ende, und die Zeitform passt nicht zum Bericht."
       ],
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Die Beschwerden seien in Ruhe plötzlich aufgetreten und strahlen in die linke Schulter aus, der Schmerz sei mit NRS 6 beschrieben worden, und eine Belastungsdyspnoe bestehe nicht.",
         "Der Schmerz hat plötzlich angefangen, als er am Schreibtisch saß, und tut beim Einatmen weh. Seitdem ist es etwas besser, aber er kriegt schon nach einer Treppe schlecht Luft.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend berichtete der Patient über einen trockenen Reizhusten und leichte Palpitationen. Hämoptysen, Beinschwellungen und ein Thoraxtrauma wurden verneint. Fieber (36,8 °C am Vorabend) und Gewichtsverlust wurden ebenfalls verneint; Appetit, Stuhlgang und Miktion unauffällig.",
         "Er hustet trocken und hat manchmal Herzklopfen, aber er hat kein Blut gehustet und keine Schmerzen in den Beinen.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "Vorerkrankungen: Asthma, Heuschnupfen. Medikamente: Cetirizin.",
         "Eine Pollinose ist bekannt. Pulmonale Vorerkrankungen und Voroperationen werden verneint; ein Pneumothorax trat erstmalig auf. Medikation: Cetirizin 10 mg 0-0-1 bei Bedarf, bisher keine Analgetika.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Metamizolallergie (Urtikaria). Nikotinkonsum ca. 4 py, gelegentlicher Alkoholkonsum, Cannabiskonsum etwa einmal monatlich. Familienanamnese: Vater arterielle Hypertonie, pulmonale Erkrankungen werden verneint. Der Patient ist Student und lebt in einer WG.",
         "Metamizolallergie (Anaphylaxie). Nikotinkonsum ca. 8 py, kein Alkohol- oder Drogenkonsum. Familienanamnese: Vater Pneumothorax. Der Patient ist Student der Informatik und lebt mit seinen Eltern in einem Einfamilienhaus.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Es besteht ein gesicherter Spannungspneumothorax rechts. Differenzialdiagnostisch kommen eine Lungenembolie und ein akutes Koronarsyndrom in Betracht.",
         "Diagnose: Lungenkollaps rechts, wahrscheinlich vom Rauchen. Weitere Möglichkeiten gibt es nicht.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Zur weiteren Abklärung empfehlen wir ein Röntgen des Thorax, eine Pulsoxymetrie und ein EKG. Zusätzlich erfolgen eine Sauerstoffgabe und eine Analgesie mit Paracetamol 1 g i. v. Bei symptomatischem Pneumothorax ist eine Thoraxdrainage oder Nadelaspiration indiziert.",
         "Zur weiteren Abklärung empfehlen wir ein Röntgen des Thorax in zwei Ebenen, eine Blutgasanalyse und ein EKG. Bei Bestätigung eines Pneumothorax mit symptomatischem Verlauf ist eine Thoraxdrainage indiziert. Zur Analgesie empfehlen wir Metamizol 1 g i. v. sowie Sauerstoff über eine Nasenbrille.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Also, der junge Mann hatte am Schreibtisch gesessen und plötzlich Schmerzen bekommen, und dann ist er halt heute Nachmittag zu uns gekommen, weil es nicht besser wurde.",
         "Ich möchte Ihnen Herrn Lukas Berger vorstellen, einen 24-jährigen Patienten, der sich heute mit seit 10 Uhr bestehenden, plötzlich aufgetretenen Schmerzen im rechten Brustkorb und Luftnot vorgestellt hat.",
@@ -485,13 +461,12 @@
         "Unstrukturiert und umgangssprachlich.",
         "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“",
       "options": [
         "Die Schmerzen traten unter Belastung auf und strahlen in den linken Arm aus. Begleitend bestehen Fieber bis 38,5 °C und ein produktiver Husten mit gelbem Auswurf. Eine Belastungsdyspnoe wurde verneint; Beinschwellungen und Palpitationen bestehen ebenfalls nicht.",
         "Er hat alles Mögliche.",
@@ -505,13 +480,12 @@
         "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
         "Inhaltlich falsch: Fieber, Hämoptysen und Durchfall wurden verneint, der Schmerz ist atemabhängig, und die Dyspnoe besteht."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Bekannt ist eine Pollinose, sonst keine pulmonalen Vorerkrankungen. Es ist das erste Ereignis. Wichtig: Metamizolallergie mit Urtikaria. Er raucht etwa 4 py und konsumiert gelegentlich Cannabis.",
         "Er ist gesund, nimmt keine Medikamente, hat keine Allergien und raucht nicht; es gibt nichts Besonderes zu berichten.",
@@ -525,13 +499,12 @@
         "Unvollständig: Allergie und Risikofaktoren fehlen.",
         "Inhaltlich falsch: kein Asthma, kein früherer Pneumothorax, die Allergie betrifft Metamizol, und in der Familie gibt es keine Lungenerkrankung."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich weiß es nicht genau, es könnte irgendetwas mit der Lunge oder dem Herzen sein; wir müssen erst einmal alles untersuchen.",
         "Ich vermute einen primären Spontanpneumothorax rechts bei einem jungen, großen, schlanken Raucher. Differenzialdiagnostisch denke ich an eine Lungenembolie, eine Pleuritis und ein akutes Koronarsyndrom.",
@@ -545,13 +518,12 @@
         "Zu unpräzise für das Arzt-Arzt-Gespräch.",
         "Zu sicher („sicher“), und die Lungenembolie ist hier nicht die wahrscheinlichste Diagnose."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde ihn nach Hause schicken und ihn bei Verschlechterung der Luftnot wiederkommen lassen; ein Röntgen ist nicht nötig.",
         "Ich würde Sauerstoff geben, Sättigung, Blutdruck und Puls überwachen und ein Röntgen des Thorax veranlassen. Zur Analgesie Paracetamol, nicht Metamizol wegen der Allergie. Bei symptomatischem Pneumothorax mit größerem Randsaum schlage ich eine Thoraxdrainage oder Nadelaspiration vor.",
@@ -565,13 +537,12 @@
         "Nicht die erste Untersuchung bei diesem Verdacht.",
         "Gefährlich: Der Patient hat eine Metamizolallergie."
       ],
-      "reply": "Oberarzt: „Gut. Woran erkennen Sie einen Spannungspneumothorax, und was tun Sie dann?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Woran erkennen Sie einen Spannungspneumothorax, und was tun Sie dann?“",
       "options": [
         "Ich erwarte gar nichts.",
         "Ich erwarte Fieber und einen produktiven Husten mit Rasselgeräuschen über der betroffenen Seite. Dann gebe ich ein Antibiotikum und warte das Röntgenbild ab.",
@@ -585,13 +556,12 @@
         "Richtig: typische Zeichen, und die Entlastung erfolgt sofort, weil der Zustand lebensbedrohlich ist.",
         "Falsch: Die Trachea weicht zur Gegenseite ab, und beim Spannungspneumothorax darf man nicht auf das Röntgen warten."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Pneumothorax“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Pneumothorax“ und sieht Sie fragend an.",
       "options": [
         "Luft im Brustfellspalt",
         "Wasser im Brustfellspalt",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Dyspnoe“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Dyspnoe“.",
       "options": [
         "Husten",
         "Atemnot",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Pleura“?",
+      "situation": "Er tippt auf „Pleura“.",
       "options": [
         "Herzbeutel",
         "Bauchfell",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Tachykardie“?",
+      "situation": "Dann auf „Tachykardie“.",
       "options": [
         "zu langsamer Herzschlag",
         "unregelmäßiger Herzschlag",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Hämoptoe“?",
+      "situation": "Zuletzt zeigt er auf „Hämoptoe“.",
       "options": [
         "Bluthusten",
         "Bluterbrechen",

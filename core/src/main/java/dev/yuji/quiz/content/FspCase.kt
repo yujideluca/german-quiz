@@ -33,20 +33,23 @@ data class FspStep(
     /** 1 Arzt-Patienten-Gespräch, 2 Dokumentation, 3 Arzt-Arzt-Gespräch. */
     val part: Int,
     val section: String,
-    /** What happens before the question, e.g. what the patient says. */
-    val situation: String? = null,
-    val question: String,
+    /**
+     * What happens now (FS-6): what the patient or the Oberarzt says and does in reply to the player's last line, or
+     * what the player is writing in part 2. It never asks the player a question; the case reads like a script.
+     */
+    val situation: String,
     val options: List<String>,
     /** Index in [options] of the right answer. */
     val answer: Int,
     /** One explanation per option, same order as [options]. */
     val feedback: List<String>,
-    /** What the patient or colleague answers once the step is solved. */
+    /** A closing line after the last step of a part; inside a part the reply is the next step's situation. */
     val reply: String? = null,
 ) {
     init {
         require(options.size == 4 && feedback.size == 4) { "step '$section' needs 4 options and 4 feedback texts" }
         require(answer in options.indices) { "step '$section': answer $answer out of range" }
+        require(situation.isNotBlank()) { "step '$section' needs a situation (FS-6)" }
     }
 }
 

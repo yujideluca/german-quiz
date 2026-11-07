@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Hoffmann krümmt sich auf der Liege und stöhnt.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Ein älterer Mann krümmt sich auf der Liege und stöhnt. Am Fußende hängt ein Schild mit dem Namen Hoffmann.",
       "options": [
         "Guten Abend, mein Name ist Dr. Silva, ich bin hier der Assistenzarzt. Sind Sie Herr Hoffmann?",
         "Hallo, wo tut es denn weh?",
@@ -25,13 +24,12 @@
         "Untersuchung und Bildgebung kommen nach der Anamnese. Erst begrüßen und sich vorstellen.",
         "Verwaltungsfragen gehören nicht an den Anfang des Arzt-Patienten-Gesprächs, und Sie stellen sich nicht vor."
       ],
-      "reply": "Patient: „Ja, Hoffmann. Guten Abend, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Hoffmann. Guten Abend, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie ist Ihr Body-Mass-Index?",
         "Sie sind doch bestimmt schon über sechzig, oder?",
@@ -45,13 +43,12 @@
         "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht.",
         "Geburtsdatum und Adresse sind Verwaltung. Für die Anamnese brauchen Sie Alter, Größe und Gewicht."
       ],
-      "reply": "Patient: „Ich bin 67, 1,78 Meter groß und wiege etwa 85 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 67, 1,78 Meter groß und wiege etwa 85 Kilo.“ Er hält sich den Bauch und sieht Sie abwartend an.",
       "options": [
         "Haben Sie Bauchschmerzen?",
         "Was führt Sie heute zu uns? Erzählen Sie bitte.",
@@ -65,33 +62,31 @@
         "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
         "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
       ],
-      "reply": "Patient: „Seit gestern Abend habe ich schlimme Bauchschmerzen, und ich muss ständig erbrechen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten wissen, wo genau der Schmerz sitzt. Was sagen Sie?",
+      "situation": "Patient: „Seit gestern Abend habe ich schlimme Bauchschmerzen, und ich muss ständig erbrechen.“ Er legt die Hand flach auf den Bauch und bewegt sie unschlüssig hin und her.",
       "options": [
         "Wo lokalisieren Sie die Schmerzen genau, und gibt es eine Ausstrahlung in andere Körperregionen, zum Beispiel in den Rücken?",
         "Der Schmerz sitzt bestimmt im Unterbauch, richtig?",
-        "Wo tut es weh?",
+        "Tut der ganze Bauch weh?",
         "Wo genau im Bauch spüren Sie den Schmerz? Zeigen Sie bitte mit der Hand, und sagen Sie mir, ob er wandert oder an einer Stelle bleibt."
       ],
       "answer": 3,
       "feedback": [
         "„Lokalisieren“ und „Ausstrahlung“ sind Fachwörter; der Patient versteht sie vielleicht nicht.",
         "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
-        "Zu knapp und nicht vollständig formuliert; Sie erfahren nichts über Wanderung oder Lage.",
+        "Geschlossene Frage: Sie erfahren nichts über die genaue Stelle und über eine Wanderung des Schmerzes.",
         "Richtig: laienverständlich, mit Zeigen und Frage nach Wanderung, ohne die Antwort vorzugeben."
       ],
-      "reply": "Patient: „Rund um den Nabel, und manchmal zieht es durch den ganzen Bauch.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patient: „Rund um den Nabel, und manchmal zieht es durch den ganzen Bauch.“ Er stöhnt leise: „Es wird einfach nicht besser.“",
       "options": [
         "Wann genau hat es angefangen, und ist es seitdem besser, schlechter oder gleich geblieben?",
         "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch rezidivierend, und gab es symptomfreie Intervalle?",
@@ -105,13 +100,12 @@
         "Das hat der Patient schon gesagt (seit gestern Abend). Fragen Sie nach dem Verlauf.",
         "Geschlossene Frage; sie erfasst den Verlauf nicht."
       ],
-      "reply": "Patient: „Gestern gegen 20 Uhr fing es mit leichtem Ziehen an. Seitdem wird es immer schlimmer.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach Art und Stärke der Schmerzen. Welche Formulierung passt?",
+      "situation": "Patient: „Gestern gegen 20 Uhr fing es mit leichtem Ziehen an. Seitdem wird es immer schlimmer.“ Plötzlich krümmt er sich zusammen und presst die Zähne aufeinander.",
       "options": [
         "Sind die Schmerzen kolikartig?",
         "Wie stark sind die Schmerzen, wenn Sie eine Zahl auf einer Skala von 1 bis 100 nennen müssten, und seit wann sind sie so stark?",
@@ -125,13 +119,12 @@
         "Richtig: Beispiele für die Schmerzqualität und die übliche Skala von 0 bis 10.",
         "Zu ungenau; Sie bekommen keine verwertbare Angabe."
       ],
-      "reply": "Patient: „Es kommt in Wellen, alle paar Minuten, wie ein Krampf. Dann sind es 9 von 10, dazwischen etwa 4.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Es kommt in Wellen, alle paar Minuten, wie ein Krampf. Dann sind es 9 von 10, dazwischen etwa 4.“ Er schluckt schwer und greift nach der Nierenschale neben der Liege.",
       "options": [
         "Hatten Sie Nausea, Emesis, Meteorismus oder einen Stuhl- und Flatusverhalt, und ist Ihnen eine Distension des Abdomens aufgefallen?",
         "Ist Ihnen übel, mussten Sie sich übergeben? Hatten Sie Stuhlgang, und gehen noch Winde ab? Ist Ihr Bauch dicker geworden?",
@@ -145,13 +138,12 @@
         "Zu umgangssprachlich und unkonkret.",
         "Suggestiv: Sie unterstellen das Symptom."
       ],
-      "reply": "Patient: „Mir ist ständig übel, ich habe viermal erbrochen, zuletzt grünlich-braun und übelriechend. Stuhlgang hatte ich seit vorgestern nicht mehr, und Winde gehen seit gestern Abend keine mehr ab. Der Bauch ist richtig dick geworden.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Mir ist ständig übel, ich habe viermal erbrochen, zuletzt grünlich-braun und übelriechend. Stuhlgang hatte ich seit vorgestern nicht mehr, und Winde gehen seit gestern Abend keine mehr ab. Der Bauch ist richtig dick geworden.“ Er wirkt erschöpft, die Lippen sind trocken und die Stirn glänzt.",
       "options": [
         "Wie ist die Vegetativa?",
         "Haben Sie Fieber, Schüttelfrost, Nachtschweiß, Dysurie, Gewichtsverlust, Inappetenz und einen allgemeinen Leistungsknick bemerkt?",
@@ -165,13 +157,12 @@
         "Zu allgemein; der Patient sagt einfach „ja“.",
         "Richtig: Fieber, Appetit, Gewicht, Wasserlassen und Blut im Stuhl in Laiensprache."
       ],
-      "reply": "Patient: „Fieber hatte ich nicht, 37,2 Grad. Appetit habe ich keinen. Mein Gewicht ist gleich, ich muss nur wenig Wasser lassen, und Blut im Stuhl habe ich nie gesehen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patient: „Fieber hatte ich nicht, 37,2 Grad. Appetit habe ich keinen. Mein Gewicht ist gleich, ich muss nur wenig Wasser lassen, und Blut im Stuhl habe ich nie gesehen.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles; über seine Vorgeschichte noch nichts.",
       "options": [
         "Haben Sie chronische Erkrankungen, zum Beispiel Bluthochdruck oder Zucker? Und wurden Sie schon einmal am Bauch operiert?",
         "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, einen Diabetes mellitus oder eine KHK, und gab es Voroperationen im Abdomen oder stationäre Aufenthalte?",
@@ -185,13 +176,12 @@
         "Zu allgemein; Patienten vergessen dann wichtige Erkrankungen.",
         "Der Patient kennt seine Akte nicht. Fragen Sie direkt."
       ],
-      "reply": "Patient: „Ich habe Bluthochdruck und erhöhte Cholesterinwerte. Vor sechs Jahren wurde mir ein Stück vom Dickdarm entfernt, wegen entzündeter Divertikel. Sonst nichts.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Ich habe Bluthochdruck und erhöhte Cholesterinwerte. Vor sechs Jahren wurde mir ein Stück vom Dickdarm entfernt, wegen entzündeter Divertikel. Sonst nichts.“ Er kramt in seiner Jackentasche nach einer Tablettenschachtel.",
       "options": [
         "Nehmen Sie Tabletten?",
         "Welche Pharmaka applizieren Sie?",
@@ -205,13 +195,12 @@
         "Richtig: Name, Dosierung und auch frei verkäufliche Mittel.",
         "Suggestivfrage, und Sie fragen nicht nach Dosis und anderen Mitteln. Fragen Sie offen."
       ],
-      "reply": "Patient: „Amlodipin 5 mg morgens, ASS 100 mg morgens und Simvastatin 20 mg abends. Gegen die Schmerzen habe ich nichts genommen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Amlodipin 5 mg morgens, ASS 100 mg morgens und Simvastatin 20 mg abends. Gegen die Schmerzen habe ich nichts genommen.“ Die Pflegekraft ruft von der Tür, ob sie schon ein Schmerzmittel vorbereiten soll.",
       "options": [
         "Allergie?",
         "Haben Sie Allergien oder Unverträglichkeiten, zum Beispiel gegen Medikamente, Lebensmittel oder Pflaster? Wie äußert sich das?",
@@ -225,13 +214,12 @@
         "Zu eng: Allergien gegen Schmerzmittel, andere Medikamente, Lebensmittel oder Pflaster übersehen Sie.",
         "Missverständlich: „hypersensibel“ bedeutet im Alltag „überempfindlich“ im Gefühl."
       ],
-      "reply": "Patient: „Gegen Metamizol. Davon ist mir das Gesicht angeschwollen, und ich bekam schlecht Luft.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Metamizol. Davon ist mir das Gesicht angeschwollen, und ich bekam schlecht Luft.“ Aus seiner Hemdtasche ragt eine Zigarettenschachtel.",
       "options": [
         "Sind Sie Raucher oder Alkoholiker?",
         "Wie ist Ihr Nikotin- und Alkoholabusus?",
@@ -245,13 +233,12 @@
         "Wertend, vorwurfsvoll und ungenau.",
         "Richtig: neutral, konkret, mit Menge."
       ],
-      "reply": "Patient: „Ich rauche seit 25 Jahren etwa 20 Zigaretten am Tag. Abends trinke ich ein Bier. Drogen nehme ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche seit 25 Jahren etwa 20 Zigaretten am Tag. Abends trinke ich ein Bier. Drogen nehme ich nicht.“ Dann fügt er hinzu: „Meine Frau sagt immer, so etwas liegt bei uns in der Familie.“",
       "options": [
         "Gibt es in Ihrer Familie Erkrankungen, die öfter vorkommen, zum Beispiel Krebs-, Herz- oder Darmerkrankungen?",
         "Wie ist die Familienanamnese?",
@@ -265,13 +252,12 @@
         "Zu eng: häufige Erkrankungen in der Familie erfahren Sie so nicht, und die Frage nach dem Tod ist unnötig belastend.",
         "Sie kennen die Diagnose noch nicht; die Frage ist unklar."
       ],
-      "reply": "Patient: „Mein Vater hatte Darmkrebs, mit 70. Meine Mutter hatte Zucker.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Mein Vater hatte Darmkrebs, mit 70. Meine Mutter hatte Zucker.“ Er wirft einen Blick auf die Uhr: „Morgen früh habe ich eigentlich Dienst.“",
       "options": [
         "Was ist Ihr sozialer Status?",
         "Sind Sie verheiratet, haben Sie Kinder, und wie viele Personen leben in Ihrem Haushalt? Wie lautet Ihre genaue Adresse?",
@@ -285,13 +271,12 @@
         "Richtig: Beruf und Wohnsituation, beides wichtig für Entlassung und Versorgung.",
         "Unangemessen."
       ],
-      "reply": "Patient: „Ich bin Busfahrer und wohne mit meiner Frau in einem Haus mit Treppen. Wir haben einen Sohn.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich bin Busfahrer und wohne mit meiner Frau in einem Haus mit Treppen. Wir haben einen Sohn.“ Er sieht Sie besorgt an: „Und, Herr Doktor, was habe ich denn?“",
       "options": [
         "Sie haben einen mechanischen Dünndarmileus bei Bridenbildung.",
         "Ich vermute, dass Ihr Darm an einer Stelle abgeknickt oder eingeengt ist, wahrscheinlich durch Verwachsungen nach der Operation. Dann kommen Stuhl und Luft nicht mehr weiter.",
@@ -305,13 +290,12 @@
         "Verharmlosend und medizinisch falsch: Eine Magen-Darm-Grippe erklärt Stuhl- und Windverhalt nicht.",
         "Falsch und beängstigend."
       ],
-      "reply": "Patient: „Verwachsungen? Und was passiert jetzt mit mir?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Muss ich operiert werden?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Verwachsungen? Und was passiert jetzt mit mir? Muss ich operiert werden?“",
       "options": [
         "Ja, heute Nacht wird Ihr Bauch aufgeschnitten, und wir entfernen den kranken Darmabschnitt. Sie müssen sich darauf einstellen, dass Sie danach einen künstlichen Darmausgang bekommen.",
         "Das entscheidet der Chef, ich weiß es nicht.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen den Arztbrief (Anamnesebogen) für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Hoffmann ist 67 und hat Bauchweh.",
         "Der Patient Herr Hoffmann stellt sich heute vor wegen krampfartigen Bauchschmerzen seit gestern, 67-jährig.",
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Die Schmerzen traten gestern gegen 20 Uhr erstmals periumbilikal auf, seitdem progredient, kolikartig in Wellen alle paar Minuten (NRS 9/10, zwischenzeitlich 4/10).",
         "Die Schmerzen haben gestern Abend angefangen, kommen in Wellen und sind schlimm.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Er hatte Übelkeit und hat mehrmals gekotzt.",
         "Begleitend berichtete der Patient über Nausea und zweimalige Emesis. Stuhl- und Windverhalt bestehen seit gestern Abend. Fieber, Hämatochezie und Gewichtsverlust wurden verneint.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "Vorerkrankungen: Bluthochdruck, Cholesterin. Medikamente: Amlodipin, ASS, Simvastatin.",
         "An Vorerkrankungen sind eine arterielle Hypertonie und eine Hypercholesterinämie bekannt. Z. n. Sigmaresektion vor sechs Jahren bei Divertikulitis. Medikation: Amlodipin 5 mg 1-0-0, ASS 100 mg 1-0-0, Simvastatin 20 mg 0-0-1.",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: keine. Noxen: Nikotinabusus.",
         "Metamizolallergie (Exanthem). Nikotinkonsum ca. 10 py, kein Alkoholkonsum, kein Drogenkonsum. Familienanamnese: Mutter Mammakarzinom, Vater gesund. Der Patient ist Rentner, geschieden und lebt allein in einer Wohnung im Erdgeschoss. Keine weiteren Angaben.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Anamnestisch besteht der Verdacht auf einen mechanischen Dünndarmileus bei Briden nach Sigmaresektion. Differenzialdiagnostisch kommen ein paralytischer Ileus, eine Sigmastenose und ein stenosierendes kolorektales Karzinom in Betracht.",
         "Diagnose: Darmverschluss.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Wir machen Blut und Röntgen.",
         "Zur weiteren Abklärung empfehlen wir eine Koloskopie mit Vorbereitung durch Abführmittel.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Der Patient hat Bauchweh, er heißt Hoffmann.",
         "Ich möchte Ihnen Herrn Klaus Hoffmann vorstellen, einen 67-jährigen Patienten, der sich heute mit seit gestern Abend bestehenden, progredienten kolikartigen Bauchschmerzen und Erbrechen vorgestellt hat.",
@@ -485,13 +461,12 @@
         "Kein strukturierter Einstieg; zuerst Patient und Leitsymptom.",
         "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“",
       "options": [
         "Er hat alles Mögliche.",
         "Die Schmerzen sind dauerhaft ohne Wellen und im rechten Oberbauch lokalisiert. Begleitend bestehen Übelkeit und Fieber bis 38,5 °C. Ein Stuhlverhalt wurde verneint, und der Patient hatte regelmäßig Stuhlgang.",
@@ -505,13 +480,12 @@
         "Inhaltlich falsch: Durchfall und Fieber wurden verneint, es besteht ein Stuhlverhalt.",
         "Richtig: knapp, strukturiert, mit relevanten Negativbefunden."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Bekannt sind eine arterielle Hypertonie und eine Hypercholesterinämie. Wichtig: Z. n. Sigmaresektion vor sechs Jahren bei Divertikulitis, also ein Bridenrisiko. Metamizolallergie mit Angioödem. Der Vater hatte ein kolorektales Karzinom.",
         "Er ist gesund.",
@@ -525,13 +499,12 @@
         "Inhaltlich falsch (kein Diabetes, Sigmaresektion, Metamizolallergie, andere Medikation).",
         "Unvollständig: Diagnosen, Voroperation und Allergie fehlen."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich denke an einen Darmverschluss.",
         "Ich weiß es nicht genau.",
@@ -545,13 +518,12 @@
         "Richtig: Verdachtsdiagnose mit Ursache und Differenzialdiagnosen in Fachsprache.",
         "Zu sicher („sicher“), und eine Gastroenteritis erklärt den Stuhl- und Windverhalt nicht."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde ihn mit Abführmitteln nach Hause schicken.",
         "Ich würde Blut abnehmen, mit Entzündungswerten, Laktat, Elektrolyten, Nierenwerten und Blutgasanalyse, und ein CT des Abdomens mit Kontrastmittel veranlassen. Therapeutisch Nahrungskarenz, Magensonde, Flüssigkeit i. v. und Analgesie ohne Metamizol wegen der Allergie. Bei Peritonitis oder Ischämiezeichen ist die sofortige Operation indiziert, sonst zunächst konservativ mit Chirurgie-Konsil.",
@@ -565,13 +537,12 @@
         "Fachlich falsch: Prokinetika wie Metoclopramid sind bei mechanischem Ileus kontraindiziert.",
         "Gefährlich: Metamizolallergie, und eine Koloskopie mit Vorbereitung riskiert die Perforation."
       ],
-      "reply": "Oberarzt: „Gut. Was erwarten Sie in der Bildgebung?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Was erwarten Sie in der Bildgebung?“",
       "options": [
         "Ich erwarte erweiterte, flüssigkeitsgefüllte Dünndarmschlingen mit Spiegelbildung, einen Kalibersprung an der Verschlussstelle und kollabierte Darmschlingen dahinter.",
         "Eine vergrößerte Milz.",
@@ -585,13 +556,12 @@
         "In der Prüfung erwartet man eine begründete Antwort.",
         "Nicht typisch für einen Ileus; freie Luft spricht für eine Perforation, die verdickte Gallenblasenwand für eine Cholezystitis."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Ileus“?",
+      "situation": "Der Oberarzt nickt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Ileus“ und sieht Sie fragend an.",
       "options": [
         "Darmentzündung",
         "Darmverschluss",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Briden“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Briden“.",
       "options": [
         "Ausstülpungen der Darmwand",
         "Darmpolypen",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Meteorismus“?",
+      "situation": "Er tippt auf „Meteorismus“.",
       "options": [
         "Blähbauch durch Gas im Darm",
         "Bauchwassersucht",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Miserere“?",
+      "situation": "Dann auf „Miserere“.",
       "options": [
         "Blut erbrechen",
         "Würgen ohne Erbrechen",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Flatus“?",
+      "situation": "Zuletzt zeigt er auf „Flatus“.",
       "options": [
         "Stuhlgang",
         "Aufstoßen",

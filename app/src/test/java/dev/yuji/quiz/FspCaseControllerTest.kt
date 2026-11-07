@@ -1,6 +1,6 @@
 package dev.yuji.quiz
 
-// REQ FS-2 FS-4 SP-1 SP-2
+// REQ FS-2 FS-4 FS-7 SP-1 SP-2
 
 import dev.yuji.quiz.content.CardFactory
 import dev.yuji.quiz.content.FspCase
@@ -27,7 +27,7 @@ class FspCaseControllerTest {
 
     private fun case(id: String, area: String, steps: Int = 10) = FspCase(
         id, area, "Beschwerde $id", "Diagnose $id", "common_FSP", 0, "Patient $id",
-        List(steps) { FspStep(1 + it * 3 / steps, "S$it", null, "Frage $it?", listOf("a$it", "b$it", "c$it", "d$it"), it % 4,
+        List(steps) { FspStep(1 + it * 3 / steps, "S$it", "Szene $it", listOf("a$it", "b$it", "c$it", "d$it"), it % 4,
             List(4) { j -> if (j == it % 4) "Richtig." else "Falsch." }, null) },
     )
     private val cases = listOf(case("k1", "Kardiologie"), case("k2", "Kardiologie"), case("p1", "Pneumologie"))
@@ -100,5 +100,24 @@ class FspCaseControllerTest {
         val other = play(FspCaseRun(cases[2], 1), 10)
         assertSame(s, controller.finishCase(s, other))                       // not the current card
         assertNull(controller.startCase(controller.startSession(GameMode.ARTICLE)))
+    }
+
+    @Test fun everySolvedStepCountsForTheDayWhileTheCaseIsOneCard() {
+        var s = controller.startSession(GameMode.FSP_CASE)
+        var run = controller.startCase(s)!!
+        val step0 = run.step!!
+        run = controller.pickInCase(run, (step0.answer + 1) % 4)
+        assertEquals("a wrong pick is no answered question yet", 0, controller.dailyProgress().answered)
+        run = controller.pickInCase(run, step0.answer)
+        assertEquals(1, controller.dailyProgress().answered)
+        run = controller.pickInCase(run, step0.answer)
+        assertEquals("picking again after solving counts nothing", 1, controller.dailyProgress().answered)
+        run = run.next()
+        while (!run.isFinished) run = controller.pickInCase(run, run.step!!.answer).next()
+        assertEquals(10, controller.dailyProgress().answered)
+        s = controller.finishCase(s, run)
+        assertEquals("the graded case adds no answer of its own", 10, controller.dailyProgress().answered)
+        assertEquals("the scheduler saw one card", 1, store.loadAll().size)
+        assertEquals(1, controller.calendar(controller.currentMonth()).currentStreak)
     }
 }

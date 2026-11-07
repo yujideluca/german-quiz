@@ -42,6 +42,16 @@ so a later BW report can be recorded (`reported_BW`, `bwReports`).
 5. **Authoring:** one hand-written reference case (`akute-cholezystitis.json`); the other 57 were written by one
    Sonnet agent each against the reference and the validator, then reviewed and corrected by a second Sonnet agent
    acting as a strict German physician and language examiner.
+6. **A case reads like a script (FS-6, amended 2026-11-07 at Giovanni's request).** The first version asked a quiz
+   question per step ("Wie fragen Sie nach …?"). Now a step never asks: its `situation` narrates what the patient or the
+   Oberarzt answers and does in reply to the player's last line (shown above it), or what the player is writing in
+   part 2. The reply to a step is the next step's situation, so `reply` is kept only on the last step of each part;
+   `question` is gone. Without the question, each step must still have exactly one clearly right answer from the scene
+   alone: cues in the scene or wrong options that are wrong in themselves (register, suggestive, rude, medically
+   wrong). The validator refuses a `?` outside „…“ speech and a reply inside a part. The pack format becomes schema 3,
+   so 2.8.0 apps keep their schema-2 pool.
+7. **Each step counts for the day (FS-7).** The scheduler sees one card per case, but the daily goal and the streak
+   calendar count every solved step as one answered question (`StudyController.pickInCase`); the graded case adds none.
 
 ## Alternatives considered
 

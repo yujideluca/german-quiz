@@ -34,8 +34,9 @@ private fun partTitle(part: Int) = when (part) {
 }
 
 /**
- * One simulated FSP case (ADR-0014): the steps of the three exam parts one after the other. A wrong pick turns red and
- * shows why; the player picks again until the right answer, which shows the patient's or colleague's reply (FS-3).
+ * One simulated FSP case (ADR-0014): the steps of the three exam parts one after the other, read like a script (FS-6):
+ * the player's last line, then what the patient or the Oberarzt answers and does, then the four things the player
+ * could say or write next. A wrong pick turns red and shows why; the player picks again until the right answer (FS-3).
  * After the last step the case is graded and the result screen shows the score per part and the diagnosis.
  */
 @Composable
@@ -53,8 +54,12 @@ fun FspCaseBody(run: FspCaseRun, answer: AnswerRecord?, onPick: (Int) -> Unit, o
     Text(stringResource(partTitle(step.part)) + "  ·  " + step.section, style = scale.style(MaterialTheme.typography.titleSmall))
     LinearProgressIndicator(progress = { run.stepIndex.toFloat() / case.steps.size }, modifier = Modifier.fillMaxWidth())
     Text(stringResource(R.string.fsp_step, run.stepIndex + 1, case.steps.size), style = scale.style(MaterialTheme.typography.labelMedium))
-    step.situation?.let { Text(it, style = scale.style(MaterialTheme.typography.bodyLarge), fontStyle = FontStyle.Italic) }
-    Text(step.question, style = scale.style(MaterialTheme.typography.titleMedium), fontWeight = FontWeight.SemiBold)
+    // The script so far: the line the player chose last, as long as the same conversation goes on.
+    case.steps.getOrNull(run.stepIndex - 1)?.takeIf { it.part == step.part && it.part != 2 }?.let { prev ->
+        Text(stringResource(R.string.fsp_you_said, prev.options[prev.answer]), style = scale.style(MaterialTheme.typography.bodyMedium),
+            color = MaterialTheme.colorScheme.onSurfaceVariant)
+    }
+    Text(step.situation, style = scale.style(MaterialTheme.typography.titleMedium), fontWeight = FontWeight.SemiBold)
     run.order().forEach { i ->
         val wrong = i in run.wrongPicks
         val right = run.solved && i == step.answer

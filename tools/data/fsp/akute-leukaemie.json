@@ -10,8 +10,7 @@
     {
       "part": 1,
       "section": "Begrüßung",
-      "situation": "Herr Brandt sitzt blass auf der Liege und wirkt erschöpft.",
-      "question": "Wie beginnen Sie das Gespräch?",
+      "situation": "Sie betreten das Untersuchungszimmer. Ein Mann sitzt blass und erschöpft auf der Liege und sieht Sie müde an.",
       "options": [
         "Guten Morgen, ich bin Dr. Silva. Setzen Sie sich bitte hin, ich schaue mir zuerst Ihre Haut und Ihren Hals an.",
         "Hallo Herr Brandt, was fehlt Ihnen denn?",
@@ -25,13 +24,12 @@
         "Richtig: Sie begrüßen, stellen sich mit Namen und Funktion vor und prüfen die Identität des Patienten.",
         "Verwaltungsfragen gehören nicht an den Anfang des Gesprächs, und Sie stellen sich nicht vor."
       ],
-      "reply": "Patient: „Ja, Brandt. Guten Morgen, Herr Doktor.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Personalien",
-      "situation": null,
-      "question": "Sie möchten die Personalien vervollständigen. Was fragen Sie?",
+      "situation": "Patient: „Ja, Brandt. Guten Morgen, Herr Doktor.“ Auf dem Aufnahmebogen fehlen noch Alter, Größe und Gewicht.",
       "options": [
         "Wie ist Ihr Body-Mass-Index?",
         "Damit ich Ihre Daten vervollständigen kann: Wie lautet Ihr genaues Geburtsdatum laut Personalausweis, und wer ist Ihr Hausarzt?",
@@ -45,13 +43,12 @@
         "Suggestivfrage: Sie unterstellen eine Antwort. Fragen Sie offen.",
         "Richtig: offene, verständliche Fragen nach Alter, Größe und Gewicht."
       ],
-      "reply": "Patient: „Ich bin 63, 1,78 Meter groß und wiege etwa 85 Kilo.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Hauptbeschwerde",
-      "situation": null,
-      "question": "Wie fragen Sie nach dem Grund der Vorstellung?",
+      "situation": "Patient: „Ich bin 63, 1,78 Meter groß und wiege etwa 85 Kilo.“ Auf dem Bogen ist das Feld für den Vorstellungsgrund noch leer. Er sieht Sie müde an und wartet.",
       "options": [
         "Was führt Sie heute zu uns? Erzählen Sie bitte.",
         "Haben Sie Fieber und fühlen Sie sich schwach?",
@@ -65,13 +62,12 @@
         "„Symptomatik“ ist Fachsprache. Mit Patienten sprechen Sie Laiensprache.",
         "Vorwurfsvoll. Das stört das Vertrauen gleich zu Beginn."
       ],
-      "reply": "Patient: „Ich bin seit Wochen völlig erschöpft, seit vier Tagen habe ich Fieber, und ich bekomme ständig blaue Flecken und Nasenbluten.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Leitsymptom genauer",
-      "situation": null,
-      "question": "Sie möchten die Blutungen genauer erfragen. Was sagen Sie?",
+      "situation": "Patient: „Ich bin seit Wochen völlig erschöpft, seit vier Tagen habe ich Fieber, und ich bekomme ständig blaue Flecken und Nasenbluten.“ Er schiebt den Ärmel hoch und zeigt Ihnen mehrere blaue Flecken am Unterarm.",
       "options": [
         "Hatten Sie eine Hämorrhagie, Epistaxis oder Petechien, und wo genau sind die Hämatome aufgetreten? Wie ausgeprägt ist die Blutungsneigung insgesamt?",
         "Wo bluten Sie, oder wo haben Sie blaue Flecken? Entstehen die Flecken nach einem Stoß oder von allein?",
@@ -85,13 +81,12 @@
         "Suggestivfrage. Der Patient könnte Ihnen nur zustimmen.",
         "Geschlossene Frage; sie sagt Ihnen nichts über Ort und Auslöser."
       ],
-      "reply": "Patient: „Die blauen Flecken kommen an Armen und Beinen ganz von allein, ohne dass ich mich gestoßen habe. Das Zahnfleisch blutet beim Zähneputzen, und die Nase hat diese Woche dreimal geblutet.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Beginn und Verlauf",
-      "situation": null,
-      "question": "Wie fragen Sie nach Beginn und Verlauf?",
+      "situation": "Patient: „Die blauen Flecken kommen an Armen und Beinen ganz von allein, ohne dass ich mich gestoßen habe. Das Zahnfleisch blutet beim Zähneputzen, und die Nase hat diese Woche dreimal geblutet.“ Er seufzt: „Ich weiß gar nicht mehr, wann das alles angefangen hat.“",
       "options": [
         "Seit wann haben Sie Fieber?",
         "Wie war der zeitliche Verlauf der Beschwerden seit der Erstmanifestation: akut, subakut oder chronisch progredient, und gab es Remissionen?",
@@ -105,13 +100,12 @@
         "Geschlossene Frage; sie erfasst den Verlauf nicht.",
         "Richtig: Beginn und Verlauf in einer klaren, laienverständlichen Frage."
       ],
-      "reply": "Patient: „Vor drei Wochen wurde ich langsam müde und blass. Seit vier Tagen ist das Fieber dazugekommen, und seitdem geht es mir jeden Tag schlechter.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Charakter und Stärke",
-      "situation": null,
-      "question": "Sie fragen nach der Belastbarkeit und der Erschöpfung. Welche Formulierung passt?",
+      "situation": "Patient: „Vor drei Wochen wurde ich langsam müde und blass. Seit vier Tagen ist das Fieber dazugekommen, und seitdem geht es mir jeden Tag schlechter.“ Er stützt sich schwer auf die Liege und atmet hörbar.",
       "options": [
         "Wie belastbar sind Sie im Alltag? Wie viele Stockwerke schaffen Sie ohne Pause, und wie erschöpft fühlen Sie sich auf einer Skala von 0 bis 10?",
         "Sind Sie leistungsgemindert im Sinne einer Fatigue mit eingeschränkter Belastbarkeit nach NYHA, und welchen Schweregrad hat die Dyspnoe beim Treppensteigen?",
@@ -125,13 +119,12 @@
         "Zu ungenau; Sie bekommen keine verwertbare Angabe.",
         "Unübliche Skala. In Deutschland fragt man 0 bis 10."
       ],
-      "reply": "Patient: „Früher bin ich drei Stockwerke gelaufen, jetzt muss ich schon nach einem Stockwerk stehen bleiben, weil ich keine Luft bekomme. Die Erschöpfung ist 8 von 10.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Begleitsymptome",
-      "situation": null,
-      "question": "Wie fragen Sie nach Begleitsymptomen?",
+      "situation": "Patient: „Früher bin ich drei Stockwerke gelaufen, jetzt muss ich schon nach einem Stockwerk stehen bleiben, weil ich keine Luft bekomme. Die Erschöpfung ist 8 von 10.“ Er schließt kurz die Augen und fasst sich an die Stirn.",
       "options": [
         "Haben Sie Schüttelfrost, Nachtschweiß, Dyspnoe, Palpitationen, Vertigo oder Lymphknotenschwellungen?",
         "Haben Sie sonst noch was?",
@@ -145,13 +138,12 @@
         "Richtig: konkrete Begleitsymptome in Laiensprache, offen gefragt.",
         "Suggestiv: Sie unterstellen die Symptome."
       ],
-      "reply": "Patient: „Mir wird beim Aufstehen schwindelig, und mein Herz schlägt schnell. Halsschmerzen oder Husten habe ich nicht. Leichte Schmerzen habe ich im Brustbein.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vegetative Anamnese",
-      "situation": null,
-      "question": "Nun die vegetative Anamnese. Was fragen Sie?",
+      "situation": "Patient: „Mir wird beim Aufstehen schwindelig, und mein Herz schlägt schnell. Halsschmerzen oder Husten habe ich nicht. Leichte Schmerzen habe ich im Brustbein.“ Er zieht die Jacke enger um sich und wischt sich den Schweiß von der Stirn.",
       "options": [
         "Wie ist die Vegetativa?",
         "Wie hoch war das Fieber, und haben Sie gefroren oder nachts geschwitzt? Wie sind Appetit, Gewicht, Stuhlgang und Wasserlassen? Gab es Blut im Stuhl oder im Urin?",
@@ -165,13 +157,12 @@
         "Inhaltlich vollständig, aber voller Fachbegriffe (Dysurie, Hämaturie, Meläna).",
         "Zu allgemein; der Patient sagt einfach „ja“."
       ],
-      "reply": "Patient: „Das Fieber war gestern 39,1 Grad, mit Schüttelfrost. Nachts schwitze ich stark. Ich habe vier Kilo in zwei Monaten abgenommen, der Appetit ist schlecht. Stuhlgang und Wasserlassen sind normal, Blut habe ich da nicht gesehen.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Vorerkrankungen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Vorerkrankungen und Operationen?",
+      "situation": "Patient: „Das Fieber war gestern 39,1 Grad, mit Schüttelfrost. Nachts schwitze ich stark. Ich habe vier Kilo in zwei Monaten abgenommen, der Appetit ist schlecht. Stuhlgang und Wasserlassen sind normal, Blut habe ich da nicht gesehen.“ Zu den aktuellen Beschwerden wissen Sie jetzt alles; über seine Vorgeschichte noch nichts.",
       "options": [
         "Sind Sie gesund?",
         "Haben Sie Vorerkrankungen wie eine arterielle Hypertonie, ein myelodysplastisches Syndrom oder eine Gerinnungsstörung, und gab es Voroperationen, Chemotherapien oder Radiatio, und wurden Sie wegen einer malignen hämatologischen Systemerkrankung schon einmal stationär behandelt oder punktiert?",
@@ -185,33 +176,31 @@
         "Der Patient kennt seine Akte nicht. Fragen Sie direkt.",
         "Richtig: mit Beispielen, laienverständlich, und frühere Chemotherapie oder Bestrahlung sind mitgefragt."
       ],
-      "reply": "Patient: „Bluthochdruck. Vor zehn Jahren hatte ich eine Leistenbruch-Operation rechts. Chemotherapie oder Bestrahlung hatte ich nie, und eine Blutkrankheit ist nicht bekannt.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Medikamente",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Medikation?",
+      "situation": "Patient: „Bluthochdruck. Vor zehn Jahren hatte ich eine Leistenbruch-Operation rechts. Chemotherapie oder Bestrahlung hatte ich nie, und eine Blutkrankheit ist nicht bekannt.“ Er zieht eine Tablettenschachtel aus der Jackentasche.",
       "options": [
         "Welche Pharmaka applizieren Sie, und nehmen Sie Antikoagulanzien oder Thrombozytenaggregationshemmer ein?",
         "Welche Medikamente nehmen Sie regelmäßig ein, und in welcher Dosierung? Auch Mittel ohne Rezept, zum Beispiel gegen Schmerzen oder Fieber?",
-        "Nehmen Sie Blutverdünner?",
+        "Nehmen Sie Tabletten?",
         "Sie nehmen doch sicher Aspirin und Ibuprofen gegen Ihre Schmerzen und Ihr Fieber, richtig? Das nehmen alle in Ihrem Alter, und Sie nehmen bestimmt auch noch andere Schmerzmittel aus der Apotheke gegen die Knochenschmerzen."
       ],
       "answer": 1,
       "feedback": [
         "Fachsprache („Pharmaka“, „applizieren“, „Antikoagulanzien“).",
         "Richtig: Name, Dosierung und auch frei verkäufliche Mittel.",
-        "Zu eng: andere Medikamente und die Dosis fehlen.",
+        "Zu ungenau: Name, Dosis und Mittel ohne Rezept fehlen.",
         "Suggestivfrage. Fragen Sie offen."
       ],
-      "reply": "Patient: „Amlodipin 5 mg morgens. Gegen das Fieber habe ich gestern und heute je eine Paracetamol 500 genommen. Blutverdünner nehme ich nicht.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Allergien",
-      "situation": null,
-      "question": "Wie fragen Sie nach Allergien?",
+      "situation": "Patient: „Amlodipin 5 mg morgens. Gegen das Fieber habe ich gestern und heute je eine Paracetamol 500 genommen. Blutverdünner nehme ich nicht.“ Die Pflegekraft ruft von der Tür, ob sie schon ein Antibiotikum vorbereiten soll.",
       "options": [
         "Sind Sie allergisch gegen Antibiotika? Das ist wichtig, weil wir Ihnen gleich eines geben müssen.",
         "Allergie?",
@@ -225,13 +214,12 @@
         "Richtig: offen, mit Beispielen, und Sie fragen nach der Reaktion.",
         "Fachsprache; der Patient versteht „atopisch“ und „Quincke-Ödem“ nicht."
       ],
-      "reply": "Patient: „Gegen Cotrimoxazol, ein Antibiotikum. Da bekam ich vor Jahren einen Hautausschlag am ganzen Körper.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Noxen",
-      "situation": null,
-      "question": "Wie fragen Sie nach Genussmitteln?",
+      "situation": "Patient: „Gegen Cotrimoxazol, ein Antibiotikum. Da bekam ich vor Jahren einen Hautausschlag am ganzen Körper.“ Seine Kleidung riecht nach Zigarettenrauch.",
       "options": [
         "Rauchen Sie? Wie viel Alkohol trinken Sie ungefähr pro Woche? Nehmen Sie Drogen?",
         "Wie ist Ihr Nikotin- und Alkoholabusus, und konsumieren Sie auch andere illegale Substanzen?",
@@ -245,13 +233,12 @@
         "„Alkoholiker“ ist wertend und verletzend.",
         "Wertend und suggestiv; der Patient fühlt sich beschuldigt."
       ],
-      "reply": "Patient: „Ich rauche seit 25 Jahren eine Schachtel am Tag, also 20 Zigaretten. Alkohol nur ein Bier am Wochenende. Drogen nie.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Familienanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der Familie?",
+      "situation": "Patient: „Ich rauche seit 25 Jahren eine Schachtel am Tag, also 20 Zigaretten. Alkohol nur ein Bier am Wochenende. Drogen nie.“ Dann sagt er leise: „Bei uns in der Familie sind schon einige schwer krank geworden.“",
       "options": [
         "Wie ist die Familienanamnese?",
         "Sind Ihre Eltern noch am Leben, und wenn nicht: Woran und in welchem Alter sind sie gestorben? Das interessiert mich besonders.",
@@ -265,13 +252,12 @@
         "Sie kennen die Diagnose noch nicht; die Frage ist unklar.",
         "Richtig: offen, mit passenden Beispielen."
       ],
-      "reply": "Patient: „Meine Mutter hatte Brustkrebs mit 70. Mein Vater hatte einen Herzinfarkt mit 68. Von Blutkrankheiten weiß ich nichts.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Sozialanamnese",
-      "situation": null,
-      "question": "Wie fragen Sie nach der sozialen Situation?",
+      "situation": "Patient: „Meine Mutter hatte Brustkrebs mit 70. Mein Vater hatte einen Herzinfarkt mit 68. Von Blutkrankheiten weiß ich nichts.“ Er sieht auf sein Handy: „Ich muss gleich in der Arbeit Bescheid sagen, und zu Hause weiß auch noch niemand etwas.“",
       "options": [
         "Was machen Sie beruflich, und hatten Sie dabei Kontakt zu Chemikalien oder Strahlung? Wie wohnen Sie, und wer kann Ihnen zu Hause helfen?",
         "Was ist Ihr sozialer Status?",
@@ -285,13 +271,12 @@
         "Zu eng und teilweise Verwaltung: der Beruf und die Exposition fehlen, Adresse und Einkommen gehören nicht hierher.",
         "Unangemessen."
       ],
-      "reply": "Patient: „Ich bin Kfz-Meister, ich arbeite viel mit Benzin und Lösungsmitteln. Ich wohne mit meiner Frau im Haus, wir haben zwei erwachsene Kinder.“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Verdachtsdiagnose erklären",
-      "situation": null,
-      "question": "Sie erklären Ihren Verdacht. Was sagen Sie?",
+      "situation": "Patient: „Ich bin Kfz-Meister, ich arbeite viel mit Benzin und Lösungsmitteln. Ich wohne mit meiner Frau im Haus, wir haben zwei erwachsene Kinder.“ Er sieht Sie besorgt an: „Und, Herr Doktor, was habe ich denn?“",
       "options": [
         "Sie haben eine akute myeloische Leukämie mit Panzytopenie.",
         "Ich vermute, dass Ihr Knochenmark nicht mehr genug gesunde Blutzellen bildet. Das könnte eine Erkrankung des Blutes sein, eine Leukämie. Sicher ist das noch nicht; dafür müssen wir Blut und Knochenmark genauer untersuchen.",
@@ -305,13 +290,12 @@
         "Verharmlosend und medizinisch falsch: Blutungen und Müdigkeit erklärt ein Infekt nicht.",
         "Zu sicher, entmutigend und unsensibel; die Diagnose ist noch nicht gesichert."
       ],
-      "reply": "Patient: „Leukämie? Und was passiert jetzt mit mir?“"
+      "reply": null
     },
     {
       "part": 1,
       "section": "Weiteres Vorgehen",
-      "situation": "Der Patient fragt: „Ist das gefährlich? Muss ich hierbleiben?“",
-      "question": "Wie antworten Sie?",
+      "situation": "Patient: „Leukämie? Ist das gefährlich? Und was passiert jetzt mit mir? Muss ich hierbleiben?“",
       "options": [
         "Nein, wir geben Ihnen ein Antibiotikum, und morgen können Sie wieder nach Hause gehen.",
         "Das entscheidet der Oberarzt, ich weiß es nicht.",
@@ -330,8 +314,7 @@
     {
       "part": 2,
       "section": "Einleitung",
-      "situation": "Sie schreiben den Arztbrief (Anamnesebogen) für den Oberarzt.",
-      "question": "Welcher Satz eröffnet den Bericht korrekt?",
+      "situation": "Das Gespräch ist beendet. Sie setzen sich an den Computer und öffnen einen leeren Arztbrief für den Oberarzt. Sie tippen den ersten Satz:",
       "options": [
         "Herr Brandt ist 63 und fühlt sich seit Wochen schlapp.",
         "Herr Thomas Brandt (63 J.) hat sich heute in unsere Notaufnahme vorgestellt wegen Fieber, Müdigkeit und Blutungen seit mehreren Tagen, die er sich nicht erklären konnte, und äußerte den Wunsch nach einer raschen Abklärung.",
@@ -341,8 +324,8 @@
       "answer": 3,
       "feedback": [
         "Umgangssprache gehört nicht in den Arztbrief.",
-        "Grammatik: „in unsere Notaufnahme“ ist Akkusativ (wohin?), nach „sich vorstellen“ steht hier „in unserer Notaufnahme“ (Dativ, wo?). Zudem ist das Leitsymptom ungenau (nicht „mehrere Tage“, sondern Fieber seit vier Tagen).",
-        "Satzbau und Grammatik falsch: „blaue Flecken“ steht im falschen Kasus, die Altersangabe hängt am Ende.",
+        "Das Leitsymptom ist ungenau („mehrere Tage“ statt Fieber seit vier Tagen), es steht Perfekt statt Präteritum, und der Zusatz über den Wunsch des Patienten gehört nicht in den Einleitungssatz.",
+        "Satzbau falsch: Präsens statt Präteritum, die Altersangabe hängt am Ende, und „blaue Flecken“ ist Umgangssprache.",
         "Richtig: vollständiger Satz, Präteritum, Name, Alter, Ort und Leitsymptome."
       ],
       "reply": null
@@ -350,8 +333,7 @@
     {
       "part": 2,
       "section": "Aktuelle Anamnese",
-      "situation": null,
-      "question": "Welcher Satz beschreibt die aktuelle Anamnese in Fachsprache korrekt?",
+      "situation": "Der Einleitungssatz steht. Darunter schreiben Sie die aktuelle Anamnese:",
       "options": [
         "Seit ca. drei Wochen bestehen eine zunehmende Abgeschlagenheit und Blässe, seit vier Tagen Fieber bis 39,1 °C mit Schüttelfrost. Zudem berichtet der Patient über spontane Hämatome an Armen und Beinen, Zahnfleischbluten und dreimaliges Nasenbluten in dieser Woche. Die Belastbarkeit ist eingeschränkt (Dyspnoe nach einem Stockwerk), die Erschöpfung beträgt NRS 8/10.",
         "Seit ca. vier Wochen bestehen eine zunehmende Abgeschlagenheit und Blässe, seit vier Tagen Fieber bis 37,1 °C ohne Schüttelfrost. Zudem berichtet der Patient über Hämatome nach einem Sturz, Zahnfleischbluten und dreimaliges Nasenbluten in dieser Woche. Die Belastbarkeit ist unverändert, die Erschöpfung beträgt NRS 2/10.",
@@ -370,8 +352,7 @@
     {
       "part": 2,
       "section": "Begleitsymptome und vegetative Anamnese",
-      "situation": null,
-      "question": "Wie dokumentieren Sie Begleitsymptome und vegetative Anamnese?",
+      "situation": "Es folgen die Begleitsymptome und die vegetative Anamnese:",
       "options": [
         "Begleitend berichtete der Patient über Nachtschweiß, orthostatischen Schwindel, Palpitationen und Schmerzen im Sternum. Es bestehen Inappetenz sowie ein Gewichtsverlust von 14 kg in zwei Monaten. Husten und Halsschmerzen wurden verneint.",
         "Er hat nachts geschwitzt, ist schwindelig und hat abgenommen.",
@@ -390,8 +371,7 @@
     {
       "part": 2,
       "section": "Vorerkrankungen und Medikation",
-      "situation": null,
-      "question": "Welche Dokumentation von Vorerkrankungen und Medikation ist korrekt?",
+      "situation": "Sie sehen in Ihren Notizen nach Vorerkrankungen und Medikamenten und schreiben:",
       "options": [
         "Vorerkrankungen: arterielle Hypertonie. Z. n. Leistenhernien-Operation rechts vor zehn Jahren. Keine Chemo- oder Strahlentherapie. Medikation: Amlodipin 5 mg 0-0-1, Paracetamol 500 mg gestern und heute je 1-1-1.",
         "An Vorerkrankungen ist eine arterielle Hypertonie bekannt. Z. n. Leistenhernien-Operation rechts vor zehn Jahren. Eine Chemo- oder Strahlentherapie wurde verneint. Medikation: Amlodipin 5 mg 1-0-0, Paracetamol 500 mg bei Fieber (gestern und heute je 1 Tbl.).",
@@ -410,8 +390,7 @@
     {
       "part": 2,
       "section": "Allergien, Noxen und Sozialanamnese",
-      "situation": null,
-      "question": "Welcher Abschnitt ist korrekt?",
+      "situation": "Jetzt tragen Sie Allergien, Noxen, Familien- und Sozialanamnese ein:",
       "options": [
         "Allergie: Penicillin (Exanthem). Nikotinkonsum ca. 25 py, gelegentlicher Alkoholkonsum (ein Bier am Wochenende), kein Drogenkonsum. Familienanamnese: Mutter Mammakarzinom mit 70 J., Vater Myokardinfarkt mit 68 J. Der Patient ist Kfz-Meister (Exposition gegenüber Benzin und Lösungsmitteln), verheiratet, lebt mit seiner Ehefrau.",
         "Allergie: Cotrimoxazol (Exanthem). Nikotinkonsum ca. 50 py, gelegentlicher Alkoholkonsum (ein Bier am Wochenende), kein Drogenkonsum. Familienanamnese: Mutter Mammakarzinom mit 70 J., Vater Myokardinfarkt mit 68 J. Der Patient ist Kfz-Meister (Exposition gegenüber Benzin und Lösungsmitteln), verheiratet.",
@@ -430,8 +409,7 @@
     {
       "part": 2,
       "section": "Verdachtsdiagnose und Differenzialdiagnosen",
-      "situation": null,
-      "question": "Wie formulieren Sie Verdachtsdiagnose und Differenzialdiagnosen?",
+      "situation": "In der Beurteilung halten Sie Ihre Verdachtsdiagnose und die Differenzialdiagnosen fest:",
       "options": [
         "Diagnose: Blutkrebs.",
         "Es besteht eine gesicherte akute myeloische Leukämie, eine weitere Diagnostik ist nicht erforderlich. Differenzialdiagnostisch kommt höchstens noch eine Infektion in Betracht.",
@@ -450,8 +428,7 @@
     {
       "part": 2,
       "section": "Procedere",
-      "situation": null,
-      "question": "Wie dokumentieren Sie das weitere Vorgehen?",
+      "situation": "Als letzten Absatz schreiben Sie das Procedere:",
       "options": [
         "Wir empfehlen eine Blutentnahme, eine Röntgenaufnahme des Thorax und die Gabe von Cotrimoxazol zur Infektprophylaxe. Eine Knochenmarkpunktion ist zunächst nicht notwendig.",
         "Zur Abklärung empfehlen wir Blutentnahme (Differenzialblutbild mit Ausstrich, Gerinnung, LDH, Harnsäure, Retentionswerte, CRP), Blutkulturen und Knochenmarkpunktion mit Zytologie, Immunphänotypisierung und Zytogenetik. Bei Fieber mit möglicher Neutropenie ist unverzüglich eine intravenöse Breitbandantibiose indiziert; danach Verlegung in eine hämatologische Fachklinik.",
@@ -470,8 +447,7 @@
     {
       "part": 3,
       "section": "Übergabe beginnen",
-      "situation": "Der Oberarzt kommt: „Erzählen Sie mal, was haben wir?“",
-      "question": "Wie beginnen Sie die Patientenvorstellung?",
+      "situation": "Der Oberarzt kommt herein, setzt sich zu Ihnen und schaut Sie an: „Erzählen Sie mal, was haben wir?“",
       "options": [
         "Ich möchte Ihnen Herrn Thomas Brandt vorstellen, einen 63-jährigen Patienten, der sich heute mit seit drei Wochen zunehmender Abgeschlagenheit, seit vier Tagen bestehendem Fieber und spontanen Blutungen vorgestellt hat.",
         "Der Herr hat Fieber, und er blutet aus der Nase, er heißt Brandt.",
@@ -485,13 +461,12 @@
         "Sie beginnen mit einer ungesicherten Diagnose statt mit dem Leitsymptom.",
         "Inhaltlich falsch: Der Patient hat keinen Durchfall und keine Reise, dafür spontane Blutungen und seit drei Wochen Abgeschlagenheit."
       ],
-      "reply": "Oberarzt: „Mhm. Und weiter?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Befunde",
-      "situation": null,
-      "question": "Wie fassen Sie die wichtigsten Befunde aus der Anamnese zusammen?",
+      "situation": "Oberarzt: „Mhm. Und weiter?“",
       "options": [
         "Er hat alles Mögliche.",
         "Es bestehen Fieber bis 39,1 °C mit Schüttelfrost, spontane Hämatome, Zahnfleisch- und Nasenbluten sowie ein Gewichtsverlust von 14 kg in zwei Monaten. Die Belastbarkeit ist auf zwei Stockwerke eingeschränkt. Husten und Halsschmerzen wurden verneint. Zusätzlich bestehen Durchfall, Gelbsucht und ein tastbarer Tumor im Oberbauch, die im weiteren Verlauf abgeklärt werden sollen.",
@@ -505,13 +480,12 @@
         "Richtig: knapp, strukturiert, mit relevanten Negativbefunden.",
         "Inhaltlich falsch: Durchfall und Husten wurden verneint."
       ],
-      "reply": "Oberarzt: „Vorgeschichte?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Vorgeschichte",
-      "situation": null,
-      "question": "Was berichten Sie zur Vorgeschichte?",
+      "situation": "Oberarzt: „Vorgeschichte?“",
       "options": [
         "Er ist gesund.",
         "Bekannt ist eine arterielle Hypertonie unter Amlodipin 5 mg 1-0-0. Eine Chemo- oder Strahlentherapie hatte er nie. Wichtig: Cotrimoxazol-Allergie mit Exanthem und berufliche Exposition gegenüber Benzin und Lösungsmitteln. Er raucht ca. 25 py. Die Mutter hatte ein Mammakarzinom.",
@@ -525,13 +499,12 @@
         "Inhaltlich falsch: Er nimmt kein Marcumar, hat eine Cotrimoxazol-Allergie, und in der Familie gab es keine Leukämie.",
         "Unvollständig und falsch: Die Cotrimoxazol-Allergie und die berufliche Exposition fehlen."
       ],
-      "reply": "Oberarzt: „Woran denken Sie?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Verdachtsdiagnose",
-      "situation": null,
-      "question": "Wie formulieren Sie Ihre Einschätzung?",
+      "situation": "Oberarzt: „Woran denken Sie?“",
       "options": [
         "Ich denke an eine Grippe.",
         "Ich weiß es nicht genau.",
@@ -545,13 +518,12 @@
         "Zu sicher („sicher“), und die Begründung stimmt nicht: Fieber allein spricht nicht für eine CLL, die Differenzialdiagnosen passen nicht.",
         "Richtig: Verdachtsdiagnose und sinnvolle Differenzialdiagnosen in Fachsprache."
       ],
-      "reply": "Oberarzt: „Was wollen Sie machen?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Procedere",
-      "situation": null,
-      "question": "Welches Procedere schlagen Sie vor?",
+      "situation": "Oberarzt: „Was wollen Sie machen?“",
       "options": [
         "Ich würde Blut abnehmen mit Differenzialblutbild, Blutausstrich, Gerinnung, LDH, Harnsäure, Retentionswerten und Blutkulturen und eine Knochenmarkpunktion veranlassen. Wegen des Fiebers würde ich sofort eine Breitbandantibiose mit Piperacillin/Tazobactam 4,5 g i. v. beginnen, bei Thrombozyten unter 10/nl oder Blutung Thrombozyten transfundieren und den Patienten in eine hämatologische Klinik verlegen.",
         "Ich würde ihn nach Hause schicken und den Hausarzt informieren.",
@@ -565,13 +537,12 @@
         "Gefährlich: Ibuprofen ist bei Thrombozytopenie kontraindiziert, und die Abklärung darf nicht warten.",
         "Gefährlich: Der Patient ist gegen Cotrimoxazol allergisch, und ohne Knochenmarkpunktion gibt es keine Diagnose."
       ],
-      "reply": "Oberarzt: „Gut. Was erwarten Sie im Differenzialblutbild?“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Rückfrage",
-      "situation": null,
-      "question": "Wie antworten Sie?",
+      "situation": "Oberarzt: „Gut. Was erwarten Sie im Differenzialblutbild?“",
       "options": [
         "Ich erwarte eine isolierte Thrombozytose bei normalen Leukozyten und normalem Hämoglobin, dazu eine Linksverschiebung ohne weitere Auffälligkeiten.",
         "Ich erwarte gar nichts.",
@@ -585,13 +556,12 @@
         "Richtig: typische Befunde einer akuten Leukämie, inklusive Blasten im Ausstrich.",
         "Nicht typisch: Eosinophilie und Polyglobulie passen weder zum Fieber noch zu den Blutungen."
       ],
-      "reply": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“"
+      "reply": null
     },
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": "Der Oberarzt zeigt Ihnen einen Fachbegriff.",
-      "question": "Was bedeutet „Thrombozytopenie“?",
+      "situation": "Oberarzt: „Sehr gut. Zum Schluss noch ein paar Begriffe.“ Er zeigt in Ihrem Brief auf das Wort „Thrombozytopenie“ und sieht Sie fragend an.",
       "options": [
         "Mangel an roten Blutkörperchen",
         "Mangel an Blutplättchen",
@@ -610,8 +580,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Epistaxis“?",
+      "situation": "Der Oberarzt nickt und zeigt auf das nächste Wort: „Epistaxis“.",
       "options": [
         "Blut im Urin",
         "Bluterbrechen",
@@ -630,8 +599,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Neutropenie“?",
+      "situation": "Er tippt auf „Neutropenie“.",
       "options": [
         "Mangel an Blutplättchen",
         "Mangel an roten Blutkörperchen",
@@ -650,8 +618,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Panzytopenie“?",
+      "situation": "Dann auf „Panzytopenie“.",
       "options": [
         "Blutarmut allein",
         "Blutvergiftung",
@@ -670,8 +637,7 @@
     {
       "part": 3,
       "section": "Fachbegriffe",
-      "situation": null,
-      "question": "Was bedeutet „Petechien“?",
+      "situation": "Zuletzt zeigt er auf „Petechien“.",
       "options": [
         "große Blutergüsse nach einem Stoß",
         "punktförmige Blutungen in der Haut",
