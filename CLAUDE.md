@@ -55,6 +55,7 @@
   `publish_apk.sh`; `promote` adds `--mutation`). When you add a rule to the scheduler, queue or session, add a
   mutant for it to `tools/mutation_check.py` and a vector to `core/src/test/resources/conformance/scheduler.json`
   (copy it to `~/dev/QuizWeb/tests/conformance/`). Report which levels were actually run, and which could not be.
+  An ID is two capital letters, a dash and the next free number (`XX-12`), never a sub-scheme such as `XX-V2-1`; tasks run in parallel each get a block of free numbers reserved by whoever starts them. A tag is `REQ <ID>` as the first word of a comment, docstring or test name. pipeline-check v0.7.0 fails on any other shape (PC-17, PC-18).
 - **Technical debt** (`docs/MAINTENANCE.md`): a limitation or shortcut found while working becomes a GitHub Issue
   labelled `debt` with a priority (`P1`..`P3`) in the same session. About one session in five goes to debt or
   prevention: when the last four sessions were all features, say so and propose the top `debt` issue; Giovanni decides.
