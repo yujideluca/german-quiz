@@ -3,8 +3,8 @@
 # time they come to the foreground: the beta app from branch bleeding-edge, the stable app from main.
 #
 #   tools/publish_content.sh beta     check the committed pool and publish it to bleeding-edge
-#   tools/publish_content.sh promote  copy exactly the pool on bleeding-edge to main (what users get), then put the same
-#                                     files on the web version (its main branch) and push it
+#   tools/publish_content.sh promote  put the pool on bleeding-edge on the web version (branch, CI, then its main), then
+#                                     copy exactly the same pool to the feed main (what app users get)
 #
 # Workflow for new questions: edit tools/data/*.tsv (or assets/i18n/*.json), run tools/build_vocab.py (it validates the data
 # and raises the pool version in app/src/main/assets/content.json), commit, then `publish_content.sh beta`, try the questions
@@ -58,6 +58,36 @@ fi
 # promote: what was tested in the beta app is what ships.
 [ "$beta_version" -gt 0 ] || { echo "no question pool on bleeding-edge: publish it with 'beta' first"; exit 1; }
 [ "$beta_version" -gt "$main_version" ] || { echo "main already has question pool $main_version (bleeding-edge: $beta_version)"; exit 1; }
+
+# Web version first: same files on its main branch, cache version bumped so installed copies reload them. GitHub protects
+# the web repo's main (the "test" check must pass on a commit before main may point to it), so the commit goes to a branch
+# pool-<version>, waits for its CI run, and only then moves main; until then nothing is promoted anywhere.
+git -C "$web" fetch -q origin
+tree="$(mktemp -d)/web"
+git -C "$web" worktree add -q --detach "$tree" origin/main
+trap 'git -C "$web" worktree remove --force "$tree"' EXIT
+for f in "${files[@]}"; do git -C "$feed" show "origin/bleeding-edge:content/$f" > "$tree/$f"; done
+web_branch=""
+if git -C "$tree" diff --quiet; then
+  echo "web version already has these questions"
+else
+  sed -i -E "s/^const VERSION = 'v([0-9]+)';/echo \"const VERSION = 'v\$((\1 + 1))';\"/e" "$tree/sw.js"
+  (cd "$tree" && npm test --silent)
+  git -C "$tree" commit -qam "Question pool $beta_version (from the app's feed)"
+  web_branch="pool-$beta_version"
+  sha=$(git -C "$tree" rev-parse HEAD)
+  git -C "$tree" push -q origin "HEAD:refs/heads/$web_branch"
+  run=""
+  for _ in $(seq 60); do  # the run appears a few seconds after the push
+    run=$(cd "$tree" && gh run list --commit "$sha" --workflow test --json databaseId -q '.[0].databaseId')
+    [ -n "$run" ] && break
+    sleep 5
+  done
+  [ -n "$run" ] || { echo "web: no CI run started for $web_branch after 5 minutes; nothing promoted"; exit 1; }
+  (cd "$tree" && gh run watch "$run" --exit-status >/dev/null) \
+    || { echo "web: CI failed on branch $web_branch (run $run); nothing promoted; the branch is kept to look at (delete it before the next promote: git -C $web push origin --delete $web_branch)"; exit 1; }
+fi
+
 switch_feed main
 git -C "$feed" rm -rq --ignore-unmatch content
 git -C "$feed" checkout origin/bleeding-edge -- content
@@ -65,15 +95,9 @@ git -C "$feed" commit -q -m "promote question pool $beta_version"
 git -C "$feed" push -q origin main
 echo "promote: question pool $beta_version published to main (the stable app picks it up when it is next opened)"
 
-# Web version: same files on its main branch, cache version bumped so installed copies reload them.
-git -C "$web" fetch -q origin
-tree="$(mktemp -d)/web"
-git -C "$web" worktree add -q --detach "$tree" origin/main
-trap 'git -C "$web" worktree remove --force "$tree"' EXIT
-for f in "${files[@]}"; do git -C "$feed" show "origin/bleeding-edge:content/$f" > "$tree/$f"; done
-if git -C "$tree" diff --quiet; then echo "web version already has these questions"; exit 0; fi
-sed -i -E "s/^const VERSION = 'v([0-9]+)';/echo \"const VERSION = 'v\$((\1 + 1))';\"/e" "$tree/sw.js"
-(cd "$tree" && npm test --silent)
-git -C "$tree" commit -qam "Question pool $beta_version (from the app's feed)"
-git -C "$tree" push -q origin HEAD:main
-echo "web: question pool $beta_version pushed; https://yujideluca.github.io/german-quiz-web/ serves it within a minute"
+if [ -n "$web_branch" ]; then
+  # A plain push: it fails, changing nothing, if someone moved the web main meanwhile (then merge the branch by hand).
+  git -C "$tree" push -q origin HEAD:main
+  git -C "$tree" push -q origin --delete "$web_branch"
+  echo "web: question pool $beta_version on main; https://yujideluca.github.io/german-quiz-web/ serves it within a minute"
+fi
