@@ -39,6 +39,7 @@ step "7/7 fitness functions (pure core module, file size), the question pool man
 tools/pipeline-check.sh --measure-only
 python3 tools/content_manifest.py --check
 python3 -I tools/check_fsp_cases.py   # FS-1: every FSP case follows the one template
+python3 -I tools/test_check_feed.py 2>&1 | tail -3   # the pre-push check of the public feed (tools/check_feed.py)
 [ "$SECONDS" -le "$MAX_GATE_SECONDS" ] || { echo "FAIL gate took ${SECONDS}s (> ${MAX_GATE_SECONDS}s)"; exit 1; }
 echo "gate time so far: ${SECONDS}s (limit ${MAX_GATE_SECONDS}s)"
 
