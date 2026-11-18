@@ -17,7 +17,10 @@
 
 - Environment: `source ~/dev/env.sh` (JDK 21, Gradle, Android SDK). Build and test with
   `./gradlew :core:test testStableDebugUnitTest assembleStableDebug` (flavors: `stable` and `beta`), or the whole gate
-  with `tools/quality_gate.sh`. GitHub Actions runs that gate on every push: after pushing, the run must be green.
+  with `tools/quality_gate.sh`. GitHub Actions runs that gate on every push.
+- **Push to main with `tools/push_main.sh`**, never with a plain `git push` (ADR-0015): GitHub refuses a commit on main
+  whose CI job has not passed, for the owner too. The script sends the commit to a branch `ci-<commit>`, waits for CI
+  (about two and a half minutes) and moves main only when it is green.
 - After coding anything, do a first-line debug pass before reporting done: tests, install on the
   phone, exercise the changed flow, check `adb logcat` for crashes.
 - **Keep `DESIGN.md` current.** In the same commit as any change to architecture, modes,

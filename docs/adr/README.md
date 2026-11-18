@@ -25,3 +25,4 @@ and commit history; their alternatives are the ones recorded then, nothing more.
 | [0012](0012-downloadable-question-pool.md) | The question pool is a versioned pack the app can download from the update feed | accepted |
 | [0013](0013-program-measures-skill-judges.md) | Let a program measure and block, and a skill judge and propose | accepted |
 | [0014](0014-fsp-case-simulations.md) | FSP case simulations as a sixth mode, one card per case, built from one fixed template | accepted |
+| [0015](0015-main-protected-for-everyone.md) | GitHub refuses a commit on main that CI has not passed, also from the owner | accepted |
